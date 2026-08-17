@@ -1,0 +1,2381 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Eschilo, I Persiani: traduzione italiana di Ettore Romagnoli</title>
+        <author>Aeschylus</author>
+        <editor role="translator">Ettore Romagnoli</editor>
+        <editor>Gregory Crane</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder>Schmidt Sciences</funder>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Perseus Digital Library</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <date>2026</date>
+        <availability>
+          <p>Source transcription from Italian Wikisource; reuse is subject to its CC BY-SA 3.0 and GFDL terms.</p>
+        </availability>
+        <idno type="CTS-URN">urn:cts:greekLit:tlg0085.tlg002.romagnoli1922-ita2</idno>
+        <idno type="filename">tlg0085.tlg002.romagnoli1922-ita2.xml</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <editor role="translator">Ettore Romagnoli</editor>
+            <title level="m">Le tragedie</title>
+            <imprint>
+              <pubPlace>Bologna</pubPlace>
+              <publisher>Nicola Zanichelli</publisher>
+              <date when="1922">1922</date>
+            </imprint>
+            <biblScope unit="volume">I</biblScope>
+          </monogr>
+          <ref target="https://it.wikisource.org/wiki/Tragedie_(Eschilo-Romagnoli)">Wikisource work page</ref>
+          <ref target="https://it.wikisource.org/wiki/Indice:Tragedie_di_Eschilo_(Romagnoli)_I.djvu">Wikisource volume I</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The Italian text, verse layout, page breaks, stage directions, notes, and lyric divisions follow Romagnoli. Running heads and isolated scan-page numerals have been removed. Smyth card milestones are transferred from the Mazon Greek EpiDoc files and carry resp="Smyth"; measured gaps record omissions in the source transcription.</p>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])">
+          <p>References resolve the sequential verse lines of the Italian translation.</p>
+        </cRefPattern>
+      </refsDecl>
+      <p>Encoded in accordance with EpiDoc and CTS/CITE conventions.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ita">Italian</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="eng">English (metadata)</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-16" who="#gcrane">Separated the play from the composite transcription and regularized it as a play-level CTS/EpiDoc translation.</change>
+      <change when="2026-08-16" who="#gcrane">Transferred every canonical Smyth card milestone using Romagnoli's explicit Greek-line ranges and documented all placements in an audit table.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="ita">
+    <body>
+      <div type="translation" n="urn:cts:greekLit:tlg0085.tlg002.romagnoli1922-ita2" xml:lang="ita">
+        <pb n="85"/>
+        <stage type="heading">I PERSIANI</stage>
+        <pb n="86"/>
+        <stage type="heading">PERSONAGGI</stage>
+        <list>
+            <item>CORO DI VEGLIARDI PERSIANI</item>
+            <item>ATOSSA</item>
+            <item>UN NUNZIO</item>
+            <item>OMBRA DI DARIO</item>
+            <item>SERSE</item>
+         </list>
+        <note>L'azione si svolge in un' antica piazza di Susa.
+            In fondo si vedono le tombe dei re persiani.</note>
+        <pb n="87"/>
+        <stage type="heading">CANTO D'INGRESSO</stage>
+        <note>Entrano in orchestra ventiquattro vegliardi persiani che misurano
+            il passo sul ritmo lentissimo del loro canto.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="parodos"/>
+        <sp>
+               <speaker>CORO</speaker>
+               <lg n="1-7">
+                  <milestone unit="card" n="1" resp="Smyth"/><l n="1">I fedeli siam noi dei Signori</l>
+                  <l n="2">persïani partiti per l'Ellade,</l>
+                  <l n="3">i custodi siam noi dei palagi</l>
+                  <l n="4">ricchi d'oro, opulenti.</l>
+                  <l n="5">Prescelse</l>
+                  <l n="6">noi, pel senno e per gli anni provetti</l>
+                  <l n="7">a vegliar su la patria il re Serse,</l>
+                  <l n="8">figliuolo di Dario.</l>
+               </lg>
+               <lg n="8-11">
+                  <l n="9">E di già per l'assenza del sire,</l>
+                  <l n="10">dell'esercito rutilo d'oro,</l>
+                  <l n="11">troppo in seno tumultua l'anima</l>
+                  <l n="12">presaga di mali.</l>
+               </lg>
+               <lg n="12-15">
+                  <l n="13">Poi che tutta partir la sua forza</l>
+                  <l n="14">vide l'Asia, e i suoi giovani invoca;</l>
+                  <pb n="88"/>
+                  <l n="15">né alcun messo ancor giunge, non giunge</l>
+                  <l n="16">cavaliere alla nostra città.</l>
+               </lg>
+               <lg n="16-20">
+                  <l n="17">Molti d'essi, da Ecbàtana e Susa,</l>
+                  <l n="18">dal vetusto recinto di Císsino,</l>
+                  <l n="19">movevano a guerra</l>
+                  <l n="20">su corsieri, su navi, o pedoni</l>
+                  <l n="21">ad empir le caterve di guerra:</l>
+               </lg>
+               <lg n="21-28">
+                  <l n="22">quali Amistra, Artaferne, Megàbate,</l>
+                  <l n="23">ed Astàspe, signori di Persi.</l>
+                  <l n="24">Ed i re del gran Re tributarî,</l>
+                  <l n="25">si lanciâr con fittissime schiere,</l>
+                  <l n="26">vibrando archi, inforcando corsieri,</l>
+                  <l n="27">paurosi a vedere, terribili</l>
+                  <l n="28">com'è fama, pel cuor temerario</l>
+                  <l n="29">nella zuffa.</l>
+               </lg>
+               <lg n="29-32">
+                  <l n="30">Ed Artèmbare, vago</l>
+                  <l n="31">di cavalli, e Masistre, e Imeo prode</l>
+                  <l n="32">vibratore dell'arco, e Faràndace</l>
+                  <l n="33">e Sostane signor dei corsieri.</l>
+               </lg>
+               <lg n="33-40">
+                  <l n="34">Il gran Nilo dai flutti fecondi</l>
+                  <l n="35">altri poi ne mandava: Susícane,</l>
+                  <l n="36">Pegastàgone egizio, ed Arsàme,</l>
+                  <l n="37">l'alto sire di Menfi la sacra,</l>
+                  <l n="38">e Ariomardo che a Tebe vetusta</l>
+                  <l n="39">tien lo scettro;</l>
+                  <l n="40">e le genti palustri</l>
+                  <l n="41">ben destre al remeggio,</l>
+                  <l n="42">moltitudini immense e terribili.</l>
+               </lg>
+               <lg n="41-48">
+                  <pb n="89"/>
+                  <milestone unit="card" n="41" resp="Smyth"/><l n="43">E li segue la turba dei Lidî</l>
+                  <l n="44">delicati, e quanti ebber la culla</l>
+                  <l n="45">nelle interne contrade.</l>
+                  <l n="46">Li guida</l>
+                  <l n="47">Metrogate e Arteo prode, signori</l>
+                  <l n="48">ambi e re.</l>
+                  <l n="49">Sardi, rutila d'oro,</l>
+                  <l n="50">li sospinge su innumeri carri</l>
+                  <l n="51">aggiogati con quattro, con sei</l>
+                  <l n="52">corridori, tremendo spettacolo.</l>
+               </lg>
+               <lg n="49-51">
+                  <l n="53">E Mardonio e Taríbide, incudini</l>
+                  <l n="54">delle lance al cozzar, che dimorano</l>
+                  <l n="55">presso a Tmolo santissima, e i Misî</l>
+                  <l n="56">lanciator' di zagaglie, minacciano</l>
+                  <l n="57">pure all'Ellade il giogo servile.</l>
+               </lg>
+               <lg n="52-55">
+                  <l n="58">Babilonia che sfolgora d'oro,</l>
+                  <l n="59">inviò lunghe turbe commiste,</l>
+                  <l n="60">e su navi i guerrieri sicuri</l>
+                  <l n="61">nell'ardire che lancia le frecce.</l>
+               </lg>
+               <lg n="56-58">
+                  <l n="62">E ogni gente che stringa la spada,</l>
+                  <l n="63">dall'Asia universa</l>
+                  <l n="64">segue gli ordini fieri del Re.</l>
+               </lg>
+               <lg n="59-62">
+                  <l n="65">Tale fiore di giovani mosse</l>
+                  <l n="66">dalle plaghe di Persia.</l>
+                  <l n="67">E per essi</l>
+                  <l n="68">tutta or piange la terra asïàna</l>
+                  <l n="69">che nutriali, ch'or n'arde di brama.</l>
+               </lg>
+               <lg n="63-64">
+                  <l n="70">Ed il tempo che tanto prolungasi</l>
+                  <l n="71">i padri e le spose</l>
+                  <l n="72">giorno a giorno misurano, e tremano.</l>
+               </lg>
+            </sp>
+        <pb n="90"/>
+        <stage type="heading">PRIMO CANTO INTORNO ALL'ARA</stage>
+        <note>I vegliardi, compiendo intorno all'ara lente evoluzioni ritmiche, cantano,
+            alternandosi i due semicori, le seguenti coppie strofiche.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="stasimon" n="1"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="65-72">
+                     <milestone unit="card" n="65" resp="Smyth"/><l n="73">A sterminio di città mosse l'esercito</l>
+                     <l n="74">del Gran Re, la terra invase che finitima</l>
+                     <l n="75">surge contro il suolo d'Asia:</l>
+                     <l n="76">su compagini di tronchi, su compagini di canapi,</l>
+                     <l n="77">superò d'Elle Atamàntide il tragitto,</l>
+                     <l n="78">poi che un giogo, un ponte tutto irto di cunei</l>
+                     <l n="79">del mar sopra la cervice ebbe confitto.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="73-80">
+                     <milestone unit="card" n="73" resp="Smyth"/><l n="80">Il Signore dei frequenti asíaci popoli</l>
+                     <l n="81">furioso, da due bande spinse d'uomini</l>
+                     <l n="82">una greggia innumerevole</l>
+                     <l n="83">su la terra dei nemici, qua pedoni, là dal pelago.</l>
+                     <l n="84">Fieri i duci saldi, affidano alla prova</l>
+                     <l n="85">questo principe che, ai Numi pari, è germine</l>
+                     <l n="86">della stirpe che nascea dall'aurea piova.</l>
+                  </lg>
+               </sp>
+        <pb n="91"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="81-86">
+                     <milestone unit="card" n="81" resp="Smyth"/><l n="87">Saettando egli dall'occhio,</l>
+                     <l n="88">quasi drago sanguinario, azzurro sguardo,</l>
+                     <l n="89">con gran flotta, con molti uomini,</l>
+                     <l n="90">sospingendo assirio cocchio,</l>
+                     <l n="91">contro genti valorose a trattar cuspidi e lancie</l>
+                     <l n="92">guida un'oste esperta al dardo.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="87-92">
+                     <milestone unit="card" n="87" resp="Smyth"/><l n="93">Niun v'ha tanto valoroso</l>
+                     <l n="94">che, opponendosi di tanti uomini al flutto,</l>
+                     <l n="95">frenar possa con saldi argini</l>
+                     <l n="96">l'invincibile maroso.</l>
+                     <l n="97">Niun potrebbe troppo è valido l'esercito</l>
+                     <l n="98">persïano, e il popol tutto.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="4"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="107-110">
+                     <milestone unit="card" n="93" resp="Smyth"/><gap reason="omitted" unit="line" quantity="7" corresp="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2:93-99"/><milestone unit="card" n="100" resp="Smyth"/><gap reason="omitted" unit="line" quantity="7" corresp="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2:100-106"/><milestone unit="card" n="107" resp="Smyth"/><l n="99">Ma chi mai, nato mortale, dall'insidia</l>
+                     <l n="100">frodolenta dei Celesti</l>
+                     <l n="101">può sfuggire? Con salto agile</l>
+                     <l n="102">trarre in salvo piedi presti?</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="4"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="111-114">
+                     <milestone unit="card" n="111" resp="Smyth"/><l n="103">Con benevola parvenza Ate gli efimeri</l>
+                     <l n="104">ne le reti attira e adesca.</l>
+                     <l n="105">Né veruno evvi fra gli uomini</l>
+                     <l n="106">che a fuggir quindi riesca.</l>
+                  </lg>
+               </sp>
+        <pb n="92"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="93-99">
+                     <l n="107">Ché la Parca sovra noi dai prischi secoli</l>
+                     <l n="108">per volere dei Celesti ebbe dominio,</l>
+                     <l n="109">ed impose che i Persiani prevalessero</l>
+                     <l n="110">a espugnar torri, negli impeti</l>
+                     <l n="111">turbinosi dei cavalli,</l>
+                     <l n="112">a fiaccar muniti valli.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="100-106">
+                     <l n="113">Indi appresero a mirar con ciglio impavido</l>
+                     <l n="114">la gran selva dei marosi farsi candida</l>
+                     <l n="115">sotto raffiche rapaci; e s'avventurano</l>
+                     <l n="116">su gli ordigni ben costrutti</l>
+                     <l n="117">onde l'uom valica i flutti.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="5"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="115-119">
+                     <milestone unit="card" n="115" resp="Smyth"/><l n="118">Però, cinto di gramaglia,</l>
+                     <l n="119">il mio cuore si travaglia:</l>
+                     <l n="120">ahimè!</l>
+                     <l n="121">Temo ognor pel nostro esercito,</l>
+                     <l n="122">e che a Susa tal notizia</l>
+                     <l n="123">non arrivi</l>
+                     <l n="124">che dei suoi figli la privi.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="5"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="120-125">
+                     <milestone unit="card" n="120" resp="Smyth"/><l n="125">E dei Cissi la città</l>
+                     <l n="126">al suo grido eco farà:</l>
+                     <l n="127">ahimè!</l>
+                     <l n="128">Leveranno un pianto simile</l>
+                     <l n="129">le caterve delle femmine;</l>
+                     <l n="130">ed il bisso</l>
+                     <l n="131">d'ogni manto cadrà scisso.</l>
+                  </lg>
+               </sp>
+        <pb n="93"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="6"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="126-132">
+                     <milestone unit="card" n="126" resp="Smyth"/><l n="132">Però che tutti mossero,</l>
+                     <l n="133">cavalieri e pedestri moltitudini,</l>
+                     <l n="134">simili a sciame d'api,</l>
+                     <l n="135">col signor delle schiere; e valicarono</l>
+                     <l n="136">lo stretto pei due capi</l>
+                     <l n="137">che l'una e l'altra terra</l>
+                     <l n="138">fanno comuni, e un giogo ora li serra.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="6"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="133-139">
+                     <milestone unit="card" n="133" resp="Smyth"/><l n="139">Umidi son di lagrime</l>
+                     <l n="140">pel desiderio degli sposi i talami.</l>
+                     <l n="141">Aspro affanno travaglia</l>
+                     <l n="142">le spose persïane.</l>
+                     <l n="143">Esse già videro</l>
+                     <l n="144">muovere alla battaglia</l>
+                     <l n="145">lo sposo prediletto</l>
+                     <l n="146">tutto furore: ed or vedovo è il letto.</l>
+                  </lg>
+                  <note>Le evoluzioni cessano. I vecchi son termi dintorno all' ara.</note>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="anapests"/>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="140-146">
+                     <milestone unit="card" n="140" resp="Smyth"/><l n="147">Or su via, Persïani, che in questo</l>
+                     <l n="148">risediamo vetusto palagio,</l>
+                     <l n="149">con profondo sincero consiglio</l>
+                     <l n="150">si ricerchi ché incalzan gli eventi</l>
+                     <l n="151">in che sorti si trovi il re Serse</l>
+                     <l n="152">figliuolo di Dario,</l>
+                     <l n="153">la cui stirpe al mio popol die' nome:</l>
+                  </lg>
+                  <lg n="147-149">
+                     <l n="154">se vinceva la furia dei dardi</l>
+                     <l n="155">o la forza di ferrëe cuspidi.</l>
+                  </lg>
+               </sp>
+        <pb n="94"/>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="150-154">
+                     <l n="156">Ma s'avanza, e a pupilla di Nume</l>
+                     <l n="157">rassomiglia, la madre del Re,</l>
+                     <l n="158">la Regina. In ginocchio io mi prostro.</l>
+                     <l n="159">E voi tutti, conviene che ad essa</l>
+                     <l n="160">rivolgiate parole d'ossequio.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="trochees"/>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="155-158">
+                     <milestone unit="card" n="155" resp="Smyth"/><l n="161">O suprema tu fra quante son le belle donne perse,</l>
+                     <l n="162">salve a te, sposa di Dario, salve a te, madre di Serse.</l>
+                     <l n="163">Sposa al Dio dei Persïani, tu sei madre anche d'un Nume,</l>
+                     <l n="164">se per noi l'antico Dèmone non mutava il suo costume.</l>
+                  </lg>
+               </sp>
+        <pb n="95"/>
+        <stage type="heading">PRIMO EPISODIO</stage>
+        <note>Sopra un cocchio, in ricche vesti, seguita da ancelle, giunge
+            la regina Atossa.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="episode"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="trochees"/>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="159-164">
+                     <milestone unit="card" n="159" resp="Smyth"/><l n="165">Perciò venni, pel timore ch'or si mostri a noi contrario,</l>
+                     <l n="166">e lasciai la reggia e il talamo dove io già vissi con Dario.</l>
+                     <l n="167">Un pensiero il cuor mi lacera. Un terrore in cor s'aduna</l>
+                     <l n="168">ch'io v'espongo, amici.</l>
+                     <l n="169">Io temo che l'eccesso di fortuna</l>
+                     <l n="170">non abbatta e fra la polvere la potenza non calpesti</l>
+                     <l n="171">che innalzò Dario, non senza il volere dei Celesti.</l>
+                  </lg>
+                  <lg n="165-172">
+                     <l n="172">Questo duplice pensiero di continuo mi travaglia.</l>
+                     <pb n="96"/>
+                     <l n="173">Mai la gloria per l'uom povero al valor suo non s'agguaglia;</l>
+                     <l n="174">ma niun pregio ha l'opulenza, quando sia d'uomini scema.</l>
+                     <l n="175">Ora intatta è la ricchezza; ma per l'occhio il cuor mi trema:</l>
+                     <l n="176">occhio io dico della casa la presenza del Signore.</l>
+                     <l n="177">Poi che a ciò dunque gli eventi giunti son, nel mio timore</l>
+                     <l n="178">siate a me, fidi vegliardi Persïani, or consiglieri:</l>
+                     <l n="179">e i consigli vostri in tutto sian per me giusti e sinceri.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="173-175">
+                     <l n="180">Sappi bene, o mia Regina: qual parola od opra brami</l>
+                     <l n="181">che si compia, non la devi dir due volte.</l>
+                     <l n="182">Tu ci chiami;</l>
+                     <l n="183">e per ciò che possiam noi pronti siamo ai cenni tuoi.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="iambics"/>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="176-180">
+                     <milestone unit="card" n="176" resp="Smyth"/><l n="184">Sempre, da quando il figliuol mio l'esercito</l>
+                     <l n="185">spinse, e partí, bramoso di distruggere</l>
+                     <l n="186">la lonia terra, fra notturni sogni</l>
+                     <l n="187">vivo commista.</l>
+                     <l n="188">E niun fu mai sí chiaro</l>
+                     <l n="189">come la scorsa notte.</l>
+                     <l n="190">Or te lo narro.</l>
+                  </lg>
+                  <lg n="181-199">
+                     <l n="191">Pareano innanzi a me giunger due femmine</l>
+                     <l n="192">in vesti adorne: un manto persïano</l>
+                     <l n="193">cingeva questa, e quella un manto dorico:</l>
+                     <l n="194">e di statura molto soverchiavano</l>
+                     <l n="195">le donne d'ora, e belle senza pесса,</l>
+                     <l n="196">e d'un sangue, sorelle.</l>
+                     <l n="197">Ed abitavano</l>
+                     <l n="198">contrade avute in sorte: ellène questa,</l>
+                     <l n="199">barbare quella.</l>
+                     <l n="200">Or, fra le due sorgeva,</l>
+                     <l n="201">pareami, una contesa.</l>
+                     <l n="202">E il figliuol mio</l>
+                     <pb n="97"/>
+                     <l n="203">se ne avvede, e le frena, e le ammonisce,</l>
+                     <l n="204">ed ai carri le aggioga, e impone redini</l>
+                     <l n="205">alle cervici.</l>
+                     <l n="206">E in questa foggia, l'una</l>
+                     <l n="207">si pompeggiava, ed adattava docile</l>
+                     <l n="208">alle briglie la bocca: invece l'altra</l>
+                     <l n="209">relutta fiera, e con le man' gli arnesi</l>
+                     <l n="210">strappa del cocchio, e rompe a mezzo il giogo,</l>
+                     <l n="211">e senza freno lo trascina a forza.</l>
+                     <l n="212">Il figliuol mio giú piomba;</l>
+                     <l n="213">e appare Dario</l>
+                     <l n="214">suo padre, e lo compiange.</l>
+                     <l n="215">E appena Serse</l>
+                     <l n="216">lo vede, strappa dalle membra i panni.</l>
+                     <milestone unit="card" n="200" resp="Smyth"/><l n="217">Ciò che ti dico, ho visto fra le tenebre.</l>
+                  </lg>
+                  <lg n="201-214">
+                     <l n="218">Quando poi mi levai, quando ebbi terse</l>
+                     <l n="219">d'un fonte ne le belle acque le palme,</l>
+                     <l n="220">con le mie mani ad offerir libami</l>
+                     <l n="221">a un'ara m'appressai, per fare offerte</l>
+                     <l n="222">agli Dei, che lontani i mali tengano.</l>
+                     <l n="223">E un'aquila fuggir verso l'altare</l>
+                     <l n="224">di Febo veggo.</l>
+                     <l n="225">Pel terrore, amici,</l>
+                     <l n="226">muta rimango.</l>
+                     <l n="227">Ed ecco, con grande impeto</l>
+                     <l n="228">d'ali, piombare scorgo uno sparviere,</l>
+                     <l n="229">che con gli artigli il capo le dispiuma:</l>
+                     <l n="230">e quella, altro non fa che rannicchiarsi</l>
+                     <l n="231">e abbandonarsi.</l>
+                     <l n="232">Tali auspicî, e me</l>
+                     <l n="233">che vidi, e voi che udite sbigottiscono.</l>
+                     <l n="234">Ben lo sapete: se la sorte è fausta,</l>
+                     <l n="235">il figliuol mio sarà per tutti obietto</l>
+                     <l n="236">di meraviglia.</l>
+                     <l n="237">Ma se infausta... Ebbene</l>
+                     <l n="238">conto render non deve alla città.</l>
+                     <l n="239">Sia salvo, e Re sempre sarà di Persia.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="trochees"/>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="215-225">
+                     <milestone unit="card" n="215" resp="Smyth"/><l n="240">Troppo, o madre, sbigottirti non vogliam coi detti nostri,</l>
+                     <l n="241">né che troppo imbaldanzisca.</l>
+                     <l n="242">Fa' che ai Superi ti prostri,</l>
+                     <l n="243">a implorar che spersi mandino da te lungi i tristi auspici,</l>
+                     <l n="244">ed i buoni per te avverino, pel tuo figlio, per gli amici</l>
+                     <l n="245">tutti quanti, e per la patria.</l>
+                     <l n="246">Versa quindi libamenti</l>
+                     <l n="247">alla terra ed ai defunti.</l>
+                     <l n="248">E rivolgi preci ardenti</l>
+                     <l n="249">allo sposo visto in sogno, che dai baratri del suolo</l>
+                     <l n="250">ogni bene ai rai del giorno per te mandi e pel figliuolo,</l>
+                     <l n="251">e sotterra il mal trattenga, fra le tenebre nascosto.</l>
+                     <l n="252">Questo a te consiglia l'animo mio, presago e al ben disposto.</l>
+                     <l n="253">E che l'esito a ogni modo seguirà prossimo io stimo.</l>
+                  </lg>
+                  <pb n="98"/>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="226-231">
+                     <l n="254">Buon volere, o tu che interprete dei miei sogni fosti primo,</l>
+                     <l n="255">t'ispirò questo responso pei miei tetti, per mio figlio.</l>
+                     <l n="256">Abbia dunque esito il bene. Come suona il tuo consiglio,</l>
+                     <l n="257">sacrifici ai cari estinti offriremo ed agli Dei,</l>
+                     <l n="258">quindi a casa torneremo.</l>
+                     <l n="259">Questo poi saper vorrei :</l>
+                     <l n="260">in qual parte della terra leva Atene le sue mura?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="232">
+                     <milestone unit="card" n="232" resp="Smyth"/><l n="261">Lungi molto, verso i luoghi dove il sol cade e s'oscura.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="233">
+                     <l n="262">Perché tanto bramò Serse di predar questa città?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="234">
+                     <l n="263">Se l'espugna, tutta l'Ellade ai suoi cenni obbedirà.</l>
+                  </lg>
+               </sp>
+        <pb n="99"/>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="235">
+                     <l n="264">Dunque son le loro schiere di guerrieri cosí fitte?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="236">
+                     <l n="265">Un esercito han che ai Medi infliggea gravi sconfitte.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="237">
+                     <l n="266">Oltre agli uomini, han dovizia tal che basti a tanta guerra?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="238">
+                     <l n="267">Una fonte hanno d'argento che tesoro è di lor terra.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="239">
+                     <l n="268">Ne le lor mani, su l'arco tesa cuspide si vede?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="240">
+                     <l n="269">No; ma scudi e spade e lancie da pugnare a fermo piede.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="241">
+                     <l n="270">Qual pastore è a lor preposto, che comandi a tanta gregge?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="242">
+                     <l n="271">Non son servi: niun mortale segna ad essi la sua legge.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="243">
+                     <l n="272">Come allor sanno respingere stranïero impeto ostile?</l>
+                  </lg>
+               </sp>
+        <pb n="100"/>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="244">
+                     <l n="273">Come a Dario sterminarono le serrate e belle file.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="245">
+                     <l n="274">Per chi lunge ha i figli in campo, ciò che dici è grave affanno.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="246-248">
+                     <l n="275">Ma saper potrai ben presto tutto il vero, o ch'io m'inganno.</l>
+                     <l n="276">Un araldo persiano giunge a noi. Qualche notizia</l>
+                     <l n="277">certo udir da lui potremo, sia contraria, sia propizia.</l>
+                  </lg>
+               </sp>
+        <note>Giunge un araldo, stanco, affannato, recando in voto i segni
+               d'un estremo cordoglio.</note>
+        <sp>
+               <speaker>ARALDO</speaker>
+               <lg n="249-255">
+                  <milestone unit="card" n="249" resp="Smyth"/><l n="278">O voi, città dell'Asia tutte, o terra</l>
+                  <l n="279">di Persia, porto di ricchezza immenso,</l>
+                  <l n="280">come ad un colpo solo andò distrutta</l>
+                  <l n="281">la gran felicità, come dei Persi</l>
+                  <l n="282">cade il fiore e si perde!</l>
+                  <l n="283">Ahimè! Che male</l>
+                  <l n="284">è mirar primo i mali! E pure, è forza</l>
+                  <l n="285">che intiero il danno, o Persi, io sveli.</l>
+                  <l n="286">Tutto distrutto fu dei barbari l'esercito !</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="kommos"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="256-259">
+                        <milestone unit="card" n="256" resp="Smyth"/><l n="287">Ahimè, miseri miseri,</l>
+                        <l n="288">mali novelli e immani!</l>
+                        <l n="289">Sgorghin le vostre lagrime</l>
+                        <l n="290">all'udir tanto strazio, o Persïani!</l>
+                     </lg>
+                  </sp>
+        <pb n="101"/>
+        <sp>
+                     <speaker>ARALDO</speaker>
+                     <lg n="260-261">
+                        <milestone unit="card" n="260" resp="Smyth"/><l n="291">Tutto in rovina è andato.</l>
+                        <l n="292">Del ritorno contro ogni speme anch'io veduto ho il giorno.</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="262-265">
+                        <milestone unit="card" n="262" resp="Smyth"/><l n="293">Ahimè! Del nostro vivere</l>
+                        <l n="294">troppo son lunghi gli anni,</l>
+                        <l n="295">quando, o vegliardi, simili</l>
+                        <l n="296">udir dobbiamo inopinati affanni.</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ARALDO</speaker>
+                     <lg n="266-267">
+                        <milestone unit="card" n="266" resp="Smyth"/><l n="297">Vi narrerò, né per veduta altrui,</l>
+                        <l n="298">ciò che patimmo: ivi presente fui.</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="268-271">
+                        <milestone unit="card" n="268" resp="Smyth"/><l n="299">Indarno, indarno, ahimè,</l>
+                        <l n="300">delle commiste frecce il fitto stuolo</l>
+                        <l n="301">dalle contrade d'Asia</l>
+                        <l n="302">all'inimico mosse elleno suolo!</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ARALDO</speaker>
+                     <lg n="272-273">
+                        <milestone unit="card" n="272" resp="Smyth"/><l n="303">Piene le spiagge son di Salamina</l>
+                        <l n="304">di tristi spoglie, e ogni terra vicina.</l>
+                     </lg>
+                  </sp>
+        <pb n="102"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="274-277">
+                        <milestone unit="card" n="274" resp="Smyth"/><l n="305">Che dici? Ahimè, ahimè!</l>
+                        <l n="306">Senza piú vita i corpi erran dei Persi,</l>
+                        <l n="307">nel turbinio del pelago,</l>
+                        <l n="308">fra cozzo alterno di marosi immersi!</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ARALDO</speaker>
+                     <lg n="278-279">
+                        <milestone unit="card" n="278" resp="Smyth"/><l n="309">Gli archi nulla giovâr:</l>
+                        <l n="310">l'urto dei rostri tutti quanti distrusse i legni nostri.</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="280-283">
+                        <milestone unit="card" n="280" resp="Smyth"/><l n="311">Leva angoscioso un gemito</l>
+                        <l n="312">sui Persïani, un ululo di lutto.</l>
+                        <l n="313">Oh derelitti! Ahi sorte in tutto misera!</l>
+                        <l n="314">Oh esercito distrutto!</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ATOSSA</speaker>
+                     <lg n="290-295">
+                        <l n="315">Tacqui finor, misera me, percossa</l>
+                        <l n="316">dai miei malanni. La sciagura è tanta,</l>
+                        <l n="317">che parlare io non so, nulla piú chiederti.</l>
+                        <l n="318">È tuttavia necessità per gli uomini</l>
+                        <l n="319">patir gli affanni che i Celesti mandano.</l>
+                        <l n="320">Su, parla, e tutta la sventura svela,</l>
+                        <l n="321">pur se mescer dovrai parole e gemiti.</l>
+                     </lg>
+                     <lg n="296-298">
+                        <l n="322">Chi vivo è ancora, e chi dobbiamo piangere</l>
+                        <l n="323">fra i duci? Chi, preposto alle sue schiere.</l>
+                        <l n="324">le lasciò senza capo, e trovò morte?</l>
+                     </lg>
+                  </sp>
+        <pb n="103"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                     <speaker>ARALDO</speaker>
+                     <lg n="299">
+                        <l n="325">Serse ancor vive, il sole ancor contempla.</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ATOSSA</speaker>
+                     <lg n="300-301">
+                        <l n="326">Oh!, che gran luce alla mia casa annunzi,</l>
+                        <l n="327">che bianca aurora dopo negra notte!</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ARALDO</speaker>
+                     <lg n="284-285">
+                        <milestone unit="card" n="284" resp="Smyth"/><l n="328">Oh Salamina, esoso nome!</l>
+                        <l n="329">Oh!, quanto d'Atene al sovvenir mi sciolgo in pianto!</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="286-289">
+                        <milestone unit="card" n="286" resp="Smyth"/><l n="330">Atene, oh! come t'odia</l>
+                        <l n="331">chi t'è avverso!</l>
+                        <l n="332">Il ricordo andrà lontano</l>
+                        <l n="333">di quante donne persïane furono</l>
+                        <l n="334">e spose e madri invano.</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ARALDO</speaker>
+                     <lg n="302-330">
+                        <milestone unit="card" n="290" resp="Smyth"/><gap reason="omitted" unit="line" quantity="12" corresp="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2:290-301"/><l n="335">Artèmbare sbatté, di diecimila</l>
+                        <l n="336">cavalli duce, alle Silenie rupi:</l>
+                        <l n="337">e Dadàce, di mille, un salto a vuoto</l>
+                        <l n="338">spiccò dal bordo, d'una lancia all'urto.</l>
+                        <l n="339">Tenagone, che il primo era dei figli</l>
+                        <pb n="104"/>
+                        <l n="340">di Battrïana, l'isola d'Aiace</l>
+                        <l n="341">flagellata dai flutti, abita.</l>
+                        <l n="342">Arsame,</l>
+                        <l n="343">Lilaio, e terzo, Argeste, intorno all'isola</l>
+                        <l n="344">di colombi nutrice, all'aspra cozzano</l>
+                        <l n="345">spiaggia coi comni, spenti.</l>
+                        <l n="346">Artèo, finitimo</l>
+                        <l n="347">del Nilo egizio ai fonti, Adève, e terzo</l>
+                        <l n="348">il clipeato Fàrnuco, piombarono</l>
+                        <l n="349">da un legno sol.</l>
+                        <l n="350">Criseo Matallo, capo</l>
+                        <l n="351">di trentamila cavalieri negri,</l>
+                        <l n="352">bagnò la rossa fitta ombrosa barba,</l>
+                        <l n="353">color mutando entro purpureo bagno.</l>
+                        <l n="354">L'arabo Mago, il battrio Artame, giacquero,</l>
+                        <l n="355">nuovi meteci, in quella terra dura.</l>
+                        <l n="356">Ed Amistri e Anfistrèo, che la terribile</l>
+                        <l n="357">lancia vibrava, e Arïomarde il buono</l>
+                        <l n="358">che lutto a Sardi ora procaccia, e Sísamo</l>
+                        <l n="359">misio, e Taribi che guidava navi</l>
+                        <l n="360">cinque volte cinquanta, e nacque a Lirna,</l>
+                        <l n="361">fulgido eroe, giace ora spento, misero,</l>
+                        <l n="362">ché non gli arrise la ventura.</l>
+                        <l n="363">E Sínnesi</l>
+                        <l n="364">re dei Cilici, il primo fra i magnanimi,</l>
+                        <l n="365">cruccio, ei da solo, agl'inimici, grande,</l>
+                        <l n="366">morte ebbe e gloria.</l>
+                        <l n="367">Io questi sol rammemoro</l>
+                        <l n="368">dei condottieri. Ma ben pochi sono</l>
+                        <l n="369">questi che annuncio, dei malanni molti.</l>
+                     </lg>
+                  </sp>
+        <sp>
+                     <speaker>ATOSSA</speaker>
+                     <lg n="331-333">
+                        <milestone unit="card" n="331" resp="Smyth"/><l n="370">Ahi!, quale ascolto vertice di mali,</l>
+                        <l n="371">e quale onta dei Persi ed acuti ululi!</l>
+                        <l n="372">Ma torna ancor sul tuo racconto, e dimmi</l>
+                     </lg>
+                  </sp>
+        <pb n="105"/>
+        <lg n="334-336">
+                  <l n="373">quanta la copia delle navi ellene</l>
+                  <l n="374">era, se ardí scagliar contro l'esercito</l>
+                  <l n="375">dei Persïani l'impeto dei rostri.</l>
+               </lg>
+        <sp>
+                  <speaker>ARALDO</speaker>
+                  <lg n="337-347">
+                     <l n="376">Sappilo ben: per numero doveva</l>
+                     <l n="377">vincer la flotta barbara!</l>
+                     <l n="378">Gli Elleni</l>
+                     <l n="379">trecento e dieci legni aveano in tutto,</l>
+                     <l n="380">ed oltre a questi, dieci, a parte eletti.</l>
+                     <l n="381">Serse, bene lo so, mille ne aveva,</l>
+                     <l n="382">che formavano il grosso;</l>
+                     <l n="383">e assai piú rapidi</l>
+                     <l n="384">altre duecento sette: è tale il computo.</l>
+                     <l n="385">Ti par che a forze indietro rimanessimo?</l>
+                     <l n="386">Ma un Dio fiaccò l'esercito; e gravò</l>
+                     <l n="387">d'impari pondo i piatti della lance.</l>
+                     <l n="388">Guardano i Numi la città di Pallade.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="348">
+                     <l n="389">Atene è dunque ancor dal sacco immune?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ARALDO</speaker>
+                  <lg n="349">
+                     <l n="390">Troppo ha sicuro baluardo d'uomini.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="350-352">
+                     <l n="391">Dimmi: come fu il primo urto dei legni?</l>
+                     <l n="392">La pugna aprîr gli Elleni, o, confidando</l>
+                     <l n="393">nel numero dei legni, il figliuol mio?</l>
+                  </lg>
+               </sp>
+        <pb n="106"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="episode"/>
+        <sp>
+               <speaker>ARALDO</speaker>
+               <lg n="353-360">
+                  <milestone unit="card" n="353" resp="Smyth"/><l n="394">A iniziare il mal, Regina, apparve</l>
+                  <l n="395">un tristo genio, un Dèmone maligno.</l>
+                  <l n="396">Dalle schiere d'Atene giunse un èlleno,</l>
+                  <l n="397">e a Serse figliuol tuo narrò, che appena</l>
+                  <l n="398">la foschia scenda della notte negra,</l>
+                  <l n="399">gli Elleni, senza attender piú, sui fianchi</l>
+                  <l n="400">balzeranno dei legni, e in fuga occulta</l>
+                  <l n="401">chi qua chi là scamperanno la vita.</l>
+               </lg>
+               <lg n="361-371">
+                  <l n="402">Com'egli udí, senza la frode intendere</l>
+                  <l n="403">di quell'uom, né l'invidia dei Celesti,</l>
+                  <l n="404">tali parole ai suoi navarchi volge:</l>
+                  <l n="405">che appena il sol desisterà dall'ardere</l>
+                  <l n="406">coi suoi raggi la terra, e buia tenebra</l>
+                  <l n="407">i sacri templi occuperà dell'ètere,</l>
+                  <l n="408">s'addensino le navi in fila triplice,</l>
+                  <l n="409">a custodire ogni sbocco, ogni tramite,</l>
+                  <l n="410">e cingano altre l'isola d'Aiace.</l>
+                  <l n="411">Ché se gli Elleni qualche via di fuga</l>
+                  <l n="412">nascostamente troveran pei legni,</l>
+                  <l n="413">e sfuggiranno al triste fato, tutti</l>
+                  <l n="414">i suoi navarchi mozzo il capo avranno.</l>
+               </lg>
+               <lg n="372-373">
+                  <l n="415">Con baldo cuor queste parole disse,</l>
+                  <l n="416">ché non sapea ciò che apprestava il Nume.</l>
+               </lg>
+               <lg n="374-379">
+                  <l n="417">Quelli con pronte voglie e con bell'ordine</l>
+                  <l n="418">apprestaron le cene; indi i nocchieri</l>
+                  <l n="419">ai bene adatti scalmi i remi legano.</l>
+                  <l n="420">E poi che spento fu del sole il raggio,</l>
+                  <l n="421">e discesa la notte, alla sua nave,</l>
+                  <l n="422">mastri d'armi e di remi, ognuno balza.</l>
+               </lg>
+               <pb n="107"/>
+               <lg n="380-383">
+                  <l n="423">Partia la nave capitana gli ordini;</l>
+                  <l n="424">e, come cenno aveva, ognuno naviga;</l>
+                  <l n="425">e per tutta la notte i duci schierano</l>
+                  <l n="426">l'intera armata in ordine sul mare.</l>
+               </lg>
+               <lg n="384-385">
+                  <l n="427">E trascorrea la notte;</l>
+                  <l n="428">e non tentarono,</l>
+                  <l n="429">donde che fosse, ascosa fuga gli Elleni.</l>
+               </lg>
+               <lg n="386-394">
+                  <l n="430">Poi, come il dí coi suoi puledri bianchi</l>
+                  <l n="431">tutta occupò del fulgor suo la terra,</l>
+                  <l n="432">pria con gran rombo dalle schiere d'Ellade</l>
+                  <l n="433">suonò festoso armonioso strepito;</l>
+                  <l n="434">ed alta un'eco subito rispose</l>
+                  <l n="435">dalle isolane rupi. Sbigottirono</l>
+                  <l n="436">tutti, delusi dall'attesa, i barbari:</l>
+                  <l n="437">ché non di fuga era preludio, questo</l>
+                  <l n="438">sacro peana degli Ellèni: a pugna</l>
+                  <l n="439">anzi con temerario ardor rompevano.</l>
+               </lg>
+               <lg n="395-398">
+                  <milestone unit="card" n="395" resp="Smyth"/><l n="440">Col suo squillo accendea tutti la tromba:</l>
+                  <l n="441">col sonoro concorde urto dei remi</l>
+                  <l n="442">rompèano, a tempo, i gurgiti muggenti ;</l>
+                  <l n="443">ed ecco tutti ai nostri sguardi apparvero.</l>
+               </lg>
+               <lg n="399-405">
+                  <l n="444">Venia primo, in bell'ordine schierato,</l>
+                  <l n="445">il como destro, ed era guida. E tutta</l>
+                  <l n="446">lo seguiva la flotta. E un alto grido</l>
+                  <l n="447">suonar s'udiva insieme: «O figli d'Ellade,</l>
+                  <l n="448">movete, orsú, liberate la patria,</l>
+                  <l n="449">le spose, i figli liberate, e l'are</l>
+                  <l n="450">dei Numi patrî, e l'arche dei nostri avoli!</l>
+                  <l n="451">»</l>
+               </lg>
+               <lg n="406-407">
+                  <l n="452">Surse di contro, dalle file nostre,</l>
+                  <l n="453">un rumorio di persïani accenti:</l>
+                  <l n="454">né d'indugi era tempo: già la nave</l>
+               </lg>
+               <pb n="108"/>
+               <lg n="408-411">
+                  <l n="455">alla nave battea col bronzeo rostro.</l>
+                  <l n="456">Fu d'un navile ellèno il primo cozzo,</l>
+                  <l n="457">e sfracellò d'un legno di Fenicia</l>
+                  <l n="458">tutti gli aplustri; e nave contro nave</l>
+                  <l n="459">chi qua chi là dirigono le prore.</l>
+               </lg>
+               <lg n="412-428">
+                  <l n="460">La gran fiumana dell'armata persa</l>
+                  <l n="461">resse da pria.</l>
+                  <l n="462">Ma poi che la caterva</l>
+                  <l n="463">dei legni nello stretto era stipata,</l>
+                  <l n="464">né luogo avea reciproco soccorso,</l>
+                  <l n="465">anzi l'un l'altro con i bronzei rostri</l>
+                  <l n="466">si percoteano, gli ordini dei remi</l>
+                  <l n="467">franti furono tutti;</l>
+                  <l n="468">e i legni ellèni</l>
+                  <l n="469">accortamente l'investiano in giro.</l>
+                  <l n="470">Rovesce andaron le carene: sotto</l>
+                  <l n="471">i frantumi dei legni, e sotto i corpi</l>
+                  <l n="472">insanguinati, scompariva il mare,</l>
+                  <l n="473">spiaggia e scogli eran colmi di cadaveri;</l>
+                  <l n="474">e quante navi avean le schiere barbare,</l>
+                  <l n="475">facean forza di remi, a sconcia fuga.</l>
+                  <l n="476">Ma, come tonni, o come pesci in rete</l>
+                  <l n="477">già stretti, gli altri con troncon' di remi,</l>
+                  <l n="478">con le schegge e i frantumi, li colpivano,</l>
+                  <l n="479">li sbranavano: e gemiti di morte</l>
+                  <l n="480">e trionfal clamore empieano il pelago,</l>
+                  <l n="481">sin che li ascose de la notte il volto.</l>
+               </lg>
+               <lg n="429-432">
+                  <l n="482">Ma dir non ti potrei tutta la piena</l>
+                  <l n="483">delle sciagure, pur se il mio racconto</l>
+                  <l n="484">durasse dieci anni continui.</l>
+                  <l n="485">Sappi</l>
+                  <l n="486">bene questo, però: che sí gran numero</l>
+                  <l n="487">d'uomini in un sol dí mai non fu spento.</l>
+               </lg>
+            </sp>
+        <pb n="109"/>
+        <sp>
+               <speaker>ATOSSA</speaker>
+               <lg n="433-434">
+                  <milestone unit="card" n="433" resp="Smyth"/><l n="488">Ahi!, che gran mare di sciagure ruppe</l>
+                  <l n="489">sui Persïani e sopra tutti i barbari!</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ARALDO</speaker>
+               <lg n="435-437">
+                  <l n="490">Sappi che il mal non è finora al mezzo:</l>
+                  <l n="491">tanti danni sovra essi ancor piombarono,</l>
+                  <l n="492">che al tratto della lance gli altri uguagliano.</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ATOSSA</speaker>
+               <lg n="438-440">
+                  <l n="493">Qual sorte piú nemica esser potrebbe?</l>
+                  <l n="494">Dimmi, quale è questo esito di mali</l>
+                  <l n="495">che tracollar fece ancor piú la lance?</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ARALDO</speaker>
+               <lg n="441-444">
+                  <l n="496">Quanti dei Persïani eran piú prodi,</l>
+                  <l n="497">d'animo insigni, nobili di stirpe,</l>
+                  <l n="498">e per fede al sovrano ognor fra i primi,</l>
+                  <l n="499">morte han trovata senza gloria, turpe.</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ATOSSA</speaker>
+               <lg n="445-446">
+                  <l n="500">Misera me! Che tristi eventi, amici!</l>
+                  <l n="501">E a qual destino, dici, soccombettero?</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ARALDO</speaker>
+               <lg n="447-454">
+                  <l n="502">Sorge, vicina a Salamina, un'isola</l>
+                  <pb n="110"/>
+                  <l n="503">breve, né rade ha pei navili, dove</l>
+                  <l n="504">su la spiaggia del mar viene sovente</l>
+                  <l n="505">Pan de le danze amico.</l>
+                  <l n="506">E qui mandati</l>
+                  <l n="507">Serse li avea, perché, quando i nemici</l>
+                  <l n="508">disfatti omai, balzino giú dai legni</l>
+                  <l n="509">nell'isoletta, a scampo, i nostri possano</l>
+                  <l n="510">facile scempio far di tutti gli Elleni,</l>
+                  <l n="511">e dai gorghi gli amici in salvo trarre.</l>
+                  <l n="512">Ma lesse male nel futuro.</l>
+               </lg>
+               <lg n="454-464">
+                  <l n="513">Appena</l>
+                  <l n="514">concesse un Nume agli Elleni la gloria</l>
+                  <l n="515">della battaglia, subito recinte</l>
+                  <l n="516">le membra con le belle armi di bronzo,</l>
+                  <l n="517">balzar giú dalle navi, ed inondarono</l>
+                  <l n="518">l'isola tutta:</l>
+                  <l n="519">e i nostri ove rivolgersi</l>
+                  <l n="520">non sapevano piú. Molti cadevano</l>
+                  <l n="521">sotto i sassi scagliati: altri, le frecce</l>
+                  <l n="522">volavan dai vibranti archi a trafiggerli ;</l>
+                  <l n="523">e infine, con un solo impeto mossi,</l>
+                  <l n="524">colpi addensano, sbranano le membra</l>
+                  <l n="525">degli infelici, insino a che la vita</l>
+                  <l n="526">di tutti ebbero spenta.</l>
+               </lg>
+               <lg n="465-471">
+                  <l n="527">Ululi alzava</l>
+                  <l n="528">Serse, vedendo il baratro dei mali:</l>
+                  <l n="529">ché sedea sopra eccelso clivo, presso</l>
+                  <l n="530">al mare aperto, donde a lui visibile</l>
+                  <l n="531">era tutto l'esercito.</l>
+                  <l n="532">E, strappandosi</l>
+                  <l n="533">via le vesti, levando acuti stridi,</l>
+                  <l n="534">tosto raccoglie le pedestri schiere,</l>
+                  <l n="535">e si gitta con quelle a sconcia fuga.</l>
+                  <l n="536">Questa sciagura oltre alla prima or piangi.</l>
+               </lg>
+            </sp>
+        <pb n="111"/>
+        <sp>
+               <speaker>ATOSSA</speaker>
+               <lg n="472-477">
+                  <milestone unit="card" n="472" resp="Smyth"/><l n="537">Oh Dèmone odïoso, oh!, quale inganno</l>
+                  <l n="538">tramavi ai Persïani!</l>
+                  <l n="539">Oh!, quanto amara</l>
+                  <l n="540">al mio figliuolo parve la vendetta</l>
+                  <l n="541">della celebre Atene! I tanti barbari</l>
+                  <l n="542">già spenti a Maratona, non bastarono!</l>
+                  <l n="543">Crede' trame vendetta il figliuol mio,</l>
+                  <l n="544">e su la fronte sua tanta di mali</l>
+                  <l n="545">moltitudine attrasse!</l>
+               </lg>
+               <lg n="478-479">
+                  <l n="546">Ora tu dimmi:</l>
+                  <l n="547">dove lasciasti i legni che sfuggirono</l>
+                  <l n="548">al fato? Sai tu ben significarmelo?</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ARALDO</speaker>
+               <lg n="480-481">
+                  <milestone unit="card" n="480" resp="Smyth"/><l n="549">I duci delle navi anche superstiti,</l>
+                  <l n="550">confusamente, senza ardire, dove</l>
+                  <l n="551">soffia la brezza, si volgono a fuga.</l>
+               </lg>
+               <lg n="482-487">
+                  <l n="552">Quel che restò de le terrestri schiere,</l>
+                  <l n="553">perí nel suolo dei Beoti:</l>
+                  <l n="554">questi</l>
+                  <l n="555">travagliati da sete intorno al fiotto</l>
+                  <l n="556">delle sorgive: estenuati quelli,</l>
+                  <l n="557">senza anelito.</l>
+                  <l n="558">E quindi il suol di Fòcide,</l>
+                  <l n="559">e la dorica terra attraversiamo,</l>
+                  <l n="560">e il seno di Malía, dove col flutto</l>
+                  <l n="561">benigno i piani irriga lo Spercheo.</l>
+               </lg>
+               <lg n="488-491">
+                  <l n="562">Quivi, stremati d'ogni cibo, il piano</l>
+                  <l n="563">li accoglieva d'Acaia, e le città</l>
+                  <l n="564">della Tessaglia.</l>
+                  <l n="565">I piú quivi morirono</l>
+                  <l n="566">di sete e fame: ché soffrian d'entrambe!</l>
+               </lg>
+               <pb n="112"/>
+               <lg n="492-494">
+                  <l n="567">E alla terra Magnesia e al suol Macedone</l>
+                  <l n="568">giungemmo, sopra il valico dell'Assio,</l>
+                  <l n="569">di Bolbe sopra le palustri canne,</l>
+                  <l n="570">di Pange all'alpe, ed all'Edonia terra.</l>
+               </lg>
+               <lg n="495-505">
+                  <l n="571">In questa notte un Nume suscitò</l>
+                  <l n="572">intempestivo gelo, e le fluenti</l>
+                  <l n="573">tutte agghiacciò del limpido Strimone.</l>
+                  <l n="574">Qui, tal che pria fede negava ai Numi,</l>
+                  <l n="575">allora si prostrò, la terra e il cielo</l>
+                  <l n="576">con le preci invocò.</l>
+                  <l n="577">Quando poi tregua</l>
+                  <l n="578">ebber le tante suppliche, l'esercito</l>
+                  <l n="579">il fiume traversò, fatto cristallo.</l>
+                  <l n="580">Ma sol chi lo varcò prima che i raggi</l>
+                  <l n="581">si spandesser del sole, in salvo giunse:</l>
+                  <l n="582">poiché l'orbe del sol, di raggi ardendo,</l>
+                  <l n="583">e con la vampa il tràmite bruciando,</l>
+                  <l n="584">lo liquefece a mezzo.</l>
+               </lg>
+               <lg n="506-514">
+                  <l n="585">Oh!, fortunato</l>
+                  <l n="586">chi perse prima l'alito vitale!</l>
+                  <l n="587">Quei che, serbati, attinsero salvezza,</l>
+                  <l n="588">traversata la Tracia a gran fatica,</l>
+                  <l n="589">sul patrio suolo sono qui, fuggiaschi;</l>
+                  <l n="590">né molti sono.</l>
+                  <l n="591">Onde può Susa piangere</l>
+                  <l n="592">la sua piú cara gioventú perduta.</l>
+                  <l n="593">Il vero è questo.</l>
+                  <l n="594">Ed altri assai tralascio</l>
+                  <l n="595">mali che un Nume ai Persïani inflisse.</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>CORO</speaker>
+               <lg n="515-516">
+                  <milestone unit="card" n="515" resp="Smyth"/><l n="596">Oh!, con che greve piede, infesto Dèmone,</l>
+                  <l n="597">balzato sei sopra la persa stirpe!</l>
+               </lg>
+            </sp>
+        <pb n="113"/>
+        <sp>
+               <speaker>ATOSSA</speaker>
+               <lg n="517-520">
+                  <l n="598">Misera me, l'esercito è distrutto!</l>
+                  <l n="599">Oh!, visïoni dei notturni sogni,</l>
+                  <l n="600">come palese mi svelaste il danno!</l>
+                  <l n="601">Ahi!, male voi l'interpretaste!</l>
+               </lg>
+               <lg n="521-531">
+                  <l n="602">Pure,</l>
+                  <l n="603">poiché prevalse la sentenza vostra,</l>
+                  <l n="604">voglio prima innalzar preci ai Celesti.</l>
+                  <l n="605">Poi nella reggia tornerò, recando</l>
+                  <l n="606">ai defunti ed a Gea sacri libami.</l>
+                  <l n="607">Gli eventi omai, lo so, compiuti sono:</l>
+                  <l n="608">ma piú fausto il futuro esser potrebbe.</l>
+                  <l n="609">Ora, in questo frangente, o fidi miei,</l>
+                  <l n="610">presto darete a noi fidi consigli.</l>
+                  <l n="611">E il figlio mio, se di me prima giunga,</l>
+                  <l n="612">consolatelo, a casa accompagnatelo,</l>
+                  <l n="613">che nuovo male non s'aggiunga ai mali.</l>
+               </lg>
+            </sp>
+        <note>Atossa parte.</note>
+        <pb n="114"/>
+        <stage type="heading">SECONDO CANTO INTORNO ALL'ARA</stage>
+        <note>I vegliardi, distolta l'attenzione dalla scena, tornano a ricomporsi
+               intorno all' ara per i nuovi canti e le nuove evoluzioni.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="anapests"/>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="532-547">
+                     <milestone unit="card" n="532" resp="Smyth"/><l n="614">O re Giove, dei Persi superbi</l>
+                     <l n="615">le fittissime schiere hai distrutte,</l>
+                     <l n="616">ed Ecbàtana e Susa hai coperto</l>
+                     <l n="617">con caligine densa di lutto.</l>
+                     <l n="618">Queste donne, i lor veli stracciando</l>
+                     <l n="619">con le morbide mani, partecipi</l>
+                     <l n="620">di tal doglia, cospargono il seno</l>
+                     <l n="621">di lagrime amare.</l>
+                     <l n="622">Con le molli querele, le spose</l>
+                     <l n="623">persïane richiaman gli sposi</l>
+                     <l n="624">e le nozze recenti;</l>
+                     <l n="625">e lasciate</l>
+                     <l n="626">le mollissime coltri dei talami,</l>
+                     <pb n="115"/>
+                     <l n="627">voluttà di lor giovani vite,</l>
+                     <l n="628">s'addoloran con lagno perenne.</l>
+                     <l n="629">Ed anch'io dei perduti la sorte</l>
+                     <l n="630">con querela di lutto deploro.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="kommos"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="548-557">
+                        <milestone unit="card" n="548" resp="Smyth"/><l n="631">Omai, vuoto di popolo,</l>
+                        <l n="632">geme d'Asia il suol tutto.</l>
+                        <l n="633">Serse condusse, ahimè!,</l>
+                        <l n="634">Serse distrusse, ahimè!,</l>
+                        <l n="635">Serse, e sul mar le navi, governarono</l>
+                        <l n="636">verso l'estremo lutto,</l>
+                        <l n="637">perché tuttora Dario</l>
+                        <l n="638">non vedea questa luce,</l>
+                        <l n="639">ai cittadini innocuo</l>
+                        <l n="640">condottiero, ai Susiani amico duce.</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="558-567">
+                        <milestone unit="card" n="558" resp="Smyth"/><l n="641">Guidâr le navi aligere</l>
+                        <l n="642">dalle azzurrine prore</l>
+                        <l n="643">fanti e nocchieri, ahimè!,</l>
+                        <l n="644">nel rovinoso, ahimè!,</l>
+                        <l n="645">cozzo dei rostri, tutti li distrussero!</l>
+                        <l n="646">Appena il mio signore</l>
+                        <l n="647">poteva, a ciò che narrano,</l>
+                        <l n="648">scampare al ionio braccio,</l>
+                        <l n="649">sui piani della Tracia</l>
+                        <l n="650">fuggendo, e sopra vie converse in ghiaccio.</l>
+                     </lg>
+                  </sp>
+        <pb n="116"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="568-575">
+                        <milestone unit="card" n="568" resp="Smyth"/><l n="651">E quei che primi lí caddero, ahimè!,</l>
+                        <l n="652">fu giocoforza abbandonarli, ahi, ahi!,</l>
+                        <l n="653">qua e là per le cicrèe marine. Oh guai!</l>
+                        <l n="654">Lagrima, il cuore morditi</l>
+                        <l n="655">per tanta ira celeste. Ascenda l'ètere</l>
+                        <l n="656">la querela profonda:</l>
+                        <l n="657">lungi con grida flebili</l>
+                        <l n="658">la voce tua miserrima s'effonda.</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="576-583">
+                        <milestone unit="card" n="576" resp="Smyth"/><l n="659">Nel mar travolti orridamente, ahimè!,</l>
+                        <l n="660">dai muti figli dei marosi, ahi, ahi!,</l>
+                        <l n="661">a brani sono lacerati: oh guai!</l>
+                        <l n="662">Tutte le case piangono</l>
+                        <l n="663">i capi loro: orbi dei figli, gemono</l>
+                        <l n="664">per tanta ira celeste,</l>
+                        <l n="665">i vecchi padri ch'odono</l>
+                        <l n="666">tutte queste narrar doglie funeste.</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="584-590">
+                        <milestone unit="card" n="584" resp="Smyth"/><l n="667">Né piú sarà che i popoli</l>
+                        <l n="668">d'Asia il nostro dominio omai sopportino,</l>
+                        <l n="669">che al cenno dei padroni,</l>
+                        <l n="670">i tributi piú rechino;</l>
+                        <l n="671">né innanzi ad essi proni</l>
+                        <l n="672">chineranno la testa:</l>
+                        <l n="673">del potere dei Re, nulla piú resta.</l>
+                     </lg>
+                  </sp>
+        <pb n="117"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="591-597">
+                        <milestone unit="card" n="591" resp="Smyth"/><l n="674">Né piú sarà degli uomini</l>
+                        <l n="675">schiava la lingua: di parlare libero,</l>
+                        <l n="676">il popolo si sfrena;</l>
+                        <l n="677">il giogo, ecco, già frangesi:</l>
+                        <l n="678">nella sanguigna arena</l>
+                        <l n="679">dell'isola d'Aiace</l>
+                        <l n="680">il potere dei Persi infranto giace.</l>
+                     </lg>
+                  </sp>
+        <pb n="118"/>
+        <stage type="heading">SECONDO EPISODIO</stage>
+        <note>Torna la regina Atossa, a piedi, in vesti modeste, seguita da
+               ancelle che portano le offerte per un sacrificio.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="episode"/>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="598-602">
+                     <milestone unit="card" n="598" resp="Smyth"/><l n="681">Chi batte, amici, il tramite dei mali,</l>
+                     <l n="682">sa che gli uomini, allor che il flutto piomba</l>
+                     <l n="683">dei guai sovra essi, d'ogni cosa temono:</l>
+                     <l n="684">se fausto il Nume poi spira, confidano</l>
+                     <l n="685">che soffi sempre il vento di fortuna.</l>
+                  </lg>
+                  <lg n="603-606">
+                     <l n="686">Di terrore per me tutto ora è colmo.</l>
+                     <l n="687">Dinanzi agli occhi, degli avversi Numi</l>
+                     <l n="688">veggo l'opre: alle orecchie un canto suona,</l>
+                     <l n="689">che non è di trionfo.</l>
+                     <l n="690">Oh!, qual tumulto</l>
+                     <l n="691">di guai sgomenta il cuore!</l>
+                  </lg>
+                  <lg n="607-618">
+                     <l n="692">Or, senza cocchi,</l>
+                     <l n="693">senza il fasto di pria, lasciai la reggia;</l>
+                     <l n="694">e batto ancora questa strada; e reco</l>
+                     <l n="695">libami al padre di mio figlio, quali</l>
+                     <l n="696">placan gli estinti: di giovenca pura</l>
+                     <pb n="119"/>
+                     <l n="697">bianco latte soave; e il succo d'api</l>
+                     <l n="698">suggitrici di fiori, il miele fulgido;</l>
+                     <l n="699">e di vergini fonti umide aspergini;</l>
+                     <l n="700">e, pretto umore di selvaggia madre,</l>
+                     <l n="701">questo fulgor d'annosa vite;</l>
+                     <l n="702">e, dolce</l>
+                     <l n="703">fragrante, il frutto della oliva bionda</l>
+                     <l n="704">che rigoglio perenne ha tra le frondi;</l>
+                     <l n="705">e fiori, figli dell'altrice terra,</l>
+                     <l n="706">intrecciati in ghirlande.</l>
+                  </lg>
+                  <lg n="619-622">
+                     <l n="707">Amici, or voi</l>
+                     <l n="708">l'inno intonate che propizi questa</l>
+                     <l n="709">libagïon dei morti; e Dario, il Dèmone</l>
+                     <l n="710">fausto invocate: questi onori agli Inferi,</l>
+                     <l n="711">che li sugga la terra, io verserò.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="623-632">
+                     <milestone unit="card" n="623" resp="Smyth"/><l n="712">O regina, cui venera il popolo</l>
+                     <l n="713">persiano, i libami tu versa</l>
+                     <l n="714">della terra sui talami.</l>
+                     <l n="715">Ai Dèmoni</l>
+                     <l n="716">che guidan gli estinti</l>
+                     <l n="717">chiederem noi frattanto con gl'inni</l>
+                     <l n="718">che sotterra benigni ci siano.</l>
+                  </lg>
+               </sp>
+        <pb n="120"/>
+        <stage type="heading">LAMENTAZIONE FUNEBRE</stage>
+        <note>La regina versa via via i varî libami sopra la tomba di Dario.
+                  I vegliardi accompagnano il sacrificio col loro canto, alternato
+                  fra i due semicori, e che sempre cresce d'intensità. Infine, nel-
+                  l'epodo, i due semicori si fondono.</note>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="628-632">
+                     <l n="719">Orsú via, venerabili Dèmoni</l>
+                     <l n="720">delle tenebre, Ermète, e tu, Gea,</l>
+                     <l n="721">e tu, Re degli estinti, inviateci</l>
+                     <l n="722">alla luce lo spirto di Dario:</l>
+                     <l n="723">ché se v'ha medicina dei mali,</l>
+                     <l n="724">indicarla egli solo potrebbe.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="633-639">
+                        <milestone unit="card" n="633" resp="Smyth"/><l n="725">Ascolti, o beatissimo</l>
+                        <l n="726">Sire, o pari ai Celesti,</l>
+                        <l n="727">me, che con persi limpidi</l>
+                        <l n="728">accenti, alzo dei mesti</l>
+                        <l n="729">lagni i lugubri modi?</l>
+                        <l n="730">lo griderò la mia doglia miserrima:</l>
+                        <l n="731">tu di sotterra m'odi?</l>
+                     </lg>
+                  </sp>
+        <pb n="121"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="640-646">
+                        <milestone unit="card" n="640" resp="Smyth"/><l n="732">O terra, o degli spiriti</l>
+                        <l n="733">Dei condottieri, il duce</l>
+                        <l n="734">che in Susa nacque, il nobile</l>
+                        <l n="735">Re, mandate alla luce</l>
+                        <l n="736">dal sotterraneo regno:</l>
+                        <l n="737">mandate il prence onde mai non coprirono</l>
+                        <l n="738">le zolle altro piú degno!</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="647-651">
+                        <milestone unit="card" n="647" resp="Smyth"/><l n="739">Diletto l'uomo, e pur diletto il tumulo</l>
+                        <l n="740">dov'è la cara sua virtú racchiusa.</l>
+                        <l n="741">Aidonèo, Aidonèo, fa' tu che libero</l>
+                        <l n="742">l'unico re di Susa,</l>
+                        <l n="743">salga alla luce, Dario, Dario. Ahimè!</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="652-656">
+                        <milestone unit="card" n="652" resp="Smyth"/><l n="744">Ch'ei non condusse mai dei Persi il popolo</l>
+                        <l n="745">al guerresco sterminio, alla sconfitta:</l>
+                        <l n="746">esso fu detto, e fu Divin consiglio:</l>
+                        <l n="747">ché per la via diritta</l>
+                        <l n="748">sempre guidar seppe sue genti. Ahimè!</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="657-663">
+                        <milestone unit="card" n="657" resp="Smyth"/><l n="749">O nostro antico principe,</l>
+                        <l n="750">principe nostro, appari,</l>
+                        <l n="751">giungi, soccorri a me.</l>
+                        <l n="752">Sovra l'orlo del tumulo</l>
+                        <l n="753">poggino i tuoi calzari</l>
+                        <l n="754">di croco: fulga chiara</l>
+                        <l n="755">la tua regal tïara</l>
+                        <l n="756">o innocuo padre, o Dario, accorri! Ahimè!</l>
+                     </lg>
+                  </sp>
+        <pb n="122"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="664-671">
+                        <milestone unit="card" n="664" resp="Smyth"/><l n="757">Odi i novelli spasimi,</l>
+                        <l n="758">odi il recente duolo:</l>
+                        <l n="759">móstrat, o Re dei Re!</l>
+                        <l n="760">D'una stigia caligine</l>
+                        <l n="761">su noi si addensa il volo:</l>
+                        <l n="762">tutti caddero spenti</l>
+                        <l n="763">i giovani fiorenti:</l>
+                        <l n="764">o innocuo padre, o Dario, accorri! Ahimè!</l>
+                     </lg>
+                  </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="epode"/>
+        <sp>
+                     <speaker>CORO</speaker>
+                     <lg n="673-680">
+                        <milestone unit="card" n="673" resp="Smyth"/><l n="765">Ahimè, ahimè,</l>
+                        <l n="766">tu pel cui fine tanto</l>
+                        <l n="767">versâr gli amici pianto,</l>
+                        <l n="768">nostro Re, nostro Re,</l>
+                        <l n="769">perché mai questo duplice</l>
+                        <l n="770">error sovra il tuo regno ora s'abbatte!</l>
+                        <l n="771">Ahi, le nostre triremi! Ahimè, ridotta</l>
+                        <l n="772">a nulla è omai la flotta!</l>
+                     </lg>
+                     <note>Sopra la tomba appare l'ombra di Dario. I vegliardi cadono
+                        ginocchioni al suolo.</note>
+                  </sp>
+        <pb n="123"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="episode"/>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="681-685">
+                     <milestone unit="card" n="681" resp="Smyth"/><l n="773">O voi fidi tra i fidi, o voi, compagni</l>
+                     <l n="774">della mia gioventú, persi vegliardi,</l>
+                     <l n="775">da qual travaglio afflitta è la città?</l>
+                     <l n="776">Pianti odo, e palme al sen percosse, e al suolo</l>
+                     <l n="777">batter di piedi;</l>
+                     <l n="778">e presso alla mia tomba</l>
+                     <l n="779">veggo, e temo, la sposa, i cui libami</l>
+                     <l n="780">graditi accolsi.</l>
+                  </lg>
+                  <lg n="686-693">
+                     <l n="781">E voi, presso il mio tumulo</l>
+                     <l n="782">piangete, e me chiamate ad alte grida</l>
+                     <l n="783">evocatrici di defunti. Facile</l>
+                     <l n="784">non è l'uscita:</l>
+                     <l n="785">assai piú pronti a prendere,</l>
+                     <l n="786">che a rilasciare i Numi inferni sono.</l>
+                     <l n="787">Pure, prevalsi, ed eccomi.</l>
+                     <l n="788">Ma spacciati</l>
+                     <l n="789">ora, che a me l'indugio non sia biasimo.</l>
+                     <l n="790">Qual nuovo male s'aggravò sui Persi?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="694-696">
+                     <milestone unit="card" n="694" resp="Smyth"/><l n="791">Parlare al tuo cospetto</l>
+                     <l n="792">non ardisco, né in te lo sguardo figgere,</l>
+                     <l n="793">per l'antico rispetto.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="697-699">
+                     <milestone unit="card" n="697" resp="Smyth"/><l n="794">Or poiché di sotto terra sono accorso ai tuoi lamenti,</l>
+                     <l n="795">non mi far lunghe parole, ma favella brevi accenti:</l>
+                     <l n="796">il discorso tuo sia pieno</l>
+                     <l n="797">né l'ossequio a te sia freno.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORIFEO</speaker>
+                  <lg n="700-702">
+                     <milestone unit="card" n="700" resp="Smyth"/><l n="798">Parlar non m'assecuro,</l>
+                     <l n="799">dire dinanzi a te quanto, se l'odano,</l>
+                     <l n="800">troppo agli amici è duro.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="703-708">
+                     <milestone unit="card" n="703" resp="Smyth"/><l n="801">Poi che tanto può l'antica reverenza entro il tuo petto,</l>
+                     <l n="802">parla tu, nobil vegliarda, tu, compagna del mio letto.</l>
+                     <l n="803">Lascia i pianti, lascia gli ululi, parla chiaro. Questi mali</l>
+                     <l n="804">saran quelli a cui soggetti sono pur tutti i mortali:</l>
+                     <l n="805">ché per gli uomini, allorquando la lor vita troppo dura,</l>
+                     <l n="806">e dal mare e dalla terra sorge piú d'una sventura.</l>
+                  </lg>
+               </sp>
+        <pb n="124"/>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="709-714">
+                     <l n="807">Tra i mortali o beatissimo, sin che i rai del sol vedesti,</l>
+                     <l n="808">come fosti invidiato, quando al pari dei Celesti</l>
+                     <l n="809">t'adorò la Persia!</l>
+                     <l n="810">E anche ora ben t'invidio, che al tuo fine</l>
+                     <l n="811">giunto sei prima di scorgere questo abisso di rovine.</l>
+                     <l n="812">Un discorso molto breve basta, o Dario, a dirti il tutto:</l>
+                     <l n="813">il poter dei Persïani potrai dir che sia distrutto.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="715">
+                     <milestone unit="card" n="715" resp="Smyth"/><l n="814">Come? Fu flagel di peste? Fu di popolo sommossa?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="716">
+                     <l n="815">No: ma tutta contro Atene si fiaccò la nostra possa.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="717">
+                     <l n="816">E qual mai dei miei figliuoli, mosse, dimmi, a questa guerra?</l>
+                  </lg>
+               </sp>
+        <pb n="125"/>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="718">
+                     <l n="817">Serse fu, l'impetuoso, che vuotò d'Asia ogni terra.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="719">
+                     <l n="818">E per terra o su navigli prova tal tentò lo stolto?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="720">
+                     <l n="819">E per terra e in mare: doppio dell'esercito fu il volto.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="721">
+                     <l n="820">Come dunque a tanto esercito di pedoni il passo apria?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="722">
+                     <l n="821">Cinse un giogo, all'Ellesponto, di congegni, e aprí la via.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="723">
+                     <l n="822">E tanta opera ardí compiere? Il gran Bosforo rinchiuse?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="724">
+                     <l n="823">Tanto fece: senza dubbio tal pensiero un Dio gl'infuse.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="725">
+                     <l n="824">Ahi! Possente giunse un Dèmone che gli tolse l'intelletto.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="726">
+                     <l n="825">Quale male suscitasse, puoi vederlo dall'effetto.</l>
+                  </lg>
+               </sp>
+        <pb n="126"/>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="727">
+                     <l n="826">E che cosa avvenne adesso che il tuo pianto provocò?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="728">
+                     <l n="827">La rovina della flotta l'altre schiere sterminò.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="729">
+                     <l n="828">Sterminata sotto l'aste fu cosí tutta la gente?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="730">
+                     <l n="829">Tanto, ch'or, deserta d'uomini, piange Susa amaramente.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="731">
+                     <l n="830">Che? L'esercito è perduto, nostro ausilio e baluardo?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="732">
+                     <l n="831">Tutto il popolo dei Battrî sterminato e niun vegliardo.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="733">
+                     <l n="832">Ahi!, tapino! E tanta dunque gioventú per lui si perse!</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="734">
+                     <l n="833">Dicon poi che, derelitto, con pochi altri, il solo Serse...</l>
+                  </lg>
+               </sp>
+        <pb n="127"/>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="735">
+                     <l n="834">Morto anch'egli? Come e dove? O trovò scampo da morte?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="736">
+                     <l n="835">Giunse al ponte che congiunge le due sponde; e fu gran sorte.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="737-738">
+                     <l n="836">È ben certo questo? E salvo fu, giungendo al nostro lido?</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>ATOSSA</speaker>
+                  <lg n="738">
+                     <l n="837">Bene esplicito, e contrasto non si dà, ne corre il grido.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>DARIO</speaker>
+                  <lg n="739-740">
+                     <milestone unit="card" n="739" resp="Smyth"/><l n="838">Come presto degli oracoli giunse, ahimè!, l'esito!</l>
+                     <l n="839">Il Dio il successo dei responsi suscitò sul figliuol mio!</l>
+                  </lg>
+                  <lg n="741-742">
+                     <l n="840">lo speravo che i Celesti ne tardassero l'evento;</l>
+                     <l n="841">ma se tu premi, lo stesso Nume affretta il compimento.</l>
+                  </lg>
+                  <lg n="743-744">
+                     <l n="842">Ecco, un fonte di malanni sugli amici ora s'è aperto:</l>
+                     <l n="843">il figliuol mio lo dischiuse, baldanzoso ed inesperto,</l>
+                  </lg>
+                  <lg n="745-748">
+                     <l n="844">che pensò dell'Ellesponto come un servo il sacro fiume</l>
+                     <l n="845">porre in vincoli, e del Bosforo le fluenti sacre al Nume;</l>
+                     <l n="846">e stringendo ferrei ceppi sopra il tramite marino,</l>
+                     <l n="847">lo mutò, sí che all'esercito grande aprisse ampio cammino.</l>
+                  </lg>
+                  <lg n="749-752">
+                     <l n="848">Ei mortale, soverchiare s'avvisò - stolto consiglio!</l>
+                     <l n="849">tutti i Numi, e fin Posídone.</l>
+                     <l n="850">Di' se stolto fu mio figlio!</l>
+                     <l n="851">Deh!, la pena ond'io raccolsi tanti beni, non profitti</l>
+                     <l n="852">ad estranie genti, al primo che le mani su vi gitti!</l>
+                  </lg>
+               </sp>
+        <pb n="128"/>
+        <sp>
+            <speaker>ATOSSA</speaker>
+            <lg n="753-758">
+               <l n="853">A far ciò l'ardente Serse spinto avean gli amici tristi.</l>
+               <l n="854">Gli diceano che col ferro pei tuoi figli grandi acquisti</l>
+               <l n="855">tu facesti: e ch'egli, invece, per negghienza, entro le mura</l>
+               <l n="856">fa sua guerra, e il ben paterno d'impinguare non si cura.</l>
+               <l n="857">Tal rampogna udendo spesso dai malvagi, divisò</l>
+               <l n="858">tale impresa: le sue schiere contro l'Ellade scagliò.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>DARIO</speaker>
+            <lg n="759-764">
+               <milestone unit="card" n="759" resp="Smyth"/><l n="859">E un'impresa compiuta egli ha grandissima,</l>
+               <l n="860">memorabil mai sempre, e che, piombando</l>
+               <l n="861">su la città di Susa, la vuotò</l>
+               <l n="862">come niuna altra mai, da quando Giove</l>
+               <l n="863">concesse a un uomo questo onor, ch'ei solo</l>
+               <l n="864">con lo scettro regal tutta guidasse</l>
+               <l n="865">l'Asia di greggi altrice.</l>
+            </lg>
+            <lg n="765-772">
+               <l n="866">Il primo duce</l>
+               <l n="867">delle genti fu Medo.</l>
+               <l n="868">Il figliuol suo</l>
+               <l n="869">compie' secondo questo ufficio: e senno</l>
+               <l n="870">reggea la barra del suo cuore.</l>
+               <l n="871">Terzo</l>
+               <l n="872">Ciro beato, che agli amici tutti</l>
+               <l n="873">largí pace, regnando, e il popol Frigio</l>
+               <l n="874">e il Lidio conquistò, la Ionia tutta</l>
+               <l n="875">con la forza cacciò: ché senno aveva,</l>
+               <l n="876">né l'odïava il Nume.</l>
+            </lg>
+            <lg n="773-777">
+               <l n="877">Quarto Ciro</l>
+               <l n="878">diresse poi le genti;</l>
+               <l n="879">e Mardo, quinto,</l>
+               <l n="880">onta alla patria ed agli aviti seggi.</l>
+               <l n="881">Con un inganno lui nella sua reggia</l>
+               <l n="882">spense Artaferne il buono e i suoi compagni</l>
+               <l n="883">nella congiura. Fu Marafi sesto,</l>
+            </lg>
+            <pb n="129"/>
+            <lg n="778-781">
+               <l n="884">e settimo Artaferne.</l>
+               <l n="885">lo poi, la sorte</l>
+               <l n="886">a cui miravo ottenni, e molte gesta</l>
+               <l n="887">compiei con grandi schiere. Oh! ma non mai</l>
+               <l n="888">in tal rovina la città disfeci.</l>
+            </lg>
+            <lg n="782-786">
+               <l n="889">Ma Serse, il figlio mio giovane, pensa</l>
+               <l n="890">giovanilmente, ed i consigli miei</l>
+               <l n="891">non ricorda.</l>
+               <l n="892">Poiché voi ben sapete,</l>
+               <l n="893">vecchi compagni miei: di quanti avemmo</l>
+               <l n="894">questo regio poter, nessuno reo</l>
+               <l n="895">potrà sembrare mai di simil danno!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEO</speaker>
+            <lg n="787-789">
+               <milestone unit="card" n="787" resp="Smyth"/><l n="896">Dario, a qual fine il tuo discorso volgi?</l>
+               <l n="897">Come potrà, dopo tante sciagure,</l>
+               <l n="898">esser felice il popolo dei Persi?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>DARIO</speaker>
+            <lg n="790-792">
+               <l n="899">Piú non movendo ad oste contro l'Ellade,</l>
+               <l n="900">fosse pure piú fitto il nostro esercito:</l>
+               <l n="901">la terra stessa al fianco lor combatte.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEO</speaker>
+            <lg n="793">
+               <l n="902">Come l'intendi? In che modo combatte?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>DARIO</speaker>
+            <lg n="794">
+               <l n="903">I temerarî con la fame stermina.</l>
+            </lg>
+         </sp>
+        <pb n="130"/>
+        <sp>
+            <speaker>CORIFEO</speaker>
+            <lg n="795">
+               <l n="904">Schiere bene ordinate aduneremo!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>DARIO</speaker>
+            <lg n="796-797">
+               <l n="905">Neppur le schiere in Ellade rimaste</l>
+               <l n="906">troveranno il ritorno e la salvezza.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEO</speaker>
+            <lg n="798-799">
+               <l n="907">Che? Dell'Europa non varcò già tutto</l>
+               <l n="908">dei barbari lo stuolo il passo d'Elle?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>DARIO</speaker>
+            <lg n="800-804">
+               <milestone unit="card" n="800" resp="Smyth"/><l n="909">Pochi fra molti, se, badando ai fatti</l>
+               <l n="910">compiuti già, prestar fede conviene</l>
+               <l n="911">ai responsi dei Numi, che s'avverano</l>
+               <l n="912">tutti, non già qual piú qual meno.</l>
+               <l n="913">Eppure, Serse, pasciuto di speranze vane,</l>
+            </lg>
+            <lg n="803-812">
+               <l n="914">una parte lasciata ha dell'esercito</l>
+               <l n="915">scelta.</l>
+               <l n="916">Rimasti sono ove coi rivi</l>
+               <l n="917">l'Asopo bagna la pianura, e abbevera</l>
+               <l n="918">col dolce umor la terra dei Beoti.</l>
+               <l n="919">Patire i mali estremi ancor qui debbono,</l>
+               <l n="920">e riscattar la tracotanza e gli empî</l>
+               <l n="921">divisamenti: essi che, giunti in Ellade,</l>
+               <l n="922">riverenza non ebbero, che gl'idoli</l>
+               <l n="923">non furasser dei Numi, e non ardessero</l>
+               <l n="924">i loro templi.</l>
+               <l n="925">Son l'are scomparse,</l>
+            </lg>
+            <pb n="131"/>
+            <lg n="811-826">
+               <l n="926">i monumenti ai Dèmoni, divelti</l>
+               <l n="927">dalle radici, dalle basi, giacciono</l>
+               <l n="928">spesso confusi.</l>
+               <l n="929">Tanto mal commisero;</l>
+               <l n="930">e non minore è quello ch'ora soffrono,</l>
+               <l n="931">ed altro ancor ne soffriranno;</l>
+               <l n="932">e tutto</l>
+               <l n="933">non han calzato il sandalo dei guai:</l>
+               <l n="934">in parte han fuori il pie': tanta poltiglia</l>
+               <l n="935">sanguinolenta, di Platea la terra</l>
+               <l n="936">cospargerà sotto la lancia dorica.</l>
+               <l n="937">E visibili a ognun, sino alla terza</l>
+               <l n="938">progenie, i muti acervi dei cadaveri</l>
+               <l n="939">insegneranno che sconviene troppa</l>
+               <l n="940">prosunzione ai mortali.</l>
+               <l n="941">E tracotanza,</l>
+               <l n="942">poichè fiorí, fruttifica una spiga</l>
+               <l n="943">di sciagura, e una messe indi raccoglie</l>
+               <l n="944">d'amaro pianto.</l>
+               <l n="945">Or voi, veduti i frutti</l>
+               <l n="946">di queste opere vostre, ricordatevi</l>
+               <l n="947">dell'Ellade e d'Atene;</l>
+               <l n="948">e alcuno piú,</l>
+               <l n="949">la sorte sua tenendo a vil, non voglia</l>
+               <l n="950">bramare il bene altrui, perdere il proprio.</l>
+            </lg>
+            <lg n="827-831">
+               <l n="951">A castigar l'eccesso di superbia,</l>
+               <l n="952">Giove, sereno giudice, presiede.</l>
+               <l n="953">Con i buoni consigli or lui, ch'à d'uopo</l>
+               <l n="954">di far senno, ammonite, ond'ei desista</l>
+               <l n="955">dalle troppo superbe offese ai Numi.</l>
+            </lg>
+            <lg n="832-842">
+               <l n="956">E tu, cara di Serse antica madre,</l>
+               <l n="957">nella casa rientra, e, veste assunta</l>
+               <l n="958">quale conviene, ad incontrare muovi</l>
+               <l n="959">il tuo figliuolo: ché d'intorno a tutto</l>
+               <l n="960">il corpo suo, van lacerati i brani,</l>
+               <pb n="132"/>
+               <l n="961">pel tormento dei guai, delle sue vesti</l>
+               <l n="962">versicolori.</l>
+               <l n="963">Or tu benignamente</l>
+               <l n="964">con le parole mitiga il suo duolo:</l>
+               <l n="965">ch'egli te solo udir sopporterà.</l>
+               <l n="966">Or della terra scendo io fra le tenebre.</l>
+               <l n="967">Voi salvete, o vegliardi;</l>
+               <l n="968">e pur tra i crucci,</l>
+               <l n="969">sin che il dí per voi brilla, in cor gioite.</l>
+               <l n="970">Ché le ricchezze ai morti nulla giovano.</l>
+            </lg>
+         </sp>
+        <note>L'ombra di Dario sparisce.</note>
+        <sp>
+            <speaker>CORIFEO</speaker>
+            <lg n="843-844">
+               <milestone unit="card" n="843" resp="Smyth"/><l n="971">Cruccio mi diè, dei Persïani udire</l>
+               <l n="972">i cordogli presenti ed i futuri.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATOSSA</speaker>
+            <lg n="845-851">
+               <l n="973">Ahi!, quante doglie sciagurate, o Dèmone,</l>
+               <l n="974">piombâr su me! Ma piú questa mi morde:</l>
+               <l n="975">udir da quale disonesta foggia</l>
+               <l n="976">di vesti è cinto il mio figliuolo.</l>
+               <l n="977">Or vado, e, ornati panni presi entro la reggia,</l>
+               <l n="978">tenterò farmi incontro a lui.</l>
+               <l n="979">Ché mai</l>
+               <l n="980">non abbandonerò nella sciagura</l>
+               <l n="981">la creatura a me piú cara.</l>
+               <l n="982">E voi,</l>
+               <l n="983">di fidi ammonimenti in tal frangente</l>
+               <l n="984">date soccorso ai fidi, e il figlio mio,</l>
+               <l n="985">se pria di me qui giunge, confortatelo</l>
+               <l n="986">con i consigli, e alla reggia spingetelo,</l>
+               <l n="987">ché non s'aggiunga ai mali un nuovo male.</l>
+            </lg>
+         </sp>
+        <note>Atossa esce.</note>
+        <pb n="133"/>
+        <stage type="heading">TERZO CANTO INTORNO ALL'ARA</stage>
+        <milestone unit="textpart" resp="Romagnoli" subtype="stasimon" n="3"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="852-857">
+                     <milestone unit="card" n="852" resp="Smyth"/><l n="988">La nostra vita, ahimè,</l>
+                     <l n="989">ebbe ministri l'opulenza e l'ordine,</l>
+                     <l n="990">quando l'antico Re,</l>
+                     <l n="991">scevro d'ogni nequizia, a tutti provvido,</l>
+                     <l n="992">Dario, simile ai Numi, invitto in guerra,</l>
+                     <l n="993">reggea la nostra terra.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="858-863">
+                     <milestone unit="card" n="858" resp="Smyth"/><l n="994">Leggi solide come</l>
+                     <l n="995">torri, tutto reggean: v'erano eserciti</l>
+                     <l n="996">di glorioso nome;</l>
+                     <l n="997">e dalle guerre, senza danno o cruccio,</l>
+                     <l n="998">ci radduceva fra le patrie mura</l>
+                     <l n="999">la prospera ventura.</l>
+                  </lg>
+               </sp>
+        <pb n="134"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="864-870">
+                     <milestone unit="card" n="864" resp="Smyth"/><l n="1000">E quante città prese,</l>
+                     <l n="1001">senza varcare i margini</l>
+                     <l n="1002">dell'Ali, senza muovere</l>
+                     <l n="1003">lungi dal suo paese,</l>
+                     <l n="1004">come le fluviatili</l>
+                     <l n="1005">allo Strimonio intorno,</l>
+                     <l n="1006">presso le coste inospiti</l>
+                     <l n="1007">dove i Traci han soggiorno.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="871-877">
+                     <milestone unit="card" n="871" resp="Smyth"/><l n="1008">E quelle che, lontano</l>
+                     <l n="1009">dal mare, in terra surgono,</l>
+                     <l n="1010">cinte di torri, omaggio</l>
+                     <l n="1011">prestarono al Sovrano;</l>
+                     <l n="1012">e quante d'Elle al valico</l>
+                     <l n="1013">han glorïosa voce,</l>
+                     <l n="1014">e la curva Propontide,</l>
+                     <l n="1015">e del Ponto la foce.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="879-886">
+                     <milestone unit="card" n="879" resp="Smyth"/><l n="1016">E l'isole che cingono</l>
+                     <l n="1017">i promontori delle nostre rive,</l>
+                     <l n="1018">e i flutti le flagellano,</l>
+                     <l n="1019">come Lesbo, d'ulive</l>
+                     <l n="1020">ferace, e Samo e Paro</l>
+                     <l n="1021">e Chio, Nasso, Micòno,</l>
+                     <l n="1022">ed Andro, e la finitima</l>
+                     <l n="1023">Teno, che unite sono.</l>
+                  </lg>
+               </sp>
+        <pb n="135"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="888-896">
+                     <milestone unit="card" n="888" resp="Smyth"/><l n="1024">E quelle che si levano</l>
+                     <l n="1025">in mezzo al mar, tra l'uno e l'altro lido,</l>
+                     <l n="1026">governò. Lenno, e d'Icaro</l>
+                     <l n="1027">la sede, e Rodi, e Cnído,</l>
+                     <l n="1028">e le cittadi ciprie,</l>
+                     <l n="1029">Pafo, Soli, e la figlia</l>
+                     <l n="1030">di Salamina, causa</l>
+                     <l n="1031">del pianto che a noi bagna ora le ciglia.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="epode"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="898-908">
+                     <milestone unit="card" n="898" resp="Smyth"/><l n="1032">E le città, d'Ellèni</l>
+                     <l n="1033">uomini fitte, prospere di beni,</l>
+                     <l n="1034">per le contrade lonie</l>
+                     <l n="1035">sparse, reggeva a suo talento.</l>
+                     <l n="1036">Indomito</l>
+                     <l n="1037">fior di patrie milizie e d'ausiliarie</l>
+                     <l n="1038">commiste schiere aveva in sua possanza.</l>
+                     <l n="1039">Ma tutto, con sembianza</l>
+                     <l n="1040">non ambigua, sconvolto ora dai Superi,</l>
+                     <l n="1041">su noi, già in terra vinti, adesso pesa</l>
+                     <l n="1042">per la marina offesa.</l>
+                  </lg>
+               </sp>
+        <pb n="136"/>
+        <stage type="heading">LAMENTAZIONE</stage>
+        <note>Giunge Serse, disfatto, gemente, avvolto in misere vesti.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="kommos"/>
+        <sp>
+               <speaker>SERSE</speaker>
+               <lg n="909-917">
+                  <milestone unit="card" n="909" resp="Smyth"/><l n="1043">Ahimè! Misero me, qual destino</l>
+                  <l n="1044">odïoso, inatteso, m'oppresse!</l>
+                  <l n="1045">Con quale impeto il Dèmone crudo</l>
+                  <l n="1046">s'abbatte' su la stirpe dei Persi!</l>
+                  <l n="1047">Che farò, tristo me?</l>
+                  <l n="1048">Dei ginocchi</l>
+                  <l n="1049">mi si stempra il vigor, quando miro</l>
+                  <l n="1050">tanti vecchi a me innanzi!</l>
+                  <l n="1051">Deh!, Giove,</l>
+                  <l n="1052">deh!, se avesse anche me fra gli estinti</l>
+                  <l n="1053">seppellito il destino di morte!</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>CORO</speaker>
+               <lg n="918-928">
+                  <l n="1054">Ahi!, Sovrano, le fulgide schiere,</l>
+                  <l n="1055">ahi!, l'onore supremo dei Persi,</l>
+                  <l n="1056">il fulgor dei guerrieri, che il Dèmone</l>
+                  <l n="1057">avverso ha mietuto!</l>
+                  <pb n="137"/>
+                  <l n="1058">Ora piange la terra la sua</l>
+                  <l n="1059">gioventú spinta a morte da Serse,</l>
+                  <l n="1060">che di Persi riempie l'Averno.</l>
+                  <l n="1061">All'Averno discesero, il fiore</l>
+                  <l n="1062">della patria, i valenti nell'arco:</l>
+                  <l n="1063">una fitta miriade di genti</l>
+                  <l n="1064">fu distrutta. Ahi valore, ahi possanza!</l>
+                  <l n="1065">E la terra asïana, con grave,</l>
+                  <l n="1066">con grave rovina,</l>
+                  <l n="1067">o mio Re, sul ginocchio procombe!</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="932-934">
+                     <milestone unit="card" n="932" resp="Smyth"/><l n="1068">Questo io sono: e di pianto son degno,</l>
+                     <l n="1069">tristo me!, che alla nostra progenie</l>
+                     <l n="1070">di sciagura fui causa, e al mio regno.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="935-940">
+                     <l n="1071">Un infausto clamore, al tuo cònsono,</l>
+                     <l n="1072">una voce cantrice di guai,</l>
+                     <l n="1073">un lamento alzerò, come prèfica</l>
+                     <l n="1074">mariàndina, misto di lai.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="941-943">
+                     <milestone unit="card" n="941" resp="Smyth"/><l n="1075">Sí, levate lamento funesto</l>
+                     <l n="1076">con clamore di lutto: ché il Dèmone</l>
+                     <l n="1077">contro noi volge l'impeto infesto.</l>
+                  </lg>
+               </sp>
+        <pb n="138"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="944-949">
+                     <l n="1078">Leverò, certo, gemito lugubre,</l>
+                     <l n="1079">ché per terra e per mare lo schianto</l>
+                     <l n="1080">ci percosse, onde ambasciasi il popolo.</l>
+                     <l n="1081">Sonerà misto al gemito il pianto.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="950-954">
+                     <milestone unit="card" n="950" resp="Smyth"/><l n="1082">Da spalti di navi, sterminio,</l>
+                     <l n="1083">il Marte di Ionia,</l>
+                     <l n="1084">ne fece, che, agli Elleni fido.</l>
+                     <l n="1085">la pianura del mar fra le tenebre</l>
+                     <l n="1086">radeva e l'infausto lido.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="955-961">
+                     <l n="1087">Ahimè!, grida, ahimè!, tutto raccontaci.</l>
+                     <l n="1088">Dov'è or degli amici lo stuolo,</l>
+                     <l n="1089">dove son quei che presso ti stavano,</l>
+                     <l n="1090">qual'era Faràndace,</l>
+                     <l n="1091">Pelagóne, Datàme, Susane,</l>
+                     <l n="1092">Agabàte, Susícane, Psàmmide,</l>
+                     <l n="1093">che lasciar d'Agabàtana il suolo?</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="962-966">
+                     <milestone unit="card" n="962" resp="Smyth"/><l n="1094">Quando io li lasciai, giú da un tirio</l>
+                     <l n="1095">navile piombavano.</l>
+                     <l n="1096">Erravano verso le spiagge</l>
+                     <pb n="139"/>
+                     <l n="1097">Salamine dispersi: i cadaveri</l>
+                     <l n="1098">sbatteano alle rupi selvagge.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="967-973">
+                     <l n="1099">Ahimè, ahi! Dov'è ora il tuo Fàrnuco,</l>
+                     <l n="1100">dove il buono Ariomarde, dov'è</l>
+                     <l n="1101">il signore Sevalca, e Lilaio</l>
+                     <l n="1102">di nobil progenie,</l>
+                     <l n="1103">e Taríbide, Menfi, Masistra,</l>
+                     <l n="1104">Istèmone ov'è, dove Artèmbare?</l>
+                     <l n="1105">Questo io voglio sapere da te.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="974-977">
+                     <milestone unit="card" n="974" resp="Smyth"/><l n="1106">Ahimè, ahi!, procombettero</l>
+                     <l n="1107">tutti ad un colpo. A la vetusta Atene</l>
+                     <l n="1108">odïosa, le palpebre</l>
+                     <l n="1109">fisse, ahi miseri! guizzan su le arene.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="978-986">
+                     <l n="1110">Ed anche quei che al par delle pupille</l>
+                     <l n="1111">era a te caro, e caro a tutto il popolo,</l>
+                     <l n="1112">duce di mille e mille,</l>
+                     <l n="1113">il figliuol di Batànoco,</l>
+                     <l n="1114">Alpisto; e quel di Sèsamo,</l>
+                     <l n="1115">figliuolo di Megàbate</l>
+                     <l n="1116">lasciavi, e Parto, e il grande Ibare? Oh!, gemi,</l>
+                     <l n="1117">gemi! Misero, ahi misero!</l>
+                     <l n="1118">Mali tu parli ai Persi incliti estremi.</l>
+                  </lg>
+               </sp>
+        <pb n="140"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="988-991">
+                     <milestone unit="card" n="988" resp="Smyth"/><l n="1119">Ahimè! Ché tu dei validi</l>
+                     <l n="1120">compagni in me rinnovi ora il desio.</l>
+                     <l n="1121">Mali estremi tu parli, infami, orribili.</l>
+                     <l n="1122">Grida, grida pei miseri il cuor mio.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="992-1001">
+                     <l n="1123">Ed altri invoca poi la nostra brama:</l>
+                     <l n="1124">Mardone, che guidava una miríade,</l>
+                     <l n="1125">e Dïàmide ed Arsame,</l>
+                     <l n="1126">cavalieri destrissimi,</l>
+                     <l n="1127">e il prode Sante ed Ancare,</l>
+                     <l n="1128">e Litimma e Cedàdate,</l>
+                     <l n="1129">e Tolmo insaziabile</l>
+                     <l n="1130">di battaglie. Stupor, stupor mi prende.</l>
+                     <l n="1131">Come mai non seguirono</l>
+                     <l n="1132">te sui carri guerreschi entro le tende?</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="4"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1002-1004">
+                     <milestone unit="card" n="1002" resp="Smyth"/><l n="1133">Cadder quei che guidavano gli eserciti.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="1005-1007">
+                     <l n="1134">Caddero senza gloria!</l>
+                     <l n="1135">Ahimè, Dèmoni, Dèmoni,</l>
+                     <l n="1136">c'infliggeste sciagure inopinate</l>
+                     <l n="1137">immense, quali mai niun vide.</l>
+                  </lg>
+               </sp>
+        <pb n="141"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="4"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1008-1010">
+                     <milestone unit="card" n="1008" resp="Smyth"/><l n="1138">Percossi, dopo lunga ora, noi miseri!</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="1009-1013">
+                     <l n="1139">Percossi, è ben visibile...</l>
+                     <l n="1140">Nuovi guai, nuovi guai...</l>
+                     <l n="1141">fummo: che con malo esito</l>
+                     <l n="1142">ci siamo urtati con la Ionia flotta.</l>
+                     <l n="1143">Ahi!, per la Persa stirpe infausta rotta!</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="5"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1014-1016">
+                     <milestone unit="card" n="1014" resp="Smyth"/><l n="1144">Come no? Tanto esercito</l>
+                     <l n="1145">mi fu cosí percosso!</l>
+                  </lg>
+               </sp>
+        <pb n="142"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="1017-1025">
+                     <l n="1146">Quale mai, grande Alàstore,</l>
+                     <l n="1147">dei Persi non fu morto?</l>
+                     <l n="1148">Vedi? Mi avanza il manto sol che indosso!</l>
+                     <l n="1149">L'ho scorto, ahimè!, l'ho scorto!</l>
+                     <l n="1150">E ancor questa custodia…</l>
+                     <l n="1151">di dardi: una faretra.</l>
+                     <l n="1152">Poco, da grande possa!</l>
+                     <l n="1153">Niun giunse alla riscossa.</l>
+                     <l n="1154">Mai gente lonia in pugna non arretra!</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="5"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1026-1037">
+                     <milestone unit="card" n="1026" resp="Smyth"/><l n="1155">Troppo essa è prode! Subito</l>
+                     <l n="1156">vid'io piombar lo schianto.</l>
+                     <l n="1157">Dici la moltitudine</l>
+                     <l n="1158">dei legni, in fuga spersa?</l>
+                     <l n="1159">Strappai su me, nella sciagura, il manto.</l>
+                     <l n="1160">Ahimè, ahi, sorte avversa!</l>
+                     <l n="1161">Ahi!, ché son poco i gèmiti....</l>
+                     <l n="1162">ché son duplici e triplici....</l>
+                     <l n="1163">la gioia dei nemici, il nostro lutto.</l>
+                  </lg>
+               </sp>
+        <pb n="144"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="6"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="1038-1045">
+                     <milestone unit="card" n="1038" resp="Smyth"/><l n="1164">Infranta, o possa, giaci.</l>
+                     <l n="1165">Nudo son di seguaci....</l>
+                     <l n="1166">ché gli amici trovâr morte nel flutto.</l>
+                     <l n="1167">Piangi, piangi! E alle case volgi il piè.</l>
+                     <l n="1168">Ahi sciagura, ahi sciagura! Ahimè, ahimè!</l>
+                     <l n="1169">Con un tuo grido al grido mio rispondi.</l>
+                     <l n="1170">Misero dono al sofferir dei miseri.</l>
+                  </lg>
+               </sp>
+        <pb n="145"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="6"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1046-1053">
+                     <milestone unit="card" n="1046" resp="Smyth"/><l n="1171">In un solo urlo i gemiti confondi.</l>
+                     <l n="1172">Ahimè, ahimè, ahimè!</l>
+                     <l n="1173">Grave è questa sciagura,</l>
+                     <l n="1174">grave la mia rancura.</l>
+                     <l n="1175">Batti la fronte tua, batti per me!</l>
+                     <l n="1176">Lagrime spando, levo ululi, ahimè!</l>
+                     <l n="1177">Con un tuo grido, al grido mio rispondi!</l>
+                     <l n="1178">Il mio dolore, o Re, m'ispira i gemiti!</l>
+                     <milestone unit="card" n="1054" resp="Smyth"/><l n="1179">Atro clamore dei tuoi gridi effondi.</l>
+                  </lg>
+               </sp>
+        <pb n="146"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="7"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="1055-1065">
+                     <l n="1180">Ahimè, ahimè, ahimè!</l>
+                     <l n="1181">Tra i gemiti la fronte</l>
+                     <l n="1182">segnan le negre impronte.</l>
+                     <l n="1183">Anche il seno percuoti, in misio accento.</l>
+                     <milestone unit="card" n="1060" resp="Smyth"/><l n="1184">Ahi strazio, ahi strazio!</l>
+                     <l n="1185">E il bianco pelo svelliti dal mento!</l>
+                     <l n="1186">Con fiero impeto certo! Oh schianto atroce!</l>
+                     <l n="1187">Alza la voce querula.</l>
+                     <l n="1188">Querula alzo la voce!</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="7"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1060-1065">
+                     <l n="1189">Strappi il peplo ondeggiante la furia delle mani.</l>
+                     <l n="1190">Ahi strazio, ahi strazio!</l>
+                     <l n="1191">I crini svelli, e piangi i Persïani.</l>
+                     <l n="1192">Con fiero impeto urlo! Oh atroce schianto!</l>
+                     <l n="1193">Gli occhi bagna di lagrime.</l>
+                     <l n="1194">Son già molli di pianto.</l>
+                  </lg>
+               </sp>
+        <pb n="148"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="epode"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1066-1076">
+                     <milestone unit="card" n="1066" resp="Smyth"/><l n="1195">Con un tuo grido al grido mio rispondi.</l>
+                     <l n="1196">Ahimè, ahimè!</l>
+                     <l n="1197">Volgi, tra le querele, ai tetti il piede!</l>
+                     <l n="1198">Ahi!, Persia, ahi!, terra dura per chi riede!</l>
+                     <l n="1199">Ahimè, riedere in Susa!</l>
+                     <l n="1200">Diritto è se tu gemi!</l>
+                     <l n="1201">Ahi!, nostra gente, al dolce vivere usa!</l>
+                     <l n="1202">Ahi Persia, terra dura per chi riede!</l>
+                  </lg>
+               </sp>
+        <pb n="149"/>
+        <sp>
+                  <speaker>SERSE</speaker>
+                  <lg n="1074-1075">
+                     <l n="1203">Ahi, ahi, ahi, le triremi!</l>
+                     <l n="1204">Ahi, ahi, ahi, ahi, perduto sono e misero!</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="1076">
+                     <l n="1205">Te guiderò con la querela mia</l>
+                     <l n="1206">lugubre. Batterò teco la via.</l>
+                  </lg>
+               </sp>
+        <note>Con gli ultimi versi il coro è tutto uscito dall'orchestra.</note>
+      </div>
+    </body>
+  </text>
+</TEI>

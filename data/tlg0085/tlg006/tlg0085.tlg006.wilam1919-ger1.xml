@@ -1,0 +1,3629 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Aeschylus, Die Totenspende: German translation</title>
+        <author xml:lang="la">Aeschylus</author>
+        <editor role="translator" ref="https://viaf.org/viaf/2463148">Ulrich von Wilamowitz-Moellendorff</editor>
+        <sponsor>University of Leipzig</sponsor>
+        <principal>Gregory Crane</principal>
+      </titleStmt>
+      <editionStmt>
+        <edition>German translation by Ulrich von Wilamowitz-Moellendorff</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Perseus Digital Library</publisher>
+        <pubPlace>Tufts University</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <idno type="cts">urn:cts:greekLit:tlg0085.tlg006.wilam1919-ger1</idno>
+        <date when="2026">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <editor role="translator">Ulrich von Wilamowitz-Moellendorff</editor>
+            <title level="m">Griechische Tragoedien</title>
+            <edition>8. Aufl.</edition>
+            <imprint>
+              <pubPlace>Berlin</pubPlace>
+              <publisher>Weidmannsche Buchhandlung</publisher>
+              <date from="1919" to="1923">1919–1923</date>
+            </imprint>
+          </monogr>
+          <ref target="https://catalog.hathitrust.org/Record/100223249">HathiTrust catalog record</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The German text, verse layout, page breaks, stage directions, and notes follow Wilamowitz. Smyth card milestones are transferred through the line correspondences in Wilamowitz's Greek edition and carry resp="Smyth".</p>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:milestone[@unit='line' and @n='$1']/ancestor::tei:l[1])">
+          <p>References resolve Wilamowitz line markers in the German translation.</p>
+        </cRefPattern>
+      </refsDecl>
+      <p>Encoded in accordance with EpiDoc and CTS/CITE conventions.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="deu">German</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="eng">English (metadata)</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-16" who="#gcrane">Separated from the composite German translation; corrected language and CTS metadata; regularized as a play-level EpiDoc translation.</change>
+      <change when="2026-08-16" who="#gcrane">Transferred every Smyth card milestone through Wilamowitz's Greek line correspondences and German line markers; generated an auditable alignment report.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front><div type="textpart" subtype="introduction">
+      <pb n="121"/>
+      <head>Einleitung.</head>
+      <p>Die Gesellschaft, die uns die homerischen Gedichte
+          zeigen, ist die ionische, wie sie sich um den Beginn des
+          letzten Jahrtausends v. Chr. an den Küsten Asiens gebildet
+          hatte, als der Einbruch nordischer Stämme die
+          tüchtigsten der bereits hoch civilisierten Bewohner von
+          Hellas über das Meer an den asiatischen Küstensaum
+          geworfen hatte und das Leben sich von neuem aufzubauen
+          zwang. Daher ist die taktische Einheit so zu
+          sagen die Familie des selbstherrlichen Mannes, der über
+          Weiber und Kinder, Hörige und Knechte gebietet. Es
+          steht keinesweges ein Geschlecht oder gar eine staatliche
+          Gemeinschaft über ihm, die gleichberechtigte Glieder
+          umfaßte. Der Staat ist der Mann. Er ist völlig frei,
+          so weit ihm nicht ein anderer ebenso freier Mann entgegentritt.
+          Er hat in sich das Gesetz, so gut wie ein
+          Gott, sein Wille macht Recht und Unrecht, er schuldet
+          niemandem Rechenschaft. Die einzigen Mächte über ihm
+          sind die Mächte in ihm, die Götter an die er glaubt,
+          die Vorstellungen von Mannespflicht und Mannesehre die
+          er anerkennt. Aber selbst diese Mächte kann und wird
+          er oft genug verletzen, wenn Begierde und Leidenschaft
+          in seiner Seele stärker sind als die Achtung vor jenen.
+          Denn eine Gewalt, die ihn zwänge zu thun was er für
+          recht hält, existiert nicht. Hat er aber gesündigt, so
+          <fw type="sig" place="bottom">1*</fw>
+      </p>
+      
+      <pb n="122"/>
+      <fw type="pageNum">122</fw>
+      <p>wird ihn zwar sein Gewissen strafen: was dieser Richter
+          in seiner Brust so nennt, ist Sünde für ihn; aber einen
+          anderen Richter hat er nicht und wird er nie finden.
+          Nun wird einem solchen freien Manne ein Höriger oder
+          gar ein Sohn oder Bruder erschlagen. Das empfindet er
+          als eine Schädigung und einen Schimpf und wird sich
+          rächen so gut er kann. Von dem Stärkeren muß er
+          manche Unbill wohl oder übel tragen; sonst steht das
+          Maß seiner Rache ganz in seinem Belieben. Der Thäter
+          wird trotzen, wenn er seiner Kraft vertraut; er wird vor
+          der Rache fliehen, wenn er sich zu schwach fühlt; gütlicher
+          Ausgleich wird sehr häufig dem einen oder andern
+          Teile oder auch beiden genehm sein. Dann kommt es
+          zum Schadenersatze, bei dem auch das verletzte Gefühl
+          (welches auch immer) seine Genugthuung erhält. Götter
+          und Könige lassen sich durch Gaben überreden und
+          beugen: niemand nimmt daran Anstoß. So kommt es
+          zum Vergleiche, zur Versöhnung. Ganz unbefangen wird
+          es dem grollenden Achilleus vorgehalten, daß doch
+          mancher sich durch Wergeld beschwichtigen ließe und
+          den Mörder seines Sohnes neben sich duldete. Man
+          kann sich eine Entwickelung auf dieser Grundlage sehr
+          wohl vorstellen und in der Durchführung des Abkaufes
+          der Rache einen Fortschritt der Gesittung finden. Wenn
+          sich in der Gesellschaft allmählich eine übergeordnete
+          Instanz ausbildet, die den Mörder zur Leistung, den
+          Geschädigten zur Annahme des Wergeldes zwingt, so
+          wird dem allgemeinen Wohle genug gethan, da sich auf
+          diesem Wege der blutigen Selbsthilfe sehr wohl steuern
+          läßt<note n="1" type="footnote">Analog ist das Kriegsrecht. Der Überwundene ist in
+          des Siegers Hand; der kann töten und schonen. Die Sitte
+          ist immer mehr für Schonung; der Gefangene bringt Geld
+          ein. Es ist Sünde den einmal Begnadigten zu töten; aber
+          er wird Sklave und sehr oft in andere Hände verkauft. Doch
+          <pb n="123"/>
+          <fw type="pageNum">123</fw>
+          auch da tritt die mildernde Sitte, die durch den Eigennutz
+          gefördert wird, dazwischen, und die Auslösung der Gefangenen
+          kommt in Übung, ja der Überwundene schließt eine Art
+          Vertrag mit dem Sieger. Aus den Ansätzen, die die Ilias
+          sehr deutlich zeigt, hat sich das spätere Kriegsrecht entwickelt.</note>).
+      </p>
+      <p>Aber die entscheidende Entwickelung des Rechtes
+          und der Religion ist nicht von Homer und Ionien ausgegangen,
+          zum Segen des Ganzen. Denn diese Denkweise
+          ist profan und im Grunde unsittlich. Sie rechnet
+          ausschließlich mit dem Lebenden; der Tote ist ab und
+          tot, existiert nur als ein zerstörtes Vermögensobjekt mit
+          so und so viel Affektionswert, und es handelt sich darum,
+          wie sich die Lebenden mit dem Verluste abfinden. Nicht
+          einmal zahlreich sind bei Homer die Spuren der höheren
+          und auch älteren Anschauung, des Glaubens an die Macht
+          der Seele des Getöteten, die nicht als ein Schatten im
+          Reiche des Unsichtbaren herumschweift, sondern in dieses
+          Leben hinüberwirkt. Auch das Schwinden dieses Glaubens
+          war ein Erfolg der Geschichte gewesen. Die ersten Siedler
+          an den Küsten Asiens waren ein wildes Geschlecht gewesen,
+          das an dem Vertrauen auf die Götter und die
+          lieben Vorfahren irre geworden war. Hatten sie ihnen
+          doch schlechten Beistand geleistet wider die unheimlichen
+          nordischen Recken, die die Riesenmauern der goldreichen
+          Schlösser brachen. Die Königreiche waren zertrümmert,
+          die Gauverbände gesprengt, die Familien zersplittert.
+          Nur die Gewalt des Stärksten und die List des Verschlagensten
+          hatten vermocht sich aus dieser Sintflut der
+          Zerstörung vereinzelt neben anderen ebenso Vereinzelten
+          an ein fremdes Ufer zu retten. Da sammelten sich die
+          Wolken an anderen Bergeskuppen, andere Quellen tränkten
+          Flur und Vieh, und nur wenige erreichten es, Flur
+          und Vieh mit fester Heimstatt zu besitzen und zu vererben;
+          gar viele verkamen in unstetem Seeräuberleben.
+      </p>
+      <p>Die Völkerwanderung hat die Menschen entwurzelt, aus
+          <pb n="124"/>
+          <fw type="pageNum">124</fw>
+          denen in Asien Aeoler und Ionier geworden sind. Es
+          waren freilich die Stärksten gewesen, die sich so erhielten,
+          und ihre Entwurzelung ist ihnen und uns zum
+          Segen geworden. Denn nimmermehr hätten sie sich ohne
+          den Bruch mit der Tradition zu der Kühnheit des Geistes
+          erheben können, die sie befähigt hat, die befreienden
+          Fragen zu stellen, was ist die Welt, was ist der Mensch,
+          und damit die Wissenschaft zu schaffen, die von aller
+          Konvention und Tradition, von aller Voraussetzung absehen
+          muß. Allein bis auf Thales war ein weiter Weg,
+          und die ionische Wissenschaft tritt hervor, als die Nachkommen
+          der troischen Helden zu Knechten der Asiaten
+          werden. Der Schimmer der homerischen Poesie darf
+          nicht darüber täuschen, daß er eine arge Welt verklärt.
+          Auch zu dem Ionertum, das einen fremden Herrn
+          braucht und erträgt, das über dem Einzelnen das Ganze,
+          über dem Augenblicke die Ewigkeit vergißt, liegen im
+          Homer die Keime.
+      </p>
+      <p>Im Mutterlande haben die Einwanderer die Tradition,
+          die sie störten, nicht ganz unterbrochen, sich ihr vielmehr
+          bald selbst unterworfen. Der Glaube an die Macht
+          der Menschenseele und die Gewalten des Totenreiches
+          ist hier nur immer stärker geworden. Die Kontinuität
+          zu wahren hätten schon allein die ungeheuren Grabbauten
+          der Heroenzeit hingereicht, die einer ohnmächtigen
+          Gegenwart darum nicht minder imponierten, weil die
+          Geschlechter, die ihre Toten darin beigesetzt und verehrt
+          hatten, verkommen oder vertrieben waren. Auch
+          wenn Namen und Gedächtnis der Insassen eines Grabes
+          verweht war, ward dieses selbst nicht entweiht, sondern
+          ward nur unheimlicher, neue Geschichten gaben ihm
+          einen neuen Bewohner, und das Gedächtnis an eine
+          größere und reichere Zeit, mächtige Fürsten und schöne
+          Frauen in goldreichen Sälen, blutige Thaten und die
+          Feuersbrünste der Zerstörung, durch die jene Herrlichkeit
+          <pb n="125"/>
+          <fw type="pageNum">125</fw>
+          zu Grunde gegangen war, lebten mit den Trümmern und
+          Gräbern weiter. Die Vergangenheit war eine Macht;
+          die vergangenen waren also auch keine 'kraftlosen
+          Häupter'. Im Gegenteil, weil die Heldenzeit selbst vorbei
+          war, wurden die Helden zu 'Heroen', der Name des
+          Recken ward zu dem des Geistes'. Vielerorten, selbst
+          in Mykene, hat man 'dem Heros', dem namenlosen
+          Herrn eines Grabes geopfert; vielfach erhielt er neue
+          klangvolle, aber inhaltlose Namen, die nur dem Stande
+          entsprechen; denn der Hellene denkt sich, aus der bezeichneten
+          Ursache, die Gespenster allgemein als gewappnete
+          Krieger.
+      </p>
+      <p>Auch von dem Geisterreich und seinen Mächten hat
+          man hier anders gedacht als Homer. Die Mutter Erde
+          oder die Mütter, die Königin der Toten, die wilde Frau,
+          die mit ihrem Schwarme durch den Bergwald fährt, die
+          Todesgöttin mit ihren Hunden, die um die Kreuzwege
+          springt, auch häßlichere Bilder von gespenstigen Fohlen
+          und Bracken und Vögeln, das sind Bilder, die mehr
+          nach Brockennebeln als nach der Sonne Homers aussehen
+          und die doch in der Phantasie der Athener und
+          der Peloponnesier der Jahrhunderte 9-7 eine bedeutsamere
+          Rolle gespielt haben als die menschenhaften
+          Götter, die gleichzeitig der Homeride mit spielender
+          Phantasie in die Heldensage einführte.
+      </p>
+      <p>Zu dem Glauben an die Macht der Götter und
+          Heroen des Jenseits gehört notwendigerweise der Glaube
+          an die Macht der aus dem Leibe abgeschiedenen Seele.
+          Für die Hellenen des Mutterlandes steht es mit nichten
+          so, daß nur die Überlebenden nach einem Todesfalle
+          sich mit einander abzufinden hätten; dabei wäre just
+          die Hauptperson vergessen, eine der man nichts mehr
+          anhaben kann und die sich ihr Recht zu wahren weiß.
+          Verfügt sie über keinen Arm und kein Schwert mehr,
+          <pb n="126"/>
+          <fw type="pageNum">126</fw>
+          so folgen ihrem Rufe alle Gewalten der Hölle; sie verfügt
+          aber in Wahrheit über diejenigen Lebenden, in
+          denen sie selbst gewissermaßen weiterlebt: die Menschen
+          desselben Blutes. Diesem Glauben haben sich die Hellenen
+          unterworfen, und der Staat, den sie sich machten,
+          ist zunächst ein Organ dieses Glaubens geworden.
+      </p>
+      <p>Sobald aber der Staat einmal da war, beginnt eine Bewegung,
+          die die Gemeinschaft des Rechtes an die Stelle
+          der Gemeinschaft des Blutes, das gemachte 'Gesetz' an
+          die Stelle der 'eingeborenen Art' zur Herrschaft bringt.
+      </p>
+      <p>Erst in diesem vorgeschrittenen Zustande kennen
+          wir die Satzungen des 'heiligen Rechtes', die uns zum
+          großen Teile in dem Wortlaute vorliegen, den sie gegen
+          Ende des siebenten Jahrhunderts in Athen durch Drakon
+          empfangen haben. Sie galten, als Aischylos dichtete;
+          ihr Geist weht in der Orestesfabel, die er dramatisierte,
+          genauer gesagt, der Geist der Religion, welche das
+          drakontische Recht gleichzeitig erfüllte und doch schon
+          milderte. Denn da ist der Staat zwischen den Bluträcher
+          und den Schuldigen getreten. Er hat den Vollzug
+          der Rache auf sich genommen und damit dauernd
+          die fortzeugende Kraft des Blutes beseitigt, die sich an
+          Orestes bewährt. Er hat auch Unterschiede der Blutschuld
+          eingeführt, den unvorsätzlichen und den berechtigten
+          Totschlag, und er zwingt den Bluträcher in solchen
+          Fällen sich bei geringer oder auch ohne Bestrafung des
+          Mörders zu bescheiden. An dem Rechtsprinzip der
+          Blutrache und dem persönlichen Eingreifen des Rächers
+          ist nichts geändert. Das zeigt sich sofort bei der Einleitung
+          der Klage. Der Bluträcher bindet die Gemeinde
+          und den des Mordes Beschuldigten, wenn er proklamiert:
+          „N. N. ist ein Mörder; ich gebiete ihm bei
+          Strafe an Leib und Leben, sich allen reinen Stätten fern
+          zu halten und lade ihn auf den Mordhügel". Dann geht
+          er zum Könige und meldet die Klage an. Der König
+          <pb n="127"/>
+          <fw type="pageNum">127</fw>
+          untersucht die Sache, und der Rat versammelt sich auf
+          dem Hügel, der nach dem Morde heißt; der Verklagte
+          tritt auf den Stein 'des Verbrechens', der Kläger auf
+          den der 'Unversöhnlichkeit'. Sie führen ihre Sache in
+          kurzer Rede; noch nach der Duplik des Klägers darf
+          der Verklagte unbehelligt fortgehen, in ewige Verbannung.
+          Im übrigen entscheidet das Gericht die Thatfrage; dem
+          Schuldigen ist der Tod gewiß. Von einem Abkaufen
+          der Rache ist nur in einem Falle die Rede, wo Mitleid
+          nicht weniger als Eigennutz zu befürchten war, nämlich
+          wenn der Landflüchtige später einmal in den verbotenen
+          Grenzen von dem Rächer betroffen ward. Da wird die
+          Annahme des Wergeldes ausdrücklich verboten<note n="1" type="footnote">Es ist bedeutsam, daß bei Aischylos das Wergeld einmal
+          vorkommt: Klytaimestra will sich mit einem Teile ihrer
+          durch den Mord gewonnenen Schätze Ruhe vor dem Dämon
+          des Hauses erkaufen (Ag. 1579), ein ebenso ohnmächtiger und
+          frivoler Versuch wie die Opfer an Agamemnons Grabe.</note>). Wenn
+          so der Staat den Willen des Rächers selbst in dem
+          Falle band, wo er Vergebung üben wollte, so zeigt sich
+          klar, daß der Wille des Rächers nicht maßgebend sein
+          sollte, und daß die Beseitigung der Selbsthilfe nicht
+          der leitende Gesichtspunkt war. Maßgebend ist der
+          Wille des Toten; daß der Seele ihr Recht werde, daß
+          ihr Groll sich nicht wider die Gemeinschaft wende, der
+          sie anzugehören durch den Tod nicht aufgehört hat, ist
+          der leitende Gesichtspunkt des Gesetzgebers. Der
+          Sterbende kann freiwillig auf die Rache verzichten und
+          sich mit dem Mörder versöhnen, der dann völlig unbehelligt
+          bleibt. Er kann sich einen bestimmten Rächer
+          wählen; das entspricht der mindestens seit Solon geltenden
+          Testierfreiheit. Sonst vererbt sich seine Rache mit
+          seiner Habe genau nach den Regeln der Intestaterbfolge,
+          so daß in einem bestimmten Grade die Bruderschaft
+          eintritt. Der Erbe kann sich der Rachepflicht so wenig
+          <pb n="128"/>
+          <fw type="pageNum">128</fw>
+          entziehen, wie er eines andern Vaters Sohn werden
+          kann. Und so gewiß der Tote nicht wieder lebendig
+          wird, muß die Rache genommen werden: die Seele ist
+          unversöhnlich, und das Todesröcheln des Sterbenden
+          weckt den Rächer. Der Erbe des Blutes und Gutes ist
+          das willenlose Werkzeug der Seele des Toten: sie handelt
+          durch ihn, und man kann sagen, daß die Stimme des
+          Vaters aus dem Sohne spricht. Auf dessen Willen
+          kommt es nicht an. Sein verletztes Gefühl wird wenig
+          danach gefragt haben, ob ihm der Mörder in der Notwehr
+          oder um die Ehre seiner weiblichen Pflegebefohlenen
+          zu retten den Vater erschlagen hat; aber der
+          Staat sagt in diesen Fällen, daß der Tote selbst schuld
+          an seinem Blute sei, und zwingt den Erben zur Versöhnung;
+          die Gesellschaft hat den Einzelnen bezwungen,
+          allein da sie ihm das Recht der Anklage bewahrt hat
+          und auf der Versöhnung besteht, erkennt sie an, daß
+          der Einzelne, nur nicht weil er lebt und geschädigt ist,
+          sondern weil der Geschädigte in ihm lebt, Anspruch auf
+          Rache hat.
+      </p>
+      <p>Die Form der Gesellschaft hat gewechselt,
+          nicht mehr der einzelne selbstherrliche Mann, sondern
+          das Geschlecht ist ihre taktische Einheit. Das Geschlecht
+          wird durch die Gemeinsamkeit des Blutes gebildet;
+          kein Mensch ist individuell frei; er wird in
+          bestimmte unabänderliche Verhältnisse hineingeboren, bestimmten
+          Göttern und Ahnenseelen zugethan und unterthan.
+          Mit dem Blute und Leben erhält er das Anrecht
+          auf den Besitz und den Stand; das fällt ihm wie ein
+          Los zu: Los und Erbe ist im Griechischen dasselbe
+          Wort; und ebenso überkommt er die Rache des vergossenen
+          Verwandtenblutes, seines Blutes, und die Anwartschaft
+          auf die Fortdauer seiner Seele, so lange
+          Träger und Erben seines Blutes auf Erden sind. Es ist
+          die Form der Gesellschaft, wie sie die hellenische
+          Ritterzeit erzeugt hat. Der Staat ist eine Summe von
+          <pb n="129"/>
+          <fw type="pageNum">129</fw>
+          Geschlechtern, und mindestens durch Fiktion wird die
+          Staatsgemeinschaft zu einer Art Blutsverwandtschaft. Es
+          ist natürlich nicht unerhört, daß ein Einzelner die Bande
+          des Blutes sprengt: dann wird er rechtlos, ausgeschlossen
+          aus der Gemeinschaft, ein toller Stier.
+      </p>
+      <p>Ohne Mühe kann man den Zwischentritt des Staates
+          aus dem Blutrechte ausschalten. Dann nimmt sich der
+          Rächer selbst sein Recht, wird also (wie wir z. B. im
+          alten Arabien sehen) jede Blutthat das erste Glied einer
+          nie abgerissenen Kette, vorausgesetzt, daß jeder Bluträcher
+          seine Pflicht thut. Dazu zwingt ihn der Glaube
+          an die Macht der grollenden Seele: das Blut liegt so
+          lange auf ihm, bis er es mit dem Mörderblute abwäscht.
+          Der Geist des Erschlagenen wird ihn mit allen leiblichen
+          und geistigen Plagen strafen, die Gesellschaft wird ihn
+          ausstoßen wie einen tollen Stier. Und wenn sie es nicht
+          thut? Dann wird die grollende Seele alle Höllenmächte
+          wider die Stadt senden, Mißwachs und Viehsterben,
+          Pestilenz und Bürgerzwist. Denn die Blutschuld ist eine
+          Krankheit, die ansteckt und für die es kein Heilmittel
+          giebt als Blut.
+      </p>
+      <p>Eine unerbittliche Folgerichtigkeit liegt in diesen Gedanken,
+          ein Recht ist verkündet, das Recht ist und That
+          wird, mag auch der Einzelne daran zu Grunde gehn.
+          Aber es ist ein Glaube, vor dem nicht nur der feige
+          Pharisäersinn des Bildungsphilisters erschrickt, der so
+          lange wie möglich dem Mammonas dient und, wenn Gott
+          endlich die Zeche macht, einen Sarastro zum Richter
+          wünscht. An diesem starren Rechte müßte die Menschheit
+          wirklich zu Grunde gehn. Es fehlt Gnade, Vergebung,
+          Versöhnung im Himmel und auf Erden. Die
+          Bekenner dieses Glaubens hätten niemals von einem
+          Priamos gedichtet, der die Hand ergriff, die ihm seine
+          Söhne erschlug, noch von einem Achilleus, der seine
+          Tränen mit denen des Priamos mischte. Aber nur die
+          <fw type="sig" place="bottom">Griech. Tragödien. II. 9</fw>
+          <pb n="130"/>
+          <fw type="pageNum">130</fw>
+          Strenge erzieht. Gegenüber der lässlichen Freiheit individueller
+          Willkür, die die homerische Welt so schön und
+          so arg macht, ist der sittliche Fortschritt ungeheuer.
+          Der Mensch muß durch die Gattungs- und Standesmoral
+          hindurch, ehe er das Gute um seiner selbst willen in
+          Freiheit thun kann. Jeder Mensch muß es zu jeder Zeit,
+          und wehe der Gesellschaft, die aus feiger Schwäche das
+          Joch vom Nacken der Unreifen nimmt. Die Menschheit
+          im ganzen hat diese Erziehungszeit auch durchgemacht.
+          Wohl ist ihr Ziel erst erreicht, wenn die Seele ihrer
+          Gotteskindschaft bewußt wird und dem guten Gotte ähnlich
+          zu werden als Zweck ihres Lebens erkennt: aber
+          segnen soll sie die Hand des grausamen Gottes, der die
+          eigenwilligen, unerzogenen Menschenkinder zwang, sich
+          zunächst unter sein Joch zu beugen, ihren Willen dahin
+          zu geben an den Willen des Gesetzes, und sich selbst
+          nicht als freie und ganze Existenzen, sondern als Glieder
+          und Organe ihrer Blutsgemeinschaft zu empfinden.
+      </p>
+      <p>Ein solches Joch machen sich die Menschen nicht;
+          das muß ihnen aufgelegt werden. Eine solche Lehre
+          bildet sich nicht spontan als ein Herkommen; das ist
+          ein Gesetz, das einmal gegeben ist: die Offenbarung ist
+          gekommen, und dem Gotte, der sich offenbarte, haben
+          sich die Herzen erschlossen.
+      </p>
+      <p>Wer war dieser Gott? Das
+          war 'der Gott', wie die Hellenen des Mutterlandes sagen,
+          der delphische Apollon, der Verkünder und Deuter des
+          heiligen Rechtes, die größte moralische Macht in diesen
+          Landen, auch von weitreichendem politischen Einflusse
+          und doch ohne jede andere als moralische Begründung
+          dieses Einflusses.
+      </p>
+      <p>Von Athen wissen wir nun, daß der Gott diese Stadt
+          einmal so zu sagen sich zu eigen gemacht hat, indem er
+          selbst der Ahn ihrer Bürger (d. h. des damals allein berechtigten
+          Adels) ward. Dieses Volk ward in neue Abteilungen
+          gegliedert, nach fiktiver Blutsverwandtschaft,
+  
+          
+      <pb n="131" facs="#139"/>
+    <fw type="pageNum" place="top-left">131</fw>
+    es sendet alljährlich einen 'heiligen Merker' zur Fest-versammlung der Zugewandten des Gottes, zinst ihm von der Kriegsbeute und ist ihm in heiliger Sache zur Heeres-folge verpflichtet. Es ist eine Oberhoheit, begründet nicht auf irdische Übermacht, sondern auf die Offenbarung himmlischer Macht und Reinheit. Wie das reine Feuer für die himmlischen Altäre von der ewigen Flamme in Delphi feierlich geholt werden muß, so haben Jahr-hunderte lang nicht nur viele Tausende in privaten Fragen den Rat des Gottes eingeholt, sondern hat sich der Staat der Athener an sein unverbrüchlich bindendes Wort als letzte Instanz gewendet.</p>
+    <p>Der Glaube an die Weisheit und Macht des Gottes reicht im 6. Jahrhundert weit über die Grenzen der helle-nischen Zunge. Herodotos ist voll von Geschichten, die des Gottes Weisheit und Macht illustrieren, häufig mit moralischem und erbaulichem Beigeschmack. Und doch ist zwar der Glaube in den Herzen der Gläubigen noch echt, in Delphi aber sitzt nun eine kluge und berechnende Priesterschaft, die diesen fremden Glauben mit überlegener Schlauheit ausnutzt. Das Geld für den prächtigen Tempel ist nicht viel ehrbarer zusammengebracht als das für die Peterskirche. Und der Tempel war kaum fertig, da ver-riet der Gott sein Volk in den Stunde der Gefahr, weil er den Sieg der Perser erwartete und das Geschick seines verbrannten milesischen Tempels für den delphi-schen fürchtete. Trotzdem siegte sein Volk und weihte dem Verräter den Zehnten der Beute: so groß war der Glaube, so wenig verdiente dieser Gott noch den Dank.</p>
+    <p>Wir sind gewohnt, die Macht des delphischen Apollon als eine gegebene Größe hinzunehmen, ohne viel zu fragen, was denn die Hellenen zu seiner Anerkennung getrieben habe, ja ohne uns viel darüber zu verwundern. Und doch versagt jede materielle Erklärung; keine poli-tische oder wirtschaftliche Macht hat sie gezwungen, und</p>
+    <fw type="sig" place="bottom">9*</fw>
+    <pb n="132" facs="#140"/>
+    <fw type="pageNum" place="top-left">132</fw>
+    <p>wie hoch man immer die Tradition, die Gewohnheit ver-anschlagt, es ist schon schlimm, aus dieser allein die Stellung erklären zu wollen, die Pindaros, Sokrates, Platon zu dem Gotte nehmen, und für die Entstehung dieser Tradition ist damit überhaupt nichts gesagt. Wenn ein Weib an bestimmten Tagen auf einen Dreifuß gesetzt wird und Orakel giebt, die von Priestern in Verse gesetzt werden, wenn diese Priester die Befragung ihres Gottes reglementieren und, so viel Filialen seines Kultes sie auch gründen, ihrer Vermittelung vorbehalten, wenn sie Schätze sammeln und auf Zinsen leihen, dann ist an die Stelle des Gottes eine Kirche getreten, die immer ein sehr irdisches Ding ist, im besten Falle ein getreuer Knecht, der mit dem anvertrauten Golde wuchert (meist für eigene Rechnung): aber das Gold muß da sein, ehe die Knechte mit ihm wuchern können, und der Glaube der Menschen, die nicht den Priester sondern den Gott suchen, ist echter als Gold. Er ist es gewesen, der dem Gotte den Tempel gebaut hat, zuerst im eigenen Herzen. Wo kommt der Glaube her?</p>
+    <p>Apollon war schon früher eine Person und ein großer Gott, ehe sein delphisches Orakel eine Macht ward. Er hat vorher und später an vielen andern Orten auch Orakel gegeben; er ist als Unheilabwender vieler Orten ange-rufen worden, weil er Unheil senden konnte und sandte; man hat ihm auch Sühnfeste gefeiert; er hat auch schon Phoibos geheißen. Und doch war er ein anderer aller Orten außer Delphi. Er stieg zu den Erdentöchtern herab und entledigte sich seiner Nebenbuhler, wenn es noth that, mit Gewalt; er scheute sich nicht den Leichnam Sarpedons aus dem Blute des Schlachtfeldes aufzuheben, Pestpfeile zu schießen und Achilleus konnte ihn 'ver-derblichster aller Götter' nennen. Wenn er Phoibos hieß, so war das viel eher der Blanke als der sittlich Reine. Dazu ist er einmal, nur einmal, geworden, in</p>
+    <pb n="133" facs="#141"/>
+    <fw type="pageNum" place="top-left">133</fw>
+    <p>Delphi. Dorthin wenden sich die Menschen nicht bloß zu erfahren, was ihnen 'besser und zuträglicher' sein wird, sondern mit religiösen und sittlichen Bedenken. Dort wird er der Hüter der Reinheit, dem weder physischer Schmutz noch die häßliche Klage und Trauer nahen darf. Jetzt ist Phoibos der Reine, und alles, was mit ihm in Berührung tritt, muß rein sein: dazu gehört ein reines Gewissen. Wie den andern Göttern fallen ihm auch Hekatomben, aber er erklärt zu wiederholten malen, daß ihm die fromme Gabe des Armen die liebste wäre, er giebt jene tiefsinnigsten Antworten auf die Frage nach dem höchsten Glücke, die in der Solonnovelle Herodots nachklingen, und den Eintretenden begrüßt er mit der tiefen Mahnung 'erkenne dich selbst', d. h. gedenke, daß du ein schwaches irdisches Wesen bist. Ohne Zweifel ist vieles teils ethisch vertieft, teils zu den alten Sprüchen hinzugethan, als fromme Dichter wie Pindaros oder welt- und lebenskundige wie Simonides ethische Fragen er-örterten. Alles was individuelle Freiheit und Sittlichkeit angeht, ist dem Apollon des Geschlechterstaates not-wendig nicht nur fremd sondern feind. Aber der Gott muß doch etwas dafür gekonnt haben, daß von den Tagen der sieben Weisen an bis auf Platon und weiter die Sittenlehre und die sittliche Reinheit zu ihm gehört.</p>
+    <p>So hat sich an dieser einzelnen, mit einem Namen benannten, an einen Ort gebundenen und von hier sich offenbarenden Gottheit die für die Religion entscheidendste Wandlung vollzogen, daß Gott nicht bloß Macht, son-dern Sittlichkeit ist.</p>
+    <p>Vor den Priestern mit ihrer gewerbsmäßigen Spen-dung der Offenbarung, vor der Pythia mit ihrer Be-geisterung auf Kommando zu fester Stunde müssen in oder um Delphi echte Propheten gelebt haben, die der Geist überkam und denen das echte Wort Gottes aus dem Herzen quoll. Und mag auch die Erinnerung</p>
+    <pb n="134" facs="#142"/>
+    <fw type="pageNum" place="top-left">134</fw>
+    <p>an diese bedeutenden Männer und Frauen bis auf schatten-hafte Namen verschollen sein: das Feuer ihres Geistes hat das ganze religiöse Leben der Hellenen erleuchtet und erwärmt. Daß sie ihren Gott, der im Grunde ein neuer war, Apollon nannten, hatte nur den äußerlichen durch Zeit und Ort gegebenen Grund, daß dieser von Alters her in Delphi ein reiches Orakel besaß, das durch Träume wirkte, wie vielerorten in Hellas. Auf diesen ihnen vertrauten Gott führten sie ihre Begeisterung zu-rück, ihm verliehen sie in Wahrheit neuen Geist und neue Macht. Irgendwie ist dann durch einen Akt, dessen Gedächtnis in geschichtlicher Überlieferung verschollen ist, aber in mythischen Bildern dauert, und den wir in dem achten Jahrhundert ansetzen dürfen, das neue Wesen in den Kult von Delphi rezipiert, die Inkubation durch die Befragung der inspirierten Prophetin ersetzt worden. Die Prophetie ist zu einem bürgerlichen Handwerk ge-macht worden. Die Religion als Kirche hat sich weiter verbreitet und bald unter den Umwohnern die Herrschaft erlangt, indem Apollon neben und über die alte Erd-mutter der Thermopylen trat, der ursprünglich der am-phiktionische Bund und auch das Orakel gehört hatte.</p>
+    <p>Eine neue Lehre bedarf einer neuen Form der Mit-teilung, und um in die Breite gehen und dauern zu können, einer gewissen Fixierung. Schon für die Orakel-sprüche selbst hat Apollon sich der von Asien herüber-kommenden epischen Dichtung bedient, und es ist für die komplizierte Kultur schon so alter Zeit höchst cha-rakteristisch, daß der Gott des phokischen Thales sich fremder, überseeischer Sprache und Verskunst bemäch-tigen mußte, um auch nur im Kreise seiner 'Umwohner' allgemein verständlich zu sein. In solchen homerisch stilisierten Sprüchen hat er auch seine sittlichen Ge-bote formuliert; so kann Aischylos auf die Sprüche über die Blutrache gradezu verweisen (279. 314). Zu</p>
+    <pb n="135" facs="#143"/>
+    <fw type="pageNum" place="top-left">135</fw>
+    <p>lernen war diese Technik nur bei den Rhapsoden, die aus Asien stammend oder doch des asiatischen Hand-werks mächtig das Epos auswendig wußten, vortrugen und selbstdichtend vermehrten. Mit der Dichtkunst kam ihr Stoff, der Schatz von geschichtlicher Überlieferung und köstlichster Unterhaltungslitteratur. Auch dies ward allmählich von apollinischem Geiste getränkt, und ein großer Teil dessen, was später selbst auf Homers Namen ging, ist erst in diesen Zeiten im Mutterlande gedichtet und trägt daher vielfach die Spuren der neuen Gesell-schaftsform und der neuen Religion. So ist die ganze schreckliche Sage von Laios, Oedipus, dem Zuge der Sieben gegen Theben und dem Wechselmorde der Brüder im apollinischen Sinne umgedichtet worden und hat so die Form gewonnen, in welcher die Tragiker diese Ge-schichten empfingen und meist auch weitergaben. Hier ward das Geschick von drei Geschlechtern im Gegensatz zu Homer als ein Exempel des Geschlechtsfluches aus-gearbeitet; auch hier war ein Muttermord, der des Alkmaion, ein Exempel der Blutrache, die der Gott forderte und billigte. So ist denn die alte Geschichte, wie Aigisthos mit Klytaimestras Hilfe den Agamemnon erschlug und dann selbst der Rache des Orestes erlag, von einem apollinischen Dichter etwa des achten oder siebenten Jahrhunderts in der neuen Weise erzählt worden, und es gelingt durch umsichtige Benutzung aller Spuren namentlich auch der bildlichen Überlieferung den Inhalt dieses Gedichtes zu erkennen, so daß man ihn nacherzählen darf, obwohl das Gedicht selbst die Zeit des Aischylos kaum überlebt hat.</p>
+    <p>Als Agamemnon von Troia siegreich nach seiner Burg Amyklai in Lakonien heimkehrte, erschlug ihn seine Gattin Klytaimestra mit einem Beile im Bade, nachdem sie ihm ein ungeheueres netzartiges Gewand übergeworfen hatte. Mit ihm fiel Kassandra, die er als</p>
+    <pb n="136" facs="#144"/>
+    <fw type="pageNum" place="top-left">136</fw>
+    <p>Siegesbeute mitgebracht hatte. Klytaimestra war von dem Vetter Agamemnons, Aigisthos, verführt, der an dem Sohne des Atreus seinen Vater Thyestes rächen wollte. Den kleinen Orestes rettete seine Kinderfrau vor dem Morde und ließ ihn durch den treuen Herold seines Vaters, Talthybios, zu Strophios nach Krisa bringen, wo er im Schutze des delphischen Gottes aufwuchs, der ihm, sobald er zum Jüngling herangereift war, die Blut-rache zur unverbrüchlichen Pflicht machte und ihm ge-bot, die übermächtige Gewalt mit List zu bezwingen. So zog er mit Pylades, dem Sohne des Strophios, und mit Talthybios nach Lakonien, wo Aigisthos und Kly-taimestra herrschten. Vor der Stadt traf er am Grabe seines Vaters seine Schwester Elektra mit der alten Amme opfernd. Da die alten Diener zugegen waren, war die Verständigung der Geschwister leicht. Nun konnte ein listiger Plan geschmiedet werden, der den Fremden Zutritt zu den Tyrannen verschaffte, was nur durch Verstellung ging, da jene den Bluträcher fürch-teten und Klytaimestra durch einen Traum gewarnt war. Sobald er ihn zu Gesicht bekam, stieß Orestes den Aigisthos auf dem Throne seines Vaters nieder. Da Pylades ihm beistand, erwehrte er sich ohne Mühe der Trabanten des Tyrannen. Allein Klytaimestra schwang das Beil wider den Sohn; Talthybios entwand es ihr, und Orestes erschlug sie trotz allen Bitten, dem Gotte getreu. Vor der Verfolgung durch die Rachegeister der Mutter schützte ihn der Gott, entsühnte ihn, und so ist er König geworden und hat einen Sohn gezeugt, den er nach seiner That Teisamenos, 'der sich gerächt hat', nannte.</p>
+    <p>Die Geschichte lehrt unverhüllt und mit Berechnung die Pflicht des Erben, das Blut des Vaters unter allen Umständen zu rächen, einerlei, wer dabei fallen muß. Der Gott verlangt es, leitet es, billigt es. Die Ermordung</p>
+    <pb n="137" facs="#145"/>
+    <fw type="pageNum" place="top-left">137</fw>
+    <p>der Mutter ist zwar eine Schuld, ihre Seele sucht Rache an dem Mörder zu nehmen (die Erinyen der Mutter, d. h. die Dämonen, die ihre Flüche wachrufen, würden auch von Homer eingeführt worden sein), aber da inter-veniert der rettende und entsühnende Gott. Er ist in Wahrheit der Handelnde; seiner Verherrlichung gilt das Ganze. Wie die Blutrache in den Geschlechterstaat gehört, so wird uns in dem Erbfluche dieses Geschlechtes wie in dem der Labdakiden vor die Seele geführt, daß der Einzelne mit nichten individuell frei ist, sondern starr und unerbittlich sind die Gesetze des Lebens; aber der sie gegeben hat und über ihre Erfüllung wacht, sichert den Getreuen wider alle Mächte, irdische und unterirdische. Dies die Tendenz, und es ist ein be-zeichnender Unterschied von der homerischen Poesie (darum noch kein Fehler), daß das Gedicht eine Ten-denz hat. Daneben hat es bei Homer die Gestaltungs-kraft sowohl in der Handlung wie in den Personen ge-lernt. Es ist durchaus episch; der Besuch des Grabes, die Schwierigkeiten des Zutritts zum Palaste sind re-tardierende Momente, wie sie der Epiker braucht und die Odyssee mit Kunst anwendet. Die alten Diener und Elektra, die als eine leidenschaftliche und mitleidlose Jungfrau geschildert war (wie sie die dorische Phantasie im Himmel und auf Erden liebt), waren bedeutsame Nebenfiguren, wiederum in der Weise des ausgebildeten Epos.</p>
+    <p>In dieser Gestalt haben die Generationen von Archi-lochos etwa bis auf Aischylos die Geschichte von Orestes gekannt und geliebt. Man las sie und erzählte sie da-neben auch in anderen Fassungen, wie denn die Odyssee natürlich nicht verdrängt ward; in Mykene und Argos wird man den Ruhm der alten Helden für sich bean-sprucht haben; in Athen hielt man daran fest, daß der Abschluß in einer Gerichtsverhandlung vor dem heimischen</p>
+    <pb n="138" facs="#146"/>
+    <fw type="pageNum" place="top-left">138</fw>
+    <p>Areopag stattgefunden hätte, und so wird es mancher-orten an Abweichungen und Abwandelungen nicht gefehlt haben. Aber die delphische Geschichte ward durch den poetischen Wert ihres Inhaltes und durch die Autorität ihres Gottes gehalten: Stesichoros, Simonides, Pindaros haben sich ihr gebeugt. Eine Änderung und Erneuerung kam erst, als das geläuterte sittliche Gefühl die Autorität des delphischen Gottes abschüttelte.</p>
+    <p>Athen hatte den Geschlechterstaat und seine Gesell-schaftsordnung gesprengt und die freie Bürgerschaft und einen wirklichen Staat an ihre Stelle gesetzt. Die Blut-rache war nicht formell aber thatsächlich durch die staatliche Rechtspflege überwunden. Blut um Blut mochte weiter gelten, allein der Staat war dem Rächer in den Arm gefallen und hatte gesprochen: die Rache ist mein, ich will vergelten; und der Staat fragte nicht bloß nach Verwandtenblut, sondern schützte das Leben aller Bürger, bald sogar aller Menschen, selbst der Sklaven. So ward die That des Orestes vielmehr ein Exempel dafür, die entsetzlichen Konsequenzen der Selbsthilfe aufzuzeigen und damit die Segnungen der gegenwärtigen Kultur.</p>
+    <p>Andererseits war die Schätzung der Frau und dessen was wir Familie nennen so sehr gestiegen, daß ein Athener, sobald er sich die sittliche Frage ernsthaft vorzulegen wagte, zu dem Schlusse kommen mußte: Muttermord ist ein so scheußliches Verbrechen, daß es dafür schlechthin keine Entschuldigung giebt. Keine Macht des Himmels kann es sühnen, und wenn es ein Gott gut heißt, so kann das kein guter Gott sein, und das Sittengesetz, das er verkündet, muß unzulänglich sein. Weil er sich zu diesem Glauben durchgerungen hatte, dramatisierte Aischylos diese Geschichte; weil sie in neuem Sinne für ihn exemplifikatorisch war, rückte er den Muttermord ganz in den Vordergrund, während die Blutrache an Aigisthos als Nebensache behandelt ward.</p>
+    <pb n="139" facs="#147"/>
+    <fw type="pageNum" place="top-left">139</fw>
+    <p>Die Mutter ist dem Sohne das schlechthin Heiligste, Unantastbare, in der Mutter verkörpert sich dem Manne die Würde der Frau, die Heiligkeit des Weiblichen.</p>
+    <p>In der Schätzung der Frau erreicht die attische Tragödie eine Tiefe und Reinheit, zu der vorher nur bei Homer Ansätze vorhanden sind, und von der die Menschheit dann wieder auf viele, viele Jahrhunderte herabsinkt. Trotz aller Wildheit der Zeiten, die er schildert, hat Homer Bilder der edelsten Weiblichkeit: die individuelle Ungebundenheit Ioniens ließ auch die Frau zunächst freier hervortreten; aber bald wurden die Ionier von dem Kontagium des Orients verdorben. Schon die Philosophie, selbst die des Platon, beschränkt sich wieder im Leben und Lehren auf die männlichen Kreise und neigt sich bedenklich nach der Seite der dorischen Ideale: sie hat wohl die Gleichberechtigung der Seele auch im weiblichen Leibe anerkannt, aber jede An-erkennung auf Kosten des Geschlechtes sündigt wider die Natur und damit wider der Gottheit ewige Gesetze.</p>
+    <p>Die spätere Poesie steht noch viel tiefer; das neue Lustspiel des Menandros hat zwar die Tradition der Tragödie gewahrt, aber wir kennen es bisher nur unvoll-kommen, und die römische Übersetzung kennt eigentlich nur die Dirne und die keifende Hausehre. Die hel-lenistische Dichtung und ihr römisches Abbild bringt von Neuem und Selbstgefühltem nur Spiele der Sinnlich-keit und des Verstandes; konventionelle Typen haben geringen Wert. Das Leben war gewiß besser als sein Spiegelbild, und die Geschichte ist ungleich reicher an edlen Frauen als die Dichtung. Aber die thatsächlich erreichte Freiheit und Selbständigkeit der Frau hat sie dem Manne nicht ebenbürtig gemacht, weder geistig noch sittlich, und, woran alles liegt: die Heiligkeit der Ehe war verloren gegangen. Das offenbart sich am deutlichsten, als das Christentum in das Leben tritt.</p>
+    <pb n="140" facs="#148"/>
+    <fw type="pageNum" place="top-left">140</fw>
+    <p>Ohne Zweifel wird ein geschichtlich zu sehen gewöhntes Auge der Askese für jene Zeit ihre Berechtigung nicht abstreiten. Die Welt bedurfte eines strengen Zucht-meisters, wie einst der Apollon von Delphi einer gewesen war, um sich aus der zügellosen Sinnenlust und dem schamlosen Laster zu erheben, das die Historiker selt-samerweise wenig betonen, wenn sie die Gründe des Untergangs der römischen Welt aufsuchen. Dabei bleibt es doch ein Schandfleck auf der Moral der alten Kirche, daß sie die Ehe nicht nur nicht gewürdigt hat, sondern daß sich gerade ihre gewaltigsten Vorkämpfer in den ekelhaftesten Schmutz nicht ohne Wohlgefallen verlieren, um die Ehe gegen den widernatürlichen Stand der himmlischen Brautschaft herabzusetzen. Es ist eine wahre Erquickung, daß Augustinus nicht durch die Theorie, sondern durch die eigene Herzenserfahrung dazu gekommen ist, einer der rührendsten Verkünder mütter-licher Erhabenheit zu sein. Aber daran kann er nichts ändern, daß die Dichter Athens in der Wertung der Frau höher stehen als die Philosophie und vollends als das Christentum. Als die Reformation mit dem Glauben brach, in dem ehelosen Stande etwas Höheres zu sehen, hat sie einen Schritt über das Christentum hinaus ge-than, und wenn wir jetzt die Wertung der Frau selbst im Drama Athens unzulänglich finden dürfen, so danken wir das dem protestantischen Pfarrhause, wo die Gattin und Mutter als ebenbürtige Gefährtin des Mannes ihre von der Natur geheiligte Stellung ge-funden hat.</p>
+    <p>Die Zeit des Rittertumes, dessen Ideale Aischylos überkam und überwand, ist die Zeit der Knechtung des Weibes. Das liegt in der Natur des Geschlechterstaates, da das Weib strenggenommen mit der Ehe ihr altes Geschlecht verliert, ohne doch wirklich in das des
+        
+
+   <pb n="141" facs="#149"/>
+
+   Mannes treten zu können<note n="1" place="bottom">Thatsächlich wurden die meisten Ehen innerhalb des Geschlechtes geschlossen: die Unmündigkeit der Frauen ward dadurch nur verstärkt.</note>). Zwar schreibt sich das
+    Götterblut der adligen Herren immer daher, daſs eine
+    Ahnfrau des Geschlechtes die Liebe eines Gottes er-
+    fahren hat, und sie hören gern von ihren Heroinen er-
+    zählen.</p>
+    <p>Das giebt anmutige Schilderungen jungfräulicher
+    Reize, für die die Ritter sehr empfänglich sind, wie
+    Herakles, ihr himmlisches Vorbild. Aber das Weib ist
+    ihnen wesentlich in demselben Sinne ein begehrens-
+    werter Besitz wie der Wein und das Gold. Die herbe
+    männische Jungfräulichkeit imponiert ihnen, weil sie
+    ihnen widersteht; in ihr wird ein Göttliches empfunden,
+    und gern denkt sich der Ritter seinen himmlischen Be-
+    schützer bei der Jagd und im Kampfe als eine kriege-
+    rische Jungfrau, die ihm zur Seite stünde wie Athena
+    dem Herakles.</p>
+    <p>Aber vor der Würde der Frau haben
+    sie geringe Achtung; das Kriegsrecht behandelt sie fort-
+    dauernd als ein Beutestück.</p>
+    <p>Sparta hat die Gedanken
+    dieser Gesellschaft am vollkommensten durchgeführt, die
+    Ehe in brutalster Weise als eine Veranstaltung zur
+    Züchtung gesunder Spartiaten behandelt und den Frauen
+    sogar die Tischgemeinschaft mit ihren Gatten und die
+    Erziehung der Knaben genommen.</p>
+    <p>Wie sollte der junge
+    Spartiat die wirkliche Mutterliebe kennen, wenn er mit
+    dem siebenten Jahre in die 'Herde' trat, in die Dressur
+    des Kadettenkorps, wo ihm in den Jahren der ersten
+    seelischen Regungen nur das Kommando des militärischen
+    Erziehers und der Zuspruch des älteren Kameraden nahe
+    trat.</p>
+    <p>Orestes von Amyklai wusste nicht, was eine Mutter
+    ist. Damit ist keinesweges gesagt, dafs die Frauen in
+    Sparta nicht Mittel und Wege gefunden hätten, ihre
+    Herren zu beherrschen.</p>
+    <p>Im Gegenteil, Aristoteles er-
+    <pb n="142" facs="#150"/>
+    <fw type="pageNum" place="top">142</fw>
+    zählt mit seinem feinen Sarkasmus von der Weiberherr-
+    schaft in Sparta; Aphrodite weiſs den Ares in ihre Bande
+    zu schlagen.</p>
+    <p>Keine Geschichte ist so voll von Ehebruch
+    wie die der vornehmsten Häuser von Hellas, der hera-
+    klidischen Könige, und in keiner wird die entscheidende
+    Initiative so oft in das Frauengemach verlegt. Aber
+    wenn weibliche List und Tücke die plumpe Gewalt der
+    Männer berückt, so rächt sich das Geschlecht mit un-
+    würdigen Waffen, weil ihm seine Würde vorenthalten ist.</p>
+    <p>Der Prophet der dorischen Ideale ist Pindaros, ein
+    ernster Dichter, voll des Bewusstseins, daſs er seinen
+    Stand belehren und erziehen müsse, er selbst auch in
+    seinem Leben ein leuchtendes Vorbild männlicher Tugend.</p>
+    <p>Aber so liebliche Bilder mädchenhafter Reize er ge-
+    zeichnet hat, eine edle Frau giebt es nicht bei ihm;
+    wie die Knaben, die in den Turnspielen unterlegen sind,
+    sich beschämt zur Mutter schleichen, das ist alles, was
+    er von dieser zu sagen weiſs.</p>
+    <p>Alles Gefühl, dem wir
+    den Namen Liebe gewähren können, gilt ausschliesslich
+    Knaben; für das Weib kennt er nur Begierde. Die
+    Ionier Archilochos und Anakreon sind in den meisten
+    Stücken Gegensätze zu Pindar: hierin sind sie ihm gleich.</p>
+    <p>So haben denn erst Aischylos, von dem es heifst, dafs
+    er nie ein liebendes Weib geschaffen hätte, und Euri-
+    pides, den sie einen Weiberfeind heiſsen, der Natur ihr
+    Recht widerfahren lassen. Sie hegen im Grunde dieselben
+    Empfindungen wie wir, mag auch der Ausdruck durch die
+    Macht der unfreien Sitte und der niemals abgerissenen
+    Tradition vielfach fremdartig scheinen.</p>
+    <p>Weil er die Frau anerkannte, war das erste für
+    Aischylos: was Orestes thut, ist Sünde. So mächtig ist
+    ihm diese Wahrheit, daſs sie, zuweilen fast störend,
+    mitten in die Mahnung zur Rache hineintönt.</p>
+    <p>Deshalb
+    hat er aber auch Klytaimestra zu einem individuellen
+    Charakter erhoben. Der Zuschauer der Choephoren hat
+    <pb n="143" facs="#151"/>
+    <fw type="pageNum" place="top">143</fw>
+    es in dem Stücke vorher gesehen, wie sie durch kluges
+    Wort und überlegenen Willen alle bemeistert hat, den
+    Gatten, den Chor, den Buhlen.</p>
+    <p>Hier erscheint sie nur
+    in ihrer Fürstenwürde, trotz aller Überlegenheit die Form
+    wahrend, daſs ihr Gatte regiere, von dem Tode des
+    Sohnes im Tiefsten erregt, aber das eigene Herz rasch
+    bezwingend, die Liebe zu Aigisthos mit einem Worte
+    gestehend, aber sofort (fast wie Kleopatra bei Shake-
+    speare gegenüber Oktavian) der neuen Situation gemäſs
+    den Sohn zu gewinnen trachtend, eine Meisterin des
+    Heuchelns, mehr als männlichen Willens und Wagens.</p>
+    <p>Aber die Schärfe ihres Verstandes läfst sie auch niemals
+    sich über ihr Thun täuschen; ihr Gewissen ist gleich
+    scharf, und so trägt sie ihre Strafe im eigenen Busen.</p>
+    <p>Sie hat die Kraft zu herrschen wie ein Mann, aber sie
+    fordert Liebe als ein Weib; da sie die nicht bei dem
+    Heldengatten findet, nimmt sie sich einen Fant, der ihr
+    gefällt und ihr gehorcht.</p>
+    <p>Der dummstolze Aigisthos ist
+    als Folie für sie charakterisiert. Dasselbe sind in anderem
+    Sinne die Tochter, die die Mutter gerade deshalb ver-
+    abscheut, weil sie sich ihr zu ähnlich fühlt, und die alte
+    Kinderfrau, die die niedrigsten und doch so beglückenden
+    Mutterpflichten an Orestes geübt hat und diese Sorte
+    Liebe statt ihrer äufsert.</p>
+    <p>So dies Vollbild eines Frauen-
+    charakters in erhabenem Stile: das Widerspiel Penelopes.</p>
+    <p>Alles was sie thut und was sie leidet erscheint als die
+    natürliche und darum unausbleibliche Folge von dem,
+    was sie ist.</p>
+    <p>Orestes ist ein unreifer Jüngling, kaum dafs er
+    mannbar geworden ist, zum Vollzuge der That berufen,
+    die seit Jahren als die Aufgabe seines Lebens auf ihm
+    lag.</p>
+    <p>Er ist kein Charakter, und doch geht das wichtigste
+    der tragischen Handlung in seiner Seele vor sich.</p>
+    <p>Er
+    ist Werkzeug des Apollon, der die Rache gebietet und
+    den Knaben zu der Ausführung immer von neuem an-
+    <pb n="144" facs="#152"/>
+    <fw type="pageNum" place="top">144</fw>
+    reizt. Wir sehen, wie der reine Jüngling dazu gebracht
+    wird, eine That als sittliche Pflicht zu thun, von der ihn
+    sein Gewissen als dem entsetzlichsten Verbrechen zurück-
+    hält.</p>
+    <p>Wir sehen dann, wie er nach der That trotz allem
+    Erfolge, allem Beifall, allen Zusagen des Gottes der
+    Stimme des Gewissens Recht geben muſs und unter
+    dieser Selbstverurteilung zusammenbricht.</p>
+    <p>Damit ist
+    Apollon gerichtet. Vor der Sittlichkeit, die dem unver-
+    dorbenen Herzen eingeboren ist, kann das grausame Ge-
+    bot der Blutrache und der ererbten Sündenpflicht nicht
+    bestehen. Es braucht nicht in lästerlichen Sprüchen
+    formuliert zu werden (wie Euripides diesen Apollon
+    gradezu einen Teufel nennt): wir sehen es genügend in
+    den Seelenqualen des reinen Jünglings vor und nach dem
+    Muttermord, dafs der Gott, der solches fordert, kein
+    guter Gott sein kann, dafs die Menschheit in ihrer reli-
+    giösen Entwickelung über die apollinische Stufe hinaus ist.</p>
+    <p>Trotz dem vielen und Ergreifenden, was sinnfällig in
+    dem Drama geschieht, ist doch die Hauptsache dasjenige,
+    was Orestes innerlich erlebt: das richtig zu erfassen,
+    daran hängt das Verständnis des Dramas.</p>
+    <p>Der Prolog exponiert den Jüngling. Er opfert am
+    Grabe seines Vaters<note n="1" place="bottom">
+        <p>Dies darf man sich nicht dicht neben dem Schlosse
+        denken, obwohl es so auf der Bühne dargestellt ist.</p>
+        <p>Ort der
+        Handlung ist bis V. 550 am Grabe: da existiert die Hausfront
+        der Hinterwand für den Zuschauer nicht; Elektra und der
+        Chor kommen von der Seite, obwohl sie von Hause kommen.</p>
+        <p>Von 653 ab ist die Hinterwand das Schloſs wie im Aga-
+        memnon: da existiert das Grab nicht mehr. Aber es findet
+        kein Scenenwechsel statt, sondern Elektra geht durch die Hinter-
+        wand ab, die damit für den Zuschauer zu existieren beginnt,
+        und der Chor bleibt, obwohl er eigentlich nach Hause zurück-
+        kehren müfste, weil die Scene nun vor dem Hause gedacht
+        wird.</p>
+        <p>Diese ganze Anordnung ist der Praxis des attischen
+        Theaters angemessen, wenn wir sie auch nicht nachmachen
+        könnten.</p>
+    </note>) eine Locke: reichere Gaben hat der
+    <pb n="145" facs="#153"/>
+    <fw type="pageNum" place="top">145</fw>
+    Verstofsene nicht. Er hat eben auch dem heimatlichen
+    Flufsgotte eine Locke geschnitten; dadurch erfahren wir
+    seine eben erst mannbare Jugend: ganz anders als Hamlet
+    ist er entschuldigt, wenn er zögert und wenn er fremdem
+    Impulse folgt. Er hat den Zug unternommen, also den
+    Entschluſs der Blutrache im allgemeinen gefafst, aber
+    das Nähere hat er kaum erwogen: sein Gebet an Zeus
+    hält sich ganz im allgemeinen.</p>
+    <p>Das Einzuglied des Chores und das Opfer Elektras
+    orientieren nicht nur den Zuschauer, sondern auch den
+    lauschenden Orestes über die Lage im Hause. Trotz
+    allem Widerwillen gehorcht das Gesinde dem Gebote der
+    verhafsten Tyrannen, und das Volk liebt sie zwar nicht
+    wie den alten König, aber es beugt sich dem Erfolge.</p>
+    <p>Ein Versuch es zu insurgieren würde keinen Erfolg
+    haben, aber dem Überwinder des Tyrannen werden sie
+    zujubeln.</p>
+    <p>Elektra, so verschüchtert sie auch ist, steht
+    hoch über den Mägden. Sie kann sich nicht entschliefsen,
+    den Auftrag der Mutter zu erfüllen, und indem sie einen in
+    Wahrheit noch unmöglicheren, weil den Vater kränkenden
+    Ausweg vorschlägt, zwingt sie dem Chore die Aufforde-
+    rung ab, zu thun, wozu ihr Herz sie drängt, dem Vater
+    in ihrem Sinne zu opfern.</p>
+    <p>Wie sich die verängsteten
+    Mädchen gegenseitig die Nennung des Orestes, an den
+    sie alle denken, zuschieben, offenbart am besten ihre
+    Seelenstimmung.</p>
+    <p>Als Elektra dann das Gebet spricht,
+    verlangt sie zwar die Heimführung des Orestes, sie fordert
+    auch den Tod der Mörder, aber es liegt ihr ganz fern,
+    in dem Bruder, den sie sich nur als hilflosen Knaben
+    denken kann, oder in irgend einem bestimmten Menschen
+    den Vollstrecker der Rache zu denken.</p>
+    <p>Und auch der
+    Chor hat in dem Grabgesange, mit dem er die reiche
+    rituelle Handlung des Opfers begleitet, kaum bestimmtere
+    Vorstellungen von dem erwarteten Erlöser des Hauses.</p>
+    <p>Der Chor ist für die attische Tragödie nicht nur eine 
+       
+
+        <pb n="146" facs="#154"/>
+   mithandelnde Person, sondern das Sprachrohr für die
+    Empfindungen und Gedanken, von denen der Dichter
+    seine Handlung getragen wissen will. </p>
+    <p>Es ist also für
+    uns und auch für Orestes bedeutsam, daſs wir in dem
+    ersten Liede die feste Zuversicht vernehmen, es gäbe
+    für vergossenes Blut keine Verjährung noch Vergebung. 
+    Darin klingen Motive des Agamemnon nach, wie die
+    Rhythmen und ohne Frage die Musik an die ersten
+    Lieder der vorhergehenden Tragödie erinnerten. Aber
+    die Stimmung dieses Einganges und dieses Opfers steht
+    im Kontraste zu dem ersten Drama, das auch mit einem
+    feierlichen Liede und einem Opfer begann. Das war ein
+    Dankopfer und ein Lied, das von günstigen Vorzeichen
+    anhob und in der Zuversicht auf den Sieg des Guten
+    schloſs. Hier sehen wir schwarzgekleidete Klageweiber
+    und hören und sehen Gebräuche eines altertümlichen,
+    wilden, in Athen von Solon verbotenen Totenkultes. 
+    Kirchhofsluft weht uns aus diesen ersten Scenen an: so
+    exponiert sich die That, die der reine Apollon geboten hat. </p>
+    <p>Als Elektra mit der Locke, die sie auf dem Grabe
+    gefunden hat, heruntertritt, weicht dieser bange Druck; 
+    die Darstellung wird voller, das Gespräch lebhafter. Die
+    hellsichtige Liebe der Schwester hat aus der Locke auf
+    das Kommen des Bruders geschlossen; als die Über-
+    legung sie zwingt, diesen Schluſs als voreilig aufzugeben,
+    erwecken die Fuſsspuren ihre Hoffnung von neuem<note n="1" place="bottom">Über die Erkennungsscene ist viel Thörichtes und
+    Trügliches geredet, schon von Euripides. Ein unverdorbener
+    Leser braucht zwar kaum Nachhilfe, aber es stehe hier die
+    Erklärung. Das Haaropfer zu bringen war Sache der An-
+    verwandten, also rechnet sich Elektra aus, dafs eigentlich
+    nur sie selbst die Locke geopfert haben könnte oder
+    Orestes, den sie nicht nennen will. Daſs sie es nicht
+    gethan haben konnte, sahen die Zuschauer: die Maske
+    der trauernden Frau hieſs nach dem kurzgeschorenen Haare. 
+    Weil wirklich die Wahrscheinlichkeit dafür spricht, daſs 
+    die Locke von Orestes stammt, sieht sie der liebenden
+    Schwester dem eigenen Haare verwandt aus; aber sie legt
+    sie doch wieder hin. Da sieht sie Fufsspuren; die Locke
+    konnte geschickt sein: war etwa der Fuſs, dessen Spuren auf
+    dem Grabe sichtbar waren, der des Orestes? Sie miſst mit
+    den Augen „die Fersen und die Andeutungen, Konturen, der
+    Sehnen" und findet, also nicht in der Gröſse, sondern in dem
+    Bau des Fuſses und in der Art des Trittes eine Ähnlichkeit
+    mit ihren eigenen Fufstapfen. Wie viel die erregte Phantasie
+    des Mädchens, dem vor Aufregung der Atem aussetzt, dazu
+    thut, ist wirklich Nebensache. Es kann ja eigentlich kein
+    anderer sein, der die Locke geopfert hat, der auf das Grab
+    getreten ist, als der Bruder, der Retter. Ihn wähnt ihre
+    Hoffnung an seinen Spuren zu erkennen: ihn verkennt sie,
+    als er leibhaft erscheint, und er bewirkt die Identifikation
+    durch ein Beweisstück, das auch ein Rationalist gelten lassen
+    muſs: sein Mantel ist von Elektra selbst gearbeitet. </note>), 
+    <pb n="147" facs="#155"/>
+    <fw type="pageNum" place="top">147</fw>
+    und nun hält sich Orestes nicht mehr: er hat genug ge-
+    hört, um der Zuverlässigkeit dieser Frauen sicher zu
+    sein, und kann sich entdecken. In der Schwester flammt
+    Siegeshoffnung zugleich mit der Freude des Wiedersehens
+    auf: wenn das Kind, das einst aus dem Hause fort-
+    getragen ward, zu diesem stattlichen Jünglinge erwachsen
+    ist, so scheint ihr damit der Sieg ihres Geschlechtes ge-
+    sichert. Aber der Bruder mäfsigt ihren Jubel, mahnt
+    an die Gefahr und richtet an Zeus Bitten um Beistand,
+    die wieder ganz allgemein gehalten sind. Dann erzählt
+    er von den Sprüchen des Gottes, auf dessen Beistand
+    er zählen kann. Aber wenn er das Entsetzliche ausmalt,
+    was der Gott ihm und der Schwester in Aussicht ge-
+    stellt hat, falls sie die Pflicht der Blutrache versäumen
+    sollten, so merken wir, wie schwer der Druck auf seiner
+    Seele lastet, und es liegt eine grofse Kunst des Dichters
+    darin, daſs er alte Sprüche heranzieht; es ist etwas
+    Fremdes, was den Orestes treibt. Von sich aus würde
+    er gern gegen Aigisthos ziehen, dem er einen frischen
+    überlegenen Hafs widmet; von der Mutter kein Wort. </p>
+    <p>Der Chor, dem nun die Rolle zufällt, die göttliche Mah- 
+    <fw type="sig" place="bottom">10*</fw> 
+    <pb n="148" facs="#156"/>
+    <fw type="pageNum" place="top">148</fw>
+    nung zu vertreten, erinnert auch an alte Sprüche, an
+    das grausame Prinzip der Talion. </p>
+    <p>Wenn es nur auf die Handlung ankäme, könnte der
+    ganze groſse Wechselgesang, der nun folgt, fehlen. Seine
+    Einfügung zeigt am besten, welches Gewicht Aischylos
+    darauf gelegt hat, das Gefühl und die Stimmung des
+    Orestes dem Zuschauer nahe zu bringen. Wehmütige
+    Resignation, ohnmächtige Klagen und Wünsche beginnen;
+    die Mahnungen des Chores an die Macht und Majestät
+    des Vaters im Jenseits verfangen nicht. Erst als der
+    Chorführer die Schande und die Gefahr der Situation mit
+    schneidender Schärfe darlegt, zuckt Orestes zusammen; 
+    er erkennt die Notwendigkeit der Rache an, aber Gott
+    selbst soll rächen. Elektra, immer die leidenschaftlichere,
+    fordert die Zerschmetterung der 'Häupter', wie sie sagt,
+    und der Chor wiederholt seine Mahnung 'der Sterbende
+    zeugt den Rächer'. Da wird Orestes sich dessen be-
+    wuſst, dafs er nur ein Werkzeug in der Hand der Todes-
+    mächte ist, und das schlägt ihn völlig zu Boden: ver-
+    zweifelnd ruft er die Hilfe Gottes an, da er nicht aus
+    noch ein weiſs. Er ist jetzt am weitesten von der That
+    entfernt. Nun wendet Elektra das äusserste Mittel an;
+    sie und auf ihr Geheiſs der Chor schildern in grellen
+    Bildern die Unthaten der Mutter. Lange schweigt Orestes
+    der Dichter durchbricht die Responsion in der Per-
+    sonenverteilung, damit auch wir ungeduldig werden, wenn
+    Orestes nicht am rechten Platze antwortet. Immer neue
+    Strophen folgen: endlich ermannt er sich das Wort zu
+    sprechen, das ihm in den Mund gelegt wird. Er wird
+    sie töten um den Preis des eigenen Lebens, so fügt
+    er schaudernd hinzu. So ist der Entschluſs gefafst: in
+    ihm sind alle sich einig und bekennen ihn in gemein-
+    samem Finale. Doch wunderbar, der Chor fügt eine
+    von den Geschwistern überhörte Strophe hinzu, die über
+    die heilende Blutthat des Erben wehe ruft. So eilig 
+    <pb n="149" facs="#157"/>
+    <fw type="pageNum" place="top">149</fw>
+    hatte es der Dichter, sein Urteil über die Rache dem
+    Zuschauer mitzuteilen. </p>
+    <p>Es folgt die Beschwörung des Vaters, in der wohl
+    des Aigisthos aber nicht der Mutter Erwähnung ge-
+    schieht. Aber nun erfragt Orestes in lebhaftem Ge-
+    spräche den Traum der Mutter, über den nur ganz All-
+    gemeines bisher gesagt war. Die Bedeutung des Vor-
+    zeichens ist unverkennbar, und so giebt diese Offenbarung
+    der Zukunft dem Orestes den Schwung, dessen er bis-
+    her entbehrte: jetzt (das Drama ist auf der Hälfte) ruft
+    er zuversichtlich 'ich erschlage sie', und giebt mit
+    Herrscherstimme den schweigenden Mitwissern ihre Ver-
+    haltungsmafsregeln für die That. Sein Schwanken ist
+    zu Ende: er bewährt sich als Mann. Die List, mit der
+    er sich Zutritt verschafft, wird nur skizziert, die Mit-
+    wirkung selbst Elektras bleibt im Dunkel. Schwierig-
+    keiten sind eigentlich nicht zu überwinden, und wenn
+    später ein geschicktes Eingreifen des Chores bewirkt,
+    daſs Aigisthos ohne Bedeckung vor die Fremden tritt,
+    so hat das geringen Wert für den Zuschauer, der für das
+    Leben und den Sieg des Orestes viel weniger zittert als für
+    seine Seele. Der Dichter hat eben alles entfernt oder als Bei-
+    werk behandelt, was nicht auf die eine Hauptsache Bezug hat. </p>
+    <p>Ihrer Beleuchtung dient das einzige zu allgemeiner
+    Betrachtung sich erhebende Lied, das an dem einzigen
+    Ruhepunkte der Tragödie steht. Es bereitet auf das
+    Erscheinen der andern Hauptperson vor, Klytaimestras. 
+    Indem die dämonische Gewalt des Weibes erst im allge-
+    meinen gezeichnet wird, dann mehrere Sagengestalten
+    zitiert werden, von denen doch keine an die Gröſse dieser
+    Verbrecherin heranreicht, hebt sie sich zu übermensch-
+    licher Höhe, und ihr Fall erscheint als eine Forderung,
+    an der die sittliche Weltordnung hängt. Aber wer bringt
+    sie zu Falle? Nicht Gott, sondern die Hölle, durch ein
+    neues Verbrechen. </p>
+    <pb n="150" facs="#158"/>
+    <fw type="pageNum" place="top">150</fw>
+    <p>Das tönt in unseren Ohren, als die verkappten Phoker
+    am Thore pochen und bald darauf Klytaimestra auftritt,
+    majestätisch, doch ihren echten Schmerz um den Tod
+    des Sohnes so rasch bemeisternd, daſs sie das Herz
+    dessen, der vor ihr steht, nicht in seinem Entschlusse
+    wankend machen kann<note n="1" place="bottom">
+        <p>Aischylos läfst uns nichts davon fühlen, was der An-
+        blick der Mutter in Orestes wecken muſs, und für sie ist
+        und bleibt der Fremde gleichgiltig. In der Bearbeitung von
+        Leconte de Lisle sagt Orestes zu Elektra, als die Mutter aus
+        dem Palaste heraustritt: </p>
+        <lg>
+            <l>Dis-moi, soeur! cette femme qui sort </l>
+            <l>du palais, grande et blanche, et pareille à la Mort, </l>
+            <l>quelle est-elle? quel est son nom? toi qui m'es chère, </l>
+            <l>réponds-moi. Tout mon coeur a frémi. El. C'est ta mère! </l>
+            <l>Kl. Est-ce l'homme! El. C'est lui. Kl. Certes, j'ai vu ces yeux </l>
+            <l>dans mes songes! Cet homme a le front soucieux. </l>
+            <l>C'est quelque mendiant vagabond, plein de honte </l>
+            <l>ou de frayeur. </l>
+        </lg>
+        <p>Das ist deshalb von so groſser Schönheit, weil es aus der
+        Situation sich eigentlich von selbst ergiebt. Die Erinnyes
+        des französischen Dichters zu lesen und mit dem Originale
+        zu vergleichen rate ich nicht nur, weil sie ein echtes Kunst-
+        werk sind, sondern weil ich hoffe, dafs die Schätzung des
+        Aischylos, sowohl seiner dramatischen Kraft wie seiner re-
+        ligiösen Tiefe und seines menschlichen Gefühles dadurch ge-
+        steigert werden wird. Leconte de Lisle ist für den Un-
+        befangenen viel fremdartiger, aber für das klassicistisch
+        geaichte Schulmeisterverständnis ohne Zweifel viel klassischer
+        als der wirkliche Aischylos. </p>
+    </note>). Sie lässt die Fremden in den
+    Männersaal führen und geht in ihre Gemächer: so wissen
+    wir, die Entscheidung bereitet sich vor, aber sie kann
+    nicht unmittelbar erfolgen. Eine Ruhepause oder viel-
+    mehr eine Pause, unsere Spannung zu steigern, tritt ein. 
+    Schon schickt sich der Chor an das Segenslied zu singen,
+    da giebt es ein Intermezzo, das schon oft bei den Phi-
+    listern Kopfschütteln und nicht einmal bei allen, die für
+    groſse Poesie Gefühl haben, Billigung gefunden hat. Die
+    alte Kinderfrau kommt und verplaudert sich vor unseren 
+
+    <pb n="151" facs="#159"/>
+    Ohren: es ist keine Shakespearische Clownscene, denn
+    die Thränen der guten Alten rinnen, damit wir an der
+    Mutter trockne Augen denken, aber der Kontrast der
+    engen Welt und ihrer kleinlichen Sorgen zu dem was,
+    wie wir wissen, auf dem Spiele steht, macht doch einen
+    ähnlichen Effekt wie der Pförtner in Macbeth. Und wie
+    die Schilderung des Sturmes in jener Mordnacht auf die
+    Entdeckung der Blutthat vorbereitet, so giebt das lange,
+    durch wilde Refrains gehobene Segenslied des Chores
+    die vorbereitende Stimmung. Es lagert sich über unserer
+    Seele die Nacht, die der Dichter unserer Phantasie
+    für diese Scene vorschreibt, wenn er sie auch auf der
+    Bühne nicht darstellen konnte. Da sollen aufser Zeus,
+    dem Herrn des Rechtes, die Geister der Ahnen und der
+    gespenstige Hermes helfen, die Mägde des Chores sollen
+    kreischen, wie um Gespenster zu scheuchen, und Orestes
+    soll Mut haben wie Perseus, trotz allen Gorgonen. Han-
+    deln soll er, schlagen soll er: aber was er thut ist Ver-
+    brechen, ist Fluch; der Chor muſs es selbst sagen
+    und doch soll er handeln und schlagen.</p>
+    <p>Rasch wird Aigisthos abgethan; der Chor entweicht:
+    Mutter und Sohn treten einander gegenüber, beide das
+    Äuſserste zu thun und zu leiden gefafst. Noch einmal
+    zuckt Orestes zurück: da spricht Pylades, der so lange
+    stumm gewesen war; in Wahrheit spricht der Gott aus
+    ihm. Orestes gehorcht: aber schon indem er es thut,
+    weifs er, daſs es Sünde ist.</p>
+    <p>Mit lautem Jubel setzt der Chor ein; der Kontrast
+    der Stimmung ist überwältigend. Was er vorträgt ist
+    ganz im Sinne Apollons gehalten. Er hat es geboten,
+    so ist es gut; es war ein Mord, sogar ein hinterlistiger,
+    nicht in ehrlichem Kampfe; aber er geschah in gerechter
+    Sache. So war es gut und wird ganz gut werden. Nur
+    noch der äufseren Sühnung bedarf es, dann sind die
+    <pb n="152" facs="#160"/>
+    <fw type="pageNum" place="top">152</fw>
+    bösen Geister, die alte und neue Verbrechen in dem
+    Hause geweckt haben, vertrieben. Wer das delphische
+    Gedicht in der Erinnerung hatte und sich bei delphischer
+    Religion beruhigte, konnte einen versöhnenden Abschluſs
+    vielleicht nach einem Kampfe mit den Erinyen, die der
+    Bogen des Apollon vertriebe, erwarten. Es kommt
+    anders.</p>
+    <p>Orestes proklamiert seinen Sieg und den Antritt seines
+    Erbes und der Herrschaft über Argos vor dem Volke;
+    der Chor repräsentiert nicht mehr die Sklavinnen des
+    Hauses, sondern die Gemeinde. In seinem Hochgefühle
+    beginnt der Sieger mit Hohn wider die Opfer, an deren
+    Bahre er steht, und läfst das corpus delicti, das verderb-
+    liche Gewand, an dem das Blut seines Vaters klebt,
+    herum reichen, die Schuld der Erschlagnen zu beweisen.
+    Da vollzieht sich an dem Jünglinge, der durch seine
+    Schuld Mann geworden ist, innerlich das Gericht. Bald
+    zeigen sich Spuren davon, daſs seine Stimmung in
+    Schwanken gerät. Mitten in der Anklage der Mutter
+    kommt ihm der Gedanke, daſs wie sie dem Gatten, so
+    ihr der Sohn zum ärgsten Feinde geworden wäre, und
+    das corpus delicti will er plötzlich in einem Prozesse
+    verwenden, der ihm gemacht würde wo, von wem,
+    daran denkt er nicht und es ist nicht auszudenken: es
+    ist das Gericht, in dem das Gewissen Ankläger und
+    Richter zugleich ist.</p>
+    <p>Sein Geist beginnt zu schwindeln.
+    Sein Blick und seine Rede schweift unstät von der Mutter
+    zu dem Gewande hin und her. Er erschöpft sich in
+    bizarren Vergleichungen, in Flüchen, aber der Gedanken-
+    fortschritt ist abgerissen, die Rede stockt häufig. Die
+    Umgebung ist ratlos; der Chor redet banales. Da kommt
+    Orestes damit heraus, was ihm für ein Gedanke be-
+    ängstigend aufgestiegen ist: war die Mutter auch wirklich
+    schuldig? Er hat ihre That nicht angesehen, ist es auch
+    <pb n="153" facs="#161"/>
+    <fw type="pageNum" place="top">153</fw>
+    wahr?<note n="1" place="bottom">In Kleists Schroffensteinern fragt Rupert, als er Agnes
+    getötet zu haben wähnt, sogleich, was sie ihm doch zu Leide
+    gethan hätte, und auch auf die Thaten Sylvesters, die er
+    eben gerächt hat, kann er sich nur mühsam besinnen.</note>). Das Gewand ist da, bezweifeln kann er ihre
+    That nicht; die Kette von begangenen und erlittenen
+    Verbrechen in seinem Hause überschaut er nun ganz;
+    aber was ist dann seine That anders als ein neues Glied,
+    und was dann? Er kann's nicht sagen, nicht ausdenken:
+    der Wahnsinn, das fühlt er, packt sein Herz. Nur mit
+    der äufsersten Anstrengung bringt er es fertig, die Bürger,
+    deren Herrschaft er antreten wollte, zu Zeugen zu nehmen,
+    daſs er in gerechter Sache und auf Anstiften des Gottes
+    gehandelt hat, bei dem er nun die versprochene Sühnung
+    suchen geht, als bittflehender Flüchtling, mit dem Mutter-
+    mord auf der Seele. Bezeugen sollen sie das vor dem
+    Erben, Menelaos, an den nun das Reich fallen muſs: der
+    Same Agamemnons ist verdorrt. Wohl versucht der Chor
+    ihn zu beruhigen: das bewirkt nur, daſs seine Herzens-
+    angst ihm die Erinyen der Mutter vor die Augen zaubert.
+    Gehetzt von diesen Gebilden seines Wahnsinns stürzt er
+    fort, ins Elend.</p>
+    <p>Das hat das Gebot des Gottes erreicht; ein neues
+    Verbrechen ist den alten zugefügt: so lange dieses Ge-
+    setz gilt, zeugt die alte Blutschuld in Ewigkeit fort.
+    Giebt es denn keine Versöhnung? Mit dieser unbeant-
+    worteten Frage sind wir an die Fortsetzung in dem
+    nächsten Stücke gewiesen. So feierlich es auch aus-
+    klingt: die Versöhnung wird uns unzulänglich scheinen;
+    an dem Orestes der Eumeniden werden wir kein Inter-
+    esse mehr nehmen, und vielleicht werden uns die Höllen-
+    wesen in leibhafter Erscheinung minder erschüttern als
+    hier, wo sie nur in der Phantasie des Orestes existieren.</p>
+    <p>Aber diese kurze Scene, in der die Stimmung des Orestes
+    <pb n="154" facs="#162"/>
+    <fw type="pageNum" place="top">154</fw>
+    die ganze Skala der Gefühle durchläuft, vom Siegesstolze
+    zur Todesangst, vom Hohne zum Mitleid, vom Hoch-
+    gefühle des Königs zum Zittern des armen Sünders, diese
+    Scene in ihrer Kürze, in jener künstlerischen Stilisierung,
+    die nur eine auf das Wesentliche zurückgeführte Natur
+    scheint, die eben spezifisch hellenisch ist schaut euch
+    um in der dramatischen Litteratur aller Völker, ob ihr
+    ihresgleichen findet.</p>
+    </div>
+
+    </front>
+    <body>
+      <div type="translation" xml:lang="deu" n="urn:cts:greekLit:tlg0085.tlg006.wilamowitz-ger1"><pb n="156"/>
+    <list><head>PERSONEN.</head>
+      <item>Klytaimestra.</item>
+      <item>Aigisthos.</item>
+      <item>Elektra.</item>
+      <item>Orestes.</item>
+      <item>Pylades.</item>
+      <item>Kilissa, die alte Wärterin des Orestes.</item>
+      <item>Der Pförtner.</item>
+      <item>Ein Diener</item>
+      <item>Der Chor, Sklavinnen des Atreidenhauses.</item>
+      <item>Gefolge Klytaimestras, Volk.</item>
+    </list>
+<pb n="157"/>
+    <stage>Die Hinterwand der Bühne stellt das Schloſs der Atreiden in Argos dar; vor einem der beiden Zugänge befindet sich auf dem runden Platze, der die Bühne bildet, ein umfriedeter Erdhügel, das Grab Agamemnons.
+Orestes, Jüngling von 18 Jahren, in Reisekleidung, ein Schwert an der Seite, steht auf dem Grabe, Pylades, ein älterer Jüngling, ähnlich gekleidet, mit zwei leichten Speeren in der Hand, steht zur Seite.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="1"/><milestone unit="card" n="1" resp="Smyth"/> Du Herr der Erdentiefe, meines Vaters Macht</l>
+        <l><milestone unit="line" n="2"/> ist deines Reiches, Hermes: steh' mir rettend bei.</l>
+        <l><milestone unit="line" n="3"/> Ich fleh' dich an, erbarm' dich meiner. Heimgekehrt</l>
+        <l>bin ich nach Argos, stehe hier im Vaterland,</l>
+        <l>doch niemand grüfst Orestes, Agamemnons Sohn,</l>
+        <l>dem mörderische Hinterlist den Vater schlug</l>
+        <l>und königlichen Erbes Scepter vorenthält..</l>
+        <l>Fern am Parnassos hat das gastverwandte Haus</l>
+        <l>des Strophios der Kindheit Tage mir beschützt,</l>
+        <l>und du Genosse meiner Jugend, Pylades,</l>
+        <l>bist einziger Gefährte mir auch auf dem Weg,</l>
+        <l>den ich verstohlen in die Heimat mir gesucht,</l>
+        <l>berufen durch Apollon zu dem schweren Werk.</l>
+        <l>Allein die Nacht des Todes, da der Vater schläft,</l>
+        <l>durchwanderst von den Göttern, Hermes, du allein,</l>
+        <l>himmlischer Herold: gönne deinen Beistand mir.</l>
+        <l>Auf seines Grabes Hügel tönt der Heroldsruf</l>
+        <l><milestone unit="line" n="5"/> dem Vater, dring' er denn zu ihm, ins Ohr, ins Herz,</l>
+      </lg>
+    </sp>
+<pb n="158"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>und das Gebet des Sohnes nehm' er gnädig auf</l>
+        <l>und gnädig dieses Opfer. Von dem Jünglingshaupt</l>
+        <l><milestone unit="line" n="6"/> schor ich die erste Locke, da des Inachos,</l>
+        <l>des heimatlichen Flusses Welle meinen Fufs</l>
+        <l>benetzte, dankbar, dafs der lebenspendende</l>
+        <l>Urvater mich gedeihen, mich erwachsen liefs,</l>
+        <l>selbst in der Fremde. Diese zweite Locke schnitt</l>
+        <l><milestone unit="line" n="7"/> als Traueropfer ich für dich: dir leg' ich sie</l>
+        <l>aufs Grab, erhab'ner Vater. Da sie deinen Leib</l>
+        <l>in diesen Hügel betteten, da konnt' ich nicht</l>
+        <l>den Abschiedsgrufs dir rufen, konnte nicht die Hand</l>
+        <l><milestone unit="line" n="9"/> zur letzten Huldigung erheben. Kärglich ist</l>
+        <l>auch heut die Gabe des Verstofs'nen; aber führst</l>
+        <l>du mich auf deinen Thron zurück, so sollen dir</l>
+        <l>der reichsten Opfer Ströme rinnen: hochgeehrt</l>
+        <l>wie keiner wirst du wandeln in der Schatten Schar.</l>
+      </lg>
+    <stage>Indem er von dem Grabe heruntersteigt bemerkt er den Zug, der den Zuschauern noch verborgen aus dem entgegengesetzten Gange auf die Bühne zuschreitet.</stage>
+      <lg type="stanza">
+        <l><milestone unit="line" n="10"/> Was muss ich seh'n? Ein Zug von Frauen kommt</l>
+        <l>daher,</l>
+        <l>umwallt von schwarzen Mänteln? Was bedeutet dies?</l>
+        <l>Gilt unsres Hauses Trauer einem frischen Schmerz?</l>
+        <l>Vermut' ich besser, dafs für meinen Vater sie</l>
+        <l><milestone unit="line" n="15"/> die Spende bringen, die des Toten Groll versöhnt?</l>
+        <l>So ist's, gewiss, denn auch Elektra glaub' ich dort,</l>
+        <l>die Schwester, zu erkennen: herbe Trauer hat</l>
+        <l>zu deutlich sie gezeichnet. Zeus, vergönne mir,</l>
+        <l>dafs ich den Vater räche, steh' mir gnädig bei...</l>
+        <l><milestone unit="line" n="20"/> Lass' uns zur Seite tretend lauschen, Pylades;</l>
+        <l>ich muſs erfahren, wem der Frauen Bittgang gilt.</l>
+      </lg>
+    </sp>
+    <stage>Sie treten zur Seite, in den einen der beiden Zugänge, wo sie den Zuschauern verborgen sind. Aus dem andern kommt Elektra, eine Jungfrau, älter als Orestes, mit ganz kurz geschorenem Haare, in schwarzem Trauergewande, ohne jedes Abzeichen, das ihren Stand über die Sklavinnen des Chores erhöbe. Diese haben sich für diesen Gang als Klageweiber gekleidet; einige tragen Krüge mit den Opferspenden; andere schlagen die Brüste, wie die Ceremonie verlangt, u. s. w.</stage>
+<pb n="159"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="22" resp="Smyth"/>Vom Haus geschickt,</l>
+        <l>tragen wir zum Grabe</l>
+        <l>die Spenden; hurt'ger Hände Brüsteschlagen</l>
+        <l>giebt das Geleit.</l>
+        <l>Die Wange zeigt frische Purpurstreifen,</l>
+        <l><milestone unit="line" n="25"/> die Furchen, die der Nagel zog.</l>
+        <l>Das Herz ist, ach, längst gewohnt des Jammers.</l>
+        <l>In Fetzen und Streifen zerflattert der Bausch</l>
+        <l>des Busentuchs.</l>
+        <l>Bittrer Harm,</l>
+        <l>wilder Schmerz</l>
+        <l><milestone unit="line" n="30"/> rifs, zerschlifs den Mantel.</l>
+        <l><milestone unit="card" n="32" resp="Smyth"/>In tiefster Nacht</l>
+        <l>war's; zum Frau'ngemache</l>
+        <l>drang schlummerscheuchend, Schreck und Schauder</l>
+        <l>ein schriller Schrei.</l>
+        <l>weckend</l>
+        <l><milestone unit="line" n="35"/> Die Todesangst schrie in stiller Kammer.</l>
+        <l>Haarsträubend offenbart der Traum</l>
+        <l>des Hauses Not. Gottes voll enthüllen</l>
+        <l>die Seher des Traums des entsetzlichen Sinn.</l>
+        <l>Der Toten Zorn</l>
+        <l><milestone unit="line" n="40"/> tief im Grab</l>
+        <l>grollet grimm dem Mörder.</l>
+        <l>heischt sein Recht,</l>
+        <l><milestone unit="card" n="42" resp="Smyth"/>Nun schickt die Gefahr zu beschwören mich her</l>
+        <l>gedenk' es die Hölle</l>
+        <l><milestone unit="line" n="45"/> mit heuchlerisch schmeichelnden Gaben</l>
+        <l>die Gottverlass'ne.</l>
+        <l>Furchtsam nur</l>
+        <l>sprech'</l>
+        <l>ich's aus.</l>
+        <l>Giebt es denn Sühne für vergoss'nes Blut?</l>
+        <l>Weh ruf ich, weh!</l>
+      </lg>
+    </sp>
+<pb n="160"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Zerschmettert liegt das Königshaus,</l>
+        <l><milestone unit="line" n="50"/> Fluch wohnt am Herde; Finsternis,</l>
+        <l>der Menschheit Grau'n,</l>
+        <l>hüllt uns ein,</l>
+        <l>seit der König starb.</l>
+        <l><milestone unit="card" n="55" resp="Smyth"/>Einst folgte dem mächtig gebietenden Wort</l>
+        <l><milestone unit="line" n="55"/> ehrfürchtigen Volks</l>
+        <l>nie murrender treuer Gehorsam.</l>
+        <l>Das ist vorüber. Furcht allein fühlen sie;</l>
+        <l><milestone unit="line" n="60"/> doch der Erfolg ist höchster Gott der Welt.</l>
+        <l>Vergeltungsschlag,</l>
+        <l>bald kommt er rasch, am hellen Tag;</l>
+        <l>der Aufschub bis zur Dämmerung</l>
+        <l>bringt manchem bittres Weh;</l>
+        <l><milestone unit="line" n="65"/> und manchen auch birgt die Nacht,</l>
+        <l>eh' die Sühne kam.</l>
+        <l><milestone unit="card" n="66" resp="Smyth"/>Wo Blut der Erde Mutterboden sog,</l>
+        <l>unlöschlich schwarz</l>
+        <l>steht die Schuld geschrieben.</l>
+        <l>Vergeltung hebt sich nur den Schuld'gen auf,</l>
+        <l><milestone unit="line" n="69"/> bis voll er steht in der Sünden Blüte.</l>
+        <l><milestone unit="line" n="71"/><milestone unit="card" n="71" resp="Smyth"/> Wenn einmal nur der Jungfrau Gürtel sprang,</l>
+        <l>auf ewig ist's. Rauschten alle Wasser</l>
+        <l>der Welt zusammen auch in einen Strom:</l>
+        <l><milestone unit="line" n="75"/> die Mörderhand</l>
+        <l>wüschen sie vergebens.</l>
+        <l><milestone unit="card" n="75" resp="Smyth"/>Doch ach, uns drückt das Joch des Heimatlosen;</l>
+        <l>in Knechtschaft warfen uns die Götter,</l>
+        <l>und Recht und Unrecht, wie's der Herr gebeut,</l>
+        <l>der Diener muſs es loben.</l>
+        <l>Gehorchen gilt's,</l>
+        <l><milestone unit="line" n="80"/> Gewalt dem Herzen thun,</l>
+        <l>den Hafs verschliefsen.</l>
+      </lg>
+    </sp>
+
+
+    <pb n="161"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Nur unterm Mantel rinnt verstohl'ne Zähre</l>
+        <l>der Schmach des Hauses, und der Reif</l>
+        <l>geheimer Trauer liegt auf unsrer Seele.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="85"/><milestone unit="card" n="84" resp="Smyth"/> Ihr Mägde, wie in unserm Haus ihr willig schafft,</l>
+        <l>wie ihr auf diesem Bittgang mir Geleiter wart,</l>
+        <l>so ratet mir auch hierin: welchen Segenswunsch</l>
+        <l>sag' ich dazu, wenn ich die Spenden auf das Grab</l>
+        <l>ausschütte? Womit sprech' ich meinen Vater an?</l>
+        <l><milestone unit="line" n="90"/> Sag' ich 'dem treuen Gatten schickt das treue Weib</l>
+        <l>dies Opfer' - das die Mutter schickt? Das wag' ich</l>
+        <l>nicht</l>
+        <l>und finde keine Worte: denn es ist das Grab</l>
+        <l>des Vaters, dem die Totenspende rinnen soll.</l>
+        <l>Darf ich die Formel brauchen, die die Sitte heischt</l>
+        <l><milestone unit="line" n="95"/> 'mit Gleichem mög' er denen, die den Grabesschmuck</l>
+        <l>gesandt, vergelten' - mit dem Gleichen, Weh für Weh?</l>
+        <l>Ist's besser ganz zu schweigen? Schmählich war</l>
+        <l>sein Tod,</l>
+        <l>so schütt' ich schmählich ihm die Spenden in den</l>
+        <l>Staub,</l>
+        <l>werf hinter mich die Schalen, abgewandten Blicks,</l>
+        <l>und gehe - Schmutzgewässer, das Besudelung</l>
+        <l>von einem Haus gewaschen, giefst man also weg.</l>
+        <l><milestone unit="line" n="100"/> In dieser Überlegung, bitte, steht mir bei;</l>
+        <l>des gleichen Hasses Bande machen uns verwandt.</l>
+        <l>Und berget nichts in eurem Busen, denn ihr braucht</l>
+        <l>niemand zu fürchten: steh' er unter Herrenfaust,</l>
+        <l>leb' er in Freiheit, jedes harret sein Geschick.</l>
+        <l><milestone unit="line" n="105"/> Nun sagt ihr's wohl, so ihr mir Bess'res raten könnt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="106" resp="Smyth"/>Gleich dem Altar verehr' ich deines Vaters Grab</l>
+        <l>und sage dir gehorsam, was das Herz mir rät.</l>
+      </lg>
+    </sp>
+    <pb n="162"/>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Was dir des Grabes Ehrfurcht eingiebt, sprich es aus.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Für seine Treuen sprich beim Spenden ein Gebet.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="110"/> Wer sind sie? Wen bezeichn' ich so aus unserm Haus?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Dich selbst zuerst und jeden der Aigisthos hafst.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Für mich nur würd' ich damit beten und für euch.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Das mufst du selbst dir sagen können. Denke nach.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Giebt es noch jemand anders aufser unsrer Schar?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="115"/> Orestes weilet ferne, doch vergifs ihn nicht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Ganz richtig. Damit wiesest du mich gut zurecht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Und dann gedenke derer, die den Mord verübt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Wie soll ich's? Das versteh' ich nicht; sprich du</l>
+        <l>mir vor.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Es komme jemand über sie, Gott oder Mensch.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="120"/> Als Richter oder Rächer? Wie bezeichn' ich ihn?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Sprich rund heraus: die Todesstrafe zu vollzieh'n.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Erlauben das die Götter? Lästr' ich nicht damit?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="123"/> Dem Feind vergilt mit Bösem. Kennst du nicht den</l>
+        <l>Spruch?</l>
+      </lg>
+    </sp>
+    <pb n="163"/>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Ohnmächtig klagen, nicht vergelten können wir.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Vertrau' den Göttern drunten in der Erde Schofs.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Ach, in die Tiefe dringen Menschenrufe nicht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Hermes trägt sie hinunter, gnädig hört er dich.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Wohlan, ich will gehorchen. Folgt mir an das Grab</l>
+        <l>und reicht, wenn ich gebetet, mir die Spenden zu.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>So bete, wie's der Tochter Agamemnons ziemt:</l>
+        <l>andächtig schweigend harren wir auf deinen Wink.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>So richt' ich meine Bitte, Hermes, denn an dich,</l>
+        <l><milestone unit="line" n="124"/> den Mittler zwischen Himmelslicht und Grabesnacht.</l>
+        <l>gieb, dafs die Götter in der Tiefe mein Gebet</l>
+        <l>vernehmen, die gedenken an des Vaters Mord,</l>
+        <l>und sie zumal, die alles zeugt und alles nährt,</l>
+        <l>zu der, um neu zu keimen, alles wiederkehrt,</l>
+        <l><milestone unit="line" n="130"/> Allmutter Erde. Nun, so spreng' ich denn aufs Grab</l>
+        <l>das Weihewasser und zum Vater sprech' ich so.</l>
+        <l>Erbarm' dich meiner, und Orestes' liebes Licht</l>
+        <l>lafs leuchten unserm Hause. Jetzt sind wir verkauft,</l>
+        <l>unstät, im Elend. Denn die Mutter stiefs uns fort</l>
+        <l>für ihren neuen Gatten, den Mitschuldigen</l>
+        <l><milestone unit="line" n="135"/> an deinem Mord, Aigisthos. Ich bin eine Magd</l>
+        <l>im Haus; Orestes, seines Vaterguts beraubt,</l>
+        <l>vertrieben in die Fremde. Jene brüsten sich</l>
+        <l>in Üppigkeit, vergeudend was dein Arm erwarb.</l>
+        <l>Lass es gelingen, dass Orestes wiederkommt,</l>
+        <l><milestone unit="line" n="140"/> das bitt' ich dich; erhöre, Vater, mein Gebet.</l>
+    <pb n="164"/>
+        <l>Und mich lass' anders werden als die Mutter ist,</l>
+        <l>erhalte mir das Herz bescheiden, rein die Hand.</l>
+        <l>Soviel für uns. Nun bet' ich für die Gegner auch.</l>
+        <l>Vater, lass einen Rächer auferstehn für dich,</l>
+        <l><milestone unit="line" n="145"/> und wer getötet sterbe den Vergeltungstod.</l>
+        <l>So sprech' ich über jene diesen schweren Fluch.</l>
+        <l>Ich fordre: nehme Rache, wessen Amt es ist.</l>
+        <l>Uns aber sende Segen aus der Nacht empor;</l>
+        <l>die Götter und die Erde seien gnädig uns,</l>
+        <l>und gnädig sei die siegende Gerechtigkeit.</l>
+        <l><milestone unit="line" n="150"/> So bet' ich und so giefs' ich diese Spenden hin.</l>
+        <l>Ihr aber bringet, was von euch die Sitte heischt,</l>
+        <l>dem Toten: Wehruf ist ihm Grufs und Huldigung.</l>
+      </lg>
+    </sp>
+    <stage>singt, während Elektra auf dem Grabe mit den Totenspenden, z. B. dem Ausbreiten der Kränze, beschäftigt ist.</stage>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="155"/><milestone unit="card" n="152" resp="Smyth"/> Lafst rinnen die Zähren,</l>
+        <l>zerrinnen im Staub.</l>
+        <l>Staub ward der Herr,</l>
+        <l>ihm rinne die Zähre,</l>
+        <l>sein Grab ist uns Zuflucht</l>
+        <l>in Freud und Leid.</l>
+        <l>Wir weinen und beten, den Zauber</l>
+        <l>der Grabesspenden zu brechen.</l>
+        <l>Erhör' uns, Herr,</l>
+        <l>erhabner Fürst,</l>
+        <l>hindurch durch die Nacht,</l>
+        <l>die die Seele dir deckt,</l>
+        <l>erhör' uns.</l>
+        <l>Wehe! wehe! wehe!</l>
+        <l>Ach, kommt denn keiner</l>
+        <l>das Haus zu erlösen?</l>
+        <l>Fäll' er die Lanze,</l>
+    <pb n="165"/>
+        <l><milestone unit="line" n="160"/> spann' er zum Schusse</l>
+        <l>skythischen Bogen,</l>
+        <l>pack' er des Schwertes</l>
+        <l>Knauf im Gefechte</l>
+        <l>Brust an Brust.</l>
+      </lg>
+    </sp>
+    <stage>steigt von dem Grabe herab und hält eine Locke in der Hand.</stage>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="164"/><milestone unit="card" n="164" resp="Smyth"/> Die Spende für den Vater sog der Boden ein,</l>
+        <l><milestone unit="line" n="166"/> doch steht mir nun in einer neuen Sorge bei.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Sprich nur; in ängstlicher Erwartung pocht mein Herz.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Hier diese Locke find' ich liegend auf dem Grab.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Und wer hat sie gespendet, Mädchen oder Mann?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="170"/> Für jedermann ist dieses Rätsels Lösung leicht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Mir muſst du's erst erklären, Kind, so alt ich bin.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Wer könnte sie geopfert haben aufser mir.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Wahr ist's, denn die es sollten sind dem Toten feind.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Und in der That, vollkommen ähnlich sieht sie aus.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="175"/> Ähnlich - das eben möcht' ich wissen, welchem Haar?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Dem Haare meines Hauptes gleichet sie durchaus.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Sollt' es ein heimlich Opfer von Orestes sein?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>So ist's. Der Locke sieht man's an, sie stammt von ihm.</l>
+      </lg>
+    </sp>
+
+
+<pb n="166"/>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Wie aber hätt' er herzukommen sich getraut?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="180"/> Geschickt hat er die Locke, die er sich vom Haupt</l>
+        <l>als Liebesgabe zu des Vaters Ehren schor.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Nur neue Thränen weckst du mit dem neuen Wort,</l>
+        <l>wenn denn sein Fufs die Heimat nie betreten soll.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Wie kalter Fieberschauer überlief es mich,</l>
+        <l>im Herzen fühlt' ich Stiche wie von Dolchesstofs,</l>
+        <l><milestone unit="line" n="185"/> und aus den Augen treibt der eis'ge Druck der Angst</l>
+        <l>in schweren Trauertropfen mir das salz'ge Nafs.</l>
+        <l>Das wirkt der Anblick dieser Locke. Nimmermehr</l>
+        <l>gehört sie irgend einem Mann aus Argos sonst.</l>
+        <l>Die Mörd'rin - nein, die hat sie sicher nicht geweiht,</l>
+        <l><milestone unit="line" n="190"/> die Mutter höchst unmütterlich ist das Gefühl,</l>
+        <l>das für die Kinder diese Gottverhafste nährt.</l>
+        <l>Und so - doch nein, behaupten zuversichtlich kann</l>
+        <l>ich's nicht, daſs sie das heiſsgeliebte Haupt geziert,</l>
+        <l>Orestes' Haupt. Allein die Hoffnung lacht mich an.</l>
+        <l><milestone unit="card" n="195" resp="Smyth"/>Ach,</l>
+        <l><milestone unit="line" n="195"/> ach hättest du nur eine Stimme, Lockenhaar,</l>
+        <l>daſs nicht der Zweifel meinen Busen schütterte,</l>
+        <l>ich fester Hand dich von mir würfe, wenn das Haupt</l>
+        <l>mir feindlich wäre, dem das Eisen dich entrifs,</l>
+        <l>doch wärst du mir befreundet, klagten wir vereint</l>
+        <l><milestone unit="line" n="200"/> zu Vaters Ehren, zu des Vaters Trauerschmuck.</l>
+        <l>Indess die Götter kennen ja des Zweifels Sturm,</l>
+        <l>der meines Herzens Schifflein hin und wider wirft,</l>
+        <l>und ist Erlösung uns beschieden, wächst geschwind</l>
+        <l>aus kleinstem Samenkorne höchsten Segens Baum.</l>
+      </lg>
+    </sp>
+    <stage>Indem sie die Locke wieder aufs Grab legt, bemerkt sie die Fufsspuren.</stage>
+    <pb n="167"/>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="205"/> Doch sieh, ein neues Zeichen. Die Fufsspuren hier</l>
+        <l>sind auch ganz ähnlich, sind den meinen ganz verwandt.</l>
+        <l><milestone unit="line" n="207"/> Die Spuren beider Füfse sind es, da und da.</l>
+        <l><milestone unit="line" n="209"/> Und wenn ich hier der Ferse Schwung und hier den</l>
+        <l>Druck</l>
+        <l><milestone unit="line" n="210"/> des Trittes messe, pafst er ganz zu meinem Fufs.</l>
+        <l>Es schwinden mir die Sinne, Krampf durchzuckt die</l>
+        <l>Brust.</l>
+      </lg>
+    </sp>
+    <stage>Orestes mit Pylades vortretend.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Nur für die Zukunft bitte noch um Trefferglück,</l>
+        <l>dafs du vom Himmel flehest, was er geben mag.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Was hätte mir der Götter Gnade schon bescheert?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="215"/> Den du zu sehen längst dich sehntest, er ist da.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Was weifst du, welches Mannes Anblick ich erfleht?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ich weifs, Orestes nanntest du dein Liebstes oft.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Wenn ich es that, wieso ist mein Gebet erfüllt?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ich bin es. Sieh' des Blutes nächsten Freund in mir.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="220"/> Du bist mir fremd; versuchst du mich mit Hinterlist?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Dann führ' ich Arges auch im Schilde wider mich.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Mit meinem Elend willst du spielen, mir zum Hohn.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Wenn deines, ist mein eigen Elend mir ein Spiel.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Du wärst Orestes? Ihn begrüfst' ich hier in dir?</l>
+      </lg>
+    </sp>
+    <pb n="168"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="225"/><milestone unit="card" n="225" resp="Smyth"/> Kleingläub'ge, jetzt, wo ich leibhaftig vor dir steh',</l>
+        <l>mifskennst du mich, und als du meine Locke sahst,</l>
+        <l><milestone unit="line" n="227"/> das Traueropfer, das ich für den Vater schnitt,</l>
+        <l>da stand ich ganz vor der entzückten Seele dir.</l>
+        <l><milestone unit="line" n="230"/> Sieh doch nur her: die Locke pafst an diesen Schnitt,</l>
+        <l>sieh auch den Mantel: deine Hände woben ihn,</l>
+        <l>hier diesen Leu hat deine Nadel eingestickt.</l>
+      </lg>
+    </sp>
+    <stage>Sie fällt ihm um den Hals.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Nein, komm' nicht aufser dir vor Freude, fasse dich.</l>
+        <l>Ich weiſs, es droht von unsern Nächsten uns Gefahr.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="235"/> Du bist der Nächste, unsres Vaterhauses Heil</l>
+        <l>und Zukunft, Angst- und Freudenthränen rinnen dir.</l>
+        <l>Das Reich wirst du gewinnen, heldenstark und kühn.</l>
+        <l>Du holdes Antlitz; unser Schicksal hat für dich</l>
+        <l>vervierfacht meine Liebe. Grüfsen muſs ich dich</l>
+        <l><milestone unit="line" n="240"/> als Vater, und die Liebe für die Mutter ging</l>
+        <l>auf dich hinüber ihr gebührt verdienter Hafs.</l>
+        <l>Grausam geopfert ward die Schwester: ihr Ersatz</l>
+        <l>bist du, und warst mein treuer Bruder. Vor mir steht</l>
+        <l>mein Herr und König. Trete nur auch Kraft und Recht</l>
+        <l><milestone unit="line" n="245"/> jetzt für mich ein und, aller Mächte höchste, Zeus.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Zeus, schaue du auf unser Schicksal nieder, Zeus,</l>
+        <l>schau auf des Adlers vaterlose Brut herab,</l>
+        <l>der in der argen Schlange Ringelknoten starb,</l>
+        <l>und die Verwaisten hungern bitterlich, zu schwach</l>
+        <l><milestone unit="line" n="250"/> ins Nest zu tragen, was des Vaters Jagd gewann.</l>
+        <l>So stehn wir jetzo vor dir, beide vaterlos,</l>
+        <l>verstoſsen gleichermafsen aus dem Elternhaus,</l>
+        <l>ich und Elektra. Läfst du uns zu grunde gehn,</l>
+        <l><milestone unit="line" n="255"/> die Kinder des, der reich mit Opfern dich geehrt,</l>
+        <l>wo bietet dir ein gleiches milde Fürstenhand?</l>
+      </lg>
+    </sp>
+    <pb n="169"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Wie dir, den Menschen deinen Willen kund zu thun,</l>
+        <l>der Bote fehlen würde mit des Aares Brut,</l>
+        <l><milestone unit="line" n="260"/> so wird dir ganz vertrocknet dieser Herrscherstamm</l>
+        <l>an deinem Feste keine Hekatomben weih'n.</l>
+        <l>Erbarme dich, du richtest leichter Hand das Haus</l>
+        <l>aus dem Zusammenbruche wieder hoch empor.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="264" resp="Smyth"/>Ihr teuren Kinder, für den väterlichen Herd</l>
+        <l><milestone unit="line" n="265"/> die Rettungshoffnung, schweiget, sonst belauscht man</l>
+        <l>uns.</l>
+        <l>Bedenkt, wie leicht wird alles von geschäft'gem Mund</l>
+        <l>den Herrn verraten o daſs ich's erst sähe, wie</l>
+        <l>der Scheiterhaufen unter ihren Leichen schwelt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Apollon wird uns nicht verraten. Diese Fahrt</l>
+        <l><milestone unit="line" n="270"/> zu wagen hat sein mächtig Wort mir auferlegt</l>
+        <l>mit manchem Mahnruf. Eiseskalter Schauder liefs</l>
+        <l>mein heiſses Blut gerinnen, so bedräut' er mich,</l>
+        <l>wenn ich für meines Vaters Tod den Schuld'gen nicht</l>
+        <l><milestone unit="line" n="274"/> den Preis in gleicher Münze zahlte, Blut für Blut.</l>
+        <l><milestone unit="line" n="276"/> Am eig'nen Leib und Leben, so verhiefs er mir,</l>
+        <l>sollt' ich es büfsen, schwer von Plagen heimgesucht,</l>
+        <l><milestone unit="line" n="275"/> verstofsen in die Wüste wie ein toller Stier.</l>
+        <l>Sein Spruch enthüllte, was der Abgeschied'nen Groll</l>
+        <l>auf Erden wirket auf uns beide trifft es zu.</l>
+        <l><milestone unit="line" n="280"/> Da kommen Flechten, fressen in die Haut sich ein</l>
+        <l>mit argen Zähnen, Kraft zerstörend und Gestalt,</l>
+        <l>und Aussatz reifst in weiſse Fetzen unser Fleisch.</l>
+        <l>Und weiter von der Rachegeister Überfall,</l>
+        <l>die aus dem Blut des Vaters wider uns erstehn,</l>
+        <l>sprach mir der Gott. Ich fände keinen Schlummer</l>
+        <l>mehr</l>
+        <l>vor den Gesichten, die ich in der Finsternis</l>
+        <l><milestone unit="line" n="285"/> hellsehend schauen würde. Denn wem unversöhnt</l>
+        <l>ein Blutsverwandter in dem Schattenreiche wohnt,</l>
+      </lg>
+    </sp>
+    <pb n="170"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>den trifft er mit verborg'nem Pfeile, scheucht ihn auf</l>
+        <l>mit wirren, nächt'gen Schrecken, Angst und Raserei.</l>
+        <l>Auch würde mich der Volkesstimme Bann und Acht</l>
+        <l><milestone unit="line" n="290"/> ins Elend jagen. Einem solchen gönne man</l>
+        <l>nicht an der Opferspende, nicht am Kelche teil.</l>
+        <l>Unsichtbar weist ihn vom Altar des Vaters Zorn</l>
+        <l>hinweg, Herberge beut ihm niemand, jeder flieht</l>
+        <l>seine Gemeinschaft. Nur das Leben hält ihn fest;</l>
+        <l><milestone unit="line" n="295"/> ehrlos, vereinsamt, abgestorben ist er längst</l>
+        <l>sich selbst und allen andern, eh' er sterben darf.</l>
+        <l>So sprach der Gott. Darf ich bezweifeln, was er sagt?</l>
+        <l><milestone unit="line" n="298"/> Und wenn ich's wollte, wagen muſs ich doch die That,</l>
+        <l><milestone unit="line" n="302"/> auf dafs nicht Argos, dessen stolzen Mut die Welt</l>
+        <l>für Troias Überwindung über alles preist,</l>
+        <l>das Joch der beiden Weiber trage. Ja, ein Weib</l>
+        <l><milestone unit="line" n="305"/> an Feigheit ist er. Bald bewährt er, was er ist.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="306" resp="Smyth"/>Und ihr Lenker der Geschicke droben,</l>
+        <l>führt zu solchem Ausgang diese Sache,</l>
+        <l>dafs das Recht am Ziel befriedigt stehe.</l>
+        <l>'Wo die Zunge schlug mit argem Worte,</l>
+        <l><milestone unit="line" n="310"/> räche sich mit argem Wort die Zunge',</l>
+        <l>laut verkündet Dike, nimm dein Recht.</l>
+        <l>Und wer Todeswunde schlug, empfahe</l>
+        <l>Todeswunde, was er that, das leid' er:</l>
+        <l>'Blut um Blut'. Es ist ein alter Spruch.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="315"/><milestone unit="card" n="315" resp="Smyth"/> Vater, unseliger Vater,</l>
+        <l>welches Gebet, welch' Opfer</l>
+        <l>zieht dich empor aus der Tiefe,</l>
+        <l>da der Schlummer dich fesselt?</l>
+        <l>Licht und Nacht sind geschiedene Reiche.</l>
+      </lg>
+    </sp>
+
+
+    <pb n="171"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="320"/> Doch an der preisenden Klage</l>
+        <l>freu'n wir uns alle, des Atreus</l>
+        <l>weiland Geschlecht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="323" resp="Smyth"/>Sohn, der fressenden Flamme Zahn</l>
+        <l>tilgt die Seele des Toten nicht,</l>
+        <l><milestone unit="line" n="325"/> weiter wirket sein Groll.</l>
+        <l>Wann der tötlich Getroffene stöhnt,</l>
+        <l>dann ein tötender Rächer ersteht.</l>
+        <l>Und eines leiblichen Vaters</l>
+        <l><milestone unit="line" n="330"/> Rache heischende Klage</l>
+        <l>harret, mahnet,</l>
+        <l>fordert unabweisbar.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="332" resp="Smyth"/>Vater, vernimm auch meine</l>
+        <l>schluchzenden Trauerrufe.</l>
+        <l>Beide Kinder am Grabe</l>
+        <l><milestone unit="line" n="335"/> singen dir Klagelieder,</l>
+        <l>Bettler beide, Verstoſsene beide.</l>
+        <l>Soll triumphieren das Böse?</l>
+        <l>Nirgend ein Schimmer von Freude,</l>
+        <l>Jammer ringsum.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="340"/><milestone unit="card" n="340" resp="Smyth"/> Dennoch kann noch immer Gottes Wille</l>
+        <l>froher Lieder holden Wohllaut wecken.</l>
+        <l>Wenn am Grabe jetzt die Trauer wehklagt,</l>
+        <l>schallt im Königssaale dann das Danklied</l>
+        <l>und kredenzt den frischen Siegestrank.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="345"/><milestone unit="card" n="345" resp="Smyth"/> Vater, hätte vor Troia</l>
+        <l>eines lykischen Speeres</l>
+        <l>Todesstofs dich getroffen!</l>
+      </lg>
+    </sp>
+    <pb n="172"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Dann im Glanze des Ruhmes</l>
+        <l>strahlte dein Haus,</l>
+        <l><milestone unit="line" n="350"/> und deine Kinder</l>
+        <l>kennte und grüfste jegliches Volk.</l>
+        <l>Über dem Grabe wölbte sich hoch</l>
+        <l>dir ein Hügel drüben am Meer,</l>
+        <l>und wir trügen's geduldig.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="355"/><milestone unit="card" n="354" resp="Smyth"/> Treuen Volkes getreuer Herr</l>
+        <l>thront er drunten im Ehrensaal</l>
+        <l>hoch gebietend und hehr.</l>
+        <l>Und die Fürsten im Reich der Nacht</l>
+        <l>haben ihn sich zur Seite gesetzt.</l>
+        <l><milestone unit="line" n="360"/> Denn im irdischen Leben</l>
+        <l>ist er König gewesen;</l>
+        <l>majestätisch</l>
+        <l>schwang die Hand das Scepter.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="363" resp="Smyth"/>Nein, nicht sollte der Vater</l>
+        <l>am Skamandros gebettet</l>
+        <l>unter Ilios' Mauern</l>
+        <l><milestone unit="line" n="365"/> neben Tausenden liegen</l>
+        <l>lanzengefällt.</l>
+        <l>Nein, seine Mörder</l>
+        <l>hätten dies Schicksal eher verdient.</l>
+        <l>Wenn nach schwerem Todesgeschick</l>
+        <l><milestone unit="line" n="370"/> ferne Neugier fragte, von dir</l>
+        <l>brauchte nichts sie zu hören.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="372" resp="Smyth"/>Ja, mein Kind, du hast es leicht zu wünschen;</l>
+        <l>was du sagst, das wäre freilich köstlich</l>
+      </lg>
+    </sp>
+    <pb n="173"/>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="375"/> über alle Schätze, wäre gröſser</l>
+        <l>als des Himmelsgartens Seligkeit.</l>
+        <l>Doch zwei Worte nur: wie Geifselhiebe</l>
+        <l>schwirren sie, den süssen Wahn zerreiſsend.</l>
+        <l>Uns're Helfer liegen längst im Grabe,</l>
+        <l>und an deren Händen, die gebieten,</l>
+        <l>klebet Blut. Feind sind sie diesem Toten,</l>
+        <l><milestone unit="line" n="380"/> aber seinen Kindern doppelt feind.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="380" resp="Smyth"/>Dies Wort, wie ein Dolch</l>
+        <l>durchbohrt es mein Ohr.</l>
+        <l>Gott, Gott!</l>
+        <l>Vergeltung endlich</l>
+        <l>dem Grab entsteigend</l>
+        <l>auf Erden erscheine.</l>
+        <l>Die Mordhand,</l>
+        <l>die frevelkühne,</l>
+        <l><milestone unit="line" n="385"/> büfse, so findet der Vater Frieden.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="386" resp="Smyth"/>Daſs ich's erlebte</l>
+        <l>Freudengeschrei zu erheben,</l>
+        <l>während der Mann</l>
+        <l>niedergestofsen,</l>
+        <l>während das Weib</l>
+        <l>sterbend erliegt.</l>
+        <l>Ja, ich gesteh's,</l>
+        <l>immer schlagen die Flammen des Wunsches</l>
+        <l><milestone unit="line" n="390"/> hoch aus dem Herzen empor</l>
+        <l>ach, der erstickende Druck der Verzweiflung,</l>
+        <l>immer wirft er sie nieder.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="394" resp="Smyth"/>Wohl reckt noch ein Gott</l>
+        <l><milestone unit="line" n="395"/> die allmächtige Hand.</l>
+      </lg>
+    </sp>
+    <pb n="174"/>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Ja, ja,</l>
+        <l>des Volkes Glaube,</l>
+        <l>Erfüllung find' er</l>
+        <l>im Falle der Häupter.</l>
+        <l>Recht heisch' ich,</l>
+        <l>Recht wider den Frevel.</l>
+        <l>Erd' und höllische Mächte, hört mich.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="400"/><milestone unit="card" n="400" resp="Smyth"/> Jeder Todestropfe, der den Boden</l>
+        <l>netzte, hat auf neues Blut ein Anrecht.</l>
+        <l>Todesröcheln weckt die Rächerinnen,</l>
+        <l>und sie kommen: aus den blut'gen Leiden</l>
+        <l>wachsen blut'ge Thaten, Schlag um Schlag.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="405"/><milestone unit="card" n="405" resp="Smyth"/> Ha, ich verzweifle.</l>
+        <l>Schaut, ihr gewaltigen</l>
+        <l>Flüche der Sterbenden</l>
+        <l>herrschend im Geisterreich,</l>
+        <l>schauet uns letzte vom Stamme des Atreus</l>
+        <l>ratlos, verstofsen, verzweifelnd: o Gott,</l>
+        <l>Gott, wo ist ein Ausweg?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="410"/><milestone unit="card" n="410" resp="Smyth"/> Zagend und hoffend</l>
+        <l>klopfet das Herz mir im Busen,</l>
+        <l>hör' ich dich so</l>
+        <l>klagen und jammern.</l>
+        <l>Unter des Worts</l>
+        <l>eisigem Hauche</l>
+        <l>wollte die Glut</l>
+        <l>fast verlöschen im hoffenden Herzen.</l>
+        <l><milestone unit="line" n="415"/> Aber du kehrtest zurück,</l>
+        <l>stehest in männlicher Kraft mir vor Augen:</l>
+        <l>dennoch vertrau' ich der Zukunft.</l>
+      </lg>
+    </sp>
+    <pb n="175"/>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="418" resp="Smyth"/>Womit versuch' ich's?</l>
+        <l>Ja, wir erzählen ihm</l>
+        <l>alle die Kränkungen,</l>
+        <l>die uns die Mutter that.</l>
+        <l><milestone unit="line" n="420"/> Dulden und ducken? Sie werden's nicht leiden.</l>
+        <l>Rasenden Wolfs unerbittlicher Grimm</l>
+        <l>ist mein Muttererbe.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="423" resp="Smyth"/>Wie Asiens Klageweiber,</l>
+        <l>Heulweiber von Susa,</l>
+        <l>so schlugen in Thränen</l>
+        <l>wir Busen und Haupt.</l>
+        <l><milestone unit="line" n="425"/> Die blutigen Fäuste flogen</l>
+        <l>und trafen und flogen wieder.</l>
+        <l>Von unten, von oben, von rechts und von links</l>
+        <l>geschlagen, gestofsen, erdröhnte</l>
+        <l>mein Haupt verzweiflungsvoll.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="429" resp="Smyth"/>Wehe, du Arge,</l>
+        <l><milestone unit="line" n="430"/> was wagtest du, Mutter?</l>
+        <l>Den argen Hohn der Bestattung.</l>
+        <l>Kein Zug der Bürger,</l>
+        <l>kein Trauergefolge,</l>
+        <l>kein Wehruf hat ihn geleitet,</l>
+        <l><milestone unit="line" n="433"/> den König, den Gatten.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="439"/><milestone unit="card" n="434" resp="Smyth"/><gap reason="omitted" extent="5" unit="line" resp="Wilamowitz"/><milestone unit="card" n="439" resp="Smyth"/> Hör' auch noch das:</l>
+        <l>verstümmelt haben</l>
+        <l>sie seine Leiche, schmählich</l>
+        <l>verscharrt die Leiche.</l>
+      </lg>
+    </sp>
+
+    <pb n="176"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Das Leben sollte dir</l>
+        <l>vergällt, verekelt sein:</l>
+        <l>du hörst die Schmach, bittre Schmach des Vaters.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="444"/><milestone unit="card" n="445" resp="Smyth"/> Du sprichst von des Vaters Geschicke,</l>
+        <l>und meins? Ich war ferne,</l>
+        <l>ohnmächtig, verächtlich</l>
+        <l>gesperrt in heimlichen Winkel; mocht' lieber heulen als lachen.</l>
+        <l>Die Thränen strömten, es gellte mein Schrei</l>
+        <l>ich blieb gefangen, verborgen.</l>
+        <l><milestone unit="line" n="450"/><milestone unit="card" n="451" resp="Smyth"/> Hörst du's? Tief grab's ins Herz.</l>
+        <l>Hast du's vernommen?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Es bohre das Wort sich</l>
+        <l>vom Ohr dir zum Grunde der Seele.</l>
+        <l>So war's. Du weifst es.</l>
+        <l>Der drunten erwartet,</l>
+        <l>was wird. Kein Zucken noch Zaudern:</l>
+        <l><milestone unit="line" n="455"/> tief Treffen und sicher.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="434"/> Weh mir, wie schmachvoll</l>
+        <l>beschreibt ihr alles.</l>
+        <l>Nun denn, die Schmach des Vaters,</l>
+        <l>sie soll sie büfsen.</l>
+        <l>Die Götter wollen es,</l>
+        <l>und meine Hand, sie will's.</l>
+        <l><milestone unit="line" n="438"/> Ich will's, ich thu's - mag ich dran vergehen.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Wachet auf, Geschlecht der Erdentiefe,</l>
+        <l>Rachegeister, rüstet euch zum Feste.</l>
+    <pb n="177"/>
+        <l>Vater, höre deines Sohns Gelöbnis.</l>
+        <l>Endlich brach das Herz die feigen Fesseln,</l>
+        <l>zückte der befreienden Entschliefsung</l>
+        <l>kühnes Schwert: der Rettungsmorgen tagt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="456"/><milestone unit="card" n="456" resp="Smyth"/> So ruf ich denn:</l>
+        <l>Vater, steh' den Deinen bei.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>So denn auch ich:</l>
+        <l>unter Thränen stimm' ich ein.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Und unsre Schar</l>
+        <l>hebt den gleichen Ruf mit euch.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Alle.</speaker>
+      <lg type="stanza">
+        <l>Erhör' uns, steig' empor zum Licht</l>
+        <l><milestone unit="line" n="460"/> und hilf uns wider die Feinde.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="461" resp="Smyth"/>So soll's gescheh'n, Recht um Recht und Blut um Blut.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Ihr Götter hört,</l>
+        <l>hört und segnet unsern Mord.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Mich überkommt</l>
+        <l>Schauder bei dem Racheschwur.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Alle.</speaker>
+      <lg type="stanza">
+        <l>Das Schicksal wartet lange schon:</l>
+        <l><milestone unit="line" n="460"/> jetzt kommt es unsrer Beschwörung.</l>
+      </lg>
+    </sp>
+    <stage>Die Geschwister treten während des folgenden Liedes auf das Grab.</stage>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="466" resp="Smyth"/>Erbteil des Fluches,</l>
+        <l>häfslicher Sünde</l>
+        <l>blutige Wunde.</l>
+        <l>Schmerzen, wer trüge sie,</l>
+        <l>Qualen, wer stillte sie?</l>
+        <l>Wehe, weh!</l>
+      </lg>
+    </sp>
+    <pb n="178"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="475"/><milestone unit="card" n="471" resp="Smyth"/> Einzig der Erbe</l>
+        <l>heilet des Hauses</l>
+        <l>eiternde Wunde,</l>
+        <l>einzig mit blut'gem Schnitt.</l>
+        <l><milestone unit="card" n="476" resp="Smyth"/>Götter der Finsternis</l>
+        <l>rief mein Lied.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Sel'ge Geister drunten in der Tiefe,</l>
+        <l>wenn ihr die Beschwörungsrufe hörtet,</l>
+        <l>bringt den Kindern Hilfe, bringt den Sieg.</l>
+      </lg>
+    </sp>
+    <stage>Orestes auf dem Grabe knieend, er schlägt mit der Hand auf den Boden.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="479" resp="Smyth"/>Mein Vater, höchst unköniglich Gemordeter,</l>
+        <l><milestone unit="line" n="480"/> erhöre mich, verleihe mir dein Königtum.</l>
+      </lg>
+    </sp>
+    <stage>Elektra ebenso.</stage>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Auch ich hab' eine Bitte. Vater, gönne mir</l>
+        <l>Gemahl und Hausstand, wenn Aigisthos mir erliegt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Dann wird das Volk ein feierliches Totenmahl</l>
+        <l>dir rüsten: sonst entbehrest du der Ehren Zoll</l>
+        <l><milestone unit="line" n="485"/> am Fest, da allen Seelen duft'ges Opfer raucht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>An meinem Hochzeitstage trag' ich dir hinaus</l>
+        <l>des Vatererbes reichste Spenden, und zuerst</l>
+        <l>von des Geschlechtes Gräbern allen schmück' ich deins.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Den Kampf zu schauen, Erde, gieb den Vater los.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="490"/> Verklär' ihn, Totenkön'gin, in Heroenglanz.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Gedenke, Vater, an das mörderische Bad.</l>
+      </lg>
+    </sp>
+    <pb n="179"/>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Gedenk' auch an des Netzes unerhörten Trug.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Das Netz, das fest wie Eisenschellen dich umstrickt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Das Truggespinnst, das dir die Arglist überwarf.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="495"/> Hörst du nicht deine Schande? Weckt sie dich nicht</l>
+        <l>auf?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l>Hebst du zu deinen Kindern nicht das Haupt empor?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Die Rache selbst schick' hilfeleistend unserm Kampf.</l>
+        <l>Wo nicht, so mach' in diesem Gang die Waffen gleich,</l>
+        <l>wenn aus dem Fall du siegreich dich erheben willst.</l>
+      </lg>
+    </sp>
+    <stage>Elektra aufstellend.</stage>
+    <sp>
+      <speaker>Elektra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="500"/> Vernimm auch, Vater, diesen meinen letzten Ruf.</l>
+        <l>An deinem Grabe suchen deine Kinder Schutz:</l>
+        <l>erbarme dich der Tochter und des Mannesstamms,</l>
+        <l>lass' nicht den Pelopidensamen ganz verdorr'n,</l>
+        <l><milestone unit="line" n="504"/> auf dafs du weiter lebest selbst nach deinem Tod.</l>
+      </lg>
+    </sp>
+    <stage>Orestes aufstehend.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="508"/> Erhör' uns; dir zu Liebe tönt der Klageschrei.</l>
+        <l>Dir selber hilfst du, wenn du unsern Wunsch gewährst.</l>
+        <l><milestone unit="line" n="505"/> Denn das Gedächtnis des Verstorb'nen lebet fort</l>
+        <l>in seinen Kindern. Auf der Welle schwimmt der Kork</l>
+        <l>und zeigt das Netz, das in des Meeres Tiefen treibt.</l>
+      </lg>
+    </sp>
+    <stage>Sie kommen beide vom Grabe herunter.</stage>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="510"/><milestone unit="card" n="510" resp="Smyth"/> Lang' habet ihr geredet und ich tadl' es nicht;</l>
+        <l>nach schnöder Schändung ward dem Grab der Ehre</l>
+        <l>Zoll.</l>
+    <pb n="180"/>
+        <l>Doch nun, zu handeln hat dein Mut sich aufgerafft,</l>
+        <l>so geh' ans Werk, versuche, was das Glück dir beut.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ich will's; nur eine Frage noch, die nicht vom Ziel</l>
+        <l><milestone unit="line" n="515"/> uns abführt. Wozu hat die Spenden sie geschickt?</l>
+        <l>Was kann sie damit wollen? Ehren will sie ihn</l>
+        <l>nach unheilbarem Schlage? Das versteh' ich nicht.</l>
+        <l>Für ihr Verschulden ist zu kärglich der Ersatz.</l>
+        <l>Denn für ein Menschenleben wirf dein alles hin,</l>
+        <l><milestone unit="line" n="520"/> verloren ist die Mühe. So verhält sich das.</l>
+        <l>Hierüber, bitte, gieb mir Auskunft, so du kannst.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Ich kann es, denn ich war zugegen, lieber Sohn.</l>
+        <l><milestone unit="line" n="525"/> Erschreckt durch fürchterliche Traumerscheinung</l>
+        <l>schickt</l>
+        <l>die Gottverlass'ne diese Spenden an das Grab.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Könnt ihr genau mir sagen, was im Traum sie sah?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Sie hat's erzählt; daſs einen Drachen sie gebar.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Wie war der Ausgang? Worin gipfelt dein Bericht?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Sie barg ihn in der Wiege wie ein Menschenkind.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="530"/> Und welche Nahrung suchte sich der gift'ge Wurm?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Ihr war's im Traum, als reichte sie ihm selbst die Brust.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Blieb unter Natterbissen denn der Busen heil?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Schwarz quollen Ströme Blutes mit der Milch hervor.</l>
+      </lg>
+    </sp>
+
+    <pb n="181"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ein solches Bild ist nimmermehr bedeutungslos.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="535"/> Mit gellem Angstschrei fuhr sie schaudernd aus dem</l>
+        <l>Schlaf,</l>
+        <l>und manche Fackel, die in Finsternis verglomm,</l>
+        <l>ward neu entzündet um der Herrin beizustehn.</l>
+        <l>So hat sie diese Totenopfer denn gesandt,</l>
+        <l>mit denen sie des Unheils Kraft zu brechen hofft.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="540"/><milestone unit="card" n="540" resp="Smyth"/> Nun denn, bei dieser Erde, bei des Vaters Gruft,</l>
+        <l>Erfüllung finde dieses Traumgesicht durch mich.</l>
+        <l>Ich deut' es, und die Deutung pafst aufs Haar genau.</l>
+        <l>Denn wenn der Drache, aus dem Schofs, der mich</l>
+        <l>gebar</l>
+        <l>hervorgegangen, sich in meiner Wiege barg,</l>
+        <l><milestone unit="line" n="545"/> wenn er die Brust umzischte, die mir Nahrung bot,</l>
+        <l>und schwarzen Blutstrom schlürfte mit der linden Milch,</l>
+        <l>wenn sie dann gellend aufschrie, schmerz- und schauder-</l>
+        <l>voll,</l>
+        <l>dann gilt es ihr. Sie hat das Drachenkind gesäugt,</l>
+        <l>und blutig muſs sie sterben. Und der Wurm bin ich,</l>
+        <l><milestone unit="line" n="550"/> ich bin ihr Mörder. Das verkündet dieser Traum.</l>
+        <l>Und hierfür sollt' ihr meine Zeichendeuter sein.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>So mag es sich erfüllen. Nur verteile noch,</l>
+        <l>was jedem obliegt, der am Werke helfen soll.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Bald ist's gesagt. Elektra kehrt ins Haus zurück,</l>
+        <l><milestone unit="line" n="555"/> und, darum bitt' ich, unser Anschlag muſs geheim</l>
+        <l>gehalten werden. Wie den Helden Hinterlist</l>
+        <l>erschlug, so soll die Mörder ebenfalls das Netz</l>
+        <l>der List umgarnen und erwürgen. So gebot</l>
+        <l>Apollon selbst, des Seherweisheit nimmer trügt.</l>
+      </lg>
+    </sp>
+    <pb n="182"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="560"/> Ich werde ganz gerüstet wie ein Wandersmann</l>
+        <l>zum Thore des Palastes kommen, und mit mir</l>
+        <l>der treue Gastfreund uns'res Hauses Pylades.</l>
+        <l>Mit fremdem Klange, wie man am Parnassos spricht,</l>
+        <l>wird unsre Zunge reden, ganz nach Phokerart.</l>
+        <l><milestone unit="line" n="565"/> Vielleicht mag uns kein Pförtner freundlichen Empfang</l>
+        <l>bereiten, denn das Mörderhaus kennt keine Zucht.</l>
+        <l>Dann harren wir, daſs jeder, der des Weges kommt,</l>
+        <l>aufmerksam wird und also redet 'was? verschliefst</l>
+        <l>Aigisthos einem Fremden, der um Einlaſs fleht,</l>
+        <l><milestone unit="line" n="570"/> die Thür? Ist's ihm gemeldet? Ist er nicht daheim?'</l>
+        <l>Und hab' ich erst des Thores Schwelle hinter mir -</l>
+        <l>so ich ihn treffe sitzend auf des Vaters Thron,</l>
+        <l>so er, herbeigerufen, mir vor Augen kommt,</l>
+        <l>verlafst euch drauf, wie er mich antritt, eh' er nur</l>
+        <l><milestone unit="line" n="575"/> gesagt 'wo seid ihr her, ihr Fremden', mach' ich ihn</l>
+        <l>zur Leiche; Stahl, der flinke Jäger, fängt ihn ab.</l>
+        <l>Und auch dem Fluchgeist unsres Hauses wird sein Teil</l>
+        <l>am Blute. Mordes schlürfet er den dritten Trunk.</l>
+        <l>Du also, Schwester, giebst im Hause sorglich Acht,</l>
+        <l><milestone unit="line" n="580"/> dafs alles dieses ganz dem Plane nach geschieht.</l>
+        <l>Ihr aber, bitt' ich, haltet eure Zung' im Zaum.</l>
+        <l>Schweigt, wo es not thut, redet was die Stunde heischt.</l>
+        <l>In allem andern stell' ich mich in dessen Hut,</l>
+        <l>der meinem Schwerte diesen Weg gewiesen hat.</l>
+      </lg>
+    </sp>
+    <stage>Orestes und Pylades gehen nach der Seite ab, Elektra in die Thür der Hinterwand.</stage>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="585"/><milestone unit="card" n="585" resp="Smyth"/> Erde nähret reifsend wilder</l>
+        <l>Tiere Brut</l>
+        <l>sonder Zahl.</l>
+        <l>Tief in Meeres Schlüften wimmeln</l>
+        <l>Ungeheuer,</l>
+        <l>Fischers Schrecken.</l>
+      </lg>
+    </sp>
+    <pb n="183"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Droben zieh'n des Himmels Wolken</l>
+        <l><milestone unit="line" n="590"/> blitzesschwanger.</l>
+        <l>Und von dem Wüten der Windsbraut</l>
+        <l>weifs zu erzählen</l>
+        <l>was da fleugt und kreucht.</l>
+        <l><milestone unit="card" n="594" resp="Smyth"/>Aber wer ermifst des Mannes</l>
+        <l><milestone unit="line" n="595"/> Wagemut,</l>
+        <l>Willenskraft?</l>
+        <l>Wer des trotz'gen Weiberherzens</l>
+        <l>Liebesstärke,</l>
+        <l>Frevelkühnheit?</l>
+        <l>Sie zerstört der Menschheit Frieden</l>
+        <l>wie der Tierwelt.</l>
+        <l><milestone unit="line" n="600"/> Wo die Geschlechter sich paaren,</l>
+        <l>herrscht die Begierde</l>
+        <l>ruchlos, herrscht das Weib.</l>
+        <l><milestone unit="line" n="605"/><milestone unit="card" n="602" resp="Smyth"/> Kennen soll,</l>
+        <l>wen nicht Wunsch und Wahn verblendet,</l>
+        <l>Althaia, die Arge.</l>
+        <l>Wohlersonnen war die Tücke,</l>
+        <l>und Brandstiftertücke war es:</l>
+        <l>mit dem Scheit frafs die Glut</l>
+        <l>das Leben des Sohnes.</l>
+        <l>Ihm gaben zum Lebensgenossen das Scheit</l>
+        <l><milestone unit="line" n="610"/> die Schicksalsschwestern am Tag, da dem Schofs</l>
+        <l>der Mutter sich wimmernd das Knäblein entwand:</l>
+        <l>und mit ihm muſst' er verglimmen.</l>
+        <l><milestone unit="card" n="612" resp="Smyth"/>Und auch sie</l>
+        <l>nennt die Sage, lehrt sie hassen,</l>
+        <l>die blutige Skylla.</l>
+        <l><milestone unit="line" n="615"/> Minos bot der Nisostochter</l>
+        <l>köstlich goldgefaſst Geschmeide,</l>
+      </lg>
+    </sp>
+    <pb n="184"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>und verführt gab sie preis</l>
+        <l>das Leben des Vaters.</l>
+        <l>Er schlummerte friedlich, sein Atem ging tief,</l>
+        <l><milestone unit="line" n="620"/> da kam die Verworf'ne mit tückischer List</l>
+        <l>und schnitt ihm vom Haupt das unsterbliche Haar:</l>
+        <l>und Hermes entführte die Seele.</l>
+        <l><milestone unit="card" n="623" resp="Smyth"/>Und wenn ich so arger Thaten</l>
+        <l>gedenke - darf ich's denn?</l>
+        <l>Ich dulde ja schnöd'sten Bund,</l>
+        <l><milestone unit="line" n="625"/> die Ehe, die das Haus verflucht,</l>
+        <l>der Frau Verrat,</l>
+        <l>Verrat am Heldengatten,</l>
+        <l>des Heldenglanz</l>
+        <l>niederblitzte jeden Feind.</l>
+        <l>Ich beug' mich ja falscher Weibermajestät</l>
+        <l><milestone unit="line" n="630"/> am kalten Hausaltar.</l>
+        <l><milestone unit="card" n="631" resp="Smyth"/>Von Weiberhand</l>
+        <l>ausgerottet</l>
+        <l>fiel Lemnos' Männervolk.</l>
+        <l>Das Sprichwort nennt lemnisch drum</l>
+        <l>das ärgste Greul. Als lemnisch wird</l>
+        <l>verflucht auch dies.</l>
+        <l><milestone unit="line" n="635"/> Verworfen von den Göttern,</l>
+        <l>verschmäht, verfehmt muſs das Haus zu Grunde geh'n.</l>
+        <l>Wen Gott verstiefs, niemand ehrt noch achtet ihn.</l>
+        <l>So ist's. Sagt' ich zu viel?</l>
+        <l><milestone unit="card" n="639" resp="Smyth"/>Das bohrt in die Seele</l>
+        <l>mir stechende Wunde;</l>
+        <l>Gerechtigkeit fordr' ich. Wo bleibt sie?</l>
+        <l><milestone unit="line" n="640"/> Wenn jegliche Scheu</l>
+        <l>vor Gottes Gesetzen sie schmählich</l>
+        <l>mit Füfsen treten dürfen</l>
+        <l><milestone unit="line" n="645"/><milestone unit="card" n="646" resp="Smyth"/> und alle heil'gen Schranken überspringen,</l>
+      </lg>
+    </sp>
+    <pb n="185"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>So wanken des Rechtes</l>
+        <l>Grundfesten. Da schmiedet</l>
+        <l>und schleifet ein Schwert sich das Schicksal</l>
+        <l>und führet ins Haus</l>
+        <l><milestone unit="line" n="650"/> ein Kind der alten Verbrechen.</l>
+        <l>Am Ende zahlt die Bufse</l>
+        <l>die alte treue Höllenmacht, Erinys.</l>
+      </lg>
+    </sp>
+    <stage>Orestes und Pylades in der Tracht von Wanderern kommen und klopfen an das Thor des Palastes.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="653" resp="Smyth"/>Ho Pförtner, Pförtner, hör' mich klopfen an der Thür.</l>
+        <l>Ist niemand drinnen? Pförtner, Pförtner noch einmal.</l>
+        <l><milestone unit="line" n="655"/> Zum dritten Male ruf' ich. Wenn euch euer Herr</l>
+        <l>Aigisthos Gastlichkeit gelehrt hat, kommt heraus.</l>
+      </lg>
+    </sp>
+    <stage>Pförtner öffnet und spricht in der Thür.</stage>
+    <sp>
+      <speaker>Pförtner.</speaker>
+      <lg type="stanza">
+        <l>Ja doch, ich höre. Wer ist da? Wo kommt ihr her?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Geh' mich zu melden bei der Herrschaft, denn zu ihr</l>
+        <l>bin ich gekommen, neue Zeitung bring' ich ihr,</l>
+        <l><milestone unit="line" n="660"/> beeile dich. Auf schwarzen Rossen naht die Nacht,</l>
+        <l>Zeit wird es, daſs der Wandrer zur Herberge sich,</l>
+        <l>zum Hafen wende, wo er Anker werfen kann.</l>
+      </lg>
+      <stage>Pförtner ab.</stage>
+      <lg type="stanza">
+        <l>Doch jemand, der endgiltigen Bescheid erteilt,</l>
+        <l>muſs kommen, Hausfrau oder schicklicher der Herr.</l>
+        <l><milestone unit="line" n="665"/> Denn dunkel wird die Botschaft, wenn sie Zartgefühl</l>
+        <l>verschleiert. Mann zu Manne redet rund heraus</l>
+        <l>und giebt mit off'nem Worte deutlichen Bericht.</l>
+      </lg>
+    </sp>
+    <stage>Klytaimestra tritt mit stattlichem Gefolge von Dienern und Dienerinnen vor das Thor.</stage>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Sagt eure Wünsche. Was von unserm Haus ein Gast</l>
+        <l>erwarten darf, steht zu Befehl. Ein warmes Bad,</l>
+      </lg>
+    </sp>
+
+
+    <pb n="186"/>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="670"/> ein Lager, das den wegemüden Leib erquickt,</l>
+        <l>und ehrbar aufmerksamer Diener Gegenwart.</l>
+        <l>Doch so ihr weiter ernsteres Geschäft betreibt,</l>
+        <l>ist es der Männer Sache: denen leg' ich's vor.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ich bin zu Haus in Daulis, fern im Phokerland,</l>
+        <l><milestone unit="line" n="675"/> und machte mich mit eigener Geschäfte Last</l>
+        <l>befrachtet auf die Fahrt nach Argos. Unterwegs</l>
+        <l>traf mich ein Mann; wir kannten beid' einander nicht;</l>
+        <l>doch als wir gegenseitig unser Ziel erfragt,</l>
+        <l>sprach Strophios der Phoker (also nannt' er sich</l>
+        <l><milestone unit="line" n="680"/> in dem Gespräche): 'Wenn du doch nach Argos ziehst,</l>
+        <l>so bring', ein treuer Bote, von Orestes' Tod</l>
+        <l>die Nachricht seinen Eltern. Bitte, denke dran.</l>
+        <l>Und wie sie sich entscheiden, ob sie ihn zurück</l>
+        <l>verlangen, ob für ewig ihn ein fremdes Grab</l>
+        <l><milestone unit="line" n="685"/> aufnehmen soll, darüber bring' mir Weisung heim.</l>
+        <l>Jetzt halten wir nach feierlichem Totenfest</l>
+        <l>in eh'rnem Krug des Jünglings Asche wohlverwahrt'.</l>
+        <l>Das war mir aufgetragen, das hab' ich bestellt;</l>
+        <l>ob an die Angehörigen und Zuständigen,</l>
+        <l><milestone unit="line" n="690"/> das weiſs ich nicht. Die Eltern wissen es gewiſs.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="691" resp="Smyth"/>Weh mir, zerschmettert also doch bis auf den Grund.</l>
+        <l>Du alter Fluchgeist unsres Hauses, ja, umsonst</l>
+        <l>ist's, wider dich zu ringen. Weithin reicht dein Blick,</l>
+        <l>und was sich in der Ferne wohl geborgen wähnt,</l>
+        <l>erliegt, von deines Pfeiles sich'rem Schufs ereilt.</l>
+        <l><milestone unit="line" n="695"/> Du raubst die Meinen alle, machst mein Elend voll.</l>
+        <l>So jetzt Orestes von dem mörderischen Sumpf</l>
+        <l>hielt er doch weislich seine Schritte fern, und jetzt -</l>
+        <l>die Hoffnung auf Genesung, Frieden, Jubelrausch</l>
+        <l>von reiner Freude lebt' in unserm Hause doch</l>
+        <l>und tröstete. Nah war sie: du verlöschest sie.</l>
+      </lg>
+    </sp>
+    <pb n="187"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="700"/> Mir wär' es freilich viel erwünschter, hätte mich</l>
+        <l>ein freudiges Ereignis einem also hoch</l>
+        <l>beglückten Hause zugeführt und mir den Schatz</l>
+        <l>der Gastfreundschaft, des Fremdlings köstlichsten,</l>
+        <l>beschert.</l>
+        <l>Doch zu bestellen, was dem Gastfreund ich gelobt,</l>
+        <l><milestone unit="line" n="705"/> wie es auch war, empfand ich als Gewissenspflicht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Du sollst darum nicht kärglicher was dir gebührt</l>
+        <l>erhalten, nicht geringer wird darum das Haus</l>
+        <l>den Gastfreund schätzen. Wäre mit der Botschaft doch</l>
+        <l><milestone unit="line" n="710"/> ein andrer sonst gekommen. Doch die Zeit ist da,</l>
+        <l>wo nach des langen Tages Fahrt der Wandersmann</l>
+        <l>sich pflegen muſs.</l>
+      </lg>
+      <stage>Sie winkt einen aus der Schar der Diener heran.</stage>
+      <lg type="stanza">
+        <l>Du führst die Männer in den Saal,</l>
+        <l>der unsres Hauses Gästen wohlbereitet ist,</l>
+        <l>begleitest ihre Schritte, wartest ihnen auf,</l>
+        <l>und dafs sie alles was ein müder Leib bedarf</l>
+        <l><milestone unit="line" n="715"/> erhalten; dafür, das bedenke, haftest du.</l>
+      </lg>
+      <stage>Zu Orestes.</stage>
+      <lg type="stanza">
+        <l>Ich aber werde diese Sache vor den Herrn</l>
+        <l>des Hauses bringen. Zuverläss'ger Freunde Rat</l>
+        <l>gebricht uns nicht: mit ihnen soll's besprochen sein.</l>
+      </lg>
+    </sp>
+    <stage>Klytaimestra mit den Mägden geht in die zweite Thür, der Diener mit den Fremden in die Hauptthür.</stage>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="720"/><milestone unit="card" n="719" resp="Smyth"/> Auf, ihr Mägde, wenn ihr Agamemnons</l>
+        <l>Haus die Treue hieltet, so beweiset</l>
+        <l>für Orestes des Gebetes Kraft.</l>
+      </lg>
+    </sp>
+    <pb n="188"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="725"/> Heilige Erde, heil'ger Grabeshügel,</l>
+        <l>seinen Hafen hat der Flottenherzog,</l>
+        <l>hat der König unter dir gefunden:</l>
+        <l>jetzt erhör' uns, jetzo sei uns hilfreich.</l>
+        <l>Jetzo gilt es, dafs dem list'gen Anschlag</l>
+        <l>Peitho der Bethörung Kraft verleihe,</l>
+        <l>und der Herr der Nacht, der Erdentiefe,</l>
+        <l>Hermes leiste selbst im Kampfe Beistand,</l>
+        <l>lenke zu dem Todesstofs das Schwert.</l>
+      </lg>
+    </sp>
+    <stage>Aus dem Frauengemache kommt Kilissa, eine Greisin in der herkömmlichen Bühnentracht der Ammen.</stage>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="730"/><milestone unit="card" n="730" resp="Smyth"/> Der Fremde richtet offenbar nichts Gutes an.</l>
+        <l>Verweinten Auges tritt Orestes' Amme dort</l>
+        <l>zum Schloſs heraus. Wohin, Kilissa? Trauer giebt</l>
+        <l>unaufgefordert auf dem Gange dir Geleit.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>Mich schickt die Frau. Aigisthos soll ich schleunigst her</l>
+        <l><milestone unit="line" n="735"/> bescheiden; von den fremden Männern soll der Mann</l>
+        <l>genauer noch die Nachricht, die sie mitgebracht,</l>
+        <l>erkunden. Sie hat wohl ein trüb' Gesicht dazu</l>
+        <l>gemacht, vor dem Gesinde. Doch der Augen Glanz</l>
+        <l><milestone unit="line" n="740"/> verriet die Freude. Ward ihr doch das gröfste Glück</l>
+        <l>mit unsers Hauses gröfstem Jammer, den der Mund</l>
+        <l>der Fremden allzu deutlich nur verkündet hat.</l>
+        <l>Und er erst, wenn er diese neue Post erfährt,</l>
+        <l>wie wird er sich dran weiden! Ach ich armes Weib!</l>
+        <l><milestone unit="line" n="745"/> Gar manchen Schmerz hab' ich in diesem Haus erlebt,</l>
+        <l>und oft hat mir das Herz geblutet; aber nie</l>
+        <l>war es ein solches Unglück. Alles andre trug</l>
+        <l>ich in Geduld, doch mein Orestes - hing an ihm</l>
+        <l>doch meine Seele meine Hände hatten sein</l>
+        <l><milestone unit="line" n="750"/> vom ersten Tag gewartet, jedem Dienst bereit,</l>
+      </lg>
+    </sp>
+    <pb n="189"/>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>achtsam auf jedes helle Kreischen in der Nacht.</l>
+        <l>Und schwere Not und Plage - ach, nun ist's umsonst,</l>
+        <l>daſs ich sie hatte. Unvernünftig wie ein Tier</l>
+        <l>ist nun einmal solch' Würmchen, und man muſs Ver-</l>
+        <l>stand</l>
+        <l><milestone unit="line" n="755"/> statt seiner haben. Das ist wahr! Ein Wickelkind</l>
+        <l>kann noch nichts sagen, wenn es Durst und Hunger</l>
+        <l>plagt,</l>
+        <l>wenn's abgehalten werden will. Der kleine Bauch</l>
+        <l>muſs seinen Willen haben. Nun, da pafst man auf,</l>
+        <l>doch, wie es geht, verpafst man's auch, und Windeln</l>
+        <l>giebt's</l>
+        <l><milestone unit="line" n="760"/> zu spülen. Magd und Wäscherin war ein Geschäft.</l>
+        <l>Ja, diese Doppelarbeit hab' ich einst gehabt,</l>
+        <l>des Vaters Stolz, Orestes, ward mir anvertraut</l>
+        <l>und jetzt, ich ärmste, muſs ich hören, er ist tot,</l>
+        <l>und unsres Hauses Schänder und Verderber muſs</l>
+        <l><milestone unit="line" n="765"/> ich holen. Dem wird's hochwillkomm'ne Botschaft sein.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="766" resp="Smyth"/>Wie lautet denn die Weisung, dafs er kommen soll?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>Was heifst das? Sag' es mir noch einmal, deutlicher.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Ruft sie ihn einzeln oder die Trabanten mit?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>Begleiten soll ihn seiner Lanzenträger Schar.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="770"/> Nein, das bestelle dem verhafsten Herren nicht.</l>
+        <l>Nur er soll kommen, zu vertraulichem Gespräch.</l>
+        <l>Und eile dich. Doch hab' im Herzen frohen Mut:</l>
+        <l>am Boten liegt es, wenn geheimer Plan gelingt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>Bist du von Sinnen? Wie? Bei dem was wir gehört?</l>
+      </lg>
+    </sp>
+    <pb n="190"/>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="775"/> Und wenn sich Zeus erbarmet, und ein Umschlag</l>
+        <l>kommt?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>Unmöglich. Mit Orestes ist die Hoffnung tot.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Noch nicht. Die Zukunft deutet übel, wer es glaubt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>Was meinst du? Weifst du's anders als die Bot-</l>
+        <l>schaft war?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Geh' und gehorche. Richte deinen Auftrag aus:</l>
+        <l><milestone unit="line" n="780"/> Gott sorgt für das, wofür bei Gott die Sorge steht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Kilissa.</speaker>
+      <lg type="stanza">
+        <l>Gut, ich will geh'n und will nach deinem Worte thun.</l>
+        <l>Gelinge was noch möglich ist, das gebe Gott.</l>
+      </lg>
+    </sp>
+    <stage>Ab.</stage>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="783" resp="Smyth"/>Jetzo, Zeus,</l>
+        <l>Vater aller Himmelsmächte,</l>
+        <l><milestone unit="line" n="785"/> hör' uns flehen, hör' uns fordern,</l>
+        <l>gieb Entscheidung,</l>
+        <l>aber entscheide den Sieg der gerechten Sache.</l>
+        <l>Nur für's Recht tret' ich ein</l>
+        <l>Zeus, sei Mehrer des Rechtes.</l>
+        <l><milestone unit="line" n="790"/><milestone unit="card" n="789" resp="Smyth"/> Dem drinnen im Hause</l>
+        <l>gieb über die Feinde</l>
+        <l>die Oberhand, Zeus.</l>
+        <l>Sein Opfer an deinen Altären</l>
+        <l>wird doppelt und dreifach es lohnen.</l>
+      </lg>
+    </sp>
+
+
+    <pb n="191"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="795"/><milestone unit="card" n="794" resp="Smyth"/> Schau' herab</l>
+        <l>auf des lieben Vaters Waise.</l>
+        <l>Erstes Rennen wagt das Füllen,</l>
+        <l>nicht zu schwere</l>
+        <l>Prüfung verlange von ihm; unermüdet flieg' er</l>
+        <l>durch die Bahn,</l>
+        <l>Sprung um Sprung,</l>
+        <l>rasch und rascher zum Ziele.</l>
+        <l>Dem drinnen im Hause</l>
+        <l>gieb über die Feinde</l>
+        <l>die Oberhand, Zeus.</l>
+        <l>Sein Opfer an deinen Altären</l>
+        <l>wird doppelt und dreifach es lohnen.</l>
+        <l><milestone unit="line" n="800"/><milestone unit="card" n="800" resp="Smyth"/> In des Hauses tiefster Kammer,</l>
+        <l>da des Reichs Kleinode liegen,</l>
+        <l>webt ihr heimlich, Ahnengeister,</l>
+        <l>mitempfindend</l>
+        <l>eurer Enkel Leiden.</l>
+        <l>Höret, helfet mit zur Heilung.</l>
+        <l>Lafst den Flecken alten Blutes</l>
+        <l>aufgelöst</l>
+        <l>in dem neuen Strom zerfliefsen.</l>
+        <l>Und des Mordes Zeugungskraft</l>
+        <l><milestone unit="line" n="805"/> sei verdorrt.</l>
+        <l><milestone unit="card" n="806" resp="Smyth"/>Und tief aus dem Grabe</l>
+        <l>aufschaue zur Heimat</l>
+        <l>der Vater, der Fürst.</l>
+        <l>Und gnädigen Auges</l>
+        <l><milestone unit="line" n="810"/> erschau' er im Hause</l>
+        <l>aus nächtigem Schatten der Knechtschaft</l>
+        <l>auflodernd die Freiheit.</l>
+        <l><milestone unit="card" n="811" resp="Smyth"/>Hermes, du verstehst vor allen</l>
+        <l>Göttern kühnem Unterfangen</l>
+      </lg>
+    </sp>
+    <pb n="192"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>guten Wind zur Fahrt zu geben:</l>
+        <l>deines Amtes</l>
+        <l>ist es mit zu helfen.</l>
+        <l><milestone unit="line" n="815"/> Kündest, findest das Verborgne,</l>
+        <l>doch Verstecken und Geheimnis</l>
+        <l>liebst du auch.</l>
+        <l>Nachts gehüllt in Schattendüster,</l>
+        <l>unsichtbar am hellen Tag</l>
+        <l>gehst du um.</l>
+        <l>Und tief aus dem Grabe</l>
+        <l>aufschaue zur Heimat</l>
+        <l>der Vater, der Fürst.</l>
+        <l>Und gnädigen Auges</l>
+        <l>erschau' er im Hause</l>
+        <l>aus nächtigem Schatten der Knechtschaft</l>
+        <l>auflodernd die Freiheit.</l>
+        <l><milestone unit="line" n="820"/><milestone unit="card" n="819" resp="Smyth"/> Und wir Weiber heben dann</l>
+        <l>laut Geschrei,</l>
+        <l>kreischen, dafs die Schrecken weichen,</l>
+        <l>summen kräft'ge Zauberweisen.</l>
+        <l>'Heil für Argos,</l>
+        <l><milestone unit="line" n="825"/> uns zu gut ist's, uns zu gut,</l>
+        <l>und von unsern Streitern bleibt</l>
+        <l>fern der Fluch.'</l>
+        <l><milestone unit="card" n="827" resp="Smyth"/>Und kommt dir die Stunde zu handeln, mein Kind,</l>
+        <l>so fürchte dich nicht.</l>
+        <l>Es rede die Stimme des Vaters aus dir,</l>
+        <l>erhebe dich, wage die rettende That,</l>
+        <l><milestone unit="line" n="830"/><milestone unit="card" n="831" resp="Smyth"/> mag auch die Welt dich verfluchen.</l>
+        <l>Unverzagt wie Perseus einst</l>
+        <l>schlage zu.</l>
+      </lg>
+    </sp>
+    <pb n="193"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l>Thu' den Liebesdienst den Deinen,</l>
+        <l>die im Hause, die im Grabe</l>
+        <l>grollend harren.</l>
+        <l><milestone unit="line" n="835"/> Drinnen wirke blut'gen Fluch,</l>
+        <l>und wer Schuld am Tode trägt</l>
+        <l>sei vertilgt.</l>
+        <l>Und kommt dir die Stunde zu handeln, mein Kind,</l>
+        <l>so fürchte dich nicht.</l>
+        <l>Es rede die Stimme des Vaters aus dir,</l>
+        <l>ermanne dich, wage die rettende That,</l>
+        <l>mag auch die Welt dich verfluchen.</l>
+      </lg>
+    </sp>
+    <stage>Aigisthos kommt von der Seite, nach der Kilissa ging.</stage>
+    <sp>
+      <speaker>Aigisthos.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="838" resp="Smyth"/>Da bin ich, hergerufen, nicht aus eig'nem Drang.</l>
+        <l>Mit neuer Botschaft, heifst es, kam ein fremder Mann,</l>
+        <l><milestone unit="line" n="840"/> mir keineswegs erwünschter, von Orestes' Tod.</l>
+        <l>Das lüde schwerste Sorg' und Angst auf unser Haus,</l>
+        <l>das von der alten Wunde schwer darniederliegt.</l>
+        <l>Wie darf ich das betrachten? Leuchtet klar darin</l>
+        <l>die Wahrheit? Ist's ein Nebelwort, das aus der Angst</l>
+        <l><milestone unit="line" n="845"/> des Frauenherzens aufsteigt, bald in nichts verweht?</l>
+        <l>Könnt ihr mir Auskunft geben, die Gewissheit schafft?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Wir waren Ohrenzeugen, aber geh' hinein</l>
+        <l>und frage selbst den Fremden. Wo der Mann den Mann</l>
+        <l><milestone unit="line" n="850"/> ausforschen kann, hat Zeugenrede keinen Wert.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Aigisthos.</speaker>
+      <lg type="stanza">
+        <l>Ich will den Boten sehen und von neuem ihn</l>
+        <l>verhören, ob er selbst dem Tode beigewohnt,</l>
+        <l>ob er Gerüchtes wirre Stimmen weitergiebt.</l>
+        <l>Mein Geistesaug' ist helle: mich berückt er nicht.</l>
+      </lg>
+    </sp>
+    <stage>Ab.</stage>
+    <pb n="194"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="855"/><milestone unit="card" n="855" resp="Smyth"/> Zeus, was sag' ich? Zeus, womit beginn' ich?</l>
+        <l>Beten will ich und ich will beschwören,</l>
+        <l>doch das Herz, mitfühlend allzu heftig,</l>
+        <l>wie vermag's zu sagen, was es fühlt?</l>
+        <l>Jetzt entscheidet sich's. Im Mannesbusen</l>
+        <l><milestone unit="line" n="860"/> färbt sich purpurn jetzt des Schwertes Klinge,</l>
+        <l>und entweder schlägt sie Agamemnons</l>
+        <l>Hause jetzt den letzten Todesstreich,</l>
+        <l>oder zu der Freiheit heller Feier</l>
+        <l>darf das alte Haus die Flamm' entzünden,</l>
+        <l>und der Ahnen städtewaltend Scepter,</l>
+        <l><milestone unit="line" n="865"/> Herrlichkeit und Reichtum kehrt zurück.</l>
+        <l>Darum geht das Ringen. Wider beide,</l>
+        <l>die im letzten Gange siegreich waren,</l>
+        <l>trat allein mit Gottes Kraft Orestes</l>
+        <l>auf den Plan. O werde sein der Sieg.</l>
+      </lg>
+    </sp>
+    <stage>Stimme von innen.</stage>
+    <sp>
+      <speaker>Stimme von innen.</speaker>
+      <lg type="stanza">
+        <l>Weh mir, weh.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="870"/><milestone unit="card" n="869" resp="Smyth"/> Horcht auf, horcht auf.</l>
+        <l>Wie steht es? Ist's vollbracht?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Lafst uns beiseite treten, der Mitwisserschaft</l>
+        <l>Verdacht zu meiden, während sich das Werk vollzieht.</l>
+        <l>Im Kampf muſs die Entscheidung nun gefallen sein.</l>
+      </lg>
+    </sp>
+    <stage>Sie gehen in einen der Zugänge zur Bühne, die ganz leer wird; es ist völlig Nacht geworden.
+Ein Diener stürzt aus der Mittelthür und klopft dann an der Thür des Frauengemaches.</stage>
+    <sp>
+      <speaker>Diener.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="875"/><milestone unit="card" n="875" resp="Smyth"/> Weh wehe, tötlich ist der Herr getroffen, weh</l>
+        <l>und aber wehe rufet euch mein dritter Schrei.</l>
+      </lg>
+    </sp>
+    <pb n="195"/>
+    <sp>
+      <speaker>Diener.</speaker>
+      <lg type="stanza">
+        <l>Tot ist Aigisthos. Macht mir auf. Beeilet euch,</l>
+        <l>auch von dem Frau'ngemache stofst die Pforten auf.</l>
+        <l>Wir brauchen stärksten Armes Beistand. Doch wozu?</l>
+        <l><milestone unit="line" n="880"/> Dem ist nicht mehr zu helfen, der erschlagen liegt.</l>
+        <l>Holla, holla.</l>
+        <l>Taub sind sie und verschlafen. Alles Schreien hilft</l>
+        <l>mir nichts. Ho, Klytaimestra, wo versäumt sie sich?</l>
+        <l>Es scheint, das Schwert, das über ihrem Haupte</l>
+        <l>schwebt,</l>
+        <l>fährt heut vergeltend nieder und zerschmettert sie.</l>
+      </lg>
+    </sp>
+    <stage>Klytaimestra kommt aus der Thür des Frauengemachs.</stage>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="885"/> Was ist gescheh'n? Was soll der Ruf an meiner Thür?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Diener.</speaker>
+      <lg type="stanza">
+        <l>Vernimm's: die Toten morden die Lebendigen.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Weh mir, des Rätselwortes Sinn versteh' ich wohl.</l>
+        <l>Verrat bezwingt uns, wie wir durch Verrat gesiegt.</l>
+        <l>Geschwinde her das Mordbeil. Sehen wollen wir,</l>
+        <l><milestone unit="line" n="890"/> ob unser Spiel gewonnen, ob verloren ist.</l>
+        <l>Nicht anders ist's: die Stunde der Entscheidung kam.</l>
+      </lg>
+    </sp>
+    <stage>Der Diener eilt in das Frauengemach; Orestes kommt aus der Hauptthür, hinter ihm Pylades. Die Thür bleibt während der nächsten Verse offen; man sieht durch sie die Leiche des Aigisthos.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Sieh' da, dich eben such' ich: jener hat sein Teil.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Weh mir, Aigisthos, liebster Gatte, bist du hin!</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Du liebst ihn; wohl, du sollst auch in dasselbe Grab</l>
+        <l><milestone unit="line" n="895"/> zu ihm, dafs du dem Toten nie die Treue brichst.</l>
+      </lg>
+    </sp>
+    <stage>Er zückt das Schwert auf sie.</stage>
+
+    <pb n="196"/>
+    <stage>Klytaimestra entblöfst ihren Busen.</stage>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Mein Sohn, halt inne. Schone diese Brust, mein Kind.</l>
+        <l>An diesem Herzen hast du schlummernd oft geruht,</l>
+        <l>aus diesem Busen trankest du die Muttermilch.</l>
+      </lg>
+    </sp>
+    <stage>Orestes lässt das Schwert sinken, wendet sich zu Pylades ab.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Was thun? Darf ich die Mutter schonen, Pylades?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Pylades.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="900"/><milestone unit="card" n="900" resp="Smyth"/> Apollons Wahrspruch, Delphis heiligstes Gebot</l>
+        <l>willst du vergessen? Unverbrüchlich ist der Schwur.</l>
+        <l>Brich alle Bande, nur den Göttern bleibe treu.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Dein Rat ist gut und ich gehorche,</l>
+      </lg>
+      <stage>zu Klytaimestra</stage>
+      <lg type="stanza">
+        <l>folge mir,</l>
+        <l><milestone unit="line" n="905"/> hierher, an dessen Seite, den im Leben du</l>
+        <l>dem Vater vorgezogen, geb' ich dir den Tod.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="908"/> Ich pflegte dein. Sei du des Alters Stütze mir.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ich sollte mit dir leben, Vaters Mörderin?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="910"/> Mitschuldig war das Schicksal, Kind, an jener That.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>So hat auch dir das Schicksal diesen Tod bestimmt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Sohn, hast du vor dem Mutterfluche keine Scheu?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Der Mutter, die ins Elend mich verstofsen hat!</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Doch nicht verstofsen, in ein gastverwandtes Haus.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="915"/> Schmählich verkauft, des freigebornen Vaters Sohn.</l>
+      </lg>
+    </sp>
+<pb n="197"/>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Wo ist der Kaufpreis, den ich zum Entgelt empfing.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ich schäme mich ihn auszusprechen, diesen Preis.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Bedenke deines Vaters Sünden ebenfalls.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Schilt nicht den Krieger. Friedlich saſsest du daheim.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="920"/> Des Mannes Fernsein wird dem Weibe Qual, mein Kind.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Des Mannes Arbeit nährt sie in dem sich'ren Haus.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Und wirklich, Sohn, du willst den Muttermord begeh'n?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Nicht ich, bei Gott, du selbst bist deine Mörderin.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Denk' an der Mutter Rachegeister, hüte dich.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="925"/> Und die des Vaters? Ruft sie nicht mein Zaudern wach?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Erbarmen! Kalt und taub verharrst du wie das Grab.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Dein Urteil ist gesprochen durch des Vaters Tod.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Weh mir, die Natter sticht mich, die ich selbst gebar.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ja wohl, des Traumes Schauerbilder werden wahr.</l>
+        <l><milestone unit="line" n="930"/> Dein Thun war Sünde: sei's auch Sünde, komm</l>
+        <l>und stirb.</l>
+      </lg>
+    </sp>
+    <stage>Er führt sie in die Hauptthür ab; Pylades folgt. Der Chor kommt wieder vor; während er sich sammelt, spricht die</stage>
+<pb n="198"/>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Nicht ohne Mitleid seh' ich dieses Paares Fall;</l>
+        <l>allein es ist der Abschluſs vieler blut'ger Greu'l.</l>
+        <l>Orestes tritt die Erbschaft an, drum wünschen wir,</l>
+        <l>dafs uns'res Hauses letzte Hoffnung nicht verlischt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="935"/><milestone unit="card" n="935" resp="Smyth"/> Es kam die Vergeltung in Priamos' Haus,</l>
+        <l>kam endlich, die Rache,</l>
+        <l>die Rache mit schwerem Tritt.</l>
+        <l><milestone unit="line" n="940"/> Es kam in das Haus Agamemnons</l>
+        <l>ein Löwenpaar, ein Mörderpaar.</l>
+        <l>Der Flüchtling, den Delphis Stimme verhiefs,</l>
+        <l>kehrt heim. Ihn führte zum Ziele</l>
+        <l>des schützenden Gottes Hand.</l>
+        <l><milestone unit="card" n="942" resp="Smyth"/><milestone unit="card" n="942a" resp="Smyth"/>Heil rufet mit Jauchzen</l>
+        <l>dem Hause des Herrn.</l>
+        <l><milestone unit="line" n="945"/> Vorbei ist die Schande,</l>
+        <l>des Gutes Vergeudung,</l>
+        <l>der beiden Tyrannen</l>
+        <l>verbrecherisch Glück.</l>
+        <l><milestone unit="card" n="946" resp="Smyth"/>Es kam die Vergeltung; und listiger Trug,</l>
+        <l>wohl ziemt er der Rache;</l>
+        <l>sie liebt den heimlichen Stofs.</l>
+        <l><milestone unit="line" n="950"/> Doch führte die Hand zum Stofse</l>
+        <l>Vergeltung; also nennt mit Recht</l>
+        <l>der Sterblichen Mund die Tochter des Zeus.</l>
+        <l>Sie schnob in grimmigem Grolle</l>
+        <l>den Feinden den Untergang.</l>
+        <l>Heil rufet mit Jauchzen</l>
+        <l>dem Hause des Herrn.</l>
+      </lg>
+    </sp>
+<pb n="199"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="955"/> Vorbei ist die Schande,</l>
+        <l>des Gutes Vergeudung,</l>
+        <l>der beiden Tyrannen</l>
+        <l>verbrecherisch Glück.</l>
+        <l><milestone unit="card" n="953" resp="Smyth"/>Im finstern Spalt der Parnassos</l>
+        <l>verhiefs Apollon dem Truge</l>
+        <l>der Rache Gelingen.</l>
+        <l><milestone unit="line" n="960"/> Nicht trügt er; des Blutes Spuren,</l>
+        <l>des altvergoss'nen, erspäht er.</l>
+        <l>Was göttliches Wort gebot,</l>
+        <l>kann nimmer ein Frevel sein.</l>
+        <l>Gehorche den Herren des Himmels:</l>
+        <l>sie lohnen's.</l>
+        <l><milestone unit="card" n="961" resp="Smyth"/>Die Sonne ging auf,</l>
+        <l><milestone unit="line" n="965"/> es fielen die Ketten.</l>
+        <l>Du altes Haus der Atreiden,</l>
+        <l>erhebe dein Haupt.</l>
+        <l>Zu lange lagst du am Boden.</l>
+        <l>Sind erst mit sühnenden Weihen</l>
+        <l>die Geister der Rache vertrieben,</l>
+        <l>gebannt die Befleckung,</l>
+        <l><milestone unit="line" n="970"/><milestone unit="card" n="966" resp="Smyth"/> dann kommt die Zeit der Vollendung,</l>
+        <l>zieht über die Schwelle zum Herde.</l>
+        <l>O, glänzte doch überall</l>
+        <l>erst Frieden und schöll' es rings</l>
+        <l>'die fremden Geister im Hause,</l>
+        <l>sie weichen.</l>
+        <l><milestone unit="card" n="972" resp="Smyth"/>Die Sonne ging auf,</l>
+        <l>es fielen die Ketten,</l>
+        <l>du altes Haus der Atreiden,</l>
+        <l>erhebe dein Haupt,</l>
+        <l>zu lange lagst du am Boden'.</l>
+      </lg>
+    </sp>
+<pb n="200"/>
+    <stage>Die Hinterwand öffnet sich; man sieht die beiden Leichen aufgebahrt. Orestes steht daneben; Diener halten das Gewand, in dem Agamemnon erschlagen war. Allerhand Volk sammelt sich allmählich vor dem Schlosse.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="973" resp="Smyth"/>Da seht sie, unsres Vaterlands Tyrannenpaar,</l>
+        <l>die vatermordend mir das Elternhaus zerstört.</l>
+        <l><milestone unit="line" n="975"/> Wie stolz noch jüngst, vereinigt auf dem Herrscher-</l>
+        <l>thron,</l>
+        <l>vereint auch jetzt in Liebe: ihr Geschick verrät's.</l>
+        <l>Sie haben Wort gehalten. Treue schwuren sie</l>
+        <l>einander zu für meines armen Vaters Mord,</l>
+        <l>und treu den Tod zu teilen: beides ist erfüllt.</l>
+        <l><milestone unit="line" n="980"/> Und weiter seht, ihr Zeugen dieser blut'gen That,</l>
+        <l>der Arglist Werkzeug. Um der Händ' und Füfse Paar</l>
+        <l>des armen Vaters schlangen diese Fesseln sich.</l>
+        <l>Entfaltet das und tragt es rings im Kreis herum,</l>
+        <l>und zeigt das Menschenstellnetz. Möge denn das Werk</l>
+        <l>der Tücke, das die Mutter sann, der Vater seh'n</l>
+        <l><milestone unit="line" n="985"/> nicht meiner, nein, der Weltenvater Helios,</l>
+        <l>der alles schaut, auf dafs er am Gerichtstag einst</l>
+        <l>als Zeuge mir zur Seite die Gerechtigkeit</l>
+        <l>des Mordes mit vertrete - nur den Muttermord;</l>
+        <l><milestone unit="line" n="990"/> Aigisthos zählt nicht. Was dem Ehrenschänder recht,</l>
+        <l>ist ihm geworden. Aber sie, die am Gemahl,</l>
+        <l>an ihm das Greu'l verübt hat, der ihr Kind gezeugt,</l>
+        <l>das unterm Herzen sie getragen - einst ihr Kind,</l>
+        <l>ihr liebstes, jetzt als ärgster Feind an ihr bewährt -</l>
+        <l>was dünkt von ihr euch? Sei sie Natter oder Wurm,</l>
+        <l><milestone unit="line" n="995"/> sie braucht nicht erst zu stechen, schon Berührung</l>
+        <l>bringt</l>
+        <l>den Brand: so ganz verwogen, so verrucht ist sie.</l>
+      </lg>
+    </sp>
+    <stage>Die Diener bringen das Gewand zurück.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Das da - ich will nicht lästern, wie bezeichn' ich's</l>
+        <l>recht?</l>
+      </lg>
+    </sp>
+
+    <pb n="201"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>fängt man mit dem den wilden Eber? Deckt mit dem</l>
+        <l><milestone unit="line" n="999"/> die eingesargte Leiche man von Kopf zu Fuſs?</l>
+        <l><milestone unit="line" n="1001"/> O nein, das ist ein Fangnetz, wie's der Räuber liebt,</l>
+        <l>der Wegelag'rer, der von Mord und Plündern lebt.</l>
+        <l>Der kann es brauchen. Mit dem hinterlist'gen Garn</l>
+        <l>wie viele wird er fangen, welch ein Schatz für ihn!</l>
+      </lg>
+      <stage>Blickt wieder auf die Leiche.</stage>
+      <lg type="stanza">
+        <l><milestone unit="line" n="1005"/> Solch Weib als meine Gattin? Lieber treffe mich</l>
+        <l>des Himmels Fluch, erlösche mein Geschlecht mit mir.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="1007" resp="Smyth"/>Wehe wehe, unheilvolle Thaten,</l>
+        <l>hingemordet ward er jammervoll.</l>
+        <l>Wehe!</l>
+        <l>Doch es kommt der Tag, da auch des Leidens</l>
+        <l>Blüte bricht.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="1010"/><milestone unit="card" n="1010" resp="Smyth"/> War sie auch schuldig? Wirklich schuldig? Das</l>
+        <l>Gewand</l>
+        <l>bezeugt es. Diese Stelle hat Aigisthos' Dolch</l>
+        <l>gefärbt. Der Blutfleck, der des Purpurs Glanz zerstört,</l>
+        <l><milestone unit="line" n="1313"/> ist alt, so alt wie ihr Verbrechen. Damals war</l>
+        <l>ich ahnungslos, sie hielten mich der Heimat fern.</l>
+        <l><milestone unit="line" n="1314"/> Jetzt steh' ich hier, begreif' es, jetzt bewein' ich es,</l>
+        <l><milestone unit="line" n="1015"/> und blick' ich hin auf meines Vaters Mordgewand,</l>
+        <l>dann kommen mir die Schmerzen der Erinnerung</l>
+        <l>an mein Geschlecht, an alles, was es that und litt,</l>
+        <l>und meines Sieges Blutschuld fällt mir schwer aufs</l>
+        <l>Herz.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="1020"/><milestone unit="card" n="1018" resp="Smyth"/> Rein verrinnet keines Menschen Leben,</l>
+        <l>jeder zahlet einen schweren Preis.</l>
+        <l>wehe!</l>
+        <l>Seine Plage hat das Heut, es hat sie</l>
+        <l>jeder Tag.</l>
+      </lg>
+    </sp>
+<pb n="202"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="1021" resp="Smyth"/>Doch nein, ihr müfst das wissen - wie das enden soll,</l>
+        <l>begreif ich nicht. Der Wagen meiner Seele fährt</l>
+        <l>aus seiner Bahn. Der Zügel der Besinnung fällt</l>
+        <l>mir aus der Hand. Mein Herz geht durch. Es sitzt</l>
+        <l>das Grau'n</l>
+        <l><milestone unit="line" n="1025"/> davor und will sein Lied ihm pfeifen, und das Herz</l>
+        <l>begehrt zu tanzen nach der Schaudermelodie.</l>
+        <l>So lang' ich noch bei Sinnen bin, verkünd' ich euch,</l>
+        <l>berechtigt war ich, Freunde, zu der Mutter Mord,</l>
+        <l>der Gottverhafsten, die des Vaters Blut vergofs.</l>
+        <l><milestone unit="line" n="1030"/> Und eingegeben hat mir Lust und Mut zur That</l>
+        <l>Apollon. Wenn ich's thäte, sprach der Sehergott,</l>
+        <l>so würde niemand einer Frevelthat mich zeih'n;</l>
+        <l>doch wenn ich's unterliefse - nennen mag ich nicht</l>
+        <l>die Strafe: kein Gedanke miſst die Qualen aus.</l>
+        <l>Nun seht mich an. Ich rüste mich. Mit diesem</l>
+        <l>Zweig</l>
+        <l><milestone unit="line" n="1035"/> des Ölbaums und der Wollenbinde zich' ich hin</l>
+        <l>bittflehend zu dem Erdennabel, wo die Glut</l>
+        <l>der nie verlosch'nen Flamme glimmt, Apollons Sitz.</l>
+        <l>Ich weiche dieser Blutschuld, und der Gott gebot,</l>
+        <l>ich sollte Zuflucht suchen mir an seinem Herd.</l>
+        <l><milestone unit="line" n="1040"/> Euch bitt' ich, Volk von Argos, bleibet eingedenk</l>
+        <l>des Unheils, das geschehen, und bezeugt es mir,</l>
+        <l><milestone unit="line" n="1041"/> wenn Menelaos heimkehrt. Dann ist's an der Zeit.</l>
+        <l><milestone unit="line" n="1042"/> Ich zieh' ins Elend, meinem Heimatlande fern.</l>
+        <l>Die Mutter hab' ich umgebracht mit eig'ner Hand:</l>
+        <l><milestone unit="line" n="1043"/> im Leben und im Tode trag' ich diesen Ruf.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Du hast ja recht gehandelt, läst're dich nicht selbst</l>
+        <l><milestone unit="line" n="1045"/> und fluche dir kein Unheil an mit eig'nem Mund.</l>
+        <l>Der rasche Schnitt, der dieses Otternpaar gefällt,</l>
+        <l>hat aus der Knechtschaft Argos' ganzes Volk erlöst.</l>
+      </lg>
+    </sp>
+<pb n="203"/>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ha! Ha, was für Weiber sind das? Wie gorgonenhaft,</l>
+        <l>in nächtig fahlen Mänteln? Um die Häupter zuckt</l>
+        <l><milestone unit="line" n="1050"/> Natterngewimmel. Meines Bleibens ist nicht mehr.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="1051" resp="Smyth"/>Welch' Wahngebild verwirrt dich? Halt' dem</l>
+        <l>Schrecken stand,</l>
+        <l>dem Vater treuster aller Söhne, fasse dich.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Kein Wahngebilde. Diese Greu'l sind Wirklichkeit.</l>
+        <l>Sie sind's, die Rachegeister meiner Mutter sind's.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="1055"/> Von deinen Händen triefet noch das frische Blut;</l>
+        <l>daher der Schwindel, der die Seele dir verwirrt.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Apollon, Heiland, immer neue steigen auf,</l>
+        <l>Blutstropfen seh' ich in den dräu'nden Augen glüh'n.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>Du brauchst Entsühnung. Doch sobald er nur die</l>
+        <l>Hand</l>
+        <l><milestone unit="line" n="1060"/> dir rührt, erlöst Apollon dich aus dieser Not.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l>Ihr seht sie freilich nicht. Ich seh' sie, da und da.</l>
+        <l>Es jagt mich fort. Nein, meines Bleibens ist nicht</l>
+        <l>mehr.</l>
+      </lg>
+    </sp>
+    <stage>Er stürzt fort.</stage>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l>So fahre wohl, und möge dich in gnäd'ger Hut</l>
+        <l>ein Gott bewahren, rettend in der Not dir nah'n.</l>
+      </lg>
+    </sp>
+    <stage>Während die Menge sich verläuft, die Hinterwand sich schliesst, singt im Abziehen der</stage>
+<pb n="204"/>
+    <sp>
+      <speaker>Chor.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="1065"/><milestone unit="card" n="1065" resp="Smyth"/> Also hat sich jähes Ungewitter</l>
+        <l>über unserm Königshaus entladen,</l>
+        <l>schon zum dritten Male schlug es ein.</l>
+        <l><milestone unit="line" n="1070"/> Erst der Knäblein jämmerliches Schicksal,</l>
+        <l>da Thyestes Unerhörtes litt.</l>
+        <l>Zweites Opfer war ein Mann; im Bade</l>
+        <l>fiel der Held, der Herzog der Hellenen.</l>
+        <l>Heut' erschien der dritte - sag' ich Retter,</l>
+        <l>sag' ich Schicksalsschlag? Was ist der Ausgang?</l>
+        <l><milestone unit="line" n="1075"/> Kaum entschlummert wacht die Wut des Fluches</l>
+        <l>wieder auf und rast - wohin, wohin?</l>
+      </lg>
+    </sp>
+
+    </div>
+    </body>
+    <back><div type="textpart" xml:lang="de" subtype="note">
+    <pb n="205"/>
+    <head>Zum griechischen Texte.</head>
+    <p>Gegenüber meiner Ausgabe von 1896 habe ich zu
+    berichtigen: 24 <foreign xml:lang="grc">πρέπει παρηὶς φοίνισσ᾽ ἀμυγμοῖς</foreign> (so die
+    Handschrift). 31 [<foreign xml:lang="grc">φοῖβος</foreign>]. 841 <foreign xml:lang="grc">μόρον δ'</foreign>. 842 <foreign xml:lang="grc">δειματο-
+    σταγές</foreign>, beides mit der Hds. All dies hat mich Fr. Blaſs
+    gelehrt; derselbe und H. Diels haben 879 richtig erklärt:
+    ich hatte mir die Konstruktion des griechischen Schlosses
+    nicht klar gemacht. Ferner ist wahrscheinlich der Be-
+    ginn der Epode schon 66 anzusetzen, 74 <foreign xml:lang="grc">βαίνοντες</foreign> zu
+    streichen, 75 <foreign xml:lang="grc">ἴοιεν ἄν</foreign> aus <foreign xml:lang="grc">ἰοῦσαν</foreign> zu machen. Mit diesen
+    leichten Mitteln wird dem Sinne genug gethan, während
+    Responsion sich schwerlich erzielen läſst. Die Sache ist
+    indessen nicht so sicher, daſs ich die gelungene Über-
+    setzung hätte ändern müssen. Endlich folgt aus der
+    boeotischen Inschrift <foreign xml:lang="grc">Ἐφ. ἀρχ.</foreign> 97, 293, daſs <foreign xml:lang="grc">ἄπαρχος</foreign> und
+    <foreign xml:lang="grc">ἀπάρχειν</foreign> im Sinne von Herrschen, Kommandieren gesagt
+    worden ist, mag die Nuance der Bedeutung auch dis-
+    kutabel sein. Darauf deuteten schon <foreign xml:lang="grc">ἀπάρχειν</foreign> bei Pindar
+    Nem. 4, 46 und die <foreign xml:lang="grc">ἀπαρχή</foreign> in den thasischen Theoren-
+    inschriften. Danach ist Agam. 1227, Pers. 327 <foreign xml:lang="grc">ἄπαρχος</foreign>
+    zu belassen, hier 664, wie Ahrens wollte, <foreign xml:lang="grc">γ' ἄπαρχος</foreign> zu
+    schreiben.</p>
+</div>
+
+
+
+</back>
+  </text>
+</TEI>

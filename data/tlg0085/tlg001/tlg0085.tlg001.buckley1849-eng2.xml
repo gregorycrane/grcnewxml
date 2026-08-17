@@ -1,0 +1,1347 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>The Suppliant Women.</title>
+        <title>The tragedies of Aeschylus</title>
+        <author>Aeschylus</author>
+        <editor role="translator">Theodore Alois Buckley</editor>
+        <respStmt>
+          <resp>Translator credited as</resp>
+          <name>Theodore Alois Buckley (1825–1856)</name>
+        </respStmt>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder>Volunteer</funder>
+      </titleStmt>
+
+      <extent>About 90Kb</extent>
+
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <availability status="free">
+          <licence target="https://www.hathitrust.org/rights/public-domain">Public domain (U.S.)</licence>
+          <p>Digitized copy served via HathiTrust.</p>
+        </availability>
+      </publicationStmt>
+
+      <seriesStmt>
+        <title level="s">Bohn’s classical library</title>
+        <respStmt>
+          <resp>Series publisher</resp>
+          <name>Henry G. Bohn</name>
+        </respStmt>
+      </seriesStmt>
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <title>The tragedies of Aeschylus</title>
+            <title type="sub">Literally translated, with critical and illustrative notes, and an introduction</title>
+            <editor role="translator">Theodore Alois Buckley</editor>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>Bohn</publisher>
+              <date when="1849">1849</date>
+            </imprint>
+            <biblScope unit="series">Bohn’s classical library</biblScope>
+            <biblScope unit="extent">xx, 234 p.; front.; 19 cm</biblScope>
+          </monogr>
+          <ref target="https://hdl.handle.net/2027/hvd.32044005046321">HathiTrust handle</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition using source-supplied passage ranges. In the Suppliants, each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+      <language ident="grc">Ancient Greek</language><language ident="lat">Latin</language></langUsage>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2025-10-23" who="GRC">New file created drawing metadata from the HathiTrust record for Buckley (1849); series noted as Bohn’s classical library.</change>
+    <change when="2026-08-16" who="#gcrane">Regularized as the EpiDoc/CTS translation urn:cts:greekLit:tlg0085.tlg001.buckley1849-eng2; notes moved to apparatus and Smyth cards aligned.</change><change when="2026-08-16" who="#gcrane">Realigned all Suppliants Smyth cards by direct Greek-English textual comparison.</change></revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng"><front><pb n="95"/>
+       <fw type="header">THE SUPPLIANTS<ref n="210.1" target="#app-tlg001-fn-210.1">1</ref>.</fw>
+            <pb n="210"/>
+
+            <fw type="header">ARGUMENT.</fw>
+            <p>The flight of the Danaides from Egypt, accompanied by their father to
+                Argos, and their supplication for protection against the lawless nuptials
+                threatened them by the sons of Ægyptus.</p>
+
+
+            <div type="textpart" subtype="cast-list"><fw type="header">PERSONS REPRESENTED.</fw><list><item><roleName>CHORUS</roleName>, THE DAUGHTERS OF DANAUS.</item><item><roleName>DANAUS</roleName>.</item><item><roleName>PELASGUS</roleName>.</item><item><roleName>HERALD</roleName>.</item></list></div>
+            </front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg001.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:2-40">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="1" resp="Smyth"/>May Jove, indeed, the god of suppliants benevolently regard our naval
+                    train having set sail from the mouths of the Nile with its fine sands. But
+                    having left the divine land bordering on Syria we fled, sentenced to no
+                    banishment by the vote of the city, on account of bloodshed, but abhorring
+                    the man-shunning and impious nuptials of the sons of Ægyptus our kindred.
+                    But our father Danaus both our prime counsellor and leader of our flight,
+                    arranging these things, determined on the best of two evils (viz., the
+                    nuptials, or flight,) that we should fly with all speed over the billow of the
+                    deep, and put to at the land of Argos, from whence, indeed, our lineage, from
+                    the heifer rendered frantic by the gadfly, and from the touch and
+                    inspiration of Jove, boasts to be derived. To what country therefore more
+                    friendly than this can we come with these wool-wreathed branches of
+                    suppliants in our hands? O<ref n="210.2" target="#app-tlg001-fn-210.2">2</ref> city, and land, and limpid water, and you
+            <pb n="211"/>
+            
+        heavenly gods, and you dire-punishing infernal deities possessing temples, and
+                third [called upon] preserver Jove, receive this suppliant female train with a
+                merciful spirit of the country: but the male-abounding insolent swarm,
+                sprung from Ægyptus, before placing their foot in this marshy land, send thou
+                into the deep with their swift ship, and there having met with a furious
+                whirlwind, with thunder, lightning, and with the shower-bearing winds of the
+                fell sea, let them perish, before at any time ascending our unwilling beds,
+                from which Justice restrains them, having made their own<ref n="211.1" target="#app-tlg001-fn-211.1">1</ref> us here their
+                kindred. <milestone unit="card" n="40" resp="Smyth"/>But now invoking<ref n="211.2" target="#app-tlg001-fn-211.2">2</ref> the divine calf, my avenger beyond the sea,
+                and the son of the flower-cropping heifer, our progenitor, from the breathing
+                of Jove. But the fated time rightly confirmed the touch [of Jove] in the name
+                [of her son,] and brought forth Epaphus; <milestone unit="card" n="49" resp="Smyth"/>whom mentioning now in the
+                fertile regions of his ancient mother, calling to mind her former troubles,
+                partly now will I shew creditable proofs, and partly some things will appear, I
+                know, unlikely, although being unexpected<ref n="211.3" target="#app-tlg001-fn-211.3">3</ref>. But one will ken words [when I
+                have spoken] at length. <milestone unit="card" n="58" resp="Smyth"/>But if any augur chances to be near in the land,
+                hearing our mournful wail, he will think that he hears the wife of Tereus
+                wretched of device; and the hawk-chased nightingale; <milestone unit="card" n="63" resp="Smyth"/>who driven from her
+                haunts and the rivers laments with new wail on account of her accustomed
+                haunts; and trills a song on the fate of the boy, how he perished by the very
+                hand of his cruel mother, having met with her wrath. <milestone unit="card" n="68" resp="Smyth"/>So I, too, lamenting in
+                Ionian strains rend my tender cheek that was cherished beside the Nile, and my
+                heart unacquainted with tears. And I crop the flower of sad complaints,
+                fearing my friends, if there is any one who has regard for this flight of ours
+                from the land of Aeria<ref n="211.4" target="#app-tlg001-fn-211.4">4</ref>. <milestone unit="card" n="77" resp="Smyth"/>But ye gods, authors of our race, hear, duly
+                regarding justice, or if ye do not grant success in obtaining what is contrary
+                to right, but hating insolence in your souls, you should be just in regard to
+                nuptials<ref n="211.5" target="#app-tlg001-fn-211.5">5</ref>. But there is even to those who fly from war, being hard
+            <pb n="212"/>
+            
+            pressed, an altar, a defence from calamity<ref n="212.1" target="#app-tlg001-fn-212.1">1</ref>, honoured by the deities. <milestone unit="card" n="86" resp="Smyth"/>Would
+                that [the will] of Jove would bring to pass all things truly. The counsel of
+                Jove is not easily traced out, yet in all things it shines forth, even in
+                darkness, with black calamity to articulate-voiced men. <milestone unit="card" n="91" resp="Smyth"/>But it falls firmly
+                not upon its back<ref n="212.2" target="#app-tlg001-fn-212.2">2</ref>, if a thing be perfected by the head of Jove: for the ways of
+                the [divine] breast stretch thick and shady, difficult to discover. <milestone unit="card" n="96" resp="Smyth"/>But he
+                smites abandoned mortals, looking down<ref n="212.3" target="#app-tlg001-fn-212.3">3</ref> from his high-towered heights, and no
+                one arms violence unpunished by the deity: the [divine] mind sitting aloft<ref n="212.4" target="#app-tlg001-fn-212.4">4</ref>
+                upon holy seats, nevertheless from that place takes vengeance on it. <milestone unit="card" n="104" resp="Smyth"/>But let
+                him look to the insolence of mortal men, how a youthful stock shoots anew,
+                blooming<ref n="212.5" target="#app-tlg001-fn-212.5">5</ref> on account of my nuptials, with ill-advised purpose, and having
+                furious thoughts, an inevitable sting, and having resolved on an infatuated
+                deed through disappointment<ref n="212.6" target="#app-tlg001-fn-212.6">6</ref>. <milestone unit="card" n="112" resp="Smyth"/>Such wretched sufferings I lamenting recount,
+                mournful, grievous, drawing tears, ah! ah! suited to funereal strains: I alive
+                honour<ref n="212.7" target="#app-tlg001-fn-212.7">7</ref> myself with lamentations. <milestone unit="card" n="117" resp="Smyth"/>I suppliant beseech the Apian land, and
+                may you hear kindly my barbarian voice. But oft I fall upon my linen
+                garments with rendings, and my Sidonian head-dress. <milestone unit="card" n="123" resp="Smyth"/>But to the gods just and
+                perfect rites<ref n="212.8" target="#app-tlg001-fn-212.8">8</ref>, matters having happened fortunately, shall be abundantly
+                afforded, when death is absent. Ah! ah! ah! troubles difficult to be judged!
+                where will this billow carry us? <milestone unit="card" n="128" resp="Smyth"/>I suppliant beseech the Apian land, and may
+                you hear kindly my barbarian voice. But oft I fall upon my linen garments
+                with rendings. <milestone unit="card" n="134" resp="Smyth"/>The oar indeed and the wooden house with flaxen sails<ref n="212.9" target="#app-tlg001-fn-212.9">9</ref>,
+                keeping out the sea, has wafted me with the breezes untroubled</p>
+            <pb n="213"/>
+            
+            <p>by tempests: nor do I blame it: but hereafter may the all-seeing father
+                bring to pass a propitious end<ref n="213.1" target="#app-tlg001-fn-213.1">1</ref>, <milestone unit="card" n="141" resp="Smyth"/>that the mighty seed of our venerable mother
+                escape, alas! from the beds of men unwedded, virgin. <milestone unit="card" n="144" resp="Smyth"/>But again may the
+                chaste daughter of Jove willingly regard me willing, keeping fixed upon me
+                her dread countenance: and with all her might let her a virgin defending
+                virgins from persecutions, be our deliverer<ref n="213.2" target="#app-tlg001-fn-213.2">2</ref>. <milestone unit="card" n="151" resp="Smyth"/><gap reason="omitted" unit="line" quantity="3" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:151-153"/><milestone unit="card" n="154" resp="Smyth"/>But if not, a blackened sun-burnt<ref n="213.3" target="#app-tlg001-fn-213.3">3</ref>
+                race to Zagreus<ref n="213.4" target="#app-tlg001-fn-213.4">4</ref>, the many-guest-receiving Jove of the dead will we approach
+                with these suppliant boughs, dying by the noose, not having obtained [the
+                favour] of the Olympian gods. <milestone unit="card" n="162" resp="Smyth"/>O Jove<ref n="213.5" target="#app-tlg001-fn-213.5">5</ref>, O wrath from the deities pursuing Io!
+                But I ken the vengeance of the wife [of Jove,] which overcomes heaven: for a
+                tempest will come from a fell blast. <milestone unit="card" n="168" resp="Smyth"/>And then Jove will be subject to unjust
+                rumours, having slighted the son of the heifer, whom he himself once begot,
+                now keeping his eyes averted from our prayers; but may he favourable hear us
+                from above when invoked. <milestone unit="card" n="162a" resp="Smyth"/>O Jove, O wrath from the deities pursuing Io! But
+                I ken the vengeance of the wife [of Jove,] which overcomes heaven: for a
+                tempest will come from a fell blast.</p>
+                </sp>
+            <sp n="2" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:176-203">
+                <speaker>DANAUS</speaker>
+                <p><milestone unit="card" n="176" resp="Smyth"/>My children, it behoves us to be prudent: and ye have come with me your
+                    prudent faithful aged father conductor of your voyage. And with respect to
+                    your behaviour on land now I bid you assume<ref n="213.6" target="#app-tlg001-fn-213.6">6</ref> prudence to observe my
+                    words, engraving them on your minds. I see dust, the voiceless messenger of
+                    an army; the axle-driven naves are not silent, and I behold a bucklered and
+                    spear-brandishing crowd, with
+            <pb n="214"/>
+            
+            horses, and curved chariots. Perhaps the rulers of this land may be advancing
+                to us as spies, having heard [of us] from messengers. But whether harmless,
+                or enraged<ref n="214.1" target="#app-tlg001-fn-214.1">1</ref> with fell wrath, they are rushing on this train, it is better, on
+                every account, O virgins, to sit down at this mound of the gods who preside
+                over assemblies. But an altar is better than a tower, an unbroken shield. But
+                as quickly as possible go, and holding reverently in your left<ref n="214.2" target="#app-tlg001-fn-214.2">2</ref> hands the
+                white-wreathed suppliant boughs, ornaments of awful Jove, reply to the
+                strangers with modest and sad and fitting words, as becomes those in a
+                strange land, clearly relating these your bloodless flights. But first indeed
+                let not boldness of voice follow, and let no vain look proceed from your modest
+                foreheads, and quiet eye. And be not first to speak nor tedious in your talk:
+                the people in this country greatly dislike it. But be sure to yield: you are a
+                needy stranger exile; for it becomes not the lowly to be bold of speech.</p>
+            </sp>
+            <sp n="3" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:204-206">
+                <speaker>CHORUS</speaker>
+                <p>Father, prudently to the prudent do you speak. But we mindful will
+                    observe these your wise injunctions; and may Jove the author of our race
+                    regard us.</p>
+            </sp>
+            <sp n="4" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:207">
+                <speaker>DANAUS</speaker>
+                <p><milestone unit="card" n="207" resp="Smyth"/>Delay not now, but let there be an accomplishment of your plan<ref n="214.3" target="#app-tlg001-fn-214.3">3</ref>.</p>
+            </sp>
+            <sp n="5" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:208">
+                <speaker>CHORUS</speaker>
+                <p>I would now have my seat beside you.</p>
+            </sp>
+            <sp n="6" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:209">
+                <speaker>DANAUS</speaker>
+                <p>O Jove, pity us not utterly consumed by troubles.</p>
+            </sp>
+            <sp n="7" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:210">
+                <speaker>CHORUS</speaker>
+                <p>Let him regard us in truth with favouring eye: he willing it, these things
+                    will turn out well<ref n="214.4" target="#app-tlg001-fn-214.4">4</ref>.</p>
+            </sp>
+            <sp n="8" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:211">
+                <speaker>DANAUS</speaker>
+                <p>Invoke now also this bird of Jove.</p>
+            </sp>
+            <sp n="9" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:213-215">
+                <speaker>CHORUS</speaker>
+                <p>We invoke the preserving rays of the sun, and holy Apollo, a god once
+                    exiled from heaven. Knowing this fate, let him be propitious to mortals.</p>
+            </sp>
+            <sp n="10" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:212">
+                <speaker>DANAUS</speaker>
+                <p>Let him be propitious indeed, and readily afford succour.</p>
+            </sp>
+            <sp n="11" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:217">
+                <speaker>CHORUS</speaker>
+                <p>Whom then of these deities shall I yet invoke?</p>
+            </sp>
+            <pb n="215"/>
+            
+            <sp n="12" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:218">
+                <speaker>DANAUS</speaker>
+                <p>I behold this trident, a sign of the god.</p>
+            </sp>
+            <sp n="13" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:219">
+                <speaker>CHORUS</speaker>
+                <p>But he has brought us well hither, and may he receive us well in the
+                    land,</p>
+            </sp>
+            <sp n="14" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:220">
+                <speaker>DANAUS</speaker>
+                <p>This other is Mercury in the rites of the Greeks.</p>
+            </sp>
+            <sp n="15" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:221">
+                <speaker>CHORUS</speaker>
+                <p>Let him then announce good tidings to us freed<ref n="215.1" target="#app-tlg001-fn-215.1">1</ref>
+                </p>
+            </sp>
+            <sp n="16" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:222-233">
+                <speaker>DANAUS</speaker>
+                <p>But reverence the common altar of all these kings, and sit in a holy place
+                    like a flock of doves, through fear of hawks of the same feather, kindred
+                    enemies, and polluting your race. How can a bird that devours a bird be
+                    pure? and how eould he who marries an unwilling maid from an unwilling
+                    father<ref n="215.2" target="#app-tlg001-fn-215.2">2</ref> be pure? not even when dead in Hades can he who has done these
+                    things escape the blame of lewdness. And there, as is the tale, another Jove
+                    who passes the last judgments among the dead, judges crimes. Consider,
+                    and answer in this fashion, that this matter may turn out well to you.</p>
+            </sp>
+            <sp n="17" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:234-245">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="234" resp="Smyth"/>Of what country is this band that we address, not Grecian in its garb,
+                    delicately attired in barbarian robes, and in many folds? for this attire of
+                    women is not Argolic, nor from the realms of Greece. But how you have
+                    dared fearlessly to come to this country, neither [announced] by heralds, and
+                    without a public host, without conductors, this is wonderful. Boughs indeed
+                    after the fashion of suppliants are laid by you at the altars of the gods who
+                    preside over assemblies. The Grecian land will gain by conjecture this only,
+                    (viz., that you are suppliants,) and it were just to guess many other things,
+                    were there not a voice to inform me present.</p>
+            </sp>
+            <sp n="18" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:246-248">
+                <speaker>CHORUS</speaker>
+                <p>You have spoken concerning our dress a true speech. But whether shall
+                    I speak to you as a private person, or a sceptre-bearing guardian of the
+                    temple, or chief of the city<ref n="215.3" target="#app-tlg001-fn-215.3">3</ref>?</p>
+            </sp>
+            <sp n="19" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:249-273">
+                <speaker>PELASGUS</speaker>
+                <p>Answer to these things, and speak boldly to me: for I am Pelasgus, son
+                    of earth-born Palacthon, leader of this land. And from me their king the
+                    race of Pelasgians aptly taking their name enjoys this land, and I rule all
+                    the territory
+            <pb n="216"/>
+            
+            through which Algus flows, and Strymon, towards the setting sun. But I claim as
+                my borders the land of the Perræbians<ref n="216.1" target="#app-tlg001-fn-216.1">1</ref>, and the parts beyond Pindus. beside
+                the Pæonians, and the mountains of Dodona: but the boundary of the watery
+                deep cuts it off: and beyond these parts I rule. But this plain of the Apian
+                land long since was named on account of a man skilled in healing arts : for Apis
+                having come from the country of Naupactus the healing-prophetic son of
+                Apollo, cleared this land from men-devouring monsters, which in truth the
+                earth defiled by pollutions of ancient blood produced, fierce animals, a dragon
+                band, a dire fellowship. Of these Apis having blamelessly made complete and
+                liberating remedies for the Argive land, found hereafter his memory in prayers
+                as his reward. Having now signs from me you can declare your race, and
+                speak farther : a long oration indeed the city loves not.</p>
+            </sp>
+            <sp n="20" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:274-276">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="274" resp="Smyth"/>My speech shall be short and clear. We boast ourselves Argives as to our
+                    race, the seed of the heifer happy in her son: and I will prove all these
+                    things I say to be true.</p>
+            </sp>
+            <sp n="21" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:277-290">
+                <speaker>PELASGUS</speaker>
+                <p>You relate incredible things, O strangers, for me to hear, that this your
+                    race is Argive. For you are more like to Libyan women, and by no means to
+                    the natives of my country. The Nile might nurture such an offspring, and a
+                    like Cyprian image is stamped in female forms by male artists; and I hear that
+                    the wandering Indians ride on pannier-packed camels fleet as steeds, in their
+                    land bordering on the Ethiopians : and by all means I had conjectured that
+                    you were the unwedded flesh-eating Amazons, if you had carried bows.
+                    Instructed I would know this farther, how your race and seed is Argive.</p>
+            </sp>
+            <sp n="22" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:291-292">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="291" resp="Smyth"/>They say that Io was once key-bearer [of the] temple of Juno in this
+                    Argive land, whom, as chiefly and great rumour prevails * *</p>
+            </sp>
+            <sp n="23" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:293-295">
+                <speaker>PELASGUS</speaker>
+                <p>Is there not a tale that Jove mingled with a mortal ?</p>
+            </sp>
+            <sp n="24" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:296">
+                <speaker>CHORUS</speaker>
+                <p>And this intercourse without the knowledge of Juno **</p>
+            </sp>
+            <sp n="25" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:297">
+                <speaker>PELASGUS</speaker>
+                <p>How then did this strife of the powers end ?</p>
+            </sp>
+            <sp n="26" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:298">
+                <speaker>CHORUS</speaker>
+                <p>The Argive goddess made the woman an heifer.</p>
+            </sp>
+            <sp n="27" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:300">
+                <speaker>PELASGUS</speaker>
+                <p>Did Jove still approach the well-horned heifer.</p>
+            </sp>
+            <pb n="217"/>
+            
+            <sp n="28" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:301">
+                <speaker>CHORUS</speaker>
+                <p>They say [that he did so,] likening his body to a cow-leaping bull.</p>
+            </sp>
+            <sp n="29" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:302">
+                <speaker>PELASGUS</speaker>
+                <p>What truly on this did the mighty wife of Jove ?</p>
+            </sp>
+            <sp n="30" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:303">
+                <speaker>CHORUS</speaker>
+                <p>She placed over the heifer an all-seeing keeper.</p>
+            </sp>
+            <sp n="31" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:304">
+                <speaker>PELASGUS</speaker>
+                <p>What all-viewing herdsman do you mean ?</p>
+            </sp>
+            <sp n="32" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:305">
+                <speaker>CHORUS</speaker>
+                <p>Argus, whom son of the Earth Mercury slew.</p>
+            </sp>
+            <sp n="33" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:306">
+                <speaker>PELASGUS</speaker>
+                <p>What other thing did she yet frame against the ill-fated heifer ?</p>
+            </sp>
+            <sp n="34" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:307">
+                <speaker>CHORUS</speaker>
+                <p>A cow-chasing gad-fly, quick in motion : those near the Nile call it a
+                    brize<ref n="217.1" target="#app-tlg001-fn-217.1">1</ref>.</p>
+            </sp>
+            <sp n="35" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:308">
+                <speaker>PELASGUS</speaker>
+                <p>Accordingly it chased her from the land in long flight.</p>
+            </sp>
+            <sp n="36" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:309">
+                <speaker>CHORUS</speaker>
+                <p>And you have spoken all these things agreeing with me.</p>
+            </sp>
+            <sp n="37" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:310">
+                <speaker>PELASGUS</speaker>
+                <p>Moreover she came to Canobus and to Memphis.</p>
+            </sp>
+            <sp n="38" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:311">
+                <speaker>CHORUS</speaker>
+                <p>And Jove laying hands on her planted an offspring.</p>
+            </sp>
+            <sp n="39" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:313">
+                <speaker>PELASGUS</speaker>
+                <p>Who then is the divine calf that boasts to be sprung from an heifer ?</p>
+            </sp>
+            <sp n="40" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:312">
+                <speaker>CHORUS</speaker>
+                <p>Epaphus truly called from deliverance.</p>
+            </sp>
+            <sp n="41" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:315">
+                <speaker>PELASGUS</speaker>
+                <p>* *</p>
+            </sp>
+            <sp n="42" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:314">
+                <speaker>CHORUS</speaker>
+                <p>Lybia enjoying the name of a very great land.</p>
+            </sp>
+            <sp n="43" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:317">
+                <speaker>PELASGUS</speaker>
+                <p>What other branch yet of this [heifer] do you men tion?</p>
+            </sp>
+            <sp n="44" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:316">
+                <speaker>CHORUS</speaker>
+                <p>Belus having two sons, the father of my father here.</p>
+            </sp>
+            <sp n="45" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:319">
+                <speaker>PELASGUS</speaker>
+                <p>Tell me now the all-wise name of this<ref n="217.2" target="#app-tlg001-fn-217.2">2</ref> man.</p>
+            </sp>
+            <sp n="46" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:318">
+                <speaker>CHORUS</speaker>
+                <p>Danaus : and his brother has fifty sons.</p>
+            </sp>
+            <sp n="47" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:321">
+                <speaker>PELASGUS</speaker>
+                <p>Of him, too, declare the name in plain terms,</p>
+            </sp>
+            <sp n="48" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:320">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="323" resp="Smyth"/>Ægyptus ; and knowing my ancient race you should act so as to support
+                    this Argive train.</p>
+            </sp>
+            <sp n="49" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:324-326">
+                <speaker>PELASGUS</speaker>
+                <p>You seem now to me to have shared this land of old : but how have you
+                    dared to leave your paternal abodes ? What mischance has befallen you ?</p>
+            </sp>
+            <sp n="50" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:322-323">
+                <speaker>CHORUS</speaker>
+                <p>King of the Pelasgians, the ills of men are various: and no where can you
+                    behold the same wing of trouble: since who would have expected that this
+                    unhoped-for flight would have driven me to Argos, allied to our race of old,
+                    trembling through hate of the marriage bed ?</p>
+            </sp>
+            <pb n="218"/>
+            
+            <sp n="51" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:332-333">
+                <speaker>PELASGUS</speaker>
+                <p>What do you say that you entreat from these gods of the assembly, holding
+                    white-wreathed new-cropped boughs?</p>
+            </sp>
+            <sp n="52" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:334">
+                <speaker>CHORUS</speaker>
+                <p>That I may not become a slave to the race of Ægyptus.</p>
+            </sp>
+            <sp n="53" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:335">
+                <speaker>PELASGUS</speaker>
+                <p>Whether do you mean on account of hatred, or on account of its being
+                    unlawful?</p>
+            </sp>
+            <sp n="54" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:336">
+                <speaker>CHORUS</speaker>
+                <p>Who would purchase<ref n="218.1" target="#app-tlg001-fn-218.1">1</ref> [by a dowry] their kindred as their lords?</p>
+            </sp>
+            <sp n="55" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:337">
+                <speaker>PELASGUS</speaker>
+                <p>Thus, indeed, greater strength increases to mortals.</p>
+            </sp>
+            <sp n="56" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:338">
+                <speaker>CHORUS</speaker>
+                <p>And from the wretched it is easy to turn away.</p>
+            </sp>
+            <sp n="57" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:339">
+                <speaker>PELASGUS</speaker>
+                <p>How then can I be pious toward you?</p>
+            </sp>
+            <sp n="58" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:340">
+                <speaker>CHORUS</speaker>
+                <p>By not giving us up to the sons of Ægyptus demanding us.</p>
+            </sp>
+            <sp n="59" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:341">
+                <speaker>PELASGUS</speaker>
+                <p>You speak grievous things, to raise a new war.</p>
+            </sp>
+            <sp n="60" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:342">
+                <speaker>CHORUS</speaker>
+                <p>But Justice defends her allies.</p>
+            </sp>
+            <sp n="61" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:343">
+                <speaker>PELASGUS</speaker>
+                <p>If perchance she was a sharer of their affairs from the beginning.</p>
+            </sp>
+            <sp n="62" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:344">
+                <speaker>CHORUS</speaker>
+                <p>Revere the stern of the state thus crowned.</p>
+            </sp>
+            <sp n="63" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:345">
+                <speaker>PELASGUS</speaker>
+                <p>I shudder beholding these shaded seats.</p>
+            </sp>
+            <sp n="64" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:346-352">
+                <speaker>CHORUS</speaker>
+                <p>Grievous, indeed, is the wrath of Jove who guards the suppliant. <milestone unit="card" n="348" resp="Smyth"/>Son
+                    of Palacthon, hear me with willing heart, king of the Pelasgians. Behold
+                    me a suppliant, an exile, a wanderer, like a white-spotted<ref n="218.2" target="#app-tlg001-fn-218.2">2</ref> heifer on the lofty
+                    rocks, where trusting for aid she lows telling to the herdsman her troubles.</p>
+            </sp>
+            <sp n="65" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:353-358">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="354" resp="Smyth"/>I behold a youthful band<ref n="218.3" target="#app-tlg001-fn-218.3">3</ref> shaded with new-cropped boughs [at the
+                    altars] of these gods who preside over the games. But may this business of
+                    the guests of our city be unattended with hurt nor let strife arise to the city
+                    from unexpected and sudden things, for these the city wants not.</p>
+            </sp>
+            <sp n="66" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:359-364">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="359" resp="Smyth"/>May Themis, the goddess of suppliants, daughter of lot-directing Jove,
+                    regard in truth our harmless flight: but do you, though being an old man<ref n="218.4" target="#app-tlg001-fn-218.4">4</ref>
+                    in mind, learn from one younger; reverencing a suppliant, you shall not be
+                    reduced to want.<ref n="218.5" target="#app-tlg001-fn-218.5">5</ref> * * * * gifts offered to the gods from a pure man.</p>
+            </sp>
+            <sp n="67" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:365-369">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="365" resp="Smyth"/>By no means do you sit at the hearth of my house: but if the city be
+                    polluted in common, together let the people take care to work out remedies:
+                    but I could not perform a
+            <pb n="219"/>
+            
+            promise, before at least having communicated with all these of<ref n="219.1" target="#app-tlg001-fn-219.1">1</ref> citizens
+                concerning these things.</p>
+            </sp>
+            <sp n="68" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:370-375">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="370" resp="Smyth"/>You are the city, and you are the people, being a ruler accountable to
+                    none, you have sway over the altar, the hearth of the land: by your
+                    soul-deciding nod, and on a sole-sceptred throne you determine every thing;
+                    beware of pollution.</p>
+            </sp>
+            <sp n="69" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:376-380">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="376" resp="Smyth"/>May pollution, indeed, be upon my enemies: but I can not aid you
+                    without harm, nor again is it prudent to reject these prayers. But I am
+                    perplexed, and fear holds my mind, whether to act, or not to act, and to take
+                    my chance.</p>
+            </sp>
+            <sp n="70" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:381-386">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="381" resp="Smyth"/>Look to the beholder on high, the protector of troubled mortals, who
+                    sitting [as suppliants] before their kindred, obtain not lawful justice.
+                    Therefore the wrath of Jove guardian of suppliants waits upon the wailing of
+                    the sufferer, that can not be appeased.</p>
+            </sp>
+            <sp n="71" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:387-391">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="387" resp="Smyth"/>If the sons of Ægyptus have power over you by the law of your state,
+                    saying that they are nearest of kin, who would wish to oppose them? Ye
+                    needs must therefore prove according to the laws of your home that they have
+                    no authority over you.</p>
+            </sp>
+            <sp n="72" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:392-396">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="392" resp="Smyth"/>May I never at any time then become subject to the power of males:
+                    but I mark out a star-guided remedy of the wretched marriage by flight: and
+                    having taken Justice an ally, do thou determine according to the reverence
+                    due to the gods.</p>
+            </sp>
+            <sp n="73" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:397-401">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="397" resp="Smyth"/>The judgment is not easy to judge: choose not me as judge. But I said
+                    even before, not without the people would I do these things, not even though
+                    ruler, lest at any time the people shall say, if perchance any thing fall out
+                    not such [as we wish]<ref n="219.2" target="#app-tlg001-fn-219.2">2</ref>, honoring strangers you have destroyed the city.</p>
+            </sp>
+            <sp n="74" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:402-406">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="402" resp="Smyth"/>Jove allied to both, inclining to one side, regards these things,
+                    distributing as is right unjust things to the bad, but the rewards of piety to
+                    the just<ref n="219.3" target="#app-tlg001-fn-219.3">3</ref>. Wherefore, these being equally inclined, are you pained to do
+                    what is just?</p>
+            </sp>
+            <sp n="75" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:407-417">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="407" resp="Smyth"/>There is need of deep thought, so that the clear-sighted eye may<ref n="219.4" target="#app-tlg001-fn-219.4">4</ref>,
+                    without dizziness, reach the bottom of deep preserving thought, like a diver:
+                    that these things harmless, first indeed to the city and to ourselves, may
+                    turn out well, and that
+            <pb n="220"/>
+            
+            neither strife lay hold of the pledges<ref n="220.1" target="#app-tlg001-fn-220.1">1</ref>, nor that we, having given up you placed
+                here in the seats of the gods, bring on ourselves a dire fellow-dweller the
+                all-destroying avenging god, who, not even in the abode of Hades frees the
+                dead. Does there not seem to be need of saving thought?</p>
+            </sp>
+            <sp n="76" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:418-437">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="418" resp="Smyth"/>Consider, and be most justly a pious receiver of strangers, betray not the
+                    exile driven from afar by godless expulsion: <milestone unit="card" n="423" resp="Smyth"/>nor behold me dragged as a
+                    pledge from the seats sacred to many gods, O you who possess the whole
+                    sway of the land. But consider the insolence of men, and guard against their
+                    wrath. <milestone unit="card" n="428" resp="Smyth"/>In nowise endure to behold the suppliant led from the images in spite
+                    of Justice, like a steed, and the seizing of my fillets and robes woven with
+                    many threads. <milestone unit="card" n="433" resp="Smyth"/>For know, whatever you determine, there awaits your
+                    children and your house to suffer a like justice. Consider these just
+                    commands of Jove.</p>
+            </sp>
+            <sp n="77" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:438-454">
+                <speaker>PELASGUS</speaker>
+                <p><milestone unit="card" n="438" resp="Smyth"/>And truly I have considered; and the matter is driven to this: it is
+                    absolutely necessary to undertake a great war either with these (viz. the
+                    gods) or with those (viz. the sons of Ægyptus): and it is compacted with
+                    nails, like a ship put together by naval wedges. But without sorrow by no
+                    means will there be a turning aside. And, indeed, when possessions are
+                    borne as plunder from the house, a heap greater than the loss, and which
+                    completely fills it up may arise from another quarter by the kindness of
+                    bounteous Jove. And the tongue having darted forth unseasonable things
+                    grievous, and provoking wrath, there may be other words to soothe the
+                    former. But it is necessary by all means to sacrifice, and for many victims
+                    to be slain for many gods, remedies of calamity, that kindred blood be not
+                    shed. Certainly I altogether pass by this strife; but I wish to be rather
+                    ignorant of, than acquainted with ills but may matters fall out well, contrary
+                    to my expectation.</p>
+            </sp>
+            <sp n="78" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:455">
+                <speaker>CHORUS</speaker>
+                <p>Hear the end of many modest speeches.</p>
+            </sp>
+            <sp n="79" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:456">
+                <speaker>PELASGUS</speaker>
+                <p>I hear and speak, your words shall not escape me.</p>
+            </sp>
+            <sp n="80" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:457">
+                <speaker>CHORUS</speaker>
+                <p>I have girdles and zones, that confine my robes.</p>
+            </sp>
+            <pb n="221"/>
+            
+            <sp n="81" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:458">
+                <speaker>PELASGUS</speaker>
+                <p>These are befitting to the condition of women.</p>
+            </sp>
+            <sp n="82" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:459">
+                <speaker>CHORUS</speaker>
+                <p>From these, therefore, know an excellent contrivance ******</p>
+            </sp>
+            <sp n="83" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:460">
+                <speaker>PELASGUS</speaker>
+                <p>Say what words are these that you are about to speak?</p>
+            </sp>
+            <sp n="84" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:461">
+                <speaker>CHORUS</speaker>
+                <p>Unless you shall promise to this train something that may be trusted to *
+                    * * * * *</p>
+            </sp>
+            <sp n="85" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:462">
+                <speaker>PELASGUS</speaker>
+                <p>What will the contrivance of the girdles avail you?</p>
+            </sp>
+            <sp n="86" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:463">
+                <speaker>CHORUS</speaker>
+                <p>To adorn these images with new tablets.</p>
+            </sp>
+            <sp n="87" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:464">
+                <speaker>PELASGUS</speaker>
+                <p>Your words are riddles: but speak plainly.</p>
+            </sp>
+            <sp n="88" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:465">
+                <speaker>CHORUS</speaker>
+                <p>With all speed to hang ourselves from these gods.</p>
+            </sp>
+            <sp n="89" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:466">
+                <speaker>PELASGUS</speaker>
+                <p>I have heard words that pierce my heart.</p>
+            </sp>
+            <sp n="90" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:467">
+                <speaker>CHORUS</speaker>
+                <p>Do you understand? for I have let you see clearly.</p>
+            </sp>
+            <sp n="91" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:468-489">
+                <speaker>PELASGUS</speaker>
+                <p>And on every side matters are hard to struggle with, and a multitude of
+                    ills, like a river, comes on; and I have entered on a deep sea of calamity not
+                    easily passed over, and nowhere is there a harbor from ills. For if, indeed, I
+                    do not perform this thing for you, you have named a pollution not to be got
+                    over: but if again stationed before the walls I shall try the event of battle
+                    with your kindred, the sons of Egyptus, how shall not the loss be bitter, that
+                    men stain the ground with blood for the sake of women? But nevertheless it
+                    is necessary to dread the wrath of Jove the guardian of suppliants: for the
+                    fear [of him] among mortals is uppermost. Go then, aged father of these
+                    virgins, and quickly having taken in your arms these boughs, place them on
+                    the other altars of our country's god's, that all the citizens may behold a sign
+                    of this arrival, nor let my words be blabbed: for the people love to blame
+                    their rulers. And perchance some commiseration, having seen these things,
+                    will hate the insolence of the band of youths, and the people will be more
+                    well-inclined to you: for every one bears good-will to the weaker.</p>
+            </sp>
+            <sp n="92" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:490-499">
+                <speaker>DANAUS</speaker>
+                <p><milestone unit="card" n="490" resp="Smyth"/>These things are much valued by us, to have obtained a pitying patron;
+                    but send with us attendants of the citizens to point out the way, that we may
+                    find the altars before the temples of the country's gods, and the seats of
+                    those who guard the city, and that there may be safety to us proceeding
+                    through the city but the appearance of our form is not the same [with
+                    yours]: for the Nile nourishes a race different from Inachus;
+            <pb n="222"/>
+            
+            we must take care lest boldness produce fear<ref n="222.1" target="#app-tlg001-fn-222.1">1</ref>
+                : and in truth one has slain a friend
+                through ignorance.</p>
+            </sp>
+            <sp n="93" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:500-503">
+                <speaker>PELASGUS</speaker>
+                <p>Go, attendants; for the stranger says well. Lead to the public altars
+                    and seats of the gods: and it behooves you not to talk much with those you
+                    meet, leading this sailor who has taken refuge at the hearth of the gods.</p>
+            </sp>
+            <sp n="94" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:504-505">
+                <speaker>CHORUS</speaker>
+                <p>To him you have spoken: and he departs as he has been enjoined: but
+                    how shall I act? where (or how) do you afford confidence to me?</p>
+            </sp>
+            <sp n="95" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:506">
+                <speaker>PELASGUS</speaker>
+                <p>Leave here, indeed, the boughs a sign of your trouble.</p>
+            </sp>
+            <sp n="96" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:507">
+                <speaker>CHORUS</speaker>
+                <p>And in truth I leave them, by your authority and words.</p>
+            </sp>
+            <sp n="97" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:508">
+                <speaker>PELASGUS</speaker>
+                <p>Now betake yourself to this level grove.</p>
+            </sp>
+            <sp n="98" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:509">
+                <speaker>CHORUS</speaker>
+                <p>And how can an unconsecrated grove defend me.</p>
+            </sp>
+            <sp n="99" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:510">
+                <speaker>PELASGUS</speaker>
+                <p>By no means will we give you up to the rapine of winged birds.</p>
+            </sp>
+            <sp n="100" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:511">
+                <speaker>CHORUS</speaker>
+                <p>But what if [you give us up] to those more hateful than hostile
+                    dragons?</p>
+            </sp>
+            <sp n="101" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:512">
+                <speaker>PELASGUS</speaker>
+                <p>May well-omened words be spoken by you addressed with well-omened
+                    words.</p>
+            </sp>
+            <sp n="102" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:513">
+                <speaker>CHORUS</speaker>
+                <p>By no means is it a wonder that I am impatient in mind through
+                    terror.</p>
+            </sp>
+            <sp n="103" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:514">
+                <speaker>PELASGUS</speaker>
+                <p>The fear of kings is ever immoderate.</p>
+            </sp>
+            <sp n="104" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:515">
+                <speaker>CHORUS</speaker>
+                <p>Do you both by words and deeds gladden my mind<ref n="222.2" target="#app-tlg001-fn-222.2">2</ref>.</p>
+            </sp>
+            <sp n="105" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:516-523">
+                <speaker>PELASGUS</speaker>
+                <p>But for no long time shall your father be alone: but I assembling the
+                    people of the country, will persuade them in common, that I may render them
+                    favorable, and will instruct your father what he ought to say. Therefore
+                    remain, and entreat with prayers the gods of the country for those things
+                    which you have desire to obtain. But I having performed these things will
+                    return: and may persuasion attend me and effective good fortune.</p>
+            </sp>
+
+
+            <sp n="106" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:524-599">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="524" resp="Smyth"/>King of kings, most blest of the blest, and most perfect might of the
+                    perfect, blessed Jove, be persuaded, and may it come to pass<ref n="222.3" target="#app-tlg001-fn-222.3">3</ref>—avert from
+                    thy race the insolence of men, justly hating it, and plunge into the purple
+                    deep the black-benched pest<ref n="222.4" target="#app-tlg001-fn-222.4">4</ref>. <milestone unit="card" n="531" resp="Smyth"/>Regarding the woman's side, renew the
+                    <pb n="223"/>
+            
+                    pleasing story of the beloved woman our ancestress; be mindful O you who
+                    embraced Io,<ref n="223.1" target="#app-tlg001-fn-223.1">1</ref> by whom we boast ourselves to be your race, settlers from this
+                    land. <milestone unit="card" n="538" resp="Smyth"/>But I have returned into the ancient track, and the flowery scenes of
+                    the watchings of our mother, the herd-feeding mead, from whence Io driven<ref n="223.2" target="#app-tlg001-fn-223.2">2</ref>
+                    by the brize, flies distracted, passing through many tribes of mortals: and
+                    twice by fate having cut through the billowy way she reaches the opposite
+                    continent. <milestone unit="card" n="547" resp="Smyth"/>She hastens through the Asian land, through sheep-feeding
+                    Phrygia: and she passes the city of Teuthras of the Mysians, and the Lydian
+                    plains, and through the Cilician and Pamphylian mountains with furious
+                    haste; and the ever-flowing rivers, and the wealthy region, and the
+                    corn-abounding land of Venus. <milestone unit="card" n="556" resp="Smyth"/>She arrives, driven along by the sting of the
+                    winged herdsman, at the divine all-fostering grove, the snow-fed mead, and on
+                    which comes [with]<ref n="223.3" target="#app-tlg001-fn-223.3">3</ref> the might of Typho, the water of Nile untouched by
+                    diseases, maddened by her ignominious toils, and by the stinging pains of
+                    raging Juno. <milestone unit="card" n="565" resp="Smyth"/>But the mortals who then were dwellers in the land, were
+                    seized in their minds by pale fear, beholding an unwonted sight, an intractable
+                    heifer mingled with a mortal, in part a heifer, and in part again a woman, and
+                    they were astonished at the prodigy. And then who was it in truth who
+                    soothed the much-wandering wretched Io, driven by the brize? <milestone unit="card" n="574" resp="Smyth"/>Jove, lord
+                    of ceaseless time but the violence [of Juno] ceases by unwasted strength,
+                    and by divine influence, but she drops the mournful modesty of tears. But
+                    having received the divine load, in true story, she produced her blameless
+                    son, <milestone unit="card" n="582" resp="Smyth"/>all-happy for length of time; whence all the earth exclaims, this is truly
+                    the offspring of life-giving Jove: for who could have made to cease the pest
+                    inflicted by wily Juno? this is the work of Jove; and saying that that race is
+                    sprung from Epaphus you will hit the truth. <milestone unit="card" n="590" resp="Smyth"/>Whom of the gods could I more
+                    rightly invoke than you for just deeds? the creative sire who by the touch of
+                    your hand became lord of Io, great all-prudent author of our race, Jove
+                    wafting every needful device. <milestone unit="card" n="595" resp="Smyth"/>But neither subject to the rule
+
+       <pb n="224"/>
+            
+            of any one are you less mighty than the powerful, nor from above do you
+                revere any inferior. But the deed is at hand with the word<ref n="224.1" target="#app-tlg001-fn-224.1">1</ref>, quickly to
+                perform what your deep-counseling<ref n="224.2" target="#app-tlg001-fn-224.2">2</ref> mind intends.</p>
+            </sp>
+            <sp n="107" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:600-601">
+                <speaker>DANAUS</speaker>
+                <p><milestone unit="card" n="600" resp="Smyth"/>Have courage, my children, our affairs are well with the natives; perfect
+                    decrees of the people have been passed.</p>
+            </sp>
+            <sp n="108" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:602-604">
+                <speaker>CHORUS</speaker>
+                <p>O hail, old man, dearest of messengers to me; but declare to us how
+                    the decree has been ratified, to what purport the prevailing hand of the people
+                    is in the majority<ref n="224.3" target="#app-tlg001-fn-224.3">3</ref>.</p>
+            </sp>
+            <sp n="109" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:605-624">
+                <speaker>DANAUS</speaker>
+                <p>The decree has been passed by the Argives, not with divided opinions, but
+                    so as for me to be young again in my aged mind. For in full assembly the
+                    air hurtled with the right hands [as the people] determined this matter; that
+                    we should inhabit this land, free, and not as pledges, and with sanctity of
+                    place among mortals; and that no one either of inhabitants or strangers should
+                    lead us away: but if violence should be added, that he of the citizens who did
+                    not give his aid should be disgraced by public exile. The king of the
+                    Pelasgians strove to persuade, speaking concerning us a speech to this effect,
+                    declaring the great wrath of Jove, that never in after time [the god] would
+                    increase the city, and saying that if a double pollution both to from the
+                    contempt of strangers, and upon the state, should appear before the city, it
+                    would be the food of irremediable calamity. Hearing such things, the Argive
+                    people passed a decree, without a crier, that these things should be: but the
+                    citizens of the Pelasgi heard the eloquent winning turns [of the king's
+                    speech]: and Jove brought about a happy conclusion.</p>
+            </sp>
+            <sp n="110" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:625-709">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="625" resp="Smyth"/>Come now, let us pour forth for the Argives good prayers, a return for
+                    good. And may Jove, protector of strangers, regard the honors of the
+                    stranger's mouth truly blamelessly to full accomplishment. <milestone unit="card" n="630" resp="Smyth"/>Now, if ever,
+                    you gods sprung from Jove, hear us pouring forth prayers for desirable
+                    things for this race: that bold Mars may never cause to be consumed by fire
+                    the Pelasgian city, who with joyless cry mows down mortals in other plowed
+                    fields: since they have pitied us, and have passed a favorable decree; but
+                    they
+            <pb n="225"/>
+            
+            revere the suppliants of Jove, this band unenvied: <milestone unit="card" n="643" resp="Smyth"/>nor have they passed a
+                decree in favor of the men, having slighted the cause of women: reverencing
+                the divine avenger and beholder not to be contented with, whom no house
+                would wish to have upon its roofs in his wrath, for heavily he sits on it. For
+                they reverence us their kindred, the holy suppliants of Jove; therefore they
+                shall please the gods at pure altars. <milestone unit="card" n="656" resp="Smyth"/>Therefore from our mouths shaded [by
+                boughs] let the honoring prayer fly. Never let pestilence make empty the
+                city of these men: nor let [discord<ref n="225.1" target="#app-tlg001-fn-225.1">1</ref>] make bloody the plain of the land with
+                corses of the natives. And let the flower of youth be uncropped; nor let the
+                paramour of Venus, man-destroying Mars mow the blossom. <milestone unit="card" n="667" resp="Smyth"/>And let the
+                altars, at which are aged ministers, abound with venerable priests, and let
+                them blaze [with offerings], that the city may be rightly ruled. Let them
+                reverence mighty Jove, the god of hospitality, supreme, who by hoary law
+                directs fate. And we pray that other rulers of the land be ever born, and that
+                far-darting Diana look upon the labors of women. <milestone unit="card" n="678" resp="Smyth"/>Nor let any man-destroying
+                pestilence come on, laying waste this city, averse to dance and lyre, exciting
+                tears, producing Mars and clamors of the people. And let the unjoyous
+                swarm of diseases settle at a distance from the citizens in their strength: and
+                let Lycian Apollo be propitious to all the youth. <milestone unit="card" n="688" resp="Smyth"/>And may Jove render the
+                earth fruitful with increase at all seasons: and may the herds that feed before
+                [the city] in like manner bear young abundantly. And may they receive every
+                thing from the gods, and may the divine Muses and bards pour forth a
+                well-omened strain; and from holy mouths let the lyre-loving song be wafted
+                on. <milestone unit="card" n="698" resp="Smyth"/>And may the people hold continually in honor their rulers; and may a
+                prudent sway, consulting for the common good, govern the city. And ready to
+                come to terms of peace, before preparing Mars, let them afford to strangers
+                what is just without evils. <milestone unit="card" n="704" resp="Smyth"/>And ever let them honor their country's gods,
+                who preside over the land, with native laurel-bearing bull-slaying honors. For
+                the reverence of parents this third is written in the laws of much-venerated
+                Justice.</p>
+            </sp>
+            <sp n="111" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:710-726">
+                <speaker>DANAUS</speaker>
+                <p><milestone unit="card" n="710" resp="Smyth"/>I approve indeed of these wise prayers, oh, beloved: but be not you
+                    afraid hearing these unexpected and new tidings from your father: for from
+                    this suppliant-receiving mount I behold the ship:
+            <pb n="226"/>
+            
+            for conspicuous it escapes not my notice, and the breasts of the sails and the
+                side-guards<ref n="226.1" target="#app-tlg001-fn-226.1">1</ref> of the vessel, and the prow in the fore part beholding with its
+                eyes the way, too well obeying, as not being friendly to us, the directing helm
+                in the hinder part of the vessel. And the sailors may be seen conspicuous
+                with their black limbs out of white garments: and the other vessels and all the
+                assistant band is conspicuous, but the leading ship, having furled her sails under
+                the land, is rowed with oars sounding together. But it behooves you calmly
+                and prudently looking to the matter, not to neglect these gods. But I will come,
+                having taken assistants and patrons.</p>
+            </sp>
+            <sp n="112" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:727-728">
+                <speaker>CHORUS</speaker>
+                <p>For perchance<ref n="226.2" target="#app-tlg001-fn-226.2">2</ref> some herald or embassador may come, wishing to lead
+                    us away, laying hold of us as pledges.</p>
+            </sp>
+            <sp n="113" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:729">
+                <speaker>DANAUS</speaker>
+                <p>But none of these things shall be, fear<ref n="226.3" target="#app-tlg001-fn-226.3">3</ref> not now.</p>
+            </sp>
+            <sp n="114" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:730-731">
+                <speaker>CHORUS</speaker>
+                <p>Nevertheless it is better, if we indeed be slow in getting aid, by no
+                    means to be forgetful of this protection.</p>
+            </sp>
+            <sp n="115" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:732-733">
+                <speaker>DANAUS</speaker>
+                <p>Be of good courage; in appointed time and day every one of mortals
+                    who despises the gods shall pay the penalty.</p>
+            </sp>
+            <sp n="116" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:734-738">
+                <speaker>CHORUS</speaker>
+                <p>Father, I am afraid, as the swift-winged vessels are come, and there is
+                    no length of time between. <milestone unit="card" n="736" resp="Smyth"/>In truth excessive fear possesses me: [I fear]
+                    lest there be no advantage to me of my long flight. I perish, father, with
+                    terror. <milestone unit="card" n="739" resp="Smyth"/>  <gap reason="omitted" unit="line" quantity="4" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:739-742"/><milestone unit="card" n="739" resp="Smyth"/>The offspring of Ægyptus is bold and insolent, and insatiate of the
+                    fight; and I speak to you who know it: <milestone unit="card" n="743" resp="Smyth"/>and possessing black wood-compacted
+                    ships they have sailed here with wrath thus far successful, together with a
+                    numerous swarthy host.</p>
+            </sp>
+            <pb n="227"/>
+           <sp n="117" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:746-747">
+                <speaker>DANAUS</speaker>
+                <p><milestone unit="card" n="746" resp="Smyth"/>And they shall find many who have their arms well-hardened to toil in
+                    the meridian heat.</p>
+            </sp>
+            <sp n="118" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:748-751">
+                <speaker>CHORUS</speaker>
+                <p>But leave me not alone, I beseech, father. A forsaken woman is
+                    nothing. Mars is not in us. <milestone unit="card" n="750" resp="Smyth"/>But they are wily and deceitful with impure
+                    minds, like crows, caring nought for the altars.</p>
+            </sp>
+            <sp n="119" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:752-753">
+                <speaker>DANAUS</speaker>
+                <p>These things would advantage us well, O my children, <milestone unit="card" n="753" resp="Smyth"/>if they were
+                    hateful both to you and to the gods.</p>
+            </sp>
+            <sp n="120" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:755-758">
+                <speaker>CHORUS</speaker>
+                <p>Not dreading these tridents and the majesty of the gods will they keep
+                    off their hands from us, father. <milestone unit="card" n="757" resp="Smyth"/>But they are very haughty, maddened with
+                    impious rage, of dog-like boldness, in no respect obeying regarding the gods.</p>
+            </sp>
+            <sp n="121" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:760-761">
+                <speaker>DANAUS</speaker>
+                <p><milestone unit="card" n="760" resp="Smyth"/>But there is a saying that wolves are superior to dogs; and the fruit of
+                    the papyrus surpasses not the ear of corn.</p>
+            </sp>
+            <sp n="122" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:762-763">
+                <speaker>CHORUS</speaker>
+                <p>And thus it behooves us well to guard against them having the
+                    dispositions of wanton and wicked beasts.</p>
+            </sp>
+            <sp n="123" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:764-775">
+                <speaker>DANAUS</speaker>
+                <p>By no means is the management of a naval host quick, nor a station
+                    for the ships, nor a safe fastening for cables, to bring them to land, nor do the
+                    rulers of ships too quickly trust to the hold of anchors, especially when arriving
+                    at a harbourless land<ref n="227.1" target="#app-tlg001-fn-227.1">1</ref>
+                    . When the sun departs<ref n="227.2" target="#app-tlg001-fn-227.2">2</ref>, night is wont to produce
+                    anxiety to a skilful pilot. Thus there can not be even a safe disembarking of
+                    the host, before the ship has been stoutly fixed in its station. But do you
+                    take heed, not to neglect the gods, on the plea of fear, procuring aid. But the
+                    city will not blame a messenger who is old, but young in his mind prompt of
+                    speech.</p>
+            </sp>
+            <sp n="124" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:776-835">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="776" resp="Smyth"/>O land of hills, just object of veneration, what shall we suffer? to what
+                    part of the Apian land shall we fly, if there is any where a dark cavern?
+                    Would I were black smoke, approaching to the clouds of Jove, and altogether
+                    invisible, and flying away without wings, might like dust be lost. <milestone unit="card" n="784" resp="Smyth"/>But my
+                    heart can no longer abide without flight, and my darkened
+
+                    <pb n="228"/>
+
+                    spirit<ref n="228.1" target="#app-tlg001-fn-228.1">1</ref> throbs. But
+                    my father's look-out has undone me: I perish with terror. Would I could
+                    obtain death by the twistings of the noose, before the abhorred man draw
+                    nigh<ref n="228.2" target="#app-tlg001-fn-228.2">2</ref>, and, ere that, may Pluto rule us dying by our own hands. <milestone unit="card" n="792" resp="Smyth"/>From
+                    whence can I have a seat in the air on which the watery clouds become snow<ref n="228.3" target="#app-tlg001-fn-228.3">3</ref>,
+                    or a rock, rugged, inaccessible to goats, not pointed out,<ref n="228.4" target="#app-tlg001-fn-228.4">4</ref> lonely, desolate, the
+                    haunt of vultures, witnessing a deep fall to me, before, in spite of my heart,
+                    having met with forced nuptials. <milestone unit="card" n="800" resp="Smyth"/>And then I refuse not to become the prey of
+                    dogs, and the food of the birds of the country: for death is free from
+                    mournful ills: let fate approach, having seized me before the nuptial bed.
+                    What remedy for myself delivering me from the marriage can I yet find<ref n="228.5" target="#app-tlg001-fn-228.5">5</ref>
+                    <milestone unit="card" n="808" resp="Smyth"/>Pour forth a voice to the heavens, supplicating strains to the gods, and such as
+                    will bring about good fortune to me, being the means of deliverance for
+                    me<ref n="228.6" target="#app-tlg001-fn-228.6">6</ref>. Father; do not love violence, seeing with just eyes and respect your
+                    suppliants, O earth-ruling, all-powerful Jove. <milestone unit="card" n="817" resp="Smyth"/>For the male offspring of
+                    Ægyptus intolerable in insolence pursuing me with speed, seek with foul
+                    abuse to seize me a fugitive by force. But the beam of your balance is
+                    over all: and what without you is perfected to mortals? <milestone unit="card" n="825" resp="Smyth"/>Ah! ah! ah! Here is
+                    the sea [and] land seizer<ref n="228.7" target="#app-tlg001-fn-228.7">7</ref>
+                    . Mayest thou, Heigh ho! toil before the shore
+                    bringing to here, I utter a cry of pain. I see these preludes are a warranty
+                    of violent treatment, of me. Alas! alas! go in flight to [seek] protection
+                    against their fell desires, intolerable both by sea and land, O king, defend
+                    us<ref n="228.8" target="#app-tlg001-fn-228.8">8</ref>.</p>
+            </sp>
+            <pb n="229"/>
+            
+            <sp n="125" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:836-837">
+                <speaker>HERALD</speaker>
+                <p><milestone unit="card" n="836" resp="Smyth"/>Haste, haste to the ship with all speed.</p>
+            </sp>
+            <sp n="126" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:838-841">
+                <speaker>CHORUS</speaker>
+                <p>Then, then, [there await us] tearings, tearings, and stabbings, gory
+                    murderous,<ref n="229.1" target="#app-tlg001-fn-229.1">1</ref> cuttings off of heads.</p>
+            </sp>
+            <sp n="127" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:842-850">
+                <speaker>HERALD</speaker>
+                <p>Haste, haste, abandoned in utter destruction, to the vessel, <milestone unit="card" n="843" resp="Smyth"/>or to the
+                    billowy salt deep, with tyrannic insolence, and with a spear firmly bound with
+                    iron, I will place you bloody in the ship, wheref<ref n="229.2" target="#app-tlg001-fn-229.2">2</ref> if after that you continue your
+                    vociferations, <milestone unit="card" n="849" resp="Smyth"/>I with violence command you to lay aside madness<ref n="229.3" target="#app-tlg001-fn-229.3">3</ref> from your
+                    mind.</p>
+            </sp>
+            <sp n="128" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:851">
+                <speaker>CHORUS</speaker>
+                <p>Alas! alas!</p>
+            </sp>
+            <sp n="129" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:852-853">
+                <speaker>HERALD</speaker>
+                <p>Leave these seats, go to the ship; it is useless to adore the gods in the
+                    city.</p>
+            </sp>
+            <sp n="130" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:854-860">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="854" resp="Smyth"/>Never again may I behold the flock-nurturing stream, from whence the
+                    life-blood of mortals increased is enlivened.† I am holy from of old on
+                    account of this seat, this seat, old man.</p>
+            </sp>
+            <sp n="131" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:861-865">
+                <speaker>HERALD</speaker>
+                <p><milestone unit="card" n="861" resp="Smyth"/>But you to the ship, to the ship shall go quickly, willing, or unwilling,†
+                    forced with much violence; go to the ship before having suffered ill, struck
+                    to death by my hands.</p>
+            </sp>
+            <sp n="132" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:866-871">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="866" resp="Smyth"/>Ah! ah! ah! without an helping hand may you perish in the billowy
+                    deep, at the sandy Sarpedonian promontory, wandering in the wide air!</p>
+            </sp>
+            <sp n="133" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:872-875">
+                <speaker>HERALD</speaker>
+                <p><milestone unit="card" n="872" resp="Smyth"/>Exclaim, and rend your robes, and invoke the gods; for you shall not
+                    escape the Egyptian bark: exclaim and cry, with more bitter grievings,
+                    obtaining the name of calamity.</p>
+            </sp>
+            <sp n="134" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:876-881">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="876" resp="Smyth"/>Oh! oh! oh!† the pollution of seizing barks: approaching, thou dost
+                    terribly insult: †who askest, may great Nile turn you away treating us with
+                    indelible insolence.</p>
+            </sp>
+            <sp n="135" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:882-884">
+                <speaker>HERALD</speaker>
+                <p><milestone unit="card" n="882" resp="Smyth"/>I bid you go to the ship turned toward [the shore] with all speed: nor
+                    let any one delay: for dragging by no means shall spare your tresses.</p>
+            </sp>
+            <sp n="136" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:885-892">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="885" resp="Smyth"/>Oh! oh! Father, the protection of your image, now leads me to
+                    calamity, to the sea like a spider, black spectre.
+
+            <pb n="230"/>
+            
+            Alas! mother Earth, mother Earth, repel the dreadful cries. O Jove son of Earth
+                advance.</p>
+        </sp>
+
+            <sp n="137" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:893-894">
+                <speaker>HERALD</speaker>
+                <p><milestone unit="card" n="893" resp="Smyth"/>By no means do I dread the deities here; for they have not nourished me,
+                    nor brought me to old age by their rearing.</p>
+            </sp>
+            <sp n="138" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:895-901">
+                <speaker>CHORUS</speaker>
+                <p><milestone unit="card" n="895" resp="Smyth"/>The two-footed serpent rages near me, and like a viper,† gnawing my
+                    foot. Mother Earth, mother Earth, repel the dreadful cries. O Jove son of
+                    Earth advance.</p>
+            </sp>
+            <sp n="139" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:902-903">
+                <speaker>HERALD</speaker>
+                <p><milestone unit="card" n="902" resp="Smyth"/>Unless some one goes to the ship, submitting to these things, a tearing
+                    shall not pity the work of her garment.</p>
+            </sp>
+            <sp n="140" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:904">
+                <speaker>CHORUS</speaker>
+                <p>Oh chief rulers of the city, I am overpowered.</p>
+            </sp>
+            <sp n="141" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:905-906">
+                <speaker>HERALD</speaker>
+                <p>You shall presently behold many rulers, the sons of Ægyptus; be of
+                    good courage, you will not call it an anarchy.</p>
+            </sp>
+            <sp n="142" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:907">
+                <speaker>CHORUS</speaker>
+                <p>We are undone, we suffer, O king, unlooked-for things.</p>
+            </sp>
+            <sp n="143" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:908-910">
+                <speaker>HERALD</speaker>
+                <p>It seems I must drag you tearing you by the hair, since you do not
+                    quickly obey my words.</p>
+            </sp>
+            <sp n="144" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:911-915">
+                <speaker>PELASGUS</speaker>
+                <p>Hark you, what are you about? from what boldness do you dishonor
+                    this land of Pelasgic men? do you think that you have come to a city of
+                    women? Being a barbarian, you are over-insolent toward Greeks: and having
+                    erred much, you have done nothing rightly in your mind.</p>
+            </sp>
+            <sp n="145" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:916">
+                <speaker>HERALD</speaker>
+                <p>In which of these things have I erred contrary to justice?</p>
+            </sp>
+            <sp n="146" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:917">
+                <speaker>PELASGUS</speaker>
+                <p>First indeed you forget that you are a stranger.</p>
+            </sp>
+            <sp n="147" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:918">
+                <speaker>HERALD</speaker>
+                <p>How not? I have found what was lost.</p>
+            </sp>
+            <sp n="148" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:919">
+                <speaker>PELASGUS</speaker>
+                <p>Having addressed which of the natives as patrons.</p>
+            </sp>
+            <sp n="149" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:920">
+                <speaker>HERALD</speaker>
+                <p>Hermes the searcher, a very great patron.</p>
+            </sp>
+            <sp n="150" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:921">
+                <speaker>PELASGUS</speaker>
+                <p>Having addressed the gods, you in no way reverence the gods.</p>
+            </sp>
+            <sp n="151" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:922">
+                <speaker>HERALD</speaker>
+                <p>I reverence the deities at the Nile.</p>
+            </sp>
+            <sp n="152" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:923">
+                <speaker>PELASGUS</speaker>
+                <p>But those here, are nothing, as I hear from you.</p>
+            </sp>
+            <sp n="153" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:924">
+                <speaker>HERALD</speaker>
+                <p>I will lead away these, if some one does not snatch them from me.</p>
+            </sp>
+            <sp n="154" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:925">
+                <speaker>PELASGUS</speaker>
+                <p>You will rue it, if you touch them, no long time after.</p>
+            </sp>
+            <sp n="155" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:926">
+                <speaker>HERALD</speaker>
+                <p>I hear words by no means hospitable.</p>
+            </sp>
+            <sp n="156" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:927">
+                <speaker>PELASGUS</speaker>
+                <p>For I do not hospitably receive the spoilers of the gods.</p>
+            </sp>
+            <pb n="231"/>
+
+<sp n="157" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:928"><speaker>HERALD</speaker><p>Having gone thou mayest tell these things to the sons of <quote xml:lang="grc">Ægyptus</quote><ref n="231.1" target="#app-tlg001-fn-231.1">1</ref>.</p></sp>
+<sp n="158" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:929"><speaker>PELASGUS</speaker><p>This is unheeded in my thoughts.</p></sp>
+<sp n="159" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:930-937"><speaker>HERALD</speaker><p><milestone unit="card" n="930" resp="Smyth"/>But, that you may know, I will more plainly speak: for it is proper that an herald declare all things clearly—how shall I say, and by whom, that I come deprived of the train of kindred women? Mars determines not these things by witnesses, and puts an end to the strife not by the receipt of silver; but before that there are many slaughters of men, and trampling-down of lives.</p></sp>
+<sp n="160" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:938-949"><speaker>PELASGUS</speaker><p>What does it behove you to say? Having at length learnt what is just, do you yourself determine, and your fellow-voyagers. But you may lead away these willing indeed according to the inclinations of their minds, if a lawful speech can persuade them. But such an unanimous public decree of the state has been passed, never to give up by force the train of women. Of these things the nail is firmly driven through and through, so as to remain fixed. These things are not graven on tablets, nor sealed in the folds of books, but you hear them plain from a free-speaking tongue; but with all speed take yourself from my eyes.</p></sp>
+<sp n="161" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:950-951"><speaker>HERALD</speaker><p>Know this, now you will undertake a new war: but may victory and strength be to the males.</p></sp>
+<sp n="162" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:952-965"><speaker>PELASGUS</speaker><p>But you will find males inhabitants also of this land, not drinking wine made from barley. But do you all, with your loved attendants, take courage, and go to the well-fortified city, inclosed by a deep device of towers. And there are indeed many public abodes, but I have built with no scant hand. It is pleasant to inhabit well-built abodes with many others; but if it be any greater pleasure, you are at liberty to dwell also in abodes which hold but one family. Of these choose the best and what are most pleasing. But I will be your patron, and all the citizens, by whom this decree is now passed. Why wait you for more powerful ones than these?</p></sp>
+<sp n="163" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:966-974"><speaker>CHORUS</speaker><p><milestone unit="card" n="966" resp="Smyth"/>But in return for good things may you abound with
+<pb n="232"/>
+
+good, divine king of the Pelasgians. But benevolently send hither our father Danaus, of good courage, prudent, and our chief adviser. For his is the first counsel, where it behoves us to inhabit abodes, and [where is] a place not subject to envy. Every one is ready to speak reproach against foreigners: but may the best things befall.</p></sp>
+<sp n="164" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:975-979"><speaker>PELASGUS</speaker><p>Both with fair fame, and with no wrathful rumour of the people regulate yourselves in the country, O friendly attendants, so as Danaus has assigned you to each [of his daughters] a servile dowry.</p></sp>
+<sp n="165" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:980-1013"><speaker>DANAUS</speaker><p><milestone unit="card" n="980" resp="Smyth"/>O daughters, it is fitting to pay vows to the Argives, and to sacrifice and pour libations, as to the Olympian gods, since they are our preservers with one mind. And they have heard with indignation from me what things have been done with regard to our headstrong friends, our kindred: but they have appointed for me these attendants and armed guards, that I might have this mark of honour, and that I might not unexpectedly perish without their knowledge by the death of the spear, and an everlasting pollution be upon this city. I having obtained<ref n="232.1" target="#app-tlg001-fn-232.1">1</ref> such things, do you observe a proper gratitude of mind more precious<ref n="232.2" target="#app-tlg001-fn-232.2">2</ref>. And these things, indeed write down in addition to the many other written prudent sayings of your father, so as in time to convince the unknown band<ref n="232.3" target="#app-tlg001-fn-232.3">3</ref>. But every one bears a ready evil tongue against a stranger, and to speak slander is an easy thing. But I exhort you not to disgrace me, being of a time of life which is attractive to men. And by no means is the tender mature fruit easy to guard: but beasts and mortals harm it in somewise and winged and four-footed animals. Venus proclaims the dropping fruits: I affirm that rapine awaits them in whatever way they [try to] hinder it<ref n="232.4" target="#app-tlg001-fn-232.4">4</ref>. And on the fair-formed beauty of virgins every one that passes by sends forth a melting dart from his eye, overcome by desire. Therefore let us not suffer those things on account of which we have had much toil, and much sea has been†<ref n="232.5" target="#app-tlg001-fn-232.5">5</ref> passed over in a ship, nor let us cause disgrace
+<pb n="233"/>
+
+to us, and pleasure to my enemies. But even a double dwelling is offered to us, the one, Pelasgus, and the other, the city gives, to dwell apart from servants: these things are easy. Only observe these injunctions of your father, honouring modesty more than life.</p></sp>
+<sp n="166" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1014-1047"><speaker>CHORUS</speaker><p>In other things may we be fortunate from the gods, but on account of my mature age be of good courage, father: for unless something new has been determined by the gods, I will not turn aside the former step of my mind. <milestone unit="card" n="1018" resp="Smyth"/>Go now celebrating the blessed gods who guard the state, both those inhabiting the city, and those who dwell around the ancient wave of Erasinus. But do you, attendants, receive the strain<ref n="233.1" target="#app-tlg001-fn-233.1">1</ref>: and let praise possess this city of Pelasgians, nor let us adore the mouths of Nile with hymns, <milestone unit="card" n="1026" resp="Smyth"/>but the rivers that pour through this country a willing stream, authors of increase, softening this soil of the earth with enriching weaves. And may chaste Diana regard with pity this train: nor through necessity let Cythercan nuptials come: but this reward is hateful<ref n="233.2" target="#app-tlg001-fn-233.2">2</ref>. <milestone unit="card" n="1034" resp="Smyth"/>But this favouring strain neglects not Venus: for she has a power over Jove together with Juno: and the nearest to the many-counselled goddess is honoured for her mighty works. But loved companions are present with mother [Venus], and no passion is disobedient to soothing persuasion. But to Harmonia is given a portion of deceiving Venus and the ways of loves. <milestone unit="card" n="1043" resp="Smyth"/>Expeditions by sea against us fugitive, and dire woes, and bloody wars, in truth I dread beforehand. For why have they performed a lucky voyage with swift pursuit?</p></sp>
+<sp n="167" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1048-1051"><speaker>SEMI-CHORUS</speaker><p>Whatever is fated, that will take place: the great immense mind of Jove is not to be transgressed. But perhaps with many other nuptials this event will be according to what has formerly befallen other women.</p></sp>
+<sp n="168" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1052-1053"><speaker>SEMI-CHORUS</speaker><p><milestone unit="card" n="1052" resp="Smyth"/>O mighty Jove defend me from the nuptials of the sons of <quote xml:lang="grc">Ægyptus.</quote></p></sp>
+<sp n="169" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1055"><speaker>SEMI-CHORUS</speaker><p>That, indeed, would be best: but you would soothe [a deity] not to be soothed.</p></sp>
+<sp n="170" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1056"><speaker>SEMI-CHORUS</speaker><p>But you at least knew not the future.</p></sp>
+<sp n="171" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1057"><speaker>SEMI-CHORUS</speaker><p><milestone unit="card" n="1057" resp="Smyth"/>How can I behold the divine mind, a fathomless view? Pray now for moderate things.</p></sp>
+
+<pb n="234"/>
+
+<sp n="172" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1061"><speaker>SEMI-CHORUS</speaker><p>What moderation do you teach me?</p></sp>
+<sp n="173" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1062"><speaker>SEMI-CHORUS</speaker><p><milestone unit="card" n="1062" resp="Smyth"/>Not to pry into the affairs of the gods.</p></sp>
+<sp n="174" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1063-1067"><speaker>SEMI-CHORUS</speaker><p>May royal Jove repel the hateful hostile nuptials of the men, who delivered Io from her misery, well restraining her with healing hand, with benevolent force having founded<ref n="234.1" target="#app-tlg001-fn-234.1">1</ref> [our race].</p></sp>
+<sp n="175" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:1068-1074"><speaker>SEMI-CHORUS</speaker><p><milestone unit="card" n="1068" resp="Smyth"/>Let him afford strength also to women. I prefer the better of two evils, and partly good and partly bad<ref n="234.2" target="#app-tlg001-fn-234.2">2</ref>, and that justice follow justice with my prayers by liberating aid from the god.</p></sp>
+</div></body><back><div type="apparatus"><head>Buckley's notes</head><listApp type="footnotes"><app n="210.1" xml:id="app-tlg001-fn-210.1"><note>1 In translating this very corrupt play, I shall adhere as closely to Dindorf as
+                is possible. As it is seldom read, and as the text is so uncertain, I shall
+                not burden the text with much illustrative annotation. Paley's edition is
+                the only one that will give the student much assistance. To enumerate all
+                the various readings, would fill half a volume, but I shall notice such as
+                seem to furnish an easy clue to the sense.
+            </note></app><app n="210.2" xml:id="app-tlg001-fn-210.2"><note>2 I follow <bibl>Robortelli</bibl>. See <bibl>Paley</bibl>.
+            </note></app><app n="211.1" xml:id="app-tlg001-fn-211.1"><note>1 But see <bibl>Paley</bibl>.
+            </note></app><app n="211.2" xml:id="app-tlg001-fn-211.2"><note>2 There is no finite verb.
+            </note></app><app n="211.3" xml:id="app-tlg001-fn-211.3"><note>3 This is reasoning with a vengeance. See <bibl>Paley</bibl>.
+            </note></app><app n="211.4" xml:id="app-tlg001-fn-211.4"><note>4 On this epithet of Egypt, see <bibl>Stanley</bibl>.
+            </note></app><app n="211.5" xml:id="app-tlg001-fn-211.5"><note>5 See <bibl>Paley</bibl>.
+            </note></app><app n="212.1" xml:id="app-tlg001-fn-212.1"><note>1 <quote xml:lang="grc">άρους.</quote> See <bibl>Dindorf</bibl>.
+            </note></app><app n="212.2" xml:id="app-tlg001-fn-212.2"><note>2 i. e. it is not thrown prostrate. The ingenious author of the last Oxford
+                translation, who certainly knew more about English than Greek, has got
+                through this chorus, indeed through the whole play, without the slightest
+                perception of the corruptions of the original, re-writing the play in
+                English, not rendering the Greek.
+            </note></app><app n="212.3" xml:id="app-tlg001-fn-212.3"><note>3 Hermann reads <quote xml:lang="grc">έλπιδων,</quote> and so Dindorf and Paley.
+            </note></app><app n="212.4" xml:id="app-tlg001-fn-212.4"><note>4 But see Paley, whose edition is indispensable to any one who attempts to
+                read the <title>Supplices</title>.
+            </note></app><app n="212.5" xml:id="app-tlg001-fn-212.5"><note>5 I read <quote xml:lang="grc">τεθαλὼς</quote> with Bothe, Dindorf, and Paley.
+            </note></app><app n="212.6" xml:id="app-tlg001-fn-212.6"><note>6 So <bibl>Paley</bibl>.
+            </note></app><app n="212.7" xml:id="app-tlg001-fn-212.7"><note>7 <quote xml:lang="grc">τιμω̃.</quote> See <bibl>Dindorf</bibl>.
+            </note></app><app n="212.8" xml:id="app-tlg001-fn-212.8"><note>8 See <bibl>Paley</bibl>.
+            </note></app><app n="212.9" xml:id="app-tlg001-fn-212.9"><note>9 <quote xml:lang="grc">δόμος, έορὸς</quote> trabis fabrica, pro navis, ut Hor. trabe Cypria. Paley.
+            </note></app><app n="213.1" xml:id="app-tlg001-fn-213.1"><note>1 Dindorf follows the emendation of Burges.
+            </note></app><app n="213.2" xml:id="app-tlg001-fn-213.2"><note>2 Such should be the sense. But neither that, nor any other meaning can be
+                elicited from the words as they stand. Heath reads <quote xml:lang="grc">οσθένει.</quote> Paley,
+                <quote xml:lang="grc">σθένουσ' ίωχμῳ̃'Ασφαέως άδμη̃τος,</quote> with much ingenuity. See his note.
+                Perhaps, however, the fault lies in the verses being wrongly distinguished,
+                and the true reading is simply <quote xml:lang="grc">άσφαλὲς, Παντί τὲ σθένει. Διγμοισι δ'
+                άσφαλέως, κτλ.</quote> But in such passages, <quote xml:lang="lat">hariolari licet, at nil prœterea.</quote>
+            </note></app><app n="213.3" xml:id="app-tlg001-fn-213.3"><note>3 I follow Wellauer's <quote xml:lang="grc">ήλιόκτυπον</quote> with Dindorf and Paley. The conjunction
+                <quote xml:lang="grc">ή</quote> could not possibly stand.
+            </note></app><app n="213.4" xml:id="app-tlg001-fn-213.4"><note>4 This is Blomfield's splendid emendation, learnedly supported by Burges,
+                Gaisford, and Paley. Wellauer's <quote xml:lang="grc">τὸν γάίον</quote> is preferred by Dindorf.
+                <quote xml:lang="grc">του̃γγαιον</quote> must be corrected.
+            </note></app><app n="213.5" xml:id="app-tlg001-fn-213.5"><note>5 I read <quote xml:lang="grc">α Ζην, 'Ιου̃ς ιὼ</quote> with Bamberger. See <bibl>Dindorf</bibl>.
+            </note></app><app n="213.6" xml:id="app-tlg001-fn-213.6"><note>6 <quote xml:lang="grc">λαβὼν,</quote> Wordsworth., with the approbation of Dindorf and Paley.
+            </note></app><app n="214.1" xml:id="app-tlg001-fn-214.1"><note>1 There is much uncertainty about the reading. <quote xml:lang="grc">τεθηγμνος,</quote> Pearson. Burges,
+                <quote xml:lang="grc">τεθηγμνος,</quote> Abresch. Dindorf, <quote xml:lang="grc">τεθηγμνος,</quote> Steph. Turn. Paley.
+            </note></app><app n="214.2" xml:id="app-tlg001-fn-214.2"><note>2 <quote xml:lang="grc">εύωνύμων,</quote> Pearson, Dind. Paley.
+            </note></app><app n="214.3" xml:id="app-tlg001-fn-214.3"><note>3 In Rob. the dramatis personæ are differently arranged. See Burges and
+                Paley.
+            </note></app><app n="214.4" xml:id="app-tlg001-fn-214.4"><note>4 Burges and Scholefield rightly place v. 210 after 206. See the notes of
+                Paley. The whole passage, as it now stands, in fact, the whole play is a
+                mass of hopeless absurdity.
+            </note></app><app n="215.1" xml:id="app-tlg001-fn-215.1"><note>1 <quote xml:lang="grc">ω̋στε έλευθέρους ήμα̃ς γίγνεσθαι</quote> Wellauer.
+            </note></app><app n="215.2" xml:id="app-tlg001-fn-215.2"><note>2 <quote xml:lang="grc">ἃκοντος πατρός,</quote> Burges, Dind.
+            </note></app><app n="215.3" xml:id="app-tlg001-fn-215.3"><note>3 See <bibl>Dindorf</bibl>. Burges is extremely ingenious in reading <quote xml:lang="grc">ρ̀ητὸν Ερμου̃ κλα̃ρον
+                η̋ πόλεωςάγόν;</quote> i. e. herald or ruler.
+            </note></app><app n="216.1" xml:id="app-tlg001-fn-216.1"><note>1 See the learned notes of Stanley and Paley.
+            </note></app><app n="217.1" xml:id="app-tlg001-fn-217.1"><note>1 This verse is condemned as spurious.
+            </note></app><app n="217.2" xml:id="app-tlg001-fn-217.2"><note>2 Read <quote xml:lang="grc">πανσόφου .... τούτου</quote> with Tyrwhitt. But even then, the lilt seems
+                absurd, unless we read <quote xml:lang="grc">τὸ πα̃ν σαφὲς</quote> with Fr. Port.
+            </note></app><app n="218.1" xml:id="app-tlg001-fn-218.1"><note>1 But <quote xml:lang="grc">ώνητο</quote> is probably the true reading. See Dind. Paley.
+            </note></app><app n="218.2" xml:id="app-tlg001-fn-218.2"><note>2 Burges, <quote xml:lang="grc">λυκοδέρκτων,</quote> elegantly. Hermann, <quote xml:lang="grc">λυκοδιώκτον,</quote> which Dindorf
+                prefers.
+            </note></app><app n="218.3" xml:id="app-tlg001-fn-218.3"><note>3 See Paley, whose explanation I have followed.
+            </note></app><app n="218.4" xml:id="app-tlg001-fn-218.4"><note>4 <quote xml:lang="grc">γεραιόφρων</quote> is Burges' emendation.
+            </note></app><app n="218.5" xml:id="app-tlg001-fn-218.5"><note>5 Hermann has elicited <quote xml:lang="grc">ου πενει</quote> from the scholiast.
+            </note></app><app n="219.1" xml:id="app-tlg001-fn-219.1"><note>1 See <bibl>Paley</bibl>. I have still no doubt that Dindorf is right in reading
+                <quote xml:lang="grc">ἀστοι̃ς—τω̃νδε</quote> with Stanley.
+            </note></app><app n="219.2" xml:id="app-tlg001-fn-219.2"><note>2 See Abresch.
+            </note></app><app n="219.3" xml:id="app-tlg001-fn-219.3"><note>3 "<quote xml:lang="lat">Sensus est: secundum merita (εἰκότως) malos puniens, justos bene
+                faciens.</quote>"-Paley.
+            </note></app><app n="219.4" xml:id="app-tlg001-fn-219.4"><note>4 I have followed <bibl>Paley</bibl>.
+            </note></app><app n="220.1" xml:id="app-tlg001-fn-220.1"><note>1 i. e. the suppliants.
+            </note></app><app n="222.1" xml:id="app-tlg001-fn-222.1"><note>1 Read <quote xml:lang="grc">φόνου</quote> with Pauw, Haupt, and Paley. I myself should prefer
+                <quote xml:lang="grc">φθόνον.</quote>
+            </note></app><app n="222.2" xml:id="app-tlg001-fn-222.2"><note>2 I should read <quote xml:lang="grc">φρενας,</quote> with Bothe, in ed. 1.
+            </note></app><app n="222.3" xml:id="app-tlg001-fn-222.3"><note>3 See <bibl>Paley</bibl>.
+            </note></app><app n="222.4" xml:id="app-tlg001-fn-222.4"><note>4 i. e. the ship containing their suitors.
+            </note></app><app n="223.1" xml:id="app-tlg001-fn-223.1"><note>1 The play upon the name of Epaphus is kept up. </note></app><app n="223.2" xml:id="app-tlg001-fn-223.2"><note>2 Or " plied." </note></app><app n="223.3" xml:id="app-tlg001-fn-223.3"><note>3 See Paley </note></app><app n="224.1" xml:id="app-tlg001-fn-224.1"><note>1 "<quote xml:lang="lat">No sooner said than done.</quote>"-Paley.
+            </note></app><app n="224.2" xml:id="app-tlg001-fn-224.2"><note>2 <quote xml:lang="grc">βουλιῶς.</quote> Stanl. Dind.
+            </note></app><app n="224.3" xml:id="app-tlg001-fn-224.3"><note>3 See Paley's clever note.
+            </note></app><app n="225.1" xml:id="app-tlg001-fn-225.1"><note>1 <quote xml:lang="grc">στάσις</quote> is supplied by Paley: <quote xml:lang="grc">ἔρις</quote> by Heath.
+            </note></app><app n="226.1" xml:id="app-tlg001-fn-226.1"><note>1 See <bibl>Paley</bibl>.
+            </note></app><app n="226.2" xml:id="app-tlg001-fn-226.2"><note>2 Dindorf reads <quote xml:lang="grc">ίσως γὰρ ἂν</quote> with Burges, condemning the attempts to defend the
+                common reading without <quote xml:lang="grc">ἂν.</quote> Paley differs, but unsatisfactorily.
+            </note></app><app n="226.3" xml:id="app-tlg001-fn-226.3"><note>3 But see <bibl>Paley</bibl>. As the verses now stand, there is no clear sense.
+            </note></app><app n="227.1" xml:id="app-tlg001-fn-227.1"><note>1 For the sense of the whole passage, see <bibl>Paley</bibl>.
+            </note></app><app n="227.2" xml:id="app-tlg001-fn-227.2"><note>2 There seems an evident want of the adversative particle. Perhaps we should
+                read, <quote xml:lang="grc">νυκτὸς (i. e. nocte) δ' ἀποστείχοντος ήλιου.</quote> But perhaps the words <quote xml:lang="grc">εἰς νύκτ'</quote>
+                are a gloss, and have obliterated the genuine reading. The apodosis <quote xml:lang="grc">ούτω
+                γένοιτο</quote> would best answer to some such form as <quote xml:lang="grc">οἷον δ' ἀποστείχοντος, κ. τ. λ.</quote>
+                Bothe's <quote xml:lang="grc">εὐνάς τ' ἀποστείχοντος</quote> is ingenious, and seems confirmed by Soph.
+                <title>Trach.</title> 94, <quote xml:lang="grc">νὺξ τίκτει κατευνάζει τε φλογιζόμενον "Αλλον,</quote> and Horace's "<quote xml:lang="lat">Solis
+                ab Hesperio cubili.</quote>"
+            </note></app><app n="228.1" xml:id="app-tlg001-fn-228.1"><note>1 I am ill satisfied with the repetition <foreign xml:lang="grc">κέαρ .... καρδία</foreign>. </note></app><app n="228.2" xml:id="app-tlg001-fn-228.2"><note>2 The sense requires this. Paley simply reads <quote xml:lang="grc">τάδε.</quote> Dindorf <quote xml:lang="grc">τόδε χριμφθὲν
+                χροΐ,</quote> ingeniously. I prefer Paley's emendation, removing the stop after
+                <quote xml:lang="grc">χεροι̃ν,</quote> and placing it after <quote xml:lang="grc">χριμφθη̃ναι</quote> (<quote xml:lang="grc">έγχρ.</quote> being against the metre).
+            </note></app><app n="228.3" xml:id="app-tlg001-fn-228.3"><note>3 See Paley's note.
+            </note></app><app n="228.4" xml:id="app-tlg001-fn-228.4"><note>4 I prefer Burges' <foreign xml:lang="grc">ἀπρόστειπτος</foreign>, but do not admire his subsequent
+            alterations. Pauw's <foreign xml:lang="grc">οἰόπο̹ων</foreign> is frigidity itself. </note></app><app n="228.5" xml:id="app-tlg001-fn-228.5"><note>5 This is all corrupt.
+            </note></app><app n="228.6" xml:id="app-tlg001-fn-228.6"><note>6 See Dindorf's note.
+            </note></app><app n="228.7" xml:id="app-tlg001-fn-228.7"><note>7 See <bibl>Linwood's Lex.</bibl>. I myself believe that <quote xml:lang="grc">νᾶϊος, υἷος</quote> is the true reading.
+            </note></app><app n="228.8" xml:id="app-tlg001-fn-228.8"><note>8 As Dindorf and Paley have completely given up this passage, the reader will
+                not be surprised at my translation. Burges has dealt very ingeniously with
+                the whole, but I am unwilling to believe that such passages are within the
+                reach of certain criticism.
+            </note></app><app n="229.1" xml:id="app-tlg001-fn-229.1"><note>1 For a just criticism on this mass of barbarism and absurdity, see Paley on v.
+                815, sqq.
+            </note></app><app n="229.2" xml:id="app-tlg001-fn-229.2"><note>2 See Donaldson, <title>New Cratylus</title>, p. 580, and Paley. I shall obelize the
+                passages that are quite hopeless, to show that the translation is only guess-work. To re-write the author by implication is not the business of the
+                translator.
+            </note></app><app n="229.3" xml:id="app-tlg001-fn-229.3"><note>3 I have followed Schutz's, Stevens', and Paley's corrections, although I am
+                nearly as much in the dark as ever.
+            </note></app><app n="231.1" xml:id="app-tlg001-fn-231.1"><note>1
+<quote xml:lang="eng">Surely these verses should be allotted thus:
+<quote xml:lang="grc">Βας. οὐ γὰρ .... τάδε.</quote> <quote xml:lang="grc">Κηρ. ἀβουκ</quote>—<quote xml:lang="grc">Βας. ἀλλ' ὡς</quote>—<quote xml:lang="grc">Κηρ. Καὶ γὰρ</quote></quote>—I am partly, but differently anticipated by Burges. As the verses now stand, they are destitute of meaning. Paley reads <quote xml:lang="grc">εἰδὼς ἐννἐπω</quote> with Aid. Rob. The necessity for transposition does not end here, as <bibl>Burges</bibl> alone has seen, but has carried it too far.
+</note></app><app n="232.1" xml:id="app-tlg001-fn-232.1"><note>1
+<quote xml:lang="grc">Correct to τυγχάνοντος.</quote>
+</note></app><app n="232.2" xml:id="app-tlg001-fn-232.2"><note>2
+<quote xml:lang="eng">See <bibl>Paley</bibl>. I am but half satisfied.</quote>
+</note></app><app n="232.3" xml:id="app-tlg001-fn-232.3"><note>3
+<quote xml:lang="grc">i. e. "to show what you really are."</quote>
+</note></app><app n="232.4" xml:id="app-tlg001-fn-232.4"><note>4
+<quote xml:lang="eng">But see <bibl>Paley</bibl>.</quote>
+</note></app><app n="232.5" xml:id="app-tlg001-fn-232.5"><note>5
+<quote xml:lang="eng">But read <quote xml:lang="grc">οὕνεκ ἠρόθη</quote> with Heath, Dind. Paley.</quote>
+</note></app><app n="233.1" xml:id="app-tlg001-fn-233.1"><note>1
+<quote xml:lang="grc">μέλος</quote> Le Grand, Dind. Paley.
+</note></app><app n="233.2" xml:id="app-tlg001-fn-233.2"><note>2
+<quote xml:lang="eng">i. e., nuptials, otherwise delightful, are in our case hateful.</quote>
+</note></app><app n="234.1" xml:id="app-tlg001-fn-234.1"><note>1
+<quote xml:lang="eng">I scarcely think Paley's construing correct, and prefer Bothe's elegant emendation, <quote xml:lang="grc">ἐμμανη̃ ϐου̃ν οἰκτίσα</quote></quote>
+</note></app><app n="234.2" xml:id="app-tlg001-fn-234.2"><note>2
+<quote xml:lang="grc">δίμοιροι</quote>
+</note></app></listApp></div></back></text></TEI>

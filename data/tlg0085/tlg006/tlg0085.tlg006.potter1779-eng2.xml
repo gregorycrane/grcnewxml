@@ -1,0 +1,2538 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="eng">The Choephoræ</title>
+        <author>Aeschylus</author>
+        <editor role="translator">Robert Potter (1721–1804)</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Digital conversion and CTS/EpiDoc encoding</resp>
+          <name xml:id="gcrane">Gregory Crane</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Perseus Project</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <availability status="free">
+          <licence target="https://www.hathitrust.org/rights/public-domain">Public domain (U.S.)</licence>
+          <p>Digitized copy served by HathiTrust and originating from Harvard University.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <title>The tragedies of Aeschylus</title>
+            <title type="sub">The second edition, corrected, with notes</title>
+            <editor role="translator">Robert Potter</editor>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>W. Strahan and T. Cadell</publisher>
+              <date when="1779">1779</date>
+            </imprint>
+            <biblScope unit="volume">2 volumes</biblScope>
+          </monogr>
+          <ref target="https://catalog.hathitrust.org/Record/009707254">HathiTrust catalog record</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Potter's English wording, long-s typography, page breaks, speeches, lyric divisions, and notes are preserved. English verse units receive sequential CTS citations. Translation groups point explicitly to passages of the Smyth/Perseus Greek edition; individual English lines are not assigned unsupported one-to-one alignments. Catchwords are encoded as fw and explanatory notes as EpiDoc apparatus entries.</p>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])">
+          <p>This pointer pattern extracts an English verse unit.</p>
+        </cRefPattern>
+      </refsDecl>
+      <projectDesc>
+        <p>CTS edition: urn:cts:greekLit:tlg0085.tlg006.potter1779-eng2.</p>
+      </projectDesc>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-16" who="#gcrane">Regularized as a play-level CTS/EpiDoc translation with formal Greek correspondence.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng">
+    <front>
+      <div type="textpart" subtype="introduction">
+        <fw type="header">THE CHOEPHORÆ.</fw>
+        <pb n="133"/>
+        <p>THE Chorus in the former play, with
+          a dignity and firmneſs becoming ſenators of Argos, had expreſſed their abhorrence
+          of the murder of Agamemnon even to the
+          face of Clytemneſtra and Ægisthus, and
+          threatened them with the anger of the Gods
+          and the vengeance of Oreſtes: this is here
+          executed.
+        </p><p>
+          The characters of Oreſtes and Electra are
+          finely ſupported. A pious reſentment of the
+          murder of his father, a conſciouſneſs of his
+   
+          
+        <pb n="134"/>
+       
+        own high rank, and a juſt indignation at the
+          injuries he had received from the murderers,
+          a generous deſire to deliver his country from
+          the tyranny of theſe uſurpers, and above all
+          the expreſs command of Apollo, with a promiſe of his protection if he obeyed, and a denunciation of the ſevereſt puniſhments ſhould
+          he dare to diſobey, incited Oreſtes to this
+          deed: he is accordingly drawn as a man of
+          a brave and daring ſpirit, touched with the
+          higheſt ſenſe of honour, and the moſt religious reverence of the Gods: in ſuch a character there could be nothing ſavage and ferocious; and we are pleaſed to find him
+          deeply ſenſible of the horror of the deed
+          which he was obliged to perpetrate, and
+          averſe to plunge his ſword into the breast of
+          his mother. <quote>Electra's character (in the
+          words of the critic) is that of a fierce and
+           determined, but withal of a generous and
+           virtuous woman. Her motives to revenge
+          
+          were, principally, a ſtrong ſenſe of juſtice,
+           and ſuperior affection for a father; not a
+           rooted, unnatural averſion to a mother.
+           She acted, as appears, not from the perturbation
+        <pb n="135"/>
+
+       of a tumultuous revenge, but
+           from a fixed abhorrence of wrong, and a
+           virtuous ſenſe of duty.</quote> Conſiſtently with
+          this character, when ſhe had given Oreſtes a
+          ſpirited account of their father's murder,
+          which drew him to declare his reſolution to
+          revenge it, ſhowing at the ſame time ſome
+          ſign of remorſe, ſhe adds a ſhort relation of the
+          barbarous indignities offered to the dead body;
+          a deed of horror which, ſhe knew, would
+          ſhock his ſoul. She had ſeen her father murdered, his body mangled, and buried without
+          its honours; her brother, whom ſhe loved
+          with the tendereſt affection, deprived of his
+          throne, and exiled from his country; her
+          mother in the arms of Ægisthus abandoning
+          herſelf to her looſe and infamous pleaſures;
+          ſhe was herſelf continually expoſed to the inſults and barbarous treatment of this ungentle
+          mother; what wonder then that a ſpirit naturally lofty and ſenſible ſhould catch fire at
+          theſe injuries, contract a wolfish fierceneſs, as
+          ſhe expreſſes it, and urge her brother to ſacrifice theſe proud oppreſſors to juſtice and revenge? But the poet, with great regard to 
+          
+        <pb n="136"/>
+        
+        decorum, removes her from the ſcene before the
+          dreadful deed is to be committed: with regard to his management of the catastrophe,
+          nothing could be more judicious. Oreſtes,
+          who had ruſhed on Ægisthus with the fury of
+          a tyger, in the preſence of his mother feels
+          himſelf under the reſtraint of filial reverence,
+          and confeſſes his reluctance to ſhed her blood;
+          till Pylades animates him with a ſentence as
+          ſolemn as the Delphic Oracle; which finely
+          marks the fatal blow as an act of neceſſary juſtice, not of ruffian violence. Even the Chorus, who enter warmly into the intereſts of
+          Electra and Oreſtes, and had fired him to revenge by every argument of duty, juſtice, law,
+          and honour; who had wiſhed to hear the dying groans of the guilty tyrants, and to echo
+          them back in notes as diſmal, after the deed
+          is done, reſſume the ſofter ſentiments of humanity, and lament their fate. The remorſe
+          and madneſs of Oreſtes is touched in the
+          fineſt manner. Theſe indeed are but ſketches,
+          but they are the ſketches of a great maſter: a
+          ſucceeding poet had the ſkill to give them
+          
+          
+        <pb n="137"/>
+       
+        their finiſhing, and heightened them with
+          the warmeſt glow of colouring. The ſpirit
+          of Æſchylus ſhines through this tragedy; but
+          a certain ſoftening of grief hangs over it, and
+          gives it an air of ſolemn magnificence.
+          </p><p>
+          The ſcene of this tragedy, as of the former,
+          is at Argos before the royal palace. Oreſtes,
+          according to the cuſtom of ancient times, offering his hair on the tomb of his father, ſees
+          a train of females advancing from the houſe,
+          and bringing libations to the tomb; from
+          whence the play receives its name. The action
+          is afterwards removed to the area before the
+          palace. This requires no change of ſcene.</p>
+         
+          
+      
+      </div>
+      <pb n="138"/>
+      <div type="textpart" subtype="cast-list"><fw type="header">Perſons of the Drama.</fw>
+          <list><item>ORESTES.</item><item>PYLADES.</item><item>ELECTRA.</item><item>CLYTEMNESTRA.</item><item>ÆGISTHUS.</item><item>SERVANTS.</item><item>CHORUS of TROJAN DAMES.</item></list></div>
+    </front>
+    <body>
+      <div type="edition" n="urn:cts:greekLit:tlg0085.tlg006.potter1779-eng2" xml:lang="eng">
+        <pb n="139"/>
+        <sp>
+                <speaker>ORESTES, PYLADES. ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1-2">
+                    <milestone unit="card" n="1" resp="Smyth"/><l n="1">THOU, that to the regions of the dead <ref target="#app-tlg006-note.139.a">*</ref></l>
+                    <l n="2">Bearest thy father's high beheſts, O hear,</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:3-5">
+                    <l n="3">Hear, Mercury, thy ſupplicant, protect,</l>
+                    <l n="4">And</l>
+                </lg>
+            </sp>
+        <pb n="140"/>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:4-5">
+                <l n="5">And ſave me; for I come, from exile come,</l>
+                <l n="6">Reviſiting my country!—</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:4-5">
+                <l n="7">Thou, dread ſhade,</l>
+                <l n="8">At whoſe high tomb I bow, ſhade of my father,</l>
+                <l n="9">Hear me, O hear! To thee these criſped locks,</l>
+                <l n="10">Once ſacred to the nurture-giving stream</l>
+                <l n="11">Of Inachus, in the' anguſh of my ſoul</l>
+                <l n="12">I now devote. —</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:10-11">
+                <l n="13">But what are these, this train</l>
+                <l n="14">Of females in the ſable garb of woe?</l>
+            </lg>
+        <pb n="141"/>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:11-13">
+                <l n="15">Decently habited? Whence ſpring their ſorrows?</l>
+                <l n="16">Does some new ruin lord it in the house?</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:14-15">
+                <l n="17">Or haply, if I deem aright, they bring</l>
+                <l n="18">Oblations to my father's ſhade, to ſooth</l>
+                <l n="19">The mighty dead.</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:16-17">
+                <l n="20">It must be ſo; for, ſee,</l>
+                <l n="21">Electra is among them, my poor ſiſter,</l>
+                <l n="22">Præ-eminent in grief.</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:18-19">
+                <l n="23">—Almighty Jove,</l>
+                <l n="24">O give me to revenge my father's death,</l>
+                <l n="25">And ſhield me with thy favour!</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:20-21">
+                <l n="26">Pylades,</l>
+                <l n="27">Stand we apart conceal'd, that I may learn</l>
+                <l n="28">What leads this train of ſuppliant females hither.</l>
+            </lg>
+        <sp>
+                <speaker>CHORUS.</speaker><stage type="lyric-label">STROPHE I.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:22-23">
+                    <milestone unit="card" n="22" resp="Smyth"/><l n="29">This ſadly-penſive train to lead,</l>
+                    <l n="30">With hallow'd rites to ſooth the dead,</l>
+                    <l n="31">To bear these off'rings to his shrine,</l>
+                    <l n="32">The melancholy taſk is mine.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:24-26">
+                    <l n="33">And, as from yon' proud walls I take my way,</l>
+                    <l n="34">My cheeks, with many' a ſounding blow</l>
+                    <l n="35">Beat by these hands, in crimſon glow,</l>
+                    <l n="36">Whilſt my poor heart to anguiſh ſinks a prey:</l>
+                </lg>
+                <fw type="catchword">And</fw>
+            </sp>
+        <pb n="142"/>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:27-31">
+                <l n="37">And the fair texture of this veſt,</l>
+                <l n="38">That decent o'er my ſwelling bosom roll'd,</l>
+                <l n="39">My griefs thro' ev'ry waving fold</l>
+                <l n="40">Have rent, and bared my bleeding breaſt.</l>
+            </lg>
+        <stage type="lyric-label">ANTISTROPHE I.</stage>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:32-36">
+                <milestone unit="card" n="32" resp="Smyth"/><l n="41">For in the ſtill and midnight hour,</l>
+                <l n="42">When darkneſs aids his hideous pow'r,</l>
+                <l n="43">Affright, that breaths his vengeance deep,</l>
+                <l n="44">Haunts with wild dreams the troubled ſleep,</l>
+                <l n="45">That freeze the blood, and raiſe the briſtling hair:</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:33-36">
+                <l n="46">Grim ſpectre! he with horrid tread</l>
+                <l n="47">Stalk'd around the curtain'd bed,</l>
+                <l n="48">And rais'd a yell that pierc'd the tortur'd ear.</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:37-41">
+                <l n="49">Aghaſt the heav'n-taught prophet ſtood;</l>
+                <l n="50">The dead, he cries, the angry dead around</l>
+                <l n="51">These dreadful notes of vengeance ſound,</l>
+                <l n="52">Dreadful to those that ſhed their blood.</l>
+            </lg>
+        <stage type="lyric-label">STROPHE 2.</stage>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:42-46">
+                <milestone unit="card" n="42" resp="Smyth"/><l n="53">With ſoul-subduing fear appall'd</l>
+                <l n="54">Me this unholy woman call'd,</l>
+                <l n="55">To bear these gifts, this train to lead,</l>
+                <l n="56">And ſooth to peace the mighty dead.</l>
+                <l n="57">But</l>
+            </lg>
+        <pb n="143"/>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:42-48">
+                <l n="58">But will these gifts be grateful to his ſhade?</l>
+                <l n="59">O Earth, when once the guſhing blood</l>
+                <l n="60">Hath on thy purple bosom flow'd,</l>
+                <l n="61">What grateful expiation ſhall be made?</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:49-53">
+                <l n="62">Ill-fated house, thy maſter ſlain,</l>
+                <l n="63">How are thy glories vaniſh'd! O'er thy walls</l>
+                <l n="64">A joyleſs ſunleſs darkneſs falls,</l>
+                <l n="65">And horror holds his hateful reign.</l>
+            </lg>
+        <stage type="lyric-label">ANTISTROPHE 2.</stage>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:55-58">
+                <milestone unit="card" n="55" resp="Smyth"/><l n="66">Round him the blaze of greatneſs ſhone,</l>
+                <l n="67">And dignity adorn'd his throne:</l>
+                <l n="68">The people bow'd before their lord,</l>
+                <l n="69">Awe-ſtruck, and his high ſtate ador'd.</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:55-60">
+                <l n="70">Where now that reverend awe, that ſacred dread</l>
+                <l n="71">Of majesty? Succeſs, to thee,</l>
+                <l n="72">As to a God, men bend the knee.</l>
+                <l n="73">But juſtice haſtes t'avenge each impious deed;</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:61-65">
+                <l n="74">Some in day's clear and open light,</l>
+                <l n="75">Some in the duſky evening's twilight ſhade</l>
+                <l n="76">Or by delay more furious made,</l>
+                <l n="77">Some in the dreary gloom of night.</l>
+            </lg>
+        <pb n="144"/>
+        <stage type="lyric-label">EPODE.</stage>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:66-70">
+                <milestone unit="card" n="66" resp="Smyth"/><l n="78">His blood, that ſunk upon the ground</l>
+                <l n="79">A ſtiffened maſs of carnage lies,</l>
+                <l n="80">Aloud for vengeance on his murderers cries:</l>
+                <l n="81">Ate obeys the call; but flow</l>
+                <l n="82">Delays, till dreary night encloſe them round,</l>
+                <l n="83">Prepar'd to ſtrike a deeper blow.</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:71-74">
+                <milestone unit="card" n="71" resp="Smyth"/><l n="84">Shall he, that foul with midnight rape</l>
+                <l n="85">Pollutes the nuptial bed, eſcape?</l>
+                <l n="86">Murder and luft! Were all the ſtreams, that wind</l>
+                <l n="87">Their mazy progreſs to the main,</l>
+                <l n="88">To cleanſe this odious ſtain in one combin'd,</l>
+                <l n="89">The ſtreams combin'd wou'd flow in vain.</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:75-77">
+                <milestone unit="card" n="75" resp="Smyth"/><l n="90">Me, from my bleeding country torn,</l>
+                <l n="91">Condemn'd the ſervile yoke to bear,</l>
+                <l n="92">Bitter conſtraint and ſpirit-sinking fear</l>
+                <l n="93">Compel t' obey their proud commands;</l>
+            </lg>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:78-81">
+                <l n="94">Juſt, or unjust, perforce they must be born;</l>
+                <l n="95">Captive, my life is in their hands:</l>
+                <l n="96">Perforce my ſtruggling soul conceals its hate;</l>
+                <l n="97">My veſt forbids the ſstarting tear to flow;</l>
+                <l n="98">Mourning the mighty chief's unhappy fate</l>
+                <l n="99">Silent I stand, and ſtiffſen with my woe.</l>
+            </lg>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:84-88">
+                    <milestone unit="card" n="84" resp="Smyth"/><l n="100">Ye captive females, to whoſe care this house</l>
+                    <l n="101">Owes what it has of order, ſince with me</l>
+                    <l n="102">You here are preſent on these ſuppliant rites</l>
+                    <l n="103">Attendant, ſhow, inſtruct me, as I pour</l>
+                    <l n="104">These ſolemn off'rings on the tomb, what words</l>
+                    <l n="105">Of gracious potency ſhall I pronounce?</l>
+                    <l n="106">Or how invoke my father?</l>
+                </lg>
+            </sp>
+        <pb n="145"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:89-92">
+                    <l n="107">Shall I ſay</l>
+                    <l n="108">"To her lov'd lord the loving wife hath ſent</l>
+                    <l n="109">"These preſents?" Shame forbids: nor hath my tongue</l>
+                    <l n="110">Ought of addreſs, whilſt on my father's tomb</l>
+                    <l n="111">I offer these atonements.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:93-95">
+                    <l n="112">Shou'd I rather,</l>
+                    <l n="113">As nature prompts, entreat him to return</l>
+                    <l n="114">Like garlands to the ſenders, meet reward</l>
+                    <l n="115">For their ill deeds?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:96-99">
+                    <l n="116">Or with inglorious ſilence,</l>
+                    <l n="117">For ſo he periſh'd, on the thirsty earth</l>
+                    <l n="118">Pour these libations, then retire, like one</l>
+                    <l n="119">That in ſome worthleſs veſſel throws away</l>
+                    <l n="120">Something unclean, and caſts the veſſel with it,</l>
+                    <l n="121">Nor backwards turns her eyes.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:100-105">
+                    <l n="122">Inſtruct me, friends,</l>
+                    <l n="123">Adviſe me, for alike we hate this house;</l>
+                    <l n="124">Be open then; here you have none to fear.</l>
+                    <l n="125">The free eſcapes not fate, more than the wretch</l>
+                    <l n="126">That trembles at his proud lord's tyrannous hand.</l>
+                    <l n="127">If thou hast ought of counſel, give it me.</l>
+                </lg>
+            </sp>
+        <pb n="146"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:106-107">
+                    <milestone unit="card" n="106" resp="Smyth"/><l n="128">Since, as ſome hallow'd ſhrine, thy father's tomb</l>
+                    <l n="129">I reverence, at thy bidding I will ſpeak.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:108">
+                    <l n="130">I charge thee, by that reverence, freely ſpeak.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:109">
+                    <l n="131">With these libations pour thy ardent vows</l>
+                    <l n="132">For bleſſings on the head of all his friends.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:110">
+                    <l n="133">Whom by that honour'd title ſhall I name?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:111">
+                    <l n="134">Thyſelf the firſt, and all that hate Ægifthus.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:112">
+                    <l n="135">For thee and me then ſhall I pour these vows?</l>
+                </lg>
+            </sp>
+        <stage type="speaker">CHORUS.</stage>
+        <pb n="147"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:113">
+                    <l n="136">To learn, and weigh this well, be thy concern.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:114">
+                    <l n="137">Whom to this friendly number ſhall I add?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:115">
+                    <l n="138">Tho' diſtant far, remember poor Oreſtes.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:116">
+                    <l n="139">That’s well: I learn no little wisdom from thee.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:117">
+                    <l n="140">Remember next the authors of his death.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:118">
+                    <l n="141">What ſhou'd I ſay? Inſtruct my lack of knowledge.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:119">
+                    <l n="142">Pray that some God, or man, may come to them.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:120">
+                    <l n="143">With what intent? To judge, or to avenge?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:121">
+                    <l n="144">Speak plainly, to repay them death for death.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:122">
+                    <l n="145">And may this be with reverence to the Gods?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:123">
+                    <l n="146">What hinders to requite a foe with ill?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA</speaker><stage>at the Tomb.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:124-125">
+                    <l n="147">O thou, that to the realms beneath the earth</l>
+                    <l n="148">Guideſt the dead, be preſent, Mercury,</l>
+                    <l n="149">And tell me that the pow’rs, whoſe ſolemn ſway</l>
+                    <l n="150">Extends o’er those dark regions, hear my vows;</l>
+                </lg>
+            </sp>
+        <pb n="148"/>
+        <sp>
+                <speaker>ELECTRA</speaker><stage>at the Tomb.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:126-128">
+                    <l n="151">Tell me that o’er my father’s house they roll</l>
+                    <l n="152">Their aweful eyes, and o’er this earth, that bears</l>
+                    <l n="153">And foſters all, rich in their various fruits.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:129-131">
+                    <l n="154">And thee, my father, pouring from this vaſe</l>
+                    <l n="155">Libations to thy ſhade, on thee I call,</l>
+                    <l n="156">O pity me, pity my dear Oreſtes,</l>
+                    <l n="157">That in this ſeat of kings our hands may hold</l>
+                    <l n="158">The golden reins of pow’r:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:132-134">
+                    <l n="159">for now oppreſs’d,</l>
+                    <l n="160">And haraſs'd by a mother’s cruel hand,</l>
+                    <l n="161">Who for Ægiſthus, that contriv’d thy death,</l>
+                    <l n="162">Exchang’d her royal lord, he wanders far,</l>
+                    <l n="163">And I am treated as a ſlave:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:135-137">
+                    <l n="164">Oreſtes</l>
+                    <l n="165">From his poſſeſſions exil’d, they with pride</l>
+                    <l n="166">Wantonly</l>
+                </lg>
+            </sp>
+        <pb n="149"/>
+        <sp>
+                <speaker>ELECTRA</speaker><stage>at the Tomb.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:137-139">
+                    <l n="167">Wantonly revel in the wealth thy toils</l>
+                    <l n="168">Procur’d: O grant Oreſtes may return,</l>
+                    <l n="169">And fortune be his guide!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:139-141">
+                    <l n="170">Hear me, my father,</l>
+                    <l n="171">And grant me, more than e’er my mother knew,</l>
+                    <l n="172">The grace and bluſh of unſtain’d modeſty<ref target="#app-tlg006-note.149.b">b</ref>,</l>
+                    <l n="173">And a more holy hand!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:142-146">
+                    <l n="174">For us these vows;</l>
+                    <l n="175">But on our foes may thy avenger riſe</l>
+                    <l n="176">Demanding blood for blood. These vows I breath</l>
+                    <l n="177">In dreadful imprecations on their heads.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:147-149">
+                    <l n="178">Be thou to us, my father, with the Gods,</l>
+                    <l n="179">This earth, and pow’rful justice, be to us,</l>
+                    <l n="180">That breath this vital air, a guide to good.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:149-151">
+                    <l n="181">With these libations ſuch the vows I offer.</l>
+                    <l n="182">Now let your ſorrows flow; attune the Pæan,</l>
+                    <l n="183">And ſooth his ſhade with ſolemn harmony.</l>
+                </lg>
+            </sp>
+        <pb n="150"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:152-155">
+                    <milestone unit="card" n="152" resp="Smyth"/><l n="184">Swell the warbling voice of woe,</l>
+                    <l n="185">Loudly let the meaſures flow;</l>
+                    <l n="186">And ever and anon the forrowing tear</l>
+                    <l n="187">Trickling dew the hallow'd ground,</l>
+                    <l n="188">T' avert the ills we fear;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:156-157">
+                    <l n="189">Whilſt on this ſepulchral mound</l>
+                    <l n="190">Her pious hands the pure libation ſhed,</l>
+                    <l n="191">T'atone the mighty dead.</l>
+                    <l n="192">Hear me, O hear me, aweful lord,</l>
+                    <l n="193">Thro' the dreary gloom ador'd!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:158-163">
+                    <l n="194">Ha! Who is this<ref target="#app-tlg006-note.150.c">c</ref>? See, ſiſters, ſee,</l>
+                    <l n="195">Mark with what force he ſhakes his angry lance:</l>
+                    <l n="196">Comes he this ruin’d house to free?</l>
+                    <l n="197">So does ſome Thracian chief advance;</l>
+                    <l n="198">So Mars, when rous’d with war’s alarms,</l>
+                    <l n="199">Radiant all his claſhing arms,</l>
+                    <l n="200">Rears high his flaming falchion to the blow,</l>
+                    <l n="201">And thunders on the foe.</l>
+                </lg>
+            </sp>
+        <pb n="151"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:164-165">
+                    <milestone unit="card" n="164" resp="Smyth"/><l n="202">’Tis finiſh'd; these libations to my father</l>
+                    <l n="203">The earth has drunk.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:166-167">
+                    <l n="204">—Thou aweful pow'r, that holdeſt</l>
+                    <l n="205">'Twixt this ætherial ſky and the dark realms</l>
+                    <l n="206">Beneath dread intercourſe, What may this mean?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:168">
+                    <l n="207">’Tis all amazement. Share this wonder with me.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:169-170">
+                    <l n="208">Say what: my throbbing heart has caught th' alarm.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:171">
+                    <l n="209">Plac'd on the tomb behold these criſped locks.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:172">
+                    <l n="210">Shorn from a man, or ſome high-bosom'd dame?</l>
+                </lg>
+            </sp>
+        <pb n="152"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:173">
+                    <l n="211">’Tis not hard taſk to form a ſtrong conjecture,</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:174">
+                    <l n="212">Young tho' thou art, inform my riper age.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:175-176">
+                    <l n="213">None here, myself excepted, cou'd devote</l>
+                    <l n="214">His locks, the mournful off'ring ill becomes</l>
+                    <l n="215">Our enemies.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:177">
+                    <l n="216">Then the colour; mark it well;</l>
+                    <l n="217">’Tis the ſame ſhade.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:175">
+                    <l n="218">With whoſe; I burn to know.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:176">
+                    <l n="219">With mine: Compare them: are they not much like?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:177">
+                    <l n="220">Are they a ſecret off’ring from Oreſtes?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:178">
+                    <l n="221">Mark; they are very like his cluſtring locks,</l>
+                </lg>
+            </sp>
+        <stage type="speaker">CHORUS.</stage>
+        <pb n="153"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:179">
+                    <l n="222">I marvel how he dared to venture hither.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:180">
+                    <l n="223">Perchance he ſent this honour to his father.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:181-182">
+                    <l n="224">Nor that leſs cauſe of ſorrow, if his foot</l>
+                    <l n="225">Must never preſs his native foil again.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:183-186">
+                    <l n="226">A flood of grief o’erwhelms me, and my heart</l>
+                    <l n="227">Is pierc'd with anguish<ref target="#app-tlg006-note.153.d">d</ref>; from my eyes that view</l>
+                    <l n="228">These locks, fast fall the ceaseless-ſtreaming tears,</l>
+                    <l n="229">Like wintry ſhow’rs.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:187-188">
+                    <l n="230">To whom beſides, that here</l>
+                    <l n="231">Inhabits, cou'd I think these locks belong?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:189-191">
+                    <l n="232">Cou’d ſhe, who ſlew him, offer on his tomb</l>
+                    <l n="233">Her hair? Alas, her thoughts are impious all,</l>
+                    <l n="234">Such as a daughter dares not name.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:192-194">
+                    <l n="235">I deem,</l>
+                    <l n="236">With reaſon then I deem they graced the head</l>
+                    <l n="237">Of my Oreſtes, dearest of mankind:</l>
+                    <l n="238">Why ſhou'd not I indulge the flatt'ring hope?</l>
+                </lg>
+            </sp>
+        <pb n="154"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:195-200">
+                    <milestone unit="card" n="195" resp="Smyth"/><l n="239">Ah, had they but a voice, cou'd they but ſpeak</l>
+                    <l n="240">That I no more might fluctuate with these doubts</l>
+                    <l n="241">Perplex’d and troubled; cou’d they plainly tell me</l>
+                    <l n="242">If they were ſhorn from a foe’s hated head,</l>
+                    <l n="243">Or fondly mix their kindred griefs with mine,</l>
+                    <l n="244">A grace and honour to my father's tomb!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:201-204">
+                    <l n="245">But to the Gods, that know what furious ſſtorms</l>
+                    <l n="246">Burſt o'er me, like a ſhipwreck’d mariner,</l>
+                    <l n="247">I make appeal: if haply ought of ſafety</l>
+                    <l n="248">Remains, from this ſmall root the vig’rous trunk</l>
+                    <l n="249">May ſpread its ſhelt'ring branches.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:205-211">
+                    <l n="250">Further mark</l>
+                    <l n="251">Th' impreſſion of these feet<ref target="#app-tlg006-note.154.c">c</ref>; they ſhow that two</l>
+                    <l n="252">Trod here; himſelf perchance and his attendant;</l>
+                    <l n="253">One of th' exact dimenſions with my own.</l>
+                    <l n="254">But all is anguish and perplexity.</l>
+                </lg>
+            </sp>
+        <pb n="155"/>
+        <sp>
+                <speaker>ORESTES, PYLADES, ELECTRA, CHORUS. ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:212-213">
+                    <l n="255">In other preſſures beg the fav’ring Gods</l>
+                    <l n="256">To hear thy vows, and ſhow’r their bleſſings on thee.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:214">
+                    <l n="257">What bleſſing from them have I now obtain’d?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:215">
+                    <l n="258">Thou ſeeſt before thee whom but late thine eyes</l>
+                    <l n="259">Moſt wiſh'd to ſee.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:216">
+                    <l n="260">And doſt thou know the name,</l>
+                    <l n="261">Which with fond joy my tongue delights to utter?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:217">
+                    <l n="262">Thy fervent vows, I know, are for Oreſtes.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:218">
+                    <l n="263">And of those vows what have I yet obtain’d?</l>
+                </lg>
+            </sp>
+        <stage type="speaker">ORESTES.</stage>
+        <pb n="156"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:219">
+                    <l n="264">I am Oreſtes: ſeek no firmer friend.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:220">
+                    <l n="265">With wily trains thou wou’dſt enſnare me, ſtranger.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:221">
+                    <l n="266">Then ſhou'd I ſpread these trains againſt myſelf.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:222">
+                    <l n="267">But thou wou’dſt mock me in my miſeries.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:223">
+                    <l n="268">To mock thy miſeries were t' inſult my own.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:224">
+                    <l n="269">Am I indeed converſing with Oreſtes?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:225-228">
+                    <milestone unit="card" n="225" resp="Smyth"/><l n="270">Thou ſeeſt me preſent, yet art ſlow to know me.</l>
+                    <l n="271">When off'red on the tomb thou ſaw’ſt these locks,</l>
+                    <l n="272">When with thy own th' impreſſions of my feet</l>
+                    <l n="273">Were meaſur’d, joy gave wings to expectation,</l>
+                    <l n="274">And imag’d me before thee.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:229-230">
+                    <l n="275">Mark these locks,</l>
+                    <l n="276">Shorn from thy brother’s head; obſerve them well,</l>
+                    <l n="277">Compare</l>
+                </lg>
+            </sp>
+        <pb n="157"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:230-232">
+                    <l n="278">Compare them with thy own. This tiſſue,</l>
+                    <l n="279">view it,</l>
+                    <l n="280">The texture is thy own, the rich embroidery<ref target="#app-tlg006-note.157.f">f</ref>,</l>
+                    <l n="281">Thine are these figures, by thy curious hand</l>
+                    <l n="282">Imag’d in gold.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:233-234">
+                    <l n="283">—Let not thy joy tranſport thee:</l>
+                    <l n="284">Our nearest friends are now our deadliest foes.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:235-237">
+                    <l n="285">Thou dearest pledge of this imperial house,</l>
+                    <l n="286">From thee my hopes, water'd with tears, arose:</l>
+                    <l n="287">Thy valour ſhall ſupport our righteous cauſe,</l>
+                    <l n="288">And vindicate the glories of thy father.</l>
+                </lg>
+            </sp>
+        <pb n="158"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:238-245">
+                    <l n="289">Pride of my ſoul, for my fond tongue must ſpeak,</l>
+                    <l n="290">The love my father ſhared, my mother ſhared,</l>
+                    <l n="291">Once ſhared, but justly now my ſoul abhors her,</l>
+                    <l n="292">And that poor victim my unhappy ſiſter,</l>
+                    <l n="293">Is center'd all in thee: thou art my father,</l>
+                    <l n="294">My mother, ſiſter, my ſupport, my glory,</l>
+                    <l n="295">My only aid: and Heav'n's great King ſhall profper</l>
+                    <l n="296">Thy courage, and the justice of thy cauſe.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:246-249">
+                    <l n="297">Look down, great King of Heav'n, look down, behold</l>
+                    <l n="298">These deeds of baſeness; ſee an orphan race,</l>
+                    <l n="299">Rest of the parent eagle<ref target="#app-tlg006-note.158.g">g</ref>, that, inwreath’d</l>
+                    <l n="300">In</l>
+                </lg>
+            </sp>
+        <pb n="159"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:248-251">
+                    <l n="301">In the dire ſerpent’s ſpiry volumes, periſh’d.</l>
+                    <l n="302">They, unprotected, feel th' oppreſſive pangs</l>
+                    <l n="303">Of famine, yet too weak to wing their flight,</l>
+                    <l n="304">And, like their parent, fill their neſt with prey.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:252-254">
+                    <l n="305">We are the eagle’s offspring, of our father</l>
+                    <l n="306">Depriv’d, and driv’n in exile from his house.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:255-257">
+                    <l n="307">Before thy altars, loaded by his hand,</l>
+                    <l n="308">He bow’d with pious reverence: Shou’d thy will</l>
+                    <l n="309">Permit his young to periſh, who ſhall pay thee</l>
+                    <l n="310">Like coſtly honours?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:258-261">
+                    <l n="311">Shou’d the eagle’s offspring</l>
+                    <l n="312">Be doom'd to periſh, who ſhall bear thy thunders,</l>
+                    <l n="313">Dread ſign of wrath awak’d on mortal man?</l>
+                    <l n="314">Nor will this empire, wither’d from its roots,</l>
+                    <l n="315">Adorn thy altars on the ſolemn day</l>
+                    <l n="316">With hallow’d victims.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:262-263">
+                    <l n="317">Save us then, protect us,</l>
+                    <l n="318">To all its former glories raiſe this house,</l>
+                    <l n="319">Whoſe ruin’d tow’rs ſeem bending to their fall.</l>
+                </lg>
+            </sp>
+        <pb n="160"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:264-268">
+                    <milestone unit="card" n="264" resp="Smyth"/><l n="320">Ye generous offspring of this royal house,</l>
+                    <l n="321">And guardians of its honour, check your tranſports;</l>
+                    <l n="322">Left they are heard, and ſome incontinent tongue</l>
+                    <l n="323">Bear them to our bad rulers: may these eyes</l>
+                    <l n="324">Firſt ſee the dark wreaths of their funeral piles.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:269-275">
+                    <l n="325">The voice of Phœbus never ſhall deceive:</l>
+                    <l n="326">In dreadful accents utter’d from his shrine</l>
+                    <l n="327">Aloud he charg’d me to defy the danger,</l>
+                    <l n="328">Threat’ning to rack my ſoul with keenest tortures,</l>
+                    <l n="329">Shou’d I forbear t' avenge my father’s death</l>
+                    <l n="330">With equal retribution on his murderer,</l>
+                    <l n="331">That proudly riots in my wasted wealth.</l>
+                </lg>
+            </sp>
+        <pb n="161"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:276-277">
+                    <l n="332">This honour’d ſhade he charg’d me to avenge,</l>
+                    <l n="333">Tho’ round enclos’d with evils;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:278">
+                    <l n="334">to the dead</l>
+                    <l n="335">This triumph o’er their foes the voice declar’d</l>
+                    <l n="336">A lenient joy;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:279-282">
+                    <l n="337">to us denouncing ills,</l>
+                    <l n="338">Corroſive leprosies with rankling tooth</l>
+                    <l n="339">To gnaw our flesh, and taint our healthful bodies</l>
+                    <l n="340">With ulcerous foulness, changing these fresh locks</l>
+                    <l n="341">T' untimely white;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:283-284">
+                    <l n="342">with trains of heavier woes</l>
+                    <l n="343">Rais’d by the Furies from my father’s blood,</l>
+                    <l n="344">Who in the realms of night ſees this, and bends</l>
+                    <l n="345">His gloomy brows.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:285-290">
+                    <l n="346">For the dark ſhafts, that fly</l>
+                    <l n="347">From those beneath ſlain by the kindred hand</l>
+                    <l n="348">Of villain baſeness, frenzy, and vain fear</l>
+                    <l n="349">That trembles at the ſhadows of the night,</l>
+                    <l n="350">Rouſe, ſting, and drive the vice-polluted wretch</l>
+                    <l n="351">With brazen ſcourges tortur’d thro’ the city.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:291-294">
+                    <l n="352">He from the friendly bowl, the hallow'd goblet<ref target="#app-tlg006-note.161.b">b</ref>,</l>
+                    <l n="353">The ſocial intercourſe, the incens’d altar</l>
+                    <l n="354">Is chas’d, condemn’d to bear the ſecret pangs</l>
+                </lg>
+            </sp>
+        <pb n="162"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:295-296">
+                    <l n="355">Of inly-gnawing guilt: meanwhile the fiends,</l>
+                    <l n="356">Hatred and Infamy, pursue his ſteps,</l>
+                    <l n="357">And drag him to an execrable death.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:297-298">
+                    <l n="358">Such was the voice of Phœbus, and demands</l>
+                    <l n="359">My prompt obedience.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:298-299">
+                    <l n="360">Cou'd my ſoul refuse</l>
+                    <l n="361">T' obey the aweful mandate, yet the deed</l>
+                    <l n="362">Must be accomplish’d;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:299-301">
+                    <l n="363">many urgencies</l>
+                    <l n="364">Conspire; the charges of the Gods, the grief</l>
+                    <l n="365">That wounds me for my father, the fierce pangs</l>
+                    <l n="366">Of penury compel me<ref target="#app-tlg006-note.162.i">i</ref>;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:302-305">
+                    <l n="367">and the ſhame,</l>
+                    <l n="368">That burns the generous ſoul, to leave my country,</l>
+                    <l n="369">And all those heroes glorious thro’ the world,</l>
+                    <l n="370">Whoſe conquering arms laid Troy’s proud tow’rs in duſt,</l>
+                    <l n="371">Slaves to two women; for his soul is woman:</l>
+                    <l n="372">If not, th’ occaſion ſoon will prove his ſpirit.</l>
+                </lg>
+            </sp>
+        <pb n="163"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:306-308">
+                    <milestone unit="card" n="306" resp="Smyth"/><l n="373">And you, tremendous Destinies, whoſe pow'r</l>
+                    <l n="374">Is ratified by Jove, mark the firm courſe</l>
+                    <l n="375">Of juſtice, and by that direct th' event.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:309-314">
+                    <l n="376">Be th' inſults of the hoſtile tongue repaid</l>
+                    <l n="377">With hoſtile inſults: Juſtice calls aloud,</l>
+                    <l n="378">Demanding vengeance: let the murd'rous blow,</l>
+                    <l n="379">Requite the murd'rous blow. The ſolemn voice,</l>
+                    <l n="380">Requiring that oppreſſive force ſhou’d feel</l>
+                    <l n="381">Oppreſſive force, is ſanctified by age.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:315-322">
+                    <milestone unit="card" n="315" resp="Smyth"/><l n="382">O thou much injur'd ſhade, my ſuffering father,</l>
+                    <l n="383">In thy dear cauſe what ſhall I ſay, what do,</l>
+                    <l n="384">Guided by fortune hither? Where, O where</l>
+                    <l n="385">Is thy couch ſpread? Our light is ſhaded o'er</l>
+                    <l n="386">With darkneſs deep as thine; our youthful graces,</l>
+                    <l n="387">That in this royal house once bloom’d with hope</l>
+                    <l n="388">Fair opening, ſhrink at the rough blaſt of ſorrow.</l>
+                </lg>
+            </sp>
+        <pb n="164"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:323-326">
+                    <milestone unit="card" n="323" resp="Smyth"/><l n="389">No: the devouring flames, my ſon, that waſte</l>
+                    <l n="390">The body of the dead, touch not the ſoul;</l>
+                    <l n="391">That lives, and knows its destin'd hour to ſhow</l>
+                    <l n="392">Its wrath: yet for the dead our ſorrows riſe.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:327-331">
+                    <l n="393">Mean while th' oppreſſor ſtands a ſignal mark;</l>
+                    <l n="394">And the juſt griefs of fathers and of ſons</l>
+                    <l n="395">With restless ſearch trace all around for vengeance.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:332-337">
+                    <milestone unit="card" n="332" resp="Smyth"/><l n="396">Hear me too, O my father; in thoſe griefs</l>
+                    <l n="397">Which at thy ſepulchre thy children pour,</l>
+                    <l n="398">I have a mournful part. Thy tomb receives</l>
+                    <l n="399">Alike the ſuppliant and the exile. Which,</l>
+                    <l n="400">Ah, which of these is well? Which without evils?</l>
+                    <l n="401">No lenient hand can eaſe our miſeries.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:340-344">
+                    <milestone unit="card" n="340" resp="Smyth"/><l n="402">Yet may the God, that utter'd from the ſhrine</l>
+                    <l n="403">His aweful voice, from these raiſe other sounds</l>
+                    <l n="404">More pleasing; and for these sepulchral notes,</l>
+                    <l n="405">Notes ſteep'd in tears, thro' all these royal rooms</l>
+                    <l n="406">The voice of joy may ring, and hail their lord</l>
+                    <l n="407">Return’d to bless them with his kind protection.</l>
+                </lg>
+            </sp>
+        <pb n="165"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:345-350">
+                    <milestone unit="card" n="345" resp="Smyth"/><l n="408">Yet, O my father, hadſt thou greatly fallen</l>
+                    <l n="409">Beneath the walls of Troy, pierc’d by the ſpear</l>
+                    <l n="410">Of ſome bold Lycian, leaving to thy house</l>
+                    <l n="411">Thy glory, gracing with illustrious ſplendor</l>
+                    <l n="412">Thy children’s ſteps, on that barbaric coaſt</l>
+                    <l n="413">The high-rais’d tomb had dignify’d thy duſt,</l>
+                    <l n="414">And ſooth'd our ſorrows.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:351-353">
+                    <l n="415">In the realms beneath</l>
+                    <l n="416">Thy friendly ſhade, amongst the friendly ſhades</l>
+                    <l n="417">That fell with honour there, had held its ſſtate</l>
+                    <l n="418">Majestic and rever’d, a king, next those</l>
+                    <l n="419">Whose aweful pow’r those darkſome realms obey.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:360-362">
+                    <milestone unit="card" n="354" resp="Smyth"/><l n="420">For to thy last of life thou waſt a king,</l>
+                    <l n="421">The golden reins of empire graced thy hands,</l>
+                    <l n="422">And thy ſtrong ſceptre ruled a willing people.</l>
+                </lg>
+            </sp>
+        <pb n="166"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:363-366">
+                    <milestone unit="card" n="363" resp="Smyth"/><l n="423">But in the fields of Troy thou didſt not fall,</l>
+                    <l n="424">Nor is thy tomb beside Scamander’s ſstream</l>
+                    <l n="425">With those that periſh’d by the hoſtile ſpear.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:367-371">
+                    <l n="426">But, Oh, I wiſh that they, by whom he fell,</l>
+                    <l n="427">Had firſt ſo fall’n; and he, tho’ diſtant far,</l>
+                    <l n="428">Had heard the rumour of their bloody fate,</l>
+                    <l n="429">Secure himſelf, nor tangled in their ſnares.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:372-374">
+                    <milestone unit="card" n="372" resp="Smyth"/><l n="430">Treaſures of gold, my child, are poor to this:</l>
+                    <l n="431">Thy words are greater than the greatest fortune,</l>
+                    <l n="432">And all her favours:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:374-376">
+                    <l n="433">from thy grief they ſpring<ref target="#app-tlg006-note.166.k">k</ref>.</l>
+                    <l n="434">But from this ſcourge a double claſh is heard<ref target="#app-tlg006-note.166.l">l</ref>;</l>
+                    <l n="435">One from th' aſſiſtant pow’rs beneath the earth;</l>
+                    <l n="436">One from those lords, those hated lords that rule us,</l>
+                    <l n="437">Whose</l>
+                </lg>
+            </sp>
+        <pb n="167"/>
+        <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:377-379">
+                <l n="438">Whoſe rude, unhallow'd hands are ſtained with blood:</l>
+                <l n="439">This ſounds moſt dreadful to this royal race.</l>
+            </lg>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:380">
+                    <milestone unit="card" n="380" resp="Smyth"/><l n="440">This, like a piercing arrow, wounds my soul.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:382-385">
+                    <l n="441">Supreme of Gods, ſend from the realms of night</l>
+                    <l n="442">The flow-avenging Ate; bid her rise</l>
+                    <l n="443">To blaſt the fraudful and audacious hands</l>
+                    <l n="444">Of impious mortals: for a father’s wrongs</l>
+                    <l n="445">She ſſtamps her vengeance deep.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:386-389">
+                    <milestone unit="card" n="386" resp="Smyth"/><l n="446">When on this man</l>
+                    <l n="447">The vengeful ſword ſhall fall, and bleeding nigh</l>
+                    <l n="448">Lies this bad woman, be it mine to hear</l>
+                    <l n="449">Their ſhrieks of death, and anſwer to their cries</l>
+                    <l n="450">In notes as diſmal.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:390-392">
+                    <l n="451">Why ſhou'd I conceal</l>
+                    <l n="452">My honest hopes? Fate ſpreads her ſable wings,</l>
+                    <l n="453">And hovers o’er their heads;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:392-394">
+                    <milestone unit="card" n="394" resp="Smyth"/><l n="454">before their eyes</l>
+                    <l n="455">Stands indignation arm'd, and hate enrag’d,</l>
+                    <l n="456">Ready to rend their hearts, when Jove ſhall ſſtretch</l>
+                    <l n="457">His puiſſant hands.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:395-399">
+                    <l n="458">O thou, whoſe pow'r ſubdues</l>
+                    <l n="459">The mighty, to this country ſeal thy faith,</l>
+                    <l n="460">And ratify their doom! On th' impious heads</l>
+                    <l n="461">I aſk for vengeance.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:400-401">
+                    <milestone unit="card" n="400" resp="Smyth"/><l n="462">You, whoſe dreaded pow’r</l>
+                    <l n="463">Th' infernal realms revere, ye Furies, hear me!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:400-404">
+                    <l n="464">There is a law that, for each drop of blood</l>
+                    <l n="465">Shed on the earth, demands that blood be ſhed;</l>
+                    <l n="466">For from the ſlain Erinnys calls for ſlaughter,</l>
+                    <l n="467">On ruin heaping ruin.</l>
+                </lg>
+            </sp>
+        <pb n="168"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:405-409">
+                    <milestone unit="card" n="405" resp="Smyth"/><l n="468">Ye dread pow’rs</l>
+                    <l n="469">Of Hell’s dark realms, where are you now? Behold,</l>
+                    <l n="470">Ye potent curſes of the ſlain, behold</l>
+                    <l n="471">The poor remains of this imperial house</l>
+                    <l n="472">Sunk in diſtreſs, and all its glories vaniſh’d!</l>
+                    <l n="473">Where, King of Heav'n, where may we ſeek for refuge?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:410-414">
+                    <milestone unit="card" n="410" resp="Smyth"/><l n="474">Again my throbbing heart ſinks at the ſound</l>
+                    <l n="475">Of thy laments; and dark'ning o'er my ſoul</l>
+                    <l n="476">At thy sad voice comes anguish and deſpair.</l>
+                    <l n="477">But when thy words breath courage, my ſick griefs</l>
+                    <l n="478">Are fled, and fairer fortune ſeems to ſmile.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:415-422">
+                    <milestone unit="card" n="418" resp="Smyth"/><l n="479">But with what words to woo her? Speak aloud</l>
+                    <l n="480">The miſeries which we ſuffer from our parents?</l>
+                    <l n="481">Or ſmooth our tongues to glozing courtesy?</l>
+                    <l n="482">That ſoftens not our miſeries: and our ſpirits,</l>
+                    <l n="483">Rous'd by the wrongs of our ungentle mother,</l>
+                    <l n="484">Contract a wolfish fierceneſs.</l>
+                </lg>
+            </sp>
+        <pb n="169"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:423-428">
+                    <milestone unit="card" n="423" resp="Smyth"/><l n="485">With bold hand</l>
+                    <l n="486">She struck the ſtroke<ref target="#app-tlg006-note.169.x">w</ref>, bold as the Ciſſian dame</l>
+                    <l n="487">Train'd to the warrior’s arms. She struck him once;</l>
+                    <l n="488">Again ſhe ſtruck him; her uplifted hands</l>
+                    <l n="489">Redoubled blow on blow; ſwift on his head</l>
+                    <l n="490">The distant-sounding ſtroke<ref target="#app-tlg006-note.169.m">m</ref> with ſteep force fell.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:431-433">
+                    <milestone unit="card" n="429" resp="Smyth"/><l n="491">Bold, unrelenting woman, that cou'd bear</l>
+                    <l n="492">Without one pitying ſigh t' entomb the king</l>
+                    <l n="493">Unhonour'd with his people’s grief, the husband</l>
+                    <l n="494">Without a tear to grace his obsequies.</l>
+                </lg>
+            </sp>
+        <pb n="170"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:434-438">
+                    <milestone unit="card" n="434" resp="Smyth"/><l n="495">All thou hast mentioned are indignities</l>
+                    <l n="496">That ſwell my grief to rage. But vengeance arms</l>
+                    <l n="497">This hand, aſſiſted by the Gods, to puniſh</l>
+                    <l n="498">The ignominious wrongs done to my father.</l>
+                    <l n="499">May this revenge be mine, then let me die!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:439-443">
+                    <milestone unit="card" n="439" resp="Smyth"/><l n="500">When ſhe had kill'd, with barbarous hands ſhe mangled<ref target="#app-tlg006-note.170.n">n</ref></l>
+                      <pb n="171"/>
+                    <l n="501">His manly figure, and with this abuse</l>
+                    <l n="502">Entomb’d him here, ſtudious to make his murder</l>
+                    <l n="503">A deed of horror, that thro’ all thy life</l>
+                    <l n="504">Might ſhock thy ſoul.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:444-445">
+                    <milestone unit="card" n="445" resp="Smyth"/><l n="505">Such was thy father’s death,</l>
+                    <l n="506">Such were thy father’s ignominious wrongs.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:446-449">
+                    <l n="507">But me, a poor, deſerted, worthless thing<ref target="#app-tlg006-note.171.o">o</ref>,</l>
+                    <l n="508">Spurn’d like a mischievous cur from my apartments,</l>
+                    <l n="509">They bid be gone:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:449-450">
+                    <l n="510">there I could heave the ſigh</l>
+                    <l n="511">In ſecret, there indulge the mournful pleaſure</l>
+                    <l n="512">To pour the tear unnotic’d, and uncheck’d,</l>
+                    <l n="513">Hear this, and on thy mind imprint it deep,</l>
+                    <l n="514">Engrave it on the tablet of thy heart;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:452-455">
+                    <milestone unit="card" n="451" resp="Smyth"/><l n="515">Be reſolute, and calm. These things are thus:</l>
+                    <l n="516">Know this, and let thine indignation riſe:</l>
+                    <l n="517">The time demands a firm, determin’d ſpirit.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:456-457">
+                    <milestone unit="card" n="456" resp="Smyth"/><l n="518">And thou, my father, hear: on thee I call,</l>
+                    <l n="519">And with a friendly voice, tho’ choak’d with tears,</l>
+                    <l n="520">Hear us, and aid!</l>
+                </lg>
+            </sp>
+        <pb n="172"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:458-465">
+                    <milestone unit="card" n="461" resp="Smyth"/><l n="521">And with a friendly voice this ſocial train</l>
+                    <l n="522">To her sad voice accords the ſtrain.</l>
+                    <l n="523">Hear, mighty ſhade, and from the realms of night</l>
+                    <l n="524">Reviſit this ætherial light;</l>
+                    <l n="525">Againſt thy foes impart thy aid,</l>
+                    <l n="526">Be war with war, and blood with blood repaid!</l>
+                    <l n="527">Ye Gods, with juſtice ſtrike the blow!</l>
+                    <l n="528">I tremble, as the meaſures flow;</l>
+                    <l n="529">But Fate attends, and hears our call,</l>
+                    <l n="530">And, ſtern the bloody forfeit to demand,</l>
+                    <l n="531">With fury arms the kindred hand,</l>
+                    <l n="532">And bids the righteous Vengeance fall.</l>
+                </lg>
+            </sp>
+        <pb n="173"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:466-470">
+                    <milestone unit="card" n="466" resp="Smyth"/><l n="533">Here sorrow holds her dismal state,</l>
+                    <l n="534">Unſated murder ſtains the ground,</l>
+                    <l n="535">Revenge behind and Terror wait,</l>
+                    <l n="536">And Deſolation ſtalks his round;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:471-475">
+                    <milestone unit="card" n="471" resp="Smyth"/><l n="537">Not with a diſtant foe the war to wage,</l>
+                    <l n="538">But on this house to pour their rage.</l>
+                    <l n="539">Theſe are the ſtrains, that to the Gods below,</l>
+                    <l n="540">Th' avenging Gods, in rude notes flow:</l>
+                    <l n="541">Hear us, dread pow'rs;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:475">
+                    <l n="542">and this imperial race,</l>
+                    <l n="543">Victorious in your might, with glory grace!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:479-480">
+                    <milestone unit="card" n="476" resp="Smyth"/><milestone unit="card" n="479" resp="Smyth"/><l n="544">My royal father, who unroyally</l>
+                    <l n="545">Wast murder'd, give me to command thy house!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:481-482">
+                    <l n="546">Hear me, my father, for I want thy aid;</l>
+                    <l n="547">Grant me to ſhare his vengeance on Ægisthus,</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:483-485">
+                    <l n="548">And then eſcape; ſo may the ſolemn feaſt</l>
+                    <l n="549">Be ſpread to thee; elſe when the grateful odors</l>
+                    <l n="550">Are wafted from the feſtive board, to grace</l>
+                    <l n="551">The mighty dead, thy ſhade muſt want its honours.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:486-488">
+                    <l n="552">To thee this hand ſhall bring the coſtlieſt off'rings,</l>
+                    <l n="553">To</l>
+                </lg>
+            </sp>
+        <pb n="174"/>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:488-490">
+                    <l n="554">To thee ſhall conſecrate whate'er of wealth</l>
+                    <l n="555">Ought, from thy treaſures, to adorn my nuptials<ref target="#app-tlg006-note.174.p">p</ref>;</l>
+                    <l n="556">And with the holiest reverence grace thy tomb.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:489-490">
+                    <l n="557">Earth, ſend my father to behold the combat!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:490">
+                    <l n="558">Inſpire him, Proferpine, with glorious force!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:491">
+                    <l n="559">Think on the bath where thou waſt murder'd, father!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:492">
+                    <l n="560">Think on the net in which they murder'd thee!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:493">
+                    <l n="561">Toils, other than of braſs, entangle thee.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:494">
+                    <l n="562">Th' inexplicable robe's accurs'd contrivance.</l>
+                </lg>
+            </sp>
+        <pb n="175"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:495-496">
+                    <l n="563">My father, cannot these diſhonours raiſe thee?</l>
+                    <l n="564">Doſt thou not raiſe thy honour'd head?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:497-499">
+                    <l n="565">O send</l>
+                    <l n="566">Juſtice to aid thy friends: or if thy ſoul</l>
+                    <l n="567">Sinks with its wrongs, nor riſes to revenge them,</l>
+                    <l n="568">Be the like ſufferings ours!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:500-502">
+                    <l n="569">But, O my father,</l>
+                    <l n="570">Hear our laſt cries, and fitting on thy tomb</l>
+                    <l n="571">Behold thy children: pity my weak ſex,</l>
+                    <l n="572">Pity his manly ſorrow, nor extinguiſh</l>
+                    <l n="573">Th' illustrious line of Pelops:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:504-507">
+                    <l n="574">ſo in death</l>
+                    <l n="575">Thou doſt not die; for children, when the tomb</l>
+                    <l n="576">Demands the parent, with ſurviving glory</l>
+                    <l n="577">Preſerve his fame; the corks that buoy the line,</l>
+                    <l n="578">And save the net from sinking to the bottom.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:508-509">
+                    <l n="579">O hear us; for thy ſake we pour these plaints.</l>
+                    <l n="580">Thou shalt preſerve thy glory, if with honour</l>
+                    <l n="581">Thou hear our words, our blameless words, that honour</l>
+                    <l n="582">The fortune of thy tomb, elſe unlamented!—</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:512-513">
+                    <milestone unit="card" n="510" resp="Smyth"/><l n="583">Now, brother, ſince thy ſoul is rous’d to dare</l>
+                    <l n="584">This deed, truſt on the God, and do it ſtraight.</l>
+                </lg>
+            </sp>
+        <stage type="speaker">ORESTES.</stage>
+        <pb n="176"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:514-518">
+                    <l n="585">I ſhall: but let me pauſe awhile to aſk</l>
+                    <l n="586">Wherefore ſhe ſent these off'rings, on what motive</l>
+                    <l n="587">Thus late ſhe ſooths th' immedicable ill,</l>
+                    <l n="588">Paying this wretched honour to the dead</l>
+                    <l n="589">That cares not for it.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:519-521">
+                    <l n="590">What these preſents mean</l>
+                    <l n="591">Surpaſſes my conjecture, but her crime</l>
+                    <l n="592">Outweighs their worth; for all, that can be offer'd</l>
+                    <l n="593">T' atone for one man's blood, is ſpent in vain.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:522">
+                    <l n="594">Yet, if you know, explain her motives to me.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:523-525">
+                    <l n="595">I know, for I was preſent: Dreams and viſions,</l>
+                    <l n="596">The terrors of the night, appall’d her ſoul;</l>
+                    <l n="597">Her guilty fears urg’d her to send these off'rings.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:526">
+                    <l n="598">Told ſhe the dreams, that ſo alarm’d her fears?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:527">
+                    <l n="599">She fancied ſhe had giv’n a dragon birth.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:528">
+                    <l n="600">And what was the event? Tell me in brief.</l>
+                </lg>
+            </sp>
+        <stage type="speaker">CHORUS.</stage>
+        <pb n="177"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:529-531">
+                    <l n="601">This new-born dragon, like an infant child,</l>
+                    <l n="602">Laid in the cradle ſeem’d in want of food;</l>
+                    <l n="603">And in her dream ſhe held it to her breast.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:532">
+                    <l n="604">Without a wound 'ſcaped ſhe the hideous monster?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:533">
+                    <l n="605">The milk he drew was mix’d with clotted blood.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:534">
+                    <l n="606">'Tis not for nought this viſion from her husband.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:535-539">
+                    <l n="607">She cry’d out in her ſleep with the affright;</l>
+                    <l n="608">And many lamps, dim-gleaming thro’ the darkness,</l>
+                    <l n="609">To do her pleaſure enter’d the apartment.</l>
+                    <l n="610">Soon to the tomb ſhe ſends these funeral honours,</l>
+                    <l n="611">Medicinal, as she hopes, to heal her ills.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:540-541">
+                    <milestone unit="card" n="540" resp="Smyth"/><l n="612">But to this earth, and to my father's tomb</l>
+                    <l n="613">I make my ſupplications, that in me</l>
+                </lg>
+            </sp>
+        <pb n="178"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:542">
+                    <l n="614">Her dream may be accompliſh'd; and I judge</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:542-546">
+                    <l n="615">It aptly correſponds: for as this ſerpent,</l>
+                    <l n="616">Leaving the place that once was mine, and laid</l>
+                    <l n="617">Swath’d like an infant, ſeiz’d that breast which nurs’d</l>
+                    <l n="618">My tender age, and mingled with the milk</l>
+                    <l n="619">Drew clotted blood;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:547-550">
+                    <l n="620">and as with the affright</l>
+                    <l n="621">She call’d out in her ſleep; it cannot be</l>
+                    <l n="622">But, as ſhe nurs’d this monster, ſhe muſt die</l>
+                    <l n="623">A violent death<ref target="#app-tlg006-note.178.q">q</ref>; and with a dragon’s rage</l>
+                    <l n="624">This hand shall kill her, as her dream declares.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:551">
+                    <l n="625">Or how wilt thou expound these prodigies?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:551-553">
+                    <l n="626">Thus may it be. But now instruct thy friends</l>
+                    <l n="627">What each must singly do, and each not do,</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:554-555">
+                    <l n="628">Few words ſuffice: then mark me: Let Her enter;</l>
+                    <l n="629">And keep, I charge thee, keep my purpoſe ſecret,</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:556-558">
+                    <l n="630">That they, who flew an honorable man</l>
+                    <l n="631">By curs'd deceit, may by deceit be caught</l>
+                    <l n="632">In the ſame ſnare, and periſh; so the God,</l>
+                    <l n="633">Pow'rful Apollo, from whoſe ſacred voice</l>
+                    <l n="634">Nothing but truth can flow, admoniſh'd me.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:560-564">
+                    <l n="635">I, like a stranger, harness’d in this coarse</l>
+                    <l n="636">And way-worn garb, with Pylades my friend,</l>
+                    <l n="637">Will as a guest and friend knock at the gate:</l>
+                    <l n="638">Our tongues ſhall imitate the ruſtic accent</l>
+                    <l n="639">Familiar to the mountain-race of Phocis<ref target="#app-tlg006-note.179.r">'</ref>,</l>
+                </lg>
+            </sp>
+        <pb n="180"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:565-570">
+                    <l n="640">Nor will the ſervants, 'tis a villainous house,</l>
+                    <l n="641">Receive us cheerfully; but as we are,</l>
+                    <l n="642">There ſhall we stand; while each, that paſſes by,</l>
+                    <l n="643">With shrewd remarks ſhall ſhake his head, and ſay</l>
+                    <l n="644">Why are these ſtrangers thus inhospitality</l>
+                    <l n="645">Excluded from the gates, if their arrival</l>
+                    <l n="646">Ægisthus knows 'midſt his domeſtic train?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:571-575">
+                    <l n="647">But if I paſs the threshold of the gates,</l>
+                    <l n="648">And find him ſeated on my father's throne,</l>
+                    <l n="649">Or ſhou'd he come t' accoſt me, be aſſur'd</l>
+                    <l n="650">Quick as the eye can glance, e'er he can ſay</l>
+                    <l n="651">Whence is this ſtranger? my impatient ſword</l>
+                    <l n="652">Shall ſtrike him dead.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:577-578">
+                    <l n="653">So ſhall the fell Erinnys,</l>
+                    <l n="654">That with an horrid joy riots in ſlaughter,</l>
+                    <l n="655">Quaff this third bowl of blood.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:579-580">
+                    <l n="656">—Go then, Electra,</l>
+                    <l n="657">Be watchful; ſee that all things in the house</l>
+                    <l n="658">Be well diſpos’d.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:581-582">
+                    <l n="659">And you, I charge you guard</l>
+                    <l n="660">Your tongues; be ſilent where you ought, and where</l>
+                    <l n="661">Your voice can aid me, ſpeak.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:583-584">
+                    <l n="662">The reſt my friend,</l>
+                    <l n="663">That guides my ſword to vengeance, will o'erſee.</l>
+                </lg>
+            </sp>
+        <stage type="speaker">CHORUS.</stage>
+        <pb n="181"/>
+        <sp>
+                <speaker>CHORUS.</speaker><stage type="lyric-label">STROРНЕ I.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:585-589">
+                    <milestone unit="card" n="585" resp="Smyth"/><l n="664">Pregnant with ills the dreary air</l>
+                    <l n="665">Gives ſickneſs, pain, and terror birth:</l>
+                    <l n="666">The ſeas, that wind around the earth,</l>
+                    <l n="667">Fatal to man their hideous monsters bear:</l>
+                    <l n="668">Each forest in its ſhaggy ſides,</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:589-592">
+                    <l n="669">That darkens o’er the perilous ground,</l>
+                    <l n="670">The lurking, rav’nous ſavage hides,</l>
+                    <l n="671">Whilſt fierce birds wheel the ſummits round:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:593">
+                    <l n="672">And mark with what tempestuous rage</l>
+                    <l n="673">Black from the ſkies the ruſhing winds engage.</l>
+                </lg>
+                <stage type="lyric-label">ANTISTROPHE I.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:594-597">
+                    <milestone unit="card" n="594" resp="Smyth"/><l n="674">But who the dangerous thoughts can tell</l>
+                    <l n="675">That in man's daring bosom roll;</l>
+                    <l n="676">Or whirl the more tempestuous soul</l>
+                    <l n="677">Of woman, when the tyrant paſſions ſwell?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:598-600">
+                    <l n="678">When love, to torment near allied,</l>
+                    <l n="679">Bids frenzy rule the troubled hour?</l>
+                    <l n="680">Love, that exerts with wanton pride</l>
+                    <l n="681">O'er female hearts deſpotic pow’r;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:601">
+                    <l n="682">And binds in his ungentle chain</l>
+                    <l n="683">Each ſavage of the wood, each monſter of the main.</l>
+                </lg>
+                <stage type="lyric-label">STROРНЕ 2.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:602-606">
+                    <milestone unit="card" n="602" resp="Smyth"/><l n="684">Think with what ſullen frenzy fir'd</l>
+                    <l n="685">The Theſtian dame with ruthless hand<ref target="#app-tlg006-note.182.s">s</ref>.</l>
+                    <l n="686">Cast on the hearth the fatal brand;</l>
+                    <l n="687">The flames confum’d it, and her ſon expir’d.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:612-622">
+                    <milestone unit="card" n="612" resp="Smyth"/><l n="688">With horror think on Scylla's deed<ref target="#app-tlg006-note.182.t">t</ref>:</l>
+                    <l n="689">To win the favour of the foes,</l>
+                    <l n="690">The golden bracelets were the meed,</l>
+                    <l n="691">Againſt her father's life ſhe roſe,</l>
+
+
+
+
+                                <pb n="182"/>
+            <l n="692">Approach’d the ſleeping monarch’s bed,</l>
+                    <l n="693">And reſt the ſacred honours of his head.</l>
+                </lg>
+                <stage type="lyric-label">ANTISTROPHE 2.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:623-626">
+                    <milestone unit="card" n="623" resp="Smyth"/><l n="694">Amongſt these deeds of blood, that ſtain</l>
+                    <l n="695">The annals of the times of old,</l>
+                    <l n="696">Be that unhallow'd couch enroll’d,</l>
+                    <l n="697">Whoſe guilty loves this royal house profane.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:626-628">
+                    <l n="698">Enroll’d be all that female hate</l>
+                    <l n="699">Form’d 'gainſt the chief in arms renown’d;</l>
+                    <l n="700">The chief, whoſe glorious, aweful ſtate</l>
+                    <l n="701">Foes 'midſt their rage with reverence own’d:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:629-630">
+                    <l n="702">Those glories, tho’ they blaze no more,</l>
+                    <l n="703">Quench’d by a woman’s hand, I still adore.</l>
+                </lg>
+                <stage type="lyric-label">EPODE.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:631-634">
+                    <milestone unit="card" n="631" resp="Smyth"/><l n="704">In the black annals of far distant time</l>
+                    <l n="705">The Lesbian dames recorded stand<ref target="#app-tlg006-note.184.u">u</ref>;</l>
+                    <l n="706">But the ſoul ſhudders at the crime,</l>
+                    <l n="707">And execrates the murders of their hand:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:635-636">
+                    <l n="708">Baſely at once the husbands bleed;</l>
+                    <l n="709">Th' indignant Gods abhor the deed.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:637-638">
+                    <l n="710">And ſhall man dare with impious voice t' approve</l>
+                    <l n="711">Deeds, that offend the pow'rs above?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:639-642">
+                    <milestone unit="card" n="639" resp="Smyth"/><l n="712">Thro' the gored breast</l>
+                    <l n="713">With rage impreſt</l>
+                    <l n="714">The ſword of justice hews the dreadful wound;</l>
+                    <l n="715">And haughty might</l>
+                    <l n="716">That mocks at right,</l>
+                    <l n="717">Like the vile duſt is trampled on the ground.</l>
+                </lg>
+            </sp>
+        <pb n="185"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:646-647">
+                    <milestone unit="card" n="646" resp="Smyth"/><l n="718">Righteous are thy decrees, eternal King,</l>
+                    <l n="719">And from the roots of justice ſpring:</l>
+                    <l n="720">Theſe ſhall ſtrike deep, and flourish wide,</l>
+                    <l n="721">Whilſt all, that ſcorn them, periſh in their pride.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:647-649">
+                    <l n="722">Fate the portentous ſword prepares,</l>
+                    <l n="723">And the rough labours of the anvil ſhares;</l>
+                    <l n="724">Wide thro’ the house a tide of blood</l>
+                    <l n="725">Flows where a former tide had flow’d;</l>
+                    <l n="726">Erinnys marks the destin’d hour,</l>
+                    <l n="727">Vengeful her meditated rage to pour.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:653-655">
+                    <milestone unit="card" n="653" resp="Smyth"/><l n="728">What, does no ſervant hear me knock? Within</l>
+                    <l n="729">Who waits? Again I knock: Does no one hear?</l>
+                    <l n="730">A third time to the servants of this house</l>
+                    <l n="731">I call, if to the stranger at his gate</l>
+                    <l n="732">The great Ægisthus bears a courteous ſoul.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>SERVANT.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:657">
+                    <l n="733">Forbear, I hear, Who art thou, and from whence?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:658-659">
+                    <l n="734">Go tell the lords of this fair house, to them</l>
+                    <l n="735">I come, charg’d with ſtrange tidings:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:660-662">
+                    <l n="736">haſte;</l>
+                    <l n="737">For now the ſable chariot of the night</l>
+                    <l n="738">Rolls on apace; and the dark hour exhorts</l>
+                    <l n="739">The way-ſpent traveller to repoſe beneath</l>
+                    <l n="740">The hoſpitable roof.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:663-664">
+                    <l n="741">Call forth the matron,</l>
+                    <l n="742">That has the charge of these domestic cares;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:665-667">
+                    <l n="743">More decent, if a man; for modesty</l>
+                    <l n="744">There checks the falt'ring tongue, but to a man</l>
+                    <l n="745">More confident a man ſpeaks free and open.</l>
+                </lg>
+            </sp>
+        <pb n="186"/>
+        <sp>
+                <speaker>CLYTEMNESTRA, ORESTES, PYLADES, ELECTRA, CHORUS. CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:668-671">
+                    <l n="746">Speak, ſtrangers, what your wants<ref target="#app-tlg006-note.186.x">x</ref>; here ſhall you find</l>
+                    <l n="747">All that becomes an house like this; warm baths</l>
+                    <l n="748">Refreshment of your toils, the well-ſpread couch</l>
+                    <l n="749">Inviting ſoft repoſe, and over all</l>
+                </lg>
+            </sp>
+        <pb n="187"/>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:672-673">
+                    <l n="750">An eye regarding justice. If your buſineſs</l>
+                    <l n="751">Be of more serious import, aſking counsel,</l>
+                    <l n="752">The province this of men; we will inform them.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:674-676">
+                    <l n="753">A Phocian am I, from the town of Daulis<ref target="#app-tlg006-note.187.y">y</ref>.</l>
+                    <l n="754">Occasions of my own call’d me to Argos,</l>
+                    <l n="755">Nor aſk’d a better dreſs, than this coarse garb</l>
+                    <l n="756">Familiar to me:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:677-679">
+                    <l n="757">onwards as I travel’d</l>
+                    <l n="758">I met a man unknown, myself to him</l>
+                    <l n="759">Unknown; he courteous queſtion’d me how far</l>
+                    <l n="760">I journey’d, and inform’d me of my way,</l>
+                    <l n="761">Strophius of Phocis, so I chanc'd to learn;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:680-682">
+                    <l n="762">“Stranger, ſays he, ſince buſineſs of thy own</l>
+                    <l n="763">“Leads thee to Argos, let me charge thy honour</l>
+                    <l n="764">“To tell his parents that the young Oreſtes</l>
+                    <l n="765">“Is dead.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:683-685">
+                    <l n="766">Forget it not. Whether his friends</l>
+                    <l n="767">“With ſolemn obſequies will fetch him hence,</l>
+                    <l n="768">“Or in eternal reſt our friendly earth</l>
+<pb n="188"/>
+                    <l n="769">“Shall lay him in her hoſpitable bosom,</l>
+                    <l n="770">“Bring back their pleasure;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:686-687">
+                    <l n="771">for the brazen urn</l>
+                    <l n="772">“Now holds the ashes of the honour'd youth,</l>
+                    <l n="773">“Whom we lament.”</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:688-690">
+                    <l n="774">This, faithful to my charge,</l>
+                    <l n="775">Have I deliver’d; if to kindred ears,</l>
+                    <l n="776">And those, whoſe pow’r is ſovereign here, I know not.</l>
+                    <l n="777">But it is meet his parent knew the event.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ELECTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:691-695">
+                    <milestone unit="card" n="691" resp="Smyth"/><l n="778">Ah me! Thus desolation on our head<ref target="#app-tlg006-note.188.x">x</ref></l>
+                    <l n="779">Is fall’n. O thou relentless curſe, whoſe rage</l>
+                    <l n="780">Hung o'er this house, has thy unsparing eye</l>
+                    <l n="781">Mark’d what we lodg’d at diſtance, aiming there</l>
+                    <l n="782">Thy cruel ſhafts, to rob me of my friends?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:696-699">
+                    <l n="783">E'en now Oreſtes, who with cautious tread</l>
+                    <l n="784">Had from this gulf of ruin freed his foot,</l>
+                    <pb n="189"/>
+                    <l n="785">E’en he, the hope medicinal to the madneſs</l>
+                    <l n="786">Of this ill house, ſhows that our hope betrays us.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:700-703">
+                    <l n="787">It were my wish to have borne other tidings,</l>
+                    <l n="788">More welcome to the lords of this fair manſion,</l>
+                    <l n="789">And meriting their hospitable favours:</l>
+                    <l n="790">For what more ſtrongly to benevolence</l>
+                    <l n="791">Can bind the grateful ſoul?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:704-706">
+                    <l n="792">Yet I ſhou'd deem it</l>
+                    <l n="793">An impious wrong not to disclose e'en these,</l>
+                    <l n="794">Unwelcome, as they must be, to his friends,</l>
+                    <l n="795">So folemnly entrusted to my charge.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:707-711">
+                    <l n="796">Not leſs for this ſhalt thou receive ſuch uſage</l>
+                    <l n="797">As thy worth challenges: not leſs for this</l>
+                    <l n="798">Reſpected here: another wou’d have come</l>
+                    <l n="799">Charg’d with the ſame sad meſſage. But the hour</l>
+                    <l n="800">Demands refreſhment for the ſtranger, ſpent</l>
+                    <l n="801">With the long travel of the weary day.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:712-714">
+                    <l n="802">Lead him to thoſe apartments, where the men</l>
+                    <l n="803">Are well receiv’d; let his attendant follow,</l>
+                    <l n="804">His fellow traveller;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:715">
+                    <l n="805">let thy diligent care,</l>
+                    <l n="806">I charge thee, miniſter to all his wants.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:716-718">
+                    <l n="807">We to the rulers of this house will bear</l>
+                    <l n="808">These tidings, and amongst our friends conſult</l>
+                    <l n="809">What meaſures in this sad event to form.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS</speaker><stage>alone.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:719-721">
+                    <milestone unit="card" n="719" resp="Smyth"/><l n="810">Now, my dear partners, ſlaves to this proud house,</l>
+                    <l n="811">Now let us ſhow our fortitude, now teach</l>
+                    <l n="812">Our tongues a noble daring for Oreſtes.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:722-725">
+                    <l n="813">Thou hallow'd earth, thou hallow'd mound,</l>
+                    <l n="814">Whoſe high sepulchral round</l>
+                    <l n="815">Lies on the royal chief, that o'er the main</l>
+                    <l n="816">To glory led his martial train,</l>
+                    <l n="817">Now hear us, now impart your aid:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:726-727">
+                    <l n="818">On this important hour,</l>
+                    <l n="819">Perſuaſion, try thy fraudful pow’r:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:728-729">
+                    <l n="820">And thou, thro’ night’s ſurrounding shade,</l>
+                    <l n="821">Come, Mercury, from the ſhades below,</l>
+                    <l n="822">And when the falchion flames, direct th' avenging blow!</l>
+                </lg>
+            </sp>
+        <pb n="191"/>
+        <sp>
+                <speaker>SERVANT, GILISSA, CHORUS. SERVANT.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:730-731">
+                    <milestone unit="card" n="730" resp="Smyth"/><l n="823">This ſtranger, it ſhou'd ſeem, brings mournful tidings;</l>
+                    <l n="824">I ſee the tear ſteal from Giliſſa’s eye,</l>
+                    <l n="825">Nurse of Oreſtes.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:732-733">
+                    <l n="826">Wherefore doſt thou paſs</l>
+                    <l n="827">These doors? The sorrows, that attend thy ſteps,</l>
+                    <l n="828">Shall here find no reward:</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:734-741">
+                    <l n="829">My royal miſtreſs order'd me with ſpeed</l>
+                    <l n="830">To call Ægisthus to these stranger guests;</l>
+                    <l n="831">That man from man he with more certainty</l>
+                    <l n="832">Might learn this freſh report. Before the ſervants</l>
+                    <l n="833">She kept her ſmile beneath a mournful eye,</l>
+                    <l n="834">To hide her joy at this event; to her</l>
+                    <l n="835">A joy indeed, but to this house a tale</l>
+                    <l n="836">Of deep affliction. He too, when he hears</l>
+                    <l n="837">The narrative, will from his ſoul rejoice.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:743-748">
+                    <l n="838">Ah me! what ſorrows in ſucceſſive train</l>
+                    <l n="839">Have in this house of Atreus pierc’d my ſoul</l>
+                    <l n="840">From antient times: but never have I ſuffered</l>
+                    <l n="841">A loſs like this: with patience other ills,</l>
+                    <l n="842">Well as I might, I bore.</l>
+                </lg>
+            </sp>
+        <pb n="192"/>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:749-750">
+                    <l n="843">But my Oreſtes</l>
+                    <l n="844">Was the dear object of my anxious thoughts;</l>
+                    <l n="845">An infant I receiv’d him from his mother;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:751-753">
+                    <l n="846">I nurs’d him, many’ a night to all his wants,</l>
+                    <l n="847">To all his cries attentive, with a care</l>
+                    <l n="848">That now avails me not:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:753-760">
+                    <l n="849">E’er reaſon dawns,</l>
+                    <l n="850">The nurse’s care is needful; in his cradle</l>
+                    <l n="851">The infant knows not to expreſs his wants,</l>
+                    <l n="852">Rise they from thirst, or hunger, or the calls</l>
+                    <l n="853">Of nature: with fond diligence I mark’d</l>
+                    <l n="854">Th' inſtinctive cry, nor with a ſqueamiſh niceneſs</l>
+                    <l n="855">Thought ſcorn of any office; for my love</l>
+                    <l n="856">Made all delightful.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:760-763">
+                    <l n="857">Now, unhappy me!</l>
+                    <l n="858">My dear Oreſtes is, I hear, no more.</l>
+                    <l n="859">But I am sent in haſte to that vile man,</l>
+                    <l n="860">Whoſe rank pollution ſtains this noble house:</l>
+                    <l n="861">With pleasure this report will he receive.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:766">
+                    <milestone unit="card" n="766" resp="Smyth"/><l n="862">With what appointment does ſhe bid him come?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:767">
+                    <l n="863">Appointment! Let me comprehend thy meaning.</l>
+                </lg>
+            </sp>
+        <pb n="193"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:768">
+                    <l n="864">If with his train of guards, or unattended.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:769">
+                    <l n="865">She bids him come attended with his guards.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:770-772">
+                    <l n="866">No, tell him not<ref target="#app-tlg006-note.193.n">n</ref>, this hated lord; but wear</l>
+                    <l n="867">A face of cheerfulness; and urge him hither</l>
+
+<pb n="194"/>
+                    <l n="868">Alone, devoid of fear, to be inform’d.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:773">
+                    <l n="869">For the mind catches from the meſſenger</l>
+                    <l n="870">A ſecret elevation, and bold ſwell.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:774">
+                    <l n="871">This news, it ſeems, is welcome to thy ſoul.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:775">
+                    <l n="872">But what if Heav’n’s high King redreſs these ills?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:776">
+                    <l n="873">How? With Oreſtes all our hopes are dead.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:777">
+                    <l n="874">Not all. This needs no prophet to unfold it.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:778">
+                    <l n="875">Haſt thou heard ought diſproving this report?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:779-780">
+                    <l n="876">Go, bear thy meſſage; do as thou art order'd:</l>
+                    <l n="877">The Gods, whoſe care this is, will guide th' event.</l>
+                </lg>
+            </sp>
+        <pb n="195"/>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:781-782">
+                    <l n="878">I go, in all obſervant of thy precepts.</l>
+                    <l n="879">May what is beſt come from the fav’ring Gods!</l>
+                </lg>
+            </sp>
+        <pb n="195"/>
+        <sp>
+                <speaker>CHORUS.</speaker><stage type="lyric-label">STROРНЕ.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:783-786">
+                    <milestone unit="card" n="783" resp="Smyth"/><l n="880">Now my righteous pray’r approve,</l>
+                    <l n="881">Father and King of Gods, Olympian Jove!</l>
+                    <l n="882">To thee may I unfold</l>
+                    <l n="883">Such vows, as from the modest and the wise</l>
+                    <l n="884">In the cause of justice rise.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:785-786">
+                    <l n="885">O, may these eyes behold</l>
+                    <l n="886">Her pow'r, ador'd by all, maintain</l>
+                    <l n="887">The glories of her aweful reign!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:787-793">
+                    <milestone unit="card" n="789" resp="Smyth"/><l n="888">Hear me, monarch of the sky,</l>
+                    <l n="889">Protect him with thy guardian care</l>
+                    <l n="890">O’er his foes exalt him high,</l>
+                    <l n="891">That lord it in the regal chair!</l>
+                    <l n="892">His ruin’d honours thus reſtor’d,</l>
+                    <l n="893">With fiercer rage thy vengeance ſhall be pour’d.</l>
+                </lg>
+            </sp>
+        <pb n="196"/>
+        <sp>
+                <speaker>CHORUS.</speaker><stage type="lyric-label">ANTISTROPHE.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:794-795">
+                    <milestone unit="card" n="794" resp="Smyth"/><l n="894">Yok'd to affliction's iron car</l>
+                    <pb n="196"/>
+                    <l n="895">This orphan son of a lov'd father ſpare:</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:796-799">
+                    <l n="896">Reſtrain its headlong force;</l>
+                    <l n="897">And let the rapid wheels, with many’ a bound</l>
+                    <l n="898">Rolling o'er the rugged ground,</l>
+                    <l n="899">Here ſtop their painful course.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:800-802">
+                    <milestone unit="card" n="800" resp="Smyth"/><l n="900">And you, that guard this royal ſeat,</l>
+                    <l n="901">Its blazing wealth, its gorgeous ſtate,</l>
+                    <l n="902">Hear, propitious Gods, and ſave!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:803-805">
+                    <l n="903">Let not the blood of former slain</l>
+                    <l n="904">Fresh returns of vengeance crave;</l>
+                    <l n="905">No more these crimson'd manſions stain:</l>
+                    <l n="906">Slaughter no more from ſlaughter riſe,</l>
+                    <l n="907">If low beneath the righteous sword he lies!</l>
+                </lg>
+                <stage type="lyric-label">MONOSTROPHE.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:806-810">
+                    <milestone unit="card" n="806" resp="Smyth"/><l n="908">Thou, that hast fix'd thy dreary reign<ref target="#app-tlg006-note.196.b">b</ref></l>
+                    <l n="909">Deep in the yawning gulf below,</l>
+                    <l n="910">Yet let him rise, yet view this scene,</l>
+                    <l n="911">Around his gloomy eyeballs throw,</l>
+                    <pb n="197"/>
+                    <l n="912">Distinct and clear the vengeance mark,</l>
+                    <l n="913">That threatens from her covert dark!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:811-813">
+                    <milestone unit="card" n="811" resp="Smyth"/><l n="914">Thou, son of Maia, come, and with thee lead</l>
+                    <l n="915">Succeſs, that crowns the daring deed:</l>
+                    <l n="916">To form the close and dark design,</l>
+                    <l n="917">Whether th' ambiguous tale thou lov'ſt to weave,</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:814-815">
+                    <l n="918">And throw around the veil of night;</l>
+                    <l n="919">Or bid'st e'en truth itself deceive,</l>
+                    <l n="920">Diſplay'd in all the dazzling blaze of light;</l>
+                </lg>
+                
+                <pb n="198"/>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:816-818">
+                    <l n="921">The pow'rs of seeresy are thine.</l>
+                    <l n="922">Then ſhall this penſive female train</l>
+                    <l n="923">Theſe rich oblations pay no more;</l>
+                    <l n="924">No more the melancholy strain,</l>
+                    <l n="925">Tuned to the voice of anguiſh, pour,</l>
+                    <l n="926">Raptur'd their triumph ſhall I ſee,</l>
+                    <l n="927">My friends from ruffian danger free.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:827-830">
+                    <milestone unit="card" n="819" resp="Smyth"/><milestone unit="card" n="827" resp="Smyth"/><l n="928">And thou, when thy ſtern part is come, be bold;</l>
+                    <l n="929">Think how in blood thy father roll’d:</l>
+                    <l n="930">And when, “my son, my son," ſhe cries,</l>
+                    <l n="931">To melt thy manly mind with plaintive moan,</l>
+                    <l n="932">Then to her guilty ſoul recall</l>
+                    <l n="933">Thy murder’d father’s dying groan;</l>
+                    <l n="934">And to his angry vengeance let her fall:</l>
+                    <l n="935">Like Perſeus turn thy ruthless eyes<ref target="#app-tlg006-note.198.c">c</ref>;</l>
+                    <l n="936">Just to thy friends above, thy friends below,</l>
+                    <l n="937">Aim with applauded rage the destin’d wound;</l>
+                    <l n="938">Great in thy vengeance rush upon the foe,</l>
+                    <l n="939">And ſtrike the murd'rer bleeding to the ground,</l>
+                </lg>
+            </sp>
+        <pb n="199"/>
+        <sp>
+                <speaker>ÆGISTHUS.</speaker><stage>ÆGISTHUS, GILISSA, CHORUS.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:838-843">
+                    <milestone unit="card" n="831" resp="Smyth"/><milestone unit="card" n="838" resp="Smyth"/><l n="940">This meſſage has a voice, that calls me forth</l>
+                    <l n="941">To learn with more aſſurance this report,</l>
+                    <l n="942">By certain ſtrangers brought, touching the death</l>
+                    <l n="943">Of young Oreſtes; most unwelcome this;</l>
+                    <l n="944">And the relation to this house will add</l>
+                    <l n="945">Fresh terror to the fear, whoſe unheal’d wound</l>
+                    <l n="946">Smarts inwardly, and rankles.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:844-846">
+                    <l n="947">Shou'd I give</l>
+                    <l n="948">Full credit to this tale, or rather deem it</l>
+                    <l n="949">The idle offspring of these women’s fears,</l>
+                    <l n="950">That lightly roſe, and will as lightly die?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:847">
+                    <l n="951">Tell me, what proof gives credit to this rumour?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>GILISSA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:848-850">
+                    <l n="952">Indeed we heard it: but go in, examine</l>
+                    <l n="953">Theſe ſtrangers; less regard is due to rumour,</l>
+                    <l n="954">Than to clear information learnt from them.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ÆGISTHUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:851-853">
+                    <l n="955">I wish to see this stranger, and to aſk him</l>
+                    <l n="956">If he himſelf was preſent at his death,</l>
+                    <l n="957">Or only ſpeaks from an obscure report.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:854">
+                    <l n="958">Deception finds no eaſy entrance here.</l>
+                </lg>
+            </sp>
+        <pb n="200"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:855-858">
+                    <milestone unit="card" n="855" resp="Smyth"/><l n="959">What ſhou'd I ſay, eternal King,</l>
+                    <l n="960">Or how begin the strain?</l>
+                    <l n="961">These passions how contain,</l>
+                    <l n="962">That in my throbbing breast tumultuous ſpring?</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:859-860">
+                    <l n="963">O that, in aid, my daring deed</l>
+                    <l n="964">Might all the force of words exceed!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:861-862">
+                    <l n="965">For now diſtained with blood the bick'ring sword,</l>
+                    <l n="966">The contest ends;</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:863-865">
+                    <l n="967">if all</l>
+                    <l n="968">This royal race ſhall fall;</l>
+                    <l n="969">Or the just laws their antient ſtate reſuming,</l>
+                    <l n="970">And liberty her light reluming,</l>
+                    <l n="971">Hail to his father's rights the son reſtor'd.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:866-868">
+                    <l n="972">'Gainſt two fierce wolves the youth conteſting ſtands<ref target="#app-tlg006-note.200.d">d</ref></l>
+                    <l n="973">Alone: May heav'n-ſent conquest grace his hands!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ÆGISTHUS</speaker><stage>within.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:869">
+                    <milestone unit="card" n="869" resp="Smyth"/><l n="974">Oh! I am ſlain,</l>
+                </lg>
+            </sp>
+        <pb n="201"/>
+        <sp>
+                <speaker>CHORUS.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:870-871">
+                    <l n="975">That groan! Again that groan!</l>
+                    <l n="976">Whence? What is done? Who rules the ſtorm within!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:872-874">
+                    <l n="977">The deed is finiſhed: let us keep aloof,</l>
+                    <l n="978">And ſeem unconſcious of these ills: best stand</l>
+                    <l n="979">At diſtance, whilſt deſtruction ends her work.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>SERVANT.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:875-876">
+                    <milestone unit="card" n="875" resp="Smyth"/><l n="980">Woe, woe to me! Woe to my ſlaughter’d lord!</l>
+                    <l n="981">Woe on my wretched head, and woe again!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:877-879">
+                    <l n="982">Ægisthus is no more. But open here,</l>
+                    <l n="983">Ye females, inſtantly unbar these doors;</l>
+                    <l n="984">Th' occaſion calls for vigor, not t' aſſiſt</l>
+                    <l n="985">The ſlain. Ho, here!</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:882-884">
+                    <l n="986">What, call I to the deaf?</l>
+                    <l n="987">Or ſleep you? Where is Clytemnestra? How</l>
+                    <l n="988">Employ'd? Her life ſtands at the ſword's bare point,</l>
+                    <l n="989">And ready vengeance ſeems to prompt the blow.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><stage>CLYTEMNESTRA, SERVANT, CHORUS.</stage>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:885">
+                    <l n="990">What means thy clamour? Whence these ſhrieks of woe?</l>
+                </lg>
+                <pb n="202"/>
+            </sp>
+        <sp>
+                <speaker>SERVANT.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:886">
+                    <l n="991">They, that were rumour'd dead, have ſlain the living.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:887-888">
+                    <l n="992">Ah me! I understand thee, tho' thy words</l>
+                    <l n="993">Are dark; and we ſhall periſh in the toils,</l>
+                    <l n="994">E'en as we ſpread them.</l>
+                </lg>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:889-891">
+                    <l n="995">Give me inſtantly</l>
+                    <l n="996">The flaught'ring axe; it ſhall be ſeen if yet</l>
+                    <l n="997">We know the way to conquer, or are conquer'd:</l>
+                    <l n="998">Theſe daring meaſures have my wrongs enforc'd.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES, PYLADES, CLYTEMNESTRA, CHORUS. ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:892">
+                    <l n="999">Thee too I seek. He has his righteous meed.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:893">
+                    <l n="1000">Ah me! my dear Ægisthus, thou art dead.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:894-895">
+                    <l n="1001">And doſt thou love the man? In the ſame tomb</l>
+                    <l n="1002">Shalt thou be laid, nor e'en in death forſake him.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:896-898">
+                    <l n="1003">Ah, ſtay thy hand, my son: my child, my child,</l>
+                    <l n="1004">Revere this breast, on which thou oft' hast slept<ref target="#app-tlg006-note.203.e">e</ref>,</l>
+                    <l n="1005">And oft thy infant lips have preſs’d its milk.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:899">
+                    <l n="1006">What ſhall I do, my Pylades? Restrain'd</l>
+                    <l n="1007">By filial reverence, dread to kill my mother?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>PYLADES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:900-902">
+                    <milestone unit="card" n="900" resp="Smyth"/><l n="1008">Where then the other oracles of Phœbus,</l>
+                    <l n="1009">Giv'n from the Pythian ſhrine? The faithful vows,</l>
+                    <l n="1010">The ſolemn adjurations, whither vaniſh'd?</l>
+                    <l n="1011">Deem all the world thy foes, save the just Gods.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:903">
+                    <l n="1012">Thou hast convinc'd me; thy reproofs are just.—</l>
+                </lg>
+<pb n="204"/>
+                <lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:904-907">
+                    <l n="1013">Follow him: on his body will I ſlay thee.</l>
+                    <l n="1014">Alive thou held'ſt him dearer than my father;</l>
+                    <l n="1015">Then ſleep with him in death, ſince thou cou’dſt love him,</l>
+                    <l n="1016">And hate the man who most deſerv’d thy love.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:908">
+                    <l n="1017">I nurs’d thy youth, and wiſh to tend thy age.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:909">
+                    <l n="1018">What, ſhall my father's murd’rer dwell with me?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:910">
+                    <l n="1019">The Fates, my ſon, the Fates decreed his death.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:911">
+                    <l n="1020">And the ſame Fates decree that thou ſhalt die.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:912">
+                    <l n="1021">Doſt thou not dread a mother's curſe, my son?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:913">
+                    <l n="1022">That mother cast me out to want and miſery.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:914">
+                    <l n="1023">Not ſo; I ſent thee to a friendly house.</l>
+                </lg>
+            </sp>
+        <pb n="205"/>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:915">
+                    <l n="1024">Tho’ nobly born, a slave, and doubly fold.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:916">
+                    <l n="1025">What in exchange, what price did I receive?</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:917">
+                    <l n="1026">I bluſh to charge thee with the guilty price.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:918">
+                    <l n="1027">Blush not; but with it name thy father’s lightneſs.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:919">
+                    <l n="1028">Sitting in wanton ease, blame not his toils.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:920">
+                    <l n="1029">Bar'd from our husbands, irkſome are our hours:</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:921">
+                    <l n="1030">Yet in your ease your husbands' toils ſupport you.</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>CLYTEMNESTRA.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:922">
+                    <l n="1031">My son, my son, thou wilt not kill thy mother!</l>
+                </lg>
+            </sp>
+        <sp>
+                <speaker>ORESTES.</speaker><lg corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:923">
+                    <l n="1032">Thy hand, not mine, is guilty of thy death.</l><milestone unit="card" n="935" resp="Smyth"/><milestone unit="card" n="942" resp="Smyth"/><milestone unit="card" n="946" resp="Smyth"/><milestone unit="card" n="942a" resp="Smyth"/><milestone unit="card" n="953" resp="Smyth"/><milestone unit="card" n="961" resp="Smyth"/><milestone unit="card" n="966" resp="Smyth"/><milestone unit="card" n="972" resp="Smyth"/><milestone unit="card" n="973" resp="Smyth"/><milestone unit="card" n="1007" resp="Smyth"/><milestone unit="card" n="1010" resp="Smyth"/><milestone unit="card" n="1018" resp="Smyth"/><milestone unit="card" n="1021" resp="Smyth"/><milestone unit="card" n="1051" resp="Smyth"/><milestone unit="card" n="1065" resp="Smyth"/>
+                </lg>
+            </sp>
+      </div>
+    </body>
+    <back>
+      <div type="apparatus">
+        <head>Potter's notes</head>
+        <listApp type="explanatory-notes">
+          <app xml:id="app-tlg006-note.139.a" loc="1">
+            <note>
+                <p>The beginning of this play is loſt; but fortunately the ſense remains intire. Oreſtes, returned from banishment, and advancing to the tomb of his father, firſt implores the protection of Mercury, as the conductor of the dead to the ſhades below, which was his known office : thus Horace,</p>
+               <quote xml:lang="lat"> <l>Tu pias lætis animas reponis</l>
+                <l>Sedibus.</l></quote>
+           
+       
+                
+                <p>Then addreſſes his father's manes, whilſt he places on the tomb his hair before confecrated to the river Inachus ; and this in perfect conformity to ancient uſage : thus Achilles at the funeral of Patroclus cuts off his hair, ſacred to Sperchius: inſtances abound. As the Grecians wore their hair long, and dreſſed it with much elegance, we may ſuppoſe, that the depriving themſelves of ſo conſiderable an ornament was an indication of grief; we are led to this by the words of Pindar, <cit><bibl>Pyth. 4. </bibl>
+                <quote xml:lang="grc">
+                <l>Οὐδὲ κομῶν πλόκαμοι</l>
+                <l>Κερθέντες οἴχοντ᾿ ἀγλαοὶ.</l>
+                    </quote></cit>
+                When Helena, at her return to Argos ſoon after the death of Clytemnestra, thought it neceſſary to preſent her hair at her ſiſter's tomb, ſhe takes care to cut it ſo as not to diſfigure herſelf ; on which Electra ſays,</p>
+                <cit><quote>
+                <l>O nature, in the bad how great an ill!</l>
+                <l>But in the virtuous ſtrong thy pow'r to ſave.</l>
+                <l>See, ſhe hath shorn the' extremity of her locks,</l>
+                <l>Anxious of beauty, the ſame woman ſtill.</l></quote>
+                <bibl>Eurip. Elect. </bibl>
+                </cit>
+              
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.149.b" loc="172">
+            <note>
+                <p>The Chorus, as more experienced through their age, had inſtructed Electra how to addreſs the ſhade of her father, to pour her firſt vows for bleſſings on herſelf and her friends, and particularly to remember Oreſtes. As he was dearest to her heart, ſhe ſoon forgets herſelf; and her warmest vows are for his happy return ; then, recurring to what particularly concerns herſelf, ſhe prays, not for a reſtoration to her princely rank, but for the virtues becoming her sex, that ſhe may be much more modest than her mother, and her hand more holy. Propriety of character is one of the great excellencies of Æschylus, of which this is a very delicate inſtance.</p>
+                <p><hi rend="smallcaps">L 3</hi></p>
+                <l>Now</l>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.150.c" loc="194">
+            <note>
+                <p>The Chorus begins this Pæan to the dead with lamentations for their loft lord ; they are proceeding to invoke his aid ; but this is ſcarce mentioned, when they break off with outcries, the prophetic rapture ſeizes them, and impreſſes on the imagination the youthful hero in all his radiant arms coming to avenge the death of his father. This is the sublime and daring ſpirit which diſtinguiſhes Æschylus from all other writers. It makes one bluſh to point out this to the reader ; but Mr. Heath has rendered it neceſſary, who, by underſtanding this optative not interrogative (as he expreſſes himself), hath annihilated the beauty and grandeur of the image.</p>
+               
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.153.d" loc="227">
+            <note>
+                <p>Much good wit hath been thrown away upon this paſſage, which might well have been ſpared, had the deſign of the poet been attended to. No diſcovery is from hence raiſed ; but the mind of Electra is deeply ſtruck; ſhe reasons, and conjectures, and ſo is finely prepared for the diſcovery which ſoon follows. Aristotle has mentioned this, but in his dryeſt manner; yet it is plain, that he underſtood it thus, for he has drawn up the reasoning of Electra into a syllogism in form. But envy and buffoonery are perverse qualities.</p>
+               
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.154.c" loc="251">
+            <note>
+                <p>Hoc δεύτερον τεκμήριον plane ridiculum est; Et mirum, quod eruditiſſimus comicus id non perfuderit aceto ſuo: Sentiunt omnes, qui aliquid sentiunt.—PAUW. 
+                    <quote>
+                    <l>Pudet haec opprobria nobis</l> 
+                    <l>Aut dici potuiſse, aut non potuiſse refelli.</l>
+                    </quote>
+                </p>
+              
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.157.f" loc="280">
+            <note>
+                <p>The ladies, in the simplicity of ancient times, valued themſelves much, and indeed were highly esteemed for their skill in embroidery : these rich wrought veſts made great part of the wealth of noble houſes: Andromache, Helen, and Penelope were celebrated for their fine work, of which Minerva herſelf was the patroness ; and Dido was as excellent as the beſt of them. As they could not but know what their own hands had wrought, nothing could bring them clearer conviction than a sight of their own curious labours. Oreſtes was nearly arrived to manhood, when he left, or was driven from Argos ; it must therefore be extreme malice, or rival jealousy, which could give this paſſage so ridiculous a turn as to ſuppoſe, that Orestes now wore a veſt made for him in his infancy ; beſides, the word ὕφασμα, as Stanley candidly obſerves, is a general term ; and the reader is left at his liberty to underſtand by it a belt, or any other piece of embroidery : certainly it was not the vestment of Orestes, for he returned in the habit of a peasant ; and it concerned him greatly, that no part of his dreſs ſhould discover him to Clytemnestra.</p>
+                <l>Thy</l>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.158.g" loc="299">
+            <note>
+                <p>A great poet gives every image, every circumſtance a peculiar propriety: this does not arise here merely from the allusion to the eagle, which, as the imperial bird, finely characteriſes the royal Agamemnon ; but it here acquires new grace from what the naturaliſts have told us of the enmity of the eagle to the serpent race, and their frequent battles, some of which ended fatally to the generous bird, as here : Virgil has given us a fine deſcription of one of these battles, wherein the eagle is conqueror:</p>
+                <cit>
+                <quote xml:lang="lat">
+                <l>Utque volans alte raptum cum fulva draconem</l>
+                <l>Fert aquila, implicuitque pedes, atque unguibus hæsit:</l>
+                <l>Saucius at serpens sinuoſa volumina versat,</l>
+                <l>Arrectisque horret squamis, et sibilat ore</l>
+                <l>Arduus insurgens: illa haud minus urget obunco</l>
+                <l>Luctantem rostro, simul æthera verberat alis.</l>
+                </quote>
+                
+                <bibl>Æn. xi. v. 751. </bibl></cit>
+                <cit><quote>
+                <l>As when th' imperial eagle soars on high,</l>
+                <l>And bears some speckled serpent thro' the sky;</l>
+                <l>While her sharp talons gripe the bleeding prey,</l>
+                <l>In many a fold her curling volumes play;</l>
+                <l>Her starting brazen scales with horror rise,</l>
+                <l>The sanguine flames flash dreadful from her eyes :</l>
+                <l>She writhes, and hisses at her foe, in vain,</l>
+                <l>Who wings at ease the wide aërial plain;</l>
+                <l>With her strong hooky beak the captive plies,</l>
+                <l>And bears the struggling prey, triumphant, thro' the skies.  </l>
+                </quote>
+                <bibl>PITТ.</bibl></cit>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.161.b" loc="352">
+            <note>
+                <p>Æschylus here in brief deſcribes the miſerable ſtate of the unexpiated murderer, his interdiction from every altar, every table, and every house ; no one holding converſe or intercourſe with him as polluted and abominable. This indeed was uſually the punishment inflicted by the ſtate ; but the poet here finely aſcribes it to the vengeance of the Furies.</p>
+               
+                
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.162.i" loc="366">
+            <note>
+                <p>Mr. Heath, who hath given us a ſpecimen of his critical acumen on the former part of this ſpeech, obſerves here, that Oreſtes cannot be ſuppoſed to reckon his own penury among the cauſes that incite him to revenge his father's death ; but his princely generofity was affected at the poverty of those illustrious conquerors who had overturned Troy. It must indeed have hurt his generous mind to ſee ſuch men enslaved by a woman, and an effeminate man ; this the poet with great judgment observes , but he no where ſays that their new tyrants had touched the soldiers spoils : he makes Ægisthus ſay, that he was master of Agamemnon's treasures ; and Electra, in her firſt addreſs to her father's ſhade, with much indignation ſays to him, 
+                    <quote>
+<l>Orestes, </l>
+<l>From his poſseſsions exil’d, they with pride </l>
+<l>Wantonly revel in the wealth thy toils </l>
+<l>Procured.</l>
+                </quote>
+            
+            And indeed it might be ſome aggravation to the misfortunes
+even of a brave prince, to see the ſhameless ufurpers of his poſſeſſions waſting his wealth in riot, whilft he was compelled to
+feek a miferable and precarious ſubſiſtence from the charity of
+others.
+</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.166.k" loc="433">
+            <note>
+                <p>The grief, which Electra expreſſed for the murder of her father, flowed from a generous and noble ſpirit: her reſentment muſt therefore be generous and noble.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.166.l" loc="434">
+            <note>
+                <p>This grief is compared to the ſcourge of the Furies, from whence a double claſh is heard ; one given by the shade of Agamemnon, ready to aſſiſt their revenge ; the other by the murderers, which was moſt to be feared, becauſe their unhallowed hands were prompt to deeds of violence.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.169.m" loc="490">
+            <note>
+                <p>Mr. Heath acutely obſerves, that the true ſenſe of this paſſage hath eſcaped the ſagacity of all the interpreters , who have been led into their error by uniformly taking it as referring to the murder of Agamemnon ; whereas, in truth, it relates ſolely to poor Electra, whoſe ears had been ſoundly boxed by her mother ; and the words are to be rendered thus, <quote>She ſtruck a martial ſtroke (meaning the firſt box on the ear she gave her daughter, as the ſignal of battle), then might you ſee many cuffs often repeated, her hand twisted in my hair, after the manner of a Cissian female warrior.</quote>  Spirit of Pauw, be this an atonement for all the inſults heaped upon thee!</p>
+                <p>The deſign of Electra here is to excite her brother to avenge the murder of their father ; and we ſhall perceive, that this is finely carried on. Upon the accidental mention of "fairer fortune," ſhe ſays, how ſhall we obtain it ? by ſpeaking our griefs aloud, or by flattering our mother ? but they admit no ſoftening, nor can we ever think of her with any degree of tenderness: she ſtruck the bloody ſtroke, ſhe repeated it on his unhappy head with all the fierceness of a Cissian Virago ; then ſhe buried him without his honours. Oreſtes anſwers preciſely to this, that vengeance, by the aſſiſtance of the Gods, and by his hand, would inflict puniſhment for this wrong done to his father : but as he ſhows himſelf affected at the revenge to be executed, Electra proceeds to give him an account of the indignities offered to the dead body.</p>
+          
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.170.n" loc="500">
+            <note>
+                <p>To mangle a dead body was more horrid than the act of murder itſelf, as it made the manes of the deceased a diſhonourable ſpectacle among the ſhades below, where they were thought to retain these disfiguring mutilations, and were of course disabled from any acts of vengeance. Plato built a fanciful philofophy on this opinion, of which Virgil knew how to make the true poetic uſe, when he deſcribes Eriphyle pointing to the wound of her son,</p>
+                <quote xml:lang="lat">
+                <l part="F">Mæſtamque Eriphylen</l>
+                <l>Crudelis nati monstrantem vulnera cernit.</l>
+                </quote>
+                <p>The figure of Deiphobus is repreſented under the ſame idea.</p></note>
+          </app>
+          <app xml:id="app-tlg006-note.171.o" loc="507">
+            <note>
+                <p>Electra, having given a relation of the injuries and diſhonours done to her father, now proceeds to the ill treatment which ſhe had herſelf received. Virgins had an honourable apartment in the house aſſigned them, the chaste reserve of ancient manners requiring this ſeparation from the familiarity, and even the eyes of men : Electra was not admitted to this, but like a mischievous cur turned into the court, and contemptuously neglected: this was the utmoſt indignity.</p>
+                <l>To</l>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.174.p" loc="555">
+            <note>
+                <p>Affection to her father peculiarly marks the character of Electra, of which she could not give a ſtronger inſtance than this. Deprived as she now was of all her share of her father's riches, ſhe had it not in her power to offer any preſents at his tomb ; but ſhould Ægisthus be ſlain, ſhe devotes even her nuptial dowry to that purpoſe.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.178.q" loc="623">
+            <note>
+                <p>Oreſtes ſhows throughout ſome marks of tenderneſs for his mother, and a reluctance to ſhed her blood. When Electra had urged him to do the deed inſtantly, he pauſes a while to aſk for what cauſe Clytemneſtra had ſent these oblations to the tomb. being told that ſhe was affrighted with portentous dreams, he particularly inquires what they were. The viſion is finely and ſtrongly conceived: he takes it as a prodigy ſent from the Gods to confirm his reſolution, he catches fire from it, and declares She must die A violent death: and with a dragon's rage This hand ſhall kill her. The ſpirit and beauty of the original is inimitable, [cite_start]
+                    <quote xml:lang="grc"><l>δεῖ τοινὶν, ὡς ἔθρεχεν ἔκπαγλον τέρας,</l> 
+                        <l>Θανεῖν βιαίως : ἐκδρακοντωθεὶς δ᾽ ἐγὼ</l> 
+                        <l>κτενῶ νιν.</l>
+                    </quote> .</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.179.r" loc="639">
+            <note>
+                <p>Clytemneſtra had told Agamemnon that Strophius king of Phocæa had taken Oreſtes under his protection from any dangers or diſturbances that might ariſe in the ſtate. the young prince had indeed the good fortune to eſcape from his mother, and was hoſpitably received at Phocis, from whence he now returned in diſguiſe, attended by Pylades the ſon of Strophius, whoſe friendſhip was ſo faithful to Oreſtes in all his diſtreſſes, that it became proverbial.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.182.s" loc="685">
+            <note>
+                <p>When Althea, the daughter of Theſtius, was delivered of Meleager, the Deſtinies attended at her labour, and upon the birth of the child, throwing a log on the fire as they ſpun his thread of life, pronounced this charm, "O new-born child, we aſſign the ſame period of exiſtence to this log and to thee:" then vaniſhed. Althea ſnatched the log from the flames, and preſerved it with great care, till Meleager having ſlain her two brothers, for rudely taking the head of the Calydonian boar from Atalanta, to whom he had preſented it, this unnatural mother threw the fatal brand into the fire, and the charm of the Deſtinies was fulfilled. This ſtory is told by Ovid, Met. l. 8.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.182.t" loc="688">
+            <note>
+                <p>This ſtory is alſo told by Ovid, ibid. Minos, the celebrated king of Crete, was besieging Alcathoe, where Niſus reigned, on whoſe head grew a lock of purple hair, on which the safety of the city depended. Scylla, the daughter of Niſus, in love with the Cretan king, as Ovid relates it, or bribed with ſome female gewgaws according to Æschylus, entered her father's apartment as he lay aſleep, and cut off this charmed lock. The city was immediately taken.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.184.u" loc="705">
+            <note>
+                <p>This is a very tragical tale. All the men of Lemnos that were able to bear arms, had invaded Thrace, and continued the war three years. their wives, ſtung with rage and jealouſy, formed an horrid deſign, which they executed the very night on which their husbands returned, to murder every male on the iſland. Hypſipyle alone ſaved her father Thoas. Statius has related the whole transaction with his usual spirit, Theb. v. 1. 70.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.186.x" loc="746">
+            <note>
+                <p>Hospitality was so highly regarded, that it was amongst the most honourable of the labours of their greatest heroes to punish those who offered insults to strangers: so that it was not beneath the dignity of Clytemnestra in person to invite these travellers into her house ; she even takes a pride in recounting the magnificence with which they should be entertained.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.187.y" loc="753">
+            <note>
+              <p>This ſpeech conceals the greateſt art under an apparent ſimplicity; Oreſtes appears as a ruſtic Phocian, and unaquainted with the perſon of the king; of courſe he muſt be ſuppoſed to be a ſtranger to the tranſactions of that court, and the real hiſtory of Oreſtes; this prevents all ſuſpicion: the ſame affected ſimplicity and innocence is preſerved in his next ſpeech.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.188.x" loc="778">
+            <note>
+                <p>Electra's affection for her brother induces her to attend Clytemneſtra. on hearing the feigned account of his death, ſhe breaks into a formal exclamation on the curſe of Thyeſtes, proper enough as ſhe was circumſtanced; but what nature would not have dictated had her grief been real: ſhe cautiously avoids aſking the ſtrangers any question, and even leads the queen from making inquiries, by expreſſing a fondneſs for her brother, and throwing out a ſevere reflection, which ſhe had reason to think would give great offence, and ſo ſhorten the conversation.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.193.n" loc="866">
+            <note>
+                <p>Oreſtes had enjoined the Chorus to be silent where they ought, and to ſpeak where their voice might aid him. they had kept themselves near the tomb till they saw him enter the palace; they then advance with an intention of aſſiſting his cause, as occasions ſhould arise: Giliſſa ſoon gave them a very favourable one, which they readily embrace, by conjuring that faithful ſervant to call forth Ægisthus alone without his guards, which facilitated the enterpriſe of Oreſtes; to induce her to this, they were obliged to give her hopes of some favourable event; but though they knew her fidelity, they could not be enough aſſured of her prudence to trust her with the important ſecret: had they told her that the person, who appeared under the character of a meſſenger, had brought tidings that would give her joy, they had discovered too much; they prudently therefore refer her to the power of Jupiter, who might redreſs these evils: How? replies the nurse; Oreſtes, our hope, is dead: the answer of the Chorus is so ambiguous, that she could not possibly comprehend it in its full meaning, yet clear enough to induce her to ask whether they had heard any thing that contradicted the report: not to anſwer this plain question in the negative, was to leave her mind under the impreſſion of hope, and with this she is ordered to carry her message, and leave the event to the Gods: this required some management, and it is finely conducted. A criticism of Mr. Heath has given occaſion to this long note.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.196.b" loc="908">
+            <note>
+                <p>Stanley has marked the ſenſe of this paſſage ſo preciſely, that one is ſurpriſed to see it afterwards mistaken, but Pauw has ſaid μέγα ναίων στόμιον est orcus : δὸς ἀνδρα, i. e. Agamemnonem: ejus umbra rediret domum ut filio adeſſet. Mr. Heath, who always hath a prurience to quarrel with Pauw quo jure, quâve injuriâ, has diſcovered that μέγα ναίων στόμιον respicit Apollinem speluncam Delphis inſidentem, ἀνδρὰ Oreſtem. We allow the critic his authorities, that στόμιον is ſometimes uſed to exprime the cave at Delphos; but we cannot give up the paſſage cited by Stanley from Pindar. Had Apollo been here intended, we certainly ſhould have heard something of the μαλεύμαλα τα πυθόχρηστα. But, ſays the critic, Agamemnon was dead, nothing remained of him but his aſhes and his ſhade, præter cineres et umbram tenuem, therefore it could not be ſaid of him, that he beheld his house ἐλευθερίως, και λαμπρῶς, καὶ Φιλιόις ὄμμασι, but this is ſaid in defiance of Æschylus and all antiquity. Could this learned person have forgot that Darius, who alſo was aſhes and a shade, was addreſsed as a mighty and magnificent power, δάιμονα μεγαλαυχῆ? Could he have forgot that Oreſtes had evoked his father to behold the combat; and that Electra had implored Proserpine to give him a glorious force, ἔυμορφον κράλος?</p>
+                <p>Stanley has marked the ſenſe of this paſſage ſo preciſely, that one is ſurpriſed to see it afterwards mistaken, but Pauw has ſaid μέγα ναίων στόμιον est orcus : δὸς ἀνδρα, i. e. Agamemnonem: ejus umbra rediret domum ut filio adeſſet. Mr. Heath, who always hath a prurience to quarrel with Pauw quo jure, quâve injuriâ, has diſcovered that μέγα ναίων στόμιον respicit Apollinem speluncam Delphis inſidentem, ἀνδρὰ Oreſtem. We allow the critic his authorities, that στόμιον is ſometimes uſed to exprime the cave at Delphos; but we cannot give up the paſſage cited by Stanley from Pindar. Had Apollo been here intended, we certainly ſhould have heard something of the μαλεύμαλα τα πυθόχρηστα. But, ſays the critic, Agamemnon was dead, nothing remained of him but his aſhes and his ſhade, præter cineres et umbram tenuem, therefore it could not be ſaid of him, that he beheld his house ἐλευθερίως, και λαμπρῶς, καὶ Φιλιόις ὄμμασι, but this is ſaid in defiance of Æschylus and all antiquity. Could this learned person have forgot that Darius, who alſo was aſhes and a shade, was addreſsed as a mighty and magnificent power, δάιμονα μεγαλαυχῆ? Could he have forgot that Oreſtes had evoked his father to behold the combat; and that Electra had implored Proserpine to give him a glorious force, ἔυμορφον κράλος?</p>
+                <p>Stanley has marked the ſenſe of this paſſage ſo preciſely, that one is ſurpriſed to see it afterwards mistaken, but Pauw has ſaid μέγα ναίων στόμιον est orcus : δὸς ἀνδρα, i. e. Agamemnonem: ejus umbra rediret domum ut filio adeſſet. Mr. Heath, who always hath a prurience to quarrel with Pauw quo jure, quâve injuriâ, has diſcovered that μέγα ναίων στόμιον respicit Apollinem speluncam Delphis inſidentem, ἀνδρὰ Oreſtem. We allow the critic his authorities, that στόμιον is ſometimes uſed to expreſs the cave at Delphos; but we cannot give up the paſſage cited by Stanley from Pindar. Had Apollo been here intended, we certainly ſhould have heard something of the μαντεύματα τὰ πυθόχρηστα. But, ſays the critic, Agamemnon was dead, nothing remained of him but his aſhes and his ſhade, præter cineres et umbram tenuem, therefore it could not be ſaid of him, that he beheld his house ἐλευθερίως, καὶ λαμπρῶς, καὶ φιλιόις ὄμμασι, but this is ſaid in defiance of Æschylus and all antiquity. Could this learned person have forgot that Darius, who alſo was aſhes and a shade, was addreſsed as a mighty and magnificent power, δάιμονα μεγαλαυχῆ? Could he have forgot that Oreſtes had evoked his father to behold the combat; and that Electra had implored Proserpine to give him a glorious force, εὔμορφον κράτος?</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.198.c" loc="935">
+            <note>
+                <p>The mention of Perſeus here obliquely insinuates, that Clytemneſtra was as dangerous and dreadful as Meduſa, on whom Perſeus could not look when he flew her.</p>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.200.d" loc="972">
+            <note>The tranſlator readily and thankfully embraces Mr.
+Heath's fine conjecture here, who for θειος propoſes to read
+θωσιν.</note>
+          </app>
+          <app xml:id="app-tlg006-note.203.e" loc="1004">
+            <note>
+                <p>Orestes afterwards in his own vindication pleads thus to the father of Clytemnestra : Should wives with ruffian boldness kill their husbands, Then fly for refuge to their sons, and think, Baring their breasts, to captivate their pity, These deeds would pass for trivial, as their mood, For something or for nothing, shall incline them. EURIP. ELECT. </p>
+                <l>Follow</l>
+            </note>
+          </app>
+          <app xml:id="app-tlg006-note.169.x" loc="486">
+            <note>The note referenced as note.169.x is not present in the supplied transcription.</note>
+          </app>
+        </listApp>
+      </div>
+    </back>
+  </text>
+</TEI>

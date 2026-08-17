@@ -1,0 +1,2439 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Eschilo, Le Eumenidi: traduzione italiana di Ettore Romagnoli</title>
+        <author>Aeschylus</author>
+        <editor role="translator">Ettore Romagnoli</editor>
+        <editor>Gregory Crane</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder>Schmidt Sciences</funder>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Perseus Digital Library</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <date>2026</date>
+        <availability>
+          <p>Source transcription from Italian Wikisource; reuse is subject to its CC BY-SA 3.0 and GFDL terms.</p>
+        </availability>
+        <idno type="CTS-URN">urn:cts:greekLit:tlg0085.tlg007.romagnoli1922-ita2</idno>
+        <idno type="filename">tlg0085.tlg007.romagnoli1922-ita2.xml</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <editor role="translator">Ettore Romagnoli</editor>
+            <title level="m">Le tragedie</title>
+            <imprint>
+              <pubPlace>Bologna</pubPlace>
+              <publisher>Nicola Zanichelli</publisher>
+              <date when="1922">1922</date>
+            </imprint>
+            <biblScope unit="volume">II</biblScope>
+          </monogr>
+          <ref target="https://it.wikisource.org/wiki/Tragedie_(Eschilo-Romagnoli)">Wikisource work page</ref>
+          <ref target="https://it.wikisource.org/wiki/Indice:Tragedie_di_Eschilo_(Romagnoli)_II.djvu">Wikisource volume II</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The Italian text, verse layout, page breaks, stage directions, notes, and lyric divisions follow Romagnoli. Running heads and isolated scan-page numerals have been removed. Smyth card milestones are transferred from the Mazon Greek EpiDoc files and carry resp="Smyth"; measured gaps record omissions in the source transcription.</p>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])">
+          <p>References resolve the sequential verse lines of the Italian translation.</p>
+        </cRefPattern>
+      </refsDecl>
+      <p>Encoded in accordance with EpiDoc and CTS/CITE conventions.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="ita">Italian</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="eng">English (metadata)</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-16" who="#gcrane">Separated the play from the composite transcription and regularized it as a play-level CTS/EpiDoc translation.</change>
+      <change when="2026-08-16" who="#gcrane">Transferred every canonical Smyth card milestone using Romagnoli's explicit Greek-line ranges and documented all placements in an audit table.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="ita">
+    <body>
+      <div type="translation" n="urn:cts:greekLit:tlg0085.tlg007.romagnoli1922-ita2" xml:lang="ita">
+        <pb n="203"/>
+        <stage type="heading">LE EUMENIDI</stage>
+        <pb n="204"/>
+        <stage type="heading">PERSONAGGI</stage>
+        <list>
+            <item>LA PROFETESSA PITICA</item>
+            <item>APOLLO</item>
+            <item>ORESTE</item>
+            <item>L'OMBRA di Clitennestra</item>
+            <item>CORO di Furie</item>
+            <item>ATENA</item>
+         </list>
+        <note>La scena della prima parte rappresenta l'adito
+            del tempio di Apollo in Delfi.</note>
+        <pb n="205"/>
+        <stage type="heading">PROLOGO</stage>
+        <sp>
+            <speaker>SACERDOTESSA</speaker>
+            <milestone unit="card" n="1" resp="Smyth"/><l n="1">Prega dinanzi al tempio.</l>
+            <lg n="1-8">
+               <l n="2">Prima con questa prece onoro Gea</l>
+               <l n="3">che profetessa fu prima: indi Tèmide</l>
+               <l n="4">che seconda ebbe sede in questo oracolo,</l>
+               <l n="5">dopo sua madre, com'è fama; e terza,</l>
+               <l n="6">né già per forza, ma piacendo a Tèmide,</l>
+               <l n="7">vi salí Febe, prole dei Titani,</l>
+               <l n="8">figliuola anch'essa della terra; e dono</l>
+               <l n="9">natale a Febo ella ne fece: e il nome</l>
+               <l n="10">serba ancora dell'ava.</l>
+            </lg>
+            <lg n="9-19">
+               <l n="11">E il Dio, lasciate</l>
+               <l n="12">le scogliere di Delo e la palude,</l>
+               <l n="13">alle acclivi approdò spiagge di Pallade</l>
+               <l n="14">e a questo suolo, ed al Parnaso giunse.</l>
+               <l n="15">Scorta gli fanno, e grande onore, e innanzi</l>
+               <l n="16">gli schiudono la via, gli Atenïesi</l>
+               <l n="17">figli d'Efesto, e la selvaggia terra</l>
+               <l n="18">rendono pervia.</l>
+               <l n="19">E come ei giunge, il popolo</l>
+            </lg>
+         </sp>
+        <pb n="206"/>
+        <lg n="15-19">
+            <l n="20">assai l'onora, e il re che questa terra</l>
+            <l n="21">governa, Delfo.</l>
+            <l n="22">E Giove a lui fatidica</l>
+            <l n="23">mente concesse ; e quarto, in questo trono,</l>
+            <l n="24">dei vaticinî re lo fece; onde ora</l>
+            <l n="25">è profeta di Giove il Nume ambiguo.</l>
+         </lg>
+        <lg n="20-29">
+            <l n="26">Le prime preci a questi Numi salgano.</l>
+            <l n="27">Poscia il saluto a Pallade che siede</l>
+            <l n="28">innanzi al tempio io volgo, ed alle Ninfe</l>
+            <l n="29">ch'anno dimora nella cava rupe</l>
+            <l n="30">coricia, asilo ai Dèmoni, diletta</l>
+            <l n="31">agli aligeri; e Bromio ha quivi impero,</l>
+            <l n="32">non l'oblio, no, dal dí ch'egli fu duce</l>
+            <l n="33">alle Baccanti, ed a Pentèo la sorte</l>
+            <l n="34">feroce intorno, come a un lepre, strinse.</l>
+            <l n="35">E del Pleisto le fonti, e la possanza</l>
+            <l n="36">di Posídone invoco, e il sommo Giove:</l>
+            <l n="37">e, fatidica voce, il trono ascendo.</l>
+         </lg>
+        <lg n="30-33">
+            <l n="38">Ed ora a me fausto l'ingresso, quanto</l>
+            <l n="39">mai già non fu, concedano. E degli Elleni</l>
+            <l n="40">se alcuno è qui, traggan la sorte e avanzino:</l>
+            <l n="41">come il Dio guida, i vaticinî io dico.</l>
+         </lg>
+        <note>Entra nel tempio. Ma subito ne balza fuori esterrefatta, piomba
+            con le mani al suolo, e si trascina ancora uno o due passi
+            verso gli spettatori.</note>
+        <lg n="34-37">
+            <milestone unit="card" n="34" resp="Smyth"/><l n="42">Ahi! terribile a dire, e piú terribile</l>
+            <l n="43">a vederlo, mi scaccia uno spettacolo</l>
+            <l n="44">fuor dal tempio del Nume!</l>
+            <l n="45">Io non ho forze</l>
+            <l n="46">piú: non mi reggo piú: sovra le palme</l>
+            <l n="47">io mi trascino, e non sui piedi.</l>
+         </lg>
+        <lg n="38">
+            <l n="48">Nulla</l>
+            <l n="49">è una vecchia che teme, è come un pargolo!</l>
+         </lg>
+        <note>Rimane pochi momenti in silenzio.</note>
+        <pb n="207"/>
+        <lg n="39-45">
+            <l n="50">Ai penetrali e alle sacre bende</l>
+            <l n="51">m'accosto, e vedo sulla pietra un uomo</l>
+            <l n="52">supplice, sozzo d'un delitto: sangue</l>
+            <l n="53">stillano ancor le mani e il ferro ignudo;</l>
+            <l n="54">e stringe un ramo di montano ulivo,</l>
+            <l n="55">tutto avvolto di pii candidi bioccoli.</l>
+            <l n="56">È chiaro assai, ciò che finor v'ho detto.</l>
+         </lg>
+        <lg n="46-56">
+            <l n="57">Ma dinanzi a costui, sovressi i troni,</l>
+            <l n="58">sopito giace un mostruoso stuolo</l>
+            <l n="59">di femmine: non femmine, anzi Gòrgoni</l>
+            <l n="60">io le dirò: benchè, neppure a Gòrgoni</l>
+            <l n="61">le posso assimigliar, quali dipinte</l>
+            <l n="62">io le vidi a Finèo predar la mensa.</l>
+            <l n="63">Ma senz'ali son queste, e negre, e tutte</l>
+            <l n="64">lorde: con ammorbanti aliti russano,</l>
+            <l n="65">e sozze marce giú dai cigli colano.</l>
+            <l n="66">Né vesti pari a quelle ch'esse cingono</l>
+            <l n="67">tollerare saprian dei Numi gl'idoli,</l>
+            <l n="68">né tetti umani.</l>
+         </lg>
+        <lg n="57-59">
+            <l n="69">Io mai progenie simile</l>
+            <l n="70">non ho veduta, e non mi so qual terra</l>
+            <l n="71">glorïar si potrà ch'ebbe a nutrirle</l>
+            <l n="72">senza suo danno, senza averne a piangere.</l>
+         </lg>
+        <lg n="60-63">
+            <l n="73">Ma ciò che far si debba, il Nume ambiguo,</l>
+            <l n="74">il possente Signor di questo tempio,</l>
+            <l n="75">egli lo vede: ché indovino e vate</l>
+            <l n="76">medico, anche le altrui case purifica.</l>
+         </lg>
+        <note>La profetessa esce.</note>
+        <pb n="208"/>
+        <stage type="heading">PRIMO EPISODIO</stage>
+        <note>Si spalancano le porte del tempio, e, dinanzi all' ara d'Apollo,
+            si vede prostrato Oreste, che stringe la spada grondante di
+            sangue. D'intorno a lui sono le Furie sdraiate e addormentate.
+            Quasi subito, presso a lui, compare Apollo.</note>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="64-73">
+               <milestone unit="card" n="64" resp="Smyth"/><l n="77">lo non ti tradirò. Presso o lontano,</l>
+               <l n="78">t'assisterò sino alla fine, e mite</l>
+               <l n="79">mai non sarò per gl'inimici tuoi.</l>
+               <l n="80">Vedi che queste Furie infine ho colte:</l>
+               <l n="81">giaccion nel sonno le odïose vergini,</l>
+               <l n="82">le antiche figlie della notte, a cui</l>
+               <l n="83">non dei Superi alcuno e non degli uomini</l>
+               <l n="84">né fiera alcuna mescesi.</l>
+               <l n="85">Ministre</l>
+               <l n="86">qui di ruina vennero: ché pure</l>
+               <l n="87">sotto la terra, in ruinosa tenebra,</l>
+               <l n="88">han dimora, nel Tartaro; e degli uomini</l>
+               <l n="89">le aborrisce la stirpe e degli Olimpî.</l>
+            </lg>
+            <lg n="74-80">
+               <l n="90">Ma pur, tu fuggi, e non fiaccarti: ch'esse</l>
+            </lg>
+         </sp>
+        <pb n="209"/>
+        <lg n="75-80">
+            <l n="91">t'inseguiranno; o sia che tu per vasti</l>
+            <l n="92">piani sospinga l'errabondo piede,</l>
+            <l n="93">o su le popolose isole e il pelago :</l>
+            <l n="94">né sostener questa fatica stanco</l>
+            <l n="95">te renda.</l>
+            <l n="96">E giunto alla città di Pàllade,</l>
+            <l n="97">posa, e l'antico simulacro abbraccia.</l>
+         </lg>
+        <lg n="81-84">
+            <l n="98">Quivi saranno giudici e ragioni</l>
+            <l n="99">per farli miti; e spedïenti avrò</l>
+            <l n="100">che te per sempre dagli affanni sciolgano:</l>
+            <l n="101">ché io t'indussi a uccidere tua madre.</l>
+         </lg>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="85-87">
+               <l n="102">O sire Apollo, essere giusto sai.</l>
+               <l n="103">Poi che sai questo, sappi anche esser memore.</l>
+               <l n="104">La potenza d'oprare è in te ben salda.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="88-93">
+               <l n="105">Ricorda! Né terror ti vinca l'anima.</l>
+               <l n="106">Ermete, e tu ch'ài padre il padre mio,</l>
+               <l n="107">come, o fratello, il nome tuo pur suona,</l>
+               <l n="108">sii custode, sii guida a questo supplice</l>
+               <l n="109">mio, sii pastore.</l>
+               <l n="110">Giove stesso onora,</l>
+               <l n="111">quando la sorte ad essi arride, i supplici.</l>
+            </lg>
+         </sp>
+        <note>Oreste fugge, Apollo sparisce. Subito appare l'ombra
+            di Clitennestra, e si rivolge alle Furie.</note>
+        <sp>
+            <speaker>CLITENNESTRA</speaker>
+            <lg n="94-95">
+               <milestone unit="card" n="94" resp="Smyth"/><l n="112">Ehi là! Dormite? E che bisogno ho io</l>
+               <l n="113">di sonnacchiose?</l>
+               <l n="114">Perché m'offendete</l>
+            </lg>
+         </sp>
+        <pb n="210"/>
+        <lg n="95-102">
+            <l n="115">cosí?</l>
+            <l n="116">Perché questa diversa legge?</l>
+            <l n="117">Neppur fra i morti, poi che morte diedi,</l>
+            <l n="118">evito io l'onta, ed erro in turpe bando:</l>
+            <l n="119">ahi!, triste taccia, vi so dir, mi dànno!</l>
+            <l n="120">Ma il male ch'io patii dai miei piú prossimi,</l>
+            <l n="121">che fui sgozzata per man di mio figlio,</l>
+            <l n="122">nessun dei Numi pensa a vendicarmene.</l>
+         </lg>
+        <lg n="103-105">
+            <l n="123">Queste mie piaghe l'animo tuo scorga:</l>
+            <l n="124">pupille acute ha l'animo nel sonno,</l>
+            <l n="125">anche se desto poco lungi vede.</l>
+         </lg>
+        <lg n="106-113">
+            <l n="126">Eppur molti lambiste, ed io v'infusi,</l>
+            <l n="127">libamenti di pure acque e di miele ;</l>
+            <l n="128">e v'imbandii presso la sacra fiamma</l>
+            <l n="129">notturne àgapi, quando eran deserte</l>
+            <l n="130">l'are d'ogni altro Nume.</l>
+            <l n="131">E tutto ciò</l>
+            <l n="132">ora lo veggo sotto i pie' calpesto.</l>
+            <l n="133">E colui v'ha deluse, e fugge, simile</l>
+            <l n="134">a cerbiatto:</l>
+            <l n="135">di mezzo alle reti, agile</l>
+            <l n="136">via si lanciò, di voi si prese gioco.</l>
+         </lg>
+        <lg n="114-116">
+            <l n="137">Udite, dunque:</l>
+            <l n="138">ch'io vi parlo, inferme</l>
+            <l n="139">Dive, con tutta l'anima: destatevi:</l>
+            <l n="140">io nel sonno vi chiamo, io Clitennestra.</l>
+         </lg>
+        <sp>
+            <speaker>FURIE</speaker>
+            <lg n="117">
+               <l n="141">Russano.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CLITENNESTRA</speaker>
+            <lg n="118-119">
+               <l n="142">Voi russate, e quell'uom fugge, è lontano:</l>
+               <l n="143">ché non son pari ai miei gli amici suoi !</l>
+            </lg>
+         </sp>
+        <pb n="211"/>
+        <sp>
+            <speaker>FURIE</speaker>
+            <lg n="120">
+               <l n="144">Russano.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CLITENNESTRA</speaker>
+            <lg n="121-122">
+               <l n="145">Troppo dormi, e di me non ti dài cura;</l>
+               <l n="146">e Oreste, quei che uccise me, s'invola.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIE</speaker>
+            <lg n="123">
+               <l n="147">Russano.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CLITENNESTRA</speaker>
+            <lg n="124-125">
+               <l n="148">Sonnecchi, russi? Non ti desti? Sbrígati!</l>
+               <l n="149">Non sai tu dunque fare altro che mali?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIE</speaker>
+            <lg n="126">
+               <l n="150">Russano.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CLITENNESTRA</speaker>
+            <lg n="127-128">
+               <l n="151">Stanchezza e sonno insieme congiurarono,</l>
+               <l n="152">e la forza alla fiera idra fiaccarono.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIE</speaker>
+            <lg n="130">
+               <l n="153">Ghermisci, ghermisci, ghermisci, ghermisci!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CLITENNESTRA</speaker>
+            <lg n="131-134">
+               <milestone unit="card" n="131" resp="Smyth"/><l n="154">La fiera in sogno insegui, e al par di cane</l>
+               <l n="155">che mai la caccia non oblia, tu mugoli.</l>
+               <l n="156">Sorgi, che fai? Stanchezza non t'abbatta!</l>
+            </lg>
+         </sp>
+        <pb n="212"/>
+        <lg n="134-139">
+            <l n="157">Vedi il tuo smacco! Non t'afflosci il sonno!</l>
+            <l n="158">Le mie giuste rampogne il cuor ti cruccino.</l>
+            <l n="159">Son le rampogne, per chi senno ha, pungoli.</l>
+            <l n="160">Sopra lui soffia il tuo fiato sanguineo,</l>
+            <l n="161">consumalo con l'alito, col fuoco</l>
+            <l n="162">dei tuoi visceri, ancora inseguilo, ardilo!</l>
+         </lg>
+        <sp>
+            <speaker>FURIA I</speaker>
+            <note>Si desta, e scuote una compagna.</note>
+            <lg n="140">
+               <l n="163">Svégliati! E sveglia quella, io sveglio questa.</l>
+            </lg>
+            <note>Ne scuote un'altra.</note>
+            <lg n="141-142">
+               <l n="164">Dormi? Déstati, dunque, e al sonno càlcitra:</l>
+               <l n="165">vediam se il sonno fu vano preludio.</l>
+            </lg>
+         </sp>
+        <note>Le Furie si destano una dopo l'altra.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="choral"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>FURIA II</speaker>
+                  <lg n="143">
+                     <milestone unit="card" n="143" resp="Smyth"/><l n="166">Ahimè, che smacco soffrimmo, compagne !</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>FURIA III</speaker>
+                  <lg n="144">
+                     <l n="167">Ahimè, travaglio che invano ho durato!</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>FURIA IV</speaker>
+                  <lg n="145-146">
+                     <l n="168">Ahi quale affronto, che male insoffribile</l>
+                     <l n="169">dobbiamo plorare!</l>
+                  </lg>
+               </sp>
+        <pb n="213"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>FURIA V</speaker>
+                  <lg n="147">
+                     <l n="170">Da le reti balzò, fugge la fiera!</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>FURIA VI</speaker>
+                  <lg n="148">
+                     <l n="171">Vinta dal sonno, perduta ho la preda.</l>
+                  </lg>
+               </sp>
+        <note>Le Furie si aggruppano in due semicori
+               intorno all'altare di Apollo.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>FURIA II</speaker>
+                  <lg n="149">
+                     <milestone unit="card" n="149" resp="Smyth"/><l n="172">Figlio di Giove, ben tu sei furace.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>FURIA III</speaker>
+                  <lg n="150">
+                     <l n="173">Le antiche Dive, calpesti tu giovine!</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>FURIA IV</speaker>
+                  <lg n="151-153">
+                     <l n="174">Benigno al supplice, all'uom senza Iddio,</l>
+                     <l n="175">funesto ai parenti,</l>
+                     <l n="176">un matricida, tu, Nume, hai salvato.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>FURIA V</speaker>
+                  <lg n="154">
+                     <l n="177">Chi potrà dire che giusta è tale opera ?</l>
+                  </lg>
+               </sp>
+        <pb n="214"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>SEMICORO I</speaker>
+                  <lg n="155-161">
+                     <milestone unit="card" n="155" resp="Smyth"/><l n="178">Una rampogna nel sogno giunse,</l>
+                     <l n="179">come l'auriga che a mezzo il pungolo</l>
+                     <l n="180">stringe; ed il fegato</l>
+                     <l n="181">mi batte, e l'anima.</l>
+                     <l n="182">Sotto il flagello</l>
+                     <l n="183">del reo carnefice,</l>
+                     <l n="184">un gelo un brivido ghiaccio m'assidera.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>SEMICORO II</speaker>
+                  <lg n="162-167">
+                     <milestone unit="card" n="162" resp="Smyth"/><l n="185">Tali, dei nuovi Numi le gesta.</l>
+                     <l n="186">Contro Giustizia tengono un seggio</l>
+                     <l n="187">che tutto or gemica</l>
+                     <l n="188">grumi sanguinei.</l>
+                     <l n="189">Contaminata</l>
+                     <l n="190">la sacra pietra</l>
+                     <l n="191">scorgi dall'orride macchie del sangue.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>SEMICORO I</speaker>
+                  <lg n="169-172">
+                     <milestone unit="card" n="169" resp="Smyth"/><l n="192">Ei, ch'è pur vate, con brama spontanea,</l>
+                     <l n="193">bruttava i recessi fatidici</l>
+                     <l n="194">di macchia domestica;</l>
+                     <l n="195">e, contro le leggi dei Superi,</l>
+                     <l n="196">le Norme antichissime</l>
+                     <l n="197">struggeva, ad onor d'un effimero.</l>
+                  </lg>
+               </sp>
+        <pb n="215"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                  <speaker>SEMICORO II</speaker>
+                  <lg n="174-177">
+                     <milestone unit="card" n="174" resp="Smyth"/><l n="198">A me diviene odïoso: né libero</l>
+                     <l n="199">sarà che mai renda quell'empio,</l>
+                     <l n="200">se pur fra le tènebre.</l>
+                     <l n="201">del suolo fuggisse.</l>
+                     <l n="202">È colpevole :</l>
+                     <l n="203">a lui nuovo Dèmone</l>
+                     <milestone unit="card" n="178" resp="Smyth"/><l n="204">piombare dovrebbe sul cérebro.</l>
+                  </lg>
+               </sp>
+        <pb n="216"/>
+        <stage type="heading">SECONDO EPISODIO</stage>
+        <note>Improvvisamente appare</note>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="179-184">
+               <l n="205">Via di qui, ve l'impongo, uscite súbito,</l>
+               <l n="206">abbandonate questo antro fatidico,</l>
+               <l n="207">sí che la scintillante alata serpe</l>
+               <l n="208">non si lanci su te dall'aurea corda,</l>
+               <l n="209">e tu non debba, per l'algor, dai visceri</l>
+               <l n="210">negra spuma cacciar, vomendo i grumi</l>
+               <l n="211">che sorbisti, di strage.</l>
+            </lg>
+            <lg n="185-190">
+               <l n="212">A queste case</l>
+               <l n="213">tu non devi il tuo pie' volger; ma dove</l>
+               <l n="214">si mozzan capi e forano pupille</l>
+               <l n="215">con giudizi cruenti, ove dei pargoli</l>
+               <l n="216">si offende il boccio e si distrugge il seme,</l>
+               <l n="217">dove si muor sotto le pietre, o gente</l>
+               <l n="218">supina, ai pali infissa, ulula e mugola.</l>
+            </lg>
+            <lg n="191-192">
+               <l n="219">E perché, l'intendete ?, a voi dilette</l>
+               <l n="220">son tali feste, i Numi v'aborriscono.</l>
+            </lg>
+         </sp>
+        <pb n="217"/>
+        <lg n="192-195">
+            <l n="221">E all'esser vostro ben la forma addicesi.</l>
+            <l n="222">D'un lion sanguinario a voi conviene</l>
+            <l n="223">cercare l'antro; e gli opulenti oracoli</l>
+            <l n="224">non insozzar con la lordura vostra.</l>
+         </lg>
+        <lg n="196-197">
+            <l n="225">Su via, senza pastore uscite a branco:</l>
+            <l n="226">ché niun dei Numi amico è di tal gregge!</l>
+         </lg>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="198-200">
+               <l n="227">Ascoltami a tua volta, o sire Apollo.</l>
+               <l n="228">Complice tu non sei di tal delitto :</l>
+               <l n="229">solo tu lo compiesti, e n'hai la colpa.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="201">
+               <l n="230">Come? Piú a lungo questo punto spiegami!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="202">
+               <l n="231">L'uom tu spingesti a uccidere sua madre.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="203">
+               <l n="232">Il padre a vendicar l'indussi! Ebbene ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="204">
+               <l n="233">Del nuovo scempio poi t'offristi a tergerlo.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="205">
+               <l n="234">E l'indussi a scampare entro il mio tempio.</l>
+            </lg>
+         </sp>
+        <pb n="218"/>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="206">
+               <l n="235">E noi che l'inseguiam perché vituperi ?…..</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="207">
+               <l n="236">In questa casa entrar non v'è concesso.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="208">
+               <l n="237">Pure è questo per noi prefisso debito.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="209">
+               <l n="238">Quale? Di' questo tuo gran privilegio!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="210">
+               <l n="239">Via dalle case i matricidi spingere.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="211">
+               <l n="240">Pur se la madre il suo consorte uccise?...</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="212">
+               <l n="241">Non si macchiò di consanguinea strage.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="213-216">
+               <milestone unit="card" n="213" resp="Smyth"/><l n="242">Priva è d'onore, è nulla già la fede</l>
+               <l n="243">di Giove e d'Era pronuba!</l>
+               <l n="244">Bandita</l>
+               <l n="245">va per i detti tuoi, spregiata Cipride,</l>
+            </lg>
+         </sp>
+        <pb n="219"/>
+        <lg n="216-218">
+            <l n="246">onde hanno ogni maggior dolcezza gli uomini:</l>
+            <l n="247">ché il sacro letto cui Giustizia vigila,</l>
+            <l n="248">per la donna, per l'uom, val piú che giuro.</l>
+         </lg>
+        <lg n="219-223">
+            <l n="249">Ora, se tanto indulgi a chi die' morte</l>
+            <l n="250">al suo consorte, che tu non lo vendichi.</l>
+            <l n="251">che all'ira tua non la fai segno, io dico</l>
+            <l n="252">che non a dritto Oreste ora perseguiti.</l>
+            <l n="253">Ché tu per uno scempio assai t'adiri,</l>
+            <l n="254">per l'altro sei palesemente mite.</l>
+         </lg>
+        <lg n="224">
+            <l n="255">Ma ciò ch'è giusto, vedrà bene Pallade!</l>
+         </lg>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="225">
+               <l n="256">Mai non sarà che di cacciarlo io resti!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="226">
+               <l n="257">Caccialo! Aggiungi travaglio a travaglio.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="227">
+               <l n="258">Non scemar, coi tuoi detti, il mio diritto!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="228">
+               <l n="259">Godere i tuoi diritti, io non vorrei !</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="229-231">
+               <l n="260">Grande sei tu, tu presso a Giove siedi.</l>
+               <l n="261">Ma la materna strage grida, e insegue</l>
+               <l n="262">come un cane, quest'uomo, a la vendetta.</l>
+            </lg>
+         </sp>
+        <pb n="220"/>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="232-234">
+               <l n="263">Ed io proteggo, io farò salvo il supplice!</l>
+               <l n="264">Su l'uom, sul Nume che tradisce un supplice,</l>
+               <l n="265">né v'è costretto, incombe alta vendetta.</l>
+            </lg>
+         </sp>
+        <note>Apollo da una parte, le Furie dall' altra,
+            lasciano la scena.</note>
+        <pb n="221"/>
+        <stage type="heading">SECONDA PARTE</stage>
+        <note>La scena è in Atene, dinanzi al tempio d'Atena Poliade. Al
+            principio di questa seconda parte, giunge Oreste, e si prostra di-
+            nanzi al simulacro della Dea.</note>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="235-243">
+               <l n="266">Atena Dea, per gli ordini di Febo</l>
+               <l n="267">giungo: il fuggiasco accogli tu benevola:</l>
+               <l n="268">ch'io non impuro, né con le man' sozze,</l>
+               <l n="269">ma innocuo già, purificato già</l>
+               <l n="270">in altre case, in altri umani tramiti,</l>
+               <l n="271">attraversando e terre e mari, docile</l>
+               <l n="272">ai fatidici mòniti d'Apollo,</l>
+               <l n="273">giungo al tuo tempio; e al simulacro tuo</l>
+               <l n="274">strettomi, aspetto dal giudizio il fine.</l>
+            </lg>
+         </sp>
+        <note>Irrompono nell'orchestra le Furie, cercando, fiutando il suolo,
+            come una canea in traccia della preda.</note>
+        <pb n="222"/>
+        <sp>
+            <speaker>FURIA I</speaker>
+            <lg n="244-245">
+               <l n="275">Ecco! Un palese indizio del fuggiasco.</l>
+               <l n="276">Segui le tracce della muta guida !</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA II</speaker>
+            <lg n="246-247">
+               <l n="277">Come canea su ferito cerbiatto</l>
+               <l n="278">moviamo dietro le stille di sangue.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA III</speaker>
+            <lg n="248-251">
+               <l n="279">Seguir quest'uomo assai mi fiacca; ed ansima</l>
+               <l n="280">il mio polmone: ch'errai della terra</l>
+               <l n="281">per ogni luogo, lo cercai, volando</l>
+               <l n="282">sul mar, senz'ali, al par di nave rapida.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA IV</speaker>
+            <lg n="252-253">
+               <l n="283">Ed ora, certo, egli è nascosto qui:</l>
+               <l n="284">ché mi conforta odor d'umano sangue.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA I</speaker>
+            <lg n="254-257">
+               <milestone unit="card" n="254" resp="Smyth"/><l n="285">Cerca, su, cerca per tutto, ed investiga</l>
+               <l n="286">ché il matricida non fugga impunito!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA II</speaker>
+            <lg n="258-260">
+               <l n="287">Bene ei trovò soccorso!</l>
+               <l n="288">Strettosi all'idolo sacro d'Atena,</l>
+               <l n="289">chiede giudizio del sangue versato.</l>
+            </lg>
+         </sp>
+        <pb n="223"/>
+        <sp>
+            <speaker>FURIA III</speaker>
+            <lg n="261-263">
+               <l n="290">Ma lecito non è: non si riscatta</l>
+               <l n="291">il sangue materno che al suolo</l>
+               <l n="292">stillava effuso, che bagna la terra.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA IV</speaker>
+            <lg n="264-266">
+               <l n="293">No: dalle membra ancor vive, tu devi</l>
+               <l n="294">l'epula offrirci di rosso libame:</l>
+               <l n="295">nelle tue vene convien ch'io m'abbeveri.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA I</speaker>
+            <lg n="267-268">
+               <l n="296">Vivo t'emacierò, ti condurrò</l>
+               <l n="297">ad espiare la colpa, tra gl'Inferi.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA II</speaker>
+            <lg n="269-272">
+               <l n="298">Qui tu vedrai chiunque altri degli uomini</l>
+               <l n="299">peccò, facendo ingiuria</l>
+               <l n="300">ai Numi, agli ospiti, ai suoi genitori,</l>
+               <l n="301">ciascuno avendo la débita pena.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA III</speaker>
+            <lg n="273-275">
+               <l n="302">Che l'Ade v'è sotto la terra, giudice</l>
+               <l n="303">solenne dei mortali,</l>
+               <l n="304">che nella mente tutto scrive, e vigila.</l>
+            </lg>
+         </sp>
+        <note>Le Furie si aggruppano intorno all'altare di Diòniso.</note>
+        <pb n="224"/>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="276-279">
+               <milestone unit="card" n="276" resp="Smyth"/><l n="305">Dalle sciagure ammaestrato, appresi</l>
+               <l n="306">ciò che convenga in ogni evento; e so</l>
+               <l n="307">quando parlar convien, quando il silenzio.</l>
+               <l n="308">Saggio maestro or favellar m'impone.</l>
+            </lg>
+            <lg n="280-285">
+               <l n="309">Langue su la mia man, si strugge il sangue :</l>
+               <l n="310">del matricidio la recente macchia</l>
+               <l n="311">lavata è già con sangue espiatorio</l>
+               <l n="312">presso l'ara del Dio fu cancellata :</l>
+               <l n="313">lungo sarebbe annoverare quanti</l>
+               <l n="314">contatto ebbero meco, e illesi andarono.</l>
+            </lg>
+            <lg n="287-291">
+               <l n="315">E santamente e con pio labbro, adesso</l>
+               <l n="316">chiamo la Dea di questa terra, Atena,</l>
+               <l n="317">che a soccorrermi giunga. Ella, senz'armi,</l>
+               <l n="318">e me stesso e la terra e il popol d'Argo</l>
+               <l n="319">fido alleato ognor guadagnerà.</l>
+            </lg>
+            <lg n="292-298">
+               <l n="320">O sia che tu ne le contrade libiche</l>
+               <l n="321">su'l fluviale tramite tritonio</l>
+               <l n="322">che ti die' vita, a sostener gli amici,</l>
+               <l n="323">o nascosto o palese il piede avanzi,</l>
+               <l n="324">o sia che, ardita guidatrice, vigili</l>
+               <l n="325">con virile saldezza il pian di Flegra,</l>
+               <l n="326">tu, che sei Dea, che pur da lungi m'odi,</l>
+               <l n="327">amami, e me da queste pene salva.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>FURIA I</speaker>
+            <lg n="299-302">
+               <milestone unit="card" n="299" resp="Smyth"/><l n="328">Apollo non potrà, non la possanza</l>
+               <l n="329">potrà d'Atena farti salvo.</l>
+               <l n="330">Andrai</l>
+            </lg>
+         </sp>
+        <pb n="225"/>
+        <lg n="301-306">
+            <l n="331">randagio, né mai piú pace saprai !</l>
+            <l n="332">Ombra vagante, esangue epula, ai Démoni</l>
+            <l n="333">tu non rispondi, i detti miei tu spregi,</l>
+            <l n="334">tu sacro a me.</l>
+            <l n="335">Sarai la mia pastura,</l>
+            <l n="336">non su l'ara sgozzato, anzi ancor vivo;</l>
+            <l n="337">e udrai quest'inno che t'allacci e affascini!</l>
+         </lg>
+        <pb n="226"/>
+        <stage type="heading">PRIMO CANTO INTORNO ALL'ARA</stage>
+        <milestone unit="textpart" resp="Romagnoli" subtype="choral"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="anapests"/>
+        <sp>
+                  <speaker>FURIA II</speaker>
+                  <lg n="307-320">
+                     <milestone unit="card" n="307" resp="Smyth"/><l n="338">Su via, dunque, la danza s'intrecci,</l>
+                     <l n="339">poiché la ferale</l>
+                     <l n="340">canzone vogliamo intonare,</l>
+                     <l n="341">e dire la sorte che agli uomini</l>
+                     <l n="342">comparte la nostra congrega.</l>
+                     <l n="343">Ci vantiam di seguire Giustizia.</l>
+                     <l n="344">Chi pure ha le mani,</l>
+                     <l n="345">nessuna vendetta</l>
+                     <l n="346">spirata da noi su lui repe,</l>
+                     <l n="347">e illeso trascorre sua vita.</l>
+                     <l n="348">Ma se un reo, come l'uomo ch'or fugge,</l>
+                     <l n="349">nasconde le mani cruente,</l>
+                     <l n="350">noi, vindici giuste a chi cadde,</l>
+                     <l n="351">dinanzi apparendogli,</l>
+                     <l n="352">del sangue il riscatto esigiamo.</l>
+                  </lg>
+               </sp>
+        <pb n="227"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="321-327">
+                     <milestone unit="card" n="321" resp="Smyth"/><l n="353">O mia madre, o tu che m'hai</l>
+                     <l n="354">generata, Notte madre,</l>
+                     <l n="355">a punir vivi e defunti,</l>
+                     <l n="356">tu m'ascolta:</l>
+                     <l n="357">ch'ora Febo</l>
+                     <l n="358">me d'ogni onore priva, e m'invola</l>
+                     <l n="359">questo fuggiasco, che la sua madre</l>
+                     <l n="360">scannò, ch'è sozzo di sangue ancora!</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="ephymn" n="1"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="328-333">
+                     <milestone unit="card" n="328" resp="Smyth"/><l n="361">Sopra la vittima questa mia nenia</l>
+                     <l n="362">dissennatrice, folle, delira,</l>
+                     <l n="363">quest'inno delle Furie,</l>
+                     <l n="364">che avvince gli animi, che strugge gli uomini,</l>
+                     <l n="365">schivo di lira.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="334-340">
+                     <milestone unit="card" n="334" resp="Smyth"/><l n="366">Tale a noi perenne cómpito</l>
+                     <l n="367">die' la Parca inesorabile:</l>
+                     <l n="368">al mortale temerario</l>
+                     <l n="369">che le man' di strage macchia,</l>
+                     <l n="370">sempre seguire le sue vestigia,</l>
+                     <l n="371">sin che la terra non lo ricopra ;</l>
+                     <l n="372">né dopo morto libero è ancora.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="ephymn" n="1"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="341-346">
+                     <milestone unit="card" n="341" resp="Smyth"/><l n="373">Sopra la vittima, questa mia nenia</l>
+                     <l n="374">dissennatrice, folle, delira,</l>
+                     <l n="375">quest'inno de le Furie</l>
+                     <l n="376">che avvince gli animi, che strugge gli uomini,</l>
+                     <milestone unit="card" n="347" resp="Smyth"/><l n="377">schivo di lira.</l>
+                  </lg>
+               </sp>
+        <pb n="228"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="349-352">
+                     <l n="378">Quando nascemmo, tal sorte per noi stabiliva il Destino:</l>
+                     <l n="379">lontane tenere le mani dai Superi: Nume non v'è</l>
+                     <l n="380">che meco la mensa partecipi.</l>
+                     <l n="381">Candide vesti indossare mi negano il Fato e la Sorte:</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="354-359">
+                     <milestone unit="card" n="354" resp="Smyth"/><l n="382">ch'io m'elessi la rovina</l>
+                     <l n="383">delle case, allor che Marte</l>
+                     <l n="384">entro i letti ov'ha l'amico</l>
+                     <l n="385">nido, compie amica strage.</l>
+                     <l n="386">Sopra questo ci avventiamo,</l>
+                     <l n="387">e per quanto sia gagliardo,</l>
+                     <l n="388">l'abbattiam con nuovo sangue.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="360-362">
+                     <milestone unit="card" n="360" resp="Smyth"/><l n="389">Altri cosí, mercè nostra, di simile cura va sgombro.</l>
+                     <milestone unit="card" n="354a" resp="Smyth"/><l n="390">Orecchio a le preci che a me si volgono, i Numi non prestino,</l>
+                     <l n="391">né l'opera nostra inquisiscano.</l>
+                  </lg>
+               </sp>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="365-367">
+                     <l n="392">Giove di motto non degna la gente odïosa che sangue</l>
+                     <l n="393">da le man' stilla: io rovino,</l>
+                     <l n="394">le lor case, allor che Marte</l>
+                     <l n="395">entro i letti ov'ha tranquillo</l>
+                     <l n="396">nido, compie amica strage.</l>
+                     <l n="397">Sopra questo ci avventiamo,</l>
+                     <l n="398">e per quanto sia gagliardo,</l>
+                     <l n="399">l'abbattiam con nuovo sangue.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="368-371">
+                     <milestone unit="card" n="368" resp="Smyth"/><l n="400">Anche se giungono al cielo, la fama, la gloria degli uomini,</l>
+                     <l n="401">cadono al suolo disfatte, deserte d'onore,</l>
+                  </lg>
+               </sp>
+        <pb n="229"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="370-371">
+                     <l n="402">quando avanziamo recinte dai lividi pepli,</l>
+                     <l n="403">e batte l'infesto mio piede la danza.</l>
+                  </lg>
+                  <lg n="372-376">
+                     <milestone unit="card" n="372" resp="Smyth"/><l n="404">Con un gran lancio dall'alto io piombo,</l>
+                     <l n="405">e l'orma somma del mio pie' gravo</l>
+                     <l n="406">sopra i fuggiaschi, gravo a sterminio</l>
+                     <l n="407">le membra, e infliggo la trista sorte.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="377-380">
+                     <milestone unit="card" n="377" resp="Smyth"/><l n="408">Né chi rovina, nel turpe delirio, del crollo s'avvede :</l>
+                     <l n="409">come caligine attorno lo scempio gli svola;</l>
+                     <l n="410">e la lor misera fama, sovr'esse le case</l>
+                     <l n="411">addensa fra lagrime le tenebre cieche.</l>
+                  </lg>
+                  <lg n="372a-376a">
+                     <l n="412">Con un gran lancio dall'alto io piombo,</l>
+                     <l n="413">e l'orma somma del mio pie' gravo</l>
+                     <l n="414">sopra i fuggiaschi, gravo a sterminio</l>
+                     <l n="415">le membra, e infliggo la trista sorte.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="4"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="381-388">
+                     <milestone unit="card" n="372a" resp="Smyth"/><l n="416">Questa è la nostra legge,</l>
+                     <milestone unit="card" n="381" resp="Smyth"/><l n="417">e al nostro fine agevoli</l>
+                     <l n="418">troviamo i mezzi. Memori</l>
+                     <l n="419">e severe ai mortali, e inesorabili,</l>
+                     <l n="420">senza onore né pregio,</l>
+                     <l n="421">viviam lunge dai Numi,</l>
+                     <l n="422">dove non s'apre tramite</l>
+                     <l n="423">né ai vivi, né ai defunti, ove non brillano</l>
+                     <l n="424">giammai del sole i lumi.</l>
+                  </lg>
+               </sp>
+        <pb n="230"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="4"/>
+        <sp>
+                  <speaker>Coro</speaker>
+                  <lg n="389-396">
+                     <milestone unit="card" n="389" resp="Smyth"/><l n="425">Chi mai dunque fra gli uomini</l>
+                     <l n="426">non mi venera e teme,</l>
+                     <l n="427">udendo la mia norma</l>
+                     <l n="428">fatale, a cui concede esito il Dio?</l>
+                     <l n="429">L'antico privilegio</l>
+                     <l n="430">anche oggi in me perdura;</l>
+                     <l n="431">né priva andrà d'onore,</l>
+                     <l n="432">se pur sotto la terra io mi rifugio,</l>
+                     <l n="433">ne la tènebra oscura.</l>
+                  </lg>
+               </sp>
+        <pb n="231"/>
+        <stage type="heading">TERZO EPISODIO</stage>
+        <note>Giunge Atena.</note>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="397-402">
+               <milestone unit="card" n="397" resp="Smyth"/><l n="434">Da lungi udito ho de l'appello il suono,</l>
+               <l n="435">dallo Scamandro, ove la sede mia</l>
+               <l n="436">stabilita ho nel suol, che, parte eletta</l>
+               <l n="437">dei predati trofei, tutto a me sacro,</l>
+               <l n="438">per sempre, i duci e i prenci d'Argo vollero,</l>
+               <l n="439">e ai figli di Tesèo dono ne fecero.</l>
+            </lg>
+            <lg n="403-404">
+               <l n="440">Di lí spingendo il pie' mai stanco, giunsi</l>
+               <l n="441">senz'ali, e ai venti fremea gonfia l'egida.</l>
+            </lg>
+            <lg n="406-412">
+               <l n="442">Or, qui veggendo cosí nuova accolta,</l>
+               <l n="443">non temo io già, ma stupefatta resto.</l>
+               <l n="444">Chi siete mai? Lo chiedo a tutti. A questo</l>
+               <l n="445">che, straniero, all'idol mio si stringe,</l>
+               <l n="446">e a voi, disformi ad ogni essere nato,</l>
+               <l n="447">cui né mai tra le Dee videro i Numi,</l>
+               <l n="448">né somigliate alle parvenze umane.</l>
+            </lg>
+         </sp>
+        <pb n="232"/>
+        <lg n="413-414">
+            <l n="449">Ma rinfacciare apertamente altrui</l>
+            <l n="450">la sua deformità, non mi par giusto!</l>
+         </lg>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="415-417">
+               <l n="451">Figlia di Giove, in breve il tutto udrai.</l>
+               <l n="452">Noi della Notte siam le fiere figlie,</l>
+               <l n="453">Dire chiamate nelle inferne case.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="418">
+               <l n="454">Noti mi son la stirpe vostra e il nome.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="419">
+               <l n="455">E il nostro ufficio presto apprenderai.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="420">
+               <l n="456">L'apprenderò se me lo dice alcuno.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="421">
+               <l n="457">Dalle case scacciam qualunque ancide.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="422">
+               <l n="458">E dove trova di sua fuga il termine ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="423">
+               <l n="459">Dove per sempre ogni letizia è morta.</l>
+            </lg>
+         </sp>
+        <pb n="233"/>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="424">
+               <l n="460">Tale è la caccia che su costui gridi?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="425">
+               <l n="461">Egli sua madre assassinare ardí.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="426">
+               <l n="462">Né la furia teméa d'altra pressura ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="427">
+               <l n="463">Pungol non v'ha, che al matricidio astringa!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="428">
+               <l n="464">Son due le parti, e solo una parlò.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="429">
+               <l n="465">Ei non può dare il giuro, né riceverlo!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="430">
+               <l n="466">Più che oprar giusto, averne fama brami!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="431">
+               <l n="467">Dimmi il perché, saggezza a te non manca.</l>
+            </lg>
+         </sp>
+        <pb n="234"/>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="432">
+               <l n="468">Far non può il giuro che trionfi il falso.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="433">
+               <l n="469">Chiedi le prove, e tu la lite giudica.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="434">
+               <l n="470">Dunque il giudizio rimettete a me.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="435">
+               <l n="471">Come no? Ti prestiamo l'onor debito.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="436-442">
+               <milestone unit="card" n="436" resp="Smyth"/><l n="472">E tu, che cosa opporre, ospite, puoi ?</l>
+               <l n="473">Di' la tua patria, la progenie tua</l>
+               <l n="474">e le vicende, e dalle accuse scólpati,</l>
+               <l n="475">se fede hai pur nella giustizia, e siedi</l>
+               <l n="476">perciò, come Ission, supplice sacro</l>
+               <l n="477">vicino all'ara e al simulacro mio.</l>
+               <l n="478">Rispondi a tutto, e fa ch'io chiaro intenda.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="443-446">
+               <l n="479">O diva Atena, prima io dall'estreme</l>
+               <l n="480">parole tue, vo' tôrre un gran sospetto.</l>
+               <l n="481">Non giunsi qui contaminato.</l>
+               <l n="482">All'idolo</l>
+               <l n="483">tuo non m'assisi con le mani impure.</l>
+            </lg>
+         </sp>
+        <pb n="235"/>
+        <lg n="447-452">
+            <l n="484">E grande prova addurre io te ne posso.</l>
+            <l n="485">Muto convien che l'omicida resti,</l>
+            <l n="486">sin che del sangue d'un lattante verro</l>
+            <l n="487">altri, a espïar, non lo cosperga.</l>
+            <l n="488">Ed io,</l>
+            <l n="489">da lungo tempo già, presso altre case,</l>
+            <l n="490">presso altre genti, fui purificato.</l>
+         </lg>
+        <lg n="453">
+            <l n="491">Il tuo primo sospetto ecco rimosso.</l>
+         </lg>
+        <lg n="454-464">
+            <l n="492">Ed ora, sappi la progenie mia.</l>
+            <l n="493">lo sono d'Argo: è mio padre Agamènnone,</l>
+            <l n="494">signor dei navichieri, a te ben noto:</l>
+            <l n="495">ché tu con esso, ov'era la città</l>
+            <l n="496">d'llio, facesti la rovina.</l>
+            <l n="497">Ora, egli,</l>
+            <l n="498">tornato alla sua casa, trovò morte:</l>
+            <l n="499">ignobil morte: ché la torva madre</l>
+            <l n="500">mia, lo sgozzò, lo strinse entro una rete</l>
+            <l n="501">versicolore, testimone ancora</l>
+            <l n="502">dell'assassinio: e fu nel bagno.</l>
+            <l n="503">Ed io</l>
+            <l n="504">tornai, che prima andato era fuggiasco,</l>
+            <l n="505">ed uccisi mia madre, io non lo nego,</l>
+            <l n="506">e con la morte vendicai la morte</l>
+            <l n="507">del carissimo padre.</l>
+         </lg>
+        <lg n="465-467">
+            <l n="508">Ed è partecipe</l>
+            <l n="509">di questo scempio, Apollo: egli mi disse</l>
+            <l n="510">quali tormenti il cuor mio punto avrebbero</l>
+            <l n="511">se cosí non punivo i due colpevoli.</l>
+         </lg>
+        <lg n="468-469">
+            <l n="512">Se il giusto feci, se fallai, tu giudica:</l>
+            <l n="513">loderò, qual che sia, la tua sentenza.</l>
+         </lg>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="470-472">
+               <milestone unit="card" n="470" resp="Smyth"/><l n="514">Se alcuno v'è che troppo ardua tal causa</l>
+               <l n="515">pensa che sia da giudicarla gli uomini,</l>
+               <l n="516">neppure a me consento io stessa sciogliere</l>
+               <l n="517">d'un omicidio l'odiosa lite.</l>
+            </lg>
+         </sp>
+        <pb n="236"/>
+        <lg n="473-475">
+            <l n="518">Ché tu supplice giungi alla mia casa,</l>
+            <l n="519">purificato, innocuo, né può biasimo</l>
+            <l n="520">la città rinfacciarti, e debbo accoglierti.</l>
+         </lg>
+        <lg n="476-479">
+            <l n="521">Ma tali queste Dee son, che difficile</l>
+            <l n="522">è lo scacciarle; e ov'esse non trionfino,</l>
+            <l n="523">piombando al suol dai lor visceri, un tossico</l>
+            <l n="524">letal susciterà funereo morbo.</l>
+         </lg>
+        <lg n="480-481">
+            <l n="525">A questo punto or siam: né trattenerle</l>
+            <l n="526">né rimandarle senza lite io posso.</l>
+         </lg>
+        <lg n="482-484">
+            <l n="527">E poi che a ciò giunser gli eventi, giudici</l>
+            <l n="528">eleggerò, che sacra abbian la legge</l>
+            <l n="529">ch'eterna io renderò, del giuramento;</l>
+         </lg>
+        <lg n="485-486">
+            <l n="530">e voi le prove procacciate e i giuri</l>
+            <l n="531">e i testi onde ristoro abbia giustizia.</l>
+         </lg>
+        <lg n="487-489">
+            <l n="532">Ed io, dei cittadini il fiore eletto</l>
+            <l n="533">troverò: scioglieranno essi la lite,</l>
+            <l n="534">senza far torto insidioso al giuro.</l>
+         </lg>
+        <pb n="237"/>
+        <stage type="heading">SECONDO CANTO INTORNO ALL'ARA</stage>
+        <milestone unit="textpart" resp="Romagnoli" subtype="choral"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="490-503">
+                     <milestone unit="card" n="490" resp="Smyth"/><l n="535">Leggi novelle sconvolgeranno</l>
+                     <l n="536">la terra tutta, se questo scempio, se questa causa</l>
+                     <l n="537">del matricida trionferà.</l>
+                     <l n="538">Per tal sentenza, la man degli uomini</l>
+                     <milestone unit="card" n="499" resp="Smyth"/><l n="539">ad ogni eccesso trascorre immune.</l>
+                     <l n="540">Di vere piaghe dai figli aperte</l>
+                     <l n="541">la doglia incombe già sui parenti.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="504-516">
+                     <l n="542">La furia nostra, Mènadi vigili</l>
+                     <l n="543">sovra i mortali, nessun delitto piú colpirà.</l>
+                     <milestone unit="card" n="508" resp="Smyth"/><l n="544">Ogni destino volga a sua posta!</l>
+                     <l n="545">Narrando i mali dei lor vicini,</l>
+                     <l n="546">si chiederanno l'un l'altro un fàrmaco,</l>
+                     <l n="547">una difesa dai mali, ahi, miseri!,</l>
+                     <l n="548">dove consigli non son che vani!</l>
+                  </lg>
+               </sp>
+        <pb n="238"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="517-525">
+                     <milestone unit="card" n="517" resp="Smyth"/><l n="549">Bene è spesso che tra gli uomini</l>
+                     <l n="550">trovi luogo, e che degli animi</l>
+                     <l n="551">a custodia il timor segga:</l>
+                     <l n="552">non disdicono</l>
+                     <l n="553">a saggezza angusti freni.</l>
+                     <l n="554">Qual città, quale uomo credi</l>
+                     <l n="555">che potrà, se in cuore dramma</l>
+                     <l n="556">di timore non alberghi,</l>
+                     <l n="557">venerare la giustizia ?</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="526-537">
+                     <milestone unit="card" n="526" resp="Smyth"/><l n="558">Niuno ormai, se la sciagura</l>
+                     <l n="559">lo percuota, osi levare</l>
+                     <l n="560">piú le supplici parole:</l>
+                     <l n="561">O Giustizia,</l>
+                     <l n="562">e voi, troni dell'Erinni!</l>
+                     <l n="563">Leverà presto tal gemito</l>
+                     <l n="564">qualche padre, qualche madre</l>
+                     <l n="565">tormentata, poi che il tempio</l>
+                     <l n="566">di Giustizia crolla già.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="538-549">
+                     <milestone unit="card" n="538" resp="Smyth"/><l n="567">Non lodar vita servile,</l>
+                     <l n="568">né che sciolto abbia ogni freno.</l>
+                     <l n="569">Ogni possanza nel mezzo locar volle il Nume, che vigile</l>
+                     <l n="570">or qui l'occhio volge, ora altrove.</l>
+                     <l n="571">lo dico in verità,</l>
+                     <l n="572">ch'è Tracotanza figliuola d'Empiezza;</l>
+                     <pb n="239"/>
+                     <l n="573">ma dal pensier prudente</l>
+                     <l n="574">nasce Beatitudine,</l>
+                     <l n="575">diletta ad ogni gente.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="550-565">
+                     <milestone unit="card" n="550" resp="Smyth"/><l n="576">Sempre a te ripeto: « Próstrati</l>
+                     <l n="577">all'altare di Giustizia.</l>
+                     <l n="578">Né calpestarlo, per lucro che vegga, con piede sacrilego:</l>
+                     <l n="579">ché pronta la pena t'aspetta,</l>
+                     <milestone unit="card" n="558" resp="Smyth"/><l n="580">il destinato giorno.</l>
+                     <l n="581">Dunque, rispetta chi luce ti diede;</l>
+                     <l n="582">e se giunge al tuo tetto</l>
+                     <l n="583">a rifugiarsi un ospite,</l>
+                     <l n="584">abbi di lui rispetto.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="4"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="566-577">
+                     <milestone unit="card" n="566" resp="Smyth"/><l n="585">Chi, non costretto, la giustizia pratica,</l>
+                     <l n="586">mai non vivrà d'ogni fortuna privo,</l>
+                     <l n="587">mai non cadrà nell'ultima rovina.</l>
+                     <l n="588">Ma chi veleggia con opposti sensi,</l>
+                     <l n="589">molte recando, e mal raccolte prede,</l>
+                     <l n="590">dovrà col tempo, a forza,</l>
+                     <l n="591">raccogliere le vele,</l>
+                     <l n="592">allor che la procella</l>
+                     <l n="593">piomberà sopra la spezzata antenna.</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="4"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="578-584">
+                     <l n="594">Soccorso invoca allor, nell'invincibile</l>
+                     <l n="595">vortice chiuso, ma nessun l'ascolta;</l>
+                     <pb n="240"/>
+                     <l n="596">ché ride il Nume, allorché vede un empio</l>
+                     <l n="597">senza piú millantar, senza piú forza,</l>
+                     <l n="598">tra le iatture senza uscita, al culmine</l>
+                     <l n="599">piú non regger del flutto.</l>
+                     <l n="600">E l'antica fortuna,</l>
+                     <l n="601">di giustizia allo scoglio,</l>
+                     <l n="602">non pianta e non veduta, urta, e si fiacca.</l>
+                  </lg>
+               </sp>
+        <pb n="241"/>
+        <stage type="heading">QUARTO EPISODIO</stage>
+        <sp>
+            <speaker>ATENA</speaker>
+            <note>all'araldo</note>
+            <lg n="585-608">
+               <l n="603">Lancia l'appello, e frena, o araldo, il popolo.</l>
+               <l n="604">E la squillante búccina tirrena,</l>
+               <l n="605">sino al cielo, di vivo alito gonfia,</l>
+               <l n="606">l'acutissima voce alzi alla turba.</l>
+               <note>Si leva l'acutissimo squillo della tromba. Accorre tutto
+                  il popolo e riempie la scena.</note>
+               <l n="607">Poi che già piena è l'assemblea, conviene</l>
+               <l n="608">che silenzio vi regni, e Atene e i giudici</l>
+               <l n="609">queste mie leggi, ch'io sancisco eterne,</l>
+               <milestone unit="card" n="607" resp="Smyth"/><l n="610">odano, ed equa la sentenza diano.</l>
+            </lg>
+         </sp>
+        <note>Si presenta Apollo.</note>
+        <pb n="242"/>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="609-610">
+               <l n="611">Apollo re, nei tuoi dominî impera.</l>
+               <l n="612">Quale ufficio a te spetta in questa causa ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="611-619">
+               <l n="613">Testimonio qui giungo e n'ho diritto:</l>
+               <l n="614">ché al tempio mio, ché all'ara mia, già venne</l>
+               <l n="615">quest'uom supplice, ed io puro l'ho reso.</l>
+               <l n="616">E partecipe giungo: è mia la colpa</l>
+               <l n="617">del matricidio. Apri ora tu la causa,</l>
+               <l n="618">e giusta, come sai, dà la sentenza.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="620-621">
+               <l n="619">A voi parlare. Aperta è già la causa.</l>
+               <l n="620">Quegli che accusa, favellando primo,</l>
+               <l n="621">dirittamente i fatti ci esporrà.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="622-624">
+               <l n="622">Molte siam noi, ma parleremo brevi.</l>
+               <l n="623">E tu motto per motto a noi rispondi.</l>
+               <l n="624">Or di prima se tua madre uccidesti.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="625">
+               <l n="625">L'uccisi mai non negherò lo scempio.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="626">
+               <l n="626">Una delle tre prove è vinta già.</l>
+            </lg>
+         </sp>
+        <pb n="243"/>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="627">
+               <l n="627">Non millantar: caduto ancor non sono.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="628">
+               <l n="628">Or devi dire come l'uccidesti.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="629">
+               <l n="629">Stretta una spada, le tagliai la gola.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="630">
+               <l n="630">Istigato da chi? Chi vi t'indusse ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="631">
+               <l n="631">Dai responsi di Febo. Ei lo conferma.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="632">
+               <l n="632">T'indusse Apollo a uccidere tua madre ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="633">
+               <l n="633">Né della sorte mia fin qui mi lagno.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="634">
+               <l n="634">Altro presto dirai, se ti condannano.</l>
+            </lg>
+         </sp>
+        <pb n="244"/>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="635">
+               <l n="635">Non temo: il padre aiuta me dal tumulo.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="636">
+               <l n="636">Tu, matricida, hai fede nei defunti?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="637">
+               <l n="637">Di due misfatti la coprian le macchie.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="638">
+               <l n="638">Di due misfatti? Spiega questo ai giudici.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="639">
+               <l n="639">Mio padre uccise, e insiem lo sposo suo.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="640">
+               <milestone unit="card" n="640" resp="Smyth"/><l n="640">Ma tu sei vivo, e lei Morte fa libera.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="641">
+               <l n="641">Perché, mentre vivea, non l'inseguisti ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="642">
+               <l n="642">Non era, l'uom che uccise, consanguineo.</l>
+            </lg>
+         </sp>
+        <pb n="245"/>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="643">
+               <l n="643">E consanguineo di mia madre io sono?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="644-645">
+               <l n="644">O tristo, il sangue ch'é piú tuo, repudî:</l>
+               <l n="645">di tua madre, che in grembo ha te cresciuto.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="646-648">
+               <l n="646">Tu siimi teste, e tu dimostra, Apollo,</l>
+               <l n="647">se a buon diritto uccisi. Uccisa l'ho,</l>
+               <l n="648">non io lo nego. Ma se giusto fu,</l>
+               <l n="649">versare il sangue, o ingiusto, a tuo giudizio</l>
+               <l n="650">ora tu dimmi, ch'io lo dica a questi.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="649-657">
+               <l n="651">Il giusto a voi favellerò, d'Atene</l>
+               <l n="652">giuría suprema. Io, che profeta sono,</l>
+               <l n="653">non mentirò. Dal mio trono fatidico,</l>
+               <l n="654">né di città, né d'uomo, né di femmina</l>
+               <l n="655">nulla io non dissi mai, che Giove Olimpio</l>
+               <l n="656">nol m'imponesse. Ed or, persuadetevi</l>
+               <l n="657">quanto fu l'atto di costui legittimo,</l>
+               <l n="658">ed al voler del padre mio chinatevi :</l>
+               <l n="659">ché piú di Giove nessun giuro vale.</l>
+            </lg>
+         </sp>
+        <pb n="246"/>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="658-660">
+               <l n="660">T'esortò Giove, che ad Oreste dessi</l>
+               <l n="661">tal responso, tu dici? In nessun conto</l>
+               <l n="662">tener la madre, e vendicare il padre ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="661-673">
+               <l n="663">Ugual cosa non è, morire un uomo</l>
+               <l n="664">nobile, che lo scettro ebbe da Giove,</l>
+               <l n="665">e per man d'una donna, e non di freccia</l>
+               <l n="666">saettata da lungi, d'una Amazzone,</l>
+               <l n="667">ma, come udrete, o Dea Pàllade, e giudici,</l>
+               <l n="668">che dar dovrete in questa causa il voto.</l>
+               <l n="669">Come dal campo egli tornò, compiuta</l>
+               <l n="670">felicemente la gran gesta, quella,</l>
+               <l n="671">con dolci motti accoltolo, mentr'egli</l>
+               <l n="672">scendea nel bagno, gli stese d'attorno</l>
+               <l n="673">un manto; e stretto nel funereo laccio</l>
+               <l n="674">di screziato peplo, lo colpí.</l>
+               <l n="675">Del glorioso eroe tal fu la sorte,</l>
+               <l n="676">del condottiere delle navi; ed anche</l>
+               <l n="677">vi parlai della donna: il cuore, io penso</l>
+               <l n="678">s'indignerà di voi, prescelti giudici.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="674-676">
+               <milestone unit="card" n="674" resp="Smyth"/><l n="679">Giove, tu dici, ha piú riguardo ai padri ?</l>
+               <l n="680">Ed egli in lacci il vecchio Crono avvinse.</l>
+               <l n="681">Ché non esponi il fatto a questi giudici?</l>
+               <l n="682">A udirlo, o testimonî, io vi sollecito.</l>
+            </lg>
+         </sp>
+        <pb n="247"/>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="677-687">
+               <l n="683">Mostri a tutti esecrandi, odio dei Numi,</l>
+               <l n="684">si può sciogliere un laccio, esiston farmachi</l>
+               <l n="685">di questo male, ed assai vie di scampo.</l>
+               <l n="686">Ma poi che spento è un uomo, e n'ha la polvere</l>
+               <l n="687">bevuto il sangue, mai piú non risurge.</l>
+               <l n="688">Trovare incanto a ciò, non lo potrebbe</l>
+               <l n="689">il padre mio, che tutto ordina e tutto</l>
+               <l n="690">in cielo e in terra, senza ansimo, volge.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="688-690">
+               <l n="691">Vuoi che costui venga assoluto? Pensa!</l>
+               <l n="692">Versato il sangue ha della madre: come</l>
+               <l n="693">del padre, in Argo, abiterà la casa?</l>
+               <l n="694">A quali altari pubblici potrà</l>
+               <l n="695">far sacrifizî? Qual tribú vorrà</l>
+               <l n="696">partecipar con lui l'acqua lustrale?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="691-700">
+               <l n="697">Anche questo dirò: se a dritto, intendilo!</l>
+               <l n="698">A quel che figlio noi diciam, la madre</l>
+               <l n="699">genitrice non è: bensí nutrice</l>
+               <l n="700">del nuovo germe: genitore è quegli</l>
+               <l n="701">che il germe espresse. Come ospite l'ospite,</l>
+               <l n="702">se non lo strugge un Nume, essa lo porta.</l>
+               <l n="703">E dei miei detti dar prova ti posso.</l>
+               <l n="704">Aver puoi padre senza madre: è presso</l>
+               <l n="705">a noi la figlia dell'Olimpio Giove,</l>
+               <pb n="248"/>
+               <l n="706">a farne prova, che non fu cresciuta</l>
+               <l n="707">entro l'oscuro viscere; ma quale</l>
+               <l n="708">Dea, generar saprebbe un tal rampollo ?</l>
+               <l n="709">O Palla, ed io, per quanto posso, grande</l>
+               <l n="710">la tua città, la tua gente farò;</l>
+               <l n="711">e mandai questo alla tua casa supplice,</l>
+               <l n="712">che per sempre fedele egli ti fosse,</l>
+               <l n="713">ed alleato, o Diva, egli e i suoi posteri;</l>
+               <l n="714">e sacri ognora questi patti restino.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="701">
+               <l n="715">Bastino i detti. Or voi, giusto, sí come</l>
+               <l n="716">coscienza vi spinge, il voto date.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="702-703">
+               <l n="717">Tutte scagliate abbiam le nostre frecce:</l>
+               <l n="718">della causa il giudizio ora attendiamo.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="704-705">
+               <l n="719">Avete udito: nel dar voto, o giudici,</l>
+               <l n="720">il giuramento in cuor sacro vi sia.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="706-747">
+               <l n="721">Or la mia legge udite, Attiche genti,</l>
+               <l n="722">voi prime elette a giudicare questa</l>
+               <l n="723">causa di sangue. Al popolo d'Egeo</l>
+               <pb n="249"/>
+               <l n="724">anche i venturi dí, questo consesso</l>
+               <milestone unit="card" n="711" resp="Smyth"/><l n="725">darà sentenza, qui dove le Amazzoni</l>
+               <l n="726">posero campo e tende, allorché l'odio</l>
+               <l n="727">contro Teseo le spinse a guerra, ed esse,</l>
+               <l n="728">di fronte alla città, questa munirono</l>
+               <l n="729">di torri eccelsa rocca, ed immolarono</l>
+               <l n="730">vittime ad Are: onde la rupe ancora</l>
+               <l n="731">d'Arëopàgo ha nome. Esso il rispetto</l>
+               <l n="732">ed il timore ai cittadini in cuore</l>
+               <l n="733">indurrà, che non mai, né dí, né notte,</l>
+               <l n="734">violino giustizia, e che le leggi,</l>
+               <l n="735">d'Atene i cittadini mai non mutino:</l>
+               <l n="736">ché, se di fango e umor' fracidi, l'onda</l>
+               <l n="737">limpida inquini, ber piú non la puoi.</l>
+               <l n="738">Vita consiglio ai cittadini miei</l>
+               <l n="739">né senza freno, né servil: né lungi</l>
+               <l n="740">dalla città si scacci ogni timore:</l>
+               <l n="741">qual uom giusto sarà, se nulla teme?</l>
+               <l n="742">Voi temetelo dunque e rispettatelo:</l>
+               <l n="743">esso schermo dell'Attica sarà,</l>
+               <l n="744">e salute d'Atene; e alcun degli uomini</l>
+               <l n="745">il simile non ha, né fra gli Sciti,</l>
+               <l n="746">né di Pelope il suol: tale consesso,</l>
+               <l n="747">venerando severo incorruttibile</l>
+               <l n="748">della terra d'Atene propugnacolo,</l>
+               <l n="749">vigile su chi dorme, io stabilisco.</l>
+               <l n="750">Questo ammonisco ai cittadini miei</l>
+               <milestone unit="card" n="744" resp="Smyth"/><l n="751">che sia per l'avvenire. Adesso alzatevi,</l>
+               <l n="752">prendete i voti, ed ossequenti al giuro,</l>
+               <l n="753">equa sentenza pronunciate. Ho detto.</l>
+            </lg>
+         </sp>
+        <pb n="250"/>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="748-749">
+               <l n="754">Ed io t'esorto che d'onor non frodi</l>
+               <l n="755">questa dura d'Atene ospite schiera.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="750-751">
+               <l n="756">Di temere io t'impongo i miei responsi</l>
+               <l n="757">che son di Giove, e non li renda sterili.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>EUMENIDI</speaker>
+            <lg n="752-753">
+               <l n="758">D'omicidî t'impacci: a te non spetta:</l>
+               <l n="759">né l'oracolo tuo sarà piú sacro.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="754">
+               <l n="760">Anche mio padre mal si consigliò,</l>
+               <l n="761">che d'Issíone udí le prime preci?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="755">
+               <l n="762">Anche in Fere, per te, le Parche un giorno</l>
+               <l n="763">vita perenne diedero ai mortali.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="756">
+               <l n="764">Giusto non è far bene a chi ti venera,</l>
+               <l n="765">massime allor ch'ei di soccorso indige?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="757-758">
+               <l n="766">Le antiche leggi da te son distrutte :</l>
+               <l n="767">le antiche Dee di loro epule privi.</l>
+            </lg>
+         </sp>
+        <pb n="251"/>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="759-761">
+               <l n="768">Presto, sconfitta nella causa, innocuo</l>
+               <l n="769">vomirai sui nemici il tuo veleno.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="762-763">
+               <l n="770">Tu cianci! Ove io la causa perda, infesta</l>
+               <l n="771">a questo suol sarà la torma nostra.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>APOLLO</speaker>
+            <lg n="764">
+               <l n="772">Fra i Numi antichi, fra i novelli Numi,</l>
+               <l n="773">tu vai priva d'onore: io vincerò.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="765-766">
+               <l n="774">Giovine Iddio, tu me conculchi annosa:</l>
+               <l n="775">ma se infierire contro Atene io debba</l>
+               <l n="776">non so che fine abbia la causa attendo.</l>
+            </lg>
+         </sp>
+        <note>Durante tutta questa discussione s'è compiuta la votazione.
+            Atena si approssima ultima a dare il voto.</note>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="767-777">
+               <l n="777">È la mia volta: a me l'ultimo voto.</l>
+               <l n="778">In favore d'Oreste io lo darò.</l>
+               <l n="779">Madre non ho che generata m'abbia;</l>
+               <l n="780">e il costume virile, approvo, tranne</l>
+               <l n="781">che stringer nozze, con gran cuore, in tutto.</l>
+               <l n="782">Figlia son di mio padre: e a cuor la sorte</l>
+               <l n="783">mai d'una donna non avrò, che uccise</l>
+               <pb n="252"/>
+               <l n="784">lo sposo suo, custode della casa.</l>
+               <l n="785">Anche se i voti siano pari, Oreste</l>
+               <l n="786">vince la causa. O voi, giudici, cui</l>
+               <l n="787">l'ufficio spetta, rovesciate l'urne.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="778">
+               <milestone unit="card" n="778" resp="Smyth"/><l n="788">O Febo Apollo, quale sarà l'esito ?</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="779">
+               <l n="789">Notte, mia negra madre, a noi riguarda !</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="780">
+               <l n="790">Questo è il punto: esser perso o veder luce!</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>CORIFEA</speaker>
+            <lg n="781">
+               <l n="791">E per noi, bando avere, o nuovi onori.</l>
+            </lg>
+         </sp>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="782-784">
+               <l n="792">Attentamente computate i voti,</l>
+               <l n="793">ospiti e lunge ogni ingiustizia vada.</l>
+               <l n="794">Un voto meno, e un gran cordoglio segue:</l>
+               <l n="795">un voto piú, risorge una progenie.</l>
+            </lg>
+         </sp>
+        <note>Intanto, si è fatto lo spoglio dei voti. Atena lo verifica.</note>
+        <sp>
+            <speaker>ATENA</speaker>
+            <lg n="794-795">
+               <milestone unit="card" n="793" resp="Smyth"/><l n="796">Assoluto quest'uomo è nella causa:</l>
+               <l n="797">ché ugual risulta il numero dei voti.</l>
+            </lg>
+         </sp>
+        <pb n="253"/>
+        <sp>
+            <speaker>ORESTE</speaker>
+            <lg n="796-807">
+               <l n="798">O Palla, o tu che la mia stirpe hai salva,</l>
+               <l n="799">tu la mia casa rendi a me, che privo</l>
+               <l n="800">ero di patria. Ed or diranno gli Elleni :</l>
+               <l n="801">« Un uomo d'Argo, le paterne mura</l>
+               <l n="802">abita ancora, pel favor di Pallade</l>
+               <l n="803">e di Febo e di quei che tutto domina,</l>
+               <l n="804">di Giove ». Ei tutelò del padre mio</l>
+               <l n="805">la sorte, e volle me salvo, e neglesse</l>
+               <l n="806">queste, a vendetta di mia madre sorte.</l>
+               <l n="807">Ed ora, io parto, e alla mia casa torno,</l>
+               <l n="808">a questa terra e al popol tuo giurando</l>
+               <l n="809">che mai, pei mille e mille anni venturi</l>
+               <l n="810">uomo alcun che la mia terra governi</l>
+               <l n="811">qui condurrà guerresco ordin di lance.</l>
+               <l n="812">Ché io, dal fondo della tomba mia,</l>
+               <l n="813">chi questo giuro mio trasgredirà,</l>
+               <l n="814">colpirò con sciagura immedicabile,</l>
+               <l n="815">e ogni via di sgomento, ed ogni tramite</l>
+               <l n="816">gli sbarrerò di tristi augurî, ond'egli</l>
+               <l n="817">dovrà desister dall'impresa. E dove</l>
+               <l n="818">il mio giuro rispettino, ed a questa</l>
+               <l n="819">città d'Atene aiuto in guerra prestino,</l>
+               <l n="820">sarò benigno ai cittadini miei.</l>
+               <l n="821">A te salute e al popolo d'Atene.</l>
+            </lg>
+         </sp>
+        <pb n="254"/>
+        <stage type="heading">LAMENTAZIONE</stage>
+        <milestone unit="textpart" resp="Romagnoli" subtype="choral"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="808-817">
+                     <milestone unit="card" n="808" resp="Smyth"/><l n="822">Ahi, nuovi Iddei, sotto i pie' calpestate</l>
+                     <l n="823">le antiche leggi! Di man le mie prede</l>
+                     <l n="824">voi mi strappate! Ma, spoglia d'onore,</l>
+                     <l n="825">io sciagurata, nell'aspra mia doglia,</l>
+                     <l n="826">stillerò lo sterminio</l>
+                     <l n="827">sopra questo terreno,</l>
+                     <l n="828">dal furore dell'anima</l>
+                     <l n="829">sprizzando atro veleno.</l>
+                     <l n="830">Da questo una serpigine</l>
+                     <l n="831">che greggi strugga ed erba,</l>
+                     <l n="832">su le zolle spargendosi,</l>
+                     <l n="833">di letifere macchie la terra coprirà.</l>
+                     <l n="834">Che faccio? Verso lagrime?</l>
+                     <l n="835">Sarò con questi cittadini acerba ?</l>
+                     <l n="836">O della Notte misere</l>
+                     <l n="837">figlie, nessuno, onor prestato v'ha.</l>
+                  </lg>
+               </sp>
+        <pb n="255"/>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="818-826">
+                  <l n="838">Credete a me non v'affliggete troppo.</l>
+                  <l n="839">Vinte non foste: il numero dei voti</l>
+                  <l n="840">fu pari e spregio a te non vien. Ma v'erano</l>
+                  <l n="841">segni ben chiari del voler di Giove;</l>
+                  <l n="842">e quegli stesso che il responso diede,</l>
+                  <l n="843">giunse a prestar la fede sua, che Oreste</l>
+                  <l n="844">compier dovea lo scempio, e andare immune.</l>
+                  <l n="845">Non vi crucciate dunque, e il fiero sdegno</l>
+                  <l n="846">non infliggete a questo suolo, e sterile</l>
+                  <milestone unit="card" n="823" resp="Smyth"/><l n="847">non lo rendete, non struggete i germi</l>
+                  <l n="848">col morso edace dell'infeste bave.</l>
+                  <l n="849">Ed io con certa fede a voi prometto</l>
+                  <l n="850">che in questa terra di giustizia avrete</l>
+                  <l n="851">riposte sedi, e onor dai cittadini,</l>
+                  <l n="852">presso l'are sedendo, in troni fulgidi.</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="827-836">
+                     <l n="853">Ahi, nuovi Iddei, sotto i pie' calpestate</l>
+                     <l n="854">le antiche leggi! Di man le mie prede</l>
+                     <l n="855">voi mi strappate! Ma, spoglia d'onore,</l>
+                     <l n="856">io, sciagurata, nell'aspra mia doglia.</l>
+                     <l n="857">stillerò lo sterminio</l>
+                     <l n="858">sopra questo terreno,</l>
+                     <l n="859">dal furore dell'anima</l>
+                     <l n="860">sprizzando atro veleno.</l>
+                     <l n="861">Da questo una serpigine</l>
+                     <l n="862">che greggi strugga ed erba,</l>
+                     <pb n="256"/>
+                     <l n="863">su le zolle spargendosi,</l>
+                     <l n="864">di letifere macchie la terra coprirà.</l>
+                     <l n="865">Che faccio? Verso lagrime?</l>
+                     <l n="866">Sarò con questi cittadini acerba ?</l>
+                     <l n="867">O della Notte misere</l>
+                     <l n="868">figlie, nessuno, onor prestato v'ha.</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="837-847">
+                  <milestone unit="card" n="837" resp="Smyth"/><l n="869">Prive d'onor non siete, e non vi piaccia,</l>
+                  <l n="870">per troppo d'ira, questo suolo rendere</l>
+                  <l n="871">sterile, o Dive. Anch'io — dirlo che giova ?</l>
+                  <l n="872">posso in Giove fidare: io sola so</l>
+                  <l n="873">del ricetto le chiavi ove la folgore</l>
+                  <l n="874">è sigillata. Ma per che, la folgore ?</l>
+                  <l n="875">Ben t'indurrai per le parole mie</l>
+                  <l n="876">a non scagliare con impronta lingua</l>
+                  <l n="877">su questa terra il maleficio, e tutti</l>
+                  <l n="878">farne abortire i frutti. In cuor sopisci</l>
+                  <l n="879">l'impeto amaro della negra furia,</l>
+                  <l n="880">e delle cose e degli onor partecipe</l>
+                  <l n="881">con me sarai: di questa terra grande</l>
+                  <l n="882">offerte le primizie a te saranno</l>
+                  <l n="883">per gli sponsali, e quando nascon pargoli:</l>
+                  <l n="884">onde il consiglio mio loderai sempre.</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="848-854">
+                     <milestone unit="card" n="848" resp="Smyth"/><l n="885">Questo da me si tollera,</l>
+                     <l n="886">da me vetusta Diva! E, ahimè, di questa</l>
+                     <pb n="257"/>
+                     <l n="887">terra, impunita la sozzura resta !</l>
+                     <l n="888">Spirerò la mia furia, la mia collera.</l>
+                     <l n="889">Ahimè, ahimè, sciagura,</l>
+                     <l n="890">quale tortura</l>
+                     <l n="891">penetra il fianco mio!</l>
+                     <l n="892">O Madre notte, il mio furore ascolta.</l>
+                     <l n="893">Gli onori a me dovuti, antica Diva,</l>
+                     <l n="894">invincibile frode or me ne priva.</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="855-873">
+                  <l n="895">Le furie tue sopporterò: ché annosa</l>
+                  <l n="896">piú sei di me: piú accorta anche tu sei:</l>
+                  <l n="897">ma senno acuto Giove anche a me diede.</l>
+                  <l n="898">Se ad altre terre, ad altre genti andrete,</l>
+                  <l n="899">brama vi pungerà, ve lo predíco,</l>
+                  <l n="900">di questo suol: ché ai cittadini miei</l>
+                  <l n="901">maggior gloria addurranno i dí venturi.</l>
+                  <l n="902">E tu, vivendo in onorata sede,</l>
+                  <l n="903">d'Erettèo presso la dimora, offerte</l>
+                  <l n="904">avrai da turbe d'uomini e di femmine,</l>
+                  <l n="905">quali niun'altra gente a te farebbe.</l>
+                  <l n="906">E su la terra mia tu non gittare</l>
+                  <l n="907">i sanguinei pungigli, onde si struggono</l>
+                  <l n="908">i cuori giovanili in una furia</l>
+                  <l n="909">d'ebbrezza senza vino; e non accendere</l>
+                  <l n="910">come galli pugnaci i cittadini,</l>
+                  <l n="911">non annidarvi la guerra civile,</l>
+                  <l n="912">la promiscua strage. E non s'appressi,</l>
+                  <milestone unit="card" n="870" resp="Smyth"/><l n="913">resti la guerra oltre le porte, ed ivi</l>
+                  <l n="914">terribile di gloria amore avvampi.</l>
+                  <pb n="258"/>
+                  <l n="915">Queste le offerte ch'io ti faccio. Beni</l>
+                  <l n="916">largire e averne, onori aver, partecipe</l>
+                  <l n="917">di questo sacro suol diletto ai Numi.</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="874-880">
+                     <l n="918">Questo da me si tollera,</l>
+                     <l n="919">da me, vetusta Diva! E, ahimè, di questa</l>
+                     <l n="920">terra, impunita la sozzura resta!</l>
+                     <l n="921">Spirerò la mia furia, la mia collera.</l>
+                     <l n="922">Ahimè, ahimè, sciagura,</l>
+                     <l n="923">quale tortura</l>
+                     <l n="924">pènetra il fianco mio!</l>
+                     <l n="925">O madre Notte, il mio furore ascolta.</l>
+                     <l n="926">Gli onori a me dovuti, antica Diva,</l>
+                     <l n="927">invincibile frode or me ne priva.</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="881-891">
+                  <milestone unit="card" n="881" resp="Smyth"/><l n="928">Mai stanca mi farà parlarti il bene:</l>
+                  <l n="929">dir non potrai che tu, vetusta Diva,</l>
+                  <l n="930">spregiata da me giovine, e dal mio</l>
+                  <l n="931">popolo, vai da questo suolo in bando.</l>
+                  <l n="932">Ma, se pur tu la Dea Suada veneri,</l>
+                  <l n="933">che dal mio labbro col suo miel ti molce,</l>
+                  <l n="934">resta fra noi. Ché se restar non vuoi,</l>
+                  <l n="935">giusto non è che l'ira tua su Atene</l>
+                  <l n="936">piombi, né il danno od il furor sul popolo:</l>
+                  <l n="937">ch'esser tu puoi di questo suol partecipe</l>
+                  <l n="938">direttamente, e onore aver perenne.</l>
+               </lg>
+            </sp>
+        <pb n="259"/>
+        <sp>
+               <speaker>CORIFEA</speaker>
+               <lg n="892">
+                  <l n="939">Qual sede, o Atena, dici tu che avrei ?</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="893">
+                  <l n="940">D'ogni cordoglio immune: or dunque accettala.</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>CORIFEA</speaker>
+               <lg n="894">
+                  <l n="941">L'accetterò. Ma quali onor' mi serbi?</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="895">
+                  <l n="942">Che senza te nessuna casa prosperi.</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>CORIFEA</speaker>
+               <lg n="896">
+                  <l n="943">Questo farai? Che tal potere io m'abbia ?</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="897">
+                  <l n="944">La fortuna daremo a chi te veneri.</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>CORIFEA</speaker>
+               <lg n="898">
+                  <l n="945">Per sempre? E te ne fai mallevadrice?</l>
+               </lg>
+            </sp>
+        <pb n="260"/>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="899">
+                  <l n="946">Cosa non posso dir ch'io non la compia.</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>CORIFEA</speaker>
+               <lg n="900">
+                  <l n="947">Molcir mi sento, e il furor mio depongo!</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="901">
+                  <l n="948">Qui rimanendo, amici acquisterai !</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>CORIFEA</speaker>
+               <lg n="902">
+                  <l n="949">Quali inni vuoi per questo suol ch'io levi?</l>
+               </lg>
+            </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="903-915">
+                  <l n="950">Tali che araldi sian di fausta sorte!</l>
+                  <l n="951">Dalla terra essa giunga, e dalla rorida</l>
+                  <l n="952">acqua del mar, dal cielo: e spirino aliti</l>
+                  <l n="953">di venti su la terra, e il sole sfolgori.</l>
+                  <l n="954">E che le zolle il frutto e de le greggi</l>
+                  <l n="955">rigogli e abbondi; e non la fiacchi il tempo;</l>
+                  <l n="956">e la progenie dei mortali, prosperi.</l>
+                  <l n="957">E si disperda dei malvagi il germe :</l>
+                  <l n="958">ch'io, come saggio agricoltore, illese</l>
+                  <l n="959">le progenie dei giusti sol desidero.</l>
+                  <l n="960">Queste saranno le tue cure. Ed io</l>
+                  <l n="961">questa città vittrice, ognor fra gli uomini</l>
+                  <l n="962">chiara farò nelle guerresche prove.</l>
+               </lg>
+            </sp>
+        <pb n="261"/>
+        <stage type="heading">ULTIMO CANTO INTORNO ALL'ARA</stage>
+        <milestone unit="textpart" resp="Romagnoli" subtype="choral"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="916-926">
+                     <milestone unit="card" n="916" resp="Smyth"/><l n="963">Mi sarà grato vivere con Pallade;</l>
+                     <l n="964">né la città dispregio</l>
+                     <l n="965">cui Giove ed il gagliardo</l>
+                     <l n="966">Marte, dei Numi asil vollero, e fregio,</l>
+                     <l n="967">e all'are baluardo</l>
+                     <l n="968">di tutti i Numi Ellèni.</l>
+                     <l n="969">Per essa, con fatidici</l>
+                     <l n="970">benigni augurî imploro che della vita i beni</l>
+                     <l n="971">faccia il sol coi suoi vampi</l>
+                     <l n="972">impetuosi germinar dai campi.</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="927-937">
+                  <milestone unit="card" n="927" resp="Smyth"/><l n="973">Lieta sono che ai miei cittadini</l>
+                  <l n="974">tanto ben procacciai: che qui restino</l>
+                  <l n="975">queste Dive possenti e implacabili.</l>
+                  <pb n="262"/>
+                  <l n="976">Tutte quante le sorti fra gli uomini</l>
+                  <l n="977">spetta ad esse partir. Chi non mai</l>
+                  <l n="978">s'imbatté ne le Dive terribili,</l>
+                  <l n="979">della vita gli strazî non sa.</l>
+                  <l n="980">I delitti che gli avi compierono</l>
+                  <l n="981">te le spingono contro; e Rovina,</l>
+                  <l n="982">senza voce, mentre alto tu gridi,</l>
+                  <l n="983">con infesto furore ti stermina.</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="938-948">
+                     <milestone unit="card" n="938" resp="Smyth"/><l n="984">Che mai non soffi aura nociva agli alberi</l>
+                     <l n="985">sarà vigil mia cura,</l>
+                     <l n="986">nè a questo suol s'appressi,</l>
+                     <l n="987">le nuove gemme a struggere, l'arsura,</l>
+                     <l n="988">né a far vane le messi</l>
+                     <l n="989">feral morbo serpeggi,</l>
+                     <l n="990">anzi, con parti duplici</l>
+                     <l n="991">allegri a tempo debito Pan le floride greggi;</l>
+                     <l n="992">e le genti felici</l>
+                     <l n="993">lodino ognor dei Numi i benefici.</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="949-955">
+                  <milestone unit="card" n="949" resp="Smyth"/><l n="994">O d'Atena presidio, o voi giudici,</l>
+                  <l n="995">questi voti ora udite? Ben grande</l>
+                  <l n="996">presso i Dèmoni inferni è la possa</l>
+                  <l n="997">de l'Erinni; e palese è fra gli uomini</l>
+                  <l n="998">ciò che valgano: a questi concedono</l>
+                  <pb n="263"/>
+                  <l n="999">gioie e canti: di lagrime a quelli</l>
+                  <l n="1000">fosca e torbida rendon la vita.</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="956-967">
+                     <milestone unit="card" n="956" resp="Smyth"/><l n="1001">E depreco le sorti</l>
+                     <l n="1002">d'intempestive morti.</l>
+                     <l n="1003">O Dive, che degli uomini</l>
+                     <l n="1004">leggete il fato, o Moire, a quest'amabile</l>
+                     <l n="1005">gioventú date la vita propizia,</l>
+                     <l n="1006">o Dive nostre suore,</l>
+                     <l n="1007">Dive della Giustizia,</l>
+                     <l n="1008">d'ogni casa partecipi,</l>
+                     <l n="1009">vigili a tutte l'ore,</l>
+                     <l n="1010">o severa adunanza</l>
+                     <l n="1011">che sopra ogni altro Iddio godi onoranza!</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="968-975">
+                  <milestone unit="card" n="968" resp="Smyth"/><l n="1012">Bene io godo che a questa mia terra</l>
+                  <l n="1013">tali augurî si facciano, e venero</l>
+                  <l n="1014">il tuo volto, Suada, che il labbro,</l>
+                  <l n="1015">che la voce m'ornasti; e m'opposi</l>
+                  <l n="1016">di costoro al selvaggio rifiuto.</l>
+                  <l n="1017">Or trionfo ebbe Giove, cui grata</l>
+                  <l n="1018">è facondia: trionfo la causa</l>
+                  <l n="1019">di Giustizia ebbe in tutto per me.</l>
+               </lg>
+            </sp>
+        <pb n="264"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="976-987">
+                     <milestone unit="card" n="976" resp="Smyth"/><l n="1020">Né mai su questa terra</l>
+                     <l n="1021">frema civile guerra,</l>
+                     <l n="1022">che mai di mali è sazia.</l>
+                     <l n="1023">Né d'atro sangue cittadin s'abbeveri</l>
+                     <l n="1024">la polvere, onde poi furia nemica</l>
+                     <l n="1025">sitisca nuova strage</l>
+                     <l n="1026">a vendicar l'antica.</l>
+                     <l n="1027">Ma li stringa d'unanimi</l>
+                     <l n="1028">affetti una compage,</l>
+                     <l n="1029">d'unanimi odî: ai mali</l>
+                     <l n="1030">farmaco sommo è questo pei mortali.</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="988-995">
+                  <milestone unit="card" n="988" resp="Smyth"/><l n="1031">Chi ben pensa, di sagge parole</l>
+                  <l n="1032">trova dunque la via! Grandi beni</l>
+                  <l n="1033">io da queste terribili forme</l>
+                  <l n="1034">qui prevedo alla nostra città.</l>
+                  <l n="1035">E se voi queste Dive benevole.</l>
+                  <l n="1036">con benevolo cuore onoriate,</l>
+                  <l n="1037">sempre insigni ne andrete, reggendo</l>
+                  <l n="1038">con giustizia la patria ed Atène.</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="996-1002">
+                     <milestone unit="card" n="996" resp="Smyth"/><l n="1039">Genti d'Atene, salvete, salvete! Fluisca abbondanza</l>
+                     <l n="1040">sovra te, popol, ch'ài stanza</l>
+                     <l n="1041">presso a Giove, e della vergine</l>
+                     <pb n="265"/>
+                     <l n="1042">sua figliuola sei delizia!</l>
+                     <l n="1043">Saggio ognor tu sii: di Pàllade</l>
+                     <l n="1044">fanno l'ale a te riparo:</l>
+                     <l n="1045">e per ciò Giove t'ha caro.</l>
+                  </lg>
+               </sp>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="1003-1013">
+                  <milestone unit="card" n="1003" resp="Smyth"/><l n="1046">E salute anche a voi. Debbo ai talami,</l>
+                  <l n="1047">or, movendo io la prima, guidarvi,</l>
+                  <l n="1048">alla luce del sacro corteo.</l>
+                  <l n="1049">Avanzate al bagliore di queste</l>
+                  <l n="1050">sacre fiaccole, e, giunte sotterra,</l>
+                  <l n="1051">trattenete nel suolo ogni germe</l>
+                  <l n="1052">di sfacelo, e crescete i proficui</l>
+                  <l n="1053">pel trionfo di nostra città.</l>
+                  <l n="1054">E voi tutti, o rampolli di Crànao,</l>
+                  <l n="1055">siate guida a queste ospiti, e sempre</l>
+                  <l n="1056">bei pensieri a begli atti vi spronino.</l>
+               </lg>
+            </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="3"/>
+        <sp>
+                  <speaker>CORO</speaker>
+                  <lg n="1014-1020">
+                     <milestone unit="card" n="1014" resp="Smyth"/><l n="1057">Anche una volta</l>
+                     <l n="1058">raddoppio gli augurî</l>
+                     <l n="1059">salvete,</l>
+                     <l n="1060">salvete!,</l>
+                     <l n="1061">tutti voi che sede avete</l>
+                     <l n="1062">in Atene, uomini e Dèmoni,</l>
+                     <l n="1063">nella rocca sacra a Pàllade.</l>
+                     <l n="1064">Da voi lungi, sin che ospite</l>
+                     <l n="1065">voi m'avrete in queste mura,</l>
+                     <l n="1066">sarà sempre ogni sciagura.</l>
+                  </lg>
+               </sp>
+        <pb n="266"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="episode"/>
+        <sp>
+               <speaker>ATENA</speaker>
+               <lg n="1021-1031">
+                  <milestone unit="card" n="1021" resp="Smyth"/><l n="1067">Di questi voti io godo, ed al fulgore</l>
+                  <l n="1068">v'invierò di scintillanti fiaccole</l>
+                  <l n="1069">sottesso il suolo, in sotterranei lochi,</l>
+                  <l n="1070">e le ministre mie guida vi siano</l>
+                  <l n="1071">che santamente l'idol mio tutelano.</l>
+                  <l n="1072">Compagna avrete un'onorata schiera,</l>
+                  <l n="1073">del suolo di Teseo viva pupilla,</l>
+                  <l n="1074">di fanciulle, di donne e di vegliarde,</l>
+                  <l n="1075">tutte velate di purpurei manti.</l>
+                  <l n="1076">Movete! E il fuoco ed il baglior proceda,</l>
+                  <l n="1077">sí che felice questa patria schiera</l>
+                  <l n="1078">sempre per fausta sorte insigne vada.</l>
+               </lg>
+            </sp>
+        <note>Formano un corteo le ministre di Atena, poi le Eumenidi, poi le
+               fanciulle, le donne e le vecchie d'Atene, poi tutto il popolo. Una
+               schiera di cittadini, durante la sfilata, canta l'inno seguente.</note>
+        <milestone unit="textpart" resp="Romagnoli" subtype="choral"/>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="1"/>
+        <sp>
+                  <speaker>SCHIERA DI CITTADINI</speaker>
+                  <lg n="1032-1034">
+                     <milestone unit="card" n="1032" resp="Smyth"/><l n="1079">O de la Notte possenti onorate figliuole</l>
+                     <l n="1080">intatte, a la vostra dimora movete,</l>
+                     <l n="1081">seguite dal sacro corteo.</l>
+                     <l n="1082">E voi, cittadini, acclamate!</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="1"/>
+        <sp>
+                  <speaker>SCHIERA DI CITTADINI</speaker>
+                  <lg n="1035-1038">
+                     <milestone unit="card" n="1035" resp="Smyth"/><l n="1083">Entro gli spechi segreti dei secoli prischi</l>
+                     <l n="1084">movete: qui vittime solenni, qui onori</l>
+                     <pb n="267"/>
+                     <l n="1085">avrete ed arrida Fortuna.</l>
+                     <l n="1086">E voi, cittadini, acclamate!</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="strophe" n="2"/>
+        <sp>
+                  <speaker>SCHIERA DI CITTADINI</speaker>
+                  <lg n="1040-1043">
+                     <milestone unit="card" n="1040" resp="Smyth"/><l n="1087">A questa terra benevole e ai Lari,</l>
+                     <l n="1088">qui, venerande, movete; e v'allegrino</l>
+                     <l n="1089">lungo la strada, brillando, le fiaccole!</l>
+                     <l n="1090">Sposate ai canti grida alte di giubilo!</l>
+                  </lg>
+               </sp>
+        <milestone unit="textpart" resp="Romagnoli" subtype="antistrophe" n="2"/>
+        <sp>
+                  <speaker>SCHIERA DI CITTADINI</speaker>
+                  <lg n="1044-1047">
+                     <milestone unit="card" n="1044" resp="Smyth"/><l n="1091">Di libagioni penuria non abbiano</l>
+                     <l n="1092">i cittadini di Pallade. Vigile</l>
+                     <l n="1093">a tutto Giove, e la Parca, acconsentono.</l>
+                     <l n="1094">Sposate ai canti grida alte di giubilo!</l>
+                  </lg>
+               </sp>
+        <note>Con le ultime note dell'inno, tutti i personaggi sono usciti
+               dalla scena e dall'orchestra.</note>
+      </div>
+    </body>
+  </text>
+</TEI>

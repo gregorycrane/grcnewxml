@@ -1,0 +1,3156 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Aeschylus, Die Eumeniden: German translation</title>
+        <author xml:lang="la">Aeschylus</author>
+        <editor role="translator" ref="https://viaf.org/viaf/2463148">Ulrich von Wilamowitz-Moellendorff</editor>
+        <sponsor>University of Leipzig</sponsor>
+        <principal>Gregory Crane</principal>
+      </titleStmt>
+      <editionStmt>
+        <edition>German translation by Ulrich von Wilamowitz-Moellendorff</edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>Perseus Digital Library</publisher>
+        <pubPlace>Tufts University</pubPlace>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+        <idno type="cts">urn:cts:greekLit:tlg0085.tlg007.wilam1919-ger1</idno>
+        <date when="2026">2026</date>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <editor role="translator">Ulrich von Wilamowitz-Moellendorff</editor>
+            <title level="m">Griechische Tragoedien</title>
+            <edition>8. Aufl.</edition>
+            <imprint>
+              <pubPlace>Berlin</pubPlace>
+              <publisher>Weidmannsche Buchhandlung</publisher>
+              <date from="1919" to="1923">1919–1923</date>
+            </imprint>
+          </monogr>
+          <ref target="https://catalog.hathitrust.org/Record/100223249">HathiTrust catalog record</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>The German text, verse layout, page breaks, stage directions, and notes follow Wilamowitz. Smyth card milestones are transferred through the line correspondences in Wilamowitz's Greek edition and carry resp="Smyth".</p>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:milestone[@unit='line' and @n='$1']/ancestor::tei:l[1])">
+          <p>References resolve Wilamowitz line markers in the German translation.</p>
+        </cRefPattern>
+      </refsDecl>
+      <p>Encoded in accordance with EpiDoc and CTS/CITE conventions.</p>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="deu">German</language>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="eng">English (metadata)</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-16" who="#gcrane">Separated from the composite German translation; corrected language and CTS metadata; regularized as a play-level EpiDoc translation.</change>
+      <change when="2026-08-16" who="#gcrane">Transferred every Smyth card milestone through Wilamowitz's Greek line correspondences and German line markers; generated an auditable alignment report.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <front><div type="textpart" subtype="introduction">
+    <pb n="209" facs="#217"/>
+    <head>Einleitung.</head>
+    <p>Daſs Gott im Himmel wohnt, ist uns eine selbst-
+    verständliche Vorstellung. Wir wissen freilich, daſs der
+    Weltenraum unendlich ist und ein überweltlicher Himmel,
+    wie ihn die aristotelisch-ptolemäische Konstruktion des
+    Universums anzunehmen gestattete, nicht existiert. Aber
+    das stört uns nicht: geht doch auch für unsere sinnliche
+    Anschauung die Sonne auf und unter, und die Phantasie
+    läfst sich durch die abstrakten Thatsachen, die der Ver-
+    stand begriffen hat, nicht beirren.</p>
+    <p>Indessen erhält
+    keinesweges bloſs die unmittelbare Naturanschauung das
+    mythische Bild des Himmelsgottes lebendig, sondern es
+    wirken dafür zwei geschichtliche Faktoren mit. Der Gott
+    der Juden war ein Himmelsgott, und die maſsgebende
+    griechische Philosophie hatte die Gottheit oberhalb oder
+    in der äuſsersten Sphäre der koncentrischen Kugeln
+    lokalisiert, als welche sie das Universum konstruierte.
+    Beides hatte die christliche Kirche übernommen, und
+    als das aristotelisch - ptolemäische System überwunden
+    ward, konnte die mythische Lokalisation Gottes doch
+    nicht aufgegeben werden, und sie brauchte es nicht, da
+    die sinnliche Anschauung ihr zu Hilfe kam.</p>
+    <p>So ist es
+    gekommen, daſs die natürliche Religion, so weit sie die
+    Götter im Himmel ansiedelt, unmittelbar verständlich
+    ist, und dann ist man rasch mit dem Schlusse bei der
+    Hand, das wäre eine ganz notwendige primitive Vor-</p>
+    <fw type="sig" place="bottom">Griech. Tragödien. II.</fw>
+    <fw type="sig" place="bottom">14</fw>
+    <pb n="210" facs="#218"/>
+    <fw type="pageNum" place="top">210</fw>
+    <p>stellung. Dem ist nicht so; es gehört vielmehr bereits
+    eine starke Abstraktion dazu, die Götter von der Erde
+    zu entfernen. Die späteren Himmelsgötter haben alle auf
+    Bergkuppen gewohnt, Jahwe auf dem Sinai, Zeus auf
+    dem Olympos. Zeus ist dann freilich schon sehr früh
+    wirklich ein universaler Gott geworden, dem entsprechend,
+    daſs sich der Himmel über die ganze Erde wölbt, so
+    daſs sein Herr auch die nationale Beschränktheit ablegt.</p>
+    <p>Jahwe ist zu gleicher Universalität wohl in dem Glauben
+    einzelner Propheten erhoben; im Kultus ist er immer
+    Judengott geblieben, angesiedelt auf dem Berge Jeru-
+    salems, wo er allein Opfer annahm. Darum hat die
+    älteste Christenheit sehr wohl gewusst, daſs ihr ein
+    anderer Gott verkündet war; aber die Menschen haben,
+    wie es Menschenart ist, des mythischen Bildes nicht ent-
+    raten können und die historische Kontinuität nicht preis-
+    geben mögen. Das soll man nicht verschleiern, sondern
+    verstehen; schelten wird es nur der Rationalismus; für
+    den Proktophantasmisten ist ein mythisches Bild nur
+    etwas was es gar nicht giebt, und die Achtung des
+    historisch Gewordenen Prinzipienlosigkeit.</p>
+    <p>Dem gegenüber ist eine andere mindestens gleich
+    alte und gleich heilige Vorstellung gänzlich vergessen:
+    die Erde hat ihre Göttlichkeit eingebüſst. Namentlich
+    der moderne Mensch, der in der Steinwüste der Städte
+    ein widernatürliches Leben führt, vermag sich auch mit
+    der Abstraktion schwer in den Gedankenkreis zu finden,
+    für den ihm die sinnliche Anschauung fehlt. Es sind
+    aber auch hier geschichtliche Faktoren mitthätig. Die
+    Hebräer waren ein Wüstenvolk; ihnen konnte der Gott
+    genügen, der vom Sinai herab Wolken und Blitze sandte.
+    Die Griechen Homers waren Auswanderer, verjagt von
+    dem heimischen Boden, der sie gezeugt hatte und in
+    dem ihre Toten ruhten. Sie saſsen auf einem schmalen
+    Küstensaume oder auf felsigen Inseln; den Acker, der
+    <pb n="211" facs="#219"/>
+    <fw type="pageNum" place="top">211</fw>
+    sie nährte, bauten zumeist stammfremde Hörige: ihnen
+    waren Himmel und Meer ungleich vertrauter als die
+    Erde. So geben die beiden Bücher für diese An-
+    schauungen wenig aus, welche uns die Denkart und den
+    Glauben der alten Zeit wesentlich nahe bringen.</p>
+    <p>Nicht
+    viel anders steht die Spekulation der griechischen
+    Wissenschaft. Sie ist erwachsen an denselben ionischen
+    Küsten, die das homerische Epos erzeugt haben, und
+    hat dieselbe Loslösung von dem Mutterboden zur Vor-
+    aussetzung. Die Beobachtung der Gesetzlichkeit, des
+    Kosmos, in den Bewegungen der Himmelskörper hat den
+    Grund zu der ionischen Naturwissenschaft gelegt, und
+    die kühne Grundfrage nach dem Urgrunde für das als
+    gesetzmäſsige Einheit begriffene Leben wird so formuliert,
+    daſs ein belebter Urstoff gesucht wird. Da bietet sich
+    das bewegliche Feuchte, das lodernde Feuer, die flüchtige
+    Luft: die Erde hat niemand als Urprinzip aufgestellt,
+    sagt Aristoteles; ihr schien die aktive Kraft der Be-
+    wegung zu mangeln. Gewiſs, kein Philosoph; aber lange
+    vor diesen hatte sich im Mutterlande die Spekulation in
+    dieser Richtung bewegt. Hesiodos läſst nach dem Chaos,
+    der gähnenden Leere, von der nur Finsternis und Nacht
+    stammen, die Erde hervortreten, und dann den Eros,
+    das zeugende Prinzip<note n="1" place="bottom">Hesiodos hat dies nicht durch abstraktes Denken ge-
+    funden, sondern der Kult seiner Heimatstadt lieferte ihm
+    den Eros. Dort in Thespiai war er der Hauptgott, verehrt
+    in einem steinernen Fetisch. Sonst gab es ihn nirgend, d. h.
+    den Namen, dessen Durchsichtigkeit der Spekulation des
+    Hesiodos entgegenkam; inhaltlich ist Eros identisch mit einer
+    Menge anderer Götter, sowohl als Einheit wie als Vielheit
+    gedachter, die hier nicht zu verfolgen sind. Sie würden auch
+    einen Gegensatz der Anschauung zu den homerischen Himmels-
+    göttern zeigen, den Gegensatz der Titanen.</note>): von der Erde erst stammt der
+    Himmel und dann weiter alle Göttergeschlechter. Das
+    ist Spekulation eines Böoters, in dessen Heimatlande der</p>
+    <fw type="sig" place="bottom">14*</fw>
+    <pb n="212" facs="#220"/>
+    <fw type="pageNum" place="top">212</fw>
+    <p>Dienst von Gottheiten, die auf die göttliche Erde zurück-
+    gehen, in allen Städten der altheiligste war, also Speku-
+    lation auf Grund der Religion. „Erde, Mutter selbst des
+    Zeus", sagt Sophokles: das ist unmittelbar Religion.</p>
+    <p>Der Mensch, der sich ein festes Haus gebaut und
+    den Acker ringsumher gerodet hat und pflügt und be-
+    wässert, auf daſs er ihn nähre, fühlt sich abhängig von
+    der Erde, die ihn trägt und nährt, deren Schofse er das
+    Saatkorn anvertraut, hoffend, daſs sie es keimen mache,
+    in den er auch die Seinen bettet, hoffend, daſs sie dort
+    als segnende Geister Frieden finden<note n="1" place="bottom">Man lese Elektras Gebet an die Erde Choeph. 127. Un-
+    vergleichlich kurz ist da der Grundgedanke dieser Religion aus-
+    gesprochen, die Dauer im Wechsel des vegetativen Lebens,
+    das ewige Sein in dem Kreislaufe des Werdens. Man sieht,
+    wie diese Religion den Tod überwand: das ist etwas besseres
+    als Animismus.</note>). Aus den Adern
+    der Erde zieht der Fruchtbaum seine Säfte, sprudelt
+    der lebendige Quell empor, und das köstliche Metall
+    gleifst in dem Gesteine des tiefen Grundes. In jedem
+    Lenze beginnt das junge Leben; Sommerdürre oder
+    Winterkälte bringen ihm den Tod oder vielmehr die Rück-
+    kehr in den Mutterschoſs, auf daſs es wiederkehre neu
+    belebt zu seiner Zeit. Da drunten webt das ewige Leben,
+    da ist der Urgrund des ewigen Seins, aus dem die
+    flüchtigen Wasser des Werdens emporrauschen zu den
+    Gestaden des Lichtes in ewig wechselndem Strome. Da
+    drunten wohnt die Urgewalt, die das Geheimnis des
+    Werdens beherrscht, von der wir das liebe Leben
+    empfangen auf einen kurzen Tag, zu der wir wieder-
+    kehren auf Ewigkeit. Diese Gewalt ist Gott, ist auch der
+    Urgrund, dem alle wechselnden, gewordenen Einzelseelen
+    entstammen, Götter und Menschen, Tiere und Bäume.
+    Sie alle haben ihre Seele, denn sie leben ja, aber sie
+    alle sind geworden, sie treiben im Strome der Zeit und
+    <pb n="213" facs="#221"/>
+    <fw type="pageNum" place="top">213</fw>
+    kehren wieder zu dem Quell der Ewigkeit zurück. Vater
+    Goethe hat diese fromme Empfindung gekannt; er hat
+    der Urmutter gehuldigt sein Leben lang und wohl ge-
+    wuſst, weshalb er Faust zu den Müttern schickte, deren
+    Namen selbst der Teufel nur widerstrebend und ohne
+    sein Hohngrinsen nennt - wenn das noch ein Name ist:
+    aber wie sollte einen Eigennamen haben, was jenseits
+    aller Individuation liegt.</p>
+    <p>Goethe war sonst gewohnt diese Götterkraft Natur
+    zu nennen, und das würde auch uns ganz verständlich
+    sein, weil es ein Fremdwort ist (der Puristendummheit
+    zum Trotze), ein gemachtes lateinisches Wort, das die
+    griechische Physis übersetzt, die schon Herakleitos per-
+    sonifiziert hatte, weil der Philosoph die zu Personen ge-
+    wordenen Abstrakta seines Volkes nicht mehr brauchen
+    konnte, die personifizierende Dichtersprache aber noch
+    nicht abzulegen verstand.</p>
+    <p>So greifen wir nach dem
+    Heiligsten von Poesie und Philosophie, um die Empfindung
+    primitiver wilder Menschen auszusprechen: ganz mit
+    Recht; denn als fromme Empfindung dessen was heilig
+    und göttlich ist, steht sie der unseren und der Goethes
+    ebenbürtig zur Seite. Aber wenn wir die Ausdrucks-
+    formen jener Wilden suchen, so werden wir allerdings
+    sehr viel tiefer hinabsteigen müssen.</p>
+    <p>Was wir am ehesten von der Natur aussagen, dafür
+    ist der natürlichen Religion die Erde Träger, schon von
+    der Sprache weiblich gedacht, und da ihr Schaffen als
+    ein Gebären erscheint, bei vielen Völkern Mutter zu-
+    benannt. Aber so groſs die Rolle ist, die Gaia in der
+    kosmologischen Poesie und Spekulation spielt, so hat sie
+    doch im Kultus nur einen bescheidenen Platz, und wenn
+    sie es für bestimmte Scenen auch zu einer festen Bildung
+    in der Kunst gebracht hat, so ist sie doch unter diesem
+    ihrem eigentlichen Namen keine Person, zu der der
+    Mensch ein persönliches Verhältnis gewonnen hätte. Den
+    <pb n="214" facs="#222"/>
+    <fw type="pageNum" place="top">214</fw>
+    Hellenen, die wir kennen, widerstrebte es, das Göttliche,
+    das sie in dem Elementaren als Person erkannten, mit
+    seinem stofflichen Namen zu belegen; ihnen erschien
+    auch der Kult von Sonne und Mond barbarisch; der
+    Himmel vollends ist nie ein wirklicher Gott gewesen.</p>
+    <p>Dagegen ist 'Mutter' der Name einer vieler Orten hoch
+    verehrten Göttin gewesen. Die Dichter und Theologen
+    fügen wohl zur näheren Bestimmung Mutter der Götter,
+    oder groſse Mutter, oder Mutter des Zeus hinzu. Als
+    letztere bekommt sie schon früh einen Eigennamen,
+    Rheia, und man erzählt dann Geschichten von ihr. Aber
+    Rheia bleibt der Religion ganz fern; das Wort ist nicht
+    griechisch, und alles spricht dafür, daſs die ganze Person
+    der Mutter, wenn auch früh, aus Asien herübergekommen
+    ist<note n="1" place="bottom">Dort beweisen ihre weite Geltung besonders die theo-
+    phoren Namen, Metrodoros u. dgl., die in Hellas erst später
+    Verbreitung finden, sehr stark in Megara, wo man daran
+    denken kann, daſs das Hauptheiligtum der θεσμοφόρος einer
+    μάτηρ gegolten hätte. Es braucht ja auch die Mater neben
+    Pindaros' Hause ursprünglich keine andere gewesen sein als
+    die Damater, überall in Böotien: sobald sie bloſs Mater ward,
+    war sie zugleich Kybele. Das zeigt sein Lied auf sie. Die-
+    selbe Wandelung zeigt für die Mutter des attischen Marktes
+    die aus Asien geborgte Bildung der Tempelstatue, deren kleine
+    Kopieen in Athen so häufig sind.</note>), wo sie weithin bei den verschiedenen Zweigen des
+    indogermanischen Volkes verehrt ward, das aus Thrakien
+    in vielen Zügen eingewandert war. Etwas Primitives
+    kann die Verehrung der Mutter nicht sein: denn sie ist
+    notwendig nicht mehr an ein Lokal gebunden, und in
+    dem Namen, den niemand verkannt hat, liegt schon eine
+    starke Abstraktion des Denkens: der Mensch muſste
+    bereits gelernt haben, das Gemeinsame in vielen gleich-
+    berechtigten aber gesonderten Kulten und Personen zu
+    erschlieſsen. In Asien selbst fehlt es auch nicht an Be-
+    <pb n="215" facs="#223"/>
+    <fw type="pageNum" place="top">215</fw>
+    zeichnungen der Mutter nach einem Orte, 'die vom Ida',
+    'die vom Dindymon'<note n="1" place="bottom">Sie ward hier auf Bergen verehrt, wie denn der
+    phrygisch - thrakische Kult vorwiegend Höhendienst blieb;
+    daher auch der Name 'Mutter vom Berge'. Griechisch ist
+    das nicht. Übrigens hat man dort wohl die mit dem phry-
+    gischen Worte für Erde benannte Göttin Semele von ihr
+    unterschieden, die mit diesem fremden Namen zu den Hellenen
+    gekommen, aber nicht nur nicht mit den heimischen Erd-
+    göttern identifiziert, sondern ihrer Göttlichkeit fast entkleidet
+    worden ist.</note>).</p>
+    <p>Goethe gebraucht den Plural, die Mütter, der ihm
+    mit Recht etwas Unbestimmteres und daher der Weite
+    des Begriffes Angemessenes schien. Dieser Plural ist
+    von den Griechen und Asiaten nicht beliebt worden,
+    auch von den Italikern nicht. Wohl aber hat schon die
+    Gelehrsamkeit des Timaios bemerkt, daſs die Mütter in
+    westlicheren Gegenden weite Verehrung genossen, auf
+    Kreta, auf Sicilien<note n="2" place="bottom">Diese Übereinstimmung beweist für uns einen Zusammen-
+    hang der vorgriechischen Bevölkerung Kretas (wohl der West-
+    seite, wo sie von den Hellenen Kydonen genannt werden)
+    mit den Sikanern oder Sikelern, freilich noch nicht sicher
+    einen ethnographischen. Die durch Timaios erhaltenen Tra-
+    ditionen zeigen hier besonders ihren Wert. Auf Sicilien ist
+    dieser alte Kult der Mütter dann durch Demeter und Per-
+    sephone ersetzt, welche den Einwanderern vertrauter waren;
+    aber nur der alte eingeborene Kult hat z. B. Enna zu einem
+    Lieblingssitze Demeters gemacht, und er ist auch sonst noch
+    kenntlich. Allerdings dauert auch viel von der italischen Art
+    der Sikeler, die auch hier sich den Latinern verwandt zeigen.
+    Wesensgleich dürften übrigens die Ἡρῶισσαι der Libyer Ky-
+    renes sein.</note>), und dann, was wir durch zahlreiche
+    Inschriften und Reliefs belegen können, bei den Kelten<note n="3" place="bottom">Die Germanen, zu Hause halb, in der Völkerwanderung
+    ganz nomadisierend, stehen dieser Religion notwendig fern.
+    Tacitus erklärt die Nerthus, deren Dienst auf einer friesischen
+    Insel er schildert, für die Erde; das Ritual spricht nicht dafür.
+    Daſs Skandinaven und Isländer noch weniger mit der Erde
+    zu thun haben als die Ionier Homers, ist auch natürlich.</note>).</p>
+
+
+    <pb n="216" facs="#224"/>
+    <fw type="pageNum" place="top">216</fw>
+    <p>Wo immer wir deren Religion antreffen, in Oberitalien,
+    an Donau, Rhein und Rhone, treten die Mütter auf, ge-
+    bildet als Dreiverein, aber differenziiert durch Beinamen,
+    die mindestens überwiegend örtliche Bedeutung haben<note n="1" place="bottom">In der Provence dauert ihre Verehrung in der der drei
+    Marien, namentlich auf der île de la Camargue, uns nahe ge-
+    bracht durch Mistrals Mireio.</note>).
+    Da sieht man, wie diese Kelten einerseits nicht die Ge-
+    staltungskraft der Phantasie besessen haben, die ver-
+    schiedenen Triebe, die hier und da aus der gemeinsamen
+    Wurzel desselben Gefühles aufschossen, neben einander
+    zu gesonderten Einzelwesen zu differenziieren, anderer-
+    seits die Abstraktion, die in allen die Mütter erkannte,
+    nicht vermocht hat, den gemeinsamen Kult eines Vereines
+    von Müttern oder einer Mutter zu erzeugen.</p>
+    <p>Das muſs
+    ja immer und überall das erste gewesen sein, daſs die
+    allgemeine Naturpotenz dem Menschen unter konkreten
+    lokalen Bedingungen erschien.</p>
+    <p>Seine Erde, diese, die er
+    kannte, die in diesem Walde und Quell und Acker thätig
+    war, war ihm Gott, ihr opferte er, damit sie ihm gnädig
+    wäre, sie wollte er für sich: der Acker und Wald und
+    Quell des Nachbars mit seinen Götterkräften war ihm
+    gleichgiltig, wo nicht verhaſst.</p>
+    <p>Bewies ein lokaler Gott
+    seine Macht über die anderen, so konnte er sie ver-
+    drängen, eben von seinem eignen Machtbereiche aus, und
+    so ist der Zeus vom Olympos der allgemeine geworden, weil
+    seine Verehrer, die die Regen- und Donnerwolke von dem
+    thessalischen Berge ziehen sahen, den Ton angegeben
+    haben.</p>
+    <p>Die anderen Zeus, die von anderen Bergen
+    donnerten, sind vergessen, oder der Bergname Olympos
+    ist gewandert, weil die Menschen in dem Berge, der nun
+    ihres Gottes Sitz geworden war, den des olympischen
+    Zeus wiederfinden wollten<note n="2" place="bottom">So finden wir den Bergnamen noch heute viel weiter
+    verbreitet, als die Tradition es erwarten lieſs, selbst in Süd-
+    <pb n="217" facs="#225"/>
+    <fw type="pageNum" place="top">217</fw>
+    Frankreich. In gewissen Teilen der Ilias ist aber der Ida
+    der Götterberg; auch der Athos ist es einmal gewesen.</note>), bis schliesslich der Olymp
+    der Himmel ward, weil Zeus ein universaler Gott ge-
+    worden war.</p>
+    <p>Noch wichtiger ist es, daſs diese keltischen Mütter
+    lehren, wie wenig auf Einheit und Vielheit der göttlichen
+    Personen ankommt.</p>
+    <p>Das ist mit das Wesentlichste für das
+    Verständnis der primitiven Religion.</p>
+    <p>Das Göttliche ist
+    seiner Natur nach ein Unbegrenztes (ἄπειρον), das nie-
+    mals durch eine Person, die wirklich individuell geworden
+    ist, ganz ausgefüllt werden kann.</p>
+    <p>Der Plural ist an sich
+    etwas Abstrakteres, und da er hier eine Mehrheit gleich-
+    gearteter Personen umfasst, die man einzeln zunächst gar
+    nicht denkt, deren Eigennamen, wenn sie gebildet werden,
+    immer etwas Sekundäres und nie Wesentliches sind, so
+    eignet er sich besonders für elementare Wesen, wo die
+    notwendig vielgestaltige und widersprechende geglaubte
+    Wahrnehmung der göttlichen Person ihm Vorschub leisten
+    muſste.</p>
+    <p>Für den Inhalt der Vorstellung aber verschlägt
+    es nichts, ob an einer Quelle eine Nymphe sitzt oder
+    drei, auf einer Wiese eine weiſse Frau umgeht, oder
+    viele Elfen einen Reigen tanzen, in einem Busche ein
+    Waldschrat sitzt oder ein Rudel Satyrn.</p>
+    <p>Man darf nicht
+    einmal sagen, daſs der Plural immer das frühere wäre,
+    weil er als das Unbestimmtere logisch näher liegt: Ilias
+    und Odyssee beginnen mit der Anrufung einer Muse;
+    aber jeder Gottesname, der auch im Plural erscheint,
+    ist notwendig zuerst inhaltlich nicht bestimmter als es
+    ein Gattungsname zulässt.</p>
+    <p>Bei den Griechen kommt
+    hinzu, daſs Vereine weiblicher Götter nicht mütterlich
+    gedacht werden können: die Monogamie, auf die die
+    ganze Gesellschaft gebaut ist, kennt nur eine Trägerin
+    des Ehrennamens an einem Orte.</p>
+    <p>Also sind in einem
+    Vereine immer junge Frauen, Nymphen (das nur sagt
+    <pb n="218" facs="#226"/>
+    <fw type="pageNum" place="top">218</fw>
+    dieser Name), und sehr bald geht man dazu fort, diese
+    jungfräulich zu glauben.</p>
+    <p>Erscheint also die Naturkraft
+    der Erde in solchem Vereine, so ist ihr Schaffen nicht
+    mehr ein Gebären, sondern ein Schenken, oder wie man
+    sich den also mehr vergeistigten Prozeſs sinnlich vorstellt.</p>
+    <p>Machen wir sowohl von der Gleichberechtigung der
+    Einzahl und Vielzahl wie von der Notwendigkeit örtlich
+    bestimmter, also im Namen verschiedener, inhaltlich
+    identischer Verkörperungen für die Erde Gebrauch, so
+    werden wir uns das Land übersäet denken mit Kult-
+    stätten der so oder so benannten, bald als eine Mutter,
+    bald als ein Verein von jungen Frauen gedachten Natur-
+    kraft der Erde.</p>
+    <p>So finden wir es in Latium, ehe die
+    griechische Religion eindringt, und z. B. Fortuna<note n="1" place="bottom">Sehr belehrend, weil sie in sehr vielen verschiedenen
+    Namen und Beziehungen auftritt, auch in der Mehrzahl, weil
+    sie als säugende Mutter und als Mädchen erscheint, endlich weil
+    sie durch ihre Identifikation mit der spätgriechischen Tyche
+    aus der 'Hervorbringerin' zu dem blinden Zufall geworden
+    ist, aus der Göttin zur hohlen Abstraktion. Höchst merk-
+    würdig durch die halbhellenische Bildung ihrer zwerghaften
+    Begleiter ist die Venus fisica von Pompei, eine oskische Göttin.</note>) und
+    Furrina<note n="2" place="bottom">Die Herrin eines Haines in Trastevere, auf den bloſsen
+    Anklang hin mit den Furiae gleichgesetzt, die lediglich eine
+    Übersetzung von μανίαι sind, einem Namen der Erinyen, in
+    dem ihr Wesen dem späten Glauben gemäſs kenntlich zu sein
+    schien.</note>), an welch' letztere man die Erinyen angeglichen
+    hat, sind Götterwesen dieser Art.</p>
+    <p>Besser als die von
+    dem Griechentum entstellte schriftliche Überlieferung
+    zeigen ihr Wesen die vielfach erhaltenen Weihgeschenke
+    an sie<note n="3" place="bottom">Am besten aus den Funden in Curti bei Capua.</note>).</p>
+    <p>Wir finden auch in Griechenland seit der Zeit,
+    wo man die Götter menschenähnlich denkt und bildet,
+    ziemlich aller Orten Thonfiguren matronaler oder auch
+    jugendlicher Haltung, die wir mit dem Namen selten be-
+    nennen können, den ihre Stifter gebraucht haben: was
+    <pb n="219" facs="#227"/>
+    <fw type="pageNum" place="top">219</fw>
+    sie meinten, ist aller Orten so übereinstimmend wie die
+    Bildung: die Attribute machen einen äuſserlichen Unter-
+    schied, wie ihn die Namen auch machten.</p>
+    <p>Wir kennen
+    auch lokale Benennungen genug, die freilich meistens nur
+    noch als Beinamen Demeters erscheinen.</p>
+    <p>Denn der not-
+    wendige Prozeſs ist, daſs unter den vielen gleichartigen
+    Gestalten einige oder eine das Übergewicht erlangt, so
+    daſs die schwächeren verkümmern oder in jene aufgehen.</p>
+    <p>So sieht man den älteren Zustand in abgelegeneren
+    Gegenden, was dann das andere richtig würdigen lehrt.</p>
+    <p>Namentlich sind in den Peloponnes die homerischen Götter
+    erst so spät eingedrungen, daſs sie die alte Vielgestaltig-
+    keit nicht ganz verdrängt haben.</p>
+    <p>Die Aufzählung dieser
+    lokalen Kulte und Namen würde hier nur verwirren<note n="1" place="bottom">Die Erde selbst nennen aus anderem Wortstamme
+    χαμύνῃ und χθονίη; sonst mögen eine Anzahl Kultnamen
+    ohne Übersetzung hier stehen, σιτώ ἱμαλίς ἰουλώ vom Acker-
+    bau benannt: die letzte gewiſs als Garbe verehrt, μαλοφόρος
+    μεγάλαρτος, von den Attributen des Bildes benannt, χλόη
+    βλάστη, von dem Gedeihen der Vegetation, καλλιγένεια γενε-
+    τυλλίς κουροτρόφος von dem Gedeihen der menschlichen Frucht.
+    Befremdend ist, daſs die Darstellung von Mutter und Kind
+    so selten ist, während sie z. B. in Capua massenhaft auftritt.
+    Da konnte die spielende Personifikation noch wirklich Neues
+    von Bedeutung schaffen, wie Eirene mit den Plutosknaben.</note>).</p>
+    <p>Die Plurale sind besonders wenig bezeichnend, die
+    'Groſsen', die 'Hehren', die 'Erhabenen', die 'Gnädigen'.</p>
+    <p>Es sind aber die darunter, die in unserem Drama
+    von den Verfolgerinnen des Orestes gebraucht werden:
+    die 'Erhabenen', Σεμναί, nennen sie sich selbst (383),
+    und so war ihr Name an ihrer athenischen Kultstätte.</p>
+    <p>Die Holdgesinnten, Eumeniden, hat der Dichter sie im
+    Titel genannt: so hiefsen sie an mehreren Orten im
+    Peloponnes; wir haben das Weihgeschenk eines Ehe-
+    paares an sie aus Argos.</p>
+    <p>An einem Orte ältester Kultur,
+    in dem böotischen Orchomenos, heiſsen die Hauptgöttinnen,
+    <pb n="220" facs="#228"/>
+    <fw type="pageNum" place="top">220</fw>
+    die ihren Verehrern das Leben und alle seine Güter ver-
+    liehen, Chariten.</p>
+    <p>Das ist ein Abstraktum, von den Römern
+    mit Gratia übersetzt, Liebreiz, Liebesdienst und Dank be-
+    deutend, was denn auch im allgemeinen Glauben diesen
+    Göttinnen zugeschrieben wird, und der Name ist zuerst
+    nur in dem Sinne von liebreizenden Mädchen gegeben wie
+    der der Nymphen<note n="1" place="bottom">So erscheint eine Charis als eine Houri gelegentlich in
+    den Armen eines Gottes oder von einem Gotte begehrt in der
+    Ilias. Im Kulte sehen wir sie ganz wie die Nymphen mit
+    Hermes vereinigt. Wie ihr Wesen, der Wortbedeutung nach
+    bereits verengt, aber doch noch den konventionellen Grazien
+    weit überlegen, erschien, sehe man in dem Gebete, das der
+    Chor V. 1145 für Hippolytos an sie richtet.</note>).</p>
+    <p>Aber in Orchomenos sind sie mit
+    der ganzen Macht der Erdgöttin begabt, und Pindaros, der
+    den Herrinnen seiner Nachbarstadt gern huldigt, hat die
+    ganze Macht der Huldinnen verstanden.</p>
+    <p>Von den Cha-
+    riten kann man in ihrem Wesen die Horen nicht trennen,
+    die wahrhaftig keine bloſsen Allegorieen für die Jahres-
+    zeiten sind, wozu man sie später degradiert hat.</p>
+    <p>Denn
+    die Hore eines Menschen ist die Zeit seiner Blüte und
+    Reife, seiner Schönheit und Kraft, und so walten die
+    Horen auch über Blühen, Wachsen und Gedeihen<note n="2" place="bottom">Mit diesen drei Namen hat man in Athen die drei
+    Horen begabt. Ebenda nennt man Demeter 'Führerin der
+    Horen': das ist die Erde, ist die Mutter Natur, deren ewiges
+    stätiges Walten der Reigen der Jahreszeiten, der Wandel des
+    Werdens umkreist.</note>) der
+    Früchte des Feldes und der Herde.</p>
+    <p>Und zu ihnen treten
+    die Moiren, die Schicksalsfrauen, die bei den entscheiden-
+    den Momenten des Menschenlebens, bei Geburt und
+    Hochzeit und Tod erscheinen<note n="3" place="bottom">Bei der Geburt des Iamos z. B. und des Meleagros,
+    auch der Athena; bei der Hochzeit des Peleus und im attischen
+    Ritual, Pollux 3, 52. Homer pflegt beim Tode die Moira zu
+    nennen. Wie sie wirken, zeigen die Namen 'Zuteilerinnen',
+    μοῖραι, Loswerferinnen, λαχέσεις, Spinnerinnen, κλῶθες.</note>): namentlich vor der Hoch-</p>
+
+    <pb n="221" facs="#229"/>
+    <fw type="pageNum" place="top">221</fw>
+    <p>zeit ruft man sie, dem Schicksalstage für das Lebensglück
+    zumal der Frau: so wenden sich auch die versöhnten
+    Höllengeister unseres Dramas an sie und verherrlichen
+    ihre Macht: wie ganz anders, als wenn sie das kalte
+    Schicksal wären, zu dem sie die Spekulation später ge-
+    macht hat, wie Fortuna zum blinden Zufall.</p>
+    <p>Von einer Gottheit, deren Name Themis einen ganz
+    abstrakten Begriff, Ordnung oder Recht, zu verraten
+    scheint, und die doch Tempel und Altäre gehabt hat,
+    sagt Aischylos selber direkt, daſs sie mit der Erde, Gaia,
+    identisch ist. So lehrt diese am besten, wie weit schon
+    älteste Zeit die Götterkraft der Erde von der Natur zur
+    Sittlichkeit entwickelt hatte.</p>
+    <p>Überwiegend ist allerdings
+    die Ordnung selbst in die Bringerin der Ordnung, Thesmo-
+    phoros, verwandelt worden, die dann als Beiname Demeters
+    erscheint. Was sie bringt, ist jener Bau eines unge-
+    schriebenen Sittengesetzes, den das auf den Ackerbau
+    gegründete seſshafte Leben errichtet. Da ist das erste
+    die Ehe, durch die der Frau als Hausherrin (Despoina,
+    ein Name, den die Erdmutter selbst führt) zuerst ihre
+    Würde wird: so ist die Pflege der Thesmophoros Sache
+    der verheirateten Bürgerfrauen. Aber die weiteren Grund-
+    gebote der hellenischen Moral schlieſsen sich an, den
+    Göttern ihren Kult, Vater und Mutter ihre Ehren zu
+    gewähren und die hellenischen Sitten zu üben, z. B. dem
+    Heischenden Wasser und Feuer zu geben, den Weg zu
+    sagen, den Bittflehenden aufzunehmen, unbestattete Leichen
+    zu begraben u. dgl.<note n="1" place="bottom">Es scheint, daſs eine Bewegung vorhanden gewesen ist,
+    die hinzufügen wollte, Lebewesen nicht zu schädigen (ζῶια
+    μὴ σίνεσθαι) wider Fleischnahrung, fast buddhistisch. Und
+    der Ackerstier, der Arbeitsgenosse des Bauern, hat im Gegen-
+    satz zu dem blutigen Dienste der Nomadenzeit wirklich eine
+    gewisse Heiligung erfahren.</note>).</p>
+    <p>Der Name, unter dem die Erdgöttin die individuellste
+    <pb n="222" facs="#230"/>
+    <fw type="pageNum" place="top">222</fw>
+    Gestaltung gewonnen und die weiteste Verbreitung ge-
+    funden hat, ist Domater oder Demeter, was entweder
+    von Hause aus oder doch in dem Bewusstsein des
+    Aischylos und der ganzen späteren Zeit geradezu "Erd-
+    mutter' ist. Die Verehrung dieser Gestalt wird von
+    einem Orte ausgehen, wohl von dem nach ihr benannten
+    dotischen Gefilde in dem ältesten Achaia<note n="1" place="bottom">Daher heifst die Göttin auch in Böotien und Athen
+    selbt Achaia.</note>), in Süd-
+    thessalien. Dann ist bekanntlich die Heimatstadt des
+    Aischylos Eleusis ihr Sitz geworden, und die Form der
+    Vorstellungen und Kulte, die dort ausgebildet sind, haben
+    sich mit dem Namen über die Welt verbreitet.</p>
+    <p>Hier
+    sind heilige Geschichten zugetreten, vor allem, dafs der
+    Mutter ihre Tochter in die Hölle entführt wird, aus der
+    sie aber alljährlich für acht Monate auf die Erde zurück-
+    kehrt. Jeder kennt diese Geschichte und durchschaut
+    die Bedeutung: sie illustriert die Kultgebräuche, die im
+    Festjahre das Entstehen und Vergehen des vegetativen
+    Lebens begleiten.</p>
+    <p>Dies verfolgen wir nicht, und die
+    Differenziierung der Gottheit in zwei komplementäre Per-
+    sonen, der Mutter und Tochter, der 'beiden Göttinnen', zu
+    der es nicht an Parallelen fehlt<note n="2" place="bottom">Damia und Auxesia, Amaia und Azesia, und wie die
+    Namen sonst lauten. Dahin möchte ich auch Themis und
+    Nemesis von Rhamnus rechnen, neben denen die drei Nemesis
+    von Smyrna stehen. Ordnung und Strafe gehören zu einander.
+    Daſs jene Nemesis die universale Potenz der Erdgöttin be-
+    sitzt, zeigt ihr Kult und ihr Bild, und daſs sie als Vogel von
+    dem verfolgenden Gotte ein durch seine Schönheit verderb-
+    liches Weib empfängt und im Ei gebiert, hat an der Em-
+    pfängnis des Rosses Erion durch Erinys und dessen Wirkung
+    seine Parallele.</note>), lehrt nichts wesent-
+    lich Neues. Wohl aber empfing die meist einfach
+    'Tochter' genannte Göttin eine groſse Bedeutung, sobald
+    sie nicht blofs in der Geschichte der Mutter eine passive
+    <pb n="223" facs="#231"/>
+    <fw type="pageNum" place="top">223</fw>
+    Rolle spielt, sondern in ihrem Reiche unter der Erde
+    dauernd herrschend gedacht wird und einen Eigennamen,
+    Persephone oder ähnlich, erhält.</p>
+    <p>Das ist die Erde in
+    einer andern Phase ihres Wesens <note n="1" place="bottom">Die Sprache hat Anstalt gemacht, die beiden Wörter
+    für Erde, die sie besitzt, Γαῖα und Χθών, nach diesen zwei
+    Seiten gesondert zu verwenden; aber nur in dem abgeleiteten
+    Adjektiv χθόνιος ist es ganz durchgedrungen.</note>), oder es ist gar nicht
+    mehr die Erde, sondern die Hölle. Denn der Schofs
+    der Allgebärerin nimmt auch all das vergehende Leben
+    auf: die Seelen, die aus ihm emporsteigen, kehren in
+    ihn zurück; ihn umwehen auch die Schauder der nächtigen
+    Tiefe des Grabes. Persephone ist die unerbittliche Herrin
+    der Abgeschiedenen; sie thront drunten (der Gemahl ver-
+    schwindet neben ihr; ist doch drunten keine Liebe und
+    keimt kein Same), und was sie emporsendet, sind die
+    Geister und Gespenster. Nur wenn man eine unheim-
+    liche Erscheinung sieht, ruft man sie an.</p>
+    <p>Und vor den
+    Seelen, denen der Tod die Macht nicht genommen hat,
+    die um die Gräber, aber auch durch die Schatten der
+    Nacht schweifen, graut sich der Mensch; das Rätsel des
+    Fortlebens der Abgeschiedenen, deren Wirkung er in der
+    Seele empfindet, ist immer schauerlicher als der starre
+    Tod.</p>
+    <p>Da berührt und vermischt sich die Herrin der
+    Hölle mit einer anderen Göttin, die aus einer weithin
+    reichenden, aber im Grunde verschiedenen Vorstellung
+    hervorgegangen ist, mit der Herrin der unbefriedeten
+    Natur, des Bergwaldes draufsen mit seinem Wilde, der
+    gespenstigen Jungfrau, die über die Haide saust, die an
+    den Dreiwegen rastet, die im Sturmwind und Wogen-
+    schwall über das Meer fährt, den Sinn verstört und die
+    Glieder lähmt, die den bösen plötzlichen Tod giebt. Sie
+    trägt auch viele Namen, Brimo, Diktyna, Laphria u. dgl.;
+    Hekate und Artemis (die Schlächterin, dem Wortsinne
+    nach) sind die verbreitetsten. Es fehlt auch nicht die
+    <pb n="224" facs="#232"/>
+    <fw type="pageNum" place="top">224</fw>
+    Zerlegung in zwei Personen und in die Mehrzahl, selbst
+    von Artemides.</p>
+    <p>Wir haben hier nicht zu verfolgen,
+    welche Entwickelung diese Gestalt genommen hat; nur
+    die erste Konzeption geht uns an.</p>
+    <p>Auch hier ward ent-
+    scheidend, wie sich die Griechen ihr Leben seſshaft
+    machten und befriedeten. Sie machen sich um den Hof
+    einen Zaun (ἔρχος), noch lieber um das ganze Dorf einen
+    Wall (eine πόλις), denn die städtische Siedelung ist ihnen
+    (noch nicht bei Homer) das Normale. Der Stadtring
+    scheidet dann das sichere befriedete Reich im Innern
+    von dem unheimlichen draufsen.</p>
+    <p>Drinnen darf nicht be-
+    graben werden: die Seelen gehören nicht zur Gemein-
+    schaft<note n="1" place="bottom">Man hat den Fortschritt hierin schon im Altertum be-
+    griffen, denn es war nicht vergessen, dafs eine Zeit voran-
+    ging, wo man im Hause begrub.</note>), drinnen wird kein Blut vergossen, auch kein
+    Bluturteil gefällt. Drinnen darf auch der Herr des
+    blutigen Krieges und Mordes, Ares<note n="2" place="bottom">In diesem Gotte liegt nichts weiter, daher verehrt man
+    ihn nur, wenn es Blut zu vergieſsen gilt; die Dichter aber
+    denken ihn auf der Seite der verhafsten Landesfeinde, Troer
+    und Thraker: dafs diese ihn wirklich verehrt hätten, davon
+    kann keine Rede sein. Wenn er dann in der Poesie einzeln
+    eine erweiterte Thätigkeit übt (Soph. Oedip. 190), so wird er
+    der böse Tod.</note>), und die wilde
+    Artemis<note n="3" place="bottom">Daſs sich unter diesem Namen auch Vorstellungen ge-
+    bildet haben, die sie (eigentlich freilich Eukleia) an den
+    Markt zogen, ändert an der Grundlage nichts, noch weniger,
+    daſs sich an Artemisheiligtümer, die einst im Freien lagen,
+    ein Ort angeschlossen hat. Die asiatische Göttin, die man
+    z. B. in Ephesos und Perge Artemis genannt hat, geht das
+    Wesen der hellenischen Göttin nichts an; ebensowenig die
+    karische Lichtjungfrau der Inseln.</note>) nicht wohnen, Hekate sitzt am Thore, um ihre
+    Gespenster draufsen zu halten. Draufsen muſs sich be-
+    haupten, wer die stärkste Faust hat; drinnen waltet
+    Gastrecht und Themis.</p>
+    <p>Wenn sich so das unheimliche
+    Draufsen in Gegensatz zu dem friedlichen Heim stellt,
+    <pb n="225" facs="#233"/>
+    <fw type="pageNum" place="top">225</fw>
+    so wird sich die Herrin draufsen der Herrin drunten gleich
+    setzen, die auch ein komplementärer Gegensatz zu der
+    mütterlichen Segensmacht der Erde ist. Und das wilde
+    Heer, von dem umgeben die Jungfrau des Waldes dahintost,
+    und das ebenso sehr aus den grollenden Seelen draufsen
+    besteht wie aus den wilden Elementargeistern, muſs sich
+    mit den unendlichen Scharen der Seelen und Gespenster
+    vermischen, über welche die Königin der Toten gebietet.</p>
+    <p>Aber in dem Wesen der Erde liegen die lichte und die
+    schwarze Seite, und wie sie sich in Mutter und Tochter
+    differenziiert haben, die doch als das Götterpaar vereinigt
+    bleiben, so liegt in dem Wesen jeder Erdgottheit der
+    Keim zu der Entwickelung nach beiden Seiten, vollends,
+    wenn sie als ein Verein von Göttern aufgefafst war.</p>
+    <p>Die
+    Chariten sind ausschliesslich freundlich und hold: die
+    Erinyen sind nur als strafende Dämonen der Hölle thätig
+    geblieben, und schon das Altertum hat gemeint, dafs sie
+    den Namen der Holdgesinnten, Eumeniden, nur euphe-
+    mistisch getragen hätten, der, da er selbständig vor-
+    kommt, vielmehr für die weitere Natur der Erinyen
+    Zeugnis ablegt.</p>
+    <p>Diese muſs man erkennen und anerkennen,
+    sonst ist die Tragödie des Aischylos eine Fratze.</p>
+    <p>Wir haben keine Kunde, dafs irgendwo die Erinyen
+    unter diesem Namen Verehrung genossen haben, den
+    Aischylos ohne Unterschied neben anderen anwendet<note n="1" place="bottom">Er gebraucht einmal den Singular 951, 127 redet er
+    von der Schlange'; das beweist nur, dafs die Zahl irrelevant
+    ist, wie man immer vom Chore in Ein- und Mehrzahl spricht.
+    So hat auch niemand daran Anstofs genommen, fünfzehn
+    Erinyen zu sehen, obwohl man auch diesen Verein sich
+    durchgehends in der Dreizahl vorstellte.</note>).</p>
+    <p>Aber Erinys, von den Späteren mit Demeter gleich-
+    gesetzt, war in Thelpusa, einem abgelegenen Gebirgsdorfe
+    Arkadiens<note n="2" place="bottom">Wir dürfen nicht dasselbe für den böotischen Berg
+    Tilphottion voraussetzen, wenn das auch, vielleicht nicht</note>), die Göttin des Ortes, und die Leute 
+
+
+    
+
+    <pb n="226" facs="#234"/>
+   
+    behaupteten, in der Volkssprache hätte der Name die
+    Zürnende bedeutet, was wir nicht kontrollieren können,
+    zu bezweifeln nicht brauchen.</p>
+    <p>Neben ihrem Bilde, einem
+    Weibe mit Korb und Fackel (in späterer gemeiner
+    Demetergestalt), stand das Bild einer anderen Demeter,
+    nach dem Dorfbach benannt und durch eine kümmer-
+    liche Erklärung erläutert: in ihm fanden andere Themis.</p>
+    <p>Wir werden leicht die beiden Seiten der Erdgöttin durch-
+    schauen.</p>
+    <p>Daneben aber erzählte man die seltsame Ge-
+    schichte, daſs Erinys und Poseidon, beide in Pferde-
+    gestalt, einen Sohn<note n="1" place="bottom">Sobald die Gleichung mit Demeter dazutrat, natürlich
+    auch die Tochter.</note>) erzeugt hätten, den Erion<note n="2" place="bottom">So die einheimische Form; im homerischen Epos zu ᾿Αρίων
+    und ᾿Αρείων entstellt wenn nicht der Anlaut in den Dialekten
+    wechselte. Makedonisch lautete der Name der Erinyen Αριαν-
+    τίδες, aber das kennen wir nur in hellenisierter Umschrift.</note>), den
+    Hengst des Unheils, der den Adrastos in den unheil-
+    vollen Krieg der Sieben gegen Theben getragen hätte.</p>
+    <p>Die Münzen des Ortes zeigen das Bild dieses gespenstigen
+    Pferdes, das die heroische Dichtung, seiner Bedeutung,
+    nicht seiner Herkunft vergessend, zu einem vortrefflichen
+    Reittier herabgewürdigt hat<note n="3" place="bottom">Da scheint das Wesentliche, daſs er seinen Herrn aus
+    der Schlacht nach Hause bringt. Aber er hat ihn in Wahr-
+    heit zu seiner Mutter Erinys gebracht. So heiſst der Hügel,
+    auf dem das Heimatsdorf des Sophokles stand, der Hügel des
+    Rosses. Da verehrte man Poseidon, Demeter, die Erinyen,
+    und dahin sollte Arion den Adrastos auch getragen haben.
+    Das alles wird durch die thelpusische Sage verständlich: in
+    Athen ist das Tierische durchaus getilgt.</note>).</p>
+    <p>Es trete neben dieses
+    Rudiment einer uns so gar unhellenisch anmutenden Vor-
+    stellungsart gleich eine Parallele.</p>
+    <p>Medusa, die 'Fürstin',
+    die vornehmste in dem Vereine der Gorgonen, der
+    Trägerinnen des alles Leben vernichtenden bösen Blickes,
+    <pb n="227" facs="#235"/>
+    <fw type="pageNum" place="top">227</fw>
+    wird in dem Augenblicke, wo ihr Perseus das Haupt
+    abschlägt, von Poseidon Mutter des Pegasos, des Rosses,
+    das einen anderen Helden zu herrlichen Thaten und zu
+    jähem Sturze getragen hat. Und auch Medusa hat auf
+    einem eben entdeckten böotischen Gemälde Pferdegestalt<note n="1" place="bottom">Hier stehe noch ein Drittes. Der Ahnherr der Böoter
+    ist Sohn des Poseidon und der 'schwarzen Stute', Melanippe.
+    Schwerlich war er von Anbeginn ein Mensch. Das Roſs ist
+    Münzbild der Thessaler, der Vettern der Böoter; Poseidon hat
+    in Thessalien das Roſs geschaffen: das setzt man von selbst
+    in das Ursprüngliche um, daſs er den Ahn des Stammes als
+    Roſs gezeugt hat. Und so wird der Reiter auf den Münzen
+    vieler Völker und der Stadtgründer vieler Kolonien Leukippos
+    ursprünglich nicht ein Schimmelreiter, sondern ein Schimmel
+    gewesen sein, Symbol sowohl des göttlichen Blutes wie des
+    reisigen Standes. Poseidon ἵππιος ist wohl durchaus Ersatz
+    von Poseidon ἵππος.</note>).</p>
+    <p>Lassen wir das Viele beiseite, wozu diese grotesken
+    Konzeptionen anreizen: das drängt sich von selbst auf,
+    daſs Erinys die Erdgöttin ist nach ihrer nächtigen und
+    höllischen Seite hin gefaſst, aber in Thelpusa noch in
+    solcher Weite des Wirkens, daſs sie sich an Demeter
+    angleichen lieſs, wenn auch später eine komplementäre
+    Gestalt neben sie treten muſste.</p>
+    <p>Medusa ist nur noch ein
+    besonders fürchterliches höllisches Gespenst, aber ihr Name
+    sagt, daſs sie einst mehr war.</p>
+    <p>Endlich ist unverkennbar,
+    daſs die Arkader sich die groſsen Götter in Rofsgestalt
+    dachten; sie haben sie auch als Bär und Wolf und Bock
+    gedacht<note n="2" place="bottom">Poseidon war bei ihnen einer der höchsten Götter; Pan,
+    der nur bei ihnen als groſser Gott lebt, hat die Bocksgestalt
+    nie ganz verloren. Die Ahnherrn des Stammes sind Bär und für
+    einen anderen Clan Wolf. Der Hermes, den 'Mütterchen' in einer
+    Höhle des Götterberges gebiert (nur die Höhle kann Kyllene
+    geheiſsen haben, wie die Etymologie lehrt; der Berg hieſs
+    Atlas), ist ein Zwerg; schwerlich hieſs er von Haus aus
+    Hermes. Die homerischen Götter, Zeus, Apollon, Athena an
+    der Spitze, sind erst durch Homer in Arkadien importiert.</note>).</p>
+    <p>Es gehört zu dem ersten, was man sich zu eigen
+    <fw type="sig" place="bottom">15*</fw>
+    <pb n="228" facs="#236"/>
+    <fw type="pageNum" place="top">228</fw>
+    machen muſs, wenn man die Sprache der alten Religion
+    verstehen will, daſs man von der Menschengestalt der
+    Götter absieht, der groſsartigen Neuerung der homeri-
+    schen Poesie, und daſs man weiter von der Verehrung
+    des Götterbildes in seinem Hause absieht, die bei Homer
+    nur in Anfängen besteht.</p>
+    <p>Damit ist auch die Notwendig-
+    keit verschwunden, daſs eine göttliche Person nur in
+    einer bestimmten Gestalt der Phantasie erschienen wäre.</p>
+    <p>Für die Erdgöttin ist kenntlich, daſs ihr Sitz in Hainen
+    gedacht ward, die man zuerst nicht sowohl gepflanzt als
+    bei der Rodung des Waldes in der Feldflur stehen ge-
+    lassen haben wird: man sieht, wie leicht sich ebenda
+    auch die Herrin des friedlosen Drauſsen ansiedeln konnte.</p>
+    <p>In solchem Haine ist ein besonders schöner Baum oder
+    eine Baumgruppe der Träger der göttlichen Seele: vor
+    ihm und an ihm wird man für sie opfern<note n="1" place="bottom">So im dotischen Gefilde der Hain, an dem sich Erysi-
+    chthon vergreift: der 'Erdaufreiſser' wird haben roden wollen,
+    um zu pflügen. Ein Hain ist auf dem Kolonos; in Arkadien
+    nennt Pausanias viele, der Demeter, der Eumeniden, u. a. In
+    Psophis steht ein Hain, den man gradezu 'die Jungfrauen'
+    nennt, wie man manchmal die Nymphen, oft in der Einzahl
+    die Herrin der wilden Natur bezeichnet. Auch die Chariten
+    in Orchomenos sind nach einer Version Cypressen.</note>).</p>
+    <p>Neben dem
+    Haine bietet sich, für die Herrin der Erdentiefe noch
+    passender, die Höhle, der Eingang in das Reich drunten.</p>
+    <p>Solche Höllenpforte war in Eleusis<note n="2" place="bottom">Das Ritual des Kultus hat in jedem Tempel der eleu-
+    sinischen Göttinnen solche Höhle anzubringen gefordert.</note>), und die Höhle, welche
+    Athena bei Aischylos den Erinyen zuweist, ist noch heute
+    vorhanden, wenn auch der Besucher den frommen Schauder
+    mitbringen muſs.</p>
+    <p>In dem Erdinnern wohnt als das ge-
+    eignetste Tier, in dessen Gestalt die Göttin sich zeigen
+    kann, die Schlange.</p>
+    <p>Als Schlange denkt sich der Hellene
+    am liebsten die Seele des verstorbenen Menschen: sie
+    paſst auch für die Seele der Erde.</p>
+    <p>So hat denn Zeus
+    <pb n="229" facs="#237"/>
+    <fw type="pageNum" place="top">229</fw>
+    in Schlangengestalt mit Demeter die Persephone gezeugt:
+    doch nur, weil jene also erschien.</p>
+    <p>Die Schlange ist
+    dann wegen ihrer Unheimlichkeit ebenso höllisch ge-
+    worden wie die Gorgo oder die Erinys, und Echidna,
+    die Urschlange, erscheint nur noch als Mutter von Scheu-
+    salen<note n="1" place="bottom">Der Prolog der Priesterin nennt als Inhaberinnen des
+    delphischen Orakels die Erde, Themis und Phoibe: das ist
+    eine Zerlegung eines Begriffes in drei Personen, von denen
+    die beiden ersten von Aischylos selbst im Prometheus identi-
+    fiziert werden, die letzte nur erfunden ist, um das Orakel an
+    Phoibos zu schenken. So verschleiert die delphische Theo-
+    logie, was sie sonst in anderer Weise andeutet, daſs sich
+    Apollon des Orakels auf Kosten der Erdmutter bemächtigt
+    hat. Es ist einst dort wie überall so geübt worden, daſs der
+    Gläubige auf der Erde schlief, die Offenbarung aus der Erde
+    aufstieg und sich ihm im Traume enthüllte. Die Erdmutter
+    war auch hier eine Schlange, Delphyna: sie ist von den
+    Priestern Apollons in den Drachen verwandelt, den der Gott
+    erschieſsen muſs, um Delphi einzunehmen. Daſs der Hauch
+    der Erde seine Priesterin begeisterte, ist keine alte Geschichte
+    und widerspricht seinem Wesen, von dem rationalistischen
+    Gerede, daſs narkotische Dämpfe aus der Erde die Pythia
+    benebelt hätten, zu schweigen. Apollon und seine Priesterin
+    sitzen auf dem Dreifuſs was ein bestimmtes Ritual zeigt,
+    das noch nicht verstanden ist.</note>).</p>
+    <p>Auch bei Aischylos heiſst die Erinys einmal
+    Schlange (128), und wenn sein Chor keine Schlangen in
+    den Händen hält, wie die Eumeniden auf dem Relief von
+    Argos<note n="2" place="bottom">Solche Attribute sind meistens der Ersatz der früheren
+    Tiergestalt; hier ist es ganz deutlich. Bei den Himmels-
+    göttern sind es ganz folgerichtig meistens Vögel.</note>), und auch das später beliebte Schlangenhaar nicht
+    trägt, so ist da nur die Herstellung der Maske dem
+    Dichter hinderlich gewesen, denn in der Vision des
+    Orestes (Choeph. 1030) fehlen die Schlangen nicht.</p>
+    <p>Sehr
+    viel befremdlicher ist uns die Roſsgestalt.</p>
+    <p>Wir kennen
+    sie aus Homer an den Winden und an den 'Rafferinnen',
+    Harpyien, die auch im Sturme daherfahren<note n="3" place="bottom">Eigentlich ἀρέπυιαι; im Epos sind sie sicher gleicher
+    Natur mit den 'Stürmerinnen' θύελλαι, kommen plötzlich und
+    entführen, z. B. Kinder. In der Phineussage sind sie ekel-
+    hafte Vögel derselben Raſse wie die Stymphaliden: die
+    Kinder des Boreas verjagen sie, wie Herakles ihre Schwestern.
+    Es sind also die bösen Geister, die Fieber, Pestilenz, Kinder-
+    sterben bringen, spiriti di malaria.</note>); an beiden
+    <pb n="230" facs="#238"/>
+    <fw type="pageNum" place="top">230</fw>
+    ist sie später durch die Beflügelung ersetzt. Ferner
+    eignet sie Wassergeistern.</p>
+    <p>Dicht unter der höchsten
+    Kuppe des Helikon rinnt die Roſsquelle, Hippukrene, die
+    der Huf eines überirdischen Hengstes geschlagen hat;
+    weiter unten heiſst die Quelle, durch deren Wasserreich-
+    tum das Musenthal so anmutig geworden ist, die 'freund-
+    liche Stute', Aganippe.</p>
+    <p>Ganz besonders liebt Poseidon
+    die Roſsgestalt, deſsen umfassendes Walten freilich mit
+    der Herrschaft über die Gewässer nicht erschöpft ist,
+    und er mag dazu Veranlaſsung gegeben haben, daſs die
+    Erdgöttinnen, die von ihm Mutter werden, die gleiche
+    Erscheinung annehmen.</p>
+    <p>Aber der wilde Bergwald wird
+    auch allgemein mit dämonischen Rossen bevölkert, und
+    nur halb hat die Vermenschlichung den Silen seiner
+    Pferdenatur entkleidet, wie den Satyr seiner Bocksnatur.</p>
+    <p>Die Kentauren sind immer Mischwesen geblieben, jetzt
+    ungeschlachte Feinde der Menschen, bestimmt von den
+    Heroen ausgerottet zu werden; aber Chiron der Gerechte,
+    der Sohn des vorweltlichen Gottes Kronos und der Linde,
+    hat einst wirklich göttliche Ehren empfangen.</p>
+    <p>Wie weit
+    diese Tiergestalt auch den freundlichsten Gewalten an-
+    gemessen schien<note n="1" place="bottom">Es ist sehr bemerkenswert, daſs die Hellenen kein
+    Pferdefleisch eſsen, also auch mit verschwindenden Ausnahmen
+    keine Roſsopfer kennen, die den Indern und Germanen und
+    Skythen so hoch stehen. Darin liegt eine ganz besondere
+    Wertung dieses Tieres. Den Hund verachtet man; er ist
+    unrein.</note>), zeigt sich darin, daſs das himmlische
+    Zwillingspaar, das man meist Zeuskinder, Dioskuren,
+    nennt und als göttliche Schimmelreiter denkt, in Böotien
+    unter dem Namen 'die beiden Schimmel' (λευκὼ πώλω)
+
+    
+
+      <pb n="231" facs="#239"/>
+  auftritt. Doch ist der notwendige Verlauf gewesen, daß
+    das Tierische, wo es sich erhielt, niedrig und böse
+    schien: die Zeit des Aischylos dachte sich nur noch
+    einen feindlichen unbestimmten Dämon als ein wildes
+    schlagendes und tretendes Pferd. Seine Erinyen tragen
+    kaum mehr etwas von der Gestalt der Demeter Erinys
+    an sich<note n="1" place="foot">Höchstens könnte man, auch um der Rhythmen willen,
+      in der Schilderung ihrer schweren Tritte und Sprünge (363)
+      den Galopp des dämonischen Rosses hören wollen; aber dazu
+      müßte ein bezeichnendes Wort dastehen wie <hi rend="italic">Agam.</hi> 1660 der
+      Huf des Dämons.</note>.
+  </p>
+  <p>Dagegen hat er sie als Bluthunde mit grellsten Farben
+    gezeichnet und nennt sie einfach Hunde. Unter dem
+    Gebell einer gespenstischen Meute fährt die Todesgöttin
+    oder die Herrin der Wildnis draußen über die Erde.
+    Hund ist überhaupt die Bezeichnung des Dieners, wenn
+    auch immer eine erniedrigende<note n="2" place="foot">Daher liebt sie die kriechende Heuchelei Klytaimestras
+      <hi rend="italic">Agam.</hi> 607, 895.</note>. So sind denn diese
+    Hunde, die den Mörder aufspüren und hetzen und sein
+    Blut schlürfen, nur in dieser ihrer Aktion so gedacht:
+    die Erdgöttin, auch als Fürstin der Tiefe und der Hölle,
+    könnte man sich nicht als Hund denken<note n="3" place="foot">Bei Euripides, <hi rend="italic">Iph. T.</hi> 294, scheint zu stehen, daß die
+      Erinyen brüllten wie Rinder. Das ist so irrig, wie der Vers
+      gefälscht ist. Die Kuhgestalt fehlt zu unserer Überraschung
+      nicht nur den Erinyen und ihres Gleichen, sondern auch der
+      Erdgöttin; Hera, der sie zukommt, ist eben keine, sondern
+      die Gattin des Himmelsgottes, der sehr oft Stiergestalt trägt
+      wie Jahwe auch.</note>.
+  </p>
+  <p>Alles Tierische ist für Aischylos nur noch Bild, höchstens
+    Reminiscenz an die grausigen Spiele einer ungeschlachten Phantasie der
+    Vorzeit, wie die Walpurgisnacht für uns. Er giebt seinem Chore menschliche Gestalt,
+    aber immer noch so gräßlich, daß er sein Publikum
+    durch den Prolog vorbereiten muß. Gebildet hatte …</p>
+
+  <pb n="232" facs="#240"/>
+  <p>… er die Masken nach der Vorlage, die ihm die Malerei
+    lieferte<note n="1" place="foot">Gorgonen und Harpyien nennt er; er hätte auch Keren
+      fügen können. Wir kennen diese Gestalten aus der Vasenmalerei.
+      Die Gorgonen haben die bleckende Fratze und den
+      bösen Blick; das ist noch ein weiterer Unterschied als die
+      mangelnde Beflügelung, die als der Unterschied von den
+      Harpyien hervorgehoben wird. Eine Frage muß hier angeregt
+      werden, obwohl sie ohne Antwort bleibt. Aischylos
+      hatte ein Drama <hi rend="italic">Phorkides</hi> gedichtet: da müssen also ähnliche
+      Scheusale, die Graien oder wen er sonst als Kinder des
+      Phorkos mit Perseus zusammenbrachte, den Chor gebildet
+      haben. Wie kann man da sich über den Chor der <hi rend="italic">Eumeniden</hi>
+      so entsetzt haben, wie uns überliefert ist? Entweder war jenes
+      Drama so gut wie vergessen, oder er hatte die Phorkostöchter
+      zu Mädchen, Nymphen, vermenschlicht.</note>, aber da die wilden Tänze keine Attribute in
+    den Händen erlaubten, waren die Erinyen als solche
+    nicht kenntlich, ja, kaum als überirdische Wesen, denn
+    die später gewöhnliche Beflügelung hat er nicht beliebt:
+    wenn es bloß verfolgenden Gespenstern gelten sollte, so
+    paßte sie; aber den Dämonen der Erdtiefe gebühren
+    keine Flügel<note n="2" place="foot">Freilich haben Seelen und Träume, die Kinder der
+      Erdtiefe sind, Flügel, aber das ist notwendig, damit sie sich
+      bewegen können; Schatten fliegen. Wären die ‘Erinyen der
+      Mutter’ ihre Seelenkräfte, ihre Flüche, so müßten sie freilich
+      Flügel haben. Daß die spätere Phantasie sie ihnen oft giebt,
+      geschieht durch Vermischung mit wirklichen Personifikationen,
+      für die sich die Beflügelung festgesetzt hat, und zwar durch
+      die bildende Kunst zuerst, die sie aus dem Orient empfangen
+      hatte, kaum vor dem siebenten Jahrhundert.</note>.
+  </p>
+  <p>Mag der Leser auch unwillig gerufen haben: was
+    brauche ich solche Barbareien — es sind ihm eher noch
+    zu wenig vorgeführt. Am liebsten zeigte ich ihm eine
+    ganze Reihe jener geschnittenen Steine, die man nach
+    den Inseln nennt, weil sie dort zuerst in größerer Zahl
+    ans Licht kamen: da würde er sich über die tollen und
+    absurden Mischbildungen aller möglichen Tierleiber
+    entsetzen, in denen zweifelsohne die Zeit, deren Gedächtnis
+    in den Stoffen Homers dauert, ihre Götter und Dämonen
+    gesehen hat.</p>
+
+  <pb n="233" facs="#241"/>
+  <p>Wer die Einführung der Erinyen, und erst
+    recht wer die Wandelung der Scheusale in segenspendende
+    Geister begreifen will, der muß auch eine Ahnung von dem haben,
+    was die religiöse Phantasie erfüllte, als sie diese Gestalten
+    konzipierte; er muß die doppelte Wandelung übersehen, welche die
+    hellenischen Götter überhaupt durchgemacht haben: die Vermenschlichung
+    durch Homer, die aber in vielem Entgöttlichung nicht minder
+    als Enttierung ist, und die Versittlichung durch die Fortschritte
+    der Religion, die mit der Vergeistigung vielfach die Aufhebung
+    der real geglaubten Person zur Folge hat.</p>
+  <p>Als die höhere materielle und geistige und künstlerische
+    Kultur aus Asien wieder herüberkam und in der
+    homerischen Poesie nicht nur ihren größten Schatz,
+    sondern auch ein wunderbar geschmeidiges Ausdrucksmittel
+    mitbrachte, mußte sie die Götter, die sie vorfand,
+    allmählich entweder den homerischen angleichen, in sie
+    überführen, oder als Götter niederer Sphäre in dienende
+    Stellung weisen (wo man denn bald lieber Dämonen als
+    Götter sagte), oder sie als überwundene Urgewalten hinter
+    die Lichtgestalten Homers in den Tartaros werfen. Sie
+    fand auch einige wieder, die einst mitgewandert waren,
+    aber sich unter dem andern Himmel verändert hatten.
+    Dazu gehörten die Erinyen. Wie hätten sie, losgelöst
+    von dem Boden, in dem sie wohnten, ihre alte weite
+    Wirksamkeit bewahren sollen, da sie entwurzelt waren
+    wie die Auswanderer selbst. Wir hören bei Homer, daß
+    sie dienende Dämonen der Hölle sind, die im Nebel
+    wandeln; sie kommen auf die Beschwörung der Menschen,
+    denen ein Recht gekränkt ist, welches die Gesellschaft
+    als unverletzlich anerkennt; also namentlich die Eltern,
+    aber auch der ältere Bruder, der Bettler kann die Erinyen
+    rufen, wenn ihm in seiner betreffenden Eigenschaft Un-…</p>
+
+  <pb n="234" facs="#242"/>
+  <p>…recht geschieht. Dann bringen sie die Strafe, deren
+    Vollstreckung nicht genauer geschildert wird. Ferner
+    erscheinen sie als Schwurzeugen neben Erde und Sonne,
+    und da wird hinzugefügt, daß sie den Meineidigen unter
+    der Erde, also nach dem Tode, ewig peinigen<note n="1" place="foot"><hi rend="italic">Ilias</hi> Τ 259. Die Strafen des Meineidigen sind immer
+      besonders ausgemalt worden und so schon früh auch in das
+      Leben nach dem Tode verlegt, weil man so viele Eide schwor,
+      und staatliche Ahndung des Meineids widersinnig schien:
+      die Götter waren ja beleidigt, und man glaubte damals noch,
+      daß sie ihre Beleidigungen zu ahnden vermöchten.</note>. Hier
+    verrät sich noch am meisten ihre alte Macht und ihre
+    Verwandtschaft mit der Erde, von der sie doch gesondert sind.
+    Denn diese Gottheit, die im Elemente immer und überall
+    gegenwärtig ist, hat allezeit noch viel mehr als die alles schauende
+    Sonne als Schwurzeuge gedient<note n="2" place="foot">„O Erde“ oder „Erde und Götter“ ist bis Demosthenes
+      eine sehr feierliche Beteuerung; bei den Asiaten auch
+      „Mutter“ (<foreign xml:lang="grc">μα</foreign>).</note>, und namentlich in allen Fällen, wo
+    eine Seele in Betracht kommt, wendet man sich an sie. Man
+    schlägt den Boden mit der flachen Hand oder stützt sie auf den
+    Boden, während man die Beschwörung oder den Eid spricht:
+    das ist so allgemein üblich, daß „sich aufstützen“ die Bedeutung
+    „beschwören“ angenommen hat. So sind die Erinyen also
+    Vollstreckerinnen eines fremden Willens, einer Gottheit,
+    die man nicht mehr persönlich in Aktion setzen mag,
+    wie der Erde, oder eines Menschen, keineswegs nur
+    eines sterbenden<note n="3" place="foot">Als die göttlichen Rosse des Achilleus reden, schließen
+      ihnen Erinyen den Mund; das ist so viel als „es mißgönnte
+      ihnen die Gottheit weiteres“. <foreign xml:lang="grc">θεοὶ ἐμέγηραν</foreign>; <foreign xml:lang="grc">Μέγαιρα</foreign>
+      ist ein Erinyenname, oder <foreign xml:lang="grc">θεοὶ ἐνεμεσῶντο</foreign>; <foreign xml:lang="grc">Νέμεσις</foreign>
+      litt es nicht weiter; oder es war <foreign xml:lang="grc">ὑπὲρ αἶσαν</foreign> oder <foreign xml:lang="grc">μοῖραν</foreign>.</note>.
+    Ihre Aktion ist aber immer eine strafende, peinigende,
+    und ihr Wohnsitz ist die Hölle. In einem Märchen werden
+    Kinder, die die Harpyien entrafft haben, Dienerinnen
+    der Erinyen, wie bei uns der Frau Holle oder der Hexe<note n="*" place="foot">v 78. Als den Minyern ihre Neugeborenen immer
+      wieder sterben, gründen sie den Erinyen des Laios und Oedipus
+      ein Heiligtum, Herodot 4, 149. Das konnte aus solchem
+      Glauben geschehen; aber die heroischen Namen zeigen, daß
+      das Epos diesen Erinyenglauben vermittelt hat: es ist der
+      „Dämon“ des Hauses, durch alte Flüche wachgerufen, der den
+      Volksgenossen aufliegt. Was Herodot erzählt, ist nicht historisch.
+      Nur hier erwähnt er die Erinyen; auch Pindar tut nur
+      der Erinys des Labdakidenhauses Erwähnung.</note>.
+  </p>
+
+  <pb n="235" facs="#243"/>
+  <p>Trotz dieser Tätigkeit und diesem Wohnsitze ist die Person
+    der Erinyen im Verblassen. Meist tritt ein Genitiv dazu,
+    Erinyen der Mutter, der Bettler<note n="2" place="foot">Sophokles <hi rend="italic">Ant.</hi> 1079 redet gar von den Erinyen des
+      Hades und der Götter, die den Kreon für seinen Frevel an
+      Polyneikes strafen werden. Er hätte auch von der Moira
+      oder Tyche derselben Götter reden können; es ist nur noch
+      periphrastisch, aber die Periphrase schmückt so, daß das
+      Bild von grausamen Schergen entsteht, die den Götterwillen
+      vollstrecken.</note>, ja einmal in einem jungen Gedichte
+    steht für „die Erinyen rufen“ bereits „die Erinyen fluchen“<note n="3" place="foot"><foreign xml:lang="grc">β 135 μήτηρ στυγεράς ἠράσατ᾽ Ἐρινῦς</foreign>, verglichen mit
+      <foreign xml:lang="grc">ϝ 456 πατὴρ πολλὰ κατηρᾶτο, στυγεράς δ᾽ ἐπεκέκλετ᾽ Ἐρινῦς</foreign>.</note>:
+    da ist die Abstraktion fast erreicht. Bei Aischylos heißen sie auch
+    die „Hunde der Mutter“ und legen sich vor Athena selbst
+    den Eigennamen „die Flüche“ bei<note n="4" place="foot">Man vergleiche damit <hi rend="italic">Choeph.</hi> 406: da stehen die „Flüche
+      der Sterbenden“ parallel zu „Erde und Rechte der Unterirdischen“,
+      eine gewaltige, göttlich empfundene Macht, aber persönlich
+      brauchten sie so wenig zu sein wie die <foreign xml:lang="grc">χθονίων τιμαί</foreign> es sein
+      können. Es liegt dem Dichter an den ewigen göttlichen Mächten,
+      aber nichts an ihrer Personifikation.</note>; aber das beeinträchtigt
+    ihre schauerliche greifbare Realität nicht.</p>
+  <p>Das homerische Epos hat gewiß dazu beigetragen,
+    den Namen der Erinyen allgemein zu verbreiten, den
+    wir im Kultus ja nirgend antreffen und im Gebrauch
+    des Lebens nicht voraussetzen können. So ist denn die
+    allgemeine Vorstellung, die man von ihnen hatte, als
+    Aischylos dichtete, und die dann zu dem konventionellen</p>
+
+    <pb n="236" facs="#244"/>
+    <fw type="pageNum" place="top-right">236</fw>
+    <p>Inventare der poetischen Mythologie gehört (die aber für das Wesen der alten und der gleichzeitigen Religion kaum etwas bedeutet), auf dem Boden Homers erwachsen; aber sie hat unter der heiſsen Gläubigkeit, auch wohl der Glaubensfurcht des Mutterlandes in den Jahrhunderten, von denen vor den beiden ersten Dramen gehandelt ist, sehr viel grellere Farben erhalten.</p>
+    <p>Hier gab es noch keine Zweifel an der Realität solcher Personen, vielmehr ertrug man noch viel von dem alten tierischen Wesen. Hesiodos hat die Erinyen noch hoch gewertet, denn die Erde empfängt sie lange vor dem Göttergeschlechte, noch mit den Riesen, aus dem Blute des entmannten Himmels: sie sind eine Macht der Vorwelt.</p>
+    <p>Dasselbe sagt die Ableitung von Kronos<ref target="#n-236-1">¹</ref>) in einem attischen theologischen Gedichte.</p>
+    <p>Und die Nacht, die ihnen Aischylos zur Mutter giebt, pflegt auch am Anfange aller Dinge zu stehen<ref target="#n-236-2">²</ref>).</p>
+    <p>Aber die Genealogie ist immer nur ein Versuch das Wesen zu erklären.</p>
+    <p>Die Erinyen sind nun erstens die Folterknechte der Hölle, wie das Apollon mit schneidender Härte ihnen vorhält<ref target="#n-236-3">³</ref>).</p>
+    <p>Sonst hat das unser Dichter zurückgedrängt, der die Strafen der Unter-<pb n="237" facs="#245"/><fw type="pageNum" place="top-right">237</fw>welt nur gelegentlich als Komplement verwendet: seine Vergeltung wartet nur im Notfalle so lange.</p>
+    <p>Ferner sind sie auf Erden die Schergen des Rechtes, jenes ungeschriebenen, das deshalb universell und unverbrüchlich ist. Dessen Grenzen sind in verschiedenen Kreisen verschieden. In dem apollinischen Epos von der Blutrache des Orestes waren sie streng auf diese beschränkt, und danach umgrenzen die Erinyen in der Gerichtscene ihre Wirksamkeit. Sophokles hat ihre Thätigkeit sehr viel weiter ausgedehnt, so daſs auch der Ehebruch unter ihre Kompetenz fällt<ref target="#n-237-1">¹</ref>), während sie hier sogar Gattenmord zu verfolgen ablehnen. Aber in ihren Liedern erscheinen sie auch bei Aischylos unvermerkt als die Hüterinnen des Rechtes überhaupt, einerlei ob sie unmittelbar die Strafe vollziehen, wie sie das Blut des Orestes aus seinem lebendigen Leibe saugen wollen, oder den Schuldigen niederschlagen und in die Hölle schleppen, wo er anderen Henkern verfällt. Noch viel höher hebt sie Athena, wenn sie ihnen nachsagt, daſs sie den Menschen sowohl Unheil wie Gedeihen gewähren, und gar zugesteht, dafs durch das Erbteil von Sünden, das ein jeglicher mitbekommt, auch einen jeden ihre schweren Schläge treffen können. Da sind die Henkerinnen zu den Organen des ewigen Rechtes, das in allem Menschenschicksal waltet, erhoben. Da ist, wie wir nun einsehen, die alte Majestät der Erdgöttin hergestellt: der fromme Dichter hat den durch Homer entwürdigten Urgewalten ihre Heiligkeit zurückgegeben.</p>
+    <p>Wie ihm das möglich gewesen ist, da er doch weder mythologischen Spekulationen nachging, noch die Würde von Dämonen im Auge hatte, die für ihn nur noch Sym-<pb n="238" facs="#246"/><fw type="pageNum" place="top-right">238</fw>bole waren, das wird erst deutlich, wenn man sich die athenische Erde ansieht, auf der die Geschichte spielt, das Heiligtum, dessen Gründung und Kult uns vorgeführt wird, also Dinge, die dem Dichter und den Zuschauern gleichermafsen vertraut waren.</p>
+    <p>Die Burg von Athen, die alte Stadt, und ihre Umgebung, einst vorstädtisch, ist voll von Heiligtümern der Erdgöttin in ihren verschiedenen Erscheinungsformen. Auf der Burg selbst hat Gaia ihren Altar, da opfert man um Regen. Wenn der ausbleibt, so dürstet das ganze Land: da paſst der umfassendste und elementarste Name. Unfern von jenem Altare ist das Gärtchen, in dem der heilige Ölbaum gewartet wird, dicht neben dem Grabe des Kekrops in dem alten Palaste des Landeskönigs, jetzt in dem Hause Athenas, in dem aber auch die Ahnenseele als Schlange haust. Dort ist also auch der Schauplatz unseres Dramas. Des Kekrops Töchter sind freundliche Geister geworden, die der Ölbäume draufsen und überhaupt der Vegetation warten; wenn sie nächtlich ihre Reigen im Mondenscheine führen, so begieſsen sie das dürre attische Land mit lindem Tau. Agraulides heiſsen sie, 'die Mädchen, die auf dem Felde wohnen'; in der Einzahl hat Aglauros unter der Nordmauer ein Feld zu eigen: sie beschirmt auch die aufblühende Menschenjugend. Weiterhin, aber auch durch einen Gang mit der Burg verbunden, liegt in wasserreicher Gegend der Garten Aphrodites, der ältesten der Moiren. Auch die Horen fehlen nicht, sie segnen Wachsen, Blühen, Reifen. Am Burgthore steht der Altar der Hekate, an der Scheide zwischen Burgfrieden und Wildnis; aber die Herrin des unheimlich friedlosen Draufsen hat keine Unholdinnen in ihrem Gefolge, sondern die lieblichsten der Göttermädchen, die Chariten. Noch in der alten Stadt hat die Erde, die meist mit Demeter äuſserlich gleichgesetzt ist, als die Grüne oder<pb n="239" facs="#247"/><fw type="pageNum" place="top-right">239</fw>die 'Wachsende' oder die Kindernährende' ihre Heiligtümer. Demeter selbst ist mit ihrer Tochter und weiterer Gefolgschaft in einen grofsen Bezirk an der Lehne des Burgberges eingezogen, der ihre Herkunft durch den Namen Eleusinion bekennt. Weiterhin, auf dem Hügel 'Knüll', Pnyx, wohnt sie als 'Rechtsetzerin': da findet sich Werkeltags die Gemeinde zusammen, für Recht und Ordnung im Staate zu sorgen; da kommt die Gemeinde der Frauen an den hohen Festen der Göttin zusammen, nach strengem Fasten der Stifterin der Ehe zu danken. An anderer Stelle, wo nun der tägliche Markt ist, dicht beim Rathaus thront die 'Mutter' und hat die geschriebenen Gesetze und Beschlüsse des Volkes in Gewahrsam. Endlich, in einer Höhle, auf die der Weg von der Burg nach dem Markte herabführt, wohnen die 'Erhabenen'. Sie hatten zu Aischylos' Zeit noch keine Bildsäulen, und ob es zwei oder drei waren, konnte noch später gestritten werden. Als sie Bilder erhielten, waren es die von freundlichen Matronen. Sie empfingen durch Priesterinnen und die Angehörigen alter Geschlechter ihren regelmäſsigen Kult; einmal im Jahre, ungewiſs wann, zog zu ihnen eine Prozession, wie sie hier Athena einsetzt. Was sie dem Volke geben sollten, zeigt ihr Segenslied. Ohne Zweifel hat man sie auch die Holden, Eumeniden, genannt. Aber sie sind zugleich die Erinyen. Ein attisches theologisches Gedicht zählt als Kinder des Kronos auf Aphrodite, die Moiren<ref target="#n-239-1">¹</ref>) und die 'Erinyen, die bunte Gaben verleihen', d. h. Gutes und Böses. Und der Hügel, in dem ihre Höhle ist, ist der Hügel des Ares, der Bluthügel, wo<pb n="240" facs="#248"/><fw type="pageNum" place="top-right">240</fw>Gericht gehalten wird über blutigen Mord: da treten die Erinyen in ihrer höllischen Natur an ihren Platz. Sie sind die Schwurzeugen der streitenden Parteien, und wenn die Freigesprochenen ihnen zu opfern gehalten sind, so liegt darin, daſs die Verurteilten ihnen mit Leib und Leben verfallen sind. Denn ihre Höhle führt in die Hölle, und auch der Kultus ihrer Fürsten und mancher Dämonen, die unmittelbar das Jenseits angehen, hat sich dort in ihrem Gefolge angesiedelt.</p>
+    <p>Diese Umgebung, die heiligen Stätten, zwischen denen er wandelte, die Gottesdienste, an denen er selbst oder die Frauen seiner Familie Anteil hatten, boten dem Dichter unmittelbar die widersprechenden Züge, durch deren Vereinigung er das Vollbild seiner Erinyen gestaltet hat, das aber, wie wir nun einsehen, zugleich ihr wirkliches Bild ist. Er brauchte ja nur an die Prozession der Erhabenen Göttinnen zu denken, die er selbst in seinem Drama vorführt, dann hatte er die Spenderinnen des Segens. Aber es waren doch dieselben, die aus ihrer Höhle auf die Kuppe des Areopages aufstiegen, den Mörder zu verfolgen und zu foltern. Diese Höllendämonen lieferte ihm das Gedicht und die ganze Tradition von Orestes. Die Bewohnerinnen des attischen Heiligtumes waren wirklich Erinyen und Eumeniden zugleich. Auch dieses Mal hat der Dichter versucht, die überlieferten Widersprüche in dem Wesen einer Gottheit durch die innere Entwickelung in der göttlichen Person zu erklären. Man wird freilich kaum zugeben, daſs es ihm hier ganz überzeugend gelungen sei. Dafür hat er mit der Intuition des groſsen Dichters und der Treffsicherheit des wahrhaft frommen Gefühles die wahre Natur der Erinys, der Erdmutter Gaia Themis enthüllt, die auch wo sie straft und peinigt, Mutter ist. Sie mit seiner Hilfe zu verstehen, das lohnt die Mühe vielleicht noch mehr als ein grandioses Gedicht zu verstehen und die Leistung seines Dichters zu würdigen.</p>
+    
+    <list><item><note xml:id="n-236-1" place="bottom" n="1">Epimenides, Schol. Soph. OΚ. 39 (Κρόνου) ἐκ τοῦ καλλίκομος γένετο χρυσή ᾿Αφροδίτη Μοῖραί τ᾽ ἀθάνατοι καὶ Ἐρινύες αἰολόδωροι. Mit den Moiren stellt sie auch Aischylos Prom. 516 zusammen, ohne daſs sich die Verwandtschaft erkennen liefse. Er meint Schwestern von Mutterseite, denn so scheint Eum. 961 zu fassen zu sein: daraus folgt Verschiedenheit der Väter, die wir nicht raten können.</note>
+        </item><item><note xml:id="n-236-2" place="bottom" n="2">Sophokles OK. 40 nennt Erde und Dunkel ihre Eltern, wohl auch eher aus theologischer Kombination als aus der Tradition seines heimatlichen Heiligtumes.</note>
+        </item><item><note xml:id="n-236-3" place="bottom" n="3">Sie heiſsen daher gradezu Ποινai, die Strafen. Als solche führen sie die Fackel, nicht um zu leuchten, sondern um zu brennen, wie wir es auch in den Bildern sehen. Als Höllengeister vermischen sie sich mit anderen ähnlichen Dämonen, namentlich der Raserei, wie einen der Herakles des Euripides einführt, und heiſsen nun Μανίαι, Furiae.</note>
+        </item><item><note xml:id="n-237-1" place="bottom" n="1">Elektra 114. So ruft auch Aias vor seinem Selbstmord seine Erinyes wider die Könige, die er an seinem Tode schuldig glaubt.</note>
+        </item><item><note xml:id="n-239-1" place="bottom" n="1">Dies Zeugnis des Epimenides, das Aphrodite den Moiren gesellt wie Artemis Hegemone neben den Keren, Hekate neben den Chariten steht, was zu der theologischen Angabe stimmt, die sie die vornehmste der Moiren nennt, entscheidet über das Wesen der hellenischen Aphrodite. Die Himmlische wird wohl wirklich orientalisch sein.</note>
+    </item></list>
+
+    <pb n="241" facs="#249"/>
+    <fw type="pageNum" place="top-right">241</fw>
+    <p>Denn hier thut der moderne Mensch einen Blick in ein Reich der religiösen Empfindung und Gestaltung, das ihm ganz fremd war. Die Urheiligkeit der ältesten hellenischen Religion wird ihm in einem Hauptstücke offenbar.</p>
+    <p>Wohl wird er schaudern über die barbarische Ungeschlachtheit, wenn er diesen Blick in die Höhle der Mütter thut; aber es wird ein heiliger Schauder sein. Auch hier ist wahrhaft groſsartig die Empfindung für das Wirkende, Lebendige in dem Elementaren: auch hier sind Götter. Aber auch hier wird das Mächtige der Natur gesteigert und geläutert zu einer Macht des Sittlichen und des Guten: auch hier ist Gott.</p>
+    <p>* * *</p>
+    <p>In dem apollinischen Epos, das Aischylos für den Muttermord zu Grunde gelegt hat, war gemäſs der Religion, die die Blutrache als heilige Pflicht forderte, der notwendige Abschluſs, dafs der Gott den Orestes vor der grollenden Seele der Mutter schützte. Das that er mit Gewalt, indem er die Erinyen der Mutter, die Dämonen der Unterwelt, die ihr Fluch wider ihn wachgerufen hatte, verjagte. Er that was er bei Aischylos droht, er brauchte seine Pfeile<ref target="#n-241-1">¹</ref>). Dann bedurfte es noch der Blutsühne, für den Tod des Aigisthos nicht minder, denn jedes vergossene Blut entweiht. Dafür hatte der Gott ein Ritual ausgebildet, und in dieser exemplifikatorischen Geschichte vollzog er selbst die Sühnung<ref target="#n-241-2">²</ref>). Der Mörder<pb n="242" facs="#250"/><fw type="pageNum" place="top-right">242</fw>mufste sich schweigend an einen fremden Herd setzen, seit es einen Staat gab, aufser Landes, und warten, ob sich der Hausherr seiner erbarmen würde. Dies Erbarmen war auch Pflicht; aber es kam natürlich oft vor, dafs der Hilfeflehende weiterziehen muſste und lange irrte, ehe er einen Erbarmer fand. Dann gab es die vom Gotte offenbarten Ceremonien, Anrufung bestimmter Götter, Waschung der Mordhand mit Ferkelblut: so ging die Befleckung auf das Opfertier über; Abspülung mit Wasser, Fluſswasser oder auch Meerwasser, das ebenfalls den Schmutz davontrug, und was sonst noch von Symbolik dabei war. Danach war der Mörder der Gesellschaft zurückgegeben; die Heimkehr in das Vaterland oder das eigene Haus war vielfach noch an Fristen und dann an weitere Ceremonien gebunden. Natürlich mufste auch das Haus, in dem Blut geflossen war, entsühnt werden.</p>
+    <fw type="sig" place="bottom-left">Griech. Tragödien. II.</fw>
+    <fw type="sig" place="bottom-right">16</fw>
+    <p>Aischylos hat diesen Abschluſs der Geschichte in seinem ersten Akte benutzt. Da verjagt der Gott die Rächerinnen aus seinem Tempel: die Entsühnung ist schon vorher vollzogen, wie Orestes vor Athena nachdrücklich betont. Aber abgethan ist die Sache nicht mehr durch Apollon. Die Verfolgerinnen respektieren diese äufserliche Sühne nicht; sie sehen noch immer Blut von den Mörderhänden triefen, sehen den Mörder noch überallhin Besudelung tragen. In der That war, seit der Staat die Handhabung des Rechtes übernommen<pb n="243" facs="#251"/><fw type="pageNum" place="top-right">243</fw>hatte, diese Sühnung nur eine vorläufige, bestimmt dem Thäter die Existenz bis zur Gerichtsverhandlung zu ermöglichen: er durfte sich trotzdem in der Zwischenzeit auf keinem geheiligten und besonders befriedeten Boden, z. B. dem Markte, sehen lassen. Erst zur Verhandlung betrat er ihn, denn sie fand auf geweihter Erde statt, immer jedoch unter freiem Himmel. Der Areopag war eben dadurch der Hügel des blutigen Mordes' geworden, dafs die Athener den Hügel dicht vor ihrem Burgthore, auſserhalb des gefriedeten Mauerringes, dem Blutgerichte weihten<ref target="#n-243-1">¹</ref>).</p>
+    <p>Die Verfolgung geht also weiter, bis sie den Abschluſs findet, der seit dem Eintritte des Staates notwendig war, durch ein Gericht. Apollon selbst weist seinen Schützling nach Athen, aus keinem andern Grunde, als weil er weifs, kraft seiner Seherkunst weifs, dafs er dort gerichtet und freigesprochen werden wird. So äusserlich ist die Verknüpfung der beiden ursprünglich gesonderten und in sich abgeschlossenen Geschichten, die das Drama vereinigt hat, der apollinischen, delphischen Sühne, und des athenischen Gerichtes. Wie diese zweite Geschichte dem Dichter vorlag, ist uns nur in unsicherem Umrifs kenntlich, weil sein Drama sie ganz verdrängt hat. Aber für dieses ist auch nur das Motiv von Belang. Man erzählte in Athen, dafs der Fall des Orestes, wie andere besonders schwere Fälle des Blutrechtes, von dem Rate auf dem Areshügel, der zugleich die eigentliche Regierungsbehörde in Athen gewesen war und als Blutgericht dauernd fungierte, entschieden wäre und zwar<pb n="244" facs="#252"/><fw type="pageNum" place="top-right">244</fw>zu Gunsten des Verklagten. Aber daſs diese Behörde für ihn erst eingesetzt wäre, ist Erfindung des Aischylos. Nach der alten Anschauung musste die Richtstätte des Bluthügels, der Sitz des Rates der Stadt, so alt sein wie der Staat, hatte dem entsprechend das erste Gericht in grauer Urzeit stattgefunden, über Ares selber, der an seinem Hügel wohnte. Aischylos hütet sich auch, einen König von Athen einzuführen, weil er sonst einen gar zu modernen, einen Sohn des Theseus, hätte nennen müssen.</p>
+    <fw type="sig" place="bottom-right">16*</fw>
+    <p>Ferner ging der Handel den Muttermord gar nicht oder höchstens nebensächlich an: noch in dem apollinischen Gedichte hatte die Blutrache in erster Linie dem Aigisthos gegolten, und so waren denn auch nach der athenischen Sage dessen Leibeserben, ein Sohn oder noch lieber eine Tochter<ref target="#n-244-1">¹</ref>), die Kläger. Die Freisprechung war demnach selbstverständlich, und man hat keinen Anlaſs, sie durch Stimmengleichheit erfolgt zu denken. Der auffällige Umstand, dafs ein athenisches Gericht über einen auswärtigen Rechtshandel entscheidet, erklärt sich dadurch, daſs eins der vornehmsten Geschlechter des städtischen Adels, dem z. B. Alkibiades entstammt, sich von Orestes ableitete, Eupatriden genannt, weil dieser sich als den besten Sohn gegen seinen Vater bewiesen hat. Dieses Geschlecht war im Besitz besonderer heiliger Überlieferung in Sachen der Blutsühne und hat darüber Unterweisung unter staatlichem Schutze jederzeit gespendet. Wenn es auch später zu Delphi ebenso wie ganz Athen in Beziehung getreten ist<ref target="#n-244-2">²</ref>), so müssen wir doch annehmen, daſs seine<pb n="245" facs="#253"/><fw type="pageNum" place="top-right">245</fw>Geschlechtsreligion und demgemäſs seine Sühnriten älter sind als die Aufnahme der delphischen Religion. Damit rückt auch die Beziehung des Orestes zu Athen in eine Zeit jenseits des delphischen Gedichtes. Das erhält volle Bestätigung dadurch, daſs die Odyssee in einem später unverstandenen Verse den Orestes schon zur Rache an Aigisthos aus Athen heimkehren lässt. Die Eupatriden waren auch an dem Kultus der unterirdischen Gewalten in der Höhle des Hügels beteiligt, also auch an dem der 'Erhabenen' Göttinnen, der Erinyen. Ihnen muſste ja nach der Ordnung des areopagitischen Prozesses der freigesprochene Orestes geopfert haben. Es ist mehr als wahrscheinlich, daſs das Geschlecht, das sich von dem Königssohn aus der Argolis ableitete, diesen Damonen den Namen Eumeniden, die Gnädigen, gegeben hat, den wir ja aus Argos kennen. Das traf sich glücklich für die Tendenz des Aischylos, dem aus politischen Gründen daran lag, an Argos anzuknüpfen, und der den Titel gern seinem Drama gab, der den Begriff der versöhnten gütigen Gottheit in sich schloſs. Es ist sehr wohl möglich, daſs die Eupatriden wirklich aus Argos stammten, den Eumenidenkult mitgebracht und mit einem verwandten in Athen verschmolzen hatten. Auch das noch berühmtere Geschlecht, aus dem Perikles und Alkibiades mütterlicherseits stammten, die Alkmeoniden, wollte aus Argos stammen.</p>
+    <p>Nur die Thatsache der Freisprechung durch das Gericht des Areshügels hat Aischylos übernommen: die Ausführung ist ganz sein eigen. Die Freisprechung erfolgt durch Stimmengleichheit; die Göttin, welche die Geschäftsordnung des Gerichtes einsetzt, hat den Fall</p>
+    
+    <list><item><note xml:id="n-241-1" place="bottom" n="1">Er kann auch dem Orestes seinen Bogen zur eigenen Verteidigung überlassen haben. So war es bei Stesichoros und ist es im Orestes des Euripides.</note>
+        </item><item><note xml:id="n-241-2" place="bottom" n="2">Es gab auch eine Geschichte, in welcher Zeus selbst das erste Verwandtenblut gesühnt hatte, vergossen von Ixion, aber das seines Schwiegervaters, also kein verwandtes im Sinne des Geschlechterstaates. Mit dieser Geschichte operiert Apollon; die Erinyen tadeln auch diese Sühne. Die Geschichte ging weiter, Ixion lohnte seinem Reiniger mit Undank: sie war nicht exemplifikatorisch für die Sühne erdacht. Eine dunkle Strophe des Aischylos, 360, deutet darauf, dafs Zeus in einem bestimmten Falle die Götter von der Verfolgung der Erinyen befreit hat, indem er diesen den Olymp zu betreten verbot. In der That musste sich die Religion mit den Blutthaten der Götter irgendwie abfinden, die die alte Tradition zahlreich enthielt. Aber darüber ist bisher wenigstens sicheres Verständnis von der Wissenschaft noch nicht erreicht.</note>
+        </item><item><note xml:id="n-243-1" place="bottom" n="1">Aischylos befolgt eine andere Stiftungslegende, daſs die Amazonen von dort die Burg belagert hätten, die man sich als Nordländerinnen und Feinde den Ares verehrend dachte. Wie man auch über den Inhalt des Amazonenkampfes denkt, für die Bedeutung des Areopages kommt er nicht in Betracht.</note>
+        </item><item><note xml:id="n-244-1" place="bottom" n="1">Diese führt den Namen Erigone 'Tochter des Morgens', d. h. sie ist mit einem Dämon gleichgesetzt, den die Athenerinnen bei gewissen mit dem Seelenkult zusammenhängenden Ceremonien anriefen. Erigone trat daneben in andern Sagen auf. Die Geschichte sowohl wie das Wesen der Erigone sind noch ganz unklar; Sophokles hat eine Tragödie Erigone gedichtet.</note>
+        </item><item><note xml:id="n-244-2" place="bottom" n="2">Im zweiten Jahrhundert v. Chr. deputieren die Athener Vertreter der Eupatriden in dem gottesdienstlichen Verkehr mit Delphi. Das haben delphische Steine jüngst gelehrt, wie denn überhaupt diese ganzen Verhältnisse erst in den letzten Jahren aufgeklärt worden sind.</note>
+    </item></list>
+
+    <pb n="246" facs="#254"/>
+    <fw type="pageNum" place="top-right">246</fw>
+    <p>vorgesehen. Er entsprach dem geltenden Rechte. Denn wenn sonst in Athen regelmäfsig darauf gehalten ward, dafs eine ungrade Zahl von Richtern berufen ward, liefs sich das nach der Zusammensetzung des Rates, der in erster Linie Verwaltungskörper gewesen war und dessen Mitglieder auf Lebenszeit eintraten, nicht durchführen.</p>
+    <p>Man mag sonst erzählt haben, daſs bei gleicher Stimmenzahl dem Verklagten die Stimme der Göttin zugerechnet werden sollte, die bei dem ersten Gerichte persönlich in diesem Sinne abgegeben wäre: hier ist das nicht der Fall.</p>
+    <p>Athena sagt denn auch den Klägern, dafs ihr Recht nicht geschmälert sei; der Grund des Urteils sei nur, daſs Zeus selbst durch Apollon dem Orestes Straflosigkeit zugesichert hätte, mit anderen Worten, daſs es zwar so recht wäre, wie es geworden ist, aber ein an sich unlösbarer Konflikt vorlag, in dem das Gottesurteil des Himmels und auf Erden der Wahrspruch des Staates das non liquet zu Gunsten des Beklagten gewandt hat.</p>
+    <p>Sie selber hat sich ja nicht getraut, obwohl sie von beiden Parteien als Schiedsrichter angenommen war, zu entscheiden, hat daher das Volksgericht eingesetzt, nicht bloſs für dieses Mal, sondern für immer: sein Spruch ist inappellabel. Der Wille der Majorität der souveränen Bürger schafft geltendes Recht und muſs auch in unlösbaren Konflikten entscheiden.</p>
+    <p>Daher ist die Hauptsache in diesem Drama nicht das Urteil über Orestes, sondern die Versöhnung der Rächerinnen: sie müssen den Staat als Träger und Vollstrecker des Rechtes anerkennen und ihr Rächeramt an ihn abtreten. Sie thun es, indem sie eine Heimstatt in diesem Staate finden. Er übernimmt ihren Kult, das heifst er übernimmt die Wahrung nicht nur des Rechtes, sondern auch der sittlichen Mächte, welche bisher von den Töchtern der Nacht versehen wurde: darauf hat ihn Athena selbst in der Einsetzungsrede verpflichtet. Die geordnete menschliche<pb n="247" facs="#255"/><fw type="pageNum" place="top-right">247</fw>Gesellschaft, deren Ordnung der Staat ist, deren Organe die Beamten und Gerichte, übernimmt die Pflicht, für die sittliche Gesundheit der Gesellschaft zu sorgen: dann werden solche Thaten, die den Rächerinnen verfielen, gar nicht geschehen; kommt es doch dazu, so kann die mündig gewordene Gesellschaft selbst die Ahndung übernehmen.</p>
+    <p>Die Menschheit ist in ein neues Stadium der Entwickelung übergetreten, wo sie sich ohne das materielle Eingreifen der göttlichen Personen erhalten kann: sie kann es freilich nur, indem sie den ewigen sittlichen Mächten, die bisher von aufsen gewaltsam eingriffen, in sich eine bleibende Stätte bereitet.</p>
+    <p>Der Mensch ist frei geworden: seine Freiheit benutzt er dazu, durch den gemeinsamen Willen zum Guten eine Gesellschaftsordnung zu schaffen, der sich der Einzelne unbeschadet seiner Freiheit unterwirft. Diese Ordnung ist der Staat; er genügt, aber genügt nur, weil und so lange er ein Organ der Sittlichkeit und der Freiheit zugleich ist.</p>
+    <p>Diesen Ausgang billigt der Dichter; er hat die letzte Scene ja erfunden, um das Siegel unter sein Bekenntnis zur Theodicee zu setzen, die ihre Begründung in dem inneren Fortschritt der Gesellschaft hat, in der Entwickelung zum Guten, an der auch die Götter teilnehmen. Aber wenn Orestes den Rächerinnen nicht verfiel, die ihm das Blut aus dem Leibe saugen wollten, so war er darum von denen nicht frei, die er in dem vorigen Drama mit den Augen der Seele gesehen hatte<ref target="#n-247-1">¹</ref>). Die Schrecken<pb n="248" facs="#256"/><fw type="pageNum" place="top-right">248</fw>des Gewissens, die Strafe der persönlichen Verantwortung konnte ihm kein menschliches Gericht und kein Götterspruch von der Seele nehmen. Denn er blieb der Muttermörder.</p>
+    <p>Das fühlte der Dichter, das zu zeigen lief der Absicht dieses Dramas zuwider, während es die Stärke des vorigen ausmacht. So hat er ihm hier gar keinen Charakter gegeben. Er hat nicht Reue, er hat nicht Furcht; er ist gar keine Person, er ist sozusagen corpus delicti.</p>
+    <p>Die That ist die des Apollon, als dessen Werkzeug Orestes sie beging.</p>
+    <p>Apollon ist Partei: darin liegt deutlich, daſs er dem Dichter nicht das Recht zu vertreten schien. Dem entsprechend ist er gezeichnet. Er is stark durch die Zukunftskunde, die Zeus ihm verliehen hat; sie ist ihm nicht angeboren, sondern er hat sie erhalten, als er von Delphi Besitz ergriff<ref target="#n-248-1">¹</ref>). Er tritt auch für seinen Schützling ein, entsühnend und verteidigend, Er ist ein gewaltiger Gott: schon wie er immer plötzlich da ist und plötzlich verschwunden, zeigt die Göttlichkeit, und er weifs die Unholdinnen zu schrecken und auch mit gewaltigen Worten niederzuwettern. Aber gerecht und mafsvoll ist er nicht; mit kühner Charakteristik sind dem Reinen sehr häfsliche Worte und grobe Schimpfreden in den Mund gelegt, so daſs die Erinyen ihm an Selbstbeherrschung überlegen sind. Ihre Gründe kann er nicht widerlegen, ihre Vorwürfe nicht entkräften. Er benimmt sich wie ein trotziger Junker, der eigentlich zu gut ist, mit Gegnern niederen Standes vor Gericht zu streiten, und man könnte nicht ausdenken, was er nach dem Urteilsspruche sagen sollte; der Dichter läfst ihn weislich still verschwinden.</p>
+    <p>So hatte er sich, weil er ein<pb n="249" facs="#257"/><fw type="pageNum" place="top-right">249</fw>frommer Athener war, über die delphische Religion hoch erhoben.</p>
+    <p>Wenn die Stimmen für Kläger und Verklagten gleich gefallen sind, so haben beide nicht Recht. Es muſs kenntlich sein, worin ihr Unrecht besteht.</p>
+    <p>Die Rächerinnen haben den Mord Agamemnons ungerächt gelassen; es ist inkonsequent, daſs sie nun für Klytaimestra einschreiten. Sie sind die Vertreter der Blutrache, Gattenmord ging sie nichts an.</p>
+    <p>Das genügt dem Rechtsbewuſstsein nicht mehr: es ist anerkannt, daſs die Ehe ein ebenso heiliges Band ist wie das Blut. Apollon fällt in denselben Fehler, indem er bestreitet, daſs die Mutter dem Kinde ihr Blut mitgiebt. Er thut das auf Grund einer weit verbreiteten physiologischen Ansicht<ref target="#n-249-1">¹</ref>), nach welcher das Weib an der Zeugung eigentlich unbeteiligt ist. Dieser Theorie wird nicht widersprochen, kann nicht widersprochen werden, da Athena ohne Mutter von Zeus geboren ist. Aber die Entrüstung, mit der die Erinyen die unsittliche Folgerung aus dieser Theorie abweisen, giebt das herrschende berechtigte Gefühl wieder: die Behauptung ist ein Sophisma. Dennoch genügt zwar nicht sie, aber wohl die mythische Entstehung Athenas um die Abstimmung der Göttin zu motivieren.</p>
+    <p>Uns genügt das nicht; vielleicht war Aischylos seiner heimischen Göttin gegenüber in naivem Glauben befangen. Ich würde die Inkonsequenz liebenswürdig finden, aber ich glaube eher, er bequemte sich dem Glauben nur gern an, weil er eine zureichende Begründung ihrer Abstimmung nicht finden konnte.</p>
+    <p>Sentimentale moderne Gemüter haben gewünscht, sie hätte Gnade als Motiv angeben sollen, als ob die Gnade nicht ihren Platz erst nach erfolgtem Urteil<pb n="250" facs="#258"/><fw type="pageNum" place="top-right">250</fw>hätte. Die Kompensation der Gründe für und wider liegt erst in der Gleichheit der Stimmen. Wer die Göttin aus diesem Grunde freisprechen liefs, würde sie den Wahrspruch fälschen lassen.</p>
+    <p>Athena ist ganz die Göttin, welche zwanzig Jahre später Pheidias gebildet hat. Sie trägt noch das Kleid der Schlachtenjungfrau<ref target="#n-250-1">¹</ref>), die mit Diomedes auf dem Streitwagen fuhr und dem Herakles in aller Not und Fährde zur Seite war, aber sie ist die Verkörperung des attischen Staates, wie die Edelsten des Volkes ihn wünschten.</p>
+    <p>Darum trägt sie neben den Zügen des wirklichen athenischen Adels auch die, welche das Volk um so höher schätzte, weil sie ihm fehlten. Wie sie die Scheusale der Hölle nicht nur ohne Furcht ansieht, sondern indem sie es ablehnt ihnen ihre Scheufslichkeit vorzuhalten, eine Kritik der ungezogenen Überhebung des Apollon giebt, wie sie dann das Gesetz des Staates an die Stelle des eigenen Urteils einsetzt, das durfte das Volk des Solon sich wohl zurechnen: aber die Milde, die Stätigkeit, die Selbstbeherrschung, mit der sie den Grimm der Besiegten überwindet, wenn das doch auch athenisch gewesen wäre, wenn sie das Lob 'maſsvoll zur rechten Zeit' doch verdient hätten!</p>
+    <p>Dem Dichter war bang ums Herz, als er die Segenslieder schrieb, mit denen er wohl seiner lieben Stadt anwünschen mochte, was ihr so not that.</p>
+    <p>Eins aber besaſs er und sein Volk nicht minder als seine Göttin: Peithos holden Zauber, der bezwingt auch des spätgeborenen Barbaren Herz. Wir könnten die</p>
+    
+    <list><item><note xml:id="n-247-1" place="bottom" n="1">Aus diesem Gegensatze der Behandlung folgt unbedingt, dafs die Scheusale, die er einführt, dem Aischylos keine Realitäten waren, sondern dasselbe, was die Exponenten einer überwundenen Glaubensform auch für uns sind. Aber es folgt ebenso sicher, dafs die Schrecken des Gewissens sie für ihn ersetzten wie für Euripides, bei dem das Wort Gewissen zuerst ausgesprochen wird. Die Seele des Menschen und die Gesellschaftsordnung, die die Menschen sich gemacht haben, das sind hinfort die Regionen, in denen das Göttliche wirksam ist.</note>
+        </item><item><note xml:id="n-248-1" place="bottom" n="1">Das wird allerdings delphische Erfindung gewesen sein, damit nur ihr Orakel inspiriert scheine. Der Delier prophezeite längst nicht mehr.</note>
+        </item><item><note xml:id="n-249-1" place="bottom" n="1">Ihr Hauptvertreter ist kein geringerer als Anaxagoras; sie wirkt noch stark bei Aristoteles nach, bei dem die empfindende Seele des Kindes nur vom Vater stammt.</note>
+        </item><item><note xml:id="n-250-1" place="bottom" n="1">Das ist sie ihrem Ursprunge nach, daher die eingeborene Tochter des Himmelsherrn, der den Sieg giebt, dessen Waffen sie daher auch allein führt. δύναμις Διός nennt sie recht gut die antike Theologie. Bestimmte, recht wohl kenntliche lokale und zeitliche Verhältnisse haben dann ihr Wesen allmählich umgestaltet, bis sie die langweilige lady patroness der Kunstausstellungen, Schulstuben und weiblichen Handarbeiten ward, als die sie seit der römischen Kaiserzeit fungiert.</note>
+    </item></list>
+    <pb n="251" facs="#259"/>
+    <fw type="pageNum" place="top-right">251</fw>
+    <p>Schluſsprozession, wie sie im Jahre 458 über die Bühne schritt, kaum ertragen, die Fackelträger in der Mittagssonne, die Opferlämmer, die Priesterinnen in ihren seltsamen ungriechisch erscheinenden Kostümen, die schwarzen triefäugigen Scheusale mit bleckender Fratze neben der gewappneten Jungfrau unter ihrem nickenden Helmbusch.</p>
+    <p>Aber wenn wir die Lieder hören, so schauen wir mit der Phantasie die holden keuschen Menschengestalten des Parthenonfrieses, das erhabene und liebliche Bild, wie sich ein Volk selbst seiner Göttin darbringt, die wieder nur die Verkörperung des Staatsgedankens ist, den dieses Volk in die Welt gebracht hat, des Gedankens, daſs die menschliche Freiheit das Gute und Gerechte wollen und können und wirken wird.</p>
+    <p>Und dann hören wir den frommen Dichter Segenswünsche sprechen, die wir gern für unser eigenes Vaterland mitbeten, und so stimmen wir ein in den Jubelruf, wie es das athenische Volk im Theater gethan hat, als die Prozession im Abziehen dazu aufforderte.</p>
+    <p>Wehe, wehe haben wir oft mitrufen müssen bei den entsetzlichen Bildern menschlicher Sünde und menschlichen Elends, die uns der Dichter vorgeführt hat, seit wir den treuen Wächter auf dem Atreidenschlosse das Licht des endlichen Sieges begrüſsen sahen.</p>
+    <p>Aber das Gute hat triumphiert, und gern mögen wir für einen weihevollen Moment dem Glauben des frommen Dichters uns hingeben, daſs in dem sittlich gewordenen Staate der freie Wille des Menschen mit dem ewigen Gesetze des allmächtigen Gottes in reiner Harmonie zusammenklinge.</p>
+    <p>Es wird in uns, wie in dem Wächter, die helle Freude nur zu bald vor den Schatten verblassen, die das Wissen wirft: aber auch dann werden wir mit den frommen Greisen uns getrösten</p>
+    <lg>
+        <l>Gott führt das Weltenregiment gewaltsam:</l>
+        <l>doch Gott ist gütig.</l>
+    </lg>
+</div>
+
+</front>
+    <body>
+      <div type="translation" xml:lang="deu" n="urn:cts:greekLit:tlg0085.tlg007.wilamowitz-ger1"><pb n="254"/>
+    <list><head>PERSONEN.</head>
+      <item>Apollon.</item>
+      <item>Hermes.</item>
+      <item>Athena.</item>
+      <item>Chor der Rächerinnen (Erinyen).</item>
+      <item>Orestes.</item>
+      <item>Die delphische Priesterin.</item>
+      <item>Ratsherren, Priesterinnen, alte und junge, Volk von Athen.</item>
+    </list>
+<pb n="255"/>
+    <stage>Die Hinterwand stellt die Front des Apollontempels von Delphi dar. Die Thür ist geschlossen; vor ihr steht die greise Priesterin, in Amtstracht, den groſsen Schlüssel an einem Bande über der Schulter, Lorbeerreiser im Haar.</stage>
+    <sp>
+      <speaker>Priesterin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="1" resp="Smyth"/>Mein erst Gebet der ersten Zukunftskünderin,</l>
+        <l>Urmutter Erde; nächst der Erde ruf' ich dann</l>
+        <l>Themis, die nach der Mutter hier gewaltet hat.</l>
+        <l>So lebt es im Gedächtnis. Dann als dritte nahm</l>
+        <l><milestone unit="line" n="5"/> durch Übereinkunft, ohne Streit, der Themis Platz</l>
+        <l>die Schwester ein, Titanin, Erdentochter auch,</l>
+        <l>Phoibe. Sie hat Apollon diesen Sitz geschenkt,</l>
+        <l>dem Neugebor'nen; Phoibos heifst von ihr der Gott.</l>
+        <l>Vom Weiher auf dem Felseneiland Delos zog</l>
+        <l><milestone unit="line" n="10"/> Apollon an den schiffbelebten Küstenstrand</l>
+        <l>des Pallaslandes; weiter dann von Attika,</l>
+        <l>bis hier er am Parnassos seine Stätte fand.</l>
+        <l>Wegbahnend gaben ihm in feierlichem Zug</l>
+        <l>die Söhne des Hephaistos ehrfurchtsvoll Geleit,</l>
+        <l>und durch Urwildnis schlugen sich're Pfade sie.</l>
+        <l><milestone unit="line" n="15"/> Mit höchsten Ehren nahm sein Kommen hier das Volk</l>
+        <l>und Delphos auf, der König, der dem Land gebot.</l>
+        <l>Und in der Seele weckte Zeus die Götterkraft</l>
+        <l>der Zukunftsschau dem Sohne, setzt' als vierten ihn,</l>
+        <l>die Wahrheit zu verkünden, auf den Seherthron:</l>
+        <l>was Zeus ihm eingiebt, offenbart Apollons Mund.</l>
+      </lg>
+    </sp>
+<pb n="256"/>
+    <sp>
+      <speaker>Priesterin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="20"/> Das sind die Götter, die zuerst mein Beten ruft,</l>
+        <l>und auch Athena grüfs' ich, die am Eingang wohnt</l>
+        <l>des heil'gen Ortes. Und den Nymphen huld'g' ich auch.</l>
+        <l>Sie wohnen oben im Gebirge, wo der Mund</l>
+        <l>weiträum'ger Felsenhöhle gähnt; es nisten dort</l>
+        <l>die Vögel gern, Dämonen gehen aus und ein.</l>
+        <l><milestone unit="line" n="25"/> Wohl weiſs ich, Dionysos ist des Ortes Herr,</l>
+        <l>seit er auf Pentheus, seinem Feind verderblich dort,</l>
+        <l>Mänaden hetzte wie zu lust'ger Hasenjagd.</l>
+        <l>Dann ruf' ich noch den Pleistosstrom und die Gewalt</l>
+        <l>Poseidons und zum Schlusse den Vollender, Zeus,</l>
+        <l>den höchsten aller. Nun kann ich den Seherthron</l>
+        <l><milestone unit="line" n="30"/> besteigen. Und gesegneter denn je zuvor</l>
+        <l>sei heut' mein Eingang. Wer des Gottes Rat begehrt,</l>
+        <l>komm' her in Ordnung, wie das Los ihm Zutritt gab.</l>
+        <l>Aussprechen werd' ich, was der Gott in mir erregt.</l>
+      </lg>
+    </sp>
+    <stage>Sie geht durch die Thür in den Tempel; Pause. Sie kommt mit allen Zeichen des Entsetzens wieder heraus; die Thür schliefst sich sofort wieder.</stage>
+    <sp>
+      <speaker>Priesterin.</speaker>
+      <lg type="stanza">
+        <l>Ha!</l>
+        <l><milestone unit="card" n="34" resp="Smyth"/>Aus Phoibos' Hause jagt ein Anblick mich zurück,</l>
+        <l><milestone unit="line" n="35"/> den Augen grau'nvoll, grau'nvoll zu beschreiben auch.</l>
+        <l>Mir schwinden meine Sinne, wanken meine Knie,</l>
+        <l>die Arme fliegen zitternd, doch der Fuſs ist steif.</l>
+        <l>Das Alter wird vor Schrecken hilflos, wird zum Kind.</l>
+        <l>Ein tret' ich in das kranzbehang'ne Heiligtum,</l>
+        <l><milestone unit="line" n="40"/> da seh' ich einen Menschen nah dem Nabelstein.</l>
+        <l>Schutzflehend sitzt er und entweiht den heil'gen Ort.</l>
+        <l>Blut trieft von seinen Händen, die das nackte Schwert</l>
+        <l>noch halten und des Ölbaums hochgewachs'nen Zweig,</l>
+        <l>den keusch ein weithin wallendes Gewand verhüllt,</l>
+        <l><milestone unit="line" n="45"/> die weiſse Wollenbinde, deutlich sag' ich so.</l>
+        <l>Vor diesem Menschen aber auf den Stühlen sitzt</l>
+        <l>und schläft von Weibern eine wundersame Schar,</l>
+        <l>nein, Weiber nicht, Gorgonen mögen's eher sein</l>
+      </lg>
+    </sp>
+<pb n="257"/>
+    <sp>
+      <speaker>Priesterin.</speaker>
+      <lg type="stanza">
+        <l>und doch nicht, auch Gorgonen sehen sie nicht gleich.</l>
+        <l><milestone unit="line" n="50"/> Die Flügelfrauen, die dem Phineus von dem Tisch</l>
+        <l>die Speisen raubten, hab' ich wohl gemalt geseh'n;</l>
+        <l>doch diese hier sind flügellos, sonst sind sie auch</l>
+        <l>Ekelscheusale und an dem ganzen Leibe schwarz.</l>
+        <l>Des Schnarchens ziehend Schnaufgetöse erträgt man</l>
+        <l>nicht,</l>
+        <l>und aus triefäugigen Lidern rinnt ein blut'ger Seim.</l>
+        <l><milestone unit="line" n="55"/> Gekleidet sind sie, wie vor keines Gottes Bild</l>
+        <l>man treten darf und unter keines Menschen Dach.</l>
+        <l>Die Gattung, der sie angehören, schaut' ich nie,</l>
+        <l>noch auch ein Land, das wagen dürfte, solche Brut</l>
+        <l>zu nähren ohne schwerversehrt es zu bereu'n.</l>
+        <l><milestone unit="line" n="60"/> Doch alles weit're sei dem Herrn anheimgestellt;</l>
+        <l>der Hochgewalt'ge sorge für sein eignes Haus.</l>
+        <l>Heilmittel offenbart er, Unheilswunder bannt</l>
+        <l>und andre Häuser weiht und reinigt seine Kunst.</l>
+      </lg>
+    </sp>
+    <stage>Ab.</stage>
+    <stage>Die Hinterwand öffnet sich: man sieht das Innere des heiligen Raumes; in der Mitte der Erdennabel, ein von Binden umwundener Steinkegel. Davor sitzt auf einem Stuhle Orestes, das Schwert in der einen, einen wollumwundenen Ölzweig in der andern Hand, um ihn sitzen schlafend die Erinyen, wie sie die Priesterin beschrieben hat, grauenhaft hässliche Weiber, schwärzlich von Haut, mit dunkelgeröteten triefenden Augen, wirrem Haar, schwarzen Mänteln. Apollon erscheint neben Orestes; er trägt langes Lockenhaar, keinen Bart, ein weit über die Füfse wallendes, von allen Seiten geschlossenes faltiges Gewand; Köcher an der Seite, Bogen in der Hand.</stage>
+    <sp>
+      <speaker>Apollon.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="64" resp="Smyth"/>Ich will dich nicht verlassen. Mag ich nahe dir</l>
+        <l><milestone unit="line" n="65"/> zur Seite weilen oder fern: stets wart' ich dein</l>
+        <l>und gebe niemals schwächlich deinen Feinden nach.</l>
+      </lg>
+    </sp>
+<pb n="258"/>
+    <sp>
+      <speaker>Apollon.</speaker>
+      <lg type="stanza">
+        <l>Vom Schlaf gefesselt siehst du dort die Rasenden.</l>
+        <l>Da sind sie hingesunken, ekelhaft Gezücht,</l>
+        <l>der Urwelt greise Kinder. Gott und Mensch und Tier</l>
+        <l><milestone unit="line" n="70"/> verabscheu'n ihren Umgang. Nur zu Henkerdienst</l>
+        <l>sind sie geboren; hausen auch im Tartaros,</l>
+        <l>in unterird'scher Finsternis Abscheulichkeit,</l>
+        <l>den Menschen und den Himmelsgöttern gleich verhaſst.</l>
+        <l>Doch musst du fliehen, unermüdlich, ohne Rast,</l>
+        <l><milestone unit="line" n="75"/> denn jagen werden sie dich jedes Weges, den</l>
+        <l>der flücht'ge Fuſs sich durch des Festlands Weiten hin</l>
+        <l>und über's Meer zu flutumrauschten Inseln sucht.</l>
+        <l>Durch dieser Hetzjagd Qualen darfst du nicht zu früh</l>
+        <l>dich mürbe machen lassen. Erst wenn du Athen</l>
+        <l>erreicht hast, darfst du halten. Pallas' altes Bild</l>
+        <l><milestone unit="line" n="80"/> umklammre mit den Armen, sitz' in seinem Schutz.</l>
+        <l>Da giebt es Richter. Und mit der Verteidigung</l>
+        <l>wirksamen Worten dich vertretend mach' ich dort</l>
+        <l>von dieser Not und Fährde dich endgiltig frei.</l>
+        <l>Ich schulde dir's, denn ich befahl den Muttermord.</l>
+      </lg>
+    </sp>
+    <stage>Orestes aus dem Tempel tretend; den Zweig lässt er zurück, das Schwert hat er eingesteckt.</stage>
+    <sp>
+      <speaker>Orestes.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="85"/> Herr, deine Weisheit weiſs das Rechte. Da du's weiſst,</l>
+        <l>so lern', Apollon, auch das Rechte bald zu thun.</l>
+        <l>Dein ist die Macht zu helfen, wo du es versprichst.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Apollon.</speaker>
+      <lg type="stanza">
+        <l>Bewahre dir den Glauben. Lass' dir von der Furcht</l>
+        <l>nicht die Besinnung rauben. Bruder Hermes, du</l>
+        <l>hab' Acht auf ihn. Zeus' Söhne sind wir beide ja,</l>
+        <l><milestone unit="line" n="90"/> so pflege deines Amtes als der Wanderer</l>
+        <l>Behüter, dessen wartend, der in meinen Schutz</l>
+        <l>gestellt ist. Wenn von dir geleitet fremdem Haus</l>
+        <l>der ausgestofs'ne Flüchtling naht, so segnet Zeus</l>
+        <l>den Eingang ihm, des Gastrechts und Erbarmens Herr.</l>
+      </lg>
+    </sp>
+<pb n="259"/>
+    <stage>Hermes, der, als ihn Apollon anredet, plötzlich erschienen ist, geleitet Orestes zur Seite ab. Apollon verschwindet. Pause.</stage>
+    <stage>Der Schatten der Klytaimestra steigt aus dem Boden vor den schlafenden Erinyen auf.</stage>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="94" resp="Smyth"/>Ihr schlaft wohl? Holla, taugt es, daſs ihr schlafend</l>
+        <l>liegt?</l>
+        <l><milestone unit="line" n="95"/> Und ich, von euch so preisgegeben in der Schar</l>
+        <l>der Schatten - ach, die Toten hören stets den Schimpf</l>
+        <l>von denen, die ich selber schlug. In Schanden muſs</l>
+        <l>ich einsam schweifen. Und ich sag's euch an, die Last</l>
+        <l>ihrer Anklagen drückt mich schwer, und ich, an der</l>
+        <l><milestone unit="line" n="100"/> das nächste Blut so fürchterliche That beging,</l>
+        <l>in Höll' und Himmel hab' ich keinen, der mich rächt,</l>
+        <l>ob Mutterblut mein Mörder auch vergossen hat.</l>
+      </lg>
+      <stage>Sie entblöfst die Brust.</stage>
+      <lg type="stanza">
+        <l>Sieh hier die Wunde. Deine Seele nimmt sie wahr,</l>
+        <l><milestone unit="line" n="104"/> denn erst im Schlafe wird des Geistes Auge hell.</l>
+        <l><milestone unit="line" n="106"/> Ihr habt von meinen Schenkerhänden manchen Guſs</l>
+        <l>weinloser Spenden, nüchtern Opfer gern geschlürft,</l>
+        <l>und meines Herdes Flamme hat in nächt'gen Weih'n</l>
+        <l>euch manches Mahl bereitet, wo kein andrer Gott</l>
+        <l><milestone unit="line" n="110"/> geladen wird; für alles zahlt ihr Schmach als Dank.</l>
+        <l>Und er ist fort, ist ausgebrochen wie ein Reh,</l>
+        <l>war von den Netzen schon umstellt, und doch ent-</l>
+        <l>weicht</l>
+        <l>er leichten Sprunges, spottet euch hohngrinsend aus.</l>
+        <l>Hört mich, um meiner Seele Frieden ruf ich euch,</l>
+        <l><milestone unit="line" n="115"/> kommt zu euch, ihr Gewalt'gen aus dem Reich der</l>
+        <l>Nacht.</l>
+        <l>Als Traumerscheinung ruft euch Klytaimestra wach.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <stage>ächzt.</stage>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Du ächzest, doch entsprungen ist der Mensch, ist fort,</l>
+        <l><milestone unit="line" n="120"/> denn meinem - Feind, nicht Sohne, steht ein Retter bei.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <stage>ächzt.</stage>
+    </sp>
+<pb n="260"/>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Du schläfst zu tief; die Niederlage rührt dich nicht.</l>
+        <l>Mein Mörder, seiner Mutter Mörder ist entfloh'n.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <stage>stöhnt.</stage>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Du stöhnst, doch stöhnst im Schlafe. Rasch er-</l>
+        <l>hebe dich.</l>
+        <l><milestone unit="line" n="125"/> Verfolge, räche. Wozu anders bist du da?</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <stage>stöhnt.</stage>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l>Was wirken nicht vereinigt Anstrengung und Schlaf:</l>
+        <l>vertrocknet haben sie der alten Schlange Gift.</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Chor.</speaker>
+      <stage>stöhnt wiederholt und laut; einzelne rufen im Schlaf:</stage>
+      <lg type="stanza">
+        <l><milestone unit="line" n="130"/> Pack' an, pack' an, pack' an, such', such'!</l>
+      </lg>
+    </sp>
+    <sp>
+      <speaker>Klytaimestra.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="card" n="131" resp="Smyth"/>Im Traume schlägst du an und spürst dem Wilde nach:</l>
+        <l>so läfst das Jagen auch im Schlaf die Bracke nicht.</l>
+        <l>Was hilft es? Aufsteh'n musst du, die Ermattung darf</l>
+        <l>dich nicht bezwingen, nicht des Schlafes Süfsigkeit</l>
+        <l>verhindern, daſs du des Verlustes inne wirst.</l>
+        <l><milestone unit="line" n="135"/> Wie Geiſselhiebe fühlt der Redliche den Schmerz</l>
+        <l>verdienten Vorwurfs: dring' er dir ins tiefste Mark.</l>
+        <l>Nun vorwärts zur Verfolgung, schnaube blut'gen Hauch,</l>
+        <l>heifser Gedärme Feuerodem hinter ihm,</l>
+        <l>verdorr' ihn, mach' ihn mürbe mit der zweiten Hatz.</l>
+      </lg>
+    </sp>
+    <stage>Versinkt in den Boden.</stage>
+    <stage>Die Chorführerin erwacht zuerst, dann einzelne; sie wecken die andern und während des Liedes schliesst sich der Chor zusammen. Sie bleiben noch im Tempel.</stage>
+    <sp>
+      <speaker>Chorführerin.</speaker>
+      <lg type="stanza">
+        <l><milestone unit="line" n="140"/> Weck' auf, weck' auf die neben dir, ich wecke dich.</l>
+        <l>Was schläfst du? Reg' dich. Schüttle schnell den</l>
+        <l>Schlummer ab.</l>
+        <l>Mir klingt's im Ohre. War das Täuschung? Lass'</l>
+        <l>uns seh'n.</l>
+      </lg>
+    </sp>
+
+    <pb n="261" facs="#269"/>
+    <l>Hallo, hallo,</l>
+    <l>hu.</l>
+    <sp><speaker>Chor.</speaker>
+        <l><milestone unit="card" n="143" resp="Smyth"/>Wir sind geschlagen, Schwestern.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="145"/> Geschlagen bin ich, ja, und bin betrogen.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l>Geschlagen sind wir, weh, wie schmerzt,</l>
+            <l>wie bitter brennt die Wunde.</l>
+            <l>Entsprungen, aus dem Netz gebrochen ist das Wild.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Schlafübermannt verlor ich meinen Fang.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="card" n="149" resp="Smyth"/>Hallo, du Dieb.</l>
+            <l>Ja,</l>
+            <l>ein Dieb bist du, Apollon.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="150"/> Zu Boden tratst du junger Gott die alte.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l>Gottlosem Menschen liehst du Schutz,</l>
+            <l>der eignen Eltern Feinde,</l>
+            <l>dem Muttermörder halfst du durch und bist ein Gott.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Kann einer sagen, das war recht gethan?</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="line" n="155"/><milestone unit="card" n="155" resp="Smyth"/> Wie Peitschenhiebe traf im Traum</l>
+            <l>aufstörend die Trägheit</l>
+            <l>Scheltrede mein Ohr.</l>
+            <l>Es drang mir die Schmach</l>
+            <l>tief in die Nieren,</l>
+            <l>tief in das Herz,</l>
+            <l><milestone unit="line" n="160"/> kalt, eiskalt kam der Schauder.</l>
+            <l>So schneidet des Büttels, des stäupenden, Geifsel.</l>
+        </lg>
+    </sp>
+    
+    <pb n="262" facs="#270"/>
+    <lg>
+        <l><milestone unit="card" n="162" resp="Smyth"/>So treiben sie's, die neuen Götter.</l>
+        <l>Sie lassen dem Rechte</l>
+        <l>vorgehen die Macht.</l>
+        <l>Da seht seinen Stuhl,</l>
+        <l><milestone unit="line" n="165"/> Blut an der Lehne,</l>
+        <l>Blut an dem Fufs.</l>
+        <l>Da seht den Erdennabel</l>
+        <l>mit eklem verpestendem Morde besudelt.</l>
+        <l><milestone unit="card" n="169" resp="Smyth"/>Der Sehergott hat Sündenschmutz an seinen Sitz</l>
+        <l><milestone unit="line" n="170"/> selber herangeholt,</l>
+        <l>selber gespritzt.</l>
+        <l>Wider das Götterrecht</l>
+        <l>hilft er dem Menschenvolk.</l>
+        <l>Weltengesetz,</l>
+        <l>geltend von Ewigkeit,</l>
+        <l>hat er zerstört.</l>
+        <l><milestone unit="card" n="174" resp="Smyth"/>Mir ward er widrig, aber den erlöst er nicht.</l>
+        <l>Flöh' er zur Unterwelt,</l>
+        <l><milestone unit="line" n="175"/> frei wird er nie.</l>
+        <l>Blut von der Hand ihm trieft:</l>
+        <l>überall wartet sein</l>
+        <l>einer wie er.</l>
+        <l>Blutige Henkershand</l>
+        <l>packt ihn am Schopf.</l>
+    </lg>
+    <sp><speaker>Apollon</speaker>
+        <stage>erscheint wieder im Tempel, mit gespanntem Bogen, einen Pfeil auf der Sehne.</stage>
+        <l><milestone unit="card" n="178" resp="Smyth"/>Hinaus mit euch. Aus meinem Tempel weis' ich euch.</l>
+        <l><milestone unit="line" n="180"/> Fort auf der Stelle, trollt euch von dem Sehersitz,</l>
+        <l>sonst lass' ich von der goldnen Sehne windesschnell</l>
+        <l>losschwirren den beschwingten Drachen, und er soll</l>
+        <l>dich beifsen, dafs vor Schmerzen du den schwarzen</l>
+        <l>Schaum</l>
+    </sp>
+    
+    <pb n="263" facs="#271"/>
+    <lg>
+        <l>ausbrichst, das Blutgerinnsel, das du eingeschlürft.</l>
+        <l><milestone unit="line" n="185"/> Hier ziemt's euch nicht zu weilen. Auf den Rabenstein</l>
+        <l>gehört ihr, wo geköpft wird, wo geblendet wird,</l>
+        <l>Verstümmelung der Knaben Mannesblüte knickt,</l>
+        <l>gevierteilt und gesteinigt wird, wo jämmerlich</l>
+        <l><milestone unit="line" n="190"/> Gepfählte wimmern. Hab' ich euch das Schauspiel gut</l>
+        <l>geschildert, das den Himmelsgöttern ekelhaft,</l>
+        <l>euch eine Lust ist? Sieht man's eurer Ungestalt</l>
+        <l>doch an. Die Höhle des blutdürst'gen Löwen pafst</l>
+        <l>für Wesen solcher Bildung, nicht das Heiligtum,</l>
+        <l><milestone unit="line" n="195"/> das ihre Henkerhand besudelt. Fort mit euch.</l>
+        <l>Zur Thür hinaus: so jagt sein Vieh der Ziegenhirt</l>
+        <l>des Morgens aus der Hürde; doch die Herde hier</l>
+        <l>geht ohne Hirten: welcher Gott gäb' ihr Geleit.</l>
+    </lg>
+    <stage>Treibt den Chor aus dem Tempel auf die Bühne.</stage>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Apollon, gieb auch unsrer Widerrede Raum.</l>
+        <l>Nicht nur mitschuldig bist du an der Missethat,</l>
+        <l><milestone unit="line" n="200"/> du bist der wahre Thäter, trägst die ganze Schuld.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Gieb deine Gründe. Diese Frist verstatt' ich dir.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Dein war der Spruch: du triebst ihn zu dem Mutter-</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>mord.</l>
+        <l>Mein war der Spruch: den Vater muſst du rächen, ja.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Und weiter, Zuflucht gabst du ihm auf frischer That.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l><milestone unit="line" n="205"/> Geladen hab' ich ihn sogar an meinen Herd.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Da schiltst du uns? Wir kamen als Geleiter mit.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Es schickt sich nicht, dafs ihr an diesem Ort erscheint.</l>
+    </sp>
+    
+    <pb n="264" facs="#272"/>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Es ist doch aber unser Amt und unser Recht.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Welch' Amt? Berühme deiner stolzen Würde dich.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="210"/> Den Muttermörder jagen wir aus jedem Haus.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Und eine Frau, die den Gemahl erschlagen hat?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Das ist kein Mord, der blutsverwandtes Leben nahm.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <lg>
+            <l>So hat die Ehe keinen Wert? So gilt euch nichts</l>
+            <l>der Treubund, welchen Zeus und Hera heiligen?</l>
+            <l><milestone unit="line" n="215"/><milestone unit="card" n="213" resp="Smyth"/> So leugnet ihr der Aphrodite Macht und Amt,</l>
+            <l>die doch des Lebensglückes köstlichstes beschert?</l>
+            <l>Der Liebestrieb, der Mann und Weib zusammenführt,</l>
+            <l>hält in der Pflicht der Ehe fester als ein Eid.</l>
+            <l>Wenn du's den Menschen also nachsiehst, dafs sie sich</l>
+            <l><milestone unit="line" n="220"/> einander morden, nicht einschreitest, nicht bestrafst,</l>
+            <l>so sag' ich, den Orestes zu verfolgen hast</l>
+            <l>du auch das Recht verloren, denn das eine nimmst</l>
+            <l>du bitter ernst, und andren offenkundigen</l>
+            <l>Verbrechen find' ich dich recht lässig. Doch es wird</l>
+            <l>in diesem Falle zwischen uns ein Schiedsgericht</l>
+            <l>entscheiden, das Athenas Weisheit leiten wird.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="225"/> Ablassen von Orestes werd' ich nimmermehr.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>So geh' und jag' ihn; hetze dich noch weiter ab.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Auch nicht mit Worten schmäl're meine Würde mir.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Ich deine Würde? Auch geschenkt nähm' ich sie nicht.</l>
+    </sp>
+    
+    <pb n="265" facs="#273"/>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Mag sein; du bist gewaltig in dem Reich des Zeus.</l>
+        <l><milestone unit="line" n="230"/> Doch ich, mich ruft das Mutterblut zum Rachedienst:</l>
+        <l>ich hetze den Orestes und ich spür' ihn aus.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Und ich, ich wehr' es: meinen Schützling mach' ich frei:</l>
+        <l>wer einen Mörder reinigt und ihn hinterher</l>
+        <l>im Stiche läfst, der büfst es bitter, Mensch und Gott.</l>
+    </sp>
+    <stage>Chor zieht seitlich in wilder, ungeordneter Hast ab. Apollon verschwindet. Der Tempel schliesst sich. Pause; es wird der Schauplatz für die nächste Scene hergerichtet.</stage>
+    <stage>Die Hinterwand stellt mit ihrer Tempelfront nun den Burgtempel von Athen dar. Ziemlich weit vor ihm steht ein altertümliches Bild Athenas; daneben ein Altar.</stage>
+    <sp><speaker>Orestes</speaker>
+        <stage>kommt von der Seite, setzt sich zu Füssen des Bildes, das er umfafst.</stage>
+        <l><milestone unit="line" n="235"/> Herrin Athena, auf Apollons Weisung bin</l>
+        <l>ich hergekommen. Ein landflücht'ger Mörder fleht</l>
+        <l>um gnäd'gen Schutz. Doch braucht es keiner</l>
+        <l>Reinigung.</l>
+        <l>Entsühnt sind meine Hände; längst verflogen ist</l>
+        <l>der frische Schauder; abgegriffen im Verkehr</l>
+        <l>mit vielen Häusern und mit manchem Wandersmann,</l>
+        <l><milestone unit="line" n="240"/> den irrend über Länder, über's Meer ich traf.</l>
+        <l>So komm' ich trauend auf Apollons Seherwort</l>
+        <l>zu deinem Hause, Göttin: hier an deinem Bild</l>
+        <l>erwart' ich die Entscheidung, heische hier mein Recht.</l>
+    </sp>
+    <sp><speaker>Chor</speaker>
+        <stage>zieht geordnet auf der Spur des Orestes ein.</stage>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Hussa, da haben sicher wir des Flüchtlings Spur.</l>
+        <l>Nur vorwärts, folgt der Fährte stummberedtem Ruf.</l>
+    </sp>
+    <pb n="266" facs="#274"/>
+    <lg>
+        <l><milestone unit="line" n="245"/> Uns weisen wie dem Bluthund, der das kranke Wild</l>
+        <l>verfolgt, die Tropfen schwarzen Schweiſses unsern Weg.</l>
+        <l>Schon fliegen uns die Flanken von der langen Jagd</l>
+        <l>erschöpft, denn jeder Winkel Land's ist abgesucht,</l>
+        <l>und mit des Schiffes Schnelle trug uns über's Meer</l>
+        <l><milestone unit="line" n="250"/> der rächenden Verfolgung fittigloser Flug.</l>
+        <l>Jetzt aber, hier, hier irgendwo liegt er geduckt,</l>
+        <l>von Menschenblute weht uns süſse Witt'rung an.</l>
+    </lg>
+    <l><milestone unit="card" n="254" resp="Smyth"/>Aufgepaſst,</l>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="line" n="255"/> umgeschaut, ausgeschaut,</l>
+            <l>daſs nicht entweiche,</l>
+            <l>heimlich sich rette,</l>
+            <l>straflos bleibe</l>
+            <l>der Muttermörder.</l>
+            <l>Da ist er, da sitzt er und glaubt sich geborgen,</l>
+            <l>umklammert der Göttin, der Himmlischen Bild,</l>
+            <l><milestone unit="line" n="260"/> und wähnet zu rechten mit uns um die Schuld.</l>
+            <l>Das gilt nicht.</l>
+            <l>Mutterblut,</l>
+            <l>vergossen, verronnen im Staube</l>
+            <l>wehe,</l>
+            <l>wer tilgt es?</l>
+            <l>Nein, aus dem Leib dir saug' ich zum Entgelt</l>
+            <l><milestone unit="line" n="265"/> roten lebendigen Saft,</l>
+            <l>schlürfe den scheuſslichen Trank,</l>
+            <l>und als lebendigen Schatten schlepp' ich dich</l>
+            <l>hinunter zum Gerichte.</l>
+            <l>Da büfsest du die Sünde</l>
+            <l>des Muttermordes.</l>
+            <l>Und sehen sollst du: jeder Mensch, der sich verging</l>
+            <l><milestone unit="line" n="270"/> an Göttern, am Gaste,</l>
+            <l>am Haupte der Eltern,</l>
+            <l>ein jeder büfset drunten seine Schuld gerecht.</l>
+        </lg>
+    </sp>
+    
+    <pb n="267" facs="#275"/>
+    <lg>
+        <l><milestone unit="card" n="276" resp="Smyth"/>Es waltet im Schoſse der Erden</l>
+        <l>der Sterblichen mächtiger Richter,</l>
+        <l>der Herr im Reiche des Todes.</l>
+        <l><milestone unit="line" n="275"/> Allsehend bucht er jede Schuld.</l>
+    </lg>
+    <sp><speaker>Orestes.</speaker>
+        <l>Gar manche Vorsicht hat mein Unglück mich gelehrt,</l>
+        <l>die Reinheit nicht zu trüben, und so weiſs ich auch,</l>
+        <l>wo Rede ziemt, wo Schweigen. Hier ermächtigt mich</l>
+        <l>das Wort zu nehmen eines weisen Lehrers Spruch.</l>
+        <l><milestone unit="line" n="280"/> Das Blut vertrocknet an den Händen und verraucht,</l>
+        <l>des Muttermordes Flecken werden abgespült.</l>
+        <l>Denn da es frisch war, ward des Bluts Besudelung</l>
+        <l>an Phoibos' reinem Herde durch den sühnenden</l>
+        <l>Blutstrom des Opfertieres von der Hand getilgt.</l>
+        <l><milestone unit="line" n="285"/> Zu lang ist's aufzuzählen, mit wie vielen ich</l>
+        <l>seitdem verkehrt und keinem Schädigung gebracht.</l>
+        <l><milestone unit="line" n="287"/> So ist es nicht Entweihung, wenn mit reinem Mund</l>
+        <l>ich jetzt Athena, dieser Stadt Gebieterin,</l>
+        <l>anrufe, hilfreich mir zu kommen. Ohne Kampf</l>
+        <l><milestone unit="line" n="290"/> kann einen Bund'sgenossen sie für alle Zeit</l>
+        <l>in mir, in meinem Lande, in Argos ganzem Volk</l>
+        <l>gewinnen, dessen Treue nimmer wanken wird.</l>
+        <l>Mag fern an Tritons Fluten sie ihr libysches</l>
+        <l>Geburtsland hegen, schreitend oder ruhend, stets</l>
+        <l>der Ihren sorgend, mag sie kühn mit Männerblick,</l>
+        <l><milestone unit="line" n="295"/> mit Feldherrnblick die Wahlstatt der Gigantenschlacht,</l>
+        <l>das Feld von Phlegra überschau'n, erscheine sie:</l>
+        <l>dem Götterohr vernehmlich tönt der ferne Ruf;</l>
+        <l>und bringe sie Erlösung mir aus dieser Not.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="card" n="299" resp="Smyth"/>Nicht soll Apollon noch Athenas starke Hand</l>
+        <l><milestone unit="line" n="300"/> dich retten. Weichen werden sie von dir. Du musst</l>
+        <l>hinunter, wo der Seele jedes Lustgefühl</l>
+        <l>abstirbt, der Leib zum Schatten ausgemergelt wird:</l>
+    </sp>
+    
+    <pb n="268" facs="#276"/>
+    <lg>
+        <l>an seinem Blute weidet sich die Höllenbrut.</l>
+        <l>Wie? Keine Widerrede? Du verachtest uns?</l>
+        <l>Mein bist du, mir verfielest du, mein Opfertier.</l>
+        <l><milestone unit="line" n="305"/> Dich schlacht' ich am Altare nicht, du letzest mich</l>
+        <l>lebendig. Höre jetzt mein Lied: das fesselt dich.</l>
+    </lg>
+    <stage>Chorführerin, während der Chor thut, wie ihm befohlen wird.</stage>
+    <lg>
+        <l><milestone unit="card" n="307" resp="Smyth"/>Auf denn, reicht zum Reigen euch die Hände,</l>
+        <l>singen wollen wir das grause Lied.</l>
+        <l><milestone unit="line" n="310"/> unsres Amtes Pflichten zu verkünden,</l>
+        <l>das wir üben in der Menschenwelt.</l>
+        <l>Unser Ruhm ist grades Recht zu schaffen.</l>
+        <l>Wo der Wandel rein, die Hände rein,</l>
+        <l>kommen nimmer wir mit Zorn und Rache,</l>
+        <l><milestone unit="line" n="315"/> und in Frieden fliefst das Leben hin.</l>
+        <l>Aber wer in Sündenschuld wie dieser</l>
+        <l>eine blut'ge Mörderhand verbirgt,</l>
+        <l>dem erscheinen wir. Für den Erschlag'nen</l>
+        <l>zeugen wir in Treuen, von dem Mörder</l>
+        <l><milestone unit="line" n="320"/> fordern unerbittlich wir sein Blut.</l>
+    </lg>
+    <sp><speaker>Chor</speaker>
+        <stage>im Kreise den Orestes umtanzend, die Refrains mit wildestem Tanze.</stage>
+        <lg>
+            <l><milestone unit="card" n="321" resp="Smyth"/>Mutter Nacht,</l>
+            <l>höre mich,</l>
+            <l>Mutter Nacht, du gebarst</l>
+            <l>mich der Welt des Lichtes,</l>
+            <l>mich der Welt der Finsternis</l>
+            <l>zum Gericht.</l>
+            <l><milestone unit="line" n="325"/> Letos Sohn kränkt dein Recht,</l>
+            <l><milestone unit="line" n="330"/> raubt das Wild. Mir gehört's</l>
+            <l>mutterblutbesudelt.</l>
+            <l><milestone unit="card" n="328" resp="Smyth"/>Über dem Opfer, da sprech' ich den Spruch:</l>
+            <l>Sinnesbethörung,</l>
+            <l>Sinnesverstörung,</l>
+            <l>Seelenqual.</l>
+        </lg>
+    </sp>
+    
+    <pb n="269" facs="#277"/>
+    <lg>
+        <l>Das ist der Rächenden Zaubergesang,</l>
+        <l>fesselt die Seele</l>
+        <l>ohne der Laute Schall,</l>
+        <l>dörret dem Menschen das Mark im Gebein.</l>
+        <l><milestone unit="card" n="334" resp="Smyth"/>Mir beschied diesem Amt</l>
+        <l>unbeschränkt</l>
+        <l><milestone unit="line" n="335"/> vorzustehn</l>
+        <l>ew'ge Weltenordnung.</l>
+        <l>Wo ein Mensch im Sündenrausch</l>
+        <l>Blut vergiefst, folg' ich ihm.</l>
+        <l>Selbst der Tod giebt ihm nicht</l>
+        <l><milestone unit="line" n="340"/> seine Freiheit wieder.</l>
+    </lg>
+    <lg>
+        <l><milestone unit="line" n="345"/><milestone unit="card" n="341" resp="Smyth"/> Über dem Opfer, da sprech' ich den Spruch:</l>
+        <l>Sinnesbethörung,</l>
+        <l>Sinnesverstörung,</l>
+        <l>Seelenqual.</l>
+        <l>Das ist der Rächenden Zaubergesang,</l>
+        <l>fesselt die Seele</l>
+        <l>ohne der Laute Schall,</l>
+        <l>dörret dem Menschen das Mark im Gebein. ..</l>
+    </lg>
+    <lg>
+        <l><milestone unit="card" n="347" resp="Smyth"/>Seit ich ward, darf ich mich</l>
+        <l>dieser Amtsgewalt berühmen.</l>
+        <l><milestone unit="line" n="350"/> Doch die Himmelsgötter bleiben</l>
+        <l>meinen Händen unerreichbar.</l>
+        <l><milestone unit="line" n="355"/> Niemand teilt meinen Tisch. Rebensaft und Festgewand</l>
+        <l>muſs ich ewig missen.</l>
+        <l><milestone unit="card" n="354" resp="Smyth"/>Häuser zu stürzen, Geschlechter zu löschen</l>
+        <l>ist unser Beruf.</l>
+        <l>Wo blutiger Mord,</l>
+        <l>gleifsender Heuchler, am Freund sich vergreift -</l>
+        <l>hussa, zur Hatz</l>
+        <l>wie hurtig er sei,</l>
+        <l>wie heifs sein Blut:</l>
+        <l>wir machen ihn kalt.</l>
+    </lg>
+    
+    <pb n="270" facs="#278"/>
+    <lg>
+        <l><milestone unit="line" n="360"/><milestone unit="card" n="360" resp="Smyth"/> Einen Gott hatte Zeus</l>
+        <l>hinterzogen meiner Ahndung,</l>
+        <l>und zu weigern was ich wünschte,</l>
+        <l>zu versagen die Verfolgung,</l>
+        <l>wies er fort unser bluttriefend widerlich Geschlecht</l>
+        <l><milestone unit="line" n="365"/> aus dem Himmelshause.</l>
+        <l><milestone unit="card" n="354a" resp="Smyth"/>Häuser zu stürzen,</l>
+        <l>Geschlechter zu löschen</l>
+        <l>ist unser Beruf.</l>
+        <l>Wo blutiger Mord,</l>
+        <l>gleifsender Heuchler, am Freund sich vergreift -</l>
+        <l>hussa, zur Hatz</l>
+        <l>wie hurtig er sei,</l>
+        <l>wie heifs sein Blut:</l>
+        <l>wir machen ihn kalt.</l>
+    </lg>
+    <lg>
+        <l><milestone unit="card" n="368" resp="Smyth"/>Strebt auch stolz wolkenhoch der Menschenruhm.</l>
+        <l>Schwinden muſs er, schrumpfen muſs er</l>
+        <l>schimpflich nieder auf den Grund,</l>
+        <l><milestone unit="line" n="370"/> wenn wir kommen, schwarze Mäntel schleppend,</l>
+        <l><milestone unit="line" n="375"/> wenn um ihn gift'ge Zauberkreise</l>
+        <l>unsre Füfse schlingen.</l>
+    </lg>
+    <lg>
+        <l><milestone unit="card" n="372" resp="Smyth"/>Wir jagten so lange, wir sprangen so weit;</l>
+        <l>die Knie sind steif; plump und schwer</l>
+        <l>schlägt auf der Tritt:</l>
+        <l>so schlägt die Rache zu Boden.</l>
+    </lg>
+    <lg>
+        <l><milestone unit="card" n="377" resp="Smyth"/>Ahnungslos spürt er nicht der Schande Nah'n.</l>
+        <l>Dumpfer Blindheit nächt'ge Hülle</l>
+        <l>wird dem Sünder seine Schuld.</l>
+        <l>Doch die Menschen flüstern zu einander</l>
+        <l>schaudervoll: „Über diesem Hause</l>
+        <l><milestone unit="line" n="380"/> lagern schwarze Schatten".</l>
+    </lg>
+    <lg>
+        <l><milestone unit="card" n="372a" resp="Smyth"/>Wir jagten so lange, wir sprangen so weit,</l>
+        <l>die Knie sind steif, plump und schwer</l>
+    </lg>
+
+    <pb n="271" facs="#279"/>
+    <lg>
+        <l>schlägt auf der Tritt:</l>
+        <l>so schlägt die Rache zu Boden.</l>
+    </lg>
+    <stage>(Das letzte Strophenpaar ruhiger, mehr zum Publikum.)</stage>
+    <lg>
+        <l><milestone unit="card" n="381" resp="Smyth"/>Er wartet auf uns;</l>
+        <l>wir wissen den Weg,</l>
+        <l>wir finden das Ziel,</l>
+        <l>vergessen nie die Schuld.</l>
+        <l>Wir sind die Erhab'nen.</l>
+        <l>Uns rührt kein menschliches Bitten.</l>
+        <l>Wir üben ein Amt</l>
+        <l>ohn' Ehren und Würde</l>
+        <l><milestone unit="line" n="385"/> verbannt von den Göttern</l>
+        <l>in brauende Dünste</l>
+        <l>des ewigen Dunkels,</l>
+        <l>unnahbar, unerfindlich</l>
+        <l>wackerem Auge wie blödem.</l>
+    </lg>
+    <lg>
+        <l><milestone unit="card" n="389" resp="Smyth"/>Welch' sterblicher Mensch</l>
+        <l>empfindet nicht Scheu,</l>
+        <l><milestone unit="line" n="390"/> empfindet nicht Furcht,</l>
+        <l>wenn dieses Lied er hört.</l>
+    </lg>
+    <lg>
+        <l>Die göttliche Satzung</l>
+        <l>ist ewig, unverbrüchlich.</l>
+        <l>Wohl ist mir ein Amt</l>
+        <l>altheiliger Würde</l>
+        <l>verliehen. Mit nichten</l>
+        <l>entbehr' ich der Ehre,</l>
+        <l><milestone unit="line" n="395"/> trotz Schauder und Grausen</l>
+        <l>der sonnenlosen Schlüfte,</l>
+        <l>drunten, da einsam ich hause.</l>
+    </lg>
+    <sp><speaker>Athena</speaker>
+        <stage>kommt eilig von der Seite auf die Bühne.</stage>
+        <l><milestone unit="card" n="397" resp="Smyth"/>Fern am Skamandros hab' ich einer Stimme Laut</l>
+        <l>vernommen, die nach mir verlangte. Beuteland</l>
+    </sp>
+    
+    <pb n="272" facs="#280"/>
+    <sp>
+        <l><milestone unit="line" n="400"/> war ich beschäftigt zu vermessen, das für mich</l>
+        <l>zu grundverwachs'nem Vollbesitz für alle Zeit</l>
+        <l>die Führer und Vertreter des Achäerheers</l>
+        <l>als reichbemess'nen Siegesanteil ausgewählt,</l>
+        <l>der beiden Theseussöhne stolzen Ehrensold.</l>
+        <l>Von dort bin ich gekommen; leichten Schwunges schritt</l>
+        <l><milestone unit="line" n="404"/> mein Fuſs, und statt der Flügel schwoll der Aegis</l>
+        <l>Bausch.</l>
+        <l><milestone unit="line" n="406"/> Nun treff' ich sonderbare Gäst' in meinem Land</l>
+        <l>und keine Furcht, doch Staunen weckt der Anblick mir.</l>
+        <l>Wer seid ihr? Alle frag' ich gleichermafsen so,</l>
+        <l>den Fremdling, der im Schutze meines Bildes sitzt,</l>
+        <l><milestone unit="line" n="410"/> und euch, die keinem Lebewesen ähnlich seht,</l>
+        <l>kein Gott hat euch im Kreis der Götterfrau'n er-</l>
+        <l>blickt,</l>
+        <l>noch gleichet eure Bildung menschlicher Gestalt.</l>
+        <l>Doch wer da selber wohlgebildet andre schmäht,</l>
+        <l>nimmt sich heraus, was jede Billigkeit verwirft.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l><milestone unit="line" n="415"/> Tochter des Zeus, in Kürze geb' ich dir Bescheid.</l>
+        <l>Wir Schauerlichen stammen von der Mutter Nacht;</l>
+        <l>die Flüche heiſst man drunten uns in unsrem Reich.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Nun wohl, Geschlecht und Namen kenn' ich jetzt</l>
+        <l>von euch.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Gleich wirst du unterrichtet auch von meinem Amt.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="line" n="420"/> Ich werd' es, wenn ihr deutliche Belehrung gebt.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Den Menschenmörder jagen wir aus seinem Haus.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Zu welchem Ziele führet des Verfolgten Flucht?</l>
+    </sp>
+    
+    <pb n="273" facs="#281"/>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Wohin von Freud' und Hoffnung nie ein Schimmer</l>
+        <l>dringt.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Auch diesen Mann bedräut ihr mit der wilden Jagd?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="425"/> Ja. Seine Mutter hat zu morden er gewagt.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>That er's in Zwang? aus Furcht vor einer Seele</l>
+        <l>Grimm?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Was giebt es, das zum Muttermorde reizen darf?</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Ich sehe zwei Parteien, eine hör' ich nur.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Er wird nicht schwören wollen: gern beschwör' ich es.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="line" n="425"/> Recht haben willst du, Recht zu üben sträubst du dich.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Wieso? Aus deiner Weisheit Schatz belehre mich.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Es darf der Eid dem Unrecht nicht den Sieg verleih'n.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>So untersuch' und sprich gerecht das Urteil selbst.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Des Streits Entscheidung legest du in meine Hand?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="435"/> Warum nicht? Dir vertrau' ich, die Vertrau'n ver-</l>
+        <l>dient.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="436" resp="Smyth"/>Was hast du darauf zu erwidern, fremder Mann?</l>
+        <l>Erst nenne Heimat und Geschlecht und deine That,</l>
+        <l>dann wehre die Bezichtigung des Klägers ab,</l>
+    </sp>
+    
+    <pb n="274" facs="#282"/>
+    <sp>
+        <l>wofern du im Vertrau'n auf deiner Sache Recht</l>
+        <l><milestone unit="line" n="440"/> mein Bild umarmend sitzest meinem Herde nah</l>
+        <l>und frischvergoss'nen Blutes Reinigung begehrst,</l>
+        <l>wie einst Ixion, als ein mitleidswürd'ger Mensch.</l>
+        <l>Auf alles dieses gieb mir bündigen Bescheid.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Herrin Athena, lass' ein schwer Bedenken mich</l>
+        <l>zuerst beheben, dessen du zuletzt gedacht.</l>
+        <l><milestone unit="line" n="445"/> Ich heische keine Reinigung, ich bin auch nicht</l>
+        <l>mit mordbefleckten Händen deinem Bild genaht.</l>
+        <l>Du kannst dich sicher überzeugen: schweigen muſs</l>
+        <l>so lange jeder, welchen frisches Blut befleckt,</l>
+        <l>bis seiner sich ein Mensch erbarmt und sühnend ihm</l>
+        <l><milestone unit="line" n="450"/> mit frischem Opferblute seine Hände wäscht.</l>
+        <l>Gereinigt haben längst auch mich in andrem Haus</l>
+        <l>Tierblut und flieſsend Wasser, wie der Brauch es</l>
+        <l>heischt.</l>
+        <l>So bist du dieser Sorge ledig, wie du siehst.</l>
+        <l>Nun meine Herkunft. Was du fragst, ist bald gesagt.</l>
+        <l><milestone unit="line" n="455"/> Aus Argos stamm' ich; meinen Vater kennst du gut.</l>
+        <l>Des Flottenzuges Führer Agamemnon war's,</l>
+        <l>mit dem du selber Troias Burg dem Boden gleich</l>
+        <l>gemacht hast. Tod hat ihn betroffen. Nicht zum Heil</l>
+        <l>ward ihm die Heimkehr. Meiner Mutter schwarzes</l>
+        <l>Herz</l>
+        <l><milestone unit="line" n="460"/> sann Tod ihm. Tückisch Fangnetz hüllte seinen Leib,</l>
+        <l>doch aus dem Bade leuchtete der Mord hervor.</l>
+        <l>Ich war von Haus verstofsen endlich kehrt' ich heim,</l>
+        <l>und da erschlug ich meine Mutter, ich gesteh's,</l>
+        <l>den Tod des lieben Vaters rächend, Blut um Blut.</l>
+        <l><milestone unit="line" n="465"/> Mit mir gemeinsam trägt Apollon diese Schuld.</l>
+        <l>Die Qualen, die er malte, wenn die Schuld'gen ich</l>
+        <l>verschonte, spornten meine Seele zu der That.</l>
+        <l>Ob recht ich oder unrecht that, entscheide du.</l>
+        <l>Sprichst du das Urteil, nehm' ich alles dankbar hin.</l>
+    </sp>
+    
+    <pb n="275" facs="#283"/>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="470" resp="Smyth"/>Mit der Entscheidung dieses Handels würde sich</l>
+        <l><milestone unit="line" n="470"/> zu viel ein Mensch zutrauen, und auch mir gebührt</l>
+        <l>kein Urteil, wo dem Morde bittre Rache folgt.</l>
+        <l>Zumal du trotz den voll erfüllten Pflichten doch</l>
+        <l>bittflehend herkommst, keiner ungesühnten Schuld</l>
+        <l>Ansteckung bringend. Meine Stadt kann über dich</l>
+        <l><milestone unit="line" n="475"/> sich nicht beschweren: heilig ist mir dein Gesuch.</l>
+        <l>Allein auch deine Gegner sind von solcher Art,</l>
+        <l>daſs man sie ungern abweist. Fällt der Siegesspruch</l>
+        <l>nicht ihnen zu, so trieft von dem gekränkten Stolz</l>
+        <l>ein Gift auf unsern Boden nieder, das erzeugt</l>
+        <l>Miſswachs und arger Seuche schauerlichen Brand.</l>
+        <l><milestone unit="line" n="480"/> So steht es. Anzunehmen und zu weigern ist</l>
+        <l>gefährlich gleichermaſsen; ich getrau's mich nicht.</l>
+        <l>Indes, der Rechtstreit ist einmal vor uns gebracht,</l>
+        <l><milestone unit="line" n="483"/> so unterbreit' ich die Entscheidung einem Rat</l>
+        <l>geschwor'ner Richter, die aus meinen Bürgern ich</l>
+        <l>auswähle, Männer treubewährt, in Ehren grau,</l>
+        <l><milestone unit="line" n="489"/> abweichend keine Spanne von beschwor'ner Pflicht.</l>
+        <l><milestone unit="line" n="484"/> Und diese Stiftung setz' ich ein für alle Zeit.</l>
+        <l><milestone unit="line" n="485"/> Schafft ihr derweilen Zeugen und Belege her</l>
+        <l>zu eurer Sache rechtlicher Bekräftigung.</l>
+        <l>Ich komme, wenn ich meines Volkes Würdigste</l>
+        <l><milestone unit="line" n="4VIII"/> erkoren, zum gerechten Wahrspruch wieder her. <stage>Ab.</stage></l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="line" n="490"/><milestone unit="card" n="490" resp="Smyth"/> Neues Recht bricht herein,</l>
+            <l>wenn die Sache, wenn die Sünde</l>
+            <l>dieses Muttermörders siegt.</l>
+            <l>Kommt's dazu, mögen alle Menschen</l>
+            <l><milestone unit="line" n="495"/> sonder Scheu losen Leichtsinn üben.</l>
+            <l>Und den Eltern bringt die Zukunft</l>
+            <l>manchen Schlag des schwersten Schmerzes:</l>
+            <l>denn ihn schlägt des Sohnes Hand.</l>
+        </lg>
+    </sp>
+
+    <pb n="276" facs="#284"/>
+    <sp>
+        <lg>
+            <l><milestone unit="line" n="500"/><milestone unit="card" n="499" resp="Smyth"/> Folgt dem Streich doch von uns</l>
+            <l>keine Rache, die wir rasend</l>
+            <l>ahndeten der Menschen Thun.</l>
+        </lg>
+        <lg>
+            <l>Merken wird</l>
+            <l>jeder allerorten,</l>
+            <l>wenn er zählt</l>
+            <l>rings der andern Leiden:</l>
+            <l><milestone unit="line" n="505"/> unsere Arbeit ruht und feiert,</l>
+            <l>und vergebens hofft er Hilfe,</l>
+            <l>sein Vertrau'n auf Rettung trügt.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="card" n="508" resp="Smyth"/>Wen hinfort Unbill trifft,</l>
+            <l><milestone unit="line" n="510"/> hebe nicht den Klageruf:</l>
+            <l>'Hilf mir, Recht, Rache hilf, Urgewalt!"</l>
+        </lg>
+        <lg>
+            <l>Freilich, solchen Jammerschrei</l>
+            <l>heben bald von Missethat</l>
+            <l>frischverletzt</l>
+            <l>Mutter hier und Vater dort,</l>
+            <l><milestone unit="line" n="515"/> denn es stürzt das Recht.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="card" n="517" resp="Smyth"/>Schauder thut manchmal wohl,</l>
+            <l>hält in Zucht das trotz'ge Herz.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="line" n="520"/> Gut bekommt Mäfsigung, auch aus Angst.</l>
+        </lg>
+        <lg>
+            <l>Wer von nichts mehr in der Brust</l>
+            <l>sich das Herz erschüttern läfst,</l>
+            <l>der verlernt</l>
+            <l>bald auch Ehrfurcht vor dem Recht,</l>
+            <l>Einzelmensch und Staat.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="line" n="525"/><milestone unit="card" n="526" resp="Smyth"/> Weder unumschränkter Freiheit</l>
+            <l>noch dem Joch der Herrscherwillkür</l>
+            <l>gieb den Preis.</l>
+            <l>Alles hat bei Gott den Vorzug, was die rechte Mitte</l>
+            <l>hält.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="line" n="530"/> Wie verschieden er uns führe, dieser Spruch trifft</l>
+            <l>immer zu.</l>
+        </lg>
+    </sp>
+    
+    <pb n="277" facs="#285"/>
+    <sp>
+        <lg>
+            <l>Wo die Scheu vor dem Heiligen schwand, kommt</l>
+            <l>Frevel und Umsturz</l>
+            <l><milestone unit="line" n="535"/> unfehlbar. Schlichte Redlichkeit</l>
+            <l>bringt den ersehnten, allwillkomm'nen Segen.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="card" n="538" resp="Smyth"/>Das beherz'ge für und für:</l>
+            <l>scheu' dich vor dem Thron des Rechts.</l>
+            <l><milestone unit="line" n="540"/> Wag' es nie</l>
+            <l>frevlen Fuſses ihn zu treten, weil Gewinnesgier dich</l>
+            <l>lockt.</l>
+        </lg>
+        <lg>
+            <l>Denn du muſst die Strafe zahlen; nimmermehr ver-</l>
+            <l>fällt die Schuld.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="line" n="545"/> Darum übe der Ehrfurcht Pflicht, zuerst an den</l>
+            <l>gehorsam ihnen unterthan,</l>
+            <l>Eltern,</l>
+            <l>und auch am Fremdling unter deinem Dache.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="line" n="550"/><milestone unit="card" n="550" resp="Smyth"/> Wer also lebt, so weit nicht Zwang</l>
+            <l>den Willen hemmt, dem Rechte treu,</l>
+            <l>wird Segen nicht entbehren,</l>
+            <l>und ganz unselig kann er niemals werden.</l>
+        </lg>
+        <lg>
+            <l>Doch wer des Rechtes Schranken bricht,</l>
+            <l>nichts schonend, alles wagend,</l>
+            <l>die Ordnung unterwühlend,</l>
+            <l>dem sag' ich es voraus, er wird's erfahren:</l>
+            <l><milestone unit="line" n="555"/> sein Segel muſs er reffen,</l>
+            <l>wenn ihm der Sturm die Rae zerbricht.</l>
+            <l>Mühselig wird die Fahrt.</l>
+            <l>Die Flut der Brandung ihn erfafst</l>
+            <l><milestone unit="card" n="558" resp="Smyth"/>und reiſst ihn fort. Da ruft er laut.</l>
+            <l>Doch taub sind ihm die Götter.</l>
+            <l><milestone unit="line" n="560"/> Die Hölle lacht des heiſsen Menschentrotzes,</l>
+            <l>der solches nimmer sich versah.</l>
+        </lg>
+    </sp>
+    
+    <pb n="278" facs="#286"/>
+    <sp>
+        <lg>
+            <l>Er müht und plagt sich mürbe:</l>
+            <l>das Riff umschifft er nicht.</l>
+            <l>Ein langes Leben stand sein Glück erhaben:</l>
+            <l>jetzt an des Rechtes Felsen</l>
+            <l>zerschellt es; er versinkt ins Nichts.</l>
+            <l><milestone unit="line" n="565"/> Kein Auge weint ihm nach.</l>
+        </lg>
+    </sp>
+    <stage>Mittlerweile ist die Bühne für die Verhandlung hergerichtet. Bänke für die Richter, ein Tisch mit zwei Urnen für die Abstimmung sind hereingebracht; Orestes nimmt auf der einen Seite den Platz des Verklagten ein, der Chor auf der andern den des Klägers.</stage>
+    <stage>Athena zieht an der Spitze der zum Richteramte berufenen Männer und Greise ein, ihr zur Seite ein Herold; Bürger drängen sich als Zuhörer heran. Die Richter setzen sich; Athena nimmt den Platz des Vorsitzenden ein.</stage>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="566" resp="Smyth"/>Jetzt gieb das Zeichen, Herold, weise jedermann</l>
+        <l>an seinen Platz, und der Drommete Tuskererz,</l>
+        <l>beseelt von Menschenodem, schmettre das Signal</l>
+        <l>allübertönend, Ruh' gebietend allem Volk.</l>
+        <l><milestone unit="line" n="570"/> So sollen auch in Zukunft meine Richter, soll</l>
+        <l>mein ganzes Volk, wenn dies Gericht zusammentritt,</l>
+        <l>schweigen und horchen, daſs in ungestörtem Gang</l>
+        <l>zu sich'rer Urteilsfindung die Verhandlung führt.</l>
+        <stage>Apollon erscheint auf dem Platze des Verklagten neben Orestes.</stage>
+        <l>Apollon, wo du Herr bist, schalte, wie du willst,</l>
+        <l><milestone unit="line" n="575"/> doch hier, sag' an, was geht dich dieser Handel an?</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Ich kam als Zeuge (denn auf meinen Beistand hat</l>
+        <l>Anspruch der Angeklagte, weil er nach der That</l>
+        <l>an meinem Herde Schutz gesucht, um Reinigung</l>
+        <l>mich angefleht und sie bei mir gefunden hat)</l>
+        <l>und auch als Mitverklagter: seinen Muttermord</l>
+        <l><milestone unit="line" n="580"/> hab' ich veranlaſst. Leite die Verhandlung ein,</l>
+        <l>Athena, find' in deiner Weisheit den Entscheid.</l>
+    </sp>
+    
+    <pb n="279" facs="#287"/>
+    <sp><speaker>Athena.</speaker>
+        <l>Ihr habt das Wort. So leit' ich die Verhandlung ein.</l>
+        <l>Denn in die Sache führt der Kläger grades Wegs</l>
+        <l>die Richter ein, wenn er zuerst zu Worte kommt.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="585"/> Unser sind viel, doch wenig Worte machen wir.</l>
+        <l>Gieb du auf unsre Fragen Antwort Schlag auf Schlag.</l>
+        <l>Zuerst denn: hast du deine Mutter umgebracht?</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Ihr Mörder bin ich, ich bestreit' es keineswegs.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Drei Gänge hat das Ringen; einmal warf ich dich.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l><milestone unit="line" n="590"/> Noch lieg' ich nicht am Boden, und du jubelst schon?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Nun muſst du aber sagen, wie du sie erschlugst.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Ich sag' es. In die Kehle stieſs ich ihr das Schwert.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Wer hat dich angestachelt? Wessen war der Rat?</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Apollons Spruch. Hier steht er und bezeugt es mir.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="595"/> Zum Muttermord geraten hat der Sehergott?</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Er that es, und bis heute hab' ich's nicht bereut.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Du wirst schon anders reden, wenn dein Urteil fällt.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Ich hoffe, Beistand schickt der Vater aus dem Grab.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Auf Tote hoffst du? Wohl; die Mutter starb durch dich.</l>
+    </sp>
+    
+    <pb n="280" facs="#288"/>
+    <sp><speaker>Orestes.</speaker>
+        <l><milestone unit="line" n="600"/> Sie war belastet mit zwiefacher Sündenschuld.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Belehre deine Richter, wie du das verstehst.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Sie schlug den Gatten, und sie schlug den Vater mir.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Nun aber lebst du; sie ist frei durch deinen Mord.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Weswegen habt ihr sie im Leben nicht verfolgt?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="605"/> Es war kein blutsverwandter Mann, den sie erschlug.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Ich aber bin mit meiner Mutter blutsverwandt?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="card" n="607" resp="Smyth"/>Mordbube, die dich unter ihrem Herzen trug?</l>
+        <l>Des Mutterblutes Lebensquell verläugnest du?</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Jetzt bitt' ich um dein Zeugnis. Rechtsbelehrung gieb,</l>
+        <l><milestone unit="line" n="610"/> Apollon, ob ich zu dem Mord ein Recht besaſs.</l>
+        <l>Begangen hab' ich's, das ist wahr, das leugn' ich nicht,</l>
+        <l>doch ob berechtigt oder nicht der Totschlag war,</l>
+        <l>gieb dein Gutachten. Dem Gerichte künd' ich's dann.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Vor euch, die Pallas zu dem hohen Richteramt</l>
+        <l><milestone unit="line" n="615"/> erwählt hat, will ich sprechen, wie das Recht verlangt.</l>
+        <l>Ich bin ein Seher: laut're Wahrheit sag' ich euch.</l>
+        <l>Kein Wort hab' ich von meinem Sehersitze je</l>
+        <l>gesprochen, Männern, Frauen, Staaten kündigend,</l>
+        <l>das mir nicht Zeus, der Vater der Olympischen,</l>
+        <l><milestone unit="line" n="620"/> geboten hatte. Wohl erwägt es, welch' Gewicht</l>
+        <l>dadurch in unsre Schale fällt. Ich rat' euch, folgt</l>
+        <l>dem Schluſs des Vaters: Zeus ist stärker als ein Eid.</l>
+    </sp>
+
+    <pb n="281" facs="#289"/>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Auf Zeus' Eingebung willst Orestes du den Spruch</l>
+        <l>verkündet haben, daſs er, um des Vaters Tod</l>
+        <l>zu rächen, seine Mutter ganz verleugnete?</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l><milestone unit="line" n="625"/> Es ist doch nicht dasselbe, wenn ein Mann, ein Held,</l>
+        <l>ein König stirbt, dem seine Würde Götterhuld</l>
+        <l>verliehen hat, von Weiberhand, und nicht im Kampf,</l>
+        <l>wie fernen Feind die Amazone niederstreckt,</l>
+        <l>nein, so wie ich es euch beschreibe, die ihr hier</l>
+        <l><milestone unit="line" n="630"/> das Urteil fällen werdet über diesen Streit.</l>
+        <l>Er kehrte von der Heerfahrt heim; das meiste war</l>
+        <l>ihm wohlgelungen; gleifsnerische Freundlichkeit</l>
+        <l><milestone unit="line" n="632"/> der Gattin gab ihm Willkomm; führte zu dem Bad</l>
+        <l>den Wegemüden; als er aus der Wanne steigt,</l>
+        <l><milestone unit="line" n="633"/> hält eines Riesentuches Hülle sie bereit,</l>
+        <l>verstrickt den Gatten in das ungeheure Netz</l>
+        <l><milestone unit="line" n="635"/> und haut ihn nieder. Also fand den Tod der Held,</l>
+        <l>der ruhmgekrönte, der Hellenenflotte Fürst.</l>
+        <l>So wollt' ich das erzählen, Pallas, um den Zorn</l>
+        <l>des Volks zu reizen, das du zum Gericht beriefst.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="640"/><milestone unit="card" n="640" resp="Smyth"/> Zeus schätzt den Tod des Vaters höher, wie du sagst.</l>
+        <l>Doch seinen eignen Vater Kronos hat er selbst</l>
+        <l>gefesselt. Darin ist ein offner Widerspruch.</l>
+        <l>Ihr habt's gehört, ihr Richter, Zeugen seid ihr mir.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l><milestone unit="line" n="645"/> Ihr schnödes, gottverhafstes, scheuſsliches Gezücht.</l>
+        <l>Die Bande kann er lösen. Nicht auf ewig ist</l>
+        <l>verschlossen der Versöhnung und Erlösung Weg.</l>
+        <l>Doch wenn des Menschen Lebensblut einmal der Staub</l>
+        <l>gesogen hat, so steht der Tote nimmer auf.</l>
+    </sp>
+    
+    <pb n="282" facs="#290"/>
+    <sp>
+        <l><milestone unit="line" n="650"/> Dafür hat auch mein Vater keines Zaubers Kraft</l>
+        <l>erfunden; alles andre schafft er leichter Hand,</l>
+        <l>erhebend, stürzend, stellend an den alten Platz.</l>
+    </sp>
+    <sp><speaker>Chorführer.</speaker>
+        <l>Dann sieh, wie den Orestes du befreien willst:</l>
+        <l>vergossen hat er seiner eig'nen Mutter Blut,</l>
+        <l>soll er in Argos wohnen, seinem Vaterhaus?</l>
+        <l><milestone unit="line" n="655"/> Steht dort ein Altar, wo er opfern dürfte? Kann</l>
+        <l>Weihwasser je ihm bieten seiner Sippen Kreis?</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Auch das kann ich erklären, merke wie genau.</l>
+        <l>Erzeugerin des Kindes ist die Mutter nicht,</l>
+        <l>wie man es glaubt, nur Nährerin des jungen Keims.</l>
+        <l><milestone unit="line" n="660"/> Erzeugen kann allein der Vater: sie bewahrt</l>
+        <l>gleichsam ein anvertrautes Pfand und giebt es heil</l>
+        <l>dem Eigner wieder, wenn es nicht ein Gott zerstört.</l>
+        <l>Ich lief're den Beweis dir. Ohne Mutter kann</l>
+        <l>ein Vater zeugen: sieh die Tochter hier des Zeus,</l>
+        <l><milestone unit="line" n="664"/> des Himmelsherrn; da steht sie, wie ans Licht sie trat,</l>
+        <l>nicht als ein Kindlein, das die Mutterbrust begehrt,</l>
+        <l><milestone unit="line" n="665"/> nicht in des Mutterschofses Dunkel ausgereift,</l>
+        <l>ein Sprofs, vollkommen, wie kein Gott ihn zeugen kann.</l>
+        <l>Ich weiſs, Athena, deinem Staat und deinem Volk</l>
+        <l>werd' ich zu vielen grofsen Dingen hilfreich sein;</l>
+        <l>so hab' auch diesen ich nach deinem Land geführt,</l>
+        <l><milestone unit="line" n="670"/> dafs er dir treu ergeben würd' auf alle Zeit,</l>
+        <l>und du zum Bund'sgenossen, Pallas, ihn gewönnst</l>
+        <l>und seinen Nachwuchs, daſs in Unverbrüchlichkeit</l>
+        <l>noch bei den spätsten Enkeln gölte dieser Bund.</l>
+    </sp>
+    <sp><speaker>Athena</speaker>
+        <stage>zu den Klägern.</stage>
+        <l><milestone unit="card" n="674" resp="Smyth"/>Habt ihr genug gesprochen? Darf die Richter ich</l>
+        <l><milestone unit="line" n="675"/> abstimmen lassen ehrlich und gewissenhaft?</l>
+    </sp>
+    
+    <pb n="283" facs="#291"/>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Verschossen hab' ich meine Pfeile; ich bin bereit</l>
+        <l>und harre nur zu hören, wie das Urteil fällt.</l>
+    </sp>
+    <sp><speaker>Athena</speaker>
+        <stage>zu den Verklagten.</stage>
+        <l>Und ihr? Ich weiſs nicht, ob ihr euch zufrieden gebt.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Gesagt ist, was zu sagen war. Ihr Richter, gebt</l>
+        <l><milestone unit="line" n="680"/> die Stimmen ab, doch denkt an euren Eid dabei.</l>
+    </sp>
+    <sp><speaker>Athena</speaker>
+        <stage>sich erhebend.</stage>
+        <l>Vernimm denn meine Stiftung, Volk von Attika.</l>
+        <l>Heut sollt ihr richten über ein vergoss'nes Blut</l>
+        <l>zum ersten Male; doch es wird auch fürderhin</l>
+        <l>im Theseusstaate dieser Richterrat bestehn.</l>
+        <l><milestone unit="line" n="685"/> Den Areshügel kennt ihr. Sitz und Lagerplatz</l>
+        <l>war er den Amazonen, als ihr Heereszug</l>
+        <l>bis hierher Theseus voller Wut verfolgend drang.</l>
+        <l>Sie bauten damals gegenüber meiner Burg</l>
+        <l>dort eine hohe Burg sich, und sie opferten</l>
+        <l><milestone unit="line" n="690"/> dem Ares. Davon nennet Hügel man und Stein</l>
+        <l>nach Ares heut noch. Walten soll von dort der Rat</l>
+        <l>und taglang, nachtlang allem ungesetzlichen</l>
+        <l>Gebahren wehren, weckend in der Bürger Brust</l>
+        <l>Ehrfurcht und Schauder, der der Ehrfurcht Bruder ist.</l>
+        <l>Es dürfen nur die Bürger die Verfassung nicht</l>
+        <l><milestone unit="line" n="695"/> durch üblen Zusatz trüben. Wer dem klaren Born</l>
+        <l>Kotwasser zuführt, findet nimmer reinen Trunk.</l>
+        <l>Ich rate meinen Bürgern: hütet ehrfurchtsvoll</l>
+        <l>vor Zügellosigkeit euch wie vor Sklavensinn,</l>
+        <l>und tilgt nicht alles aus dem Staat, was Schauder weckt.</l>
+        <l>Vor nichts mehr scheut sich, wer das Schaudern ganz</l>
+        <l>verlernt.</l>
+    </sp>
+    
+    <pb n="284" facs="#292"/>
+    <sp>
+        <l><milestone unit="line" n="700"/> So wahrt denn meine Stiftung in ehrfürcht'ger Scheu,</l>
+        <l>dann habt für euer ganzes Land ihr einen Hort,</l>
+        <l>wie keines Volkes Staat ihn, auch der Dorer nicht,</l>
+        <l>auch des Hyperboreers Unschuld nicht besitzt.</l>
+        <l>So sei denn dieser Rat geschaffen. Eigennutz</l>
+        <l>berührt ihn nicht; Erbarmen kennt er, kennt zugleich</l>
+        <l><milestone unit="line" n="705"/> der Ahndung Schärfe. Friedlich schlummern mag das</l>
+        <l>Land,</l>
+        <l>so lange schützend über ihm sein Auge wacht.</l>
+        <l>Lang' hab' ich diese Mahnung an mein Volk gedehnt;</l>
+        <l>sie galt der Zukunft. Jetzt erhebt ihr euch, ergreift</l>
+        <l>ein jeder seinen Stimmstein, gebt das Urteil ab</l>
+        <l>für oder wider, eingedenk der Eidespflicht,</l>
+        <l><milestone unit="line" n="710"/> die ihr gelobtet. Alles hab' ich nun gesagt.</l>
+    </sp>
+    <stage>Die Richter treten einzeln an den Tisch, nehmen einen Stein, gehen an die Urnen und werfen ihn je in eine derselben; man kann nicht bemerken, in welche.</stage>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="card" n="711" resp="Smyth"/>Ich rat' euch, tretet unsrer Würde nicht zu nah,</l>
+        <l>wir können eurem Lande leicht gefährlich sein.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Ich aber heiſs' euch meinen Spruch, den Spruch des</l>
+        <l>Zeus</l>
+        <l>bedenken, nicht ihm rauben der Erfüllung Frucht.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="715"/> Du mischst dich in Bluthändel unberufen ein.</l>
+        <l>Wahrsagen wirst du künftig von entweihtem Thron.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Ging auch des Vaters Weisheit fehl, als er die Hand</l>
+        <l>Ixions sühnte, die das erste Blut vergofs?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Du sagst es. Wenn ich nicht mein Recht bekomme, fällt</l>
+        <l><milestone unit="line" n="720"/> Heimsuchung meiner Strafe schwer auf dieses Land.</l>
+    </sp>
+    
+    <pb n="285" facs="#293"/>
+    <sp><speaker>Apollon.</speaker>
+        <l>Nein, deine Würde gilt bei allen Göttern nichts,</l>
+        <l>den jungen und den alten. Siegen werden wir.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>So triebst du's bei Admetos mit den Schicksalsfrau'n,</l>
+        <l>vom Tod zu lösen einen Menschen zwangst du sie.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l><milestone unit="line" n="725"/> Dem frommen Freunde beizustehn ist Recht und</l>
+        <l>Pflicht,</l>
+        <l>zu jeder Stunde, vollends wenn die Not ihn drängt.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Du warst es, der der alten Ordnung Gang gestört,</l>
+        <l>mit Wein die Urgewalten überlistet hat.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Du bist's, die abgewiesen, wenn das Urteil fällt,</l>
+        <l><milestone unit="line" n="730"/> ohnmächt'gen Geifer wider ihre Gegner speit.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Mit Füssen treten will dein junger Übermut</l>
+        <l>die Greisin? Warten will ich, was das Urteil bringt,</l>
+        <l>noch schwankend, ob ich diesem Lande zürnen muſs.</l>
+    </sp>
+    <stage>Die Richter haben nun abgestimmt und ihre Plätze wieder eingenommen.</stage>
+    <sp><speaker>Athena.</speaker>
+        <l>Nun ist's an mir; die letzte Stimme geb' ich ab,</l>
+        <l><milestone unit="line" n="735"/> und zu Orestes' Gunsten werf' ich diesen Stein.</l>
+        <l>Ich habe keine Mutter; mich gebar kein Weib.</l>
+        <l>Nur nicht als Gatte, sonst in allem hat der Mann</l>
+        <l>mein ganzes Herz: des Vaters bin ich durch und durch.</l>
+
+        <l>Drum hat für mich der Tod des Weibes, die den Mann</l>
+        <l><milestone unit="line" n="740"/> erschlug, den Herrn des Hauses, minderes Gewicht.</l>
+        <l>Und auch der Stimmen Gleichheit macht Orestes frei.</l>
+    </sp>
+
+    <pb n="286" facs="#294"/>
+    <sp><speaker>Athena.</speaker>
+        <l>Nun rasch, ihr Richter, welchen dieser Auftrag ward,</l>
+        <l>die Stimmen schüttet aus den beiden Urnen aus.</l>
+    </sp>
+    <stage>Zwei Richter schütten die Urnen aus und sondern die Stimmsteine je auf einem Brett.</stage>
+    <sp><speaker>Orestes.</speaker>
+        <l><milestone unit="card" n="744" resp="Smyth"/>Wie wird das Urteil lauten, Phoibos, lichter Herr?</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l><milestone unit="line" n="745"/> Urmutter, schaust du die Entscheidung, schwarze</l>
+        <l>Nacht?</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Jetzt gilt es; Leben oder Henkerstod für mich.</l>
+    </sp>
+    <sp><speaker>Chorführerin.</speaker>
+        <l>Für uns Zerstörung oder Fortbestand des Rechts.</l>
+    </sp>
+    <sp><speaker>Apollon.</speaker>
+        <l>Sorgfältig zählt die Steine, die der Urne Schofs</l>
+        <l>entrollen, ihr Athener, und die Sonderung</l>
+        <l>vollziehet treu und ehrlich. Groſses Unheil kann</l>
+        <l><milestone unit="line" n="750"/> durch Unbedacht entstehen: einer Stimme Fall</l>
+        <l>entscheidet über eines ganzen Hauses Glück.</l>
+    </sp>
+    <stage>Die Richter überreichen Athena die Bretter; man sieht, dass auf beiden gleichviel Steine liegen.</stage>
+    <sp><speaker>Athena.</speaker>
+        <l>Der Schuld des Mordes ist der Angeklagte quitt.</l>
+        <l>Ergeben hat sich eine gleiche Stimmenzahl.</l>
+    </sp>
+    <sp><speaker>Orestes.</speaker>
+        <l>Athena, mein und meines Hauses Retterin,</l>
+        <l><milestone unit="line" n="755"/> hab' Dank, du führst mich in das Vaterland zurück,</l>
+        <l>das ich verloren hatte. Durch ganz Hellas fliegt</l>
+        <l>die Kunde 'Bürger ist Orestes wiederum</l>
+        <l>von Argos, in des Vatererbes Vollbesitz.</l>
+        <l>Athena und Apollon haben das erwirkt</l>
+        <l><milestone unit="line" n="760"/> und drittens er, der dritt' und letzt und beste stets,</l>
+        <l>Zeus der allmächt'ge Retter'. Rettung schuf er mir,</l>
+    </sp>
+    
+    <pb n="287" facs="#295"/>
+    <lg>
+        <l>weil ihn des Vaters Mord erbarmte, weil er sah,</l>
+        <l>dafs Höllenbrut für meiner Mutter Sache stritt.</l>
+        <l>Ich aber will, bevor ich in mein Vaterland</l>
+        <l>aufbreche, diesem Land erst und dem Pallasvolk</l>
+        <l>geloben für die Zukunft, für die Ewigkeit:</l>
+        <l><milestone unit="line" n="765"/> wer immer meines Argos Steuer lenken wird,</l>
+        <l>zum Heereszuge soll er seine Mannen nie</l>
+        <l>wider Athen aufbieten. Ruh' ich auch im Grab,</l>
+        <l><milestone unit="line" n="769"/> dazwischen tret' ich hemmend und verhindernd ein.</l>
+        <l><milestone unit="line" n="768"/> Denn wer das Bündnis, das ich heut beschwöre, bricht,</l>
+        <l><milestone unit="line" n="770"/> dem wirk' ich üblen Angang, werf' ihm in den Sinn</l>
+        <l>Unlust zum Werke. Reuvoll giebt er bald es auf.</l>
+        <l>Doch wird der Eid gehalten, üben treulich sie</l>
+        <l>dem Volk Athenas immerdar die Bundespflicht,</l>
+        <l>so lohnt es ihnen gnädig meiner Seele Macht.</l>
+        <l><milestone unit="line" n="775"/> Heil ruf ich scheidend, dir und deinem Volke Heil,</l>
+        <l>bleib' euch die Ringkunst, die den Gegner sicher</l>
+        <l>greift,</l>
+        <l>und euer Staat wird blühen, siegen euer Heer.</l>
+    </lg>
+    <stage>Ab zur Seite; Apollon ist während der Rede verschwunden.</stage>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="line" n="780"/><milestone unit="card" n="778" resp="Smyth"/> Weh, ihr habt es zertreten,</l>
+            <l>es meinen Händen entwunden,</l>
+            <l>mein altes Recht,</l>
+            <l>ihr jungen Götter.</l>
+            <l>Ehrlos bin ich, doch Gift,</l>
+            <l><milestone unit="line" n="785"/> wehe, zum Lohn für die Schande,</l>
+            <l>Gift auf das Land,</l>
+            <l>meinem Herzen entquellend</l>
+            <l>das zeugt auf dem Boden</l>
+            <l>wuchernde Flechte.</l>
+            <l>Kein Blatt mehr sprieſst,</l>
+            <l>kein Same keimt,</l>
+            <l>kein Weib gebiert.</l>
+        </lg>
+    </sp>
+    
+    <pb n="288" facs="#296"/>
+    <sp>
+        <lg>
+            <l>Rache, Rache!</l>
+            <l>Dann kommt die Pest</l>
+            <l>und frifst das Volk.</l>
+            <l>Oh, oh,</l>
+            <l><milestone unit="line" n="790"/> ohnmächtig klag' ich.</l>
+            <l>Lachen dürfen sie meiner.</l>
+            <l>Ich kann's nicht verwinden.</l>
+            <l>Wehe, die Tochter der Nacht</l>
+            <l>klagt ihr verlorenes Recht,</l>
+            <l>verworfen und ehrlos.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="793" resp="Smyth"/>Ich bitt' euch, nehmet nicht mit Groll das Urteil hin.</l>
+        <l><milestone unit="line" n="795"/> Ihr habt ja nicht verloren, Stimmengleichheit nur</l>
+        <l>hat sich ergeben, ohne Falsch, und nicht um euch</l>
+        <l>zu kränken, sondern weil der Schluſs des Zeus</l>
+        <l>ganz klar bezeugt war: Zeugnis gab derselbe Gott,</l>
+        <l>der dem Orestes selber die Straflosigkeit</l>
+        <l>geweissagt hatte für die That, zu der er trieb.</l>
+        <l><milestone unit="line" n="800"/> Und ihr wollt Zornesgeifer spei'n auf dieses Land?</l>
+        <l>Bedenkt euch; laſst das Wüten. Das unmilde Naſs,</l>
+        <l>das Miſswachs zeugend jedes Samens Keimen tilgt,</l>
+        <l>müſst ihr verhalten, eurer Galle Bitternis.</l>
+        <l>Ich biet' euch treu und ehrlich Sitz und Unterschlupf</l>
+        <l><milestone unit="line" n="805"/> im Schofse meines Landes. Meine Bürgerschaft</l>
+        <l>schmückt euch des vollsten Opfertisches Ehrenmahl.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="line" n="810"/><milestone unit="card" n="808" resp="Smyth"/> Weh, ihr habt es zertreten,</l>
+            <l>es meinen Händen entwunden,</l>
+            <l>mein altes Recht,</l>
+            <l>ihr jungen Götter.</l>
+            <l>Ehrlos bin ich, doch Gift,</l>
+            <l>wehe, zum Lohn für die Schande,</l>
+            <l>Gift auf das Land,</l>
+            <l>meinem Herzen entquellend</l>
+        </lg>
+    </sp>
+    
+    <pb n="289" facs="#297"/>
+    <sp>
+        <lg>
+            <l><milestone unit="line" n="815"/> das zeugt auf dem Boden</l>
+            <l>wuchernde Flechte.</l>
+            <l>Kein Blatt mehr sprieſst,</l>
+            <l>kein Same keimt,</l>
+            <l>kein Weib gebiert.</l>
+            <l>Rache, Rache!</l>
+            <l><milestone unit="line" n="820"/> Dann kommt die Pest</l>
+            <l>und frifst das Volk.</l>
+            <l>Oh, oh,</l>
+            <l>ohnmächtig klag' ich.</l>
+            <l>Lachen dürfen sie meiner.</l>
+            <l>Ich kann's nicht verwinden.</l>
+            <l>Wehe, die Tochter der Nacht</l>
+            <l>klagt ihr verlorenes Recht,</l>
+            <l>verworfen und ehrlos.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="823" resp="Smyth"/>Ihr seid nicht ehrlos. Euer wilder Götterzorn</l>
+        <l><milestone unit="line" n="825"/> darf nicht den Frieden trüben dieser Menschenstadt.</l>
+        <l>Auch ich hab' einen Beistand, Zeus. Ich mag davon</l>
+        <l>nicht reden, doch als einz'ge der Olympischen</l>
+        <l>weiſs zur Rüstkammer ich den Schlüssel, wo verwahrt</l>
+        <l>die Donnerkeile liegen. Doch ich habe sie</l>
+        <l>nicht nötig. Fügsam meiner Mahnung wirst du nicht</l>
+        <l><milestone unit="line" n="830"/> haſskranken Mundes Geifer spritzen, dessen Frucht</l>
+        <l>Unsegen ist für alle. Glätte nur den Schwall</l>
+        <l>hochwogender Erregung. Reich an Ehren sollst</l>
+        <l>du neben mir, der Landesherrin dieser Burg,</l>
+        <l>den Sitz erhalten, all' die Opfer, die das Volk</l>
+        <l><milestone unit="line" n="835"/> für seinen Nachwuchs darbringt und sein Eheglück,</l>
+        <l>in Ewigkeit genieſsend, so du auf mich hörst.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l><milestone unit="card" n="837" resp="Smyth"/>Mir das!</l>
+        <l>Ha, mir,</l>
+        <l>mir, der alten,</l>
+    </sp>
+    <fw type="sig" place="bottom">Griech. Tragödien. II.</fw>
+    <fw type="sig" place="bottom">19</fw>
+    
+    <pb n="290" facs="#298"/>
+    <sp>
+        <lg>
+            <l><milestone unit="line" n="840"/> der Macht der Urzeit!</l>
+            <l>Drunten ins Dunkel ducken</l>
+            <l>soll ich mich, ehrlos Scheusal.</l>
+            <l>Wut schnaub' ich, wehe,</l>
+            <l>Grimm und Groll.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="line" n="845"/> Oh, oh, oh, oh!</l>
+            <l>Was wollen die Schmerzen?</l>
+            <l>Die Flamme der Wut</l>
+            <l>verbrennt mir das Herz.</l>
+        </lg>
+        <lg>
+            <l>Mutter, vernimm mich,</l>
+            <l>Mutter Nacht:</l>
+            <l>mein Recht,</l>
+            <l>mein Urrecht haben die Ränke</l>
+            <l>der jungen Götter verworfen,</l>
+            <l>vernichtet.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="848" resp="Smyth"/>Dein Schelten trag' ich als der ält'ren dir nicht nach.</l>
+        <l>Du bist gewiſs in vielem auch die Weisere,</l>
+        <l><milestone unit="line" n="850"/> allein auch mir hat manches Wissen Zeus gegönnt,</l>
+        <l>und wendet ihr euch einem andern Volke zu,</l>
+        <l>ich sag's voraus, so kommt euch Sehnsucht nach Athen.</l>
+        <l>Denn in der Zukunft liegt des Ruhmes bester Teil</l>
+        <l>für meine Bürger. Wenn ihr euren Ehrensitz</l>
+        <l><milestone unit="line" n="855"/> nah bei Erechtheus' Hause habt, erhaltet ihr</l>
+        <l>von Männern und von Frauen was euch nirgendwo,</l>
+        <l>von keinem andern Menschenvolk geboten wird.</l>
+        <l>Den gift'gen Samen streuet nicht auf meine Flur,</l>
+        <l>der in der Jugend Busen keimend schweren Dunst</l>
+        <l><milestone unit="line" n="860"/> des Rausches zeugt, nicht Weines, sondern Blutes</l>
+        <l>Rausch.</l>
+        <l>Erhitzet nicht, wie man den Hahn zum Kampfe reizt,</l>
+        <l>die Herzen, daſs in meinem Staate nicht die Lust</l>
+        <l>an trotz'gem Hader und an Bürgerkrieg erwächst.</l>
+        <l>Der Krieg nach aufsen komme: der entbrennt von</l>
+        <l>selbst,</l>
+    </sp>
+
+    <pb n="291" facs="#299"/>
+    <sp>
+        <l><milestone unit="line" n="865"/> in ihm bethät'ge sich die heiſse Sucht nach Ruhm:</l>
+        <l>auf eig'nem Hofe gilt der Kampf des Hahnes nichts.</l>
+        <l>Das also ist mein Angebot, so's euch genehm,</l>
+        <l>Wohlthaten übend und empfangend, wohl geehrt,</l>
+        <l>Anteil zu haben an der frommsten Stadt, Athen.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="line" n="870"/><milestone unit="card" n="870" resp="Smyth"/> Mir das!</l>
+            <l>Ha, mir,</l>
+            <l>mir, der alten,</l>
+            <l>der Macht der Urzeit!</l>
+            <l>Drunten ins Dunkel ducken</l>
+            <l><milestone unit="line" n="875"/> soll ich mich, ehrlos Scheusal.</l>
+            <l>Wut schnaub' ich, wehe,</l>
+            <l>Grimm und Groll.</l>
+        </lg>
+        <lg>
+            <l>Oh, oh, oh, oh!</l>
+            <l>Was wollen die Schmerzen?</l>
+            <l>Die Flamme der Wut</l>
+            <l><milestone unit="line" n="880"/> verbrennt mir das Herz.</l>
+        </lg>
+        <lg>
+            <l>Mutter, vernimm mich,</l>
+            <l>Mutter Nacht:</l>
+            <l>mein Recht,</l>
+            <l>mein Urrecht haben die Ränke</l>
+            <l>der jungen Götter verworfen,</l>
+            <l>vernichtet.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="881" resp="Smyth"/>Zum Guten dir zu reden lass' ich nimmer ab.</l>
+        <l>Du sollst nicht sagen, du, die alte Göttin, seist</l>
+        <l>von mir, der jüng'ren, und dem Volke meiner Stadt</l>
+        <l>in Schanden trotz dem Gastrecht aus dem Land gejagt.</l>
+        <l><milestone unit="line" n="885"/> Wenn du Empfindung für die Macht der Peitho hast,</l>
+        <l>der guten Worte sanfte Herrin, die zu dir</l>
+        <l>beschwichtigend, versöhnend spricht durch meinen</l>
+        <l>Mund,</l>
+        <l>dann wirst du bleiben; aber wenn du scheiden willst,</l>
+    </sp>
+    <fw type="sig" place="bottom">19*</fw>
+    
+    <pb n="292" facs="#300"/>
+    <sp>
+        <l>so wär' es Unrecht, Hafs und Groll und Schädigung</l>
+        <l>des Volks zu werfen auf mein Land. Es steht dir frei</l>
+        <l><milestone unit="line" n="890"/> ein Platz auf unserm Boden und, wie du verdienst,</l>
+        <l>der höchsten Ehren Vollgenuſs in Ewigkeit.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l>Herrin Athena, welche Wohnung bietest du?</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Wo nichts des Friedens Stille stört. So nimm sie an.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l>Gesetzt ich thu' es, welcher Ehren walt' ich dort?</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="line" n="895"/> Das Blühen jedes Hauses steht bei deiner Gunst.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l>So hohe Macht und Würde kannst du mir verleih'n?</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Nur wer dir huldigt, soll in meinem Schutze ruh'n.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l>Für alle Zeiten leistest du mir auch Gewähr?</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Athena kann nicht sagen, was sie nicht erfüllt.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l><milestone unit="line" n="900"/> Ich glaube, du gewinnst mich, und mein Zorn erlischt.</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>So bleibe bei uns: Freundschaft wird dir hier zu Teil.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <l>Was soll ich Segen singend deinem Volk erfleh'n?</l>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <l>Was eines reinen Sieges Feierstimmung wünscht.</l>
+        <l>Das ist: daſs von der Erden und dem Meeresnaſs,</l>
+        <l><milestone unit="line" n="905"/> vom Himmel und den Winden über das Gefild</l>
+        <l>hinziehen möge linder, sonnenwarmer Hauch;</l>
+    </sp>
+    
+    <pb n="293" facs="#301"/>
+    <sp>
+        <l>der Felder und der Herden Frucht zu keiner Frist</l>
+        <l>versage, wachsend und gedeihend meinem Volk,</l>
+        <l>und auch der Menschensame krank' und dorre nicht.</l>
+        <l><milestone unit="line" n="910"/> Gottlose nur vertreibe lieber aus dem Land;</l>
+        <l>denn wie der Schäfer seine Herde wünsch' ich mir</l>
+        <l>mein Volk vor dieser räud'gen Ansteckung bewahrt.</l>
+        <l>So viel von dir: im Krieg, in Ares' stolzem Spiel,</l>
+        <l>da steh' ich selber dafür ein, daſs mein Athen</l>
+        <l><milestone unit="line" n="915"/> durch seine Bürger sieghaft vor der Welt besteht.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="card" n="916" resp="Smyth"/>Ich nehm' es an,</l>
+            <l>kehre bei Athena ein,</l>
+            <l>verschmähe nicht die Pallasstadt,</l>
+            <l>die Götterburg; Zeus, der allgewaltige,</l>
+            <l><milestone unit="line" n="920"/> und Ares weilen gern in ihr.</l>
+            <l>Sie schirmt und schmückt Tempel und Altäre</l>
+            <l>den Göttern all' von Hellas.</l>
+            <l>Ihr hold gesinnt sprech' ich zukunftkundig</l>
+            <l>den Segenswunsch: mög' auf alle Zeiten</l>
+            <l>der Sonne froher Glanz</l>
+            <l><milestone unit="line" n="925"/> ihr aus der Erde Schofs hervor</l>
+            <l>locken gedeihliches Glück.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <lg>
+            <l><milestone unit="card" n="927" resp="Smyth"/>Wohl gesorgt hab' ich für meine Bürger,</l>
+            <l>wenn ich hier ansiedle diese grofsen</l>
+            <l>schwierig zu gewinnenden Gewalten.</l>
+            <l><milestone unit="line" n="930"/> Ihnen ist das ganze Glück der Menschen</l>
+            <l>anvertraut, und wessen Seele niemals</l>
+            <l>lastend ihre Gegenwart empfunden,</l>
+            <l>ahnt nicht, was das Lebensglück zertrümmert.</l>
+            <l>Denn die Sünden seiner Väter treiben</l>
+            <l><milestone unit="line" n="935"/> ihn den Rächerinnen zu, und lautlos</l>
+            <l>kommt, so trotzig er auch lärmt, das Unheil,</l>
+            <l>und der grimme Groll zerschmettert ihn.</l>
+        </lg>
+    </sp>
+    
+    <pb n="294" facs="#302"/>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="card" n="938" resp="Smyth"/>Es wehe nie böser Wind, der Bäume Feind</l>
+            <l>(so sag' ich, was mein Segen wirkt),</l>
+            <l><milestone unit="line" n="940"/> daſs gift'ger Brand, dran die Augen schrumpfen,</l>
+            <l>die Grenzen nimmer überzieht.</l>
+            <l>Noch komme je Seuche, Samen mordend;</l>
+            <l>die Erde spende Nahrung</l>
+            <l>den Herden stets; Zwillingslämmer werfe</l>
+            <l><milestone unit="line" n="945"/> das Mutterschaf jeden Lenz, und nimmer</l>
+            <l>versieg' im Felsengrunde</l>
+            <l>der Silberader schlummernder</l>
+            <l>plötzlich beglückender Schatz.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <lg>
+            <l><milestone unit="card" n="949" resp="Smyth"/>Höret ihr, Athens beruf'ne Wächter,</l>
+            <l><milestone unit="line" n="950"/> was Erinys uns verspricht, die hehre?</l>
+            <l>Bei den Sel'gen und den Unterird'schen</l>
+            <l>hat sie grofs Gewicht, und klar bewährt sie</l>
+            <l>ihres Willens zielessich're Wirkung</l>
+            <l>an den Menschen, hier in Jubelliedern,</l>
+            <l><milestone unit="line" n="955"/> dort in trüber Trauer Thränenblick.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="card" n="956" resp="Smyth"/>Es raffe nie Pest des Volks</l>
+            <l>frische Kraft dahin.</l>
+            <l>Mein Bann verbeut's. Und ihr, gleich uns</l>
+            <l>der Nacht Geschlecht, Schwestern, Schicksalsfrau'n,</l>
+            <l><milestone unit="line" n="960"/> führet dem lieblichen</l>
+            <l>Mädchen den Freier zu,</l>
+            <l>segnet den Ehestand,</l>
+            <l>krönet sein Glück.</l>
+            <l>Die machtvoll ihr jedem gebt das Seine,</l>
+            <l>euch huldigt jedes Haus;</l>
+            <l><milestone unit="line" n="965"/> zu jeder Zeit wirkt ihr, gut und groſs.</l>
+        </lg>
+    </sp>
+    
+    <pb n="295" facs="#303"/>
+    <sp><speaker>Athena.</speaker>
+        <lg>
+            <l><milestone unit="card" n="968" resp="Smyth"/>Wie beglückt es mich, daſs sie so gnädig</l>
+            <l>meinem Lande diesen Segen spenden,</l>
+            <l><milestone unit="line" n="970"/> und ich preise Peithos' holden Zauber,</l>
+            <l>der mir Mund und Zunge mächtig machte,</l>
+            <l>um zu sänften ihres Weigerns Wildheit.</l>
+            <l>So hat Zeus, der Friedefürst des Wortes,</l>
+            <l>triumphiert. Im Wettkampf um das Gute</l>
+            <l><milestone unit="line" n="975"/> bleibt auf unsrer Seite stets das Glück.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="card" n="976" resp="Smyth"/>Es brause nie</l>
+            <l>Bürgerzwist, aller Übel Ursprung,</l>
+            <l>durch diese Stadt: das wünsch' ich noch.</l>
+            <l><milestone unit="line" n="980"/> Doch wenn der Staub schwarzes Bürgerblut</l>
+            <l>einmal getrunken hat,</l>
+            <l>fordr' es in Rachedurst</l>
+            <l>keiner Vergeltungsthat</l>
+            <l>blutige Schuld.</l>
+            <l>Einträcht'gen Sinns</l>
+            <l>Lieb' um Liebe tauschend,</l>
+            <l><milestone unit="line" n="985"/> einträchtig auch im Hafs:</l>
+            <l>so kann ein Volk manchen Sturm besteh'n.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena.</speaker>
+        <lg>
+            <l><milestone unit="card" n="988" resp="Smyth"/>Seht ihr, Mäfsigung und guter Wille</l>
+            <l><milestone unit="line" n="989"/> wissen wohl mit Worten der Versöhnung</l>
+            <l>zu dem schönsten Ziel den Weg zu finden.</l>
+            <l><milestone unit="line" n="990"/> Und so lohnt sich reich mein reines Streben.</l>
+            <l>Diese grimmig blickenden Gesichter</l>
+            <l>leuchten meinen Bürgern Glück verheiſsend.</l>
+            <l>Wenn ihr holdgesinnt den holdgesinnten</l>
+            <l>immer treu der Ehren Fülle spendet,</l>
+            <l>werdet ihr dem Staat den Ruhm bewahren,</l>
+            <l><milestone unit="line" n="995"/> stets des Rechtes graden Weg zu geh'n.</l>
+        </lg>
+    </sp>
+
+
+    <pb n="296" facs="#304"/>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="card" n="996" resp="Smyth"/>Heil in wohlverdientem Glück.</l>
+            <l><milestone unit="line" n="1000"/> Ich ruf' euch Heil</l>
+            <l>Heil euch Athenervolk.</l>
+            <l>Euch ist der Vater nah,</l>
+            <l>euch den getreuen</l>
+            <l>Bürgern der treuen</l>
+            <l>himmlischen Jungfrau,</l>
+            <l>maſsvoll zur rechten Zeit.</l>
+            <l>Bleibt ihr in Pallas' Hut,</l>
+            <l>segnet euch Zeus.</l>
+        </lg>
+    </sp>
+    <stage>Es sind mittlerweile einige Lämmer, schwarze und weiſse, herangetrieben; auch andere Opfergaben werden in Körben und Thongeschirr herangetragen; Priesterinnen Athenas, auch kleine Mädchen, in ihrer Amtstracht, Fackelträger in gröſserer Zahl kommen herzu. Athena tritt während der folgenden Rede an die Spitze des Chores; die Richter folgen auf ihre Aufforderung, die Fackelträger auch.</stage>
+    <sp><speaker>Athena.</speaker>
+        <l><milestone unit="card" n="1003" resp="Smyth"/>Heil auch euch. Nun laſst voran mich schreiten,</l>
+        <l>bei dem Lichte dieser Fackelträger</l>
+        <l><milestone unit="line" n="1005"/> euch zu eurer Wohnung hinzuweisen.</l>
+        <l>Kommt, ich schlacht' euch diese reinen Lämmer,</l>
+        <l>zwischen ihren Opferleibern schreitet</l>
+        <l>in den Erdschlund ihr, und alles Unheil</l>
+        <l>haltet drunten fest, doch allen Segen</l>
+        <l>sendet zu Athens Triumph empor.</l>
+        <l><milestone unit="line" n="1010"/> Nun voran, ihr Wächter meines Staates,</l>
+        <l>Kranaiden, tretet vor die Gäste.</l>
+        <l>Und andächt'gen Sinns, andächtig schweigend</l>
+        <l>schau' das Volk dem heil'gen Zuge zu.</l>
+    </sp>
+    <sp><speaker>Chor.</speaker>
+        <lg>
+            <l><milestone unit="card" n="1014" resp="Smyth"/>Ich ruf' euch Heil,</l>
+            <l><milestone unit="line" n="1015"/> Heil und aber Heil zum Gruſs,</l>
+            <l>allen euch allzumal,</l>
+        </lg>
+    </sp>
+    
+    <pb n="297" facs="#305"/>
+    <sp>
+        <lg>
+            <l><milestone unit="line" n="1020"/> die ihr in Pallas' Stadt</l>
+            <l>wohnet und weilet,</l>
+            <l>Götter und Menschen.</l>
+            <l>Wir sind die Gäste:</l>
+            <l>wahrt ihr die Ehren uns,</l>
+            <l>bringt euch des Lebens Lauf</l>
+            <l>Segens genung.</l>
+        </lg>
+    </sp>
+    <sp><speaker>Athena,</speaker>
+        <stage>nun an der Spitze des Zuges.</stage>
+        <l><milestone unit="card" n="1021" resp="Smyth"/>Habt Dank für all' den Segen, den ihr uns verheiſst.</l>
+        <l>Jetzt will ich bei des Fackellichtes Flimmerschein</l>
+        <l>hinab euch zu den Schlüften in der Erde Schoſs</l>
+        <l>geleiten mit den Dienerinnen, die mein Bild</l>
+        <l><milestone unit="line" n="1025"/> zu warten haben. So ist's würdig; denn der Stolz</l>
+        <l>des ganzen Theseuslandes soll in unsern Zug</l>
+        <l><milestone unit="line" n="1027"/> eintreten, Frau'n und Mädchen aus erlauchtem Haus,</l>
+        <l>und würdevoller greiser Priesterinnen Schar.</l>
+        <l>Aus ihnen kür' ich eurer Höhle Hüterin,</l>
+        <l>die still und fromm der Hehren stille Weihen übt,</l>
+        <l>der Holden: hold geworden ist die Rächerin,</l>
+        <l>der Urnacht grimme Tochter, meinem Volk versöhnt,</l>
+        <l>drum geb' ich diesen Namen ihr für alle Zeit.</l>
+        <l>Nun laſst uns gehn, und wie wir das Versöhnungsfest</l>
+        <l>aus treuem Herzen heut begeh'n, so sei's hinfort</l>
+        <l>gefeiert zum Gedächtnis. Nie vergiſs, mein Volk,</l>
+        <l>was du den Holden schuldest. Lämmerblut und Trank</l>
+        <l><milestone unit="line" n="1028"/> weinloser Spenden bringst du dar und Purpurpracht</l>
+        <l>langwallender Gewande, und der Fackelglanz</l>
+        <l><milestone unit="line" n="1030"/> lod're dazu, auf daſs die holdgesinnte Schar</l>
+        <l>Athenas Bürger blühen lass' in Ewigkeit.</l>
+    </sp>
+    <stage>Der Zug setzt sich in Bewegung; Athena mit ihrem weiblichen Gefolge, die Richter, dann der Chor, dann zahlreiches Volk. Fackelträger allen voran und zur Seite.</stage>
+    
+    <pb n="298" facs="#306"/>
+    <sp><speaker>Chor der Geleitenden</speaker>
+        <stage>singt im Abziehen.</stage>
+        <lg>
+            <l><milestone unit="card" n="1032" resp="Smyth"/>Schreitet im festlich geordneten Zuge,</l>
+            <l><milestone unit="line" n="1035"/> hehre, jungfräuliche Töchter der Nacht.</l>
+            <l>Treue giebt euch das Geleit.</l>
+            <l><milestone unit="card" n="1035" resp="Smyth"/>Schweigt in Andacht, alles Volk.</l>
+        </lg>
+        <lg>
+            <l>Tief zu den Schlüften urweltlicher Felsen</l>
+            <l>zieht in die würdige Wohnung, genieſst</l>
+            <l>höchster Ehren reichsten Zoll.</l>
+            <l>Schweigt in Andacht, alles Volk.</l>
+        </lg>
+        <lg>
+            <l><milestone unit="line" n="1040"/><milestone unit="card" n="1040" resp="Smyth"/> Kommet ihr Hehren und folget dem Zuge,</l>
+            <l>unserem Lande versöhnet, gefreundet,</l>
+            <l>und an den sprühenden Funken</l>
+            <l>weidet wandelnd euren Blick.</l>
+            <l>Juble, Volk, dem Liede zu.</l>
+        </lg>
+        <stage>Das Volk jauchzt.</stage>
+        <lg>
+            <l><milestone unit="card" n="1044" resp="Smyth"/>Ewigen Bund mit den mächtigen Gästen</l>
+            <l>haben die Bürger Athenas geschlossen.</l>
+            <l><milestone unit="line" n="1045"/> Zeus des allmächtigen Wille</l>
+            <l>schuf es und des Schicksals Schluſs.</l>
+            <l>Juble, Volk, dem Liede zu.</l>
+        </lg>
+        <stage>Das Volk jauchzt.</stage>
+    </sp>
+
+    </div>
+    </body>
+    <back><div type="textpart" subtype="textcritical">
+    <pb n="299" facs="#307"/>
+    <head>Zum griechischen Texte.</head>
+    <p>Aus den hinter dem Agamemnon angegebenen Grün-
+        den gebe ich hier die Abweichungen meines Textes von
+        dem Kirchhoffs und seiner Noten, in der dort näher be-
+        zeichneten Beschränkung. Die handschriftliche Überliefe-
+        rung behalte ich im Gegensatz zu ihm bei in V. 21. 81. 42.
+        45. 60.164.170.241.262.324.340.389.448.466.493.
+        497.520.521.540.593. 653.759.764.897.984.1007.</p>
+    <p>Sonst lese ich abweichend von Kirchhoff: 23 ἀναστροφαί.
+        69 γραῖαι παλαιόπαιδες. 131 θ' ἅ. 137 σὺ δ'. 161 β. π.
+        τὸ. 169 μάντις ὢν. 174 δέ. 201 μή. 221 πράσσουσιν.
+        232 ὃς προδῶι. 236 ἀμβλὺς ἤ. προστετριμμένος τ' ἐγώ.
+        239 σώιζων (δ'). 254 ὅδ' αὐτός· ὧδ' ἀλ. 256 χρεῶν.
+        264 (ὡς) ἀντ. τ. ματροφόντας. 330 αὐτουργίαι ξυμπέσωσιν.
+        339 φαμὶ κεκράνθαι. 343 Nach dem verdorbenen Verse
+        342 Lücke; mit 343 beginnt der Refrain. 346 ἱέμεναι.
+        348 [ὑφ']. 349 σπευδόμενος δ' ἀφελών τινα τᾶσδε μερίμνας
+        θεῶν [δ']. 366 (γὰρ). 381 ἀτίετα. 391 κυρῶ (στυγνάν).
+        409 ἄμομφον. 410 ἥδ'. 425 ὃν δοῦναι θέλω. 431 ἐπαξίως.
+        463 ἔρξοιμι. 471 οὕτως δ'. 479 ὁρκίους αἱρουμένη. 495
+        οὐδὲ. 497 ἔργμασιν. 516 ἐν φρασὶν καρδιαβόρον (oder
+        vielmehr ein besseres Adjektiv gleicher Art) τρέφων.
+        530 [δέ]. 543 παρβάδαν ἄγοντα π. 561 θεσμούς (τ') ἐ.
+        563 ἐκ τῶνδ'. 608 μὴ 'κέλευσε. 622 ἄμεινον. Es fehlt
+        etwa λόγοις παρίστατ' ἀργυρᾶι θελκτήρια. 641 ἀ. πίλιν.
+        674 δικαστῶν. 675 ᾿Αρ. οἶδ Α. 684 β. δ'. 691 [τε].</p>
+    <pb n="300" facs="#308"/>
+    <fw type="pageNum" place="top">300</fw>
+    <p>773 = 801 [σταλαγμόν]. 775 = 803 ἄτεκνος (ἄγονος)
+        ὦ Δ. 778 = 806 γελῶμαι πολίταις· δύσοισθ' ἅπαθον.
+        788 δ' ἐμεῖτε. 789 σκέψασθε. 793 ἐν μυχῶι χθ. 816
+        ἐπίφθονα. 820 πολιάδι χ. τ. τἀκρ. 825 = 856 ċ. μ.
+        φεῦ. 829 = 860 etwa θυμὸν ἀμύσσουσ'). 830 = 861
+        (νέων) θεῶν. 833 καὶ πολλὰ. 894 τοῖσδ'. 913 βαρεῶν.
+        921 φλογμοὺς ὀμματοστερεῖς. 924 δ'. 926 γόνον (τ' ἀεὶ).
+        938 δ'. 939 ἔχοντας τελευτᾶν Μ. 959 ποινᾶς. 992 ἔπη.
+        1010 νόμωι μ. φιλοτίμωι.
+        1014 περίσεπτα τυχοῦσαι.
+        1016 σύμφρονες. 1017 τᾶι π. 1020 πᾶν ἐκ μετοίκων.</p>
+</div>
+        </back>
+  </text>
+</TEI>

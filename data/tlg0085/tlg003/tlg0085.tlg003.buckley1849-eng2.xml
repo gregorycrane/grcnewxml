@@ -1,0 +1,971 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Prometheus Bound.</title>
+        <title>The tragedies of Aeschylus</title>
+        <author>Aeschylus</author>
+        <editor role="translator">Theodore Alois Buckley</editor>
+        <respStmt>
+          <resp>Translator credited as</resp>
+          <name>Theodore Alois Buckley (1825–1856)</name>
+        </respStmt>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder>Volunteer</funder>
+      </titleStmt>
+
+      <extent>About 90Kb</extent>
+
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <availability status="free">
+          <licence target="https://www.hathitrust.org/rights/public-domain">Public domain (U.S.)</licence>
+          <p>Digitized copy served via HathiTrust.</p>
+        </availability>
+      </publicationStmt>
+
+      <seriesStmt>
+        <title level="s">Bohn’s classical library</title>
+        <respStmt>
+          <resp>Series publisher</resp>
+          <name>Henry G. Bohn</name>
+        </respStmt>
+      </seriesStmt>
+
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <title>The tragedies of Aeschylus</title>
+            <title type="sub">Literally translated, with critical and illustrative notes, and an introduction</title>
+            <editor role="translator">Theodore Alois Buckley</editor>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>Bohn</publisher>
+              <date when="1849">1849</date>
+            </imprint>
+            <biblScope unit="series">Bohn’s classical library</biblScope>
+            <biblScope unit="extent">xx, 234 p.; front.; 19 cm</biblScope>
+          </monogr>
+          <ref target="https://hdl.handle.net/2027/hvd.32044005046321">HathiTrust handle</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+
+    <encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+      <language ident="grc">Ancient Greek</language><language ident="lat">Latin</language></langUsage>
+    </profileDesc>
+
+    <revisionDesc>
+      <change when="2025-10-23" who="GRC">New file created drawing metadata from the HathiTrust record for Buckley (1849); series noted as Bohn’s classical library.</change>
+    <change when="2026-08-16" who="#gcrane">Regularized as the EpiDoc/CTS translation urn:cts:greekLit:tlg0085.tlg003.buckley1849-eng2; notes moved to apparatus and Smyth cards aligned.</change><change when="2026-08-16" who="#gcrane">Realigned all Smyth cards by direct Greek-English textual comparison.</change></revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng"><front><pb n="1"/>
+       <fw type="header">PROMETHEUS CHAINED.</fw>
+
+          <p>PROMETHEUS having, by his attention to the wants of men, provoked the anger of Jove, is bound down, in a cleft of a rock in a distant desert of Scythia. Here he not only relates the wanderings, but foretells the future lot of Io, and likewise alludes to the fall of Jove's dynasty. Disdaining to explain his meaning to Mercury, he is swept into the abyss amidst terrific hurricane and earthquake.</p>
+          <div type="textpart" subtype="cast-list"><fw type="header">PERSONS REPRESENTED.</fw><list><item><roleName>STRENGTH.</roleName></item><item><roleName>FORCE.</roleName></item><item><roleName>VULCAN.</roleName></item><item><roleName>PROMETHEUS.</roleName></item><item><roleName>CHORUS OF NYMPHS, DAUGHTERS OF OCEAN.</roleName></item><item><roleName>IO, DAUGHTER OF INACHUS.</roleName></item><item><roleName>MERCURY.</roleName></item></list></div>
+          </front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg003.buckley1849-eng2" xml:lang="eng"><stage>STRENGTH, FORCE, VULCAN, PROMETHEUS.
+          </stage>
+          <sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1-11"><speaker>STRENGTH</speaker> <p> <milestone unit="card" n="1" resp="Smyth"/>We<ref n="1.1" target="#app-tlg003-fn-1.1"/> are come to a plain, the distant boundary
+
+<pb n="2"/>
+
+
+
+ of the earth, to the Scythian track, to an untrodden<ref n="2.1" target="#app-tlg003-fn-2.1"/> desert. Vulcan, it behoves thee that the mandates, which thy Sire imposed, be thy concern,—to bind this daring wretch<ref n="2.2" target="#app-tlg003-fn-2.2"/> to the lofty-cragged rocks, in fetters of adamantine chains that cannot be broken. For he stole and gave to mortals thy honour, the brilliancy of fire [that aids] all arts<ref n="2.3" target="#app-tlg003-fn-2.3"/>. Hence for such a trespass he must needs give retribution to the gods; that he may be taught to submit to the sovereignty of Jupiter, and to cease from his philanthropic disposition.</p></sp>
+
+<sp n="2" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:12-35"><speaker>VULCAN</speaker><p>Strength and Force, as far as you are concerned, the mandate of Jupiter has now<ref n="2.4" target="#app-tlg003-fn-2.4"/> its consummation, and there is no further obstacle. But I have not the courage to bind perforce a kindred god to this weather-beaten ravine. Yet in every way it is necessary for me to take courage for this task; for a dreadful thing it is to disregard<ref n="2.5" target="#app-tlg003-fn-2.5"/> the directions of the Sire<ref n="2.6" target="#app-tlg003-fn-2.6"/>. Lofty-scheming son of right-counselling Themis, unwilling shall I rivet thee unwilling in indissoluble shackles to this solitary rock, where nor voice nor form of any one of mortals shalt thou see<ref n="2.7" target="#app-tlg003-fn-2.7"/>; but slowly scorched by the bright
+
+
+
+<pb n="3"/>
+
+
+
+
+
+blaze of the sun thou shalt lose the bloom of thy complexion; and to thee joyous shall night in spangled robe<ref n="3.1" target="#app-tlg003-fn-3.1"/> veil the light; and the sun again disperse the hoar-frost of the morn; and evermore shall the pain of the present evil waste thee; for no one yet born shall release thee. Such fruits hast thou reaped from thy friendly disposition to mankind. For thou, a god, not crouching beneath the wrath of the gods, hast imparted to mortals honours beyond what was right. In requital whereof thou shalt keep sentinel on this cheerless rock, standing erect, sleepless, not bending a knee<ref n="3.2" target="#app-tlg003-fn-3.2"/>: and many laments and unavailing groans shalt thou utter; for the heart of Jupiter is hard to be entreated; and every one that has newly acquired power is stern.</p></sp>
+
+<sp n="3" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:36-38"><speaker>STRENGTH</speaker><p><milestone unit="card" n="36" resp="Smyth"/>Well, well! Why art thou delaying and vainly commiserating? Why loathest thou not the god that is most hateful to the gods, who has betrayed thy prerogative to mortals?</p></sp>
+
+<sp n="4" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:39"><speaker>VULCAN</speaker><p>Relationship and intimacy are of great power.</p></sp>
+
+<sp n="5" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:40-41"><speaker>STRENGTH</speaker><p>I grant it—but how is it possible to disobey the Sire's word? Dreadest thou not this the rather?</p></sp>
+
+<sp n="6" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:42"><speaker>VULCAN</speaker><p>Aye truly thou art ever pitiless and full of boldness.</p></sp>
+
+<sp n="7" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:43-44"><speaker>STRENGTH</speaker><p>For to deplore this wretch is no cure [for him]. But concern not thou thyself vainly with matters that are of no advantage.</p></sp>
+
+<sp n="8" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:45"><speaker>VULCAN</speaker><p>O much detested handicraft!</p></sp>
+
+<sp n="9" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:46-47"><speaker>STRENGTH</speaker><p>Wherefore loathest thou it! for with the ills now present thy craft in good truth is not at all chargeable.</p></sp>
+
+<sp n="10" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:48"><speaker>VULCAN</speaker><p>For all that, I would that some other had obtained this.</p></sp>
+
+<sp n="11" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:49-50"><speaker>STRENGTH</speaker><p>Every thing has been achieved except for the gods to rule; for no one is free save Jupiter<ref n="3.3" target="#app-tlg003-fn-3.3"/>.
+
+
+
+</p></sp>
+
+<pb n="4"/>
+
+
+<sp n="12" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:51"><speaker>VULCAN</speaker><p>I know it—and I have nothing to say against it<ref n="4.1" target="#app-tlg003-fn-4.1"/>.</p></sp>
+
+<sp n="13" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:52-53"><speaker>STRENGTH</speaker><p>Wilt thou not then bestir thyself to cast fetters about this wretch, that the Sire may not espy thee loitering?</p></sp>
+
+<sp n="14" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:54"><speaker>VULCAN</speaker><p>Aye, and in truth you may see the manacles ready.</p></sp>
+
+<sp n="15" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:55-56"><speaker>STRENGTH</speaker><p>Take them, and with mighty force clench them with the mallet about his hands: rivet him close to the crags.</p></sp>
+
+<sp n="16" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:57"><speaker>VULCAN</speaker><p>This work of ours is speeding to its consummation and loiters not.</p></sp>
+
+<sp n="17" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:58-59"><speaker>STRENGTH</speaker><p>Smite harder, tighten, slacken at no point, for he hath cunning to find outlets even from impracticable difficulties.</p></sp>
+
+<sp n="18" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:60"><speaker>VULCAN</speaker><p>This arm at all events is fastened inextricably.</p></sp>
+
+<sp n="19" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:61-62"><speaker>STRENGTH</speaker><p><milestone unit="card" n="61" resp="Smyth"/>And now clasp this securely, that he may perceive himself to be a duller contriver than Jupiter.</p></sp>
+
+<sp n="20" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:63"><speaker>VULCAN</speaker><p>Save this [sufferer], no one could with reason find fault with me—</p></sp>
+
+<sp n="21" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:64-65"><speaker>STRENGTH</speaker><p>Now by main force rivet the ruthless fang of an adamantine wedge right through his breast<ref n="4.2" target="#app-tlg003-fn-4.2"/>.</p></sp>
+
+<sp n="22" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:66"><speaker>VULCAN</speaker><p>Alas! alas! Prometheus, I sigh over thy sufferings.</p></sp>
+
+<sp n="23" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:67-68"><speaker>STRENGTH</speaker><p>Again art thou hanging back, and sighest thou over the enemies of Jupiter? Look to it, that thou hast not at some time to mourn for thyself.</p></sp>
+
+<sp n="24" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:69"><speaker>VULCAN</speaker><p>Thou beholdest a spectacle ill-sighted to the eye.</p></sp>
+
+<sp n="25" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:70-71"><speaker>STRENGTH</speaker><p>I behold this wretch receiving his deserts. But fling thou these girths round his sides.</p></sp>
+
+<sp n="26" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:72"><speaker>VULCAN</speaker><p>I must needs do this; urge me not very much.</p></sp>
+
+<sp n="27" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:73-74"><speaker>STRENGTH</speaker><p>Aye, but I will urge thee, and set thee on too. Move downwards, and strongly link his legs.</p></sp>
+
+
+<sp n="28" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:75"><speaker>VULCAN</speaker><p>And in truth the task is done with no long toil.</p></sp>
+
+<sp n="29" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:76-77"><speaker>STRENGTH</speaker><p>With main force now smite the galling fetters, since stern indeed is the inspector of this work.
+
+</p></sp>
+
+
+<pb n="5"/>
+
+
+
+<sp n="30" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:78"><speaker>VULCAN</speaker><p>Thy tongue sounds in accordance with thy form.</p></sp>
+
+<sp n="31" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:79-80"><speaker>STRENGTH</speaker><p>Yield thou to softness, but taunt not me with ruthlessness and harshness of temper.</p></sp>
+
+<sp n="32" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:81"><speaker>VULCAN</speaker><p>Let us go; since he hath the shackles about his limbs.</p></sp>
+
+<sp n="33" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:82-87"><speaker>STRENGTH</speaker><p>There now be insolent; and after pillaging the prerogatives of the gods, confer them on creatures of a day. In what will mortals be able to alleviate these agonies of thine? By no true title do the divinities call thee Prometheus; for thou thyself hast need of a Prometheus, by means of which you will slip out of this fate<ref n="5.1" target="#app-tlg003-fn-5.1"/>.</p></sp>
+          <stage>Exeunt STRENGTH and FORCE.</stage>
+          <sp n="34" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:88-127"><speaker>PROMETHEUS</speaker> <p><milestone unit="card" n="88" resp="Smyth"/>O divine aether, and ye swift-winged breezes, and ye fountains of rivers, and countless dimpling<ref n="5.2" target="#app-tlg003-fn-5.2"/> of the waves of the deep, and thou earth, mother of all—and to the all-seeing orb of the Sun I appeal; look upon me, what treatment I, a god, am enduring at the hand of the gods! Behold with what indignities mangled I shall have to wrestle <milestone unit="card" n="95" resp="Smyth"/>through time of years innumerable. Such an ignominious bondage hath the new ruler of the immortals devised against me. Alas! alas! I sigh over the present suffering, and that which is coming on. How, where must a termination of these toils arise? <milestone unit="card" n="101" resp="Smyth"/>And yet what is it I am saying? I know beforehand all futurity exactly, and no suffering will come upon me unlooked-for. But I needs must bear my doom as easily as may be, knowing as I do, that the might of Necessity cannot be resisted.</p>
+          <p>But yet it is not possible for me either to hold my peace, or not to hold my peace touching these my fortunes. For having bestowed boons upon mortals, I am enthralled unhappy in these hardships. And I am he that searched out the source of fire, by stealth borne-off enclosed in a
+
+<pb n="6"/>
+
+
+
+ fennel-rod<ref n="6.1" target="#app-tlg003-fn-6.1"/>, which has shewn itself a teacher of every art to mortals, and a great resource. Such then as this is the vengeance that I endure for my trespasses, being rivetted in fetters beneath the naked sky.</p>
+          <p><milestone unit="card" n="114" resp="Smyth"/>Hah! what sound, what ineffable odour<ref n="6.2" target="#app-tlg003-fn-6.2"/> hath been wafted to me, emanating from a god, or from mortal, or of some intermediate nature? Has there come any one to the remote rock as a spectator of my sufferings, or with what intent<ref n="6.3" target="#app-tlg003-fn-6.3"/>! Behold me an ill-fated god in durance, the foe of Jupiter, <milestone unit="card" n="121" resp="Smyth"/>him that hath incurred the detestation of all the gods who frequent the court of Jupiter, by reason of my excessive friendliness to mortals. Alas! alas! what can this hasty motion of birds be which I again hear hard by me? The air too is whistling faintly with the whirrings of pinions. Every thing that approaches is to me an object of dread.</p></sp>
+
+<sp n="35" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:128-135"><speaker>CHORUS</speaker><p><milestone unit="card" n="128" resp="Smyth"/>Dread thou nothing; for this is a friendly band that has come with the fleet rivalry of their pinions to this rock, after prevailing with difficulty on the mind of our father. And the swiftly-wafting breezes escorted me: for the echo of the clang of steel pierced to the recess of our grots, and banished my demure-looking reserve; and I sped without my sandals in my winged chariot.</p></sp>
+
+<sp n="36" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:136-145"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="136" resp="Smyth"/>Alas! alas! ye offspring of prolific Thetys, and daughters of Ocean your sire, who rolls around the whole earth in his unslumbering stream; look upon me, see clasped in what bonds I shall keep an unenviable watch on the topmost crags of this ravine.</p></sp>
+
+<sp n="37" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:146-151"><speaker>CHORUS</speaker><p><milestone unit="card" n="144" resp="Smyth"/>I see, Prometheus: and a fearful mist full of tears darts over mine eyes, as I looked on thy frame withering
+
+<pb n="7"/>
+
+
+
+ on the rocks<ref n="7.1" target="#app-tlg003-fn-7.1"/> in these galling adamantine fetters: for new pilots are the masters of Olympus; and Jove, contrary to right, lords it with new laws, and things aforetime had in reverence he is obliterating.</p></sp>
+
+<sp n="38" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:152-159"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="152" resp="Smyth"/>Oh would that he had sent me beneath the earth, and below into the boundless Tartarus of Hades that receives the dead, after savagely securing me in indissoluble bonds, so that no god at any time, nor any other being, had exulted in this my doom. Whereas now, hapless one, I, the sport of the winds, suffer pangs that gladden my foes.</p></sp>
+
+<sp n="39" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:160-166"><speaker>CHORUS</speaker><p><milestone unit="card" n="160" resp="Smyth"/>Who of the gods is so hard-hearted as that these things should be grateful to him? Who is there that sympathizes not with thy sufferings, Jove excepted? He indeed, in his wrath, assuming an inflexible temper, is evermore oppressing the celestial race! nor will he cease before that either he shall have sated his heart, or some one by some stratagem shall have seized upon his sovereignty that will be no easy prize.</p></sp>
+
+<sp n="40" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:167-178"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="168" resp="Smyth"/>In truth hereafter the president of the immortals<ref n="7.2" target="#app-tlg003-fn-7.2"/> shall have need of me, albeit that I am ignominiously suffering in stubborn shackles, to discover to him the new plot by which he is to be despoiled of his sceptre and his honours. But neither shall he win me by the honey-tongued charms of persuasion; nor will I at any time, crouching beneath his stern threats, divulge this matter, before he shall have released me from my cruel bonds, and shall be willing to yield me retribution for this outrage.</p></sp>
+
+<sp n="41" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:179-185"><speaker>CHORUS</speaker><p><milestone unit="card" n="180" resp="Smyth"/>Thou indeed both art bold, and yieldest nought to thy bitter calamities, but art over free in thy language. But piercing terror is worrying my soul; for I fear for thy fortunes. How, when will it be thy destiny to make the haven and see the end of these thy sufferings? for the son of Saturn has manners that supplication cannot reach, and an inexorable heart.
+
+</p></sp>
+
+<pb n="8"/>
+
+
+
+<sp n="42" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:186-192"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="189" resp="Smyth"/>I know that Jupiter is harsh, and keeps justice to himself: but for all that he shall hereafter be softened in purpose, when he shall be crushed in this way; and, after calming his unyielding temper with eagerness will he hereafter come into league and friendship with me that will eagerly [welcome him.]</p></sp>
+
+<sp n="43" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:193-196"><speaker>CHORUS</speaker><p><milestone unit="card" n="196" resp="Smyth"/>Unfold and speak out to us the whole story, from what accusation has Jupiter seized thee, and is thus disgracefully and bitterly tormenting thee. Inform us, if thou be in no respect hurt by the recital.</p></sp>
+
+<sp n="44" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:197-241"><speaker>PROMETHEUS</speaker><p>Painful indeed are these things for me to tell, and painful too for me to hold my peace, and in every way grievous. As soon as the divinities began discord, and a feud was stirred up among them with one another,—one party<ref n="8.1" target="#app-tlg003-fn-8.1"/> wishing to eject Saturn from his throne, in order forsooth that Jupiter might be king, and others expediting the reverse, that Jupiter might at no time rule over the gods:—then I, when I gave the best advice, was not able to prevail upon the Titans, children of Uranus and Terra; but they, contemning in their stout spirits wily schemes, fancied that without any trouble, and by dint of main force, they were to win the sovereignty. But it was not once only that my mother Themis, and Terra, a single person with many titles, had forewarned me of the way in which the future would be accomplished; how it was destined, that, not by main force, nor by the strong hand, but by craft the victors should prevail. When, however, I explained such points in discourse, they deigned not to pay me any regard at all. Of the plans which then presented themselves to me, the best appeared, that I should take my mother and promptly side with Jupiter, who was right willing [to receive us]. And 'tis by means of my counsels that the murky abyss of Tartarus overwhelms the antique Saturn, allies and all. After thus being assisted by me, the tyrant of the gods hath recompensed me with this foul recompense. For somehow this malady attaches to tyranny, not
+
+<pb n="9"/>
+
+
+
+
+
+to put confidence in its friends. But for your inquiries upon what charge is it that he outrages me, this I will make clear. As soon as he had established himself on his father's throne, he assigns forthwith to the different divinities each his honours, and he was marshalling in order his empire: but of woe-begone mortals he made no account, but wished, after having annihilated the entire race, to plant another new one. And these schemes no one opposed except myself. But I dared: I ransomed mortals from being utterly destroyed, and going down to Hades. 'Tis for this, in truth, that I am bent by sufferings such as these, agonising to endure, and piteous to look upon. I that had compassion for mortals, have myself been deemed unworthy to obtain this, but mercilessly am thus coerced to order, a spectacle inglorious to Jupiter.</p></sp>
+
+<sp n="45" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:242-245"><speaker>CHORUS</speaker><p><milestone unit="card" n="244" resp="Smyth"/>Iron-hearted and formed of rock too, Prometheus, is he, who condoles not with thy toils: for I could have wished never to have beheld them, and now, when I behold them, I am pained in my heart.</p></sp>
+
+<sp n="46" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:246"><speaker>PROMETHEUS</speaker><p>Aye, in very deed I am a piteous object for friends to behold.</p></sp>
+
+<sp n="47" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:247"><speaker>CHORUS</speaker><p>And didst thou chance to advance even beyond this?</p></sp>
+
+<sp n="48" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:248"><speaker>PROMETHEUS</speaker><p>Yes! I prevented mortals from foreseeing their doom.</p></sp>
+
+<sp n="49" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:249"><speaker>CHORUS</speaker><p>By finding what remedy for this malady?</p></sp>
+
+<sp n="50" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:250"><speaker>PROMETHEUS</speaker><p>I caused blind hopes to dwell within them.</p></sp>
+
+<sp n="51" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:251"><speaker>CHORUS</speaker><p>In this thou gavest a mighty benefit to mortals.</p></sp>
+
+<sp n="52" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:252"><speaker>PROMETHEUS</speaker><p>Over and above these boons, however, I imparted fire to them.</p></sp>
+
+<sp n="53" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:253"><speaker>CHORUS</speaker><p>And do the creatures of a day now possess bright fire?</p></sp>
+
+<sp n="54" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:254"><speaker>PROMETHEUS</speaker><p>Yes—from which they will moreover learn thoroughly many arts.</p></sp>
+
+<sp n="55" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:255-257"><speaker>CHORUS</speaker><p>Is it indeed on charges such as these that Jupiter is both visiting thee with indignities, and in no wise grants thee a respite from thy pains? And is no period to thy toils set before thee?</p></sp>
+
+<sp n="56" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:258"><speaker>PROMETHEUS</speaker><p>None other assuredly, but when it may please him.</p></sp>
+
+<sp n="57" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:259-262"><speaker>CHORUS</speaker><p>And how shall it be his good pleasure? What hope is there? Seest thou not that thou didst err? but how thou
+
+  <pb n="10"/>
+
+
+
+
+
+didst err, I cannot relate with pleasure, and it would be a pain to you. But let us leave these points, and search thou for some escape from thine agony.</p></sp>
+
+<sp n="58" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:263-276"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="265" resp="Smyth"/>'Tis easy, for any one that hath his foot unentangled by sufferings, both to exhort and to admonish him that is in evil plight. But I knew all these things willingly, willingly I erred, I will not gainsay it: and in doing service to mortals I brought upon myself sufferings. Yet not at all did I imagine, that, in such a punishment as this, I was to wither away upon lofty rocks, meeting with this desolate solitary crag. And yet wail ye not over my present sorrows, but after alighting on the ground, list ye to the fortune that is coming on, that ye may learn the whole throughout. Yield to me, yield ye, take ye a share in the woes of him that is now suffering. Hence in the same way doth calamity roaming to and fro settle down on different individuals.</p></sp>
+
+<sp n="59" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:277-283"><speaker>CHORUS</speaker><p><milestone unit="card" n="279" resp="Smyth"/>Upon those who are nothing loath hast thou urged this, Prometheus: and now having with light step quitted my rapidly-wafted chariot-seat, and the pure aether, highway of the feathered race, I will draw near to this rugged ground: and I long to hear the whole tale of thy sufferings.</p>
+          <stage>Enter OCEAN.</stage>
+          <p>I am arrived at the end of a long journey<ref n="10.1" target="#app-tlg003-fn-10.1"/>, having passed over [it] to thee, Prometheus, guiding this winged steed of mine, swift of pinion, by my will, without a bit; and, rest assured, I sorrow with thy misfortunes. For both the tie of kindred thus constrains me, and, relationship apart, there is no one on whom I would bestow a larger share [of my regard] than to thyself. And thou shalt know that these words are sincere, and that it is not in me vainly to do lip-service: for come, signify to me in what it is necessary for me to assist thee; for at no time shalt thou say that thou hast a stauncher friend than Oceanus.</p></sp>
+
+<sp n="60" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:298-306"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="300" resp="Smyth"/>Hah! what means this? and hast thou too come to be a witness of my pangs? How hast thou ventured, after quitting both the stream that bears thy name, and the rock-roofed
+
+<pb n="11"/>
+
+
+  self-wrought<ref n="11.1" target="#app-tlg003-fn-11.1"/> grots, to come into the iron-teeming land? Is it that you may contemplate my misfortunes, and as sympathising with my woes that thou hast come? Behold a spectacle, me here the friend of Jupiter, that helped to establish his sovereignty, with what pains I am bent by him.</p></sp>
+
+<sp n="61" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:307-329"><speaker>OCEAN</speaker><p>I see, Prometheus, and to thee, subtle as thou art, I wish to give the best counsel. Know thyself, and assume to thyself new manners; for among the gods too there is a new monarch. But if thou wilt utter words thus harsh and whetted, Jupiter mayhap, though seated far aloft, will hear thee, so that the present bitterness of sufferings will seem to thee to be child's play. But, O hapless one, dismiss the passion which thou feelest, and search for a deliverance from these sufferings of thine. Old-fashioned maxims these, it may be I appear to thee to utter; yet such become the wages of the tongue that talks too proudly. But not even yet art thou humble, nor submittest to ills; and in addition to those that already beset thee, thou art willing to bring others upon thee. Yet not, if at least thou takest me for thy instructor, wilt thou stretch out thy leg against the pricks; as thou seest that a harsh monarch, and one that is not subject to control, is lording it. And now I for my part will go, and will essay, if I be able, to disenthral thee from these thy pangs. But be thou still, nor be over impetuous in thy language. What! knowest thou not exactly, extremely intelligent as thou art, that punishment is inflicted on a froward tongue?</p></sp>
+
+<sp n="62" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:330-334"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="332" resp="Smyth"/>I give thee joy, because that thou hast escaped censure, after taking part in and venturing along with me in all things. And now leave him alone, and let it not concern thee. For in no wise wilt thou persuade him; for he is not open to persuasion. And look thou well to it that thou take not harm thyself by the journey.</p></sp>
+
+<sp n="63" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:335-339"><speaker>OCEAN</speaker><p>Thou art far better calculated by nature to instruct
+
+
+
+
+
+
+
+
+<pb n="12"/>
+
+
+
+ thy neighbours than thyself: I draw my conclusion from fact, and not from word. But think not for a moment to divert me from the attempt. For I am confident, yea, I am confident, that Jupiter will grant me this boon, so as to release thee from these pangs of thine.</p></sp>
+
+<sp n="64" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:340-376"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="343" resp="Smyth"/>In part I commend thee, and will by no means at any time cease to do so. For in zeal to serve me thou lackest nothing. But trouble thyself not; for in vain, without being of any service to me<ref n="12.1" target="#app-tlg003-fn-12.1"/>, wilt thou labour, if in any respect thou art willing to labour. But hold thou thy peace, and keep thyself out of harm's way; for I, though I be in misfortune, would not on this account be willing that sufferings should befall as many as possible. No, indeed, since also the disasters of my brother Atlas gall my heart, who is stationed in the western regions, sustaining on his shoulders the pillar of heaven and of earth, a burthen not of easy grasp. I commiserated too when I beheld the earthborn inmate of the Cilician caverns, a tremendous prodigy, the hundred-headed impetuous Typhon, overpowered by force, who withstood all the gods, hissing slaughter from his hungry jaws; and from his eyes there flashed a hideous glare, as though he would perforce overthrow the sovereignty of Jove. But the sleepless shaft of Jupiter came upon him, the descending thunderbolt breathing forth flame, which scared him out of his presumptuous bravadoes; for having been smitten to his very soul he was crumbled to a cinder, and thunder-blasted in his prowess. And now, a helpless and paralyzed form, is he lying hard by a narrow frith, pressed down beneath the roots of Aetna<ref n="12.2" target="#app-tlg003-fn-12.2"/>. And,
+
+<pb n="13"/>
+
+
+
+ seated on the topmost peaks, Vulcan forges the molten masses, whence there shall one day burst forth floods devouring with fell jaws the level fields of fruitful Sicily: with rage such as this shall Typhon boil over in hot artillery of a never-glutted fire-breathing storm; albeit he hath been reduced to ashes by the thunderbolt of Jupiter. But thou art no novice, nor needest thou me for thine instructor. Save thyself as best thou knowest how; but I will exhaust my present fate until such time as the spirit of Jupiter shall abate its wrath.</p></sp>
+
+<sp n="65" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:377-378"><speaker>OCEAN</speaker><p>Knowest thou not this then, Prometheus, that words are the physicians of a distempered feeling<ref n="13.1" target="#app-tlg003-fn-13.1"/>?</p></sp>
+
+<sp n="66" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:379-380"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="379" resp="Smyth"/>True, if one seasonably soften down the heart, and do not with rude violence reduce a swelling spirit.</p></sp>
+
+<sp n="67" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:381-382"><speaker>OCEAN</speaker><p>Aye, but in foresight along with boldness<ref n="13.2" target="#app-tlg003-fn-13.2"/> what mischief is there that thou seest to be inherent? inform me.</p></sp>
+
+<sp n="68" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:383"><speaker>PROMETHEUS</speaker><p>Superfluous trouble and trifling folly.</p></sp>
+
+<sp n="69" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:384-385"><speaker>OCEAN</speaker><p>Suffer me to sicken in this said sickness, since 'tis of the highest advantage for one that is wise not to seem to be wise.
+
+
+
+</p></sp>
+
+<pb n="14"/>
+
+
+
+<sp n="70" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:386"><speaker>PROMETHEUS</speaker><p>(Not so, for) this trespass will seem to be mine.</p></sp>
+
+<sp n="71" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:387"><speaker>OCEAN</speaker><p>Thy language is plainly sending me back to my home.</p></sp>
+
+<sp n="72" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:388"><speaker>PROMETHEUS</speaker><p>Lest thy lamentation over me bring thee into ill-will.</p></sp>
+
+<sp n="73" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:389"><speaker>OCEAN</speaker><p>What with him who hath lately seated himself on the throne that ruleth over all?</p></sp>
+
+<sp n="74" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:390"><speaker>PROMETHEUS</speaker><p>Beware of him lest at any time his heart be moved to wrath.</p></sp>
+
+<sp n="75" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:391"><speaker>OCEAN</speaker><p>Thy disaster, Prometheus, is my monitor.</p></sp>
+
+<sp n="76" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:392"><speaker>PROMETHEUS</speaker><p>Away! withdraw thee, keep thy present determination.</p></sp>
+
+<sp n="77" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:393-396"><speaker>OCEAN</speaker><p>On me, hastening to start, hast thou urged this injunction; for my winged quadruped flaps with his pinions the smooth track of aether; and blithely would he recline his limbs in his stalls at home.</p></sp>
+          <stage>Exit OCEAN.</stage>
+          <sp n="78" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:397-435"><speaker>CHORUS</speaker> <p><milestone unit="card" n="399" resp="Smyth"/>I bewail thee for thy lost fate, Prometheus. A flood of trickling tears from my yielding eyes has bedewed my cheek with its humid gushings: for Jupiter commanding this thine unenviable doom by laws of his own, displays his spear appearing superior o'er the gods of old<ref n="14.1" target="#app-tlg003-fn-14.1"/>. <milestone unit="card" n="407" resp="Smyth"/>And now the whole land echoes with wailing—they wail thy stately and time-graced honours, and those of thy brethren; and all they of mortal race that occupy a dwelling neighbouring on hallowed Asia mourn with thy deeply-deplorable sufferings: <milestone unit="card" n="415" resp="Smyth"/>the virgins that dwell in the land of Colchis too, fearless of the fight, and the Scythian horde who possess the most remote region of earth around lake Maeotis: <milestone unit="card" n="420" resp="Smyth"/>and the warlike flower of Arabia<ref n="14.2" target="#app-tlg003-fn-14.2"/>, who occupy a fortress on the craggy
+
+<pb n="15"/>
+
+
+
+ heights in the neighbourhood of Caucasus, a warrior-host, clamouring amid sharply-barbed spears.</p>
+          <p><milestone unit="card" n="425" resp="Smyth"/>One other god only indeed have I heretofore beheld in miseries, the Titan Atlas, subdued by the galling of adamantine<ref n="15.1" target="#app-tlg003-fn-15.1"/> bonds, who evermore in his back is groaning beneath<ref n="15.2" target="#app-tlg003-fn-15.2"/> the excessive mighty mass of the pole of heaven. And the billow of the deep roars as it falls in cadence, the depth moans, and the murky vault of Hades rumbles beneath the earth, and the fountains of the pure streaming rivers wail for his piteous pains.</p></sp>
+
+<sp n="79" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:436-471"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="436" resp="Smyth"/>Do not, I pray you, suppose that I am holding my peace from pride or self-will: but by reflection am I gnawed to the heart, seeing myself thus ignominously entreated<ref n="15.3" target="#app-tlg003-fn-15.3"/>. And yet who but myself defined completely the prerogatives for these same new gods? But on these matters I say nothing, for I should speak to you already acquainted with these things. But for the misfortunes that existed among mortals, hear how I made them, that aforetime lived as infants, rational and possessed of intellect<ref n="15.4" target="#app-tlg003-fn-15.4"/>. And I will tell you, having no complaint against mankind, as detailing the kindness of the boons which I bestowed upon them:—they who at first seeing saw in vain, hearing they heard not. But, like to the forms of dreams, for a long time they used to huddle together all things at random, and nought knew they about brick-built<ref n="15.5" target="#app-tlg003-fn-15.5"/> and sun-ward houses, nor carpentry: but they dwelt in the excavated earth like
+
+<pb n="16"/>
+
+
+
+ tiny emmets in the sunless depths of caverns. And they had no sure sign either of winter, or of flowery spring, or of fruitful summer: but they used to do every thing without judgment, until indeed I showed to them the risings of the stars and their settings<ref n="16.1" target="#app-tlg003-fn-16.1"/>, hard to be discerned.</p>
+          <p>And verily I discover for them Numbers, the surpassing all inventions<ref n="16.2" target="#app-tlg003-fn-16.2"/>, the combinations too of letters, and Memory, effective mother-nurse of all arts. I also first bound with yokes beasts submissive to the collars; and in order that with their bodies they might become to mortals substitutes for their severest toils, I brought steeds under ears obedient to the reins<ref n="16.3" target="#app-tlg003-fn-16.3"/>, a glory to pompous luxury. And none other than I invented the canvas-winged chariots of mariners that roam over the ocean. After discovering for mortals such inventions, wretch that I am, I myself have no device whereby I may escape from my present misery.</p></sp>
+
+<sp n="80" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:472-475"><speaker>CHORUS</speaker><p><milestone unit="card" n="472" resp="Smyth"/>Thou hast suffered unseemly ills, baulked in thy discretion thou art erring; and like a bad physician, having fallen into a distemper thou art faint-hearted, and, in reference to thyself, thou canst not discover by what manner of medicines thou mayest be cured.</p></sp>
+
+<sp n="81" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:476-506"><speaker>PROMETHEUS</speaker><p>When thou hearest the rest of my tale, thou wilt wonder still more what arts and resources I contrived. For the greatest—if that any one fell into a distemper, there was no remedy, neither in the way of diet, nor of liniment, nor of potion, but for lack of medicines they used to pine away to skeletons, before that I pointed out to them the composition<ref n="16.4" target="#app-tlg003-fn-16.4"/> of mild remedies, wherewith they ward off all their maladies.
+
+
+
+<pb n="17"/>
+
+
+
+ Many modes too of the divining art did I classify, and was the first that discriminated among dreams those which are destined to be a true vision; obscure vocal omens<ref n="17.1" target="#app-tlg003-fn-17.1"/> too I made known to them; tokens also incidental on the road, and the flight of birds of crooked talons I clearly defined, both those that are in their nature auspicious, and the ill-omened, and what the kind of life that each leads, and what are their feuds and endearments<ref n="17.2" target="#app-tlg003-fn-17.2"/> and intercourse one with another: the smoothness too of the entrails, and what hue they must have to be acceptable to the gods, the various happy formations of the gall and liver, and the limbs enveloped in fat: and having roasted the long chine I pointed out to mortals the way into an abstruse art; and I brought to light the fiery symbols<ref n="17.3" target="#app-tlg003-fn-17.3"/> that were aforetime wrapt in darkness. Such indeed were these boons; and the gains to mankind that were hidden under ground, brass, iron, silver, and gold,—who could assert that he had discovered before me? No one, I well know, who does not mean to idly babble. And in one brief sentence learn the whole at once—All arts among the human race are from Prometheus.</p></sp>
+
+<sp n="82" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:507-510"><speaker>CHORUS</speaker><p><milestone unit="card" n="507" resp="Smyth"/>Do not now serve the human race beyond what is profitable, nor disregard thyself in thy distress: since I have good hopes that thou shalt yet be liberated from these shackles, and be not one whit less powerful than Jove.</p></sp>
+
+<sp n="83" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:511-514"><speaker>PROMETHEUS</speaker><p>Not at all in this way is Fate, that brings events to their consummation ordained to accomplish these things: but
+
+
+
+<pb n="18"/>
+
+
+
+ after having been bent by countless sufferings and calamities, thus am I to escape from my shackles. And art is far less powerful than necessity.</p></sp>
+
+<sp n="84" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:515"><speaker>CHORUS</speaker><p>Who then is the pilot of necessity?</p></sp>
+
+<sp n="85" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:516"><speaker>PROMETHEUS</speaker><p>The triform Fates and the remembering Furies.</p></sp>
+
+<sp n="86" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:517"><speaker>CHORUS</speaker><p>Is Jupiter then less powerful than these?</p></sp>
+
+<sp n="87" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:518"><speaker>PROMETHEUS</speaker><p>Most certainly he cannot at any rate escape his doom<ref n="18.1" target="#app-tlg003-fn-18.1"/>.</p></sp>
+
+<sp n="88" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:519"><speaker>CHORUS</speaker><p>Why, what is doomed for Jupiter but to reign for evermore?</p></sp>
+
+<sp n="89" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:520"><speaker>PROMETHEUS</speaker><p>This thou mayest not yet learn, and do not press it.</p></sp>
+
+<sp n="90" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:521"><speaker>CHORUS</speaker><p>'Tis surely some solemn mystery that thou veilest.</p></sp>
+
+<sp n="91" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:522-525"><speaker>PROMETHEUS</speaker><p>Make mention of some other matter; it is by no means seasonable to proclaim this; but it must be shrouded in deepest concealment: for it is by keeping this secret that I am to escape from my ignominious shackles and miseries.</p></sp>
+
+<sp n="92" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:526-560"><speaker>CHORUS</speaker><p><milestone unit="card" n="526" resp="Smyth"/>Never may Jupiter, who directs all things, set his might in opposition to my purpose, nor may I be backward in attending upon the gods at their hallowed banquets, at which oxen are sacrificed, beside the restless stream of my sire Ocean; and may I not trespass in my words; but may this feeling abide by me and never melt away. <milestone unit="card" n="537" resp="Smyth"/>Sweet it is to pass through a long life in confident hopes, making the spirits swell with bright merriment; but I shudder as I behold thee harrowed by agonies Incalculable.... For not standing in awe of Jupiter, thou, Prometheus, in thy self-will honourest mortals to excess. <milestone unit="card" n="545" resp="Smyth"/>Come, my friend, own how boonless was the boon; say where is any aid? What relief can come from the creatures of a day? Sawest thou not the powerless weakness, nought better than a dream, in which the blind race of men is entangled? Never shall at any time the schemes of mortals evade the harmonious system of Jupiter. <milestone unit="card" n="552" resp="Smyth"/>This I learned by witnessing thy destructive fate, Prometheus. And far different is this strain that now flits towards me from that hymenaeal chant which I raised around the baths and thy couch with the consent<ref n="18.2" target="#app-tlg003-fn-18.2"/> of nuptials, when, after having
+
+<pb n="19"/>
+
+
+
+ won Hesione with thy love-tokens, thou didst conduct her our sister to be thy bride, the sharer of thy bed.</p></sp>
+          <stage>Enter Io<ref n="19.1" target="#app-tlg003-fn-19.1"/></stage>
+         <sp n="93" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:561-588"> <speaker>IO</speaker> <p><milestone unit="card" n="561" resp="Smyth"/>What land is this? what race? whom shall I say I here behold storm-tossed in rocky fetters? Of what trespass is the retribution destroying thee? Declare to me into what part of earth I forlorn have roamed. <milestone unit="card" n="566" resp="Smyth"/>Ah me! alas! alas! again the hornet<ref n="19.2" target="#app-tlg003-fn-19.2"/> stings me miserable: O earth avert<ref n="19.3" target="#app-tlg003-fn-19.3"/> the goblin of earth-born Argus<ref n="19.4" target="#app-tlg003-fn-19.4"/>: I am terrified at the sight of the neatherd of thousand eyes, for he is journeying on,
+
+<pb n="20"/>
+
+
+
+ keeping a cunning glance, whom not even after death does earth conceal: but issuing forth from among the departed he chases me miserable, and he makes me to wander famished along the shingled strand, <milestone unit="card" n="575" resp="Smyth"/>while the sounding wax-compacted pipe drones on a sleepy strain. Oh! oh! ye powers! Oh! powers! whither do my far-roaming wanderings convey me? In what, in what, O son of Saturn, hast thou, having found me transgressing, shackled me in these pangs? Ah! ah! and art thus wearing out a timorous wretch phrensied with sting-driven fear. Burn me with fire, or bury me in earth, or give me for food to the monsters of the deep, and grudge me not these prayers, O king! Amply have my much-traversed wanderings harassed me; nor can I discover how I may avoid pain. Hearest thou the address of the ox-horned maiden?</p></sp>
+
+<sp n="94" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:589-592"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="589" resp="Smyth"/>How can I fail to hear the damsel that is phrenzy-driven by the hornet, the daughter of Inachus, who warms the heart of Jupiter with love, and now, abhorred of Juno, is driven perforce courses of exceeding length?</p></sp>
+
+<sp n="95" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:593-608"><speaker>IO</speaker><p><milestone unit="card" n="593" resp="Smyth"/>From whence utterest thou the name of my father? Tell me, the woe-begone, who thou art, who, I say, O hapless one, that hast thus correctly accosted me miserable, and hast named the heaven-inflicted disorder which wastes me, fretting with its maddening stings? Ah! ah! violently driven by the famishing tortures of my boundings have I come a victim to the wrathful counsels of Juno. And of the ill-fated who are there, ah me! that endure woes such as mine? But do thou clearly define to me what remains for me to suffer, what salve: what remedy there is for my malady, discover to me, if at all thou knowest: speak, tell it to the wretched roaming damsel.</p></sp>
+
+<sp n="96" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:609-612"><speaker>PROMETHEUS</speaker><p><milestone unit="card" n="609" resp="Smyth"/>I will tell thee clearly everything which thou desirest to learn, not interweaving riddles, but in plain language, as it is right to open the mouth to friends. Thou scest him that bestowed fire on mortals, Prometheus.</p></sp>
+
+<sp n="97" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:613-614"><speaker>IO</speaker><p>O thou that didst dawn a common benefit upon mortals, wretched Prometheus, as penance for what offence art thou thus suffering?</p></sp>
+
+<pb n="21"/>
+
+
+
+
+          <sp n="98" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:615">
+            <speaker>PROMETHEUS</speaker>
+            <p>I have just ceased lamenting my own pangs.</p>
+          </sp>
+          <sp n="99" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:616">
+            <speaker>IO</speaker>
+            <p>Wilt thou not then accord to me this boon?</p>
+          </sp>
+          <sp n="100" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:617">
+            <speaker>PROMETHEUS</speaker>
+            <p>Say what it is that thou art asking, for thou mightest learn every thing from me.</p>
+          </sp>
+          <sp n="101" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:618">
+            <speaker>IO</speaker>
+            <p>Say who it was that bound thee fast in this cleft?</p>
+          </sp>
+          <sp n="102" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:619">
+            <speaker>PROMETHEUS</speaker>
+            <p>The decree of Jupiter, but the hand of Vulcan.</p>
+          </sp>
+          <sp n="103" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:620">
+            <speaker>IO</speaker>
+            <p>And for what offences art thou paying the penalty?</p>
+          </sp>
+          <sp n="104" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:621">
+            <speaker>PROMETHEUS</speaker>
+            <p>Thus much alone is all that I can clearly explain to thee.</p>
+          </sp>
+          <sp n="105" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:622-623">
+            <speaker>IO</speaker>
+            <p>At least, in addition to this, discover what time shall be to me woe-worn the limit of my wanderings.</p>
+          </sp>
+          <sp n="106" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:624">
+            <speaker>PROMETHEUS</speaker>
+            <p>Not to learn this is better for thee than to learn it.</p>
+          </sp>
+          <sp n="107" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:625">
+            <speaker>IO</speaker>
+            <p>Yet conceal not from me what I am to endure.</p>
+          </sp>
+          <sp n="108" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:626">
+            <speaker>PROMETHEUS</speaker>
+            <p>Nay, I grudge thee not this gift.</p>
+          </sp>
+          <sp n="109" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:627">
+            <speaker>IO</speaker>
+            <p>Why then delayest thou to utter the whole?</p>
+          </sp>
+          <sp n="110" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:628">
+            <speaker>PROMETHEUS</speaker>
+            <p>'Tis not reluctance, but I am loth to shock thy feelings.</p>
+          </sp>
+          <sp n="111" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:629">
+            <speaker>IO</speaker>
+            <p>Do not be more anxious on my account than is agreeable to me<ref n="21.1" target="#app-tlg003-fn-21.1"/>.</p>
+          </sp>
+          <sp n="112" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:630">
+            <speaker>PROMETHEUS</speaker>
+            <p>Since thou art eager, I must needs tell thee: attend thou.</p>
+          </sp>
+          <sp n="113" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:631-634">
+            <speaker>CHORUS</speaker>
+            <p>Not yet, however; but grant me also a share of the pleasure. Let us first learn the malady of this maiden, from her own tale of her destructive<ref n="21.2" target="#app-tlg003-fn-21.2"/> fortunes; but, for the sequel of her afflictions let her be informed by thee.</p>
+          </sp>
+          <sp n="114" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:635-639">
+            <speaker>PROMETHEUS</speaker>
+            <p>It is thy part, Io, to minister to the gratification of these now before thee, both for all other reasons, and that they are the sisters of thy father. Since to weep and lament over misfortunes, when one is sure to win a tear from the listeners, is well worth the while.</p>
+          </sp>
+          <sp n="115" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:640-686">
+            <speaker>IO</speaker>
+            <p><milestone unit="card" n="640" resp="Smyth"/>I know not how I should disobey you; and in a plain tale ye shall learn every thing that ye desire: and yet I am pained even to speak of the tempest that hath been sent upon me from heaven, and the utter marring of my person,
+
+
+
+
+<pb n="22"/>
+
+
+
+  whence it suddenly came upon me, a wretched creature ! For nightly visions thronging to my maiden chamber, would entice me with smooth words: <quote xml:lang="eng">O damsel, greatly fortunate, why dost thou live long time in maidenhood, when it is in thy power to achieve a match the very noblest ? for Jupiter is fired by thy charms with the shaft of passion, and longs with thee to share in love. But do not, my child, spurn away from thee the couch of Jupiter; but go forth to Lerna's fertile mead, to the folds and ox-stalls of thy father, that the eye of Jove may have respite from its longing.</quote> By dreams such as these was I unhappy beset every night, until at length I made bold to tell my sire of the dreams that haunted me by night. And he despatched both to Pytho and to Dodona<ref n="22.1" target="#app-tlg003-fn-22.1"/> many a messenger to consult the oracles, that he might learn what it behoved him to do or say, so as to perform what was well-pleasing to the divinities. And they came bringing a report back of oracles ambiguously worded, indistinct, and obscurely delivered. But at last a clear response came to Inachus, plainly charging and directing him to thrust me forth both from my home and my country, to stray an outcast to earth's remotest limits; and that, if he would not, a fiery-visaged thunderbolt would come from Jupiter, and utterly blot out his whole race. Overcome by oracles of Loxias such as these, unwilling did he expel and exclude me unwilling from his dwelling : but the bit of Jupiter<ref n="22.2" target="#app-tlg003-fn-22.2"/> perforce constrained him to do this And straightway my person and my mind were distorted, and horned, as ye see, stung by the keenly-biting fly, I rushed with maniac boundings to the sweet stream of Cerchneia, and the fountain<ref n="22.3" target="#app-tlg003-fn-22.3"/> of Lerna:—and the earth-born neatherd Argus of untempered fierceness, kept dogging me, peering after my footsteps with thick-set eyes. Him, however, an unlooked-for sudden fate bereaved of life; but I
+
+<pb n="23"/>
+
+
+
+
+
+hornet-striken am driven by the scourge divine from land to land. Thou hearest what has taken place, and if thou art able to say what pangs there remain for me, declare them; and do not, compassionating me, warm me with false tales, for I pronounce fabricated statements to be a most foul malady.</p></sp>
+
+
+          <sp n="116" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:687-695">
+            <speaker>CHORUS</speaker>
+            <p><milestone unit="card" n="687" resp="Smyth"/>Ah! ah! forbear! Alas! Never never did I expect that a tale [so] strange would come to my ears, or that sufferings thus horrible to witness and horrible to endure, outrages, terrors with their two-edged goad, would chill my spirit. Alas! alas! O Fate! Fate! I shudder as I behold the condition of Io.</p>
+          </sp>
+          <sp n="117" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:696-697">
+            <speaker>PROMETHEUS</speaker>
+            <p><milestone unit="card" n="696" resp="Smyth"/>Prematurely, however, art thou sighing, and art full of terror. Hold, until thou shalt also have heard the residue.</p>
+          </sp>
+          <sp n="118" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:698-699">
+            <speaker>CHORUS</speaker>
+            <p>Say on; inform me fully: to the sick indeed it is sweet to get a clear knowledge beforehand of the sequel of their sorrows.</p>
+          </sp>
+          <sp n="119" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:700-741">
+            <speaker>PROMETHEUS</speaker>
+            <p>Your former desire at any rate ye gained from me easily; for first of all ye desired to be informed by her recital of the affliction<ref n="23.1" target="#app-tlg003-fn-23.1"/> that attaches to herself. Now give ear to the rest, what sort of sufferings it is the fate of this young damsel before you to undergo at the hand of Juno: thou too, seed of Inachus, lay to heart my words, that thou mayest be fully informed of the termination of thy journey. In the first place, after turning thyself from this spot towards the rising of the sun, traverse unploughed fields; and thou wilt reach the wandering Scythians. who, raised from off the ground, inhabit wicker dwellings on well-wheeled ears, equipped with distant-shooting bows; to whom thou must not draw near, but pass on out of then land, bringing thy feet to approach the rugged roaring shores. And on thy left band dwell the Chalybes, workers of iron, of whom thou must needs beware, for they are barbarous, and not accesi­ble to strangers. And thou wilt come to the river Hybristes<ref n="23.2" target="#app-tlg003-fn-23.2"/>,
+
+<pb n="24"/>
+
+
+
+ not falsely so called, which do not thou cross, for it is not easy to ford, until thou shalt have come to Caucasus itself, loftiest of mountains, where from its very brow the river spouts forth its might. And surmounting its peaks that neighbour on the stars, thou must go into a southward track, where thou wilt come to the man-detesting host of Amazons, who hereafter shall make a settlement, Themiscyra, on the banks of Thermodon, where lies the rugged Salmydessian sea-gorge, a host by mariners hated, a step-dame to ships; and they will conduct thee on thy way, and that right willingly. Thou shalt come too to the Cimmerian ithsmus, hard by the very portals of a lake, with narrow passage, which thou undauntedly must leave, and cross the Maeotie frith; and there shall exist for evermore among mortals a famous legend concerning thy passage, and after thy name it shall be called the Bosphorus; and after having quitted European ground, thou shalt come to the Asiatic continent. Does not then the sovereign of the gods seem to you to be violent alike towards all things? for he a god lusting to enjoy the charms of this mortal fair one, bath cast upon her these wanderings. And a bitter wooer, maiden, hast thou found for thy hand; for think that the words which thou hast now heard are not even for a prelude.</p>
+          </sp>
+          <sp n="120" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:742">
+            <speaker>IO</speaker>
+            <p><milestone unit="card" n="742" resp="Smyth"/>Woe is me! ah! ah!</p>
+          </sp>
+          <sp n="121" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:743-744">
+            <speaker>PROMETHEUS</speaker>
+            <p>Thou too in thy turn art crying out and moaning : what wilt thou do then, when thou learnest the residue of thy ills?</p>
+          </sp>
+          <sp n="122" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:745">
+            <speaker>CHORUS</speaker>
+            <p>What! hast thou aught of suffering left to tell to ner?</p>
+          </sp>
+          <sp n="123" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:746">
+            <speaker>PROMETHEUS</speaker>
+            <p>Aye, a tempestuous sea of baleful calamities.</p>
+          </sp>
+          <sp n="124" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:747-751">
+            <speaker>IO</speaker>
+            <p>What gain then is it for me to live ? but why did I not quickly fling myself from this rough precipice, that dashing on the plain I had rid myself of all my pangs? for better is it once to die, than all one's days to suffer ill.</p>
+          </sp>
+          <sp n="125" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:752-756">
+            <speaker>PROMETHEUS</speaker>
+            <p>Verily thou wouldst hardly bear the agonies of me to whom it is not doomed to die. For this would be an escape from sufferings. But now there is no limit set to my hardships, until Jove shall have been deposed from his tyranny.</p>
+          </sp>
+
+<pb n="25"/>
+
+
+
+ <sp n="126" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:757">
+            <speaker>IO</speaker>
+            <p>What! is it possible that Jupiter should ever fall from his power?</p>
+          </sp>
+          <sp n="127" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:758">
+            <speaker>PROMETHEUS</speaker>
+            <p>Glad wouldst thou be, I ween, to witness this event.</p>
+          </sp>
+          <sp n="128" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:759">
+            <speaker>IO</speaker>
+            <p>And how not so, I, who through Jupiter am suffering ill?</p>
+          </sp>
+          <sp n="129" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:760">
+            <speaker>PROMETHEUS</speaker>
+            <p>Well then thou mayest assure thyself of these things that they are so.</p>
+          </sp>
+          <sp n="130" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:761">
+            <speaker>IO</speaker>
+            <p>By whom is he to be despoiled of his seeptre of tyranny.</p>
+          </sp>
+          <sp n="131" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:762">
+            <speaker>PROMETHEUS</speaker>
+            <p>Himself, by his own senseless counsels.</p>
+          </sp>
+          <sp n="132" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:763">
+            <speaker>IO</speaker>
+            <p>In what manner? Specify it, if there be no harm.</p>
+          </sp>
+          <sp n="133" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:764">
+            <speaker>PROMETHEUS</speaker>
+            <p>He will make such a match as he shall one day rue<ref n="25.1" target="#app-tlg003-fn-25.1"/>.</p>
+          </sp>
+          <sp n="134" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:765">
+            <speaker>IO</speaker>
+            <p>Celestial or mortal? If it may be spoken, tell me.</p>
+          </sp>
+          <sp n="135" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:766">
+            <speaker>PROMETHEUS</speaker>
+            <p>But why ask its nature? for it is not a matter that I can communicate to you.</p>
+          </sp>
+          <sp n="136" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:767">
+            <speaker>IO</speaker>
+            <p>Is it by a consort that he is to be ejected from his throne?</p>
+          </sp>
+          <sp n="137" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:768">
+            <speaker>PROMETHEUS</speaker>
+            <p>Yes, surely, one that shall give birth to a son mightier than the father<ref n="25.2" target="#app-tlg003-fn-25.2"/>.</p>
+          </sp>
+          <sp n="138" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:769">
+            <speaker>IO</speaker>
+            <p>And has he no refuge from this misfortune?</p>
+          </sp>
+          <sp n="139" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:770">
+            <speaker>PROMETHEUS</speaker>
+            <p>Not he, indeed, before at any rate I after being liberated from my shackles</p>
+          </sp>
+          <sp n="140" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:771">
+            <speaker>IO</speaker>
+            <p>Who then is he that shall liberate thee in despite of Jupiter?</p>
+          </sp>
+          <sp n="141" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:772">
+            <speaker>PROMETHEUS</speaker>
+            <p>It is ordained that it shall be one of thine own descendants.</p>
+          </sp>
+          <sp n="142" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:773">
+            <speaker>IO</speaker>
+            <p>How sayest thou? Shall child of mine release thee from thy ills?</p></sp>
+
+<pb n="26"/>
+
+
+
+
+          <sp n="143" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:774">
+            <speaker>PROMETHEUS</speaker>
+            <p> Yes, the third of thy lineage in addition to ten other generations<ref n="26.1" target="#app-tlg003-fn-26.1"/>.</p>
+          </sp>
+          <sp n="144" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:775">
+            <speaker>IO</speaker>
+            <p>This prophecy of thine is no longer easy for me to form a guess upon.</p>
+          </sp>
+          <sp n="145" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:776">
+            <speaker>PROMETHEUS</speaker>
+            <p>Nor seek thou to know over well thine own pangs.</p>
+          </sp>
+          <sp n="146" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:777">
+            <speaker>IO</speaker>
+            <p>Do not after proffering me a benefit withhold it from me.</p>
+          </sp>
+          <sp n="147" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:778">
+            <speaker>PROMETHEUS</speaker>
+            <p>I will freely grant thee one of two disclosures.</p>
+          </sp>
+          <sp n="148" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:779">
+            <speaker>IO</speaker>
+            <p>Explain to me first of what sort they are, and allow me my choice.</p>
+          </sp>
+          <sp n="149" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:780-781">
+            <speaker>PROMETHEUS</speaker>
+            <p><milestone unit="card" n="780" resp="Smyth"/>I allow it thee ; for choose whether I shall clearly tell to thee the residue of thy troubles, or who it is that is to be my deliverer.</p>
+          </sp>
+          <sp n="150" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:782-785">
+            <speaker>CHORUS</speaker>
+            <p>Of these twain do thou vouchsafe to bestow the one boon on this damsel, and the other on me, and disdain thou not my request. To her tell the rest of her wanderings, and to me him that is to deliver thee ; for this I long [to hear].</p>
+          </sp>
+          <sp n="151" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:786-818">
+            <speaker>PROMETHEUS</speaker>
+            <p>Seeing that ye are eagerly bent upon it, I will not oppose your wishes, so as not to utter every thing as much as ye desire. To thee in the first place, Io, will I describe thy mazy wanderings, which do thou engrave on the recording tablets of thy mind.</p>
+
+          <p>When thou shalt have crossed the stream that is the boundary of the Continents, to the ruddy realms of mom where walks the sun<ref n="26.2" target="#app-tlg003-fn-26.2"/> . . . . . . . having passed over the roaring swell of the sea, until thou shalt reach the Gorgonian plains of Cisthene, where dwell the Phorcides, three swanlike aged damsels, that possess one eye in common, that have but a single tooth, on whom ne'er doth the sun glance with his rays, nor the nightly moon. And hard by are three winged sisters of these, the snake-tressed Gorgons, abhorred of mortals, whom none of human race can look upon and retain the breath of life<ref n="26.3" target="#app-tlg003-fn-26.3"/>. Such is this
+
+<pb n="27"/>
+
+
+
+ caution<ref n="27.1" target="#app-tlg003-fn-27.1"/> which I mention to thee. Now lend an ear to another hideous spectacle; for be on thy guard against the keenranged hounds of Jupiter that never bark, the gryphons, and the cavalry host of one-eyed Arimasprans, who dwell on the banks of the gold-gushing fount, the stream of Pluto: go not thou nigh to these. And thou wilt reach a far-distant land, a dark tribe, who dwell close upon the fountains of the sun, where is the river Aethiops. Along the banks of this wend thy way, until thou shalt have reached the cataract where from the Bybline mountains the Nile pours forth his hallowed, grateful stream. This will guide thee to the triangular land of the Nile; where at length, To, it is ordained for thee and thy children after thee to found the distant colony. And if aught of this is obscurely uttered, and hard to be understood, question me anew, and learn it thoroughly and clearly: as for leisure, I have more than I desire.</p>
+          </sp>
+          <sp n="152" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:819-822">
+            <speaker>CHORUS</speaker>
+            <p><milestone unit="card" n="819" resp="Smyth"/>If indeed thou hast aught to tell of her baleful wanderings, that still remains or hath been omitted, say on; but if thou hast told the whole, give to us in our turn the favour which we ask, and you, perchance, remember.</p>
+          </sp>
+          <sp n="153" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:823-876">
+            <speaker>PROMETHEUS</speaker>
+            <p>She hath heard the full term of her journeying. And that she may know that she bath not been listening to me in vain, I will relate what hardships she endured before she came hither, giving her this as a sure proof of my statements. The very great multitude indeed of words I shall omit, and I will proceed to the termination itself of thine aberrations. For aftei that thou hadst come to the Molossian plains, and about the lofty ridge of Dodona, where is the oracular seat of Thesprotian Jove, and a portent passing belief, the speaking oaks. by which thou wast clearly and without any ambiguity saluted illustrious spouse of Jove that art to be; if aught of this bath any charms for thee<ref n="27.2" target="#app-tlg003-fn-27.2"/> . Thence madly rushing along the seaside track, thou didst dart away to the vast bay of Rhea, from which thou art tempest-driven in retrograde courses: and in time to come, know well that the gulf of the deep shall be called IO-nian, a memorial of thy passage to all mortals. These hast thou as tokens of my intelligence, how that it perceives somewhat beyond what appears.</p>
+
+<pb n="28"/>
+
+
+
+
+
+            <p>The rest I shall tell both to you and to her in common, after reaching the very identical track of my former narrative. <milestone unit="card" n="846" resp="Smyth"/>There is on the land's utmost verge a city Canopus, hard by the Nile's very mouth and alluvial dyke; on this spot Jupiter at length makes thee sane by merely soothing and touching thee with his unalarming hand. And named after the progeniture of Jupiter<ref n="28.1" target="#app-tlg003-fn-28.1"/> thou shalt give birth to swarthy Epaphus, who shall reap the harvest of all the land which the wide-streaming Nile waters. But fifth in descent from him a generation of fifty virgins shall again come to Argos, not of their own accord, fleeing from incestuous wedlock with their cousins; and these with fluttering hearts, like falcons left not far behind by doves, shall come pursuing marriage such as should not be pursued, but heaven shall be jealous over their persons<ref n="28.2" target="#app-tlg003-fn-28.2"/>; and Pelasgia shall receive them after being crushed by a deed of night-fenced daring, wrought by woman's hand; for each bride shall bereave her respective husband of life, having dyed in their throats<ref n="28.3" target="#app-tlg003-fn-28.3"/> a sword of twin sharp edge. Would that in guise like this Venus might visit my foes! But tenderness shall soften one<ref n="28.4" target="#app-tlg003-fn-28.4"/> of the maidens, so that she shall not slay the
+
+<pb n="29"/>
+
+
+
+ partner of her couch. but shall be blunt in her resolve; and of the two alternatives she shall choose the former, to be called a coward rather than a murderess. She in Argos shall give birth to a race of kings. There needs a long discourse to detail these things distinctly ;but from this seed be sure shall spring a dauntless warrior renowned in archery, who shall set me free from these toils. Such predictions did my aged mother the Titaness Themis rehearse to me; but how and when-to tell this requires a long detail, and thou in knowing it all wouldst be in nought a gainer.</p>
+          </sp>
+          <sp n="154" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:877-886">
+            <speaker>IO</speaker>
+            <p><milestone unit="card" n="877" resp="Smyth"/>Eleleu! Eleleu! Once more the spasm<ref n="29.1" target="#app-tlg003-fn-29.1"/> and maddenin- phrenzies inflame me—and the sting of the hornet, wrought by no fire,<ref n="29.2" target="#app-tlg003-fn-29.2"/> envenoms me; and with panic my heart throbs violently against my breast. My eyes too are rolling in a mazy whirl, and I am carried out of my course by the raging blast of madness, having no controul of tongue, but my troubled words dash idly against the surges of loathsome calamity.</p>
+          </sp>
+          <stage>Exit Io.</stage>
+          <sp n="155" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:887-906">
+            <speaker>CHORUS</speaker>
+            <p><milestone unit="card" n="887" resp="Smyth"/>Wise was the man, aye, wise indeed, who first weighed well this maxim, and with his tongue published it abroad, that to match in one’s own degree is best by far<ref n="29.3" target="#app-tlg003-fn-29.3"/> ;and that one who lives by labour should woo the hand neither of any that have waxed wanton in opulence, nor of such as pride themselves on nobility of birth. <milestone unit="card" n="894" resp="Smyth"/>Never, O Destinies<ref n="29.4" target="#app-tlg003-fn-29.4"/>, never ........ may ye behold me approaching as a partner the couch of Jupiter: nor may I be brought to the arms of any bridegroom from among the sons of heaven: for I am in dread when I behold the maiden Io, contented with no mortal lover, greatly marred by wearisome wanderings at the hand of Juno. <milestone unit="card" n="901" resp="Smyth"/>For myself, indeed-inasmuch as wedlock on one's own level is free from apprehension—I feel no alarm<ref n="29.5" target="#app-tlg003-fn-29.5"/>. And oh ! never may the love of the mightier gods cast on me a glance that none can elude. This at least is a war without a conflict,
+
+<pb n="30"/>
+
+
+
+ accomplishing things impossible<ref n="30.1" target="#app-tlg003-fn-30.1"/>: nor know I what might become of me, for I see not how I could evade the counsel of Jove.</p>
+          </sp>
+          <sp n="156" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:907-927">
+            <speaker>PROMETHEUS</speaker>
+            <p><milestone unit="card" n="907" resp="Smyth"/>Yet truly shall Jove, albeit he is self-willed in his temper, be lowly, in such<ref n="30.2" target="#app-tlg003-fn-30.2"/> wedlock is he prepared to wed, as shall hurl him out of his sovereignty and off his throne a forgotten thing; and the curse of his father Saturn shall then at length find entire consummation, which he imprecated when he was deposed from his ancient throne. From disasters such as these there is no one of the gods beside myself that can clearly disclose to him a way of escape. I know this, and by what means. Wherefore let him rest on in his presumption, putting confidence in his thunders aloft, brandishing in his hand a fire-breathing bolt. For not one jot shall these suffice to save him from falling dishonoured in a downfall beyond endurance; such an antagonist is he now with his own hands preparing against himself, a portent that shall baffle all resistance; who shall invent a flame more potent than the lightning, and a mighty din that shall surpass the thunder; and shall shiver the ocean trident, that earth-convulsing pest, the spear of Neptune. And when he bath stumbled upon this mischief, he shall be taught how great is the difference between sovereignty and slavery.</p>
+          </sp>
+          <sp n="157" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:928">
+            <speaker>CHORUS</speaker>
+            <p>Thou forsooth art boding against Jupiter the things thou wishest.</p>
+          </sp>
+          <sp n="158" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:929">
+            <speaker>PROMETHEUS</speaker>
+            <p>Things that shall come to pass, and that I desire to boot.</p>
+          </sp>
+          <sp n="159" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:930">
+            <speaker>CHORUS</speaker>
+            <p>And are we to expect that any one will get the mastery of Jove?</p>
+          </sp>
+          <sp n="160" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:931">
+            <speaker>PROMETHEUS</speaker>
+            <p>Aye, and pangs too yet harder to bear than these [of mine] shall he sustain.</p>
+          </sp>
+          <sp n="161" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:932">
+            <speaker>CHORUS</speaker>
+            <p>And how is it that thou art not dismayed blurting out words such as these ?</p>
+          </sp>
+          <sp n="162" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:933">
+            <speaker>PROMETHEUS</speaker>
+            <p>Why at what should I be terrified to whom it is not destined to die.</p>
+          </sp>
+          <sp n="163" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:934">
+            <speaker>CHORUS</speaker>
+            <p>Yet perchance he will provide for thee affliction more grievous than even this.</p>
+          </sp>
+          <sp n="164" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:935">
+            <speaker>PROMETHEUS</speaker>
+            <p>Let him do it then, all is foreseen by me.
+
+</p>
+          </sp>
+
+
+
+
+
+
+
+
+<pb n="31"/>
+
+
+          <sp n="165" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:936">
+            <speaker>CHORUS</speaker>
+            <p>They that do homage to Adrasteia are wise.</p> </sp>
+          <sp n="166" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:937-943">
+            <speaker>PROMETHEUS</speaker>
+          <p>Do homage, make thy prayer, cringe to each ruler
+            of the day. 1 care for Jove less than nothing; let him do,
+            let him lord it for this brief span, e'en as he list, for not
+            long shall he rule over the gods. But no more, for I
+            descry Jove's courier close at hand, the menial of the new
+            monarch: beyond all [doubt] he has come to announce to us
+            some news.</p></sp>
+
+          <stage>Enter MERCURY.</stage>
+          <sp n="167" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:944-952">
+            <speaker>MERCURY</speaker>
+            <p><milestone unit="card" n="944" resp="Smyth"/>Thee, the contriver, thee full of gall and bitterness, who sinned against the gods by bestowing their honours on creatures of a day, the thief of fire, I address. The Sire commands thee to divulge of what nuptials it is that thou art vaunting, by means of which he is to be put down from his power. And these things, moreover, without any kind of mystery, but each exactly as it is, do thou tell out; and entail not upon me, Prometheus, a double journey; and thou perceivest that by such conduct Jove is not softened.</p>
+          </sp>
+          <sp n="168" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:953-963">
+            <speaker>PROMETHEUS</speaker>
+            <p>High sounding, i'faith, aud full of haughtiness is thy speech, as beseems a lackey of the gods. Young in years, ye are young in power<ref n="31.1" target="#app-tlg003-fn-31.1"/> ; and ye fancy forsooth that ye dwell in a citadel impregnable against sorrow. Have I not known two monarchs<ref n="31.2" target="#app-tlg003-fn-31.2"/> dethroned from it ? And the third that now is ruler I shall also see expelled most foully and most quickly. Seem I to thee in aught to be dismayed at, and to crouch beneath the new gods ? Widely, aye altogether, do I come short [of sucl feelings]. But do thou hie thee back the way by which thou amest: for not one tittle shalt thou learn of the matter on which thou questionest me.</p>
+          </sp>
+          <sp n="169" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:964-965">
+            <speaker>MERCURY</speaker>
+            <p><milestone unit="card" n="964" resp="Smyth"/>Yet truly 'twas by such self-will even before now that thou didst bring thyself to such a calamitous mooring.</p>
+          </sp>
+          <sp n="170" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:966-970">
+            <speaker>PROMETHEUS</speaker>
+            <p>Be well assured that I would not barter my
+
+<pb n="32"/>
+
+
+
+
+
+wretched plight for thy drudgery; for better do I deem it to be a lackey to this rock, than to be born the confidential courier of father Jove. Thus is it meet to repay insult in kind.</p>
+          </sp>
+          <sp n="171" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:971">
+            <speaker>MERCURY</speaker>
+            <p>Thou seemest to revel in thy present state.</p>
+          </sp>
+          <sp n="172" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:972-973">
+            <speaker>PROMETHEUS</speaker>
+            <p>Revel! Would that I might see my foes thus revelling, and among these I reckon thee.</p>
+          </sp>
+          <sp n="173" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:974">
+            <speaker>MERCURY</speaker>
+            <p>What dost thou impute to me also any blame for thy mischances?</p>
+          </sp>
+          <sp n="174" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:975-976">
+            <speaker>PROMETHEUS</speaker>
+            <p>In plain truth, I detest all the gods, as many of them as. after having received benefits at my hands, are iniquitously visiting me with evils.</p>
+          </sp>
+          <sp n="175" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:977">
+            <speaker>MERCURY</speaker>
+            <p>I hear thee raving with no slight disorder.</p>
+          </sp>
+          <sp n="176" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:978">
+            <speaker>PROMETHEUS</speaker>
+            <p>Disordered I would be, if disorder it be to loathe one's foes.</p>
+          </sp>
+          <sp n="177" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:979">
+            <speaker>MERCURY</speaker>
+            <p>Thou wouldst be beyond endurance, wert thou in prosperity.</p>
+          </sp>
+          <sp n="178" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:979">
+            <speaker>PROMETHEUS</speaker>
+            <p>Woe’s me!</p>
+          </sp>
+          <sp n="179" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:980">
+            <speaker>MERCURY</speaker>
+            <p>This word of thine Jove knows not.</p>
+          </sp>
+          <sp n="180" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:981">
+            <speaker>PROMETHEUS</speaker>
+            <p>Aye. but Time as he grows old teaches all things.</p>
+          </sp>
+          <sp n="181" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:982">
+            <speaker>MERCURY</speaker>
+            <p>And yet verily thou knowest not yet how to be discreet.</p>
+          </sp>
+          <sp n="182" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:983">
+            <speaker>PROMETHEUS</speaker>
+            <p>No i'faith, or I should not have held parley with thee, menial as thou art.</p>
+          </sp>
+          <sp n="183" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:984">
+            <speaker>MERCURY</speaker>
+            <p>Thou seemest disposed to tell naught of the things which the sire desires.</p>
+          </sp>
+          <sp n="184" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:985">
+            <speaker>PROMETHEUS</speaker>
+            <p>In sooth, being under obligation as I am to him, 'I bound to return his favour.</p>
+          </sp>
+          <sp n="185" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:986">
+            <speaker>MERCURY</speaker>
+            <p>Thou floutest me, forsooth as if I were a boy.</p>
+          </sp>
+          <sp n="186" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:987-996">
+            <speaker>PROMETHEUS</speaker>
+            <p>Why, art thou not a boy, and yet sillier than one, if thou lookest to obtain any information from me ? There is no outrage nor artifice by which Jupiter shall bring me to utter this, before my torturing shackles shall have been loosened. Wherefore let his glowing lightning be hurled, and with the white feathered shower of snow, and thunderings beneath the earth let him confound and embroil the universe; for naught of these things shall bend me so much as even to say by whom it is doomed that he shall be put down from his sovei</p>
+          </sp>
+          <sp n="187" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:997">
+            <speaker>MERCURY</speaker>
+            <p>Consider now whether this determination seems availing.</p>
+          </sp>
+          <sp n="188" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:998">
+            <speaker>PROMETHEUS</speaker>
+            <p>Long since has this been considered and resolved.</p>
+          </sp>
+
+
+<pb n="33"/>
+
+
+
+
+          <sp n="189" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:999-1000">
+            <speaker>MERCURY</speaker>
+            <p>Resolve, O vain one, resolve at length in consideration of thy present sufferings to come to thy right senses.</p>
+          </sp>
+          <sp n="190" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1001-1006">
+            <speaker>PROMETHEUS</speaker>
+            <p>Thou troublest me with thine admonitions as vainly as [thou mightest] a billow<ref n="33.1" target="#app-tlg003-fn-33.1"/>. Never let it enter your thoughts that I, affrighted by the purpose of Jupiter, shall become womanish, and shall importune the object whom I greatly loathe, with effeminate upliftings of my bands, to release me from these shackles : I want much of that.</p>
+          </sp>
+          <sp n="191" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1007-1035">
+            <speaker>MERCURY</speaker>
+            <p><milestone unit="card" n="1007" resp="Smyth"/>With all that I have said I seem to be speaking to no purpose : for not one whit art thou melted or softened in thy heart by entreaties, but art champing the bit like a colt fresh yoked, and struggling against the reins. But on the strength of an impotent scheme art thou thus violent; for obstinacy in one not soundly wise, itself by itself availeth less than nothing. And mark, if thou art not persuaded by my words, what a tempest and three-fold surge of ills, from which there is no escape, will come upon thee. For in the first place the Sire will shiver this craggy cleft with thunder and the blaze of his bolt, and will overwhelm thy body, and a clasping arm of rock shall bear thee up. And after thou shalt have passed through to its close a long space of time, thou shalt come back into the light! and a winged hound of Jupiter, a blood-thirsting eagle, shall ravenously mangle thy huge lacerated frame, stealing upon thee an unbidden guest, and [tarrying] all the livelong day, and shalt banquet his fill on the black viands<ref n="33.2" target="#app-tlg003-fn-33.2"/> of thy liver. To such labours look thou for no termination, until some god shall appear as a substitute in thy pangs, and shall be willing to go both to gloomy Hades, and to the murky depths around Tartarus. Wherefore advise thee, since this is no fictitious vaunt, but uttered in great earnestness; for the divine
+
+<pb n="34"/>
+
+
+
+ mouth knows not how to utter falsehood, but will bring every word to pass. But do thou look around and reflect, and never for a moment deem pertinacity better than discretion.</p>
+          </sp>
+          <sp n="192" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1036-1039">
+            <speaker>CHORUS</speaker>
+            <p>To us indeed Mercury seems to propose no unseasonable counsel; for he bids thee to abandon thy recklessness, and seek out wise consideration. Be persuaded; for to a wise man 'tis disgraceful to err.</p>
+          </sp>
+          <sp n="193" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1040-1053">
+            <speaker>PROMETHEUS</speaker>
+            <p><milestone unit="card" n="1040" resp="Smyth"/>To me already well aware of it hath this fellow urged his message; but for a foe to suffer horribly at the hands of , foes is no indignity. Wherefore let the doubly-pointed wreath of his fire be hurled at me, and aether be torn piecemeal by thunder, and spasm of savage blasts; and let the wind rock earth from her base, roots and all, and with stormy surge mingle in rough tide the billow of the deep and the paths of the stars ;and fling my body into black Tartarus, with a whirl, in the stern eddies of necessity. Yet by no possible means shall he visit me with death.</p>
+          </sp>
+          <sp n="194" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1054-1062">
+            <speaker>MERCURY</speaker>
+            <p>Resolutions and expressions, in truth, such as these of thine, one may bear from maniacs. For in what point doth his fate fall short of insanity<ref n="34.1" target="#app-tlg003-fn-34.1"/> ? What doth it abate from ravings ? But do ye then at any rate, that sympathise with him in his sufferings, withdraw hence speedily some whither from this spot, lest the harsh bellowing of the thunder smite you with idiotcy.</p>
+          </sp>
+          <sp n="195" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1063-1070">
+            <speaker>CHORUS</speaker>
+            <p>Utter and advise me to something else, in which too thou mayest prevail upon me ; for in this, be sure, thou hast intruded a proposal not to be borne. How is it that thou urgest me to practise baseness ? Along with him here I am willing to endure what is destined, for I have learned to abhor traitors ; and there is no evil, which I hold in greater abomination.</p>
+          </sp>
+          <sp n="196" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1071-1079">
+            <speaker>MERCURY</speaker>
+            <p>Well then, bear in mind the things of which I forewarn you : and do not, when ye have been caught in the snares of Atè, throw the blame ou fortune, nor ever at any time say that Jove cast you into unforeseen calamity: no indeed, but, ye your ownselves: for well aware, and not on a sudden, nor in ignorance, will ye be entangled by your senselessness in an impervious net of Atè.</p>
+          </sp>
+          <stage>Exit MERCURY.</stage>
+          <sp n="197" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1080-1093">
+            <speaker>PROMETHEUS</speaker>
+            <p><milestone unit="card" n="1080" resp="Smyth"/>And verily in deed and no longer in word doth the earth
+
+<pb n="35"/>
+
+
+
+ heave, and the roaring echo of thunder rolls bellowing by us; and deep blazing wreaths of lightning are glaring, and hurricanes whirl the dust; and blasts of all the winds are leaping forth, shewing one against the other a strife of conflict gusts ; and the firmament is embroiled with the deep<ref n="35.1" target="#app-tlg003-fn-35.1"/>. Such is this onslaught that is clearly coming upon me from Jove, a cause for terror. O dread majesty of my mother Earth, O aether that diffusest thy common light, thou beholdest the wrongs I suffer.
+
+</p>
+          </sp>
+
+          </div></body><back><div type="apparatus"><head>Buckley's notes</head><listApp type="footnotes"><app n="1.1" xml:id="app-tlg003-fn-1.1"><note>1 Lucian, in his dialogue entitled <title>Prometheus</title>, or <title>Caucasus</title>, has given occasional imitations of passages in this play, not, however, sufficient to amount to a paraphrase, as Dr. Blomfield asserted. Besides, as Lucian lays the scene at Caucasus, he would rather seem to have had the <title>Prometheus solitus</title> in mind. (See <bibl>Schutz, Argum.</bibl>) But the ancients commonly made Caucasus the seat of the punishment of Prometheus, and, as Aeschylus is not over particular in his geography, it is possible that he may be not altogether consistent with himself. Lucian makes no mention of Strength and Force, but brings in Mercury at the beginning of the dialogue. Moreover, Mercury is represented in an excellent humour, and rallies Prometheus good-naturedly upon his tortures. Thus § 6, he says, <quote xml:lang="grc">εὖ ἔχει. καταπτήσεται ἤδη καὶ ὁ ἀετὸς ἀποκερω̃ν τὸ ἦπαρ, ὡς πάντα ἔχοις ἀντὶ τη̃ς καλη̃ς και εὐμηχάνου πλαστικῆς.</quote> In regard to the place where Prometheus was bound, the scene doubtless represented a ravine between two precipices rent from each other, with a distant prospect of some of the places mentioned in the wanderings of Io. (<quote xml:lang="lat">See Schutz, ibid.</quote>) But as the whole mention of Scythia is an anachronism, the less said on this point the better. Compare, however, the following remarks of Humboldt, Cosmos, vol. ii. p. 140, "The legend of Prometheus, and the unbinding the chains of the fire-bringing Titan on the Caucasus by Hercules in journeying eastward—the ascent of Io from the valley of the Hybrites—[See Griffiths' note on v. 717, on <quote xml:lang="grc"><l>ὑβριστὴς ποταμὸς</l>,</quote> which must be a proper name.]—towards the Caucasus; and the myth of Phryxus and Helle,—all point to the same path on which Phoenician navigators had earlier adventured."</note></app><app n="2.1" xml:id="app-tlg003-fn-2.1"><note>1 Dindorf, in his note, rightly approves the elegant reading <quote xml:lang="grc">ἄβροτον</quote> (= <quote xml:lang="grc">ἁπάνθρωπον</quote>) in lieu of the frigid <quote xml:lang="grc">ἄβατον.</quote> See Blomf. and Burges. As far as this play is concerned, the tract was not actually impassable, but it was so to mortals.</note></app><app n="2.2" xml:id="app-tlg003-fn-2.2"><note>2 <quote xml:lang="grc">λεωργὸς</quote> = <quote xml:lang="grc">ῥαδιου̃ργος, πανου̃ργος, κακου̃ργος.</quote> Cf. Liddell and Linwood, s. v. The interpretation and derivation of the etym. magn. <quote xml:lang="grc"><l>ὁ τω̃ν ἀνθρώπων πλάστης</l>,</quote> is justly rejected by Dindorf, who remarks that Aeschylus paid no attention to the fable respecting Prometheus being the maker of mankind.</note></app><app n="2.3" xml:id="app-tlg003-fn-2.3"><note>3 The epithet <quote xml:lang="grc">παντέχνου,</quote> which might perhaps be rendered <gloss xml:lang="eng">art-full</gloss>, is explained by v. 110 and 254.</note></app><app n="2.4" xml:id="app-tlg003-fn-2.4"><note>4 See Jelf, Gk. Gr. § 720, 2d.</note></app><app n="2.5" xml:id="app-tlg003-fn-2.5"><note>5 There seems little doubt that <quote xml:lang="grc">εὐωριάζειν</quote> is the right reading. Its ironical force answers to Terence's <quote xml:lang="lat">probe curasti.</quote></note></app><app n="2.6" xml:id="app-tlg003-fn-2.6"><note>6 I have spelt Sire in all places with a capital letter, as Jove is evidently meant. See my note on v. 49.</note></app><app n="2.7" xml:id="app-tlg003-fn-2.7"><note>7 This is not a mere zeugma, but is derived from the supposition that sight was the chief of the senses, and in a manner included the rest. (Cf. Plato Tim. p. 533, C. D.) See the examples adduced by the commentators: Schrader on Musaeus 5, and Boyes, Illustrations to Sept. c. Th. 98. Shakespeare has burlesqued this idea in his exquisite buffoonery, <cit><bibl><title xml:lang="eng">Midsummer Night's Dream</title>, act v. sc. 1.</bibl>  <quote xml:lang="eng"><l>Pyramus. I see a voice: now will I to the chink,</l>
+  <l>To spy an I can hear my Thisby's face.</l></quote></cit></note></app><app n="3.1" xml:id="app-tlg003-fn-3.1"><note>1 <cit><bibl>Claudian de rapt. Pros. II. 363.</bibl> <quote xml:lang="lat">Stellantes nox picta sinus</quote></cit>. See on Soph. Trach. 94.</note></app><app n="3.2" xml:id="app-tlg003-fn-3.2"><note>2 i. e. <gloss>having no rest</gloss>. <cit><bibl>Soph. Oed. Col. 19.</bibl> <quote xml:lang="grc"><l>κω̃λα κάμψον του̃δ᾽ ἐπ ἀξέστου πέτρου</l></quote></cit>.</note></app><app n="3.3" xml:id="app-tlg003-fn-3.3"><note>3 The difficulties of this passage have been increased by no one of the commentators perceiving the evident opposition between <quote xml:lang="grc">θεοὶ</quote> and <quote xml:lang="grc">Ζεύς.</quote> As in the formula <quote xml:lang="grc"><l>ὦ Ζευ̃ καὶ θεοὶ</l>,</quote> (cf. Plato Protag. p. 193, E.; Aristoph. Plut. I. with Bergler's note; Julian Caes. pp. 51, 59. 76; Dionys. Hal. <pb/> A. R. II. p. 80. 32—81, 20, ed. Sylb.) so, from the time of Homer downwards, we find <quote xml:lang="grc">Ζεὺς</quote> constantly mentioned apart from the other gods (cf. Il. Ι. 423. 494), and so also with his epithet <quote xml:lang="grc">πατήρ,</quote> as in v. 4, 17, 20, etc. (<cit><bibl>Eustath. on Il. T. I., p. 111, 30,</bibl> <quote xml:lang="grc">ὅτι Ζεὺς ἀλλαχου̃ μὲν ἁπλω̃ς πατὴρ ἐλεχθη.</quote></cit>) There is evidently, therefore, the opposition expressed in the text: <quote xml:lang="eng">'tis not for the other gods (i. e. <foreign xml:lang="grc">τοῖς ἄλλοις θεοῖς</foreign>) to rule, but for Jove alone.</quote> This view was approved, but not confirmed, by Paley.</note></app><app n="4.1" xml:id="app-tlg003-fn-4.1"><note>1 See Dindorf.</note></app><app n="4.2" xml:id="app-tlg003-fn-4.2"><note>2 Paley well observes that there is no objection to this interpretation, for if Prometheus could endure the daily gnawing of his entrails by the vulture, the rivets wouldn’t put him to much trouble. Lucian, § 6, is content with fastening his hands to the two sides of the chasm.</note></app><app n="5.1" xml:id="app-tlg003-fn-5.1"><note>1 <quote xml:lang="grc">τύχης</quote> is retained by Dindorf, but <quote xml:lang="grc">τέχνης</quote> is defended by Griffiths and Paley. I think, with Burges, that it is a gloss upon <quote xml:lang="grc">Προμηθέως.</quote></note></app><app n="5.2" xml:id="app-tlg003-fn-5.2"><note>2 So <cit><bibl>Milton, <title xml:lang="eng">P. L</title>. iv. 165.</bibl> <quote xml:lang="eng"><l>Cheer'd with the grateful smell old Ocean smiles</l></quote></cit>. <seg type="citation"><seg type="bibliographic-reference">Lord Byron (opening of the <quote xml:lang="eng">Giaour</quote>):</seg> <quote xml:lang="eng"><l>There mildly dimpling Ocean's cheek</l>
+  <l>Reflects the tints of many a peak, </l>
+  <l>Caught by the laughing tides that lave </l>
+  <l>Those Edens of the eastern wave</l>.</quote></seg></note></app><app n="6.1" xml:id="app-tlg003-fn-6.1"><note>1 Literally <gloss>filling a rod,</gloss> <quote xml:lang="grc">πλήρωτος</quote> here being active. Cf. <cit><bibl>Agam. 361,</bibl> <quote xml:lang="grc"><l>ἄτης παναλώτου</l></quote></cit>. <seg type="citation"><bibl>Choeph. 296,</bibl> <quote xml:lang="grc"><l>παμφθάρτῳ μόρῳ</l>.</quote> Pers. 105, <quote xml:lang="grc"><l>πολέμους πυργoδαΐκτoυς</l></quote></seg>. See also Blomfield, and Porson on <bibl>Hes. 1117</bibl>, <quote xml:lang="grc">νάρθηξ</quote> is <gloss xml:lang="lat">ferula</gloss> or <quote xml:lang="eng">fennel-giant,</quote> the pith of which makes excellent fuel. Blomfield quotes <cit><bibl>Proclus on Hesiod, Op. 1, 52,</bibl> <quote xml:lang="eng">the <term>νάρθηξ</term> preserves flame excellently, having a soft pith inside, that nourishes, but cannot extinguish the flame</quote></cit>. For a strange fable connected with this theft, see <bibl>Aelian Hist. An VI. 51</bibl>.</note></app><app n="6.2" xml:id="app-tlg003-fn-6.2"><note>2 On the preternatural scent supposed to attend the presence of a deity, cf. <bibl>Eur. Hippol. 1391</bibl>, with Monk's note, <bibl>Virg. Aen. I. 403</bibl>, and La Cerda. See also Boyes's Illustrations.</note></app><app n="6.3" xml:id="app-tlg003-fn-6.3"><note>3 On <quote xml:lang="grc">δὴ</quote> cf. Jelf, Gk. Gr. § 723, 2.</note></app><app n="7.1" xml:id="app-tlg003-fn-7.1"><note>1 Elmsley’s reading, <quote xml:lang="grc">πέτρᾳ .... τᾳ̃δε,</quote> is preferred by Dindorf, and seems more suitable to the passage. But if we read <quote xml:lang="grc">ταĩσδε,</quote> it will come to the same thing, retaining <quote xml:lang="grc">πέτραις.</quote></note></app><app n="7.2" xml:id="app-tlg003-fn-7.2"><note>2 Surely we should read this sentence interrogatively, as in <cit><bibl>v. 99.</bibl> <quote xml:lang="grc"><l>πη̃ ποτε μόχθων χρὴ τέρματα τω̃νδ᾽ ἐπιτεĩλαι ;</l></quote> </cit>although the editions do not agree as to that passage. So Burges.</note></app><app n="8.1" xml:id="app-tlg003-fn-8.1"><note>1 <quote xml:lang="lat">Nominativus Pendens.</quote> <cit><bibl>Soph. Antig. 259,</bibl> <quote xml:lang="grc"><l>λόγοι δ᾽ ἐν ἀλλήλοισιν ἐρρόθουν κακοι, φύλαξ ἐλέγχων φύλακα</l></quote></cit>, where see Wunder, and Elmsley on Eur. Heracl. 40. But it is probably only the <quote xml:lang="grc">σχη̃μα καθ᾽ ὅλον καὶ μέρος,</quote> on which see Jelf, Gk. Gr. § 478, and the same thing takes place with the accusative, as in <bibl>Antig. 21, sq.</bibl> <bibl>561</bibl>. See Erfurdt on 21.</note></app><app n="10.1" xml:id="app-tlg003-fn-10.1"><note>1 See Linwood's Lexicon, s. v. <quote xml:lang="grc">ἀμείβω,</quote> whose construing I have followed.</note></app><app n="11.1" xml:id="app-tlg003-fn-11.1"><note>1 Cf. <cit><bibl>Virg. Aen. I. 167,</bibl> <quote xml:lang="lat">Intus aquae dulces, vivoque sedilia saxo</quote></cit>. <quote xml:lang="eng">
+  <l>The rudest habitation, ye might think</l>
+  <l>That it had sprung from earth self-raised, or grown </l>
+  <l>Out of the living rock</l>.</quote> <cit><bibl>Wordsworth's <title>Excursion</title>, Book vi.</bibl></cit> Compare a most picturesque description of Diana's cave, in <bibl>Apul. Met. II. p. 116</bibl>; <seg type="bibliographic-reference">Elm. <quote xml:lang="eng">Telemachus,</quote> Book I.</seg>; <seg type="bibliographic-reference"><quote xml:lang="eng">Undine,</quote> ch. viii.</seg>; <seg type="bibliographic-reference">Lane's <quote xml:lang="eng">Arabian Nights',</quote> vol. iii. p. 385</seg>.</note></app><app n="12.1" xml:id="app-tlg003-fn-12.1"><note>1 Although Dindorf has left <quote xml:lang="grc">ΩΚΕΑΝΟΣ</quote> before the lines beginning with <quote xml:lang="grc">οὐ δη̃τα,</quote> yet, as he in his notes, p. 54. approves of the opinion of Elmsley (to which the majority of critics assent), I have continued them to Prometheus. Dindorf (after Burges) remarks that the particles <quote xml:lang="grc">ου δη̃τα</quote> deceived the copyists, who thought that they pointed to the commencement of a new speaker's address. He quotes <bibl>Soph. Oed. C. 433</bibl>; <bibl>Eur. Alcest. 555</bibl>; <bibl>Heracl. 507, sqq.</bibl>, where it is used as a continuation of a previous argument, as in the present passage.</note></app><app n="12.2" xml:id="app-tlg003-fn-12.2"><note>2 It has been remarked that Aeschylus had Pindar in mind, see <bibl>Pyth. I. 31</bibl>, and <bibl>VIII. 20</bibl>. On this fate of Enceladus cf. <bibl>Philostrat. de V. Apoll. V. 6</bibl>; <bibl>Apollodorus I.</bibl>; <bibl>Hygin. Fab. 152</bibl>; and for poetical descriptions, <cit><bibl>Cornel. Severus Aetna, 70,</bibl> <quote xml:lang="lat">Gurgite Trinacrio morientem Jupiter Aetna obruit Enceladum, vasti qui pondere montis Aestuat, et patulis exspirat faucibus ignes</quote></cit>. <bibl>Virg. Aen. III. 578</bibl>;  <bibl>Valer. Flacc. II. 24</bibl>;  <seg type="bibliographic-reference">Ovid. Met. V. Fab. V. 6;  <bibl>Claudian, de raptu Pros. I. 155</bibl>;  <bibl>Orph. Arg. 1256</bibl>. Strabo, 1. p. 42</seg>, makes Hesiod acquainted with these eruptions. (See Goettling on <bibl>Theog 821</bibl>.) But Prometheus here utters a prophecy concerning an eruption that really took place during the life of Aeschylus, Ol. 75, 2, B.C. 479. Cf. <bibl>Thucydides III. 116 </bibl>; Cluver, Sicil. Antig. p. 104, and Dindorf's clear and learned note. There can be little doubt but Enceladus and Typhon are only different names for the same monster. Burges has well remarked the resemblance between the Egyptian Typho and the Grecian, and considers them both as <quote xml:lang="eng">two outward forms of one internal idea, representing the destructive principle of matter opposed to the creative.</quote> I shall refer the reader to Plutarch's entertaining treatise on Isis and Osiris: but to quote authorities from Herodotus down to the Apologetic Fathers, would be endless.</note></app><app n="13.1" xml:id="app-tlg003-fn-13.1"><note>1 I think, notwithstanding the arguments of Dindorf, that <quote xml:lang="grc">ὀργῆς νοσούσης</quote> means <gloss xml:lang="eng">a mind distempered</gloss>, and that <quote xml:lang="grc">λόγοι</quote> mean <gloss xml:lang="eng">arguments, reasonings</gloss>. Boyes, who always shows a poetical appreciation of his author, aptly quotes <seg type="citation"><seg type="bibliographic-reference">Spenser's <quote xml:lang="eng">Fairy Queen,</quote> b. 2, c. 8, st. 26.</seg> <quote xml:lang="eng"><l>Words well dispost, </l>
+  <l>Have secrete powre t' appease inflamed rage.</l></quote> And <quote xml:lang="eng">Samson Agonistes</quote></seg>: <quote xml:lang="eng"><l>Apt words have power to swage </l>
+  <l>The tumours of a troubled mind.</l></quote> The reading of Plutarch, <quote xml:lang="grc">ψυχη̃ς</quote> appears to be a mere gloss.</note></app><app n="13.2" xml:id="app-tlg003-fn-13.2"><note>2 <quote xml:lang="lat">Intellige audaciam prudentiâ conjunctam.</quote> Blomfield.</note></app><app n="14.1" xml:id="app-tlg003-fn-14.1"><note>1 <quote xml:lang="grc">αἰχμὰ</quote> is rendered <gloss xml:lang="lat">indoles</gloss> by Paley (see on <bibl>Ag. 467</bibl>.) Linwood by <quote xml:lang="eng">authority,</quote> which is much nearer the truth, as the spear was anciently used for the sceptre. Mr. Burges opportunely suggests Pindar's <quote xml:lang="grc">ἒγχος ζάκοτον,</quote> which he gives to Jupiter, <bibl>Nem. vi. 90</bibl>.</note></app><app n="14.2" xml:id="app-tlg003-fn-14.2"><note>2 Asia is here personified.</note></app><app n="14.3" xml:id="app-tlg003-fn-14.3"><note>3 All commentators, from the scholiast downwards, are naturally surprised at this mention of Arabia, when Prometheus is occupied in describing the countries bordering on the Euxine. Burges conjectures <quote xml:lang="grc">Ἀβάριος,</quote> which he supports with considerable learning. But although the name <quote xml:lang="grc">Ἀβάριδες</quote> (mentioned by Suidas) might well be given to those who dwelt in unknown parts of the earth, from the legendary travels of Abaris with his arrow, yet the epithet <quote xml:lang="grc">α̃ρειον α̃νθος</quote> seems to point to some really existing nation, while <quote xml:lang="grc">Ἀβάριες</quote> would rather seem proverbial. Till then we are more certain, Aeschylus must still stand chargeable with geographical inconsistency.</note></app><app n="15.1" xml:id="app-tlg003-fn-15.1"><note>1 I have followed Burges and Dindorf, although the latter retains <quote xml:lang="grc">ἀκαμαντοδέτοις</quote> in his text.</note></app><app n="15.2" xml:id="app-tlg003-fn-15.2"><note>2 Why Dindorf should have adopted Hermann's frigid <quote xml:lang="grc">ὑποστεγάζει,</quote> is not easily seen. The reader will however find Griffith's foot-note well deserving of inspection.</note></app><app n="15.3" xml:id="app-tlg003-fn-15.3"><note>3 On <quote xml:lang="grc">προυσελούμενον,</quote> see Dindorf.</note></app><app n="15.4" xml:id="app-tlg003-fn-15.4"><note>4 Among the mythographi discovered by Maii, and subsequently edited by Bode, the reader will find some allegorical explanations of these benefits given by Prometheus. See <bibl>tMyth. primus 1. 1</bibl>, and <bibl>tertius 3, 10, 91</bibl>. They are, however, little else than compilations from the commentary of Servius on Virgil, and the silly, but amusing, mythology of Fulgentius. On the endowment of speech and reason to men by Prometheus, cf. <bibl>Themist. Or. xxvi. p. 323, C. D.</bibl> and <bibl>xxvii. p. 338, C. ed. Hard.</bibl>; and for general illustrations, the notes of Wasse on Sallust, Cat. sub init.</note></app><app n="15.5" xml:id="app-tlg003-fn-15.5"><note>5 Brick-building is first ascribed to Euryalus and Hyperbius, two brothers at Athens, by <bibl>tPliny, H. N. vii. 56</bibl>t, quoted by Stanley. After caves, huts of beams, filled in with turf-clods, were probably the first dwellings of men. See Mallet's <title xml:lang="eng">Northern Antiquities</title>, p. 217, ed. Bohn. This whole passage has been imitated by <bibl>Moschion apud Stob. Ecl. Phys I. 11</bibl>, whilst the early reformation of men has ever been a favourite theme for poets. Cf. Eurip. Suppl. 200 sqq.; Manilius I. 41, sqq.; and Bronkhus. on <bibl>Tibull. I. 3, 35</bibl>.</note></app><app n="16.1" xml:id="app-tlg003-fn-16.1"><note>1 Cf. <seg type="citation"><bibl>Apul. de Deo Soer. § II. ed. meae</bibl>, <quote xml:lang="lat">quos probe callet, qui signorum ortus et obitus comprehendit</quote></seg>, <cit> <bibl>Catullus (in a poem imitated from Callimachus) carm. 67, 1.</bibl> <quote xml:lang="lat">Omnia qui magni dispexit lumina mundi, Qui stellarum ortus comperit atque obitus</quote></cit>. See on <bibl>Agam. 7</bibl>.</note></app><app n="16.2" xml:id="app-tlg003-fn-16.2"><note>2 On the following discoveries consult the learned and entertaining notes of Stanley.</note></app><app n="16.3" xml:id="app-tlg003-fn-16.3"><note>3 <quote xml:lang="grc">ἤγαγον φιληνίους,</quote> i. e. <quote xml:lang="grc">ὤστε φιληνίους εἶναι.</quote></note></app><app n="16.4" xml:id="app-tlg003-fn-16.4"><note>4 See the elaborate notes of Blomfield and Burges, from whence all the other commentators have derived their information. <quote xml:lang="grc">Κράσις</quote> is what Scribonius Largus calls <gloss xml:lang="lat">compositio</gloss>. Cf. Rhodii Lexicon Scribon. p. 364—5; Serenus Sammonicus <term xml:lang="lat">synthesis</term>. The former writer observes in his preface, p. 2, <quote xml:lang="lat">est enim haec pars (compositio, scilicit) medicinae ut maxime necessaria, ita certe antiquissima, et ob hoc primum celebrata atque illustrata. Siquidem verum est, antiques herbis ac radicibus earum corporis vitia curasse.</quote></note></app><app n="17.1" xml:id="app-tlg003-fn-17.1"><note>1 <cit><bibl>Apul. de Deo Socr. § 20, ed. meae.</bibl> <quote xml:lang="lat">ut videmus plerisque usu venire, qui nimia ominum superstitione, non suopte corde, sed alterius verbo, reguntur: et per angiporta reptantes, consilia ex alienis vocibus colligunt</quote></cit>. Such was the voice that appeared to Socrates. See <bibl>Plato Theog. p. 11. A</bibl>. <bibl>Xenoph. Apol. 12</bibl>; <bibl>Proclus in Alcib. Prim. 13, p. 41, Creuz</bibl>. See also Stanley's note.</note></app><app n="17.2" xml:id="app-tlg003-fn-17.2"><note>2 On these augurial terms see Abresch.</note></app><app n="17.3" xml:id="app-tlg003-fn-17.3"><note>3 Although the Vatican mythologist above quoted observes of Prometheus, <quote xml:lang="lat">deprehendit praeterea rationem fulminum, et hominibus indicavit</quote>— I should nevertheless follow Stanley nnd Blomfield, in understanding these words to apply to the omens derived from the flame and smoke ascending from the sacrifices.</note></app><app n="18.1" xml:id="app-tlg003-fn-18.1"><note>1 Cf. Herodot. I. 91, quoted by Blomfield: <quote xml:lang="grc">τὴν πεπρωμένην μοίρην ἀδύνατά ἐστι ἀποφγέειν καὶ τῷ θεῷ.</quote> On this Pythagorean notion of Aeschylus see Stanley.</note></app><app n="18.2" xml:id="app-tlg003-fn-18.2"><note>2 Or, <quote xml:lang="eng">in pleasure at the nuptials.</quote> See Linwood. Burges: <quote xml:lang="eng">for the one-ness of marriage.</quote></note></app><app n="19.1" xml:id="app-tlg003-fn-19.1"><note>1 No clue is given as to the form in which Io was represented on the stage. In v. 848, the promise <quote xml:lang="grc"><l>ἐνταυ̃θα δή σε Ζεὺς τίθησιν ἔμφρονα</l></quote> does not imply any bodily change, but that Io laboured under a mental delusion. Still the mythologists are against us, who agree in making her transformation complete. Perhaps she was represented with horns, like the Egyptian figures of Isis, but in other respects as a virgin, which is somewhat confirmed by <cit><bibl>v. 592,</bibl> <quote xml:lang="grc"><l>κλύεις φθέγμα τα̃ς βούκερω παρθένου;</l></quote></cit></note></app><app n="19.2" xml:id="app-tlg003-fn-19.2"><note>2 <quote xml:lang="eng">gad-fly</quote> or <quote xml:lang="eng">brize.</quote> See the commentators.</note></app><app n="19.3" xml:id="app-tlg003-fn-19.3"><note>3 On the discrepancies of reading, see Dind. With the whole passage compare <cit><bibl>Nonnus, Dionys. III. p. 62, 2. </bibl>
+  <quote xml:lang="grc"><l>ταυροφυὴς ὅτε πόρτις αμειβομένοιο προσώπου</l>
+    <l>εἰς ἀγέλην ἀγραυλος ἐλαύνετο σύννομος Ἰώ. </l>
+    <l>καὶ δαμάλης ἄγρυπνον ἐθήκατο βουκόλον Ἥρη </l>
+    <l>ποικίλον ἀπλανέεσσι κεκασμένον Ἄργον ὀπωπᾶις, </l>
+    <l>Ζηνὸς ὀπιπευτῆρα βοοκραίρων ὑμεναίων· </l>
+    <l>Ζηνὸς ἀθηήτοιο καὶ ἐς νομὸν ἦτε κούρη, </l>
+    <l>ὀφθαλμοὺς τρομέουσα πολυγλήνοιο νομίος. </l>
+    <l>γυιοβόρῳ δὲ μύωπι χαρασσομένη δέμας Ἰώ </l>
+    <l>Ἰονίης [ἄλος] οίδμα κατέγραφε φοιτάδι χηλῇ. </l>
+    <l>ἦλθε καὶ εἰς Ἄιγυπτον</l></quote> </cit>
+    This writer, who constantly has the Athenian dramatists in view, pursues the narrative of Io's wanderings with an evident reference to Aeschylus. See other illustrations from the poets in Stanley's notes.</note></app><app n="19.4" xml:id="app-tlg003-fn-19.4"><note>4 The ghost of Argus was doubtless whimsically represented, but probably without the waste of flour that is peculiar to modern stage spectres. Perhaps, as Burges describes, <quote xml:lang="eng">a mute in a dress resembling a peacock’s tail expanded, and with a Pan's pipe slung to his side, which ever and anon he seems to sound; and with a goad in his hand, mounted at one end with a representation of a hornet or gad-fly.</quote> But this phantom, like Macbeth’s dagger, is supposed to be in the mind only. With a similar idea Apuleius, Apol. p. 315, ed. Elm. invokes upon Aemilianus in the following mild terms: <quote xml:lang="lat">At .... semper obvias species mortuorum, quidquid umbrarum est usquam, quidquid lemurum, quidquid manium, quidquid iarvarum oculis tuis oggerat: omnia noctium occursacula, omnia bustorum formidamina. omnia sepulehrorum terriculamenta, a quibus tamen a;vo emerito haud longe abes.</quote></note></app><app n="20.1" xml:id="app-tlg003-fn-20.1"><note>1 I have followed Dindorf's elegant emendation. See his note, and Blomf. on Ag. 1.</note></app><app n="21.1" xml:id="app-tlg003-fn-21.1"><note>1 After the remarks of Dindorf and Paley, it seems that the above must be the sense, whether we read <quote xml:lang="grc">ὦν</quote> with Hermann, or take <quote xml:lang="grc">ὡς</quote> for <quote xml:lang="grc">ἢ ὡς</quote> with the above mentioned editor.</note></app><app n="21.2" xml:id="app-tlg003-fn-21.2"><note>2 Paley remarks that <quote xml:lang="grc">τὰς πολ. τύχας</quote> is used in the same manner as in <cit><bibl>Pers. 453,</bibl> <quote xml:lang="grc">φθαρέντες</quote></cit> = <gloss xml:lang="eng">shipwrecked</gloss>, (see his note,) or <quote xml:lang="eng">wandering.</quote> He renders the present passage, <quote xml:lang="eng">the adventures of her long wanderings.</quote></note></app><app n="22.1" xml:id="app-tlg003-fn-22.1"><note>1 With the earlier circumstances of this narrative compare the beautiful story of Psyche in <bibl>Apuleius, Met. IV. p. 157, sqq. Elm.</bibl></note></app><app n="22.2" xml:id="app-tlg003-fn-22.2"><note>2 Cf. <cit><bibl>Ag, 217,</bibl> <quote xml:lang="grc">ἐπεὶ δ᾽ἀνάγκας ἔδυ λέπαδνον.</quote></cit></note></app><app n="22.3" xml:id="app-tlg003-fn-22.3"><note>3 <quote xml:lang="grc">κρήνην</quote> is the elegant conjecture of Canter, approved by Dindorf. In addition to the remarks of the commentators, the tradition preserved by <bibl>Pausanias II. 15</bibl>, greatly confirms this emendation. He remarks, <quote xml:lang="grc">θέρους δὲ ἀνὰ σφίσι ἐστὶ τὰ ῥεὑματα, πλὴν τω̃ν ἐν Λέρνη̣.</quote> It was probably somewhat proverbial.</note></app><app n="23.1" xml:id="app-tlg003-fn-23.1"><note>1 I shall not attempt to enter into the much-disputed geography of Io's wanderings. So much has been said, and to so little purpose, on this perplexing subject, that to write additional notes would be only to furnish more reasons for doubting.</note></app><app n="23.2" xml:id="app-tlg003-fn-23.2"><note>2 Probably the Kurban. Schutz well observes that the words <quote xml:lang="grc">οὐ ψευδώνυμον</quote> could not be applied to an epithet of the poet's own creation. Such, too, was Humboldt's idea. See my first note on this play.</note></app><app n="24.1" xml:id="app-tlg003-fn-24.1"><note>1 See Schutz and Griffiths.</note></app><app n="25.1" xml:id="app-tlg003-fn-25.1"><note>1 Wrapped in mystery as the liberation of Prometheus is in this drama, it may be amusing to compare the following extracts from the Short Chronicle prefixed to <cit><bibl>Sir I. Newton's <title xml:lang="eng">Chronology</title>.</bibl> <quote xml:lang="eng"><p>968. B.C. Sesak, having carried on his victories to Mount Caucasus. leaves his nephew Prometheus there, to guard the pass, etc.</p><p>937. The Argonautic expedition. Prometheus leaves Mount Caucasus, being set at liberty by Hercules, etc</p></quote></cit>.-Old Translator.</note></app><app n="25.2" xml:id="app-tlg003-fn-25.2"><note>2 Stanley compares <cit><bibl>Pindar, Isth. vii. 33.</bibl> <quote xml:lang="grc"><l part="F">—πεπρωμένον ἦν φέρ-</l>
+  <l>τερον γόνον [οἱ] ἄνακτα πατρὸς τεκεῖν</l></quote></cit>. And <bibl>Apoll. Rhod. iv. 201</bibl>. Also the words of Thetis herself in <cit><bibl>Nonnus, Dionys. xxxiii. 356.</bibl> <quote xml:lang="grc"><l>Ζεύς με πατὴρ ἐδίωκε καὶ ἤθελεν ἐς γάμον ἕλκειν,</l>
+    <l>εἰ μή μιν ποθέοντα γέρων ἀνέκοπτε Προμηθεύς,</l>
+    <l>θεσπίζων Κρονίωνος ἀρείονα παῖδα φυτεῦσαι</l>.</quote></cit></note></app><app n="26.1" xml:id="app-tlg003-fn-26.1"><note>1 <quote xml:lang="eng">These were: 1. Epaphus; 2. Lybia; 3. Belus ; 4. Danaus; 5. Hypermnestra ; 6. Abas; 7. Proetus; 8. Acrisius; 9. Danae; 10. Perseus ; 11. Electryon. 12. Alcmena; 13. Hercules.</quote> Blomfield.</note></app><app n="26.2" xml:id="app-tlg003-fn-26.2"><note>2 For two ways of supplying the lacuna in this description of Io's travels, see Dindorf and Paley.</note></app><app n="26.3" xml:id="app-tlg003-fn-26.3"><note>3 <quote xml:lang="eng">Being turned into stone. Such was the punishment of the fire-worshippers in the story of the first Lady of Baghdad. See Arabian Nights, Vol. I., p. 198. The mythico-geographical allusions in the following lines have been so fully and so learnedly illustrated, that 1 shall content myself with referring to the commentators.</quote></note></app><app n="27.1" xml:id="app-tlg003-fn-27.1"><note>1 See Linwood's Lexicon and Griffiths' note.</note></app><app n="27.2" xml:id="app-tlg003-fn-27.2"><note>2 There is still much doubt about the elision ἔσεσθ', εἰ. Others read
+the passage interrogatively. See Griffiths and Dindorf.</note></app><app n="28.1" xml:id="app-tlg003-fn-28.1"><note>1 This pun upon the name of Epaphus is preserved by <cit><bibl>Moschus II. 50.</bibl> <quote xml:lang="grc"><l>ἐν δ᾽ ἦν Ζεὺς, ἐπαφώμενος ἠρέμα χειρί θεείῃ </l>
+  <l>πόρτιος Ἰναχίης. τὴν ἑπταπόρῳ παρὰ Νείλῳ </l>
+  <l>ἐκ βόος εὐκεράοιο πάλιν μετάμειβε γυναῖκα</l></quote></cit>. and <cit><bibl>Nonnus, III. p. 62, 20</bibl> <quote xml:lang="grc"><l>ἔνθ' Ἔπαφον διὶ τίκτεν ἀκηρασίων ὅτι κόλπων </l>
+  <l>Ἰναχίης δαμάλης ἐπαφήσατο θεῖος ἀκοίτης </l>
+  <l part="I">χερσὶν ἐρωμανέεσσι</l>.</quote></cit></note></app><app n="28.2" xml:id="app-tlg003-fn-28.2"><note>2 There is much difficulty in this passage. Dindorf understands <quote xml:lang="grc">ἐκείνων</quote> (<quote xml:lang="lat">Aegypti filiorum</quote>), and so Paley, referring to his notes on <bibl>Ag. 938, Suppl. 437</bibl>. Mr. Jelf, Gk. Gr. § 696, Obs. 3, appears to take the same view. There does not, therefore, seem any need of alteration. On the other interpretation sometimes given to <quote xml:lang="grc">φθόνον ἴξει σωμἀτων</quote> see Linwood, v. <quote xml:lang="grc">φθόνος.</quote></note></app><app n="28.3" xml:id="app-tlg003-fn-28.3"><note>3 <quote xml:lang="grc">σφαγαι̃σι</quote> is rightly rendered <quote xml:lang="lat">in jugulo</quote> by Blomfield, after Ruhnk. <quote xml:lang="lat">Ep. Crit.</quote> I. p. 71. To the examples quoted add <cit><bibl>Apul. Met. I. p. 108,</bibl> <quote xml:lang="lat">per jugulum sinistrum capulotenus gladium totum ei demergit</quote></cit>, and <cit><bibl>p. 110,</bibl> <quote xml:lang="lat">jugulo ejus vulnus dehiscit in patorem</quote></cit>. The expression <quote xml:lang="grc">νυκτι­φρουρήτῳ θράσει</quote> is well illustrated by the words of <cit><bibl>Nonnus, l. c. p. 64, 17,</bibl> <quote xml:lang="grc"><l>καὶ κρυφίοις ξιφέεσσι σιδηροφόρων ἐπὶ λέκτρων ἄρσενα γυμνὸν ἄρηα κατεύνασε θῆλις ἐνυώ</l></quote></cit>.</note></app><app n="28.4" xml:id="app-tlg003-fn-28.4"><note>4 See Nonnus, l. c. <cit><bibl>Ovid. Ep. xiv. 51, sqq.</bibl> <quote xml:lang="lat"><l>Sed timor, et pietas crudelibus obstitit ausis:</l>
+  <l>Castaque mandatum dextra refugit opus</l></quote></cit>.</note></app><app n="29.1" xml:id="app-tlg003-fn-29.1"><note>1 On <quote xml:lang="grc">σφάκελος</quote> see Ruhnk. Tim. p. 123, and Blomfield.</note></app><app n="29.2" xml:id="app-tlg003-fn-29.2"><note>2 See Paley. α is never intensive.</note></app><app n="29.3" xml:id="app-tlg003-fn-29.3"><note>3 On this admonition, generally attributed to Pittacus, see Griffiths, and for a modern illustration in the miseries of Sir John Anvil (or Enville), Knt. the Spectator, No. 299.</note></app><app n="29.4" xml:id="app-tlg003-fn-29.4"><note>4 Paley would supply <quote xml:lang="grc">TruTinat</quote> to complete the metre.</note></app><app n="29.5" xml:id="app-tlg003-fn-29.5"><note>5 I have followed Griffiths.</note></app><app n="29.6" xml:id="app-tlg003-fn-29.6"><note>6 Dindorf would throw out <quote xml:lang="grc">ἄφοβος,</quote> Paley <quote xml:lang="grc">οὐ δέδια,</quote> remarking that the sense appears to require <quote xml:lang="grc">ὄτε.</quote></note></app><app n="30.1" xml:id="app-tlg003-fn-30.1"><note>1 i. e. possessing resources even among impossibilities. Cf. <cit><bibl>Antig. 360.</bibl> <quote xml:lang="grc"><l>ἀπορος ἐπ’οὐδὲν ἔρχεται</l></quote></cit>, and for the construction, Jelf, Gk. Gr § 381, 2. obs.</note></app><app n="30.2" xml:id="app-tlg003-fn-30.2"><note>2 I think Elmsley has settled the question in favour of <quote xml:lang="grc">τοι̃ον</quote> for <quote xml:lang="grc">olov.</quote></note></app><app n="31.1" xml:id="app-tlg003-fn-31.1"><note>1 <cit><quote xml:lang="eng">In Aeschylus we seem to read the vehement language of an old servant of exploded Titanism: with him Jupiter and the Olympians are but a new dynasty, fresh and exulting, insolent and capricious, the victory just gained and yet but imperfectly secured over the mysterious and venerable beings who had preceded, TIME, HEAVEN, OCEAN, EARTH and her gigantic progeny: Jupiter is still but half themarch of the world; his future fall is not obscurely predicted, and even while he reigns, a gloomy irresistible destiny controls his power.</quote> <bibl>Quart. Rev. xxviii. 416.</bibl></cit></note></app><app n="31.2" xml:id="app-tlg003-fn-31.2"><note>2 Uranus and Saturn. Cf. <bibl>Agam. 167 sqq.</bibl></note></app><app n="33.1" xml:id="app-tlg003-fn-33.1"><note>1 <cit><bibl>Milton, Samson Agon. Dalilah.</bibl> <quote xml:lang="eng">I see thou art implacable, more deaf To prayers than winds or seas</quote></cit>. <cit><bibl>Merchant of Venice, act iv. sc. I.</bibl> <quote xml:lang="eng">You may as well go stand upon the beach And bid the main flood bate his usual height</quote></cit>. See Schrader on <bibl>Musaeus, 320</bibl>.</note></app><app n="33.2" xml:id="app-tlg003-fn-33.2"><note>2 See Linwood's Lexicon. Cf. <cit><bibl>Nonnus, Dionys. II. p. 45, 22.</bibl> <quote xml:lang="grc"><l>δεσμὰ φυγὼν δολόμητις ὁμαρτήσειε Προμηθεὺς, </l>
+  <l>ἥπατος ἡβώοντος ἀφειδέα δαιτυμονῆα </l>
+  <l>οὐρανίης θρασὺν ὄρνιν ἔχων πομπῆα κελεύθου</l></quote></cit>.
+
+</note></app><app n="34.1" xml:id="app-tlg003-fn-34.1"><note>1 I have adopted Dindorfs emendation. See his note.</note></app><app n="35.1" xml:id="app-tlg003-fn-35.1"><note>1 How the cosmoramic effects here described were represented on the stage, it is difficult to say, but such descriptions are by no means rare iu the poets. Compare <bibl>Musaeus, 314, sqq.</bibl> <bibl>Lucan, I. 75 sqq.</bibl> and a multitude in the notes of La Cerda on <bibl>Virgil, Aen. I. 107</bibl>, and Barthius on <bibl>Claudian. Gigant. 31, sqq.</bibl> <bibl>Nonnus. Dionys. 1. p. 12</bibl>.</note></app></listApp></div></back></text></TEI>
