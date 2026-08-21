@@ -1,0 +1,627 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>The Rape of Helen, or The Origin of the Trojan War</title>
+        <author>Colluthus</author>
+        <editor role="translator">Henry Meen</editor>
+        <editor>Gregory Crane</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder>Schmidt Sciences</funder>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <idno type="filename">tlg4081.tlg001.meen1780-eng2.xml</idno>
+        <availability>
+          <p>Public Domain</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Colluthus</author>
+            <title xml:lang="eng">The Rape of Helen, or The Origin of the Trojan War</title>
+            <editor role="translator">Henry Meen</editor>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>J. Dodsley</publisher>
+              <date>1780</date>
+            </imprint>
+            <extent>Pages 303–323</extent>
+          </monogr>
+        </biblStruct>
+        <bibl>HathiTrust source scan: <ref target="https://hdl.handle.net/2027/njp.32101073248716">njp.32101073248716</ref></bibl>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='translation']/tei:lg/tei:l[@n='$1'])">
+          <p>This pointer pattern extracts an English verse line.</p>
+        </cRefPattern>
+      </refsDecl>
+      <editorialDecl>
+        <correction method="markup">
+          <p>The translation is extracted from HathiTrust OCR. Running heads, marginal numerals, catchwords, and unmistakable scan debris are excluded. Obvious OCR substitutions of f for long s are corrected to long s and logged separately; other spelling and punctuation are preserved.</p>
+        </correction>
+        <segmentation>
+          <p>English verse remains lineated and grouped by printed page. Page-level groups point to explicit approximate ranges in the Perseus Greek edition; no card milestones are supplied because that Greek edition contains none.</p>
+        </segmentation>
+      </editorialDecl>
+      <refsDecl>
+        <refState unit="line"/>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+        <language ident="grc">Ancient Greek</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-20" who="Gregory Crane">Extracted Henry Meen’s 1780 translation of Colluthus and converted it to CTS/EpiDoc TEI.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng">
+    <body>
+      <div type="translation" n="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2" xml:lang="eng">
+        <lg n="p303" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:1-12">
+          <pb n="303"/>
+          <l n="1" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">YE nymphs of Troy, for beauty fam'd, who trace</l>
+          <l n="2" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">From Xanthus' fertile ſtreams your ancient race,</l>
+          <l n="3" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Oft on whoſe ſandy banks your tires are laid,</l>
+          <l n="4" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And many a trinket which your hands have made,</l>
+          <l n="5" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">What time to Ida's hallow'd mount ye throng,</l>
+          <l n="6" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To join the feſtive choir in dance and ſong;</l>
+          <l n="7" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">No longer on your favourite banks repoſe,</l>
+          <l n="8" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But come, the judgment of the ſwain diſcloſe.</l>
+          <l n="9" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Say from what hills, to trackleſs deeps unknown,</l>
+          <l n="10" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Ruſh'd with impetuous zeal the daring clown;</l>
+          <l n="11" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Say to what end, with future ills replete,</l>
+          <l n="12" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">O'er diſtant oceans ſail'd a mighty fleet;</l>
+          <l n="13" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">What ſeas could this adventurous youth embroil,</l>
+          <l n="14" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Sow difcord's ſeeds o'er what diſaſtrous ſoil?</l>
+        </lg>
+        <lg n="p304" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:12-32">
+          <pb n="304"/>
+          <l n="15" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Say from what ſource aroſe the dire debate,</l>
+          <l n="16" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Which ſwains could end and Goddeſſes create</l>
+          <l n="17" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">What his deciſion? Of the Grecian dame</l>
+          <l n="18" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Who to the ſhepherd's ear convey'd the name</l>
+          <l n="19" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Speak, for ye ſaw, on Ida's ſtill retreat,</l>
+          <l n="20" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Judicial Paris ſtill his ſhepherd's ſeat;</l>
+          <l n="21" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Venus ye ſaw, the Graces' darling queen,</l>
+          <l n="22" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">As on her judge approv'd ſhe ſmil'd ſerene.</l>
+          <l n="23" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">What time Hæmonia's lofty mountains rung</l>
+          <l n="24" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">With hymeneal ſongs for Peleus ſung,</l>
+          <l n="25" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Officious Ganymede, at Jove's requeſt,</l>
+          <l n="26" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Supplied with ſparkling wine each welcome guest;</l>
+          <l n="27" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And all the Gods to Thetis' nuptials came,</l>
+          <l n="28" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Siſter of Amphitrite, honour'd dame.</l>
+          <l n="29" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Earth-ſhaking Neptune left his azure main,</l>
+          <l n="30" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And Jove ſupreme forſook his ſtarry plain :</l>
+          <l n="31" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">From Helicon, with odorous ſhrubs o'erſpread,</l>
+          <l n="32" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The Muſes' tuneful choir Apollo led.</l>
+          <l n="33" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Him Juno follow'd, wife of ſovereign Jove:</l>
+          <l n="34" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">With Harmony the ſmiling queen of Love</l>
+          <l n="35" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Haſten'd to join the Gods in Chiron's feſtive grove.</l>
+          <l n="36" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Cupid's full quiver o'er her ſhoulder thrown,</l>
+          <l n="37" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Perſuaſion follow'd with a bridal crown,</l>
+          <l n="38" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Minerva, though to nuptial rites a foe,</l>
+          <l n="39" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Came, but no helmet nodded o'er her brow.</l>
+        </lg>
+        <lg n="p305" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:33-51">
+          <pb n="305"/>
+          <l n="40" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Diana to the Centaur's grove reſorts,</l>
+          <l n="41" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And for one day forgets her rural ſports.</l>
+          <l n="42" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">His looſe locks ſhaking as the zephyrs play'd,</l>
+          <l n="43" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Not long behind convivial Bacchus ſtay'd.</l>
+          <l n="44" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">War's God, as when to Vulcan's dome he ſped,</l>
+          <l n="45" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">No ſpear his hand ſuſtain'd, no caſque his head,</l>
+          <l n="46" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Such now, without his helmet or his lance;</l>
+          <l n="47" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Smiling he look'd, and led the bridal dance.</l>
+          <l n="48" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But from theſe blissful ſcenes was Diſcord warn'd;</l>
+          <l n="49" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Peleus rejected her, and Chiron ſcorn'd.</l>
+          <l n="50" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">As by the gadfly ſtung, the heifer ſtrays</l>
+          <l n="51" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Far from its fields, through every devious maze;</l>
+          <l n="52" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus, ſtung with envy, Diſcord roam'd, nor ceas'd</l>
+          <l n="53" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her baneful arts to interrupt the feaſt.</l>
+          <l n="54" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Oft from her flinty bed ſhe rush'd amain,</l>
+          <l n="55" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Then ſtood, then ſunk into her ſeat again :</l>
+          <l n="56" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">With deſperate hand ſhe tore her ſnaky head,</l>
+          <l n="57" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And with a ſerpent-ſcourge ſhe laſh'd her flinty bed.</l>
+          <l n="58" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To dart the forky lightning, and command</l>
+          <l n="59" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">From hell's abyſs the Titans' impious band,</l>
+          <l n="60" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Jove from his throne with rebel-arm to wreſt,</l>
+          <l n="61" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Were projects form'd within the fury's breast.</l>
+          <l n="62" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But, though incens'd, ſhe dreaded Vulcan's ire,</l>
+          <l n="63" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Who forms Jove's bolt, and checks the raging fire.</l>
+        </lg>
+        <lg n="p306" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:52-71">
+          <pb n="306"/>
+          <l n="64" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her purpoſe changing, ſhe with rattling arms</l>
+          <l n="65" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Diſſenſion meditates and dire alarms;</l>
+          <l n="66" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">If haply clattering ſhields can ſtrike diſmay,</l>
+          <l n="67" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And from the nuptials drive the Gods away.</l>
+          <l n="68" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But Mars ſhe dreaded, oft in arms array'd,</l>
+          <l n="69" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And this new project with complacence weigh'd.</l>
+          <l n="70" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The burnish'd apples, rich with golden rind,</l>
+          <l n="71" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Growth of Heſperian gardens, ſtruck her mind.</l>
+          <l n="72" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Reſolv'd contention's baneful ſeeds to ſow,</l>
+          <l n="73" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She tore the blushing apple from its bough,</l>
+          <l n="74" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Graſp’d the dire ſource whence future battles ſprung,</l>
+          <l n="75" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And midſt the Gods the golden mischief flung.</l>
+          <l n="76" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The ſtately wife of Jove with wondering eyes</l>
+          <l n="77" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beheld, and wiſh'd to grasp the golden prize.</l>
+          <l n="78" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beauty's fair queen to catch the apple ſtrove;</l>
+          <l n="79" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For 'tis the prize of beauty and of love.</l>
+          <l n="80" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Jove mark'd the conteſt, and, to crush debate,</l>
+          <l n="81" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus counſel’d Hermes, who beſide him ſat:</l>
+          <l n="82" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Paris, perchance, from Priam ſprung, you know;</l>
+          <l n="83" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'His herds he grazes on mount Ida's brow,</l>
+          <l n="84" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And oft conducts them to the dewy meads,</l>
+          <l n="85" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Through which his ſtreams the Phrygian Xanthus leads:</l>
+          <l n="86" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Shew him yon prize, and urge him to declare</l>
+          <l n="87" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Which of theſe Goddeſſes he deems most fair;</l>
+        </lg>
+        <lg n="p307" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:72-90">
+          <pb n="307"/>
+          <l n="88" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'In whom, of all, his matchleſs ſkill can trace</l>
+          <l n="89" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'The cloſe-arch'd eyebrow and the roundeſt face,</l>
+          <l n="90" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'On ſuch a face, where bends the circling bow,</l>
+          <l n="91" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The golden apple, beauty's prize, beſtow.'</l>
+          <l n="92" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus ſpoke the ſire: the willing ſon obey'd,</l>
+          <l n="93" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And to their judge the Deities convey'd.</l>
+          <l n="94" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Each anxious fair her charms to heighten tries,</l>
+          <l n="95" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And dart new luſtre from her ſparkling eyes.</l>
+          <l n="96" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her veil aſide inſidious Venus flung;</l>
+          <l n="97" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Looſe from the claſp her fragrant ringlets hung;</l>
+          <l n="98" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She then in golden cauls each curl compreſs’d,</l>
+          <l n="99" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Summon'd her little Loves, and thus address'd :</l>
+          <l n="100" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Behold, my ſons, the hour of trial near !</l>
+          <l n="101" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Embrace, my Loves, and bid me baniſh fear.</l>
+          <l n="102" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">This day's deciſion will enhance my fame,</l>
+          <l n="103" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Crown beauty's queen, or ſink in endleſs ſhame.</l>
+          <l n="104" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Doubting I ſtand, to whom the ſwain may ſay,</l>
+          <l n="105" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Bear thou, moſt fair, the golden prize away.</l>
+          <l n="106" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Nurs'd was each Grace by Juno's foſtering hand;</l>
+          <l n="107" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And crowns and ſceptres ſhift at her command.</l>
+          <l n="108" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Minerva dictates in th' embattled field;</l>
+          <l n="109" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'And heroes tremble when ſhe ſhakes her shield.</l>
+          <l n="110" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Of all the Goddeſſes that rule above,</l>
+          <l n="111" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Far most defenceleſs is the queen of Love.</l>
+        </lg>
+        <lg n="p308" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:91-110">
+          <pb n="308"/>
+          <l n="112" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Without or ſpear or ſhield muſt Venus live;</l>
+          <l n="113" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'And crowns and ſceptres ſhe has none to give.</l>
+          <l n="114" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Yet why deſpair? though with no falchion grac'd,</l>
+          <l n="115" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Love's ſilken chain ſurrounds my ſlender waiſt.</l>
+          <l n="116" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'My bow this Ceſtus, this the dart I fling,</l>
+          <l n="117" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And with this Ceſtus I infix my ſting.</l>
+          <l n="118" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'My ſting infix'd renews the lover's pain,</l>
+          <l n="119" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And virgins languiſh, but revive again."</l>
+          <l n="120" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus to her Loves the roſy-finger'd queen</l>
+          <l n="121" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Told all her fears, and vented all her ſpleen :</l>
+          <l n="122" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To every word they lent a willing ear,</l>
+          <l n="123" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Round their fond mother clung, and ſtrove to cheer.</l>
+          <l n="124" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And now they reach mount Ida's graſſy ſteep,</l>
+          <l n="125" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Where youthful Paris ſeeds his father's ſheep :</l>
+          <l n="126" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">What time he tends them in the plains below,</l>
+          <l n="127" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Through which the waters of Anaurus flow,</l>
+          <l n="128" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Apart he counts his cattle's numerous ſtock,</l>
+          <l n="129" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Apart he numbers all his fleecy flock.</l>
+          <l n="130" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">A wild goat's ſkin, around his ſhoulders caſt,</l>
+          <l n="131" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Looſe fell and flow'd below his girded waist.</l>
+          <l n="132" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">A paſtoral ſtaff, which ſwains delight to hold,</l>
+          <l n="133" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">His roving herds protected and controll'd.</l>
+          <l n="134" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Accoutred thus, and warbling o'er his ſong,</l>
+          <l n="135" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">He to his pipe melodious pac'd along.</l>
+        </lg>
+        <lg n="p309" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:111-129">
+          <pb n="309"/>
+          <l n="136" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Unnoted oft, while he renews his lay,</l>
+          <l n="137" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">His flocks deſert him, and his oxen ſtray.</l>
+          <l n="138" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Swift to his bower retires the tuneful man,</l>
+          <l n="139" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To pipe the praiſe of Hermes and of Pan.</l>
+          <l n="140" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Sunk is each animal in dead repoſe;</l>
+          <l n="141" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">No dog around him barks, no heifer lows :</l>
+          <l n="142" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Echo alone rebounds through Ida's hills,</l>
+          <l n="143" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And all the air with ſounds imperfect fills.</l>
+          <l n="144" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The cattle, ſunk upon their verdant bed,</l>
+          <l n="145" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Cloſe by their piping lord repoſe their head.</l>
+          <l n="146" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beneath the ſhades which ſheltering thickets blend,</l>
+          <l n="147" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">When Paris' eye approaching Hermes ken'd,</l>
+          <l n="148" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Back he retires, with ſudden fear impreſs'd,</l>
+          <l n="149" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And shuns the presence of the heavenly gueſt;</l>
+          <l n="150" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To the thick ſhrubs his tuneful reed conveys,</l>
+          <l n="151" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And all unfinish'd leaves his warbled lays.</l>
+          <l n="152" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus winged Hermes to the ſhepherd ſaid,</l>
+          <l n="153" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Who mark'd the God's approach with ſilent dread :</l>
+          <l n="154" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Diſmiſs thy fears, nor with thy flocks abide;</l>
+          <l n="155" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">A mighty conteſt Paris muſt decide.</l>
+          <l n="156" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Haſte, judge announc'd; for whoſe deciſion wait</l>
+          <l n="157" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Three lovely females, of celestial ſtate.</l>
+          <l n="158" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Haſte, and the triumph of that face declare,</l>
+          <l n="159" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Which ſweetest looks, and faireſt midst the fair:</l>
+        </lg>
+        <lg n="p310" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:130-149">
+          <pb n="310"/>
+          <l n="160" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Let her, whoſe form thy critic eye prefers,</l>
+          <l n="161" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Claim beauty's prize, and be this apple hers."</l>
+          <l n="162" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus Hermes ſpoke; the ready ſwain obey'd,</l>
+          <l n="163" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And to decide the mighty cauſe eſſay'd.</l>
+          <l n="164" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">With keeneſt look he mark'd the heavenly dames;</l>
+          <l n="165" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Their eyes, quick flashing as the lightning's flames,</l>
+          <l n="166" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Their ſnowy necks, their garments fring'd with gold,</l>
+          <l n="167" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And rich embroidery wrought in every fold;</l>
+          <l n="168" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Their gait he mark'd, as gracefully they mov'd,</l>
+          <l n="169" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And round their feet his eye ſagacious rov'd.</l>
+          <l n="170" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But, ere the ſmiling ſwain his thoughts expreſs'd,</l>
+          <l n="171" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Grasping his hand him Pallas thus addreſs'd:</l>
+          <l n="172" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Regard not, Phrygian youth, the wife of Jove,</l>
+          <l n="173" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Nor Venus heed, the queen of wedded love:</l>
+          <l n="174" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But martial prowess if thy wisdom prize,</l>
+          <l n="175" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Know, I poſſeſs it; praiſe me to the ſkies,</l>
+          <l n="176" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thee, fame reports, puiſſant ſtates obey,</l>
+          <l n="177" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'And Troy's proud city owns thy ſovereign ſway.</l>
+          <l n="178" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Her ſuffering ſons thy conquering arm ſhall ſhield,</l>
+          <l n="179" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And ſtern Bellona ſhall to Paris yield.</l>
+          <l n="180" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Comply; her ſuccour will Minerva lend,</l>
+          <l n="181" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Teach thee war's ſcience, and in fight defend.'</l>
+          <l n="182" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus Pallas ſtrove to influence the ſwain,</l>
+          <l n="183" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Whoſe favour Juno thus attempts to gain:</l>
+        </lg>
+        <lg n="p311" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:150-168">
+          <pb n="311"/>
+          <l n="184" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Should'ft thou with beauty's prize my charms reward,</l>
+          <l n="185" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">All Afia's realms ſhall own thee for their lord.</l>
+          <l n="186" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Say, what from battles but contention ſprings??</l>
+          <l n="187" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Such contests ſhun; for what are wars to kings?</l>
+          <l n="188" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But him, whoſe hands the rod of empire ſway,</l>
+          <l n="189" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Cowards revere, and conquerors obey,</l>
+          <l n="190" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Minerva's friends are oft Bellona's ſlaves,</l>
+          <l n="191" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And the fiend ſlaughters whom the Goddeſs ſaves,</l>
+          <l n="192" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Proffers of boundleſs ſway thus Juno made,</l>
+          <l n="193" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And Venus thus, contemptuous ſmiling, ſaid:</l>
+          <l n="194" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But firſt her floating veil aloft ſhe threw,</l>
+          <l n="195" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And all her graces to the ſhepherd ſhewest</l>
+          <l n="196" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Looſen'd her little Loves' attractive chain,</l>
+          <l n="197" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And tried each art to captivate the ſwain:</l>
+          <l n="198" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Accept my boon,' (thus ſpoke the ſmiling dame)</l>
+          <l n="199" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Battles forget, and dread Bellona's name,</l>
+          <l n="200" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beauty's rich meed at Venus' hand receive,</l>
+          <l n="201" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And Aſia's wide domain to tyrants leave.</l>
+          <l n="202" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The deathful fight, the din of arms I fear;</l>
+          <l n="203" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Can Venus' hand direct the martial ſpear?</l>
+          <l n="204" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Women with beauty ſtouteſt hearts aſſail, T</l>
+          <l n="205" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beauty, their beſt defence, their ſtrongest mail.</l>
+          <l n="206" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Prefer domestic eaſe to martial ſtrife,</l>
+          <l n="207" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And to exploits of war a pleaſing wife</l>
+        </lg>
+        <lg n="p312" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:169-188">
+          <pb n="312"/>
+          <l n="208" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To realms extenſive Helen's bed prefer,</l>
+          <l n="209" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And ſcoff at kingdoms, when opposed to her,</l>
+          <l n="210" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thy prize with envy Sparta ſhall surveysidonne</l>
+          <l n="211" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And Troy to Paris tune the bridal lay.</l>
+          <l n="212" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The ſhepherd, who astonish'd ſtood and mute, Y</l>
+          <l n="213" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Conſign'd to Venus the Heſperian fruit:</l>
+          <l n="214" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The claim of beauty, and the ſource of woes</l>
+          <l n="215" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For dire debates from this deciſion roſe.</l>
+          <l n="216" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Uplifting in her hand the glowing prize,</l>
+          <l n="217" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She rallied thus the vanquiſh’d Deities :</l>
+          <l n="218" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'To me, ye martial dames, the prize reſign'; A</l>
+          <l n="219" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beauty I court, and beauty's prize is mine.</l>
+          <l n="220" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Mother of mighty Mars and Vulcan too,</l>
+          <l n="221" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Fame ſays, the choir of Graces ſprung from you.</l>
+          <l n="222" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Yet diſtant far, this day, your daughters ſtray'd,</l>
+          <l n="223" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'And no one Grace appear'd to lend you aid.</l>
+          <l n="224" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Mars too declin'd t' aſſert his mother's right,</l>
+          <l n="225" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Though oft his brandiſh'd ſword decides the fight.</l>
+          <l n="226" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">His boaſted flames why could not Vulcan caſt,</l>
+          <l n="227" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And at one blaze his mother's rivals blaſt.</l>
+          <l n="228" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Vain are thy triumphs, Pallas, vain thy ſcorn; mort</l>
+          <l n="229" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thou, not in wedlock, nor of woman born,</l>
+          <l n="230" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Jove's teeming head the monstrous birth contains, T</l>
+          <l n="231" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And the barb'd iron ripp'd thee from his brains.</l>
+        </lg>
+        <lg n="p313" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:189-207">
+          <pb n="313"/>
+          <l n="232" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Brac'd with the unyielding plaits of ruthless mails</l>
+          <l n="233" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She curſes Cupid and the ſilken veil is too ba</l>
+          <l n="234" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Connubial bliſs and concord ſhe abhors,s</l>
+          <l n="235" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">In diſcord glories and delights in wars.</l>
+          <l n="236" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Yet know, virago, not in feats of arms</l>
+          <l n="237" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Triumph weak women, but in beauty's charms.</l>
+          <l n="238" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Nor men nor women are thoſe mungrels baſe,T</l>
+          <l n="239" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Like you, equivocal in form and face.</l>
+          <l n="240" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">In terms like theſe the laughter-loving queen</l>
+          <l n="241" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Rallied her rivals, and increas'd their ſpleen,</l>
+          <l n="242" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">As, lifting high, ſhe view'd with ſecret joy</l>
+          <l n="243" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her beauty's triumphs and the bane of Troy.</l>
+          <l n="244" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Inſpir'd with love for her, the fair unknown,</l>
+          <l n="245" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">By beauty's conquering queen pronounc'd his own,</l>
+          <l n="246" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Ill-fated Paris to the foreſt's maze</l>
+          <l n="247" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Men vers'd in Pallas' various arts conveys.A</l>
+          <l n="248" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">At Pericles' command they give the blow,</l>
+          <l n="249" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And lay the glories of the foreſt low.</l>
+          <l n="250" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">He, artiſt fam'd, his frantic prince obey'd,</l>
+          <l n="251" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And burden'd ocean with the ſhips he made.</l>
+          <l n="252" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">From Ida's ſummits ruſh'd the daring ſwain,</l>
+          <l n="253" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And to its bowery ſhades prefer'd the boisterous main.</l>
+          <l n="254" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The extended beach with choice oblations ſtor'd,</l>
+          <l n="255" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And his protectreſs Venus oft implor’d.</l>
+        </lg>
+        <lg n="p314" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:208-227">
+          <pb n="314"/>
+          <l n="256" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The billowy deep his furrowing keel divides,</l>
+          <l n="257" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And in the Helleſpont his veſſel rides;</l>
+          <l n="258" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But prodigies announce approaching ills,</l>
+          <l n="259" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And with preſages ſad each bosom fill'd.</l>
+          <l n="260" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Up-heaving waves heaven's ſtarry concave ſhroud,</l>
+          <l n="261" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And round each Bear is caſt a circling cloud;</l>
+          <l n="262" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Clouds and big waves diſcharge their watery ſtores;</l>
+          <l n="263" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Full on the deck the bursting torrent pours.</l>
+          <l n="264" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Their ſturdy oars with unabating ſweep</l>
+          <l n="265" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Far whitening agitate the angry deep.</l>
+          <l n="266" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Dardanus paſs'd, and Ilion's fertile plains,</l>
+          <l n="267" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The mouth of Iſmarus' lake the adventurer gains.</l>
+          <l n="268" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Now, far remote, they view Pangræa's height;</l>
+          <l n="269" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Now Phillis' riſing tomb attracts their ſight,</l>
+          <l n="270" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And the dull round ſhe nine times trode in vain,</l>
+          <l n="271" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To view the faithless wanderer again.</l>
+          <l n="272" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Hæmonia's meads remote, the Trojan ſpies</l>
+          <l n="273" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Th' Achaian cities unexpected riſe:</l>
+          <l n="274" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Phthia, with heroes far-renown'd replete;</l>
+          <l n="275" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Mycenæ, fam'd for many a ſpacious ſtreet.</l>
+          <l n="276" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beſide the meads, where Erymanthus glides,</l>
+          <l n="277" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Sparta aſpires, that boasts her beauteous brides;</l>
+          <l n="278" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Sparta with joy th' expecting ſwain ſurvey'd,</l>
+          <l n="279" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Lav'd by Eurotas, by Atrides ſway'd.</l>
+        </lg>
+        <lg n="p315" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:228-246">
+          <pb n="315"/>
+          <l n="280" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Nor diſtant far, o'erſhaded by a wood,</l>
+          <l n="281" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Beneath a mountain's brow Therapnæ ſtood.</l>
+          <l n="282" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Short was thein voyage now: the bending oar</l>
+          <l n="283" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Was heard to laſh the foamy ſurge no more.</l>
+          <l n="284" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The ſailors, ſafe imboſom'd in the bay,</l>
+          <l n="285" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Firm to the beach confine the corded ſtay.</l>
+          <l n="286" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">In purifying waters plung'd the ſwain,</l>
+          <l n="287" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And, riſing thence, pac'd ſlowly o'er the plain.</l>
+          <l n="288" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For much he fear'd, leſt his incautious tread.</l>
+          <l n="289" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">O'er his wash'd feet the ſpatter'd mire ſhould ſpread;</l>
+          <l n="290" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Or leſt his hair, beneath his caſque confin'd,</l>
+          <l n="291" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Should, if he ran, be ruffled with the wind:</l>
+          <l n="292" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The city's ſplendor Paris' eye detains,</l>
+          <l n="293" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The citizens' abodes, and gliſtering fanes.</l>
+          <l n="294" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Here Pallas' form, in mimic gold portray'd,</l>
+          <l n="295" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Here Hyacinthus' image he ſurvey'd.</l>
+          <l n="296" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Him with delight the Amiclæans view'd,</l>
+          <l n="297" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Pursuing Phœbus and by him purfu'd;</l>
+          <l n="298" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But, ſore diſpleas'd at jealous Zephyr's ſpite,</l>
+          <l n="299" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">They urg'd the ſtripling to unequal fight;</l>
+          <l n="300" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For Phœbus' efforts ineffectual prov'd,</l>
+          <l n="301" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To ſave from Zephyr's rage the youth he lov'd.</l>
+          <l n="302" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Earth with compaſſion heard Apollo's cries,ដូរ</l>
+          <l n="303" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And from her boſom bade a flower ariſe,</l>
+        </lg>
+        <lg n="p316" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:247-266">
+          <pb n="316"/>
+          <l n="304" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">His favourite's name, impreſs'd upon whoſe leaf,</l>
+          <l n="305" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Still, as the God contemplates, ſooths his grief.</l>
+          <l n="306" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Now Priam's ſon before Atrides' dome</l>
+          <l n="307" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Exulting ſtood in beauty's purple bloom.</l>
+          <l n="308" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Not Semele, by Jove's careſſes won,</l>
+          <l n="309" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">On Jove bestow'd ſo beautiful a ſon:</l>
+          <l n="310" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">(Forgive me, Bacchus, ſeed of Jove ſupreme)</l>
+          <l n="311" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Such peerless graces round his perſon beam.</l>
+          <l n="312" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Touch'd by fair Helen's hand the bolts recede;</l>
+          <l n="313" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She to the ſpacious hall repair'd with ſpeed :</l>
+          <l n="314" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her form diſtinct th' unfolded portals ſhew;</l>
+          <l n="315" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She look'd, ſhe ponder'd, and again withdrew.</l>
+          <l n="316" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Then on a radiant ſeat ſhe bade him reſt,</l>
+          <l n="317" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And, ſtill inſatiate, gaz'd upon her gueſt.</l>
+          <l n="318" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Awhile ſhe likens him in graceful mien</l>
+          <l n="319" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To Love, attendant on the Cyprian queen.</l>
+          <l n="320" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But 'tis not Love, ſhe recollects again;</l>
+          <l n="321" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Nor bow nor quiver deck this gallant ſwain.</l>
+          <l n="322" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Tis Bacchus ſure, the God of wine, ſhe ſaid;</l>
+          <l n="323" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For o'er his cheeks a roſy bloom is ſpread.</l>
+          <l n="324" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Daring at length her faltering voice to raiſe,</l>
+          <l n="325" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She thus expreſs'd her wonder and her praiſe:</l>
+          <l n="326" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Whence art thou, ſtranger? whence thy comely racé ?</l>
+          <l n="327" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thy country tell me, and thy natal place.</l>
+        </lg>
+        <lg n="p317" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:267-285">
+          <pb n="317"/>
+          <l n="328" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'In thee I mark the majeſty of kings:</l>
+          <l n="329" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But not from Greece thy lofty lineage ſprings.</l>
+          <l n="330" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Not ſandy Pyle thine origin can ſhew;</l>
+          <l n="331" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'I know not thee, though Neftor's ſon I know.</l>
+          <l n="332" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Phthia, the nurse of heroes, train'd not thee;</l>
+          <l n="333" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For known are all th' Æacidæ to me.</l>
+          <l n="334" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Peleus, and Telamon renown'd in fight,</l>
+          <l n="335" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Patroclus' courtesy, Achilles' might.'</l>
+          <l n="336" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Inſpir'd by love, thus ſpoke the gentle dame;</l>
+          <l n="337" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And he, thus anſwering, fann'd the rising flame:</l>
+          <l n="338" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">If e'er recording fame, illustrious maid,</l>
+          <l n="339" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Hath to thine ear great Ilion's name convey'd,</l>
+          <l n="340" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Ilion, whoſe walls on Phrygian frontiers ſtand,</l>
+          <l n="341" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Rear'd by Apollo's and by Neptune's hand;</l>
+          <l n="342" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Him if thou know'ſt, moſt opulent of kings,</l>
+          <l n="343" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Who reigns o'er Ilion, and from Saturn ſprings;</l>
+          <l n="344" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">" I to hereditary worth aſpire;</l>
+          <l n="345" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The wealthy Priam is my honour'd ſire.</l>
+          <l n="346" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">My high deſcent from Dardanus I prove;</l>
+          <l n="347" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And ancient Dardanus deſcends from Jove.</l>
+          <l n="348" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Th' Immortals thus forſake the realms of light,</l>
+          <l n="349" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And mix with mortals in the ſocial rite.</l>
+          <l n="350" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Neptune and Phœbus thus forſook the ſphere,</l>
+          <l n="351" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Firm on its baſe my native Troy to rear.</l>
+        </lg>
+        <lg n="p318" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:286-305">
+          <pb n="318"/>
+          <l n="352" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">" But know, on three fair Goddeſſes, of late,</l>
+          <l n="353" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Sentence I paſs'd, and clos'd the long debate.</l>
+          <l n="354" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"On Venus, who with charms ſuperior ſhone,</l>
+          <l n="355" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">" I laviſh'd praiſes and conferr'd my boon.</l>
+          <l n="356" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"The Cyprian Goddess, pleas'd with my decree,</l>
+          <l n="357" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Reſerv'd this recompence, O queen, for me;</l>
+          <l n="358" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Some faithful fair, poſſeſs'd of heavenly charms,</l>
+          <l n="359" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Should, ſhe proteſted, bleſs my longing arms;</l>
+          <l n="360" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Helen her name, to beauty's queen ally'd;</l>
+          <l n="361" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Helen, for thee I ſtemm'd the troubled tide.</l>
+          <l n="362" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">" Unite we now in Hymen's myſtic bands;</l>
+          <l n="363" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus love inſpires, and Venus thus commands.</l>
+          <l n="364" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Scorn not my ſuit, nor beauty's queen deſpiſe :</l>
+          <l n="365" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"More need I add to influence the wife?</l>
+          <l n="366" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For well thou know'ſt, how daſtardly and baſe</l>
+          <l n="367" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Is Menelaus's degenerate race.</l>
+          <l n="368" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And well I know, that Græcia's ample coaſt</l>
+          <l n="369" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"No fair like thee, for beauty fam'd, can boaſt."</l>
+          <l n="370" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">He ſaid; on earth her ſparkling eyes ſhe cast,</l>
+          <l n="371" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Embarraſs'd paus'd awhile, and ſpoke at laſt:</l>
+          <l n="372" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'To viſit Ilion, and her towers ſurvey,</l>
+          <l n="373" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Rear'd by the God of ocean and of day,</l>
+          <l n="374" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">(Stupendous labours by Celestials wrought)</l>
+          <l n="375" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Hath oft, illustrious gueſt, employ'd my thought.</l>
+        </lg>
+        <lg n="p319" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:305-324">
+          <pb n="319"/>
+          <l n="376" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Oft have I wish'd to ſaunter o'er the vales,</l>
+          <l n="377" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Whoſe flowery paſture Phœbus' flocks regales;</l>
+          <l n="378" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Where, beneath Ilion's walls, along the meads,</l>
+          <l n="379" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The ſhepherd-God his lowing oxen ſeeds.</l>
+          <l n="380" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'To Ilion I'll attend thee: haſte, away;</l>
+          <l n="381" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'For beauty's queen forbids our long delay.</l>
+          <l n="382" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'No huſband's threats, no huſband's ſearch I dread,</l>
+          <l n="383" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Though he to Troy ſuſpect his Helen fled.</l>
+          <l n="384" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The Spartan dame, of matchless charms poſſeſs'd,</l>
+          <l n="385" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Proffer'd theſe terms to her conſenting gueſt.</l>
+          <l n="386" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Night, which relieves our toils, when the bright ſun,</l>
+          <l n="387" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">In ocean ſunk, his daily courſe has run,</l>
+          <l n="388" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Now gives her ſofteſt ſlumbers, ere the ray</l>
+          <l n="389" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Of riſing morn proclaims th' approach of day.</l>
+          <l n="390" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Two gates of airy dreams ſhe opens wide;</l>
+          <l n="391" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Of poliſh'd horn is this, where truths abide:</l>
+          <l n="392" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Voices divine through this mysterious gate</l>
+          <l n="393" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Proclaim th' unalterable will of fate.</l>
+          <l n="394" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But through the ivory-gate inceſſant troop</l>
+          <l n="395" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Of vain, deluſive dreams a faithless group.</l>
+          <l n="396" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Helen, ſeduc’d from Menelaus' bed,</l>
+          <l n="397" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Th' adventurous ſhepherd to his navy led;</l>
+          <l n="398" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To Troy with ſpeed he bears the fatal freight;</l>
+          <l n="399" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For Venus' proffers confidence create.</l>
+        </lg>
+        <lg n="p320" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:325-344">
+          <pb n="320"/>
+          <l n="400" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">At morning's dawn Hermione appears,</l>
+          <l n="401" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">With treſſes diſcompos'd and bath'd in tears.</l>
+          <l n="402" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She rous'd her menial train; and thus expreſs'd</l>
+          <l n="403" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The boding ſorrows of her troubled breaſt</l>
+          <l n="404" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Where, fair attendants, is my mother fled,</l>
+          <l n="405" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Who left me ſleeping in her lonely bed?</l>
+          <l n="406" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For yeſternight ſhe took her truſty key,</l>
+          <l n="407" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Turn'd the ſtrong bolt, and ſlept ſecure with mel</l>
+          <l n="408" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her hapless fate the penſive train deplore,</l>
+          <l n="409" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And in thick circles gather round the door;</l>
+          <l n="410" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Here all contend to moderate her grief,</l>
+          <l n="411" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And by their kind condolence give relief:</l>
+          <l n="412" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Unhappy princeſs, check the riſing tear,...</l>
+          <l n="413" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thy mother, abſent now, will ſoon appear.</l>
+          <l n="414" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Soon as thy forrow's bitter ſource ſhe knows,</l>
+          <l n="415" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her ſpeedy preſence will diſpel thy woes.</l>
+          <l n="416" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The virgin-cheek, with forrow's weight o'ercome,</l>
+          <l n="417" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Sinks languid down and loses half its bloom.</l>
+          <l n="418" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Deep in the head the tearful eye retires,</l>
+          <l n="419" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">There ſullen ſits, nor darts its wonted fires.</l>
+          <l n="420" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Eager, perchance, the band of nymphs to meet,</l>
+          <l n="421" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She ſaunters devious from her favourite-ſeat,</l>
+          <l n="422" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And, of ſome flowery mead at length poſſeſs'd,</l>
+          <l n="423" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Sinks on the dew-beſpangled lawn to reſt.</l>
+        </lg>
+        <lg n="p321" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:344-362">
+          <pb n="321"/>
+          <l n="424" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Or to ſome kindred ſtream perchance ſhe ſtrays,</l>
+          <l n="425" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Bathes in Eurotas ſtreams, and round its margin plays;</l>
+          <l n="426" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Why talk ye thus?" (the penſive maid replies,</l>
+          <l n="427" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The tears of anguiſh trickling from her eyes)</l>
+          <l n="428" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She knows each roſeate bower, each vale and hill,</l>
+          <l n="429" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'She knows the course of every winding rill.</l>
+          <l n="430" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'The stars are ſet; on rugged rocks ſhe lies:</l>
+          <l n="431" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'The ſtars are up; nor does my mother riſe.</l>
+          <l n="432" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'What hills, what dales thy devious ſteps detain?</l>
+          <l n="433" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Hath ſome relentless beaſt my mother ſlain?</l>
+          <l n="434" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'But beasts, which lawless round the foreſt rove,</l>
+          <l n="435" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Revere the ſacred progeny of Jove.</l>
+          <l n="436" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Or art thou fallen from ſome ſteep mountain's brow,</l>
+          <l n="437" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thy corſe conceal'd in dreary dells below?</l>
+          <l n="438" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'But through the groves, with thickeſt foliage crown'd,</l>
+          <l n="439" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'Beneath each ſhrivel'd leaf that ſtrews the ground,</l>
+          <l n="440" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Aſſiduous have I ſought thy corſe in vain :</l>
+          <l n="441" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Why should we then the guiltless grove arraign?</l>
+          <l n="442" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But have Eurotas' ſtreams, which rapid flow,</l>
+          <l n="443" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'O'erwhelm'd thee bathing in its deeps below?</l>
+          <l n="444" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Yet in the deeps below the Naiads live,</l>
+          <l n="445" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And they to womankind protection give...</l>
+        </lg>
+        <lg n="p322" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:362-381">
+          <pb n="322"/>
+          <l n="446" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus ſpoke the ſorrowing, and reclin'd her head;</l>
+          <l n="447" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'And ſleeping ſeem'd to mingle with the deada OT'</l>
+          <l n="448" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">For ſleep his elder brother's aſpect wears;</l>
+          <l n="449" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Lies mute like him, and undisturb'd by tears;</l>
+          <l n="450" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Hence the ſwoln eyes of females, deep diſtreſs'd,</l>
+          <l n="451" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Oft, when the tear is trickling, ſink to reſt;</l>
+          <l n="452" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">In this deluſive dream the ſleeping maid</l>
+          <l n="453" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Her mother ſaw, or thought ſhe ſaw, portray’d.</l>
+          <l n="454" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Aloud ſhe ſhriek'd, diſtracted and amaz'd,</l>
+          <l n="455" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And utter'd thus her anguiſh as ſhe gaz'd:</l>
+          <l n="456" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Last night, far diſtant from your daughter fled,</l>
+          <l n="457" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'You left me ſlumbering in my father's bed.</l>
+          <l n="458" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">What dangerous ſteeps have not I ſtrove to gain</l>
+          <l n="459" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And ſtroll'd o'er hills and dales for thee in vain?</l>
+          <l n="460" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Condemn me not; (replied the wandering dame)</l>
+          <l n="461" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Pity my ſufferings, nor augment my shame.</l>
+          <l n="462" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"Me yesterday a lawless gueſt beguil'd,</l>
+          <l n="463" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">" And diſtant tore me from my darling child.</l>
+          <l n="464" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"At Cytherea's high command I rove;</l>
+          <l n="465" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">"And once more revel in the walks of love."</l>
+          <l n="466" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She said: her voice the ſleeping maid alarms</l>
+          <l n="467" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">She ſprings to claſp her mother in her arms.</l>
+          <l n="468" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">In vain : no mother meets her wiſtful eyes;</l>
+          <l n="469" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And now her tears redouble and her cries:</l>
+        </lg>
+        <lg n="p323" corresp="urn:cts:greekLit:tlg4081.tlg001.perseus-grc2:382-394">
+          <pb n="323"/>
+          <l n="470" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The feathery race, inhabitants of light,</l>
+          <l n="471" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">To Crete's fam'd iſle direct your rapid ſights;</l>
+          <l n="472" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">There to my ſire th' unwelcome truth proclaim,</l>
+          <l n="473" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">How yesterday a deſperate vagrant came,</l>
+          <l n="474" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Tore all he dotes on from his bridal bed,</l>
+          <l n="475" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">'And with his beauteous queen abruptly fled.</l>
+          <l n="476" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The reſtleſs fair, her mother to regain,</l>
+          <l n="477" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Thus to the winds bewail'd and wept in vain.com H</l>
+          <l n="478" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The Thracian town diminiſh'd from their view,</l>
+          <l n="479" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And fleet o'er Helle's ſtrait the veſſel flew.</l>
+          <l n="480" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">The bridegroom now his natal coaſt deſcry'd,</l>
+          <l n="481" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And to the Trojan port conducts his bride.</l>
+          <l n="482" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Caſſandra from her tower beheld them ſail,</l>
+          <l n="483" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">And tore her locks, and rent her golden veil. A</l>
+          <l n="484" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">But hoſpitable Troy unbars her gate,</l>
+          <l n="485" xml:base="urn:cts:greekLit:tlg4081.tlg001.meen1780-eng2">Receives her citizen and ſeals her fate.</l>
+        </lg>
+      </div>
+    </body>
+  </text>
+</TEI>
