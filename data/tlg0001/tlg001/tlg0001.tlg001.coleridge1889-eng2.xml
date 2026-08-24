@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -51,17 +50,7 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-      <refsDecl n="CTS">
-        <cRefPattern n="paragraph" matchPattern="(\w+)\.(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='translation']/tei:div[@subtype='book'][@n='$1']/tei:p[@n='$2'])">
-          
-<p>This pointer extracts a book and translation paragraph.</p>
-        </cRefPattern>
-        <cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='translation']/tei:div[@subtype='book'][@n='$1'])">
-          
-<p>This pointer extracts a book.</p>
-        </cRefPattern>
-      </refsDecl>
-      <editorialDecl>
+      <refsDecl xml:id="CTS" n="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div[@type='book']" unit="book" use="@n" delim=":"><citeStructure match="p" unit="paragraph" use="@n" delim="."/></citeStructure></citeStructure></refsDecl><refsDecl xml:id="CTS-card"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="book" delim=":" match="div[@type='book']" use="@n"><citeStructure match=".//milestone[@unit='card']" unit="card" delim="." use="@n" n="chunk"/></citeStructure></citeStructure></refsDecl><editorialDecl>
         <correction method="silent">
           
 <p>The corrected OPP transcription supplies the translation and footnotes; printed pagination and line-range headers were checked against the attached HathiTrust OCR. Soft hyphens, line-break artifacts, running heads, and printer signatures were removed. Split footnote continuations were rejoined, and printed note markers were linked to their note bodies.</p>
@@ -71,11 +60,7 @@
 <p>Every alignment is constrained by Coleridge’s printed Greek line range for its two-page opening. Local wording after each milestone in Seaton’s aligned translation identifies the corresponding Coleridge locus. Paragraph ranges form an exhaustive, non-overlapping partition of every Greek book, and each Mooney card lies inside the range of its containing paragraph.</p>
         </segmentation>
       </editorialDecl>
-      <refsDecl>
-        <refState unit="book"/>
-        <refState unit="paragraph"/>
-      </refsDecl>
-    </encodingDesc>
+      </encodingDesc>
     
 <profileDesc>
       <langUsage>
@@ -84,15 +69,13 @@
       </langUsage>
     </profileDesc>
     <revisionDesc>
-      <change when="2026-08-21" who="Gregory Crane">Regularized Coleridge’s 1889 prose translation, preserving all substantive notes and printed page breaks and aligning it to the Greek.</change>
+      <change when="2026-08-24">Updated to the TEI All schema and direct book-division structure used by the Seaton 1912 edition.</change><change when="2026-08-21" who="Gregory Crane">Regularized Coleridge’s 1889 prose translation, preserving all substantive notes and printed page breaks and aligning it to the Greek.</change>
     </revisionDesc>
   </teiHeader>
   <text xml:lang="eng">
-    <body>
+    <body xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2">
       
-<div type="translation" n="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2" xml:lang="eng">
-        
-<div type="textpart" subtype="book" n="1" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 1</head>
+<div type="book" n="1" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 1</head>
 <p n="argument">Pelias, in alarm, sends Jason to Colchis to fetch the golden fleece. So Jason gathers the chieftains, and is chosen captain himself. After launching Argo they sail on without adventure as far as Lemnos, where they stay awhile, and are hospitably received by Hypsipyle the queen. Thence they come to the Doliones and their king Cyzicus, and are kindly entertained. Giants withstand them at Dindymus, but these are shot by Heracles. On the same night a storm drives the ship back to Cyzicus, and in the darkness they and the Doliones come to blows, and Cyzicus is slain. After mourning for him, they sail on to Mysia, where Hylas is lost, and Heracles, who will not be comforted, is left behind with Polyphemus.</p>
 <p n="1" xml:id="b1-p0001" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:1.1-1.4">
 <pb n="3"/><milestone unit="card" n="1" resp="Mooney"/>wITH thee, Phœbus, will I begin and record the famous deeds of those men of old time, who, at the bidding of king Pelias, rowed the good ship Argo past the mouth of the Euxine and through the rocks Cyanean <ref target="#fn-b1-p3-1" type="footnote">1</ref> to fetch the golden fleece.</p> 
@@ -254,7 +237,7 @@
 <pb n="50"/> Polyphemus, son of Elatus, while the other returned and performed the labours of Eurystheus. Now he threatened at once to ravage the Mysian land, since they could not discover for him the fate of Hylas, either alive or dead. But they chose out the noblest sons of the people, and gave them as pledges for him, and took an oath that they would never cease from the toil of seeking him. Where fore to this day the men of Cios ask after Hylas, the son of Theiodamas, and take care of the stablished town of Trachin,<ref target="#fn-b1-p50-1" type="footnote">1</ref> for there it was that Heracles did place the boys, whom they sent to him from Cios to take as hostages.</p> 
 <p n="111" xml:id="b1-p0111" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:1.1358-1.1362">And all day long and all that night the wind bare on the ship, blowing in its strength ; but as the dawn broke, never a breath stirred. So they, having marked a head land, broad enow to look upon, stretching out from a bend in the land, took to their oars and anchored there at sun rise.<note type="footnote" n="1" xml:id="fn-b1-p50-1">A city in Thessaly, where Heraclea placed the boys sent to him as hostages for lost Hylas by the Mysians. </note></p> </div>
         
-<div type="textpart" subtype="book" n="2" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 2</head>
+<div type="book" n="2" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 2</head>
 <p n="argument">They reach Bithynia. Amycus, king of the Bebryces, having chal lenged any of them to box with him, is slain by Polydeuces, and in the subsequent fight many of the Bebryces fall. At Salmydessa in Thrace they find blind Phineus, whom the sons of Boreas relieve from the attacks of the Harpies. In return he tells them of their voyage. Hence they come to the Symplegades, and, after escaping through them, are received by Lycus, king of the Mariandyni. Idmon and Tiphys die there. They meet with strange adventures among the Chalybes, Tiba reni, and Mossynœci. Coming to an island infested by " the birds of Ares," they pick up the shipwrecked sons of Chalciope, who henceforth serve them as guides to Colchis.</p>
 <p n="1" xml:id="b2-p0001" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:2.1-2.18">
 <pb n="53"/><milestone unit="card" n="1" resp="Mooney"/>HERE were the steadings and the farm of Amycus, proud king of the Bebryces, whom on a day the Bithynian nymph, Melie, bare from the embraces of Posei don,<ref target="#fn-b2-p53-1" type="footnote">1</ref> lord of birth, to be the haughtiest of men, for he laid this unseemly ordinance even on his guests, that none should go away, till he had made trial of his boxing; and many of his neighbours had he slain. So then he came to the ship, but scorned to ask the object of their voyage and who they were, in his exceeding insolence; but this word at once spake he amongst them all: " Hearken, ye rovers o'er the deep; 'tis right ye should know these things. Of stranger folk none may get him hence, whoso draweth nigh to the Bebryces, ere he have lifted up his hands to fight with me. Wherefore set the best man of your company alone and apart to do battle with me in boxing on the spot. But if ye neglect and trample on my decrees, verily some hard necessity shall follow you to your sorrow."</p> 
@@ -368,7 +351,7 @@
 <pb n="96"/> spake this word amongst them, “ Lo! we are come to the Colchian land and the stream of Phasis; 'tis high time to make plans for ourselves, whether indeed we will try Æetes with gentleness, or whether haply some different attempt shall win the day."</p> 
 <p n="67" xml:id="b2-p0067" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:2.1281-2.1285"><milestone unit="card" n="1281" resp="Mooney"/>So spake he ; and Jason, by the advice of Argus, bade them row the ship into a shaded backwater<ref target="#fn-b2-p96-1" type="footnote">1</ref> and let her ride at anchor in deep water, and that they found close by; so there they bivouacked for the night; and no long time after appeared the dawn to their longing eyes.<note type="footnote" n="1" xml:id="fn-b2-p96-1"><foreign xml:lang="grc">ἕλος</foreign> = properly " a marsh, water meadow," but this scarcely fits the context; possibly "a backwater is meant. Here they would run less risk of being observed. </note></p> </div>
         
-<div type="textpart" subtype="book" n="3" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 3</head>
+<div type="book" n="3" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 3</head>
 <p n="argument">Hera and Athene persuade Aphrodite to send Eros to Medea. Mean time Jason comes to Æetes, king of Colchis, and begs the fleece; but the king was exceeding wroth, and set him great labours to perform, namely, to yoke two fire-breathing bulls, and sow the dragon's teeth upon Ares' acre, and then to slay the earth-born giants who should rise o'er the lea.</p> 
 <p n="argument">But Medea is in love with Jason, and gives him drugs to tame those bulls, telling him how to accomplish all. Wherefore Jason finished the appointed task, to the grief and wonder of Æetes.</p>
 <p n="1" xml:id="b3-p0001" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:3.1-3.5">
@@ -495,7 +478,7 @@
 <pb n="146"/> unripe, nor waiteth for it to ripen in its season by the beams of the sun; even so did he then cut the crop of earth-born men, and the furrows were filled with blood, as the channels of a spring are filled with water. There they fell; some on their faces, biting with their teeth the rough clods ; some upon their backs ; others on the palms of their hands and sides ; like sea-monsters in shape to behold. And many wounded, or ever they had stept forth from the earth, bowed their damp brows to the ground and rested there, as much of them as had emerged to the air above. Even so shoots newly-planted in an orchard do droop to the ground, snapped from their roots, when Zeus sendeth a torrent of rain, a toil to gardening folk; and heavy grief and bitter sorrow cometh on him who owns the plot of ground and tends the plants. So then o'er the heart of king Æetes stole heavy grief. And he gat him homeward to his town. together with his Colchians, musing darkly how he might most quickly meet them.<ref target="#fn-b3-p146-1" type="footnote">1</ref></p> 
 <p n="75" xml:id="b3-p0075" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:3.1399-3.1407">And daylight died, and Jason's toil was ended.<note type="footnote" n="1" xml:id="fn-b3-p146-1">i.e. devising some plan to overreach the heroes, and anticipate their action. <foreign xml:lang="grc">θοώτερον</foreign>, i.e. more quickly than they expected. </note></p> </div>
         
-<div type="textpart" subtype="book" n="4" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 4</head>
+<div type="book" n="4" xml:base="urn:cts:greekLit:tlg0001.tlg001.coleridge1889-eng2"><head>Book 4</head>
 <p n="argument">Æetes discovers all; but meantime Medea has fled to the Argonauts; and by her aid they have taken the fleece and gone. Absyrtus, son of Æetes, gives chase; but coming up with them is treacherously slain, at the mouth of the Ister, by Jason and Medea; whereat Zeus is angry, but Hera ever befriends them. Thence they come to Circe to be purified of the murder; and they pass through the Wandering Rocks," and through Scylla and Charybdis, and past the Sirens, all save Butes; and come unto Corcyra, where Medea is saved by Alcinous from the pursuit of the Colchians, and is wedded to Jason. Next they are driven to the Syrtis off Libya, and suffer greatly from thirst. Here Canthus and Mopsus meet their doom; and the rest are saved by Triton and sent upon their way to Crete, where Talus withstands them, only to fall before Medea's magic.</p> 
 <p n="argument">- After this they make a straight run to Ægina, and so without further adventure to their home in Thessaly.</p>
 <p n="1" xml:id="b4-p0001" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:4.1-4.5">
@@ -644,7 +627,7 @@
 <p n="84" xml:id="b4-p0084" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:4.1765-4.1772">And when they were gone hence, they sailed steadily through the boundless swell, and stopped at the beach of Ægina. Here on a sudden arose an innocent strife among them about the drawing of water, who should be first to<note type="footnote" n="1" xml:id="fn-b4-p208-1"><foreign xml:lang="grc">νεπόδεσσιν</foreign> = <foreign xml:lang="grc">τἐκνοις</foreign>, in which sense this word is always used by Alexandrine writers. </note><note type="footnote" n="2" xml:id="fn-b4-p208-2">The isle of Calliste, afterwards called Thera, from Theras, son of Autesion, who colonized it from Sparta. </note> 
 <pb n="209"/> draw his jar, and get him to the ship again ; for need and the ceaseless breeze hurried them alike. There, to this day,<ref target="#fn-b4-p209-1" type="footnote">1</ref> the young men of the Myrmidons take up full jars upon their shoulders, and at once dart off to race striving for the victory.</p> 
 <p n="85" xml:id="b4-p0085" corresp="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2:4.1773-4.1781">Be gracious, 0 race of blessed chieftains ! and from year to year may these songs be sweeter to sing to men! For now am I come unto the end of your glorious toils; for there was no further adventure ordained you as ye came from Ægina, nor did hurricanes rise against you, but calmly ye coasted by the land of Cecrops and past Aulis, in under Eubœa and the towns of the Opuntian Locri, till with gladness ye stept forth upon the strand of Pagasæ.<note type="footnote" n="1" xml:id="fn-b4-p209-1"><foreign xml:lang="grc">ἔνθ</foreign>’ <foreign xml:lang="grc">ἔτι νυ̃ν</foreign>, i.e. the custom is still observed amongst their descendants. </note> </p> </div>
-      </div>
+      
     </body>
   </text>
 </TEI>
