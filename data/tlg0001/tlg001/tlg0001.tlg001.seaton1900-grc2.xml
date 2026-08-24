@@ -1,7 +1,31 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0">
-<teiHeader><fileDesc><titleStmt><title>Argonautica</title><author>Apollonius Rhodius</author><editor>R. C. Seaton</editor><sponsor>Perseus Project, Tufts University</sponsor><principal>Gregory Crane</principal><respStmt><resp>Prepared under the supervision of</resp><name>Gregory Crane</name></respStmt></titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority><idno type="filename">tlg0001.tlg001.seaton1900-grc2.xml</idno><availability><p>Public Domain</p></availability></publicationStmt><sourceDesc><biblStruct><monogr><author>Apollonius Rhodius</author><title xml:lang="lat">Apollonii Rhodii Argonautica</title><editor>R. C. Seaton</editor><imprint><pubPlace>Oxonii</pubPlace><publisher>E Typographeo Clarendoniano</publisher><date>1900</date></imprint></monogr><series><title>Scriptorum Classicorum Bibliotheca Oxoniensis</title></series></biblStruct></sourceDesc></fileDesc><encodingDesc><refsDecl n="CTS"><cRefPattern n="line" matchPattern="(\w+)\.(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1']/tei:l[@n='$2'])"><p>This pointer pattern extracts book and line.</p></cRefPattern><cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/tei:div[@subtype='book'][@n='$1'])"><p>This pointer pattern extracts a book.</p></cRefPattern></refsDecl><editorialDecl><correction method="markup"><p>Seaton's Greek text, line numbering, pagination, and apparatus have been retained.</p></correction></editorialDecl><refsDecl><refState unit="book"/><refState unit="line"/></refsDecl></encodingDesc><profileDesc><langUsage><language ident="grc">Ancient Greek</language><language ident="lat">Latin</language></langUsage></profileDesc><revisionDesc><change when="2026-08-20" who="Gregory Crane">Converted Seaton's 1900 OCT to CTS/EpiDoc-style TEI using the Mooney edition as the structural and milestone model.</change></revisionDesc></teiHeader><text xml:lang="grc">
+<teiHeader><fileDesc><titleStmt><title>Argonautica</title><author>Apollonius Rhodius</author><editor>R. C. Seaton</editor><sponsor>Perseus Project, Tufts University</sponsor><principal>Gregory Crane</principal><respStmt><resp>Prepared under the supervision of</resp><name>Gregory Crane</name></respStmt></titleStmt><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority><idno type="filename">tlg0001.tlg001.seaton1900-grc2.xml</idno><availability><p>Public Domain</p></availability></publicationStmt><sourceDesc><biblStruct><monogr><author>Apollonius Rhodius</author><title xml:lang="lat">Apollonii Rhodii Argonautica</title><editor>R. C. Seaton</editor><imprint><pubPlace>Oxonii</pubPlace><publisher>E Typographeo Clarendoniano</publisher><date>1900</date></imprint></monogr><series><title>Scriptorum Classicorum Bibliotheca Oxoniensis</title></series></biblStruct></sourceDesc></fileDesc>
+    
+           <encodingDesc>
+            <refsDecl n="CTS">
+                <cRefPattern n="commline" matchPattern="(1)\.(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='commentary']/tei:div[@type='book'][@n='$1']/tei:div[@type='commline'][@n='$2'])" />
+                <cRefPattern n="book" matchPattern="(1)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='commentary']/tei:div[@type='book'][@n='$1'])" />
+            </refsDecl>
+
+            <refsDecl xml:id="CTS" n="CTS">
+                <citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0" match="/TEI/text/body"
+                    use="@xml:base">
+                    <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                        <citeStructure unit="line" delim="." n="chunk"
+                            match="//div[@type='commline']"
+                            use="concat(ancestor::tei:div[@type='book']/@n, '.', @n)" />
+                    </citeStructure>
+                </citeStructure>
+            </refsDecl>
+            <editorialDecl><correction method="markup"><p>Seaton's Greek text, line numbering, pagination, and apparatus have been retained.</p></correction></editorialDecl>
+        </encodingDesc>
+    
+    
+    <profileDesc><langUsage><language ident="grc">Ancient Greek</language><language ident="lat">Latin</language></langUsage></profileDesc><revisionDesc><change when="2026-08-20" who="Gregory Crane">Converted Seaton's 1900 OCT to CTS/EpiDoc-style TEI using the Mooney edition as the structural and milestone model.</change></revisionDesc></teiHeader><text xml:lang="grc">
 <body>
 <div type="edition" n="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2" xml:lang="grc"><div type="textpart" subtype="book" n="1" xml:base="urn:cts:greekLit:tlg0001.tlg001.seaton1900-grc2">
 <pb n="17"/>

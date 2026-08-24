@@ -45,16 +45,25 @@
         </listBibl>
       </sourceDesc>
     </fileDesc>
-    <encodingDesc>
-      <refsDecl n="CTS">
-        <cRefPattern n="paragraph" matchPattern="(\w+)\.(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='translation']/tei:div[@subtype='book'][@n='$1']/tei:p[@n='$2'])">
-          <p>This pointer pattern extracts book and translation paragraph.</p>
-        </cRefPattern>
-        <cRefPattern n="book" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='translation']/tei:div[@subtype='book'][@n='$1'])">
-          <p>This pointer pattern extracts a book.</p>
-        </cRefPattern>
-      </refsDecl>
-      <editorialDecl>
+        <encodingDesc>
+            <refsDecl n="CTS">
+                <cRefPattern n="commline" matchPattern="(1)\.(.+)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='commentary']/tei:div[@type='book'][@n='$1']/tei:div[@type='commline'][@n='$2'])" />
+                <cRefPattern n="book" matchPattern="(1)"
+                    replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='commentary']/tei:div[@type='book'][@n='$1'])" />
+            </refsDecl>
+
+            <refsDecl xml:id="CTS" n="CTS">
+                <citeStructure xmlns:tei="http://www.tei-c.org/ns/1.0" match="/TEI/text/body"
+                    use="@xml:base">
+                    <citeStructure unit="book" delim=":" match="div[@type='book']" use="@n">
+                        <citeStructure unit="line" delim="." n="chunk"
+                            match="//div[@type='commline']"
+                            use="concat(ancestor::tei:div[@type='book']/@n, '.', @n)" />
+                    </citeStructure>
+                </citeStructure>
+            </refsDecl>
+                  <editorialDecl>
         <correction method="silent">
           <p>Obvious OCR errors and end-of-line hyphenation were corrected against the public-domain Project Gutenberg transcription of the same 1912 Seaton volume. Loeb page breaks derive from the attached HathiTrust OCR.</p>
         </correction>
@@ -62,11 +71,7 @@
           <p>English paragraphs are aligned monotonically to the facing Seaton Greek text. Correspondence targets the explicit Seaton 1900 Greek edition URN; Mooney card milestones are projected through the facing-page alignment.</p>
         </segmentation>
       </editorialDecl>
-      <refsDecl>
-        <refState unit="book"/>
-        <refState unit="paragraph"/>
-      </refsDecl>
-    </encodingDesc>
+        </encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="eng">English</language>
