@@ -1,0 +1,1818 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Eumenides</title>
+        <title>The Dramas of Aeschylus</title>
+        <author>Aeschylus</author>
+        <editor role="translator">Anna Swanwick</editor>
+        <sponsor>University of Leipzig</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>OCR, correction, and encoding</resp>
+          <name>Jouve</name>
+        </respStmt>
+        <respStmt>
+          <resp>Project management</resp>
+          <name>Greta Franzini</name>
+        </respStmt>
+        <respStmt>
+          <resp>Technical advising</resp>
+          <name>Bruce Robertson</name>
+        </respStmt>
+        <funder n="org:ESF-Saxony">European Social Fund Saxony</funder>
+      </titleStmt>
+      <extent>Digital transcription of the 1886 translation</extent>
+      <publicationStmt>
+        <publisher>University of Leipzig</publisher>
+        <pubPlace>Leipzig, Germany</pubPlace>
+        <authority>University of Leipzig</authority>
+        <idno type="CTS-URN">urn:cts:greekLit:tlg0085.tlg007.swanwick1886-eng2</idno>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <title>The Dramas of Aeschylus</title>
+            <title type="part">Eumenides</title>
+            <editor role="translator">Anna Swanwick</editor>
+            <imprint>
+              <pubPlace>London</pubPlace>
+              <publisher>George Bell and Sons</publisher>
+              <date when="1886">1886</date>
+            </imprint>
+          </monogr>
+          <ref target="https://archive.org/details/dramasswa00aescuoft">Internet Archive</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Swanwick's translation, paratext, page breaks, speaker turns, stage directions, notes, and line markers are preserved. Speaker turns and Smyth card milestones are aligned to urn:cts:greekLit:tlg0085.*.perseus-grc2.</p>
+      </editorialDecl>
+      <refsDecl xml:id="CTS">
+        <citeStructure match="/TEI/text/body" use="@xml:base">
+          <citeStructure match=".//sp" unit="turn" use="@n" delim=":" n="chunk"/>
+        </citeStructure>
+      </refsDecl>
+      <refsDecl xml:id="CTS-card">
+        <citeStructure match="/TEI/text/body" use="@xml:base">
+          <citeStructure match=".//milestone[@unit='card']" unit="card" use="@n" delim=":" n="chunk"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="eng">English</language>
+        <language ident="grc">Ancient Greek</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-29" who="#gcrane">Packaged as a namespaced TEI/CTS translation; added modern citeStructure declarations, CTS speech correspondences, and Smyth card milestones.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng">
+    <body xml:base="urn:cts:greekLit:tlg0085.tlg007.swanwick1886-eng2">
+      <div type="translation" n="urn:cts:greekLit:tlg0085.tlg007.swanwick1886-eng2" xml:lang="eng">
+        <div type="textpart" subtype="chapter">
+          <head>
+            <title type="main">EUMENIDES</title>
+          </head>
+          <pb n="140"/>
+          <castList>
+            <head>DRAMATIS PERSONÆ.</head>
+            <castItem>PYTHIAN PROPHETESS.</castItem>
+            <castItem>APOLLO.</castItem>
+            <castItem>ORESTES.</castItem>
+            <castItem>GHOST OF CLYTEMNESTRA.</castItem>
+            <castItem>CHORUS OF FURIES.</castItem>
+            <castItem>ATHENA.</castItem>
+            <castItem>ESCORT.</castItem>
+            <stage>[The Temple of APOLLO at Delphi. In the background the summits of Parnassus. The orchestra represents the open court in front of the temple. The PYTHONESS appears praying at an altar adorned with images of the successive divinities of the sanctuary.]</stage>
+          </castList>
+          <pb n="141"/>
+          <head>EUMENIDES.</head>
+          <milestone n="1" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1-63" n="1">
+            <speaker>PYTHONESS</speaker>
+            <l>FIRST, with this prayer, I worship of the gods<ref n="141.1">*</ref></l>
+            <l>Gaia, primeval prophetess;-and next,</l>
+            <l>Themis, who second, as tradition tells,</l>
+            <l>Upon her mother's seat was here enthroned;</l>
+            <l>With her good will, nor in despite of any,</l>
+            <l>Another child of Earth, Titanian Phoebe,</l>
+            <l>Third by decree of Fate, assumed this seat;</l>
+            <l>She as a birth-day gift to Phobos gave it,</l>
+            <l>And hence his name to Phoebe is allied.</l>
+            <pb n="142"/>
+            <l n="10">Leaving the lake and Delos' rocky isle,</l>
+            <l>At Pallas' ship-frequented shores he lands,</l>
+            <l>Then seeks this region, these Parnassian seats;</l>
+            <l>Him onward speed, and mightily adore,</l>
+            <l>Hephæstos' sons, road-fashioners, who tame</l>
+            <l>The savage earth. The god, established here,</l>
+            <l>Highly is honoured by the native tribe,</l>
+            <l>And by King Delphos, steersman of this land.</l>
+            <l>Zeus with prophetic lore his heart inspired,</l>
+            <l>And throned him on this sacred seat, fourth seer;</l>
+            <l n="20">So Loxias<ref n="142.1">*</ref> now is prophet of his sire.</l>
+            <l>These gods I worship with preluding prayers.</l>
+            <l>But be Pronæan<ref n="142.2">‡</ref> Pallas likewise hailed</l>
+            <l>With words of honour! you too I salute,</l>
+            <l>Nymphs who frequent Korykia's caverned rock,</l>
+            <l>Kindly to birds, and haunt of deities.</l>
+            <l>There Bromios, well I wis, the region holds,</l>
+            <l>Since with his Thyads thence the god made war,</l>
+            <l>And Pentheus coursed, like doubling hare, to death.</l>
+            <l>The founts of Pleistos, and Poseidon's might</l>
+            <l n="30">Invoking, and high-consummating Zeus,</l>
+            <l>As priestess I assume the sacred seat.</l>
+            <l>Beyond the past my entrance may they crown</l>
+            <l>With fair response! If sons of Greece be here,</l>
+            <pb n="143"/>
+            <l>Let them, as custom is, approach by lot,</l>
+            <milestone n="34" unit="card" resp="Smyth"/>
+            <l>For as the god doth guide, I prophesy.</l>
+          </sp>
+          <stage>[She retires into the temple, and after a brief pause returns terror-stricken.]</stage>
+          <p>Things dire to tell, direful for eyes to see,</p>
+          <p>Have forced me from the fane of Loxias,</p>
+          <p>So that no strength I have, no power to move;</p>
+          <p>But lacking speed of limb, with hands I run;</p>
+          <p>For age, when scared, is nought; a very child.</p>
+          <p>Towards the wreath-encircled nook I creep,</p>
+          <p><milestone unit="line" n="40"/>And at earth's navel-stone, behold a man</p>
+          <p>Defiled before the gods, as suppliant,</p>
+          <p>Holding his seat;—his hands still dripping gore,</p>
+          <p>His sword new-drawn, his lofty olive-branch</p>
+          <p>With ample fillets piously enwreathed,</p>
+          <p>White bands of wool;-for so I speak it plain.</p>
+          <p>But lo! before this man, on seats reclined,</p>
+          <p>A wondrous company of women sleeps;</p>
+          <p>Women? nay, Gorgons let me say; nor yet</p>
+          <p>To Gorgonean types compare I them.</p>
+          <p>Ere now in paintings [Harpies] I have seen,</p>
+          <p><milestone unit="line" n="50"/>Snatching the meal of Phineus. These to sight</p>
+          <p>Are wingless, black, and loathsome utterly.</p>
+          <p>With breathings unapproachable they snore,</p>
+          <p>Forth from their eyes drippeth a loathsome rheum;</p>
+          <p>Their garb too vile the effigies to touch</p>
+          <p>Of gods immortal, or the roofs of men.</p>
+          <p>Tribe of this sisterhood I ne'er have seen;</p>
+          <p>Neither may region boast such brood to rear</p>
+          <pb n="144"/>
+          <p>Scathless, unvisited by penance-throe.</p>
+          <p>But for the issue, let lord Loxias,</p>
+          <p><milestone unit="line" n="60"/>Mighty, who rules these seats, himself provide;</p>
+          <p>For prophet-leech, and portent-seer is he,</p>
+          <p>Who can for others purify their homes.</p>
+          <stage>[Exit PYTHONESS.]</stage>
+          <stage>[The interior of the sanctuary is disclosed, and exhibits the following group. APOLLO appears standing beside ORESTES, who is seated on the Omphalos.<ref n="144.1">*</ref> The Furies are reclined on seats, fast asleep. HERMES in the background.]</stage>
+          <milestone n="64" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:64-84" n="2">
+            <speaker>APOLLO</speaker>
+            <l>I'll ne'er betray thee: to the end thy guard,</l>
+            <l>Beside thee standing, or when far aloof;</l>
+            <l>Nor will be gracious to thy enemies.</l>
+            <l>And captured now this maddened crew thou seest.</l>
+            <l>By sleep the loathsome virgins are o'erpowered,</l>
+            <l>Hoary primeval progeny,-with whom</l>
+            <l n="70">Nor god, nor man, nor beast, will e'er consort.</l>
+            <l>For Evil's sake brought forth, in evil gloom</l>
+            <l>Of subterranean Tartaros they dwell,</l>
+            <l>Abhorred of men and of Olympian gods.</l>
+            <l>But hie thee hence, nor e'er relax thy speed,</l>
+            <l>For as thou tread'st the wand'rer-trampled earth,</l>
+            <l>They'll track thee o'er the ample continent,</l>
+            <l>O'er the wide ocean and the citied isles;</l>
+            <pb n="145"/>
+            <l>And thou, faint not too early, o'er thy grief</l>
+            <l>Brooding alone; but haste to Pallas' walls,</l>
+            <l n="80">And suppliant her ancient image clasp.</l>
+            <l>There having judges of thy cause, and words</l>
+            <l>Of suasive power, some means we shall devise</l>
+            <l>For evermore to free thee from these toils;</l>
+            <l>For at my bidding was thy mother slain.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:85-87" n="3">
+            <speaker>ORESTES</speaker>
+            <l>Apollo lord, not to do wrong thou know'st;</l>
+            <l>Since then thou knowest, learn not to neglect.</l>
+            <l>Of good success thy might is warranty.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:88-93" n="4">
+            <speaker>APOLLO</speaker>
+            <l>Remember, nor let fear unnerve thy mind.</l>
+            <stage>[To HERMES.]</stage>
+            <l>But thou, true brother mine, blood of my sire,</l>
+            <l n="90">Hermes, protect him ;-faithful to thy name,</l>
+            <l>Be guide, be shepherd to my suppliant;</l>
+            <l>For Zeus himself reveres the outlaw's claim,</l>
+            <l>Which mortals from thy happy escort hold.</l>
+          </sp>
+          <stage>[Exit ORESTES, conducted by HERMES.]</stage>
+          <stage>[Ghost of CLYTEMNESTRA appears behind APOLLO. She is arrayed in her robe of state, sombre and shadow-like. Her breast is bare, and the bloody wound visible near the neck.]</stage>
+          <milestone n="94" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:94-116" n="5">
+            <speaker>Ghost</speaker>
+            <l>Sleep would ye! How! what need of sleepers here?</l>
+            <l>But I, by you dishonoured thus and scorned,</l>
+            <l>Among the other dead no lack of blame,</l>
+            <l>For his sake whom I slew, must needs endure.</l>
+            <l>In deep disgrace I wander ;-hear ye this,</l>
+            <pb n="146"/>
+            <l n="100">Reproach among the shades forsakes me not;</l>
+            <l>Dire evil I have borne from those most dear,</l>
+            <l>And yet for me, by matricidal hands</l>
+            <l>Ruthlessly slain, no god is moved to wrath.</l>
+            <l>Behold these direful heart-wounds, whence they came,</l>
+            <l>For clear in sleep the vision of the mind,</l>
+            <l>Though unforeseen by day the fate of men.</l>
+            <l>My off'rings many a time have ye lapped up,</l>
+            <l>Wineless libations, sober, soothing gifts,</l>
+            <l>The hallowed feast around the altar-fire,</l>
+            <l n="110">At night's dread hour, shared by no other god.</l>
+            <l>All these down-trampled now I must behold.</l>
+            <l>But gone is he, escaping like a fawn,</l>
+            <l>And, lightly bounding o'er the hunter's net,</l>
+            <l>At you he mocked, with many a scornful jeer.</l>
+            <l>Hear ye, how, pleading for my life, I speak.</l>
+            <l>Awake, dread demons of the lower world;</l>
+            <l>For Clytemnestra calls you, I, a dream.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:117" n="6">
+            <speaker>Chorus</speaker>
+            <stage>[Moaning.]</stage>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:118-119" n="7">
+            <speaker>CLYTEMNESTRA</speaker>
+            <l>Moan would ye? but the man is gone, is flown;</l>
+            <l>For him are patron-gods, though not for me.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:120" n="8">
+            <speaker>Chorus</speaker>
+            <stage>[Moaning.]</stage>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:121-122" n="9">
+            <speaker>CLYTEMNESTRA</speaker>
+            <l n="120">Soundly ye sleep, and pity not my woe,</l>
+            <l>While he, the matricide, Orestes, flies.</l>
+          </sp>
+          <pb n="147"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:123" n="10">
+            <speaker>Chorus</speaker>
+            <stage>[Groans.]</stage>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:124-125" n="11">
+            <speaker>CLYTEMNESTRA</speaker>
+            <l>Groan ye and sleep, nor on the instant rise?</l>
+            <l>What have ye done except to work me bale?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:126" n="12">
+            <speaker>Chorus</speaker>
+            <stage>[Groans.]</stage>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:127-128" n="13">
+            <speaker>CLYTEMNESTRA</speaker>
+            <l>Slumber and toil, worthy conspirators,</l>
+            <l>Have sorely wasted the fell dragon's might.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:129-130" n="14">
+            <speaker>Chorus</speaker>
+            <stage>[Redoubled and shrill groans.]</stage>
+            <l>Take heed there.<ref n="147.1">*</ref></l>
+          </sp>
+          <milestone n="131" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:131-139" n="15">
+            <speaker>CLYTEMNESTRA</speaker>
+            <l>In dreams ye track the game, ye yelp amain,</l>
+            <l>Like hound that never intermits the chase.</l>
+            <pb n="148"/>
+            <l>What dost thou? Rise, be not subdued by toil,</l>
+            <l>Nor yet, relaxed by sleep, to grief be blind.</l>
+            <l n="130">By just reproaches let thy heart be stung,</l>
+            <l>For to the prudent sharp they are as goads.</l>
+            <l>†But on thy quarry wafting gory breath,</l>
+            <l>Scorch him with fiery vapour from thy maw ;—</l>
+            <l>Chase hard, with second coursing wear him down.</l>
+          </sp>
+          <stage>[The Ghost vanishes. The Chorus-leader starts from her seat.]</stage>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:140-142" n="16">
+            <speaker>Leader</speaker>
+            <l>Awake! Awaken her, as I wake thee!</l>
+            <l>Sleepest thou still? Arise, and slumber spurn;</l>
+            <l>Then try we whether vain our prelude be.</l>
+          </sp>
+          <stage>[The Furies start up one after another from their seats, and range themselves upon the stage, right and left of their leader.]</stage>
+          <milestone n="143" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:143-178" n="17">
+            <speaker>Chorus</speaker>
+            <stage>STROPHE I.</stage>
+            <l>
+              <speaker>1st Fury</speaker> Woe! woe! alack! Friends, we have suffered scorn.</l>
+            <l>
+              <speaker>2</speaker> Much have I suffered and in vain.</l>
+            <l>
+              <speaker>1</speaker> Alack! dire anguish we have borne,</l>
+            <l n="140">Intolerable pain!</l>
+            <l>
+              <speaker>2</speaker> Burst from the toils, fled is the game away.</l>
+            <l>
+              <speaker>3</speaker> By sleep o'ermastered I have lost the prey.</l>
+            <stage>ANTISTROPHE I.</stage>
+            <l>
+              <speaker>4</speaker> Fie! Son of Zeus! Thou thievish art, I trow;</l>
+            <l>
+              <speaker>5</speaker> Us, hoary gods, thou youngster ridest down;</l>
+            <pb n="149"/>
+            <l>
+              <speaker>4</speaker> This godless wight, bitter to parents, thou</l>
+            <l>As suppliant dost own.</l>
+            <l>
+              <speaker>5</speaker> A god the matricide has filched away.</l>
+            <l>
+              <speaker>6</speaker> That aught herein is just will any say?</l>
+            <stage>STROPHE II.</stage>
+            <milestone n="149" unit="card" resp="Smyth"/>
+            <l>
+              <speaker>7</speaker> Voice of reproachful blame, to me in dreams that came</l>
+            <l n="150">Smote me, like charioteer with scourge grasped tight,</l>
+            <l>'Neath heart and reins.</l>
+            <l>
+              <speaker>8</speaker> Such chilly pang I know</l>
+            <l>†As from the public scourger's ruthless blow.</l>
+            <stage>ANTISTROPHE II.</stage>
+            <l>
+              <speaker>9</speaker> The upstart doings these of younger deities,</l>
+            <milestone n="155" unit="card" resp="Smyth"/>
+            <l>Usurping power beyond the sway of right.</l>
+            <l>†Dark-smeared from foot to crown, earth's navel-stone</l>
+            <l>
+              <speaker>10</speaker> Blood's horrible defilement now doth own.</l>
+            <stage>STROPHE III.</stage>
+            <l n="160">
+              <speaker>11, 12</speaker> But Thou, the seer, with hearth-stain hast thy shrine</l>
+            <l>Polluted, self-invited, self-impelled;</l>
+            <milestone n="162" unit="card" resp="Smyth"/>
+            <l>Revering mortal things 'gainst law divine</l>
+            <l>The Fates thou hast dishonoured, grey with eld.</l>
+            <stage>ANTISTROPHE III.</stage>
+            <l>
+              <speaker>13, 14</speaker> †Me while he plagues, himself he shall not free;</l>
+            <pb n="150"/>
+            <l>A captive still, though under earth he fled,</l>
+            <l>For, stained with blood, another after me,</l>
+            <milestone n="169" unit="card" resp="Smyth"/>
+            <milestone n="174" unit="card" resp="Smyth"/>
+            <milestone n="178" unit="card" resp="Smyth"/>
+            <l>†Avenger stern, shall light upon his head.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:179-197" n="18">
+            <speaker>APOLLO</speaker>
+            <l n="170">Avaunt, I charge thee, leave these hallowed seats;</l>
+            <l>Depart with speed from this prophetic shrine,</l>
+            <l>Lest thou,-by wingèd glistering snake transfixed,</l>
+            <l>Shot from this golden-twisted cord,-through pain,</l>
+            <l>Shouldst vomit forth black gore, the clots disgorging</l>
+            <l>Which thou from slaughtered men hast ruthless sucked.</l>
+            <l>Thee it befits not to approach these seats,</l>
+            <l>But where head-lopping, eye-outscooping rage,</l>
+            <l>With vengeance that doth sap youth's vital powers,</l>
+            <l n="180">Where slaughters, mutilations, stonings reign,</l>
+            <l>And where impaled, wretches with cruel throes</l>
+            <l>Groan forth their anguish. These the feasts ye love,</l>
+            <l>And therefore are ye hateful to the gods.</l>
+            <l>Your whole aspèct attests it,-such should dwell</l>
+            <l>In blood-gorged lion's den, not tarry here</l>
+            <l>Bringing pollution to these hallowed seats.</l>
+            <l>Begone, ye grisly troop, unshepherded,</l>
+            <l>For to such flock no heavenly power is kind.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:198-200" n="19">
+            <speaker>Chorus</speaker>
+            <l>Apollo lord, do thou in turn give ear;</l>
+            <l n="190">No mere accomplice art thou in these ills;</l>
+            <l>Rather of all, sole author thou, sole cause.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:201" n="20">
+            <speaker>APOLLO</speaker>
+            <l>How so! To greater length extend thy speech.</l>
+          </sp>
+          <pb n="151"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:202" n="21">
+            <speaker>Chorus</speaker>
+            <l>The stranger thou didst prompt to matricide.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:203" n="22">
+            <speaker>APOLLO</speaker>
+            <l>To avenge his sire I prompted him; why not?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:204" n="23">
+            <speaker>Chorus</speaker>
+            <l>With promise this new bloodshed to defend.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:205" n="24">
+            <speaker>APOLLO</speaker>
+            <l>And bade him seek as suppliant this shrine.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:206" n="25">
+            <speaker>Chorus</speaker>
+            <l>Then these, his escort, why dost thou revile?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:207" n="26">
+            <speaker>APOLLO</speaker>
+            <l>Because not meet their presence for these seats.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:208" n="27">
+            <speaker>Chorus</speaker>
+            <l>Yet unto us hath been assigned this charge.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:209" n="28">
+            <speaker>APOLLO</speaker>
+            <l n="200">What function this? Extol thy fair employ.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:210" n="29">
+            <speaker>Chorus</speaker>
+            <l>All mother-slayers from their homes we chase.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:211" n="30">
+            <speaker>APOLLO</speaker>
+            <l>How if the wife her husband should have slain?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:212" n="31">
+            <speaker>Chorus</speaker>
+            <l>Not one in blood were she with him she slew.</l>
+          </sp>
+          <pb n="152"/>
+          <milestone n="213" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:213-224" n="32">
+            <speaker>APOLLO</speaker>
+            <l>Greatly thou dost misprise and set at nought</l>
+            <l>The nuptial bond of Hera and of Zeus;</l>
+            <l>Dishonoured too is Kypris by these words,</l>
+            <l>From whom to mortals come their dearest joys;</l>
+            <l>For, under Justice' shield, the nuptial couch,</l>
+            <l>'Twixt man and wife the heaven-appointed bond,</l>
+            <l n="210">Is mightier than oath; to wedded pair,</l>
+            <l>When one slays other, if thou lenient be,</l>
+            <l>These not pursuing with keen-sighted wrath,</l>
+            <l>Not justly then Orestes thou dost chase;</l>
+            <l>For thee, right earnest in his case I find,</l>
+            <l>But openly in hers more mild in sooth.</l>
+            <l>But Pallas shall both sides with justice scan.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:225" n="33">
+            <speaker>Chorus</speaker>
+            <l>Trust me this man never will I let go.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:226" n="34">
+            <speaker>APOLLO</speaker>
+            <l>Pursue him then, prolong thy fruitless toil.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:227" n="35">
+            <speaker>Chorus</speaker>
+            <l>Claim not by word my honours to abridge.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:228" n="36">
+            <speaker>APOLLO</speaker>
+            <l>Honours like thine I would reject with scorn.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:229-231" n="37">
+            <speaker>Chorus</speaker>
+            <l n="220">For great thy rank before the throne of Zeus.</l>
+            <l>But I, led on by matricidal blood,</l>
+            <l>To death will chase this man, and hunt him down.</l>
+          </sp>
+          <stage>[Exit Chorus.]</stage>
+          <pb n="153"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:232-234" n="38">
+            <speaker>APOLLO</speaker>
+            <l>But I will aid, will save, the fugitive;</l>
+            <l>For dire with men and gods the suppliant's wrath,</l>
+            <l>If I his cause should willingly betray.</l>
+          </sp>
+          <stage>[The scene changes to ATHENS, and the temple of APOLLO is transformed into the temple of ATHENA POLIAS on the Acropolis.]</stage>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:235-243" n="39">
+            <speaker>ORESTES</speaker>
+            <stage>embracing the sacred image of PALLAS.</stage>
+            <l>Athena queen, at Loxias' behest</l>
+            <l>I hither come; view kindly one accused,</l>
+            <l>Not blood-polluted, nor with hands unclean,</l>
+            <l>For blunted now and worn the edge of crime</l>
+            <l n="230">At other shrines, and in the paths of men.</l>
+            <l>Passing alike o'er continents and seas,</l>
+            <l>Obedient to the word oracular</l>
+            <l>Of Loxias, thy sacred shrine I reach,</l>
+            <l>Thy image, goddess! Taking here my stand,</l>
+            <l>I will abide the issue of my cause.</l>
+          </sp>
+          <stage>[Enter the Leader of the Chorus, followed by the Furies. As they advance they spread themselves out towards both sides of the orchestra.]</stage>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:244-259" n="40">
+            <speaker>Leader</speaker>
+            <l>'Tis well; sure token this, the man is here.</l>
+            <l>Follow the leading of this voiceless guide;</l>
+            <l>For still we track, as hound the wounded fawn,</l>
+            <l>By blood and reeking drops, our destined prey;</l>
+            <l>With many a toilsome, man-outwearing gasp</l>
+            <pb n="154"/>
+            <l n="240">Pant my deep vitals, for on every spot</l>
+            <l>Of the wide earth my charge I shepherded,</l>
+            <l>And now in hot pursuit with wingless flight</l>
+            <l>Swift as swift galley o'er the sea I course;</l>
+            <l>Here in some nook ensconced the game must lie;</l>
+            <milestone n="254" unit="card" resp="Smyth"/>
+            <l>Odour of human blood I snuff with joy.</l>
+          </sp>
+          <stage>[The Furies having taken their stations opposite to one another in the orchestra, sing the following Strophes in responsive order.]</stage>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:260-275" n="41">
+            <speaker>Chorus</speaker>
+            <l>
+              <speaker>1, 2</speaker> Look here! Look there!</l>
+            <l>Take heed! Beware!</l>
+            <l>Lest, scathless in flight, illuding our sight,</l>
+            <l>The matricide 'scape unaware.</l>
+            <l>
+              <speaker>3, 4</speaker> Lo! yonder enshrined,</l>
+            <l>Round the goddess entwined,</l>
+            <l n="250">A verdict he seeks through her aid 'gainst the right.</l>
+            <l>
+              <speaker>5, 6</speaker> But baseless his trust;</l>
+            <l>Mother's blood from the dust</l>
+            <l>Is hard to recover, as earth-fallen rain.</l>
+            <l>
+              <speaker>7, 8</speaker> Lo, suffer thou must</l>
+            <l>In requital most just,</l>
+            <l>And I from thy members the life-blood will drain.</l>
+            <l>
+              <speaker>9, 10</speaker> The red draught I'll taste,</l>
+            <l>Thy strength I will waste,</l>
+            <l n="260">Then drag thee still living to regions below,</l>
+            <l>The forfeit to pay for thy mother's death-blow.</l>
+            <pb n="155"/>
+            <l>
+              <speaker>11, 12</speaker> There thou shalt see in durance drear,</l>
+            <l>'Gainst god or guest or parents dear,</l>
+            <l>Like thee who sinned, receiving their due meed.</l>
+            <l>
+              <speaker>13, 14</speaker> For Hades, ruler of the nether sphere,</l>
+            <l>Exactest auditor of human kind,</l>
+            <l>Graved on the tablet of his mind</l>
+            <l>Doth every trespass read.</l>
+          </sp>
+          <div type="notes">
+             <note n="141.1">* In a passage of deep significance Æschylus traces the successive steps in the history of Revelation, as it passed from the Chthonian (earthly) to the Olympian powers. Earth herself was the first prophet. In the simplest phenomena of nature she first spoke to men of the divine character and will. As time went on she gave place to "Right" (Themis), a daughter who was born to her; for the teaching of society and life carries us forward in the knowledge of God. "Right" in turn gave place to a younger sister, Phoebe, the embodiment of light, the symbol of spiritual intelligence. With her ministry the office of the earthly powers was fulfilled, and she transferred her charge, not by claim of succession, but as a voluntary offering, to the bright God of heaven, Phoebus, who himself adopted her name for his own.- Brook F. Westcott.</note>
+             <note n="142.1">* Loxias, an epithet of Apollo, interpreted by most etymologists as alluding to the ambiguities (<quote xml:lang="grc">λοξά</quote>) of Delphian oracles; some, indeed, think it can be referred to <quote xml:lang="grc">λόγος</quote>, speech, as implying that Apollo is the interpreter of Zeus.</note>
+             <note n="142.2">‡ Pronæan, an epithet of Athena at Delphi, as having a chapel or statue there in front of the great temple of Apollo.</note>
+             <note n="144.1">* On the hearth [of the Delphian temple] burnt a perpetual fire, and near it was the omphalos, or navel-stone, which was supposed to mark the middle point of the earth -SMITH'S Classical Geography.</note>
+             <note n="147.1">* Müller, p. 61. These exclamations are uttered by the leader and the other Furies in rapid succession.</note>
+          </div>
+
+          <milestone n="276" unit="card" resp="Smyth"/>
+
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:276-298" n="42">
+            <speaker>ORESTES</speaker>
+            <l>To me, long disciplined in woe, are known</l>
+            <l>Divers lustrations; when to speak I know,</l>
+            <l>When to be silent; but in present need</l>
+            <l>By sapient teacher I was charged to speak.</l>
+            <l n="270">Pale now and dim the blood-mark on my hand;</l>
+            <l>Washed clean away the matricidal stain;</l>
+            <l>For while yet fresh, by rites of sacred swine,</l>
+            <l>At Phobos' altar it was duly purged ;—</l>
+            <l>Tedious the tale, were I to reckon o'er</l>
+            <l>How many fared with me nor suffered harm.</l>
+            <l>Time, as it waxeth, purifieth all ;-</l>
+            <l>Now, with pure lip, I piously invoke</l>
+            <l>Athena, of this region queen, to come,</l>
+            <l>My pleader: so she weaponless shall earn</l>
+            <l n="280">Myself, my realm, and all the Argive host,</l>
+            <l>Honestly true, allies for evermore.</l>
+            <l>But whether on the distant Libyan plain</l>
+            <l>She, by her native wave of Triton stand,</l>
+            <l>Or sit, with foot enveloped, to her friends</l>
+            <l>Dispensing aid ;-or on Phlegraian fields,</l>
+            <l>Like warlike leader, marshal her array,—</l>
+            <pb n="156"/>
+            <l>Oh may she come (a goddess hears from far),</l>
+            <l>And be my saviour from these miseries.</l>
+          </sp>
+          <milestone n="299" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:299-306" n="43">
+            <speaker>Chorus</speaker>
+            <l>Thee nor Apollo, nor Athena's might</l>
+            <l n="290">Avails to save. Spurned by the gods themselves,</l>
+            <l>With heart of joy oblivious, thou shalt pine,</l>
+            <l>The Furies' blood-sucked victim, a mere shade.-</l>
+            <l>How! no reply! Dost thou contemn my words,</l>
+            <l>Thou, fattened for me, thou, my victim doomed,</l>
+            <l>Slain at no altar, but my living prey?—</l>
+            <l>Our hymn, as chain to bind thee, thou shalt hear.</l>
+          </sp>
+          <stage>[The Chorus-leader ascends the steps of the altar. The rest of the Chorus arrange themselves in the orchestra, and sing the following Strophes.]</stage>
+          <div type="hymn">
+            <head>Choral Hymn.</head>
+            <l>Haste we now the dance to wind,</l>
+            <l>Since beseems in dread refrain,</l>
+            <l n="300">To utter how our bodeful train</l>
+            <l>Deal the lots to mortal kind.</l>
+            <l>Loyal are we to the Right,-</l>
+            <l>Hence clean hands whoso extendeth,</l>
+            <l>Scathless still through life he wendeth,</l>
+            <l>Nor on him our wrath may light.</l>
+            <l>But who guilty hands doth hide,</l>
+            <l>Stained with blood,-as yonder wight,-</l>
+            <l>Lurketh ever at his side,</l>
+            <l n="310">Witness true, this Brood of Night.</l>
+            <l>Blood-avengers we appear,</l>
+            <l>Stern-purposed to achieve our doom severe.</l>
+          </div>
+          <pb n="157"/>
+          <milestone n="307" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:307-396" n="44">
+            <speaker>Full Chorus</speaker>
+            <stage>STROPHE I.</stage>
+            <l>Oh mother, hear me, Mother Night,</l>
+            <l>Who brought me forth, a living dread,</l>
+            <l>To scare the living and the dead,</l>
+            <l>Latona's son does me despite ;-</l>
+            <l>Stealing away my trembling prey,</l>
+            <l>Destined a mother's murder to requite.</l>
+            <l>Now o'er the victim lift the dread refrain,</l>
+            <l>The Furies' death-hymn, madness-fraught ;-</l>
+            <l>Torch of the brain, from Hades brought,—</l>
+            <l>Soul-binding, lyreless, mortal-blighting strain.</l>
+            <stage>ANTISTROPHE I.</stage>
+            <l n="320">For Fate unswerving span, that we</l>
+            <l>This office hold for evermore :—</l>
+            <milestone n="321" unit="card" resp="Smyth"/>
+            <l>Mortals imbrued with kindred gore</l>
+            <l>We chase, till under earth they flee;</l>
+            <l>And when in death they yield their breath,</l>
+            <l>Not e'en in realm of Hades are they free.</l>
+            <l>Now o'er the victim lift the dread refrain,</l>
+            <l>The Furies' death-hymn, madness-fraught;-</l>
+            <l>Torch of the brain, from Hades brought,—</l>
+            <milestone n="328" unit="card" resp="Smyth"/>
+            <l>Soul-binding, lyreless, mortal-blighting strain.</l>
+            <stage>STROPHE II.</stage>
+            <l n="330">For even at birth Fate assigned our career</l>
+            <l>Apart from the gods;-we approach not their sphere;</l>
+            <l>Their banquets we share not,</l>
+            <l>Their white robes we wear not,</l>
+            <pb n="158"/>
+            <milestone n="334" unit="card" resp="Smyth"/>
+            <l>Men's homes to destroy is the Furies' employ.</l>
+            <l>When Ares in strife</l>
+            <l>Robs a brother of life,</l>
+            <l>†Relentless, the blood-dripping caitiff we chase ;-</l>
+            <l>Though girded with strength, he must falter at length,</l>
+            <l>And falls, overpowered in the race.</l>
+            <stage>ANTISTROPHE II.</stage>
+            <l n="340">No partner brook wé in our time-honoured cares,</l>
+            <milestone n="341" unit="card" resp="Smyth"/>
+            <l>†Nor share with the gods jurisdiction nor prayers.</l>
+            <l>For, us, the detested,—</l>
+            <l>Blood-stained, sable-vested,</l>
+            <l>High Zeus from his hall did exclude one and all.</l>
+            <l>So downward we stoop</l>
+            <l>On our foe with fell swoop,</l>
+            <milestone n="347" unit="card" resp="Smyth"/>
+            <l>And crush him with heavy footfall where he lies;</l>
+            <l>†These limbs overthrow both the swift and the slow;</l>
+            <l n="350">Once prostrate, our victims ne'er rise.</l>
+            <stage>STROPHE III.</stage>
+            <l>Men's glory, though beneath the sky</l>
+            <l>Proudly august, below the earth</l>
+            <l>Dwindles dishonoured, nothing worth,</l>
+            <l>Before our dark-stoled company,</l>
+            <milestone n="354" unit="card" resp="Smyth"/>
+            <l>What time in bodeful dance, untired, our feet we ply.</l>
+            <stage>ANTISTROPHE III.</stage>
+            <l>Through evil blind, the wretch, though prone,</l>
+            <l>Knows not his fall; for dark the cloud</l>
+            <l>That doth the guilty mind o'ershroud;</l>
+            <pb n="159"/>
+            <l>And Fame proclaims with heavy groan,</l>
+            <l>The doom, like murky cloud, that wraps a house o'erthrown.</l>
+            <stage>STROPHE IV.</stage>
+            <milestone n="360" unit="card" resp="Smyth"/>
+            <milestone n="354a" unit="card" resp="Smyth"/>
+            <l n="360">For such Fate's decree :-awful ministers we,-</l>
+            <l>Keen-eyed to conceive what untired we achieve;</l>
+            <l>†Of crime ever mindful, obdurate to prayer,</l>
+            <l>Apart from the gods our loathed mission we bear;-</l>
+            <l>To living and dead, 'neath our sunless torch-ray,</l>
+            <l>Dark and rugged our way.</l>
+            <stage>ANTISTROPHE IV.</stage>
+            <l>Who then without fear among mortals can hear</l>
+            <milestone n="368" unit="card" resp="Smyth"/>
+            <l>Our Fate-sanctioned warrant, our god-given right?</l>
+            <l n="370">For not with dishonour I wield my dread might,</l>
+            <l>Although my hoar mission, in darkness profound,</l>
+            <milestone n="372" unit="card" resp="Smyth"/>
+            <milestone n="377" unit="card" resp="Smyth"/>
+            <milestone n="372a" unit="card" resp="Smyth"/>
+            <milestone n="381" unit="card" resp="Smyth"/>
+            <milestone n="389" unit="card" resp="Smyth"/>
+            <l>I hold 'neath the ground.</l>
+          </sp>
+          <stage>[ATHENA appears in a chariot, and alights.]</stage>
+          <milestone n="397" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:397-414" n="45">
+            <speaker>ATHENA</speaker>
+            <l>A voice I heard from far Scamander's banks</l>
+            <l>Invoking me, what time the land I claimed,-</l>
+            <l>Fair portion of the booty, spear-achieved,</l>
+            <l>Which chiefs and leaders of Achaia's host</l>
+            <l>Apportioned, root and branch, for ever mine,</l>
+            <l n="380">To Theseus' sons a chosen heritage.</l>
+            <l>Thence have I come, plying unwearied feet,</l>
+            <l>My swelling Ægis rustling, without wings;</l>
+            <l>With stalwart coursers harnessed to my car.</l>
+            <l>And now, beholding here these uncouth guests,</l>
+            <pb n="160"/>
+            <l>I fear not, yet the marvel takes mine eye.</l>
+            <l>Who are ye? I address myself to all,</l>
+            <l>To you and also to this stranger here,</l>
+            <l>Who as a suppliant at mine image sits.</l>
+            <l>But you, like nothing that is born and dies,</l>
+            <l n="390">Neither of goddesses by gods beheld,</l>
+            <l>Nor in similitude of mortal shapes ;-</l>
+            <l>But to speak ill of those who harm us not</l>
+            <l>Reason forbids, and Justice stands aloof.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:415-417" n="46">
+            <speaker>Chorus</speaker>
+            <l>Daughter of Zeus, all shalt thou hear in brief.</l>
+            <l>The progeny of ancient Night are we,</l>
+            <l>"Curses" yclept in homes beneath the earth.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:418" n="47">
+            <speaker>ATHENA</speaker>
+            <l>Your race I know, and titles ominous.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:419" n="48">
+            <speaker>Chorus</speaker>
+            <l>Ay, and my honours quickly shalt thou learn.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:420" n="49">
+            <speaker>ATHENA</speaker>
+            <l>Mine ears are open, be the word but plain.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:421" n="50">
+            <speaker>Chorus</speaker>
+            <l>'Tis ours men-slayers from their homes to chase.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:422" n="51">
+            <speaker>ATHENA</speaker>
+            <l n="400">And to the slayer's flight what goal is fixed?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:423" n="52">
+            <speaker>Chorus</speaker>
+            <l>Where to rejoice is not th' appointed doom.</l>
+          </sp>
+          <pb n="161"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:424" n="53">
+            <speaker>ATHENA</speaker>
+            <l>And to this bourn thou houndest now this man?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:425" n="54">
+            <speaker>Chorus</speaker>
+            <l>Yea, for he chose his mother's blood to shed.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:426" n="55">
+            <speaker>ATHENA</speaker>
+            <l>Urged by no mandate whose strong dread he feared?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:427" n="56">
+            <speaker>Chorus</speaker>
+            <l>Where is the goad should prompt to matricide?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:428" n="57">
+            <speaker>ATHENA</speaker>
+            <l>Two parties plead, one only have I heard.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:429" n="58">
+            <speaker>Chorus</speaker>
+            <l>But neither will he take nor tender oath.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:430" n="59">
+            <speaker>ATHENA</speaker>
+            <l>Repute of justice, not just act, thou wishest.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:431" n="60">
+            <speaker>Chorus</speaker>
+            <l>How? Tell me. For no lack of wit is thine.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:432" n="61">
+            <speaker>ATHENA</speaker>
+            <l n="410">Win not by oaths unjust success, I say.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:433" n="62">
+            <speaker>Chorus</speaker>
+            <l>Question then put, and rightful verdict give.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:434" n="63">
+            <speaker>ATHENA</speaker>
+            <l>Leave ye to me the ruling of the cause?</l>
+          </sp>
+          <pb n="162"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:435" n="64">
+            <speaker>Chorus</speaker>
+            <l>Surely: just homage just regard requites.</l>
+          </sp>
+          <milestone n="436" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:436-442" n="65">
+            <speaker>ATHENA</speaker>
+            <l>To this what wilt thou in thy turn reply,</l>
+            <l>O stranger? Tell thy country and thy race,</l>
+            <l>And thy misfortunes, then ward off this blame;</l>
+            <l>If, trusting in the right, thou thus dost sit</l>
+            <l>Clasping mine image, near my sacred shrine,</l>
+            <l>Ixion-like, a suppliant revered,-</l>
+            <l n="420">To all these queries give me clear reply.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:443-469" n="66">
+            <speaker>ORESTES</speaker>
+            <l>Athena queen! matter of grave import</l>
+            <l>First will I from thy words last-uttered purge.</l>
+            <l>Not blood-polluted am I, nor doth stain</l>
+            <l>Cleave to thine image from thy suppliant's hand.</l>
+            <l>Sure proof of this will I adduce ;-'tis law</l>
+            <l>That voiceless lives the man defiled by blood,</l>
+            <l>Till purifier's hand hath him besprent</l>
+            <l>With victim's blood, slain in life's budding prime.</l>
+            <l n="430">Long since at other shrines have been performed,</l>
+            <l>With victims and with streams, these lustral rites.</l>
+            <l>Thus then this care, as cancelled, I dismiss.</l>
+            <l>My lineage, what it is, thou soon shalt hear.</l>
+            <l>Argive am I, my sire thou knewest well,</l>
+            <l>Marshal of naval heroes, Agamemnon,</l>
+            <l>In league with whom thou madest Ilion,</l>
+            <l>Troya's proud city, an uncitied waste.</l>
+            <l>The hero home returned, and basely fell;</l>
+            <pb n="163"/>
+            <l>For him, entangled in a subtle net,</l>
+            <l n="440">My mother, black of soul, did reave of life;</l>
+            <l>The bath bore witness to the deed of blood.</l>
+            <l>Myself, long time an exile, coming home,</l>
+            <l>Slew her who bare me,-I deny it not,-</l>
+            <l>Avenging my dear father, blood for blood.-</l>
+            <l>But Loxias is sharer in my guilt,</l>
+            <l>Who goads of anguish to my heart announced,</l>
+            <l>Unless the guilty found from me their due.</l>
+            <l>My deed, or just, or unjust, do thou judge;-</l>
+            <l>Fare as I may from thee, I'll bow content.</l>
+          </sp>
+          <milestone n="470" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:470-489" n="67">
+            <speaker>ATHENA</speaker>
+            <l n="450">Too grave the cause for mortal to adjudge,</l>
+            <l>Nor is it lawful for myself to try</l>
+            <l>Causes of blood, with such keen issue fraught.</l>
+            <l>Chiefly for this: although, due rites performed,</l>
+            <l>My shrine thou visitest as suppliant,</l>
+            <l>Harmless and pure; yet in my city's cause,</l>
+            <l>Hurtful to it, I claim, thou shalt not be.</l>
+            <l>For these hold functions hard to set aside,</l>
+            <l>And not triumphant in their suit, henceforth,</l>
+            <l>The poison of their hate, falling to earth,</l>
+            <l n="460">Will to this land breed dire and cureless plague.</l>
+            <l>So stands the matter;-each alternative,</l>
+            <l>For them to stay, for me to banish them,</l>
+            <l>Is mischief-fraught, nor know I remedy.</l>
+            <l>But since this weighty cause hath lighted here,</l>
+            <l>Judges of murder, bound by oath, I'll choose,-</l>
+            <l>Solemn tribunal for all future time.</l>
+            <pb n="164"/>
+            <l>But for yourselves call witnesses and proofs,—</l>
+            <l>Sworn evidence collect to aid your suit;</l>
+            <l>And when, this matter truly to decide,</l>
+            <l>I from my citizens the best have culled,</l>
+            <l>Who shun the fraudful oath, I will return.</l>
+          </sp>
+          <stage>[Exit.]</stage>
+          <milestone n="490" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:490-565" n="68">
+            <speaker>Chorus</speaker>
+            <stage>STROPHE I.</stage>
+            <l>Ruin will usher in new laws</l>
+            <l>Should judgment crown the wrongful cause,</l>
+            <l>And on this mother-slayer smile ;-</l>
+            <l>This deed will mortals reconcile</l>
+            <l>To license, and from age to age,</l>
+            <l n="470">Parents shall bleed beneath their children's rage.</l>
+            <stage>ANTISTROPHE I.</stage>
+            <l>No more this mortal-watching train</l>
+            <l>Shall dog the caitiff as of yore;-</l>
+            <l>To murder I will give the rein.</l>
+            <l>Who tells his neighbour's sorrow o'er,</l>
+            <l n="480">†Shall hear in turn Grief's anguished moan;</l>
+            <l>Who comforts other's woe, himself must groan.</l>
+            <stage>STROPHE II.</stage>
+            <l>Let none, 'neath Sorrow's stroke</l>
+            <l>Writhing, our aid invoke,</l>
+            <l>Pleading with anguished moan,</l>
+            <l>"O Justice, Justice, O Erinys' throne!"</l>
+            <l>Some father thus may wail,</l>
+            <pb n="165"/>
+            <l>Some mother smit with bale,</l>
+            <l n="490">Vainly, since Justice' altar lieth prone.</l>
+            <stage>ANTISTROPHE II.</stage>
+            <l>†Throned in the heart let Awe,</l>
+            <l>Guardian of sacred law,</l>
+            <l>There hold her stedfast reign!</l>
+            <l>Well earned is wisdom at the cost of pain.-</l>
+            <l>But who in blithesome cheer</l>
+            <l>That lives, absolved from Fear,</l>
+            <l>Or man, or State, will Justice long revere?</l>
+            <stage>STROPHE III.</stage>
+            <milestone n="499" unit="card" resp="Smyth"/>
+            <l>Neither life by law unblest,</l>
+            <l n="500">Nor by tyrant yoke opprest,</l>
+            <l>Sanction thou ;-</l>
+            <l>All extremes the gods detest;</l>
+            <l>They the golden mean, I trow,</l>
+            <l>Stamp with might. The truth I speak</l>
+            <l>Weighty is. Defiant scorn</l>
+            <l>Is from godless folly born;</l>
+            <l>While from inward health doth flow,</l>
+            <milestone n="508" unit="card" resp="Smyth"/>
+            <l>Beloved of all, true bliss which mortals seek.</l>
+            <stage>ANTISTROPHE III.</stage>
+            <l n="510">This, the sum of wisdom, hear;—</l>
+            <l>Justice' altar aye revere,</l>
+            <l>Nor ever dare,</l>
+            <l>Lusting after worldly gear,</l>
+            <l>With atheist foot to spurn; beware,</l>
+            <l>Lurketh Retribution near,</l>
+            <pb n="166"/>
+            <l>Direful issue doth impend;</l>
+            <l>Honour then with holy fear</l>
+            <milestone n="517" unit="card" resp="Smyth"/>
+            <l>Thy parents,-household rights revere,</l>
+            <l>Nor guest-observing ordinance offend.</l>
+            <stage>STROPHE IV.</stage>
+            <l n="520">But who unforced, with spirit free</l>
+            <l>Dares to be just, is ne'er unblest;</l>
+            <l>Whelmed utterly he cannot be:</l>
+            <l>But for the wretch with lawless breast,</l>
+            <l>Bold seizer of promiscuous prey,-</l>
+            <l>I warn you, he, perforce, his sail</l>
+            <milestone n="526" unit="card" resp="Smyth"/>
+            <l>Shall strike amid the conquering gale,</l>
+            <l>When shrouds and yards dismasted own its sway.</l>
+            <stage>ANTISTROPHE IV.</stage>
+            <l>He cries, but mid the whirlpool's roar</l>
+            <l n="530">None heeds him; for the gods deride,</l>
+            <l>†Eyeing the boaster, proud no more,</l>
+            <l>Struggling amid the surging tide;</l>
+            <l>Shorn of his strength he yields to Fate ;-</l>
+            <l>The cape he weathers not, but thrown</l>
+            <l>On Justice' reef, with precious freight,</l>
+            <milestone n="538" unit="card" resp="Smyth"/>
+            <milestone n="550" unit="card" resp="Smyth"/>
+            <milestone n="558" unit="card" resp="Smyth"/>
+            <l>He perisheth for aye, unwept, unknown.</l>
+          </sp>
+        <stage>[ATHENA enters at the head of the twelve Areopagites, who take their seats in the orchestra.]</stage>
+          <milestone n="566" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:566-573" n="69">
+            <speaker>ATHENA</speaker>
+            <l>Herald, proclaim! Hold back the multitude,</l>
+            <l>Let Tuscan trumpet, filled with mortal breath,</l>
+            <l>Piercing the welkin with sonorous blast,</l>
+            <l>Ring out its brazen summons to the crowd:</l>
+            <pb n="167"/>
+            <l n="540">For, while this council-hall the jurors fill,</l>
+            <l>Silence to keep availeth, and to learn</l>
+            <l>(Yea, the whole city and this stranger too)</l>
+            <l>What laws for time eternal I ordain;</l>
+            <l>So may the cause be righteously adjudged.</l>
+          </sp>
+          <stage>[APOLLO appears on the stage.]</stage>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:574-575" n="70">
+            <speaker>Chorus</speaker>
+            <l>Apollo lord, rule thou thine own domain ;-</l>
+            <l>In this affair say, what concern hast thou?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:576-581" n="71">
+            <speaker>APOLLO</speaker>
+            <l>Twofold my errand here. As witness, first:</l>
+            <l>For this man at my shrine is suppliant,</l>
+            <l>Guest of my hearth; by me from murder cleansed.</l>
+            <l n="550">Also I come as pleader in his cause;</l>
+            <l>For of his mother's death-blow mine the blame.</l>
+            <stage>[To ATHENA.]</stage>
+            <l>Now, as thy wisdom prompteth, open thou</l>
+            <l>The trial, Pallas: legalize the suit.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:582-584" n="72">
+            <speaker>ATHENA</speaker>
+            <stage>[To the Chorus.]</stage>
+            <l>'Tis yours to speak;-thus I commence the suit.</l>
+            <l>Since that the plaintiff, taking first the word,</l>
+            <l>To state the argument may justly claim.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:585-587" n="73">
+            <speaker>Chorus</speaker>
+            <l>Though we be many, brief shall be our speech.</l>
+            <stage>[To ORESTES.]</stage>
+            <l>Do thou in turn make answer, word for word :—</l>
+            <l>And first declare,—didst thou thy mother slay?</l>
+          </sp>
+          <pb n="168"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:588" n="74">
+            <speaker>ORESTES</speaker>
+            <l>I slew her, nor have e'er denied the deed.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:589" n="75">
+            <speaker>Chorus</speaker>
+            <l>Thus of three wrestling-bouts the first is-ours.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:590" n="76">
+            <speaker>ORESTES</speaker>
+            <l n="560">Not prostrate he o'er whom thou mak'st this vaunt.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:591" n="77">
+            <speaker>Chorus</speaker>
+            <l>Behoveth thee to tell how thou didst slay.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:592" n="78">
+            <speaker>ORESTES</speaker>
+            <l>This hand, my drawn sword wielding, smote her neck.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:593" n="79">
+            <speaker>Chorus</speaker>
+            <l>By whom persuaded, and by whose advice?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:594" n="80">
+            <speaker>ORESTES</speaker>
+            <l>By Phobos' words: he witnesseth for me.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:595" n="81">
+            <speaker>Chorus</speaker>
+            <l>How? did the prophet counsel matricide?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:596" n="82">
+            <speaker>ORESTES</speaker>
+            <l>Certes,-nor thus far have I blamed my lot.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:597" n="83">
+            <speaker>Chorus</speaker>
+            <l>But, by the vote condemned, thou'lt change thy speech.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:598" n="84">
+            <speaker>ORESTES</speaker>
+            <l>My sire, I trust, will aid me from the tomb.</l>
+          </sp>
+          <pb n="169"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:599" n="85">
+            <speaker>Chorus</speaker>
+            <l>Good: having slain thy mother, trust the dead!</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:600" n="86">
+            <speaker>ORESTES</speaker>
+            <l n="570">Polluted was she with a twofold stain.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:601" n="87">
+            <speaker>Chorus</speaker>
+            <l>How so? Instruct the jurors on these things.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:602" n="88">
+            <speaker>ORESTES</speaker>
+            <l>Her husband slaying, she my father slew.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:603" n="89">
+            <speaker>Chorus</speaker>
+            <l>Thou livest, she through death is murder-free.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:604" n="90">
+            <speaker>ORESTES</speaker>
+            <l>Why did ye not then chase her while alive?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:605" n="91">
+            <speaker>Chorus</speaker>
+            <l>Not of one blood with her the man she slew.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:606" n="92">
+            <speaker>ORESTES</speaker>
+            <l>But am I with my mother one in blood?</l>
+          </sp>
+          <milestone n="607" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:607-608" n="93">
+            <speaker>Chorus</speaker>
+            <l>Thee 'neath her zone she nourished;-blood-stained wretch,</l>
+            <l>A mother's dearest blood dost thou disown?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:609-613" n="94">
+            <speaker>ORESTES</speaker>
+            <l>Now bear me witness and expound for me,</l>
+            <l n="580">Apollo, whether I with justice slew.</l>
+            <pb n="170"/>
+            <l>The deed, as wrought, we do not disavow;-</l>
+            <l>But whether justly shed, or not, this blood,</l>
+            <l>Judge thou, that answer I may make to these.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:614-621" n="95">
+            <speaker>APOLLO</speaker>
+            <l>To you, Athena's great tribunal, now</l>
+            <l>Justly I'll speak; a prophet may not lie ;-</l>
+            <l>Ne'er from my throne prophetic have I said</l>
+            <l>Concerning man, or woman, or the state,</l>
+            <l>What Zeus, Olympian sire, might not ordain.</l>
+            <l>Learn ye how potent is the plea I urge ;—</l>
+            <l n="590">The Father's will I charge you to obey ;</l>
+            <l>For oaths are not of greater force than Zeus.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:622-624" n="96">
+            <speaker>Chorus</speaker>
+            <l>Zeus, as thou sayest, gave this oracle,</l>
+            <l>And bade Orestes here, his father's death</l>
+            <l>Avenging, to despise a mother's rights.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:625-639" n="97">
+            <speaker>APOLLO</speaker>
+            <l>Unlike the case, when dies a highborn man,</l>
+            <l>Richly adorned by sceptres Heaven-bestowed,</l>
+            <l>By woman dies, not from impetuous bow</l>
+            <l>Of Amazons far-shooting: Pallas, nay!</l>
+            <l n="600">But as thyself shalt hear, and these convened</l>
+            <l>Who sit, by ballot to adjudge this cause.</l>
+            <l>For, from the mighty labour, conquest-crowned,</l>
+            <l>†Her lord with friendly welcome she receives,</l>
+            <l>The bath he enters; him she covers o'er</l>
+            <l>With broidered robes, then, tangled in the folds,</l>
+            <l>Smites him, her husband;—such the hero's death,</l>
+            <pb n="171"/>
+            <l>By all revered, marshal of naval hosts ;-</l>
+            <l>Her thus I signalize, their hearts to prick</l>
+            <l>Who here have mission to decide this cause.</l>
+          </sp>
+          <milestone n="640" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:640-643" n="98">
+            <speaker>Chorus</speaker>
+            <l n="610">A father's death Zeus honours,-so thou sayest,-</l>
+            <l>Yet he his father, aged Kronos, chained :-</l>
+            <l>How prove this deed not adverse to thy word?</l>
+            <l>Here I invoke you, judges, to give heed.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:644-651" n="99">
+            <speaker>APOLLO</speaker>
+            <l>Oh hateful progeny, of Heaven abhorred!</l>
+            <l>Fetters he might unloose,-this ill hath cure,</l>
+            <l>And yields to many a method of release.</l>
+            <l>But when of murdered man the dust hath once</l>
+            <l>The blood sucked up, he riseth never more.</l>
+            <l>No charm hath Zeus, my father, here ordained,</l>
+            <l n="620">Who all things else upturneth as he will,</l>
+            <l>Nor with the toil panteth his mighty heart.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:652-656" n="100">
+            <speaker>Chorus</speaker>
+            <l>Against his exile darest thou to plead?</l>
+            <l>Shall he, a mother's kindred blood who shed,</l>
+            <l>Lord it in Argos, o'er his father's house?</l>
+            <l>What altars of his people may he touch?</l>
+            <l>How share the lustral water with his tribe?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:657-673" n="101">
+            <speaker>APOLLO</speaker>
+            <l>Thus I declare, learn ye how just my words.</l>
+            <l>Not parent of the embryo, but nurse,</l>
+            <l n="630">Is she, the so-called mother of the child.</l>
+            <pb n="172"/>
+            <l>The father is the source: as stranger, she</l>
+            <l>For stranger rears the germ, if Heaven blight not.</l>
+            <l>Sure warrant of my word I will adduce;—</l>
+            <l>A child, though motherless, may see the light;</l>
+            <l>Witness this daughter of Olympian Zeus,</l>
+            <l>Not nurtured in the darkness of the womb,</l>
+            <l>Yet such a scion goddess never bare.</l>
+            <l>In will, in action, Pallas, be it mine</l>
+            <l>Thy city and thy people to exalt.</l>
+            <l n="640">This man I sent, a suppliant to thy shrine,</l>
+            <l>That faithful he might be for evermore.</l>
+            <l>That, goddess! thou for allies mightest win</l>
+            <l>Him and his after-race, and that these pacts</l>
+            <l>Might last eternal, blessed by men unborn.</l>
+          </sp>
+          <milestone n="674" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:674-675" n="102">
+            <speaker>ATHENA</speaker>
+            <l>I do command you, as your judgment leads,</l>
+            <l>Just verdict give,-of pleadings now enough.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:676-677" n="103">
+            <speaker>Chorus</speaker>
+            <l>By us in sooth our shafts have all been shot,</l>
+            <l>The issue of the cause I wait to hear.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:678" n="104">
+            <speaker>ATHENA</speaker>
+            <l>How may I rule the cause, unblamed by you?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:679-680" n="105">
+            <speaker>Chorus</speaker>
+            <l n="650">Ye heard what ye have heard ;-now with your heart</l>
+            <l>Give judgment, strangers, and revere your oaths.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:681-710" n="106">
+            <speaker>ATHENA</speaker>
+            <l>Hear ye my statute, men of Attica,—</l>
+            <pb n="173"/>
+            <l>Ye who of bloodshed judge this primal cause;</l>
+            <l>Yea, and in future age shall Ægeus' host</l>
+            <l>Revere this court of jurors. This the hill</l>
+            <l>Of Ares, seat of Amazons, their tent,</l>
+            <l>What time 'gainst Theseus, breathing hate, they came,</l>
+            <l>Waging fierce battle, and their towers upreared,</l>
+            <l>A counter-fortress to Acropolis;</l>
+            <l n="660">To Ares they did sacrifice, and hence</l>
+            <l>This rock is titled Areopagus.</l>
+            <l>Here then shall sacred Awe, to Fear allied,</l>
+            <l>By day and night my lieges hold from wrong,</l>
+            <l>Save if themselves do innovate my laws.</l>
+            <l>If thou with mud, or influx base, bedim</l>
+            <l>The sparkling water, nought thou'lt find to drink.</l>
+            <l>Nor Anarchy, nor Tyrant's lawless rule</l>
+            <l>Commend I to my people's reverence;—</l>
+            <l n="670">Nor let them banish from their city Fear;</l>
+            <l>For who 'mong men, uncurbed by fear, is just?</l>
+            <l>Thus holding Awe in seemly reverence,</l>
+            <l>A bulwark for your state shall ye possess,</l>
+            <l>A safeguard to protect your city-walls,</l>
+            <l>Such as no mortals other-where can boast,</l>
+            <l>Neither in Scythia, nor in Pelops' realm.</l>
+            <l>Behold! This court august, untouched by bribes,</l>
+            <l>Sharp to avenge, wakeful for those who sleep,</l>
+            <l>Establish I, a bulwark to this land.</l>
+            <l n="680">This charge, extending to all future time,</l>
+            <l>I give my lieges. Meet it is ye rise,</l>
+            <l>Assume the pebbles, and decide the cause,</l>
+            <l>Your oath revering. All hath now been said.</l>
+          </sp>
+          <pb n="174"/>
+          <stage>[The first Areopagite rises, takes a pebble from the altar, and drops it into the urn. The rest follow in succession between the following distichs.]</stage>
+          <milestone n="711" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:711-712" n="107">
+            <speaker>Chorus</speaker>
+            <l>This sisterhood, oppressive to the land,</l>
+            <l>My council is that ye in no wise shame.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:713-714" n="108">
+            <speaker>APOLLO</speaker>
+            <l>And I enjoin you, fear mine oracles;</l>
+            <l>From Zeus they issue, fruitless make them not.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:715-716" n="109">
+            <speaker>Chorus</speaker>
+            <l>Usurping championship of bloody suit,</l>
+            <l>No longer shall thine oracles be pure.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:717-718" n="110">
+            <speaker>APOLLO</speaker>
+            <l>Did then my Father towards Ixion err,</l>
+            <l>Who first as blood-stained suppliant, sued for aid?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:719-720" n="111">
+            <speaker>Chorus</speaker>
+            <l n="690">Say on! but I, defrauded in my suit,</l>
+            <l>In turn will haunt the land, dread visitant.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:721-722" n="112">
+            <speaker>APOLLO</speaker>
+            <l>Alike of younger and more ancient gods</l>
+            <l>Art thou unhonoured. I the cause shall win.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:723-724" n="113">
+            <speaker>Chorus</speaker>
+            <l>So whilom wroughtest thou in Pheres' house,</l>
+            <l>Moving the Fates mortals from death to free.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:725-726" n="114">
+            <speaker>APOLLO</speaker>
+            <l>Is it not just my votary to save,</l>
+            <l>Then most when most his trouble calls for aid?</l>
+          </sp>
+          <pb n="175"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:727-728" n="115">
+            <speaker>Chorus</speaker>
+            <l>But thou the prime allotments didst o'errule</l>
+            <l>With wine deluding the hoar goddesses.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:729-730" n="116">
+            <speaker>APOLLO</speaker>
+            <l n="700">But thou, full soon, defeated in thy suit,</l>
+            <l>Wilt spew thy venom, harmless to thy foes.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:731-733" n="117">
+            <speaker>Chorus</speaker>
+            <l>Since thou, young god, o'erridest my hoar age,</l>
+            <l>The issue I await with list'ning ear,</l>
+            <l>And doubtful stay my wrath against the town.</l>
+          </sp>
+          <stage>[After the twelfth Areopagite has dropped his pebble into the urn, ATHENA takes one from the altar, and holds it in her hand.]</stage>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:734-743" n="118">
+            <speaker>ATHENA</speaker>
+            <l>With me it rests to give the casting vote,</l>
+            <l>And to Orestes I my suffrage pledge.</l>
+            <l>For to no mother do I owe my birth;</l>
+            <l>But I, in all save wedlock, praise the male.</l>
+            <l n="710">In very truth I am my father's child,</l>
+            <l>Nor care I to avenge a woman's death</l>
+            <l>Who slew her husband, guardian of the house.</l>
+            <l>Orestes, judged by equal votes prevails.</l>
+            <l>The pebbles now pour quickly from the urns,</l>
+            <l>Judges, to whom this office is assigned.</l>
+          </sp>
+          <milestone n="744" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:744" n="119">
+            <speaker>ORESTES</speaker>
+            <l>Phobos Apollo, how will end this suit?</l>
+          </sp>
+          <pb n="176"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:745" n="120">
+            <speaker>Chorus</speaker>
+            <l>O Night, dark mother, seest thou these things?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:746" n="121">
+            <speaker>ORESTES</speaker>
+            <l>The noose awaits me, or to see the light.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:747" n="122">
+            <speaker>Chorus</speaker>
+            <l>Ruin for us, or firm prerogative.</l>
+          </sp>
+          <stage>[The pebbles are poured out of the urn and counted.]</stage>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:748-751" n="123">
+            <speaker>APOLLO</speaker>
+            <l>Now strangers, count the pebbles with due care;</l>
+            <l n="720">And while ye tell them o'er, let justice reign;</l>
+            <l>Lack of right judgment breedeth mighty woe,</l>
+            <l>The while one suffrage hath a house restored.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:752-753" n="124">
+            <speaker>ATHENA</speaker>
+            <l>This man acquitted is from charge of blood,</l>
+            <l>For equal are the numbers of the votes.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:754-777" n="125">
+            <speaker>ORESTES</speaker>
+            <l>Hail Pallas! Hail thou saviour of my house!</l>
+            <l>The exile, reft of his paternal land,</l>
+            <l>Thou leadest home: haply some Greek will say,</l>
+            <l>"The man an Argive is once more, and dwells</l>
+            <l n="730">On his paternal heritage, by aid</l>
+            <l>Of Pallas, and of Loxias, and Him,</l>
+            <l>Third Saviour, mighty consummator, Zeus,"</l>
+            <l>Who, honouring my father's death, saves me,</l>
+            <l>Beholding these my mother's advocates.</l>
+            <l>Now to my native Argos I depart,</l>
+            <l>Pledged to this country and thy lieges here</l>
+            <pb n="177"/>
+            <l>By oath to be revered for evermore,</l>
+            <l>That never helmsman of the Argive State</l>
+            <l>Shall hither bear the well-appointed spear.</l>
+            <l>For we, ourselves, though couching in the grave,</l>
+            <l n="740">On those who violate these present oaths</l>
+            <l>By sore perplexities will work, and send</l>
+            <l>In march despondency, in crossing streams</l>
+            <l>Omens averse, till they repent their toil.</l>
+            <l>But unto those who keep this pledge, and honour</l>
+            <l>Athena's city with confederate spear,</l>
+            <l>To them will we be gracious evermore.</l>
+            <l>Hail goddess, and these city-wardens, hail!</l>
+            <l>Still may your gripe be fatal to your foes,</l>
+            <l>While victory and safety crown your spear.</l>
+          </sp>
+          <stage>[Exit.]</stage>
+          <milestone n="778" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:778-792" n="126">
+            <speaker>Chorus</speaker>
+            <l n="750">
+              <speaker>1</speaker> Ye upstart gods, time-honoured laws</l>
+            <l>Down-riding, ye have seized my prey.</l>
+            <l>
+              <speaker>2</speaker> But I, dishonoured, stung by grief,</l>
+            <l>Woe, woe, my torture to allay,</l>
+            <l>On all the ground, will cast around</l>
+            <l>Venom, whose baleful drops shall cause</l>
+            <l>Where it doth light a sterile blight,</l>
+            <l>Fatal alike to germ, to leaf.</l>
+            <l>The pest, O Justice, scouring o'er the plain,</l>
+            <l>Shall fling abroad its man-destroying stain.</l>
+            <l n="760">
+              <speaker>3</speaker> I groan anew; what dare? what do?</l>
+            <l>My pangs the citizens shall rue;</l>
+            <l>Alas, most wretched are thy daughters, Night!</l>
+            <l>Enduring this dishonourable slight.</l>
+          </sp>
+          <pb n="178"/>
+          <milestone n="793" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:793-807" n="127">
+            <speaker>ATHENA</speaker>
+            <l>Be moved by me to stay these heavy groans;</l>
+            <l>Not vanquished are ye, nor to your disgrace</l>
+            <l>Fell justice, equal-voted, from the urn.</l>
+            <l>Besides from Zeus clear oracles were sent,</l>
+            <l>And he who uttered them himself avouched,</l>
+            <l n="770">Orestes for this deed should know no scath.</l>
+            <l>Hurl not your heavy wrath upon this land;</l>
+            <l>Your rage abate, cause not sterility,</l>
+            <l>Nor rain your poison-drops, like venomed darts,</l>
+            <l>Ruthless devourers of each tender germ.</l>
+            <l>For I most righteously do promise you</l>
+            <l>Both sanctuaries and shrines in this just land;</l>
+            <l>Seated at hearths with unctuous off'rings fed,</l>
+            <l>And held in honour by my lieges here</l>
+          </sp>
+          <milestone n="808" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:808-822" n="128">
+            <speaker>Chorus</speaker>
+            <l>
+              <speaker>1</speaker> Ye upstart gods, time-honoured laws</l>
+            <l n="780">Down-riding, ye have seized my prey.</l>
+            <l>
+              <speaker>2</speaker> But I, dishonoured, stung by grief,</l>
+            <l>Woe, woe, my torture to allay,</l>
+            <l>On all the ground, will cast around</l>
+            <l>Venom, whose baleful drops shall cause</l>
+            <l>Where it doth light a sterile blight,</l>
+            <l>Fatal alike to germ, to leaf.</l>
+            <l>The pest, O Justice, scouring o'er the plain,</l>
+            <l>Shall fling abroad its man-destroying stain.</l>
+            <l>
+              <speaker>3</speaker> I groan anew; what dare? what do?</l>
+            <l n="790">My pangs the citizens shall rue;</l>
+            <l>Alas, most wretched are thy daughters, Night!</l>
+            <l>Enduring this dishonourable slight.</l>
+          </sp>
+          <pb n="179"/>
+          <milestone n="823" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:823-836" n="129">
+            <speaker>ATHENA</speaker>
+            <l>Not slighted are ye, powers august! through rage</l>
+            <l>Curse not with hopeless blight the abode of man.</l>
+            <l>I too on Zeus rely; why speak of that?</l>
+            <l>And sole among the gods I know the key</l>
+            <l>That opes the halls where sealed thunder sleeps.</l>
+            <l>But such we need not. Be appeased by me,</l>
+            <l>Nor scatter o'er the land, from froward tongue,</l>
+            <l n="800">The harmful seed that turneth all to bane.</l>
+            <l>Of bitter rage lull ye the murky wave;</l>
+            <l>Be venerated here and dwell with me.</l>
+            <l>Sharing the first fruits of this ample realm,</l>
+            <l>For children offered, and for nuptial rite,</l>
+            <l>This word of mine thou wilt for ever praise.</l>
+          </sp>
+
+          <milestone n="837" unit="card" resp="Smyth"/>
+
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:837-847" n="130">
+            <speaker>Chorus</speaker>
+            <l><speaker>1</speaker> What! I endure all this; alas!</l>
+            <l><speaker>2</speaker> I, hoary goddess, dwell forsooth on earth,</l>
+            <l>Debasement horrible!</l>
+            <l><speaker>3</speaker> Revenge I breathe, unmitigated wrath!</l>
+            <l><speaker>4</speaker> Woe, woe! O earth, alas!</l>
+            <l><speaker>5</speaker> What agony of pain creeps o'er my heart!</l>
+            <l><speaker>6</speaker> Hear, Mother Night, my passion.</l>
+            <l><speaker>7</speaker> Mark for scorn,</l>
+            <l>By crafty gods deluded, held for nought,</l>
+            <l>Of ancient honour I am basely shorn.</l>
+          </sp>
+          <milestone n="848" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:848-869" n="131">
+            <speaker>ATHENA</speaker>
+            <l n="810">I'll bear thine anger, for mine elder thou,</l>
+            <l>And art moreover far more sage than I.</l>
+            <l>Yet me, with wisdom, Zeus not meanly dowers.</l>
+            <pb n="180"/>
+            <l>But ye, departing to a foreign land,</l>
+            <l>Will of the land ye leave enamoured be;</l>
+            <l>Of this I warn you; for, Time's onward flow</l>
+            <l>Shall these my lieges lift to loftier fame.</l>
+            <l>But thou a seat shall have, Erechtheus near,</l>
+            <l>Honoured by men and stolèd matrons, such</l>
+            <l>As ye from other mortals ne'er might win.</l>
+            <l n="820">But cast ye not abroad on these my realms,</l>
+            <l>To waste their budding strength, whetstones of blood,</l>
+            <l>Evoking frantic rage not born of wine;</l>
+            <l>Nor pluck ye out the heart of fighting-cocks,</l>
+            <l>To plant among my townsmen civil strife,</l>
+            <l>Reckless of kindred blood; let foreign war</l>
+            <l>Rage without stint, affording ample scope</l>
+            <l>For him who burns with glory's mighty rage.</l>
+            <l>No war of home-bred cocks, I ween, is that!</l>
+            <l n="830">Such terms I proffer, thine it is to choose;</l>
+            <l>Blessing and blest, with blessèd rites revered,</l>
+            <l>To share this country dear unto the gods.</l>
+          </sp>
+          <milestone n="870" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:870-880" n="132">
+            <speaker>Chorus</speaker>
+            <l><speaker>1</speaker> What! I endure all this; alas!</l>
+            <l><speaker>2</speaker> I, hoary goddess, dwell forsooth on earth,</l>
+            <l>Debasement horrible!</l>
+            <l><speaker>3</speaker> Revenge I breathe, unmitigated wrath!</l>
+            <l><speaker>4</speaker> Woe, woe! O earth, alas!</l>
+            <l><speaker>5</speaker> What agony of pain creeps o'er my heart!</l>
+            <l><speaker>6</speaker> Hear, Mother Night, my passion.</l>
+            <l n="840"><speaker>7</speaker> Mark for scorn,</l>
+            <l>By crafty gods deluded, held for nought,</l>
+            <l>Of ancient honour I am basely shorn.</l>
+          </sp>
+          <pb n="181"/>
+          <milestone n="881" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:881-891" n="133">
+            <speaker>ATHENA</speaker>
+            <l>I will not weary to entreat thee fair;</l>
+            <l>For ne'er with justice shalt thou urge the plaint,</l>
+            <l>That thou, the elder deity, by me</l>
+            <l>The younger, and these city-guarding men,</l>
+            <l>Wast, like an outcast, banished from this land.</l>
+            <l>Now if Persuasion, dropping from my tongue</l>
+            <l>Gentle and sweet, seem to thee pure and dread,</l>
+            <l n="850">Tarry thou must; but if thou wilt not tarry,</l>
+            <l>Not justly wouldst thou on this city hurl</l>
+            <l>Revenge, or wrath, or do my people wrong;</l>
+            <l>For thine it is to share with me this land,</l>
+            <l>In aye-enduring honour justly held.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:892" n="134">
+            <speaker>Chorus</speaker>
+            <l>Athena, queen, what seat dost offer me?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:893" n="135">
+            <speaker>ATHENA</speaker>
+            <l>One where no sorrow scathes. Receive it thou!</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:894" n="136">
+            <speaker>Chorus</speaker>
+            <l>If I consent, what honour waiteth me?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:895" n="137">
+            <speaker>ATHENA</speaker>
+            <l>No house unblest by thee shall henceforth thrive.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:896" n="138">
+            <speaker>Chorus</speaker>
+            <l>This wilt thou do? endow me with such might?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:897" n="139">
+            <speaker>ATHENA</speaker>
+            <l>Ay, and will prosper him who worships thee.</l>
+          </sp>
+          <pb n="182"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:898" n="140">
+            <speaker>Chorus</speaker>
+            <l>Wilt thou sure warrant give me for all time?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:899" n="141">
+            <speaker>ATHENA</speaker>
+            <l>I may not pledge what I will not perform.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:900" n="142">
+            <speaker>Chorus</speaker>
+            <l n="860">Thine utterance soothes me;-I relax my wrath.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:901" n="143">
+            <speaker>ATHENA</speaker>
+            <l>Established here thou wilt be rich in friends.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:902" n="144">
+            <speaker>Chorus</speaker>
+            <l>What blessings shall we hymn for this thy land?</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:903-915" n="145">
+            <speaker>ATHENA</speaker>
+            <l>Such as, with gracious influence, from earth,</l>
+            <l>From dew of ocean, and from heaven, attend</l>
+            <l>On conquest not ignoble. That soft airs,</l>
+            <l>With sunshine blowing, wander o'er the land;</l>
+            <l>That earth's fair fruit, rich increase of the flocks,</l>
+            <l>Fail not my citizens for evermore,</l>
+            <l n="870">With safety of the precious human seed ;-</l>
+            <l>But, for the impious,-weed them promptly out.</l>
+            <l>For I, like one who tendeth plants, do love</l>
+            <l>This race of righteous men, by grief unscathed :-</l>
+            <l>Such be thy charge. Be mine not to endure</l>
+            <l>That, among mortals, in war's splendid toils,</l>
+            <l>Athena's city be not conquest-crowned.</l>
+          </sp>
+          <milestone n="916" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:916-926" n="146">
+            <speaker>Chorus</speaker>
+            <stage>STROPHE I.</stage>
+            <l>Pallas, thy chosen seat henceforth be mine!</l>
+            <l>No more the city I despise</l>
+            <pb n="183"/>
+            <l>Which Zeus omnipotent and Ares prize,</l>
+            <l n="880">Stronghold of gods, altar-protecting shrine</l>
+            <l>Of Grecian deities,</l>
+            <l>For which, with friendly augury I pray;</l>
+            <l>Springing to light from earth's dark womb,</l>
+            <l>May life's fair germs prolific bloom,</l>
+            <l>Lured by the solar ray.</l>
+          </sp>
+          <milestone n="927" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:927-937" n="147">
+            <speaker>ATHENA</speaker>
+            <l>I for my citizens with gracious mind</l>
+            <l>These blessings mediate; these deities</l>
+            <l>Installing here, mighty and hard to please.</l>
+            <l n="890">For unto them hath Fate assigned</l>
+            <l>The destinies to fix of human kind.</l>
+            <l>But whoso findeth them severe</l>
+            <l>Knows not whence come life's strokes; for crime,</l>
+            <l>Dread heritage from bygone time,</l>
+            <l>Doth lead him to these powers august.</l>
+            <l>Him noiseless Ruin, midst his proud career,</l>
+            <l>With hostile anger, levels with the dust.</l>
+          </sp>
+          <milestone n="938" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:938-948" n="148">
+            <speaker>Chorus</speaker>
+            <stage>ANTISTROPHE I.</stage>
+            <l>Here may no tree-destroying mildew sweep,-</l>
+            <l n="900">(So show I forth my grace),</l>
+            <l>May no fierce heat within these bounds alight,</l>
+            <l>Blasting the tender buds; no sterile blight,</l>
+            <l>Disastrous, onward creep.</l>
+            <l>But in due season here may flocks of worth</l>
+            <l>Twin yeanlings bear; and may this race,</l>
+            <l>Enriched with treasures of the earth,</l>
+            <l>Honour the Heaven-sent grace!</l>
+          </sp>
+          <pb n="184"/>
+          <milestone n="949" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:949-955" n="149">
+            <speaker>ATHENA</speaker>
+            <l>Ye city-guardians do ye hear aright</l>
+            <l n="910">What thus she promises. For great the might</l>
+            <l>Erinys wields-dread brood of night-</l>
+            <l>Alike with Hades and the Olympian Powers;</l>
+            <l>O'er men confessed and absolute her reign,</l>
+            <l>To some she giveth song, and some she dowers</l>
+            <l>With life, tear-blinded, marred by pain.</l>
+          </sp>
+          <milestone n="956" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:956-967" n="150">
+            <speaker>Chorus</speaker>
+            <stage>STROPHE II.</stage>
+            <l>Here may there fall no man-destroying blight!</l>
+            <l>And ye, great Powers, o'er marriage who preside,</l>
+            <l>In wedlock bands each lovely maid unite;-</l>
+            <l n="920">Ye too, dread sisters, to ourselves allied,</l>
+            <l>Awful dispensers of the Right,</l>
+            <l>In every human home confessed,</l>
+            <l>In every age made manifest,</l>
+            <l>By righteous visitations ;-aye revered,</l>
+            <l>And, everywhere, of deities most feared.</l>
+          </sp>
+          <milestone n="968" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:968-975" n="151">
+            <speaker>ATHENA</speaker>
+            <l>While thus ye ratify with friendly zeal</l>
+            <l>These blessings to my country, I rejoice,</l>
+            <l>And love Persuasion's eye, who moved my voice</l>
+            <l n="930">To soothe these stern refusers, passion-stung.</l>
+            <l>But Zeus hath conquered, swayer of the tongue,</l>
+            <l>God of the Forum. Triumphs now for aye</l>
+            <l>In noble benefits our rivalry.</l>
+          </sp>
+          <pb n="185"/>
+          <milestone n="976" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:976-987" n="152">
+            <speaker>Chorus</speaker>
+            <stage>ANTISTROPHE II.</stage>
+            <l>Within this city ne'er may civil strife,</l>
+            <l>Insatiate of ill, tumultuous roar;</l>
+            <l>Nor thirsty dust quaff deep the purple gore</l>
+            <l>Of citizens; nor rage, with murder rife,</l>
+            <l>Snatch greedily the vengeful knife!</l>
+            <l n="940">But studious of the common weal</l>
+            <l>May each to each in turn be kind,</l>
+            <l>Hate may they ever with one common mind,</l>
+            <l>This among mortals many a woe can heal.</l>
+          </sp>
+          <milestone n="988" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:988-995" n="153">
+            <speaker>ATHENA</speaker>
+            <l>Now growing wise, the pathway do they find</l>
+            <l>Of tongue propitious. From these shapes of fear,</l>
+            <l>I to my lieges see rich gain. For here,</l>
+            <l>If ye these gracious ones with gracious mind</l>
+            <l>Adore and magnify,-your state and town</l>
+            <l>Ye shall for evermore with justice crown.</l>
+          </sp>
+          <milestone n="996" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:996-1002" n="154">
+            <speaker>Chorus</speaker>
+            <stage>STROPHE III.</stage>
+            <l n="950">Farewell, farewell, enriched with wealth's fair prize,</l>
+            <l>Ye citizens, who dwell Zeus' altar near,</l>
+            <l>Friends to the friendly Virgin,-timely wise;</l>
+            <l>'Neath Pallas' wings who rest, her father doth revere.</l>
+          </sp>
+          <stage>[ATHENA stations herself at the head of the Chorus in the orchestra, where they are joined by the escort of females with torches.]</stage>
+          <milestone n="1003" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1003-1013" n="155">
+            <speaker>ATHENA</speaker>
+            <l>Ye too farewell! Mine is it first to show</l>
+            <pb n="186"/>
+            <l>Your destined seats and thitherward to lead.</l>
+            <l>Escorted by the torchlight's sacred glow,</l>
+            <l n="960">The while in sacrifice the victims bleed</l>
+            <l>The downward slope descend.</l>
+            <l>Whate'er is baneful to the land restrain,</l>
+            <l>And conquest's gracious ministry upsend</l>
+            <l>To this my city. Tutelary train,</l>
+            <l>Children of Cranaos, it belongs to you,</l>
+            <l>These alien settlers to their homes to guide;</l>
+            <l>And with my lieges may there aye abide,</l>
+            <l>Discernment rightful of the Right and True.</l>
+          </sp>
+          <milestone n="1014" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1014-1020" n="156">
+            <speaker>Chorus</speaker>
+            <stage>ANTISTROPHE III.</stage>
+            <l n="970">Farewell once more, my farewell I repeat,</l>
+            <l>To all in Pallas' city who reside,</l>
+            <l>Or gods or mortals. Hold in awe my seat,</l>
+            <l>The fortunes of your life ye never then shall chide.</l>
+          </sp>
+          <milestone n="1021" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1021-1031" n="157">
+            <speaker>ATHENA</speaker>
+            <l>The utt'rance of your pious vows I praise ;—</l>
+            <l>And will escort you with the flashing light</l>
+            <l>Of torches, to your cavernous abodes</l>
+            <l>'Neath earth, with sacred ministers, who guard</l>
+            <l>Mine image justly; for, of Theseus' land,</l>
+            <l n="980">Now let the eye come forth,-illustrious train</l>
+            <l>Of youths, of women, young or hoar with eld,</l>
+            <l>In festive garb apparelled, vermeil-hued,-</l>
+            <l>Proceed and let the torch-flame lead the way,</l>
+            <l>That evermore this gracious sisterhood</l>
+            <l>May, with events auspicious, bless this land.</l>
+          </sp>
+          <pb n="187"/>
+          <stage>[During the following Chant the procession leaves the temple and descends the Acropolis.]</stage>
+          <milestone n="1032" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1032" n="158">
+            <speaker>Chorus of the Escort</speaker>
+            <stage>STROPHE I.</stage>
+            <l>Night's hoary children, venerable train,</l>
+            <l>With friendly escort leave the hallowed fane.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1032" n="159">
+            <speaker>All</speaker>
+            <l>Rustics, glad shouts of triumph raise.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1032" n="160">
+            <speaker>Chorus</speaker>
+            <stage>ANTISTROPHE I.</stage>
+            <l>In ancient crypts remote from light,</l>
+            <l n="990">Victims await you and the hallowed rite.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1033" n="161">
+            <speaker>All</speaker>
+            <l>People, ring out your notes of praise.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1033" n="162">
+            <speaker>Chorus</speaker>
+            <stage>STROPHE II.</stage>
+            <l>With promise to this land of blessings rare,</l>
+            <l>Down the steep path ye awful beings wend,</l>
+            <l>Rejoicing in the torchlight's dazzling glare.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1034" n="163">
+            <speaker>All</speaker>
+            <l>Your cries of jubilee ring out amain.</l>
+          </sp>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1034" n="164">
+            <speaker>Chorus</speaker>
+            <stage>ANTISTROPHE II.</stage>
+            <l>Let torchlights and libations close the rear.</l>
+            <l>Thus Zeus, all-seeing, and the Fates descend,</l>
+            <l>To bless these citizens to Pallas dear.</l>
+          </sp>
+          <milestone n="1035" unit="card" resp="Smyth"/>
+          <sp corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1035-1047" n="165">
+            <speaker>All</speaker>
+            <milestone n="1040" unit="card" resp="Smyth"/>
+            <milestone n="1044" unit="card" resp="Smyth"/>
+            <l>Your cry of jubilee ring out amain.</l>
+          </sp>
+
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
