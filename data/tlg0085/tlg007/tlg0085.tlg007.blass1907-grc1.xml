@@ -1,0 +1,1702 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="work">Friedrich Blass's Greek edition of Aeschylus' Eumenides</title>
+        <author>Aeschylus</author>
+        <editor>Friedrich Blass</editor>
+        <respStmt>
+          <resp>OCR correction, TEI structuring, and alignment to the Perseus reference edition</resp>
+          <name>Perseus Digital Library Project</name>
+        </respStmt>
+        <respStmt xml:id="google-ocr">
+          <resp>Optical character recognition</resp>
+          <name>Google</name>
+        </respStmt>
+        <respStmt xml:id="Smyth">
+          <resp>Reference line and card alignment</resp>
+          <name>Herbert Weir Smyth</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Perseus Digital Library Project</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <date when="2026-09-06">2026-09-06</date>
+        <idno type="CTS-URN">urn:cts:greekLit:tlg0085.tlg007.blass1907-grc1</idno>
+        <availability>
+          <licence target="https://creativecommons.org/publicdomain/mark/1.0/">The source volume is in the public domain in the United States.</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <title>Die Eumeniden</title>
+            <editor>Friedrich Blass</editor>
+            <imprint>
+              <pubPlace>Berlin</pubPlace>
+              <publisher>Weidmann</publisher>
+              <date when="1907">1907</date>
+            </imprint>
+            <idno type="HathiTrust">coo.31924072599198</idno>
+          </monogr>
+        </biblStruct>
+        <ref target="https://hdl.handle.net/2027/coo.31924072599198">HathiTrust source scan</ref>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
+      </refsDecl>
+      <refsDecl xml:id="CTS-modern">
+        <citeStructure match="/TEI/text/body/div" use="@n">
+          <citeStructure unit="line" match=".//l" use="@n"/>
+        </citeStructure>
+      </refsDecl>
+      <editorialDecl>
+        <correction status="low">Clear OCR glyph and layout errors were corrected. The text was not normalized to Smyth; low-confidence line alignments are explicitly marked.</correction>
+        <interpretation>Each verse carries a corresp link to the independently identified line in Smyth. This remains valid where Blass relocates verses.</interpretation>
+      </editorialDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-09-06">Recovered the Greek edition from the supplied HathiTrust OCR and aligned it to Smyth.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="grc">
+    <front>
+      <div type="hypothesis" n="hypothesis" xml:lang="grc">
+        <head>Ἀριστοφάνους ὑπόθεσις</head>
+        <pb n="23" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=31"/>
+        <p resp="#google-ocr">Ὀρέστης ἐν Δελφοῖς περιεχόμενος ὑπὸ τῶν Ἐρινύων βουλῆι Ἀπόλλωνος παρεγένετο εἰς Ἀθήνας εἰς τὸ ἱερὸν τῆς Ἀθηνᾶς· ἧς βουλῆι νικήσας κατῆλθεν εἰς Ἄργος. τὰς δὲ Ἐρινύας πραΰνάσα προσηγόρευσεν Εὐμενίδας. παρ᾽ οὐδετέρωι κεῖται ἡ μυθοποιία.</p>
+      </div>
+    </front>
+    <body xml:base="urn:cts:greekLit:tlg0085.tlg007.blass1907-grc1">
+      <div type="edition" n="urn:cts:greekLit:tlg0085.tlg007.blass1907-grc1" xml:lang="grc">
+        <castList>
+          <head>Τὰ τοῦ δράματος πρόσωπα</head>
+          <castItem>
+            <role xml:id="spk-pythia">Πυθίας προφῆτις</role>
+          </castItem>
+          <castItem>
+            <role xml:id="spk-apollo">Ἀπόλλων</role>
+          </castItem>
+          <castItem>
+            <role xml:id="spk-orestes">Ὀρέστης</role>
+          </castItem>
+          <castItem>
+            <role xml:id="spk-clytemnestra">Κλυταιμήστρας εἴδωλον</role>
+          </castItem>
+          <castItem>
+            <role xml:id="spk-chorus">Χορὸς Εὐμενίδων</role>
+          </castItem>
+          <castItem>
+            <role xml:id="spk-athena">Ἀθηνᾶ</role>
+          </castItem>
+          <castItem>
+            <role xml:id="spk-escorts">Πρόπομποι</role>
+          </castItem>
+        </castList>
+        <sp who="#spk-pythia">
+          <speaker>Πυθιάς</speaker>
+          <pb n="24" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=32"/>
+          <milestone unit="card" n="1" resp="#Smyth"/>
+          <l n="1" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1" resp="#google-ocr">Πρῶτον μὲν εὐχῆι τῆιδε πρεσβεύω θεῶν</l>
+          <l n="2" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:2" resp="#google-ocr">τὴν πρωτόμαντιν Γαῖαν· ἐκ δὲ τῆς Θέμιν,</l>
+          <l n="3" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:3" resp="#google-ocr">ἢ δὴ τὸ μητρὸς δευτέρα τόδ᾽ ἔζετο</l>
+          <l n="4" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:4" resp="#google-ocr">μαντεῖον, ὡς λόγος τις· ἐν δὲ τῶι τρίτωι</l>
+          <l n="5" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:5" resp="#google-ocr">λάχει, θελούσης, οὐδὲ πρὸς βίαν τινός,</l>
+          <l n="6" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:6" resp="#google-ocr">Τιτανὶς ἄλλη παῖς Χθονὸς καθέζετο</l>
+          <l n="7" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:7" resp="#google-ocr">Φοίβη· δίδωσιν δ᾽ ἡ γενέθλιον δόσιν</l>
+          <l n="8" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:8" resp="#google-ocr">Φοίβωι, τὸ Φοίβης δ᾽ ὄνομ᾽ ἔχει παρώνυμον.</l>
+          <l n="9" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:9" resp="#google-ocr">λιπὼν δὲ λίμνην Δηλίαν τε χοιράδα,</l>
+          <l n="10" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:10" resp="#google-ocr">κέλσας ἐπ᾿ ἀκτὰς ναυπόρους τὰς Παλλάδος,</l>
+          <l n="11" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:11" resp="#google-ocr">ἐς τήνδε γαῖαν ἦλθε Παρνησοῦ θ᾽ ἕδρας.</l>
+          <pb n="25" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=33"/>
+          <l n="12" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:12" resp="#google-ocr">πέμπουσι δ᾽ αὐτὸν καὶ σεβίζουσιν μέγα</l>
+          <l n="13" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:13" resp="#google-ocr">κελευθοποιοί παῖδες Ἡφαίστου, χθόνα</l>
+          <l n="14" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:14" resp="#google-ocr">ἀνήμερον τιθέντες ἡμερωμένην.</l>
+          <l n="15" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:15" resp="#google-ocr">μολόντα δ᾽ αὐτὸν κάρτα τιμαλφεῖ λεώς,</l>
+          <l n="16" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:16" resp="#google-ocr">Δελφὸς τε χώρας τῆσδε πρυμνήτης ἄναξ.</l>
+          <l n="17" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:17" resp="#google-ocr">τέχνης δέ νιν Ζεὺς ἔνθεον κτίσας φρένα</l>
+          <l n="18" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:18" resp="#google-ocr">ἵζει τέταρτον τοῖσδε μάντιν ἐν θρόνοις·</l>
+          <l n="19" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:19" resp="#google-ocr">Διὸς προφήτης δ᾽ ἐστὶ Λοξίας πατρός.</l>
+          <l n="21" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:21" resp="#google-ocr">Παλλὰς προνάια δ᾽ εὐλόγως πρεσβεύεται.</l>
+          <l n="22" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:22" resp="#google-ocr">σέβω δὲ νύμφας, ἔνθα Κωρυκὶς πέτρα</l>
+          <l n="23" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:23" resp="#google-ocr">κοίλη, φίλορνις, δαιμόνων ἀναστροφαί·</l>
+          <l n="24" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:24" resp="#google-ocr">Βρόμιος ἔχει τὸν χῶρον, οὐδ᾽ ἀμνημονῶ,</l>
+          <l n="25" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:25" resp="#google-ocr">ἐξ οὗτε Βάκχαις ἐστρατήγησεν θεός,</l>
+          <l n="26" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:26" resp="#google-ocr">λαγὼ δίκην Πενθεῖ καταρράψας μόρον.</l>
+          <l n="20" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:20" resp="#google-ocr">τούτους ἐν εὐχαῖς φροιμιάζομαι θεούς,</l>
+          <l n="27" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:27" resp="#google-ocr">Πλειστοῦ τε πηγὰς καὶ Ποσειδῶνος κράτος</l>
+          <l n="28" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:28" resp="#google-ocr">καλοῦσα καὶ τέλειον ύψιστον Δία,</l>
+          <l n="29" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:29" resp="#google-ocr">ἔπειτα μάντις ἐς θρόνους καθιζάνω.</l>
+          <l n="30" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:30" resp="#google-ocr">καὶ νῦν τυχεῖν μοι τῶν πρὶν εἰσόδων μακρῶι</l>
+          <l n="31" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:31" resp="#google-ocr">ἄριστα δοῖεν· κεὶ πάρ᾽ Ἑλλήνων τινές,</l>
+          <l n="32" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:32" resp="#google-ocr">ἴτων πάλωι λαχόντες, ὡς νομίζεται·</l>
+          <l n="33" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:33" resp="#google-ocr">μαντεύομαι γάρ, ὡς ἂν ἡγῆται θεός.</l>
+          <pb n="26" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=34"/>
+          <milestone unit="card" n="34" resp="#Smyth"/>
+          <l n="34" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:34" resp="#google-ocr">Ἦ δεινὰ λέξαι, δεινὰ δ᾽ ὀφθαλμοῖς δρακεῖν,</l>
+          <l n="35" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:35" resp="#google-ocr">πάλιν μ᾽ ἔπεμψεν ἐκ δόμων τῶν Λοξίου,</l>
+          <l n="36" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:36" resp="#google-ocr">ὡς μήτε σωκεῖν μήτε μ᾿ ἀκταίνειν βάσιν·</l>
+          <l n="37" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:37" resp="#google-ocr">τρέχω δὲ χερσίν, οὐ ποδωκείᾶι σκελῶν·</l>
+          <l n="38" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:38" resp="#google-ocr">δείσασα γὰρ γραῦς οὐδέν, ἀντίπαις μὲν οὖν.</l>
+          <l n="39" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:39" resp="#google-ocr">ἐγὼ μὲν ἕρπω πρὸς πολυστεφῆ μυχόν·</l>
+          <l n="40" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:40" resp="#google-ocr">ὁρῶ δ᾽ ἐπ᾿ ὀμφαλῶι μὲν ἄνδρα θεομυσῆ</l>
+          <l n="41" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:41" resp="#google-ocr">ἕδραν ἔχοντα προστρόπαιον, αἵματι</l>
+          <l n="42" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:42" resp="#google-ocr">στάζοντα χεῖρας καὶ νεοσπαδὲς ξίφος</l>
+          <l n="43" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:43" resp="#google-ocr">ἔχοντ᾽ ἐλάιας θ᾽ ὑψιγέννητον κλάδον,</l>
+          <l n="44" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:44" resp="#google-ocr">λήνει μεγίστωι σωφρόνως ἐστεμμένον,</l>
+          <l n="45" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:45" resp="#google-ocr">ἀργῆτι μαλλῶι· τῆιδε γὰρ τρανῶς ἐρῶ.</l>
+          <l n="46" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:46" resp="#google-ocr">πρόσθεν δὲ τἀνδρὸς τοῦδε θαυμαστὸς λόχος</l>
+          <l n="47" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:47" resp="#google-ocr">εὕδει γυναικῶν ἐν θρόνοισιν ἥμενος.</l>
+          <l n="48" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:48" resp="#google-ocr">οὔτοι γυναῖκας, ἀλλὰ Γοργόνας λέγω,</l>
+          <l n="49" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:49" resp="#google-ocr">οὐδ᾽ αὖτε Γοργείοισιν εἰκάσω τύποις.</l>
+          <l n="50" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:50" resp="#google-ocr">εἶδόν ποτ᾽ ἤδη Φινέως γεγραμμένας</l>
+          <l n="51" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:51" resp="#google-ocr">δεῖπνον φερούσας· ἄπτεροί γε μὴν ἰδεῖν</l>
+          <l n="52" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:52" resp="#google-ocr">αὗται, μέλαιναι δ᾽, ἐς τὸ πᾶν βδελύκτροποι·</l>
+          <l n="53" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:53" resp="#google-ocr">ῥέγκουσι δ᾽ οὐ πλατοῖσι φυσιάμασιν·</l>
+          <l n="54" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:54" resp="#google-ocr">ἐκ δ᾽ ὀμμάτων λείβουσι δυσφιλῆ λίβα·</l>
+          <l n="55" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:55" resp="#google-ocr">καὶ κόσμος οὔτε πρὸς θεῶν ἀγάλματα</l>
+          <pb n="27" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=35"/>
+          <l n="56" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:56" resp="#google-ocr">φέρειν δίκαιος οὔτ᾽ ἐς ἀνθρώπων στέγας.</l>
+          <l n="57" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:57" resp="#google-ocr">τὸ φῦλον οὐκ ὄπωπα τῆσδ᾽ ὁμιλίας,</l>
+          <l n="58" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:58" resp="#google-ocr">οὐδ᾽ ἥτις αἷα τοῦτ᾽ ἐπεύχεται γένος</l>
+          <l n="59" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:59" resp="#google-ocr">τρέφουσ᾽ ἀνατεὶ μὴ μεταστένειν πόνον.</l>
+          <l n="60" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:60" resp="#google-ocr">τἀντεῦθεν ἤδη τῶνδε δεσπότηι δόμων</l>
+          <l n="61" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:61" resp="#google-ocr">αὐτῶι μελέσθω Λοξίαι μεγασθενεῖ.</l>
+          <l n="62" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:62" resp="#google-ocr">ἰατρόμαντις δ᾽ ἐστὶ καὶ τερασκόπος</l>
+          <l n="63" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:63" resp="#google-ocr">καὶ τοῖσιν ἄλλοις δωμάτων καθάρσιος.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <milestone unit="card" n="64" resp="#Smyth"/>
+          <l n="85" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:85" resp="#google-ocr">ἄναξ Ἄπολλον, οἶσθα μὲν τὸ μὴ ἀδικεῖν·</l>
+          <l n="86" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:86" resp="#google-ocr">ἐπεὶ δ᾽ ἐπίστᾶι, καὶ τὸ μὴ ἀμελεῖν μάθε·</l>
+          <l n="87" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:87" resp="#google-ocr">σθένος δὲ ποιεῖν εὖ φερέγγυον τὸ σόν.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="64" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:64" resp="#google-ocr">οὔτοι προδώσω· διὰ τέλους δέ σοι φύλαξ</l>
+          <l n="65" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:65" resp="#google-ocr">ἐγγὺς παρεστώς, καὶ πρόσω δ᾽ ἀποστατῶν,</l>
+          <l n="66" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:66" resp="#google-ocr">ἐχθροῖσι τοῖς σοῖς οὐ γενήσομαι πέπων.</l>
+          <l n="67" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:67" resp="#google-ocr">καὶ νῦν ἁλούσας τᾶσδε τὰς μάργους ὁρᾶις·</l>
+          <l n="68" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:68" resp="#google-ocr">ὕπνωι πεσοῦσαι δ᾽ αἱ κατάπτυστοι κόραι,</l>
+          <l n="69" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:69" resp="#google-ocr">Νυκτὸς παλαιαὶ παῖδες, αἷς οὐ μείγνυται</l>
+          <l n="70" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:70" resp="#google-ocr">θεῶν τις οὐδ᾽ ἄνθρωπος οὐδὲ θήρ ποτε·</l>
+          <l n="71" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:71" resp="#google-ocr">κακῶν δ᾽ ἕκατι κἀγένοντ᾽, ἐπεὶ κακὸν</l>
+          <pb n="28" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=36"/>
+          <l n="72" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:72" resp="#google-ocr">σκότον νέμονται Τάρταρόν θ᾽ ὑπὸ χθονός,</l>
+          <l n="73" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:73" resp="#google-ocr">μισήματ᾿ ἀνδρῶν καὶ θεῶν Ὀλυμπίων.</l>
+          <l n="74" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:74" resp="#google-ocr">ὅμως δὲ φεῦγε μηδὲ μαλθακὸς γένηι.</l>
+          <l n="75" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:75" resp="#google-ocr">ἐλῶσι γάρ σε καὶ δι᾽ ἠπείρου μακρᾶς,</l>
+          <l n="76" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:76" resp="#google-ocr">βιβῶντ᾽ ἀν᾿ αἰεί τινα πλανοστιβῆ χθόνα,</l>
+          <l n="77" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:77" resp="#google-ocr">ὑπέρ τε πόντον καὶ περιρρύτας πόλεις.</l>
+          <l n="78" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:78" resp="#google-ocr">καὶ μὴ πρόκαμνε τόνδε βουκολούμενος</l>
+          <l n="79" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:79" resp="#google-ocr">πόνον· μολὼν δὲ Παλλάδος ποτὶ πτόλιν</l>
+          <l n="80" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:80" resp="#google-ocr">ἵζου παλαιὸν ἄγκαθεν λαβὼν βρέτας.</l>
+          <l n="81" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:81" resp="#google-ocr">κἀκεῖ δικαστὰς τῶνδε καὶ θελκτηρίους</l>
+          <l n="82" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:82" resp="#google-ocr">μύθους ἔχοντες, μηχανὰς εὑρήσομεν,</l>
+          <l n="83" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:83" resp="#google-ocr">ὥστ᾽ ἐς τὸ πᾶν σε τῶνδ᾽ ἀπαλλάξαι πόνων.</l>
+          <l n="84" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:84" resp="#google-ocr">καὶ γὰρ κτανεῖν σ᾽ ἔπεισα μητρῶιον δέμας.</l>
+          <l n="88" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:88" resp="#google-ocr">μέμνησο, μὴ φόβος σε νικάτω φρένας.</l>
+          <l n="89" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:89" resp="#google-ocr">σὺ δ᾽, αὐτάδελφον αἷμα καὶ κοινοῦ πατρός,</l>
+          <l n="90" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:90" resp="#google-ocr">Ἑρμῆ, φύλασσε· κάρτα δ᾽ ὧν ἐπώνυμος</l>
+          <l n="91" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:91" resp="#google-ocr">πομπαῖος ἴσθι, τόνδε ποιμαίνων ἐμὸν</l>
+          <l n="92" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:92" resp="#google-ocr">ἱκέτην. σέβει τοι Ζεὺς τόδ᾽ ἐκνόμων σέβας,</l>
+          <l n="93" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:93" resp="#google-ocr">ὁρμώμενον βροτοῖσιν εὐπόμπωι τύχηι.</l>
+        </sp>
+        <sp who="#spk-clytemnestra">
+          <speaker>Κλυταιμήστρα</speaker>
+          <milestone unit="card" n="94" resp="#Smyth"/>
+          <l n="94" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:94" resp="#google-ocr">εὕδοιτ᾽ ἂν, ὠή, καὶ καθευδουσῶν τί δεῖ;</l>
+          <l n="95" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:95" resp="#google-ocr">ἐγὼ δ᾽ ὑφ᾽ ὑμῶν ὧδ᾽ ἀπητιμασμένη</l>
+          <l n="96" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:96" resp="#google-ocr">ὡς μὲν ἔκτανον<lb/>ἄλλοισιν ἐν νεκροῖσιν</l>
+          <l n="97" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:97" resp="#google-ocr">ὄνειδος ἐν φθιτοῖσιν οὐκ ἐκλείπεται,</l>
+          <l n="98" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:98" resp="#google-ocr">αἰσχρῶς δ᾽ ἀλῶμαι· προυννέπω δ᾽ ὑμῖν ὅτι</l>
+          <pb n="29" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=37"/>
+          <l n="99" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:99" resp="#google-ocr">ἔχω μεγίστην αἰτίαν κείνων ὑπερ·</l>
+          <l n="100" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:100" resp="#google-ocr">παθοῦσα δ᾽ οὕτω δεινὰ πρὸς τῶν φιλτάτων,</l>
+          <l n="101" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:101" resp="#google-ocr">οὐδεὶς ὑπέρ μου δαιμόνων μηνίσεται,</l>
+          <l n="102" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:102" resp="#google-ocr">κατασφαγείσης πρὸς χερῶν μητροκτόνων;</l>
+          <l n="103" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:103" resp="#google-ocr">δρα δὲ πληγὰς τᾶσδε καρδίᾶι σέθεν.</l>
+          <l n="104" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:104" resp="#google-ocr">εύδουσα γὰρ φρὴν ὄμμασιν λαμπρύνεται,</l>
+          <l n="105" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:105" resp="#google-ocr">ἐν ἡμέρᾶι δὲ μοῖρ᾽ ἀπρόσκοπος βροτῶν.</l>
+          <l n="106" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:106" resp="#google-ocr">ἢ πολλὰ μὲν δὴ τῶν ἐμῶν ἐλείξατε,</l>
+          <l n="107" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:107" resp="#google-ocr">χοάς τ᾽ ἀοίνους, νηφάλια μειλίγματα,</l>
+          <l n="108" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:108" resp="#google-ocr">καὶ νυκτίσεμνα δεῖπν᾽ ἐπ᾿ ἐσχάρᾶι πυρὸς</l>
+          <l n="109" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:109" resp="#google-ocr">ἔθυον, ὥραν οὐδενὸς κοινὴν θεῶν.</l>
+          <l n="110" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:110" resp="#google-ocr">καὶ πάντα ταῦτα λὰξ ὁρῶ πατούμενα.</l>
+          <l n="111" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:111" resp="#google-ocr">ὁ δ᾽ ἐξαλύξας οἴχεται νεβροῦ δίκην,</l>
+          <l n="112" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:112" resp="#google-ocr">καὶ ταῦτα κούφως ἐκ μέσων ἀρκυστάτων</l>
+          <l n="113" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:113" resp="#google-ocr">ὤρουσεν ὑμῖν ἐγκατιλλώψας μέγα.</l>
+          <l n="114" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:114" resp="#google-ocr">ἀκούσαθ᾽, ὡς ἔλεξα τῆς ἐμῆς περὶ</l>
+          <l n="115" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:115" resp="#google-ocr">ψυχῆς, φρονήσατ᾽, ὦ κατὰ χθονὸς θεαί.</l>
+          <l n="116" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:116" resp="#google-ocr">ὄναρ γὰρ ὑμᾶς νῦν Κλυταιμήστρα καλῶ.</l>
+          <stage>μυγμός.</stage>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+        </sp>
+        <sp who="#spk-clytemnestra">
+          <speaker>Κλυταιμήστρα</speaker>
+          <l n="118" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:118" resp="#google-ocr">μύζοιτ᾽ ἄν, ἁνὴρ δ᾽ οἴχεται φεύγων πρόσω·</l>
+          <l n="119" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:119" resp="#google-ocr">φίλοι γάρ εἰσιν οὐκ ἐμοῖς προσεικότες.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <pb n="30" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=38"/>
+          <stage>μυγμός.</stage>
+        </sp>
+        <sp who="#spk-clytemnestra">
+          <speaker>Κλυταιμήστρα</speaker>
+          <l n="121" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:121" resp="#google-ocr">ἄγαν γ᾽ ὑπνώσσεις κου κατοικτίζεις πάθος·</l>
+          <l n="122" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:122" resp="#google-ocr">φονεὺς δ᾽ Ὀρέστης τῆσδε μητρὸς οἴχεται.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <stage>ὠιγμός.</stage>
+        </sp>
+        <sp who="#spk-clytemnestra">
+          <speaker>Κλυταιμήστρα</speaker>
+          <l n="124" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:124" resp="#google-ocr">ὤιζεις, ὑπνώσσεις· οὐκ ἀναστήσηι τάχος;</l>
+          <l n="125" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:125" resp="#google-ocr">τί σοι πέπρωται πρᾶγμα πλὴν τεύχειν κακά;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <stage>ὠιγμός.</stage>
+        </sp>
+        <sp who="#spk-clytemnestra">
+          <speaker>Κλυταιμήστρα</speaker>
+          <l n="127" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:127" resp="#google-ocr">ὕπνος πόνος τε κύριοι συνωμόται</l>
+          <l n="128" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:128" resp="#google-ocr">δεινῆς δρακαίνης ἐξεκήραναν μένος.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <stage>μυγμὸς διπλοῦς ὀξύς.</stage>
+          <l n="130" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:130" resp="#google-ocr">λαβὲ λαβὲ λαβὲ λαβέ, φράζου.</l>
+        </sp>
+        <sp who="#spk-clytemnestra">
+          <speaker>Κλυταιμήστρα</speaker>
+          <milestone unit="card" n="131" resp="#Smyth"/>
+          <l n="131" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:131" resp="#google-ocr">ὄναρ διώκεις θῆρα, κλαγγαίνεις δ᾽ ἅπερ</l>
+          <l n="132" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:132" resp="#google-ocr">κύων μέριμναν οὔποτ᾽ ἐκλείπων πόνου.</l>
+          <l n="133" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:133" resp="#google-ocr">τί δρᾶις; ἀνίστω, μή σε νικάτω πόνος,</l>
+          <l n="134" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:134" resp="#google-ocr">μηδ᾽ ἀγνοήσηις πῆμα μαλθαχθεῖσ᾽ ὕπνωι.</l>
+          <l n="135" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:135" resp="#google-ocr">ἄλγησον ἦπαρ ἐνδίκοις ὀνείδεσιν·</l>
+          <l n="136" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:136" resp="#google-ocr">τοῖς σώφροσιν γὰρ ἀντίκεντρα γίγνεται.</l>
+          <l n="137" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:137" resp="#google-ocr">σὺ δ᾽ αἱματηρὸν πνεῦμ᾽ ἐπουρίσασα τῶι,</l>
+          <l n="138" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:138" resp="#google-ocr">ἀτμῶι κατισχναίνουσα, νηδύος πυρί,</l>
+          <l n="139" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:139" resp="#google-ocr">ἕπου, μάραινε δευτέροις διώγμασιν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="140" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:140" resp="#google-ocr">ἔγειρ᾽, ἔγειρε καὶ σὺ τῆνδ᾽, ἐγὼ δὲ σέ.</l>
+          <l n="141" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:141" resp="#google-ocr">εὕδεις; ἀνίστω, κἀπολακτίσασ᾽ ὕπνον,</l>
+          <l n="142" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:142" resp="#google-ocr">ἰδώμεθ᾽ εἴ τι τοῦδε φροιμίου ματᾶι.</l>
+          <milestone unit="card" n="143" resp="#Smyth"/>
+          <l n="143" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:143" resp="#google-ocr">ἰοὺ ἰοὺ πύπαξ. ἐπάθομεν, φίλαι</l>
+          <label type="strophe">στρ. α</label>
+          <pb n="31" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=39"/>
+          <l n="144" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:144" resp="#google-ocr">ἦ πολλὰ δὴ παθοῦσα καὶ μάτην ἐγώ –</l>
+          <l n="145" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:145" resp="#google-ocr">ἐπάθομεν πάθος δυσαχές, ὦ πόποι, ἄφερτον</l>
+          <l n="146" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:146" resp="#google-ocr">κακόν.</l>
+          <l n="147" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:147" resp="#google-ocr">ἐξ ἀρκύων πέπτωκεν οἴχεταί θ᾽ ὁ θήρ.</l>
+          <l n="148" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:148" resp="#google-ocr">ὕπνωι κρατηθεῖσ᾽ ἄγραν ὤλεσα.</l>
+          <milestone unit="card" n="149" resp="#Smyth"/>
+          <l n="149" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:149" resp="#google-ocr">ἰὼ παῖ Διός, ἐπίκλοπος πέληι,</l>
+          <label type="strophe">ἀντ. α</label>
+          <l n="150" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:150" resp="#google-ocr">νέος δὲ γραίας δαίμονας καθιππάσω,</l>
+          <l n="152" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:152" resp="#google-ocr">τὸν ἱκέταν σέβων, ἄθεον ἄνδρα καὶ τοκεῦσιν πικρόν,</l>
+          <l n="153" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:153" resp="#google-ocr">τὸν μητραλοίαν δ᾽ ἐξέκλεψας ὢν θεός.</l>
+          <l n="154" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:154" resp="#google-ocr">τί τῶνδ᾽ ἐρεῖ τις δικαίως ἔχειν;</l>
+          <milestone unit="card" n="155" resp="#Smyth"/>
+          <l n="155" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:155" resp="#google-ocr">ἐμοὶ δ᾽ ὄνειδος ἐξ ὀνειράτων μολὸν</l>
+          <label type="strophe">στρ. β 155</label>
+          <l n="156" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:156" resp="#google-ocr">ἔτυψεν δίκαν διφρηλάτου</l>
+          <l n="157" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:157" resp="#google-ocr">μεσολαβεῖ κέντρωι</l>
+          <l n="158" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:158" resp="#google-ocr">ὑπὸ φρένας, ὑπὸ λοβόν.</l>
+          <l n="160" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:160" resp="#google-ocr">πάρεστι μαστίκτορος δαΐου δαμίου</l>
+          <l n="161" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:161" resp="#google-ocr">βαρύ τι περίβαρυ κρύος ἔχειν.</l>
+          <milestone unit="card" n="162" resp="#Smyth"/>
+          <l n="162" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:162" resp="#google-ocr">τοιαῦτα δρῶσιν οἱ νεώτεροι θεοί</l>
+          <l n="163" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:163" resp="#google-ocr">κρατοῦντες τὸ πᾶν δίκας πλέον</l>
+          <label type="strophe">ἀντ. β</label>
+          <l n="164" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:164" resp="#google-ocr">φονολιβή θρόνον</l>
+          <l n="165" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:165" resp="#google-ocr">περὶ πόδα, περὶ κάρα.</l>
+          <l n="166" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:166" resp="#google-ocr">πάρεστι γᾶς ὀμφαλὸν προσδρακεῖν αἱμάτων</l>
+          <l n="167" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:167" resp="#google-ocr">βλοσυρὸν ἀρόμενον ἅγος ἔχειν.</l>
+          <label type="strophe">στρ. γ</label>
+          <milestone unit="card" n="169" resp="#Smyth"/>
+          <l n="169" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:169" resp="#google-ocr">ἐφεστίωι δὲ μάντις ὢν μιάσματι</l>
+          <l n="170" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:170" resp="#google-ocr">μυχὸν ἐχράνατ᾿ αὐτόσσυτος, αὐτόκλητος,</l>
+          <pb n="32" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=40"/>
+          <l n="171" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:171" resp="#google-ocr">παρὰ νόμον θεῶν βρότεα μὲν τίων,</l>
+          <l n="172" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:172" resp="#google-ocr">παλαιγενεῖς δὲ μοίρας φθίσας.</l>
+          <milestone unit="card" n="174" resp="#Smyth"/>
+          <l n="174" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:174" resp="#google-ocr">κάμοί τε λυπρὸς καὶ τὸν οὐκ ἐκλύσεται,</l>
+          <l n="175" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:175" resp="#google-ocr">ὑπό τε γᾶν φυγὼν οὐ ποτ᾽ ἐλευθεροῦται,</l>
+          <l n="176" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:176" resp="#google-ocr">ποτιτρόπαιος ὢν δ᾽ ἕτερον ἐν κάρᾶι</l>
+          <l n="177" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:177" resp="#google-ocr">μιάστορ᾽ εἶσιν οὗ πάσεται.</l>
+          <label type="strophe">ἀντ. γ</label>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <milestone unit="card" n="178" resp="#Smyth"/>
+          <l n="179" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:179" resp="#google-ocr">ἔξω, κελεύω, τῶνδε δωμάτων τάχος</l>
+          <l n="180" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:180" resp="#google-ocr">χωρεῖτ᾽, ἀπαλλάσσεσθε μαντικῶν μυχῶν,</l>
+          <l n="181" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:181" resp="#google-ocr">μὴ καὶ λαβοῦσα πτηνὸν ἀργηστὴν ὄφιν,</l>
+          <l n="182" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:182" resp="#google-ocr">χρυσηλάτου θώμιγγος ἐξορμώμενον,</l>
+          <l n="183" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:183" resp="#google-ocr">ἀνῆις ὑπ᾽ ἄλγους μέλαν᾿ ἀπ᾿ ἀνθρώπων ἀφρόν,</l>
+          <l n="184" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:184" resp="#google-ocr">ἐμοῦσα θρόμβους οὓς ἀφείλκυσας φόνου.</l>
+          <l n="185" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:185" resp="#google-ocr">οὔτοι δόμοισι τοῖσδε χρίμπτεσθαι πρέπει·</l>
+          <l n="186" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:186" resp="#google-ocr">ἀλλ᾽ οὗ καρανιστῆρες ὀφθαλμωρύχοι</l>
+          <l n="187" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:187" resp="#google-ocr">δίκαι, σφαγαί τε, σπέρματός τ᾽ ἀποφθοραὶ</l>
+          <l n="188" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:188" resp="#google-ocr">παίδων, κακοῦ τε χλοῦνις ἠδ᾽ ἀκρωνιά,</l>
+          <l n="189" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:189" resp="#google-ocr">λευσμός τε, καὶ μύζουσιν οἰκτισμὸν πολὺν</l>
+          <l n="190" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:190" resp="#google-ocr">ὑπὸ ῥάχιν παγέντες. ἆρ᾽ ἀκούετε</l>
+          <l n="191" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:191" resp="#google-ocr">οἵας ἑορτῆς ἔστ᾽ ἀπόπτυστοι θεοῖς</l>
+          <pb n="33" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=41"/>
+          <l n="192" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:192" resp="#google-ocr">στέργηθρ᾽ ἔχουσαι; πᾶς δ᾽ ὑφηγεῖται τρόπος</l>
+          <l n="193" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:193" resp="#google-ocr">μορφῆς. λέοντος ἄντρον αἱματορρόφου</l>
+          <l n="194" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:194" resp="#google-ocr">οἰκεῖν τοιαύτας εἰκός, οὐ χρηστηρίοις</l>
+          <l n="195" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:195" resp="#google-ocr">ἐν τοῖσδε κληισίοισι τρίβεσθαι μύσος.</l>
+          <l n="196" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:196" resp="#google-ocr">χωρεῖτ᾽ ἄνευ βοτῆρος αἰπολούμεναι.</l>
+          <l n="197" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:197" resp="#google-ocr">ποίμνης τοιαύτης δ᾽ οὔτις εὐφιλὴς θεῶν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="198" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:198" resp="#google-ocr">ἄναξ ῎Απολλον, ἀντάκουσον ἐν μέρει.</l>
+          <l n="199" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:199" resp="#google-ocr">αὐτὸς σὺ τούτων οὐ μεταίτιος πέληι,</l>
+          <l n="200" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:200" resp="#google-ocr">ἀλλ᾽ εἷς τὸ πᾶν ἔπραξας ὢν παναίτιος.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="201" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:201" resp="#google-ocr">πῶς δή; τοσοῦτον μῆκος ἔκτεινον λόγου.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="202" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:202" resp="#google-ocr">ἔχρησας ὥστε τὸν ξένον μητροκτονεῖν.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="203" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:203" resp="#google-ocr">ἔχρησα, ποινὰς τοῦ πατρὸς πέμψας. τί μήν;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="204" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:204" resp="#google-ocr">κἄπειθ᾽ ὑπέστης αἵματος δέκτωρ νέου.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="205" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:205" resp="#google-ocr">καὶ προστραπέσθαι τοῦσδ᾽ ἐπέστελλον δόμους.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="206" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:206" resp="#google-ocr">καὶ τὰς προπομποὺς δῆτα τᾶσδε λοιδορεῖς;</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="207" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:207" resp="#google-ocr">οὐ γὰρ δόμοισι τοῖσδε πρόσφορον μολεῖν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="208" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:208" resp="#google-ocr">ἀλλ᾽ ἔστιν ἡμῖν τοῦτο προστεταγμένον.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="209" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:209" resp="#google-ocr">τίς ἦδε τιμή; κόμπασον γέρας καλόν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="210" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:210" resp="#google-ocr">τοὺς μητραλοίας ἐκ δόμων ἐλαύνομεν.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="211" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:211" resp="#google-ocr">τί γὰρ γυναικὸς ἥτις ἄνδρα νοσφίσηι;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="212" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:212" resp="#google-ocr">οὐκ ἂν γένοιθ᾽ ὅμαιμος αὐθέντης φόνος.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <milestone unit="card" n="213" resp="#Smyth"/>
+          <l n="213" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:213" resp="#google-ocr">ᾖ κάρτ᾽ ἄτιμα καὶ παρ᾽ οὐδὲν ἦρκας ὣς</l>
+          <l n="214" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:214" resp="#google-ocr">Ήρας τελείας καὶ Διὸς πιστώματα.</l>
+          <l n="215" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:215" resp="#google-ocr">Κύπρις δ᾽ ἄτιμος τῶιδ᾽ ἀπέρριπται λόγωι,</l>
+          <l n="216" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:216" resp="#google-ocr">ὅθεν βροτοῖσι γίγνεται τὰ φίλτατα.</l>
+          <l n="217" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:217" resp="#google-ocr">εὐνὴ γὰρ ἀνδρὶ καὶ γυναικὶ μόρσιμος</l>
+          <pb n="34" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=42"/>
+          <l n="218" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:218" resp="#google-ocr">ὅρκου ᾿στὶ μείζων τῆι δίκηι φρουρουμένη.</l>
+          <l n="219" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:219" resp="#google-ocr">εἰ τοῖσιν οὖν κτείνουσιν ἀλλήλους χαλᾶις</l>
+          <l n="220" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:220" resp="#google-ocr">τὸ μὴ τίνεσθαι μηδ᾽ ἐποπτεύειν κότωι,</l>
+          <l n="221" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:221" resp="#google-ocr">οὔ φημ᾽ Ὀρέστην σ᾽ ἐνδίκως ἀνδρηλατεῖν.</l>
+          <l n="222" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:222" resp="#google-ocr">τὸ μὲν γὰρ οἶδα κάρτα σ᾽ ἐνθυμουμένην,</l>
+          <l n="223" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:223" resp="#google-ocr">τὰ δ᾽ ἐμφανῶς πράσσουσαν ἡσυχαιτέραι.</l>
+          <l n="224" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:224" resp="#google-ocr">δίκας δὲ Παλλὰς τῶνδ᾽ ἐποπτεύσει θεά.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="225" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:225" resp="#google-ocr">τὸν ἄνδρ᾽ ἐκεῖνον οὐ τι μὴ λίπω ποτέ.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="226" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:226" resp="#google-ocr">σὺ δ᾽ οὖν δίωκε καὶ πόνον πλείω τίθου.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="227" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:227" resp="#google-ocr">τιμὰς σὺ μὴ σύντεμνε τὰς ἐμὰς λόγωι.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="228" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:228" resp="#google-ocr">οὐδ᾽ ἂν δεχοίμην ὥστ᾽ ἔχειν τιμὰς σέθεν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="229" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:229" resp="#google-ocr">μέγας γὰρ ἔμπας πὰρ Διὸς θρόνοις λέγηι·</l>
+          <l n="230" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:230" resp="#google-ocr">ἐγὼ δ᾽, ἄγει γὰρ αἷμα μητρῶιον, δίκας</l>
+          <l n="231" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:231" resp="#google-ocr">μέτειμι τόνδε φῶτα κἀκκυνηγετῶ.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="232" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:232" resp="#google-ocr">ἐγὼ δ᾽ ἀρήξω τὸν ἱκέτην τε ῥύσομαι·</l>
+          <l n="233" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:233" resp="#google-ocr">δεινὴ γὰρ ἐν βροτοῖσι κάν θεοῖς πέλει</l>
+          <l n="234" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:234" resp="#google-ocr">τοῦ προστροπαίου μῆνις, εἰ προδῶι σφ᾽ ἑκών.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="235" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:235" resp="#google-ocr">ἄνασσ᾽ Ἀθάνα, Λοξίου κελεύμασιν</l>
+          <l n="236" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:236" resp="#google-ocr">ἥκω, δέχου δὲ πρευμενῶς ἀλάστορα,</l>
+          <l n="237" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:237" resp="#google-ocr">οὐ προστρόπαιον οὐδ᾽ ἀφοίβαντον χέρα,</l>
+          <l n="238" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:238" resp="#google-ocr">ἀλλ᾽ ἀμβλὺς ἤδη προστετριμμένος τε πρὸς</l>
+          <l n="239" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:239" resp="#google-ocr">ἄλλοισιν οἴκοις καὶ πορεύμασιν βροτῶν,</l>
+          <l n="240" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:240" resp="#google-ocr">ὅμοια χέρσον καὶ θάλασσαν ἐκπερῶν,</l>
+          <l n="241" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:241" resp="#google-ocr">σώιζων ἐφετμὰς Λοξίου χρηστηρίους,</l>
+          <pb n="35" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=43"/>
+          <l n="242" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:242" resp="#google-ocr">πρόσειμι δῶμα καὶ βρέτας τὸ σόν, θεά,</l>
+          <l n="243" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:243" resp="#google-ocr">αὐτοῦ φυλάσσων ἀναμένω τέλος δίκης.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="244" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:244" resp="#google-ocr">εἶὲν· τόδ᾽ ἐστὶ τἀνδρὸς ἐκφανὲς τέκμαρ.</l>
+          <l n="245" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:245" resp="#google-ocr">ἕπου δὲ μηνυτῆρος ἀφθέγκτου φραδαῖς.</l>
+          <l n="246" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:246" resp="#google-ocr">τετραυματισμένον γὰρ ὡς κύων νεβρὸν</l>
+          <l n="247" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:247" resp="#google-ocr">πρὸς αἷμα καὶ σταλαγμὸν ἐκματεύομεν.</l>
+          <l n="248" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:248" resp="#google-ocr">πολλοῖς δὲ μόχθοις ἀνδροκμῆσι φυσιᾶι</l>
+          <l n="249" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:249" resp="#google-ocr">σπλάγχνον· χθονὸς γὰρ πᾶς πεποίμανται τόπος,</l>
+          <l n="250" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:250" resp="#google-ocr">ὑπέρ τε πόντον ἀπτέροις ποτήμασιν</l>
+          <l n="251" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:251" resp="#google-ocr">ἦλθον διώκουσ᾽, οὐδὲν ὑστέρα νεώς.</l>
+          <l n="252" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:252" resp="#google-ocr">καὶ νῦν ὅδ᾽ ἐνθάδ᾽ ἐστί που καταπτακών.</l>
+          <l n="253" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:253" resp="#google-ocr">ὀσμὴ βροτείων αἱμάτων με προσγελᾶι.</l>
+          <milestone unit="card" n="254" resp="#Smyth"/>
+          <l n="254" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:254" resp="#google-ocr">ὅρα ὅρα μάλ᾽ αὖ λεῦσσέ τε τὸν πάντᾶι,</l>
+          <l n="257" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:257" resp="#google-ocr">μὴ λάθηι φύγδα βὰς ματροφόνος ἀτίτας.</l>
+          <l n="258" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:258" resp="#google-ocr">῾Ο δ᾽ αὖτέ γ᾽ ἀλκὰν ἔχων</l>
+          <l n="259" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:259" resp="#google-ocr">περὶ βρέτει πλεχθεὶς θεᾶς ἀμβρότου</l>
+          <l n="260" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:260" resp="#google-ocr">ὑπόδικος θέλει γενέσθαι χρεῶν.</l>
+          <l n="261" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:261" resp="#google-ocr">τὸ δ᾽ οὐ πάρεστιν· αἷμα μητρῶιον χαμαί.</l>
+          <l n="262" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:262" resp="#google-ocr">δυσαγκόμιστον, παπαῖ,</l>
+          <l n="263" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:263" resp="#google-ocr">τὸ διερὸν πέδοι χύμενον οἴχεται.</l>
+          <pb n="36" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=44"/>
+          <l n="264" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:264" resp="#google-ocr">Ἀλλ᾽ ἀντιδοῦναι δεῖ σ᾽ ἀπὸ ζῶντος ῥοφεῖν</l>
+          <l n="265" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:265" resp="#google-ocr">ἐρυθρὸν ἐκ μελέων πέλανον· ἀπὸ δὲ σοῦ</l>
+          <l n="266" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:266" resp="#google-ocr">φεροίμαν βοσκὰν πώματος δυσπότου·</l>
+          <l n="267" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:267" resp="#google-ocr">καὶ ζῶντά σ᾿ ἰσχνάνασ᾽ ἀπάξομαι κάτω,</l>
+          <l n="268" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:268" resp="#google-ocr">ἀντίποιν᾿ ὡς τίνηις ματροφόνου δύας.</l>
+          <l n="269" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:269" resp="#google-ocr">Ὄψηι δὲ κεἴ τις ἄλλος ἤλιτεν βροτῶν</l>
+          <l n="271" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:271" resp="#google-ocr">ἢ θεὸν ἢ ξένον τιν᾿ ἀσεβῶν ἢ τοκέας φίλους,</l>
+          <l n="272" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:272" resp="#google-ocr">ἔχονθ᾽ ἕκαστον τὴν δίκην ἐπαξίαν.</l>
+          <l n="273" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:273" resp="#google-ocr">μέγας γὰρ Ἅιδης ἐστὶν εὔθυνος βροτῶν</l>
+          <l n="274" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:274" resp="#google-ocr">ἔνερθε χθονός, δελτογράφωι δὲ πάντ᾽ ἐπωπᾶι</l>
+          <l n="275" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:275" resp="#google-ocr">φρενί.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <milestone unit="card" n="276" resp="#Smyth"/>
+          <l n="276" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:276" resp="#google-ocr">ἐγὼ διδαχθεὶς ἐν κακοῖς ἐπίσταμαι</l>
+          <l n="277" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:277" resp="#google-ocr">πολλῶν τε καιρούς, καὶ λέγειν ὅπου δίκη</l>
+          <l n="278" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:278" resp="#google-ocr">σιγᾶν θ᾽ ὁμοίως· ἐν δὲ τῶιδε πράγματι</l>
+          <l n="279" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:279" resp="#google-ocr">φωνεῖν ἐτάχθην πρὸς σοφοῦ διδασκάλου.</l>
+          <l n="280" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:280" resp="#google-ocr">βρίζει γὰρ αἷμα καὶ μαραίνεται χερός,</l>
+          <l n="281" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:281" resp="#google-ocr">μητροκτόνον μίασμα δ᾽ ἔκπλυτον πέλει.</l>
+          <l n="282" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:282" resp="#google-ocr">ποταίνιον γὰρ ὂν πρὸς ἑστίᾶι θεοῦ</l>
+          <l n="283" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:283" resp="#google-ocr">Φοίβου καθαρμοῖς ἠλάθη χοιροκτόνοις.</l>
+          <l n="284" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:284" resp="#google-ocr">πολὺς δέ μοι γένοιτ᾽ ἂν ἐξ ἀρχῆς λόγος,</l>
+          <l n="285" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:285" resp="#google-ocr">ὅσοις προσῆλθον ἀβλαβεῖ ξυνουσίαι.</l>
+          <pb n="37" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=45"/>
+          <l n="286" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:286" resp="#google-ocr">χρόνος καθαίρει πάντα γηράσκων ὁμοῦ.</l>
+          <l n="287" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:287" resp="#google-ocr">καὶ νῦν ἀφ᾽ ἁγνοῦ στόματος εὐφήμως καλῶ</l>
+          <l n="288" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:288" resp="#google-ocr">χώρας ἄνασσαν τῆσδ᾽ Ἀθηναίαν ἐμοὶ</l>
+          <l n="289" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:289" resp="#google-ocr">μολεῖν ἀρωγόν· κτήσεται δ᾽ ἄνευ δορὸς</l>
+          <l n="290" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:290" resp="#google-ocr">αὐτόν τε καὶ γῆν καὶ τὸν Ἀργεῖον λεὼν</l>
+          <l n="291" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:291" resp="#google-ocr">πιστὸν δικαίως ἐς τὸ πᾶν τε σύμμαχον.</l>
+          <l n="292" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:292" resp="#google-ocr">ἀλλ᾽ εἴτε χώρας ἐν τόποις Λιβυστικῆς,</l>
+          <l n="293" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:293" resp="#google-ocr">Τρίτωνος ἀμφὶ χεῦμα γενεθλίου πόρου,</l>
+          <l n="294" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:294" resp="#google-ocr">τίθησιν ὀρθὸν οὐ κατηρεφῆ πόδα,</l>
+          <l n="295" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:295" resp="#google-ocr">φίλοις ἀρήγουσ᾽, εἴτε Φλεγραίαν πλάκα</l>
+          <l n="296" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:296" resp="#google-ocr">θρασὺς ταγοῦχος ὡς ἀνὴρ ἐπισκοπεῖ,</l>
+          <l n="297" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:297" resp="#google-ocr">ἔλθοι, κλύει δὲ καὶ πρόσωθεν ὢν θεός,</l>
+          <l n="298" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:298" resp="#google-ocr">ὅπως γένοιτο τῶνδ᾽ ἐμοὶ λυτήριος.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="299" resp="#Smyth"/>
+          <l n="299" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:299" resp="#google-ocr">οὔτις σ᾽ Ἀπόλλων οὐδ᾽ Ἀθηναίας σθένος</l>
+          <l n="300" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:300" resp="#google-ocr">ῥύσαιτ᾽ ἄν, ὥστε μὴ οὐ παρημελημένον</l>
+          <l n="301" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:301" resp="#google-ocr">ἔρρειν, τὸ χαίρειν μὴ μαθόνθ᾽ ὅπου φρενῶν,</l>
+          <l n="302" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:302" resp="#google-ocr">ἀναιμάτωι βόσκημα δαιμόνων σκιᾶι.</l>
+          <l n="303" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:303" resp="#google-ocr">σὺ δ᾽ ἀντιφωνεῖς; ἀλλ᾽ ἀποπτύσηι λόγους</l>
+          <l n="304" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:304" resp="#google-ocr">ἐμοὶ τραφείς τε καὶ καθιερωμένος,</l>
+          <l n="305" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:305" resp="#google-ocr">καὶ ζῶν με δαίσεις οὐδὲ πρὸς βωμῶι σφαγείς·</l>
+          <l n="306" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:306" resp="#google-ocr">ὕμνον δ᾽ ἀκούσηι τόνδε δέσμιον σέθεν.</l>
+          <milestone unit="card" n="307" resp="#Smyth"/>
+          <l n="307" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:307" resp="#google-ocr">ἄγε δὴ καὶ χορὸν ἅψωμεν, ἐπεὶ</l>
+          <l n="308" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:308" resp="#google-ocr">μοῦσαν στυγερὰν</l>
+          <l n="309" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:309" resp="#google-ocr">ἀποφαίνεσθαι δεδόκηκεν,</l>
+          <pb n="38" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=46"/>
+          <l n="310" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:310" resp="#google-ocr">λέξαι τε λάχη τὰ κατ᾿ ἀνθρώπους</l>
+          <l n="311" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:311" resp="#google-ocr">ὡς ἐπινωμᾶι στάσις ἁμή.</l>
+          <l n="312" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:312" resp="#google-ocr">εὐθυδίκαιοι δ᾽ οἰόμεθ᾽ εἶναι·</l>
+          <l n="313" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:313" resp="#google-ocr">τὸν μὲν καθαρὰς χεῖρας προνέμοντ᾽</l>
+          <l n="314" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:314" resp="#google-ocr">οὔτις ἐφέρπει μῆνις ἀφ᾽ ἡμῶν,</l>
+          <l n="315" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:315" resp="#google-ocr">ἀσινὴς δ᾽ αἰῶνα διοιχνεῖ·</l>
+          <l n="316" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:316" resp="#google-ocr">ὅστις δ᾽ ἀλιτὼν ὥσπερ ὅδ᾽ ἁνὴρ</l>
+          <l n="317" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:317" resp="#google-ocr">χεῖρας φονίας ἐπικρύπτει,</l>
+          <l n="318" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:318" resp="#google-ocr">μάρτυρες ὀρθαὶ τοῖσι θανοῦσιν</l>
+          <l n="319" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:319" resp="#google-ocr">παραγιγνόμεναι πράκτορες αἵματος</l>
+          <l n="320" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:320" resp="#google-ocr">αὐτῶι τελέως ἐφάνημεν.</l>
+          <milestone unit="card" n="321" resp="#Smyth"/>
+          <l n="321" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:321" resp="#google-ocr">μᾶτερ ἃ μ᾽ ἔτικτες, ὦ μᾶτερ</l>
+          <label type="strophe">στρ. α</label>
+          <l n="322" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:322" resp="#google-ocr">Νύξ, ἀμαυροῖσι καὶ δεδορκόσιν ποινάν,</l>
+          <l n="324" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:324" resp="#google-ocr">κλῦθ᾽. ὁ Λατοῦς γὰρ ἶνίς μ᾿ ἄτιμον τίθησι</l>
+          <l n="325" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:325" resp="#google-ocr">τόνδ᾽ ἀφαιρούμενος πτῶκα, ματρῶιον ἁγνισμα</l>
+          <l n="327" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:327" resp="#google-ocr">κύριον φόνου.</l>
+          <milestone unit="card" n="328" resp="#Smyth"/>
+          <l n="328" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:328" resp="#google-ocr">ἐπὶ δὲ τῶι τεθυμένωι τόδε μέλος</l>
+          <l n="330" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:330" resp="#google-ocr">παρακοπά, παραφορὰ φρενοδαλής,</l>
+          <l n="331" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:331" resp="#google-ocr">ὕμνος ἐξ Ἐρινύων,</l>
+          <l n="333" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:333" resp="#google-ocr">δέσμιος φρενῶν, ἀφόρμικτος, αὑονὰ βροτοῖς.</l>
+          <milestone unit="card" n="334" resp="#Smyth"/>
+          <l n="334" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:334" resp="#google-ocr">τοῦτο γὰρ λάχος διανταία</l>
+          <label type="strophe">ἀντ. α</label>
+          <l n="335" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:335" resp="#google-ocr">Μοῖρ᾽ ἐπέκλωσεν ἐμπέδως ἔχειν, θνατῶν</l>
+          <pb n="39" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=47"/>
+          <l n="337" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:337" resp="#google-ocr">τοὶ σὺν αὐτουργίαις ξυμπέσωσιν μάταιοι,</l>
+          <l n="338" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:338" resp="#google-ocr">τοῖς ὁμαρτεῖν, ὄφρ᾽ ἂν γᾶν ὑπέλθηι· θανὼν δ᾽ οὐκ</l>
+          <l n="340" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:340" resp="#google-ocr">ἄγαν ἐλεύθερος.</l>
+          <milestone unit="card" n="341" resp="#Smyth"/>
+          <l n="341" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:341" resp="#google-ocr">ἐπὶ δὲ τῶι τεθυμένωι τόδε μέλος</l>
+          <l n="343" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:343" resp="#google-ocr">παρακοπά, παραφορὰ φρενοδαλής,</l>
+          <l n="344" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:344" resp="#google-ocr">ὕμνος ἐξ Ερινύων,</l>
+          <l n="345" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:345" resp="#google-ocr">δέσμιος φρενῶν, ἀφόρμικτος, αὑονὰ βροτοῖς.</l>
+          <milestone unit="card" n="347" resp="#Smyth"/>
+          <l n="349" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:349" resp="#google-ocr">γιγνομέναισι λάχη τάδ᾽ ἐφ᾽ ἁμὶν ἐκράνθη,</l>
+          <label type="strophe">στρ. β 347</label>
+          <l n="350" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:350" resp="#google-ocr">ἀθανάτων δ᾽ ἀπέχειν χέρας, οὐδέ τις ἐστὶ</l>
+          <l n="351" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:351" resp="#google-ocr">συνδαίτωρ μετάκοινος.</l>
+          <l n="352" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:352" resp="#google-ocr">παλλεύκων δὲ πέπλων ἄκληρος ἄμοιρος ἐτύχθην.</l>
+          <milestone unit="card" n="354" resp="#Smyth"/>
+          <l n="354" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:354" resp="#google-ocr">δωμάτων γὰρ εἰλόμαν</l>
+          <l n="355" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:355" resp="#google-ocr">ἀνατροπάς, ὅταν Ἄρης</l>
+          <label type="strophe">στρ. γ 355</label>
+          <l n="356" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:356" resp="#google-ocr">τιθασὸς ὢν φίλον ἕληι.</l>
+          <l n="357" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:357" resp="#google-ocr">ἐπὶ τὸν ὧδ᾽ ἱέμεναι</l>
+          <l n="358" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:358" resp="#google-ocr">κρατερὸν ὄντα περ ὅμως</l>
+          <l n="359" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:359" resp="#google-ocr" cert="low">μαυροῦμεν νέον αἷμα.</l>
+          <milestone unit="card" n="360" resp="#Smyth"/>
+          <l n="360" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:360" resp="#google-ocr">σπευδομένᾶι δ᾽ ἀφελεῖν τινὶ τᾶσδε μερίμνας,</l>
+          <label type="strophe">ἀντ. β</label>
+          <l n="361" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:361" resp="#google-ocr">θεῶν δ᾽ ἀτέλειαν ἐμαῖσι λιταῖς ἐπικραίνων,</l>
+          <l n="362" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:362" resp="#google-ocr">μηδ᾽ εἰς ἄγκρισιν ἐλθεῖν,</l>
+          <pb n="40" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=48"/>
+          <l n="365" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:365" resp="#google-ocr">Ζεὺς αἱμοσταγὲς †ἀξιόμισον ἔθνος τόδε λέσχας</l>
+          <l n="367" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:367" resp="#google-ocr">ἆς ἀπηξιώσατο.</l>
+          <milestone unit="card" n="368" resp="#Smyth"/>
+          <l n="368" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:368" resp="#google-ocr">δόξαι δ᾽ ἀνδρῶν καὶ μάλ᾽ ὑπ᾽ αἰθέρι σεμναὶ</l>
+          <label type="strophe">στρ. δ</label>
+          <l n="369" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:369" resp="#google-ocr">τακόμεναι κατὰ γᾶς μινύθουσιν ἄτιμοι</l>
+          <l n="370" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:370" resp="#google-ocr">ἁμετέραις ἐφόδοις μελανείμοσιν, ὀρχησμοῖς τ᾽</l>
+          <l n="371" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:371" resp="#google-ocr">ἐπιφθόνοις ποδός.</l>
+          <label type="strophe">ἀντ. γ</label>
+          <milestone unit="card" n="372" resp="#Smyth"/>
+          <l n="372" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:372" resp="#google-ocr">μάλα γὰρ οὖν ἁλομένα</l>
+          <l n="373" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:373" resp="#google-ocr">ἀνέκαθεν βαρυπεσή</l>
+          <l n="374" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:374" resp="#google-ocr">καταφέρω ποδὸς ἀκμάν,</l>
+          <l n="375" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:375" resp="#google-ocr">σφαλερὰ (καὶ〉 τανυδρόμοις</l>
+          <l n="376" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:376" resp="#google-ocr">κῶλα, δύσφορον ἄταν.</l>
+          <milestone unit="card" n="377" resp="#Smyth"/>
+          <l n="377" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:377" resp="#google-ocr">πίπτων δ᾽ οὐκ οἶδεν τόδ᾽ ὑπ᾽ ἄφρονι λύμᾶι.</l>
+          <label type="strophe">ἀντ. δ</label>
+          <l n="378" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:378" resp="#google-ocr">τοῖον ἐπὶ κνέφας ἀνδρὶ μύσος πεπόταται,</l>
+          <l n="379" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:379" resp="#google-ocr">καὶ δνοφεράν τιν᾿ ἀχλὺν κατὰ δώματος αὐδᾶται</l>
+          <l n="380" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:380" resp="#google-ocr">πολύστονος φάτις.</l>
+          <label type="strophe">στρ. ε</label>
+          <milestone unit="card" n="381" resp="#Smyth"/>
+          <l n="381" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:381" resp="#google-ocr">μένει γάρ· εὐμήχανοί</l>
+          <l n="382" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:382" resp="#google-ocr">τε καὶ τέλειοι, κακῶν</l>
+          <l n="383" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:383" resp="#google-ocr">τε μνήμονες Σεμναί,</l>
+          <l n="384" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:384" resp="#google-ocr">καὶ δυσπαρήγοροι βροτοῖς,</l>
+          <l n="385" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:385" resp="#google-ocr">ἄτιμ᾿ ἀτίετα διέπομεν</l>
+          <l n="386" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:386" resp="#google-ocr">λάχη θεῶν διχοστατοῦντ᾽</l>
+          <l n="387" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:386-387" resp="#google-ocr">ἀνηλίωι λάμπᾶι,</l>
+          <pb n="41" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=49"/>
+          <l n="388" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:388" resp="#google-ocr">δυσποροπαίπαλα δερκομένοισι<lb/>καὶ δυσομμάτοις ὁμῶς.</l>
+          <milestone unit="card" n="389" resp="#Smyth"/>
+          <l n="389" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:389" resp="#google-ocr">τίς οὖν τάδ᾽ οὐχ ἅζεταί</l>
+          <l n="390" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:390" resp="#google-ocr">τε καὶ δέδοικεν βροτῶν,</l>
+          <l n="391" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:391" resp="#google-ocr">ἐμοῦ κλύων θεσμὸν</l>
+          <l n="392" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:392" resp="#google-ocr">τὸν μοιρόκραντον, ἐκ θεῶν</l>
+          <l n="393" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:393" resp="#google-ocr">δοθέντα τέλεον; ἔπι δέ μοι</l>
+          <l n="394" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:394" resp="#google-ocr">γέρας παλαιόν, οὐδ᾽<lb/>ἀτιμίας κύρω,</l>
+          <l n="395" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:395" resp="#google-ocr">καίπερ ὑπὸ χθόνα τάξιν ἔχουσα</l>
+          <l n="396" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:396" resp="#google-ocr">καὶ δυσήλιον κνέφας.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="397" resp="#Smyth"/>
+          <l n="397" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:397" resp="#google-ocr">πρόσωθεν ἐξήκουσα κληδόνος βοὴν</l>
+          <l n="398" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:398" resp="#google-ocr">ἀπὸ Σκαμάνδρου, γῆν καταφθατουμένη,</l>
+          <l n="399" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:399" resp="#google-ocr">ἣν δῆτ᾽ Ἀχαιῶν ἀκτορές τε καὶ πρόμοι,</l>
+          <l n="400" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:400" resp="#google-ocr">τῶν αἰχμαλώτων χρημάτων λάχος μέγα,</l>
+          <l n="401" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:401" resp="#google-ocr">ἔνειμαν αὐτόπρεμνον ἐς τὸ πᾶν ἐμοί,</l>
+          <l n="402" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:402" resp="#google-ocr">ἐξαίρετον δώρημα Θησέως τόκοις·</l>
+          <l n="403" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:403" resp="#google-ocr">ἔνθεν διώκουσ᾽ ἦλθον ἄτρυτον πόδα,</l>
+          <l n="404" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:404" resp="#google-ocr">πτερῶν ἄτερ ῥοιβδοῦσα κόλπον αἰγίδος,</l>
+          <l n="405" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:405" resp="#google-ocr">πωλοῖς ἀκμαίοις τόνδ᾽ ἐπιζεύξασ᾽ ὄχον.</l>
+          <l n="406" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:406" resp="#google-ocr">καινὴν δ᾽ ὁρῶσα τῆνδ᾽ ὁμιλίαν χθονὸς</l>
+          <l n="407" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:407" resp="#google-ocr">ταρβῶ μὲν οὐδέν, θαῦμα δ᾽ ὄμμασιν πάρα.</l>
+          <l n="408" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:408" resp="#google-ocr">τίνες ποτ᾽ ἐστέ; πᾶσι δ᾽ ἐς κοινὸν λέγω·</l>
+          <l n="409" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:409" resp="#google-ocr">βρέτας τε τοὐμὸν τῶιδ᾽ ἐφημένωι ξένωι,</l>
+          <l n="410" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:410" resp="#google-ocr">ὑμᾶς θ᾽ ὁμοίας οὐδενὶ σπαρτῶν γένει,</l>
+          <label type="strophe">ἀντ. ε</label>
+          <pb n="42" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=50"/>
+          <l n="411" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:411" resp="#google-ocr">οὔτ᾽ ἐν θεαῖσι πρὸς θεῶν ὁρωμένας</l>
+          <l n="412" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:412" resp="#google-ocr">οὔτ᾽ οὖν βροτείοις ἐμφερεῖς μορφώμασιν.</l>
+          <l n="413" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:413" resp="#google-ocr">λέγειν δ᾽ ἄμομφον ὄντα τοὺς πέλας κακῶς</l>
+          <l n="414" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:414" resp="#google-ocr">πρόσω δικαίων ἠδ᾽ ἀποστατεῖ θέμις.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="415" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:415" resp="#google-ocr">πεύσηι τὰ πάντα συντόμως, Διὸς κόρη.</l>
+          <l n="416" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:416" resp="#google-ocr">ἡμεῖς γάρ ἐσμεν Νυκτὸς αἰανῆ τέκνα,</l>
+          <l n="417" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:417" resp="#google-ocr">Ἀραὶ δ᾽ ἐν οἴκοις γῆς ὑπαὶ κεκλήμεθα.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="418" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:418" resp="#google-ocr">γένος μὲν οἶδα κληδόνας τ᾽ ἐπωνύμους.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="419" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:419" resp="#google-ocr">τιμάς γε μέν τοι τὰς ἐμὰς πεύσηι τάχα.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="420" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:420" resp="#google-ocr">μάθοιμ᾽ ἄν, εἰ λέγοι τις ἐμφανῆ λόγον.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="421" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:421" resp="#google-ocr">βροτοκτονοῦντας ἐκ δόμων ἐλαύνομεν.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="422" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:422" resp="#google-ocr">καὶ τῶι κτανόντι ποῦ τὸ τέρμα τῆς φυγῆς;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="423" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:423" resp="#google-ocr">ὅπου τὸ χαίρειν μηδαμοῦ νομίζεται.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="424" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:424" resp="#google-ocr">ἢ καὶ τοιαύτας τῶιδ᾽ ἐπιρροιζεῖς φυγάς;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="425" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:425" resp="#google-ocr">φονεὺς γὰρ εἶναι μητρὸς ἠξιώσατο.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="426" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:426" resp="#google-ocr">ἀλλ᾽ ἦ ᾿ξ ἀνάγκης, ἢ τινος τρέων κότον;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="427" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:427" resp="#google-ocr">ποῦ γὰρ τοσοῦτον κέντρον ὡς μητροκτονεῖν;</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="428" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:428" resp="#google-ocr">δυοῖν παρόντοιν ἥμισυς λόγου πάρα.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="429" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:429" resp="#google-ocr">ἀλλ᾽ ὅρκον οὐ δέξαιτ᾽ ἄν, οὐ δοῦναι θέλοι.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="430" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:430" resp="#google-ocr">κλύειν δίκαιος μᾶλλον ἢ πρᾶξαι θέλε.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="431" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:431" resp="#google-ocr">πῶς δή, δίδαξον· τῶν σοφῶν γὰρ οὐ πένηι.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <pb n="43" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=51"/>
+          <l n="432" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:432" resp="#google-ocr">ὅρκοις τὰ μὲν δίκαια μὴ νικᾶν λέγω.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="433" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:433" resp="#google-ocr">ἀλλ᾽ ἐξέλεγχε, κρῖνε δ᾽ εὐθεῖαν δίκην.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="434" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:434" resp="#google-ocr">ἦ κἀπ᾿ ἐμοὶ τρέποιτ᾽ ἂν αἰτίας τέλος;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="435" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:435" resp="#google-ocr">πῶς δ᾽ οὔ; σέβουσαί γ᾽ ἄξι᾽ ἀντ᾽ ἐπαξίων.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="436" resp="#Smyth"/>
+          <l n="436" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:436" resp="#google-ocr">τί πρὸς τάδ᾽ εἰπεῖν, ὦ ξέν᾽, ἐν μέρει θέλεις;</l>
+          <l n="437" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:437" resp="#google-ocr">λέξας δὲ χώραν καὶ γένος καὶ ξυμφορὰς</l>
+          <l n="438" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:438" resp="#google-ocr">τὰς σάς, ἔπειτα τόνδ᾽ ἀμυνάθου ψόγον·</l>
+          <l n="439" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:439" resp="#google-ocr">εἴπερ πεποιθὼς τῆι δίκηι βρέτας τόδε</l>
+          <l n="440" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:440" resp="#google-ocr">ἦσαι φυλάσσων ἑστίας ἐμῆς πέλας</l>
+          <l n="441" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:441" resp="#google-ocr">σεμνὸς προσίκτωρ ἐν τρόποις Ἰξίονος·</l>
+          <l n="442" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:442" resp="#google-ocr">τούτοις ἀμείβου πᾶσιν εὐμαθές τί μοι.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="443" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:443" resp="#google-ocr">ἄνασσ᾽ Ἀθάνα, πρῶτον ἐκ τῶν ὑστίτων</l>
+          <l n="444" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:444" resp="#google-ocr">τῶν σῶν ἐπῶν μέλημ᾽ ἀφαιρήσω μέγα.</l>
+          <l n="445" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:445" resp="#google-ocr">οὐκ εἰμὶ προστρόπαιος, οὐδ᾽ ἔχων μύσος</l>
+          <l n="446" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:446" resp="#google-ocr">πρὸς χειρὶ τἠμῆι τὸ σὸν ἐφεζόμην βρέτας.</l>
+          <l n="447" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:447" resp="#google-ocr">τεκμήριον δὲ τῶνδέ σοι λέξω μέγα.</l>
+          <l n="448" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:448" resp="#google-ocr">ἄφθογγον εἶναι τὸν παλαμναῖον νόμος,</l>
+          <l n="449" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:449" resp="#google-ocr">ἔς τ᾽ ἂν πρὸς ἀνδρὸς αἵματος καθαρσίου</l>
+          <l n="450" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:450" resp="#google-ocr">σφαγαὶ καθαιμάξωσι νεοθήλου βοτοῦ.</l>
+          <l n="451" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:451" resp="#google-ocr">πάλαι πρὸς ἄλλοις ταῦτ᾽ ἀφιερώμεθα</l>
+          <l n="452" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:452" resp="#google-ocr">οἴκοισι καὶ βατοῖσι καὶ ῥυτοῖς πόροις.</l>
+          <l n="453" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:453" resp="#google-ocr">ταύτην μὲν οὕτω φροντίδ᾽ ἐκποδὼν λέγω.</l>
+          <l n="454" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:454" resp="#google-ocr">γένος δὲ τοὐμὸν ὡς ἔχει πεύσηι τάχα.</l>
+          <l n="455" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:455" resp="#google-ocr">Ἀργεῖός εἰμι, πατέρα δ᾽ ἱστορεῖς καλῶς,</l>
+          <l n="456" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:456" resp="#google-ocr">Αγαμέμνον᾽, ἀνδρῶν ναυβατῶν ἁρμόστορα·</l>
+          <l n="457" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:457" resp="#google-ocr">ξὺν ὧι σὺ Τρώιαν ἄπολιν Ἰλίου πόλιν</l>
+          <pb n="44" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=52"/>
+          <l n="458" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:458" resp="#google-ocr">ἔθηκας. ἔφθιθ᾽ οὗτος οὐ καλῶς, μολὼν</l>
+          <l n="459" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:459" resp="#google-ocr">εἰς οἶκον· ἀλλά νιν κελαινόφρων ἐμὴ</l>
+          <l n="460" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:460" resp="#google-ocr">μήτηρ κατέκτα, ποικίλοις ἀγρεύμασιν</l>
+          <l n="461" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:461" resp="#google-ocr">κρύψασ᾽, ἃ λουτρῶν ἐξεμαρτύρει φόνον.</l>
+          <l n="462" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:462" resp="#google-ocr">κἀγὼ κατελθών, τὸν πρὸ τοῦ φεύγων χρόνον,</l>
+          <l n="463" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:463" resp="#google-ocr">ἔκτεινα τὴν τεκοῦσαν, οὐκ ἀρνήσομαι,</l>
+          <l n="464" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:464" resp="#google-ocr">ἀντικτόνοις ποιναῖσι φιλτάτου πατρός.</l>
+          <l n="465" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:465" resp="#google-ocr">καὶ τῶνδε κοινῆι Λοξίας μεταίτιος,</l>
+          <l n="466" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:466" resp="#google-ocr">ἄλγη προφωνῶν ἀντίκεντρα καρδίᾶι,</l>
+          <l n="467" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:467" resp="#google-ocr">εἰ μή τι τῶνδ᾽ ἔρξαιμι τοὺς ἐπαιτίους.</l>
+          <l n="468" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:468" resp="#google-ocr">σὺ δ᾽ εἰ δικαίως εἴτε μὴ κρῖνον δίκην·</l>
+          <l n="469" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:469" resp="#google-ocr">πράξας γὰρ ἐν σοὶ πανταχῆι τάδ᾽ αἰνέσω.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="470" resp="#Smyth"/>
+          <l n="470" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:470" resp="#google-ocr">τὸ πρᾶγμα μεῖζον ἤ τις οἴεται τόδε</l>
+          <l n="471" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:471" resp="#google-ocr">βροτὸς δικάζειν· οὐδὲ μὴν ἐμοὶ θέμις</l>
+          <l n="472" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:472" resp="#google-ocr">φόνου διαιρεῖν ὀξυμηνίτου δίκας.</l>
+          <l n="473" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:473" resp="#google-ocr">ἄλλως τε καὶ σὺ μὲν κατηρτυκὼς νόμωι</l>
+          <l n="474" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:474" resp="#google-ocr">ἱκέτης προσῆλθες καθαρὸς ἀβλαβής δόμοις</l>
+          <l n="475" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:475" resp="#google-ocr">ἐμοῖς, ἄμομφον δ᾽ ὄντα σ᾽ αἰδοῦμαι πόλει·</l>
+          <l n="476" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:476" resp="#google-ocr">αὗται δ᾽ ἔχουσι μοῖραν οὐκ εὐπέμπελον,</l>
+          <l n="477" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:477" resp="#google-ocr">καὶ μὴ τυχοῦσαι πράγματος νικηφόρου,</l>
+          <l n="478" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:478" resp="#google-ocr">χώρᾶι μεταῦθις ἰὸς ἐκ φρονημάτων</l>
+          <l n="479" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:479" resp="#google-ocr">πέδοι πεσὼν ἄφερτος αἰανὴς νόσος.</l>
+          <pb n="45" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=53"/>
+          <l n="480" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:480" resp="#google-ocr">τοιαῦτα μὲν τάδ᾽ ἐστίν· ἀμφότερα, μένειν</l>
+          <l n="481" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:481" resp="#google-ocr">πέμπειν τε, δυσπήμαντ᾽ ἀμηχάνως τ᾽ ἔχει.</l>
+          <l n="482" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:482" resp="#google-ocr">ἐπεὶ δὲ πρᾶγμα δεῦρ᾽ ἐπέσκηψεν τόδε,</l>
+          <l n="483" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:483" resp="#google-ocr">φόνων δικαστὰς ὁρκίους αἱρουμένη</l>
+          <l n="484" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:484" resp="#google-ocr">θεσμὸν τὸν εἰς ἅπαντ᾽ ἐγὼ θήσω χρόνον.</l>
+          <l n="485" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:485" resp="#google-ocr">ὑμεῖς δὲ μαρτύριά τε καὶ τεκμήρια</l>
+          <l n="486" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:486" resp="#google-ocr">καλεῖσθ᾽, ἀρωγὰ τῆς δίκης δρκώματα.</l>
+          <l n="487" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:487" resp="#google-ocr">κρίνασα δ᾽ ἀστῶν τῶν ἐμῶν τὰ βέλτατα</l>
+          <l n="488" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:488" resp="#google-ocr">ἥξω, διαιρεῖν τοῦτο πρᾶγμ᾽ ἐτητύμως,</l>
+          <l n="489" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:489" resp="#google-ocr">ὅρκον πορόντας, μηδὲν ἐκδίκοις φρεσίν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="490" resp="#Smyth"/>
+          <l n="490" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:490" resp="#google-ocr">νῦν μεταστροφαὶ νέων</l>
+          <l n="492" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:492" resp="#google-ocr">θεσμίων, ἢ κρατήσει δίκα (τε) καὶ βλάβα</l>
+          <l n="493" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:493" resp="#google-ocr">τοῦδε ματροκτόνου.</l>
+          <l n="494" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:494" resp="#google-ocr">πάντας ἤδη τόδ᾽ ἔργον εὐχερείᾶι συναρμόσει</l>
+          <label type="strophe">στρ. α</label>
+          <l n="495" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:495" resp="#google-ocr">βροτούς.</l>
+          <l n="496" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:496" resp="#google-ocr">πολλὰ δ᾽ ἔτυμα παιδότρωτα</l>
+          <l n="498" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:498" resp="#google-ocr">πάθεα προσμένει τοκεῦσιν μεταῦθις ἐν χρόνωι.</l>
+          <milestone unit="card" n="499" resp="#Smyth"/>
+          <l n="499" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:499" resp="#google-ocr">οὐδὲ γὰρ βροτοσκόπων</l>
+          <label type="strophe">ἀντ. α</label>
+          <l n="502" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:502" resp="#google-ocr">πάντ᾽ ἐφήσω μόρον.</l>
+          <l n="501" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:501" resp="#google-ocr">μαινάδων τῶνδ᾽ ἐφέρψει κότος τις ἐργμάτων·</l>
+          <pb n="46" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=54"/>
+          <l n="503" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:503" resp="#google-ocr">πεύσεται δ᾽ ἄλλος ἄλλοθεν προφωνῶν ἃ τῶν</l>
+          <l n="504" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:504" resp="#google-ocr">πέλας κακά,</l>
+          <l n="505" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:505" resp="#google-ocr">λῆξιν ὑπόδυσίν τε μόχθων</l>
+          <l n="506" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:506" resp="#google-ocr">ἄκεά τ᾽ οὐ βέβαι᾽, ἃ τλάμων μάταν παρηγορεῖ.</l>
+          <milestone unit="card" n="508" resp="#Smyth"/>
+          <l n="508" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:508" resp="#google-ocr">μηδέ τις κικληισκέτω</l>
+          <l n="509" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:509" resp="#google-ocr">ξυμφορᾶι τετυμμένος,</l>
+          <l n="510" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:510" resp="#google-ocr">τοῦτ᾽ ἔπος θροούμενος,</l>
+          <l n="511" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:511" resp="#google-ocr">ὦ Δίκα,</l>
+          <l n="512" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:512" resp="#google-ocr">ὦ θρόνοι τ᾽ Ερινύων.</l>
+          <l n="513" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:513" resp="#google-ocr">ταῦτά τις τάχ᾽ ἂν πατὴρ</l>
+          <l n="514" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:514" resp="#google-ocr">ἢ τεκοῦσα νεοπαθής</l>
+          <label type="strophe">στρ. β</label>
+          <l n="516" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:516" resp="#google-ocr">οἰκτρὸν οἰκτίσαιτ᾽, ἐπειδὴ πίτνει δόμος Δίκας.</l>
+          <milestone unit="card" n="517" resp="#Smyth"/>
+          <l n="517" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:517" resp="#google-ocr">ἔσθ᾽ ὅπου τὸ δεινὸν εὐ</l>
+          <label type="strophe">ἀντ. β</label>
+          <l n="518" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:518" resp="#google-ocr">καὶ φρενῶν ἐπίσκοπον</l>
+          <l n="519" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:519" resp="#google-ocr">δεῖ μένειν καθήμενον.</l>
+          <l n="520" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:520" resp="#google-ocr">ξυμφέρει</l>
+          <l n="521" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:521" resp="#google-ocr">σωφρονεῖν ὑπὸ στένει.</l>
+          <l n="522" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:522" resp="#google-ocr">τίς δὲ μηδὲν ἐν φάει</l>
+          <l n="523" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:523" resp="#google-ocr">καρδίαν ἄν᾿ ἔτι) τρέων</l>
+          <l n="524" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:524" resp="#google-ocr">ἢ πόλις βροτός θ᾽ ὁμοίως ἔτ᾽ ἂν σέβοι δίκαν;</l>
+          <milestone unit="card" n="526" resp="#Smyth"/>
+          <l n="526" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:526" resp="#google-ocr">μήτ᾿ ἀνάρχετον βίον</l>
+          <l n="527" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:527" resp="#google-ocr">μήτε δεσποτούμενον</l>
+          <label type="strophe">στρ. γ</label>
+          <pb n="47" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=55"/>
+          <l n="528" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:528" resp="#google-ocr">αἰνέσῃς.</l>
+          <l n="530" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:530" resp="#google-ocr">παντὶ μέσωι τὸ κράτος θεὸς ὤπασεν, ἄλλ᾽ ἄλλᾶι</l>
+          <l n="531" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:531" resp="#google-ocr">δ᾽ ἐφορεύει.</l>
+          <l n="532" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:532" resp="#google-ocr">ξύμμετρον δ᾽ ἔπος λέγω,</l>
+          <l n="533" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:533" resp="#google-ocr">δυσσεβίας μὲν ὕβρις τέκος ὡς ἐτύμως·</l>
+          <l n="535" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:535" resp="#google-ocr">ἐκ δ᾽ ὑγιείας</l>
+          <l n="536" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:536" resp="#google-ocr">φρενῶν ὁ πᾶσιν φίλος</l>
+          <l n="537" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:537" resp="#google-ocr">καὶ πολύευκτος ὄλβος.</l>
+          <milestone unit="card" n="538" resp="#Smyth"/>
+          <l n="538" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:538" resp="#google-ocr">ἐς τὸ πᾶν δέ σοι λέγω,</l>
+          <label type="strophe">ἀντ. γ</label>
+          <l n="539" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:539" resp="#google-ocr">βωμὸν αἴδεσαι Δίκας·</l>
+          <l n="540" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:540" resp="#google-ocr">μηδέ νιν</l>
+          <l n="541" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:541" resp="#google-ocr">κέρδος ἰδὼν ἀθέωι ποδὶ λὰξ ἀτίσηις· ποινὰ</l>
+          <l n="543" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:543" resp="#google-ocr">γὰρ ἐπέσται,</l>
+          <l n="544" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:544" resp="#google-ocr">κύριον μένει τέλος.</l>
+          <l n="545" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:545" resp="#google-ocr">πρὸς τάδε τις τοκέων σέβας εὖ προτίων</l>
+          <l n="547" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:547" resp="#google-ocr">καὶ ξενοτίμους</l>
+          <l n="548" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:548" resp="#google-ocr">ἐπιστροφὰς δωμάτων</l>
+          <l n="549" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:549" resp="#google-ocr">αἰδόμενός τις ἔστω.</l>
+          <milestone unit="card" n="550" resp="#Smyth"/>
+          <l n="550" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:550" resp="#google-ocr">ἑκὼν δ᾽ ἀνάγκας ἄτερ</l>
+          <label type="strophe">στρ. δ 550</label>
+          <l n="551" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:551" resp="#google-ocr">δίκαιος ὢν οὐκ ἄνολβος ἔσται,</l>
+          <l n="552" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:552" resp="#google-ocr">πανώλεθρος δ᾽ οὔποτ᾽ ἂν γένοιτο.</l>
+          <l n="553" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:553" resp="#google-ocr">τὸν ἀντίτολμον δέ φαμι παρβάταν,</l>
+          <l n="554" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:554" resp="#google-ocr">(ἄγον〉τα πολλὰ παντόφυρτ᾽ ἄνευ δίκας</l>
+          <l n="555" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:555" resp="#google-ocr">βιαίως, ξὺν χρόνωι καθήσειν</l>
+          <pb n="48" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=56"/>
+          <l n="557" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:557" resp="#google-ocr">λαῖφος, ὅταν λάβηι πόνος θραυομένας κεραίας.</l>
+          <milestone unit="card" n="558" resp="#Smyth"/>
+          <l n="558" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:558" resp="#google-ocr">καλεῖ δ᾽ ἀκούοντας οὐ-<lb/>δὲν (ἐν) μέσᾶι δυσπαλεῖ τε δίνᾶι·</l>
+          <label type="strophe">ἀντ. δ</label>
+          <l n="560" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:560" resp="#google-ocr">γελᾶι δὲ δαίμων ἐπ᾿ ἀνδρὶ θερμῶι,</l>
+          <l n="561" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:561" resp="#google-ocr">τὸν οὔποτ᾽ αὐχοῦντ᾿ ἰδὼν ἀμαχάνοις</l>
+          <l n="562" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:562" resp="#google-ocr">δύαις λαπαδνὸν οὐδ᾽ ὑπερθέοντ᾽ ἄκραν·</l>
+          <l n="563" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:563" resp="#google-ocr">δι᾽ αἰῶνος δὲ τὸν πρὶν ὄλβον</l>
+          <l n="564" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:564" resp="#google-ocr">έρματι προσβαλὼν δίκας ὤλετ᾿ ἄκλαυτος, αἶστος.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="566" resp="#Smyth"/>
+          <l n="566" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:566" resp="#google-ocr">κήρυσσε, κῆρυξ, καὶ στρατὸν κατειργάθου</l>
+          <l n="567" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:567" resp="#google-ocr">-ῦ, ἡ τ᾽ οὖν διάτορος Τυρσηνική</l>
+          <l n="568" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:568" resp="#google-ocr">σάλπιγξ βροτείου πνεύματος πληρουμένη</l>
+          <l n="569" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:569" resp="#google-ocr">ὑπέρτονον γήρυμα φαινέτω στρατῶι.</l>
+          <l n="570" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:570" resp="#google-ocr">πληρουμένου γὰρ τοῦδε βουλευτηρίου</l>
+          <l n="571" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:571" resp="#google-ocr">σιγᾶν ἀρήγει καὶ μαθεῖν θεσμοὺς ἐμοὺς</l>
+          <l n="572" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:572" resp="#google-ocr">πόλιν τε πᾶσαν ἐς τὸν αἰανῆ χρόνον</l>
+          <l n="573" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:573" resp="#google-ocr">καὶ τῶνδ᾽ ὅπως ἂν εὖ καταγνωσθῆι δίκη.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="574" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:574" resp="#google-ocr">ἄναξ Απολλον, ὧν ἔχεις αὐτὸς κράτει.</l>
+          <l n="575" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:575" resp="#google-ocr">τί τοῦδε σοὶ μέτεστι πράγματος λέγε.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <pb n="49" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=57"/>
+          <l n="576" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:576" resp="#google-ocr">καὶ μαρτυρήσων ἦλθον· ἔστι γὰρ δόμων</l>
+          <l n="577" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:577" resp="#google-ocr">ἱκέτης ὅδ᾽ ἁνὴρ καὶ μυχῶν ἐφεστίων</l>
+          <l n="578" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:578" resp="#google-ocr">ἐμῶν· φόνου δὲ τοῦδ᾽ ἐγὼ καθάρσιος·</l>
+          <l n="579" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:579" resp="#google-ocr">καὶ ξυνδικήσων αὐτός· αἰτίαν δ᾽ ἔχω</l>
+          <l n="580" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:580" resp="#google-ocr">τῆς τοῦδε μητρὸς τοῦ φόνου. σὺ δ᾽ εἴσαγε</l>
+          <l n="581" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:581" resp="#google-ocr">ὅπως (τ᾽ ἐπίστᾶι τῆνδε κύρωσον δίκην.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="582" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:582" resp="#google-ocr">ὑμῶν ὁ μῦθος, εἰσάγω δὲ τὴν δίκην.</l>
+          <l n="583" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:583" resp="#google-ocr">ὁ γὰρ διώκων πρότερος ἐξ ἀρχῆς λέγων</l>
+          <l n="584" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:584" resp="#google-ocr">γένοιτ᾽ ἂν ὀρθῶς πράγματος διδάσκαλος.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="585" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:585" resp="#google-ocr">ἡ α΄ πολλαὶ μέν ἐσμεν, λέξομεν δὲ συντόμως.</l>
+          <l n="586" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:586" resp="#google-ocr">ἔπος δ᾽ ἀμείβου πρὸς ἔπος ἐν μέρει τιθείς.</l>
+          <l n="587" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:587" resp="#google-ocr">ἡ β΄ τὴν μητέρ᾽ εἰπὲ πρῶτον εἰ κατέκτονας.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="588" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:588" resp="#google-ocr">ἔκτεινα· τούτου γ᾽ οὔτις ἄρνησις πέλει.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="589" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:589" resp="#google-ocr">ἡ γ΄ ἓν μὲν τόδ᾽ ἤδη τῶν τριῶν παλαισμάτων.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="590" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:590" resp="#google-ocr">οὐ κειμένωι πω τόνδε κομπάζεις λόγον.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="591" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:591" resp="#google-ocr">ἡ δ΄ εἰπεῖν γε μέντοι δεῖ σ᾽ ὅπως κατέκτανες.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="592" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:592" resp="#google-ocr">λέγω· ξιφουλκῶι χειρὶ πρὸς δέρην τεμών.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="593" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:593" resp="#google-ocr">ἡ ε΄ πρὸς τοῦ δ᾽ ἐπείσθης καὶ τίνος βουλεύμασιν;</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="594" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:594" resp="#google-ocr">τοῖς τοῦδε θεσφάτοισι· μαρτυρεῖ δέ μοι.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="595" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:595" resp="#google-ocr">ἡ ς΄ ὁ μάντις ἐξηγεῖτό σοι μητροκτονεῖν;</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="596" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:596" resp="#google-ocr">καὶ δεῦρό γ᾽ αἰεὶ τὴν τύχην οὐ μέμφομαι.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="597" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:597" resp="#google-ocr">ἡ ζ΄ ἀλλ᾽ εἴ σε μάρψει ψῆφος, ἄλλ᾽ ἐρεῖς τάχα.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <pb n="50" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=58"/>
+          <l n="598" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:598" resp="#google-ocr">πέποιθ᾽, ἀρωγὰς δ᾽ ἐκ τάφου πέμπει πατήρ.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="599" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:599" resp="#google-ocr">ἡ η΄ νεκροῖσί νυν πέπισθι μητέρα κτανών.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="600" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:600" resp="#google-ocr">δυοῖν γὰρ εἶχε προσβολὰς μιασμάτοιν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="601" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:601" resp="#google-ocr">ἡ θ΄ πῶς δή; δίδαξον τοὺς δικάζοντας τάδε.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="602" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:602" resp="#google-ocr">ἀνδροκτονοῦσα πατέρ᾽ ἐμὸν κατέκτανεν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="603" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:603" resp="#google-ocr">ἡ ι΄ τοιγὰρ σὺ μὲν ζῆις, ἡ δ᾽ ἐλευθέρα φόνωι.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="604" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:604" resp="#google-ocr">τί δ᾽ οὐκ ἐκείνην ζῶσαν ἤλαυνες φυγῆι;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="605" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:605" resp="#google-ocr">ἡ ια΄ οὐκ ἦν ὅμαιμος φωτὸς ὃν κατέκτανεν.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="606" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:606" resp="#google-ocr">ἐγὼ δὲ μητρὸς τῆς ἐμῆς ἐν αἵματι;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="607" resp="#Smyth"/>
+          <l n="607" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:607" resp="#google-ocr">ἡ ιβ΄ πῶς γάρ σ᾽ ἔθρεψ᾽ ἂν ἐντός, ὦ μιαιφόνε,</l>
+          <l n="608" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:608" resp="#google-ocr">ζώνης; ἀπεύχηι μητρὸς αἷμα φίλτατον;</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="609" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:609" resp="#google-ocr">ἤδη σὺ μαρτύρησον, ἐξηγοῦ δέ μοι,</l>
+          <l n="610" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:610" resp="#google-ocr">Απολλον, εἴ σφε σὺν δίκηι κατέκτανον.</l>
+          <l n="611" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:611" resp="#google-ocr">δρᾶσαι γὰρ ὥσπερ ἐστὶν οὐκ ἀρνούμεθα·</l>
+          <l n="612" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:612" resp="#google-ocr">ἀλλ᾽ εἰ δίκαιον εἴτε μὴ τῆι σῆι φρενὶ</l>
+          <l n="613" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:613" resp="#google-ocr">δοκεῖ τόδ᾽ αἷμα κρῖνον, ὡς τούτοις φράσω.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="614" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:614" resp="#google-ocr">λέξω πρὸς ὑμᾶς τόνδ᾽ Ἀθηναίας μέγαν</l>
+          <l n="615" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:615" resp="#google-ocr">θεσμὸν δικαίως, μάντις ὢν δ᾽ οὐ ψεύσομαι.</l>
+          <l n="616" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:616" resp="#google-ocr">οὐπώποτ᾽ εἶπον μαντικοῖσιν ἐν θρόνοις,</l>
+          <l n="617" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:617" resp="#google-ocr">οὐκ ἀνδρός, οὐ γυναικός, οὐ πόλεως πέρι,</l>
+          <l n="618" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:618" resp="#google-ocr">ὃ μὴ κελεύσαι Ζεὺς Ὀλυμπίων πατήρ.</l>
+          <l n="619" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:619" resp="#google-ocr">τὸ μὲν δίκαιον τοῦθ᾽ ὅσον σθένει μαθεῖν,</l>
+          <l n="620" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:620" resp="#google-ocr">βουλῆι πιφαύσκω δ᾽ ὄμμ᾽ ἐπισπέσθαι πατρός.</l>
+          <pb n="51" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=59"/>
+          <l n="621" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:621" resp="#google-ocr">ὅρκος γὰρ οὔτι Ζηνὸς ἰσχύει πλέον.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="622" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:622" resp="#google-ocr">Ζεύς, ὡς λέγεις σύ, τόνδε χρησμὸν ὤπασε,</l>
+          <l n="623" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:623" resp="#google-ocr">φράζειν Ὀρέστηι τῶιδε, τὸν πατρὸς φόνον</l>
+          <l n="624" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:624" resp="#google-ocr">πράξαντα μητρὸς μηδαμοῦ τιμὰς νέμειν;</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="625" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:625" resp="#google-ocr">οὐ γάρ τι ταὐτὸν ἄνδρα γενναῖον θανεῖν</l>
+          <l n="626" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:626" resp="#google-ocr">διοσδότοις σκήπτροισι τιμαλφούμενον,</l>
+          <l n="627" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:627" resp="#google-ocr">καὶ ταῦτα πρὸς γυναικός, οὔ τι θουρίοις</l>
+          <l n="628" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:628" resp="#google-ocr">τόξοις ἑκηβόλοισιν, ὥστ᾽ Αμαζόνος,</l>
+          <l n="629" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:629" resp="#google-ocr">ἀλλ᾽ ὡς ἀκούσηι, Παλλὰς οἱ τ᾽ ἐφήμενοι</l>
+          <l n="630" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:630" resp="#google-ocr">ψήφωι διαιρεῖν τοῦδε πράγματος πέρι.</l>
+          <l n="631" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:631" resp="#google-ocr">ἀπὸ στρατείας γάρ νιν ἠμποληκότα</l>
+          <l n="632" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:632" resp="#google-ocr">τὰ πλεῖστ᾽ ἀμείνον᾽ εὔφροσιν δεδεγμένη,</l>
+          <l n="633" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:633" resp="#google-ocr">δροίτηι, περῶντος λουτρά, κἀπὶ τέρματι,</l>
+          <l n="634" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:634" resp="#google-ocr">φᾶρος περεσκήνωσεν, ἐν δ᾽ ἀτέρμονι</l>
+          <l n="635" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:635" resp="#google-ocr">κόπτει πεδήσασ᾽ ἄνδρα δαιδάλωι πέπλωι.</l>
+          <l n="636" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:636" resp="#google-ocr">ἀνδρὸς μὲν ὑμῖν οὗτος εἴρηται μόρος</l>
+          <l n="637" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:637" resp="#google-ocr">τοῦ πάντοσέμνου, τοῦ στρατηλάτου νεῶν.</l>
+          <l n="638" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:638" resp="#google-ocr">τὴν δ᾽ αὖ τοιαύτην εἶπον, ὡς δηχθῆι λεώς,</l>
+          <l n="639" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:639" resp="#google-ocr">ὅσπερ τέτακται τῆνδε κυρῶσαι δίκην.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="640" resp="#Smyth"/>
+          <l n="640" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:640" resp="#google-ocr">πατρὸς προτιμᾶι Ζεὺς μόρον τῶι σῶι λόγωι·</l>
+          <l n="641" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:641" resp="#google-ocr">αὐτὸς δ᾽ ἔδησε πατέρα πρεσβύτην Κρόνον.</l>
+          <l n="642" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:642" resp="#google-ocr">πῶς ταῦτα τούτοις οὐκ ἐναντίως λέγεις;</l>
+          <l n="643" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:643" resp="#google-ocr">ὑμᾶς δ᾽ ἀκούειν ταῦτ᾽ ἐγὼ μαρτύρομαι.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="644" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:644" resp="#google-ocr">ὦ παντομισή κνώδαλα, στύγη θεῶν,</l>
+          <l n="645" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:645" resp="#google-ocr">πέδας μὲν ἂν λύσειας, ἔστι τοῦδ᾽ ἄκος</l>
+          <l n="646" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:646" resp="#google-ocr">καὶ κάρτα πολλὴ μηχανή λυτήριος·</l>
+          <pb n="52" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=60"/>
+          <l n="647" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:647" resp="#google-ocr">ἀνδρὸς δ᾽ ἐπειδὰν αἷμ᾽ ἀνασπάσηι κόνις</l>
+          <l n="648" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:648" resp="#google-ocr">ἅπαξ θανόντος, οὔτις ἔστ᾽ ἀνάστασις.</l>
+          <l n="649" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:649" resp="#google-ocr">τούτων ἐπωιδὰς οὐκ ἐποίησεν πατὴρ</l>
+          <l n="650" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:650" resp="#google-ocr">οὑμός, τὰ δ᾽ ἄλλα πάντ᾽ ἄνω τε καὶ κάτω</l>
+          <l n="651" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:651" resp="#google-ocr">στρέφων τίθησιν οὐδὲν ἀσθμαίνων μένει.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="652" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:652" resp="#google-ocr">πῶς τἀποφεύγειν τοῦδ᾽ ὑπερδικεῖς ὅρα·</l>
+          <l n="653" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:653" resp="#google-ocr">τὸ μητρὸς αἷμ᾽ ὅμαιμον ἐκχέας πέδοι,</l>
+          <l n="654" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:654" resp="#google-ocr">ἔπειτ᾽ ἐν Ἀργει δώματ᾽ οἰκήσει πατρός;</l>
+          <l n="655" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:655" resp="#google-ocr">ποίοισι βωμοῖς χρώμενος τοῖς δημίοις;</l>
+          <l n="656" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:656" resp="#google-ocr">ποία δὲ χέρνιψ φρατέρων προσδέξεται;</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="657" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:657" resp="#google-ocr">καὶ τοῦτο λέξω, καὶ μάθ᾽ ὡς ὀρθῶς ἐρῶ.</l>
+          <l n="658" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:658" resp="#google-ocr">οὐκ ἔστι μήτηρ ἡ κεκλημένου τέκνου</l>
+          <l n="659" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:659" resp="#google-ocr">τοκεύς, τροφὸς δὲ κύματος νεοσπόρου.</l>
+          <l n="660" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:660" resp="#google-ocr">τίκτει δ᾽ ὁ θρώισκων, ἡ δ᾽ ἅπερ ξένωι ξένη</l>
+          <l n="661" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:661" resp="#google-ocr">ἔσωσεν ἔρνος, οἶσι μὴ βλάψηι θεός.</l>
+          <l n="662" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:662" resp="#google-ocr">τεκμήριον δὲ τοῦδέ σοι δείξω λόγου.</l>
+          <l n="663" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:663" resp="#google-ocr">πατὴρ μὲν ἂν γένοιτ᾽ ἄνευ μητρός· πέλας</l>
+          <l n="664" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:664" resp="#google-ocr">μάρτυς πάρεστι παῖς Ὀλυμπίου Διός,</l>
+          <l n="665" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:665" resp="#google-ocr">οὐδ᾽ ἐν σκότοισι νηδύος τεθραμμένη,</l>
+          <l n="666" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:666" resp="#google-ocr">ἀλλ᾽ οἷον ἔρνος οὔτις ἂν τέκοι θεός.</l>
+          <l n="667" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:667" resp="#google-ocr">ἐγὼ δὲ, Παλλάς, τἄλλα θ᾽, ὡς ἐπίσταμαι,</l>
+          <l n="668" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:668" resp="#google-ocr">τὸ σὸν πόλισμα καὶ στρατὸν τεύξω μέγαν,</l>
+          <l n="669" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:669" resp="#google-ocr">καὶ τόνδ᾽ ἔπεμψα σῶν δόμων ἐφέστιον,</l>
+          <l n="670" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:670" resp="#google-ocr">ὅπως γένοιτο πιστὸς ἐς τὸ πᾶν χρόνου</l>
+          <l n="671" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:671" resp="#google-ocr">καὶ τόνδ᾽ ἐπικτήσαιο σύμμαχον, θεά,</l>
+          <l n="672" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:672" resp="#google-ocr">καὶ τοὺς ἔπειτα, καὶ τάδ᾽ αἰανῶς μένοι</l>
+          <l n="673" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:673" resp="#google-ocr">στέργειν τὰ πιστὰ τῶνδε τοὺς ἐπισπόρους.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <pb n="53" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=61"/>
+          <milestone unit="card" n="674" resp="#Smyth"/>
+          <l n="674" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:674" resp="#google-ocr">ἤδη κελεύσω τοῦσδ᾽ ἀπὸ γνώμης φέρειν</l>
+          <l n="675" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:675" resp="#google-ocr">ψῆφον δικαίαν, ὡς ἅλις λελεγμένων.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="676" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:676" resp="#google-ocr">ἡμῖν μὲν ἤδη πᾶν τετόξευται βέλος·</l>
+          <l n="677" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:677" resp="#google-ocr">μένω δ᾽ ἀκοῦσαι πῶς ἀγὼν κριθήσεται.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="678" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:678" resp="#google-ocr">τί γάρ; πρὸς ὑμῶν πῶς τιθεῖσ᾽ ἄμομφος ὦ;</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="679" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:679" resp="#google-ocr">ἠκούσαθ᾽ ὧν ἠκούσατ᾽, ἐν δὲ καρδίαι</l>
+          <l n="680" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:680" resp="#google-ocr">ψῆφον φέροντες ὅρκον αἰδεῖσθε, ξένοι.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="681" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:681" resp="#google-ocr">κλύοιτ᾽ ἂν ἤδη θεσμόν, Ἀττικὸς λεώς,</l>
+          <l n="682" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:682" resp="#google-ocr">πρώτας δίκας κρίνοντες αἵματος χυτοῦ.</l>
+          <l n="683" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:683" resp="#google-ocr">ἔσται δὲ καὶ τὸ λοιπὸν Αἰγέως στρατῶι</l>
+          <l n="684" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:684" resp="#google-ocr">αἰεὶ δικαστῶν τοῦτο βουλευτήριον.</l>
+          <l n="685" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:685" resp="#google-ocr">πάγον δ᾽ ἄρ᾽ ἕξει τόνδ᾽, Ἀμαζόνων ἕδραν</l>
+          <l n="686" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:686" resp="#google-ocr">σκηνάς θ᾽, ὅτ᾽ ἦλθον Θησέως κατὰ φθόνον</l>
+          <l n="687" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:687" resp="#google-ocr">στρατηλατοῦσαι, καὶ πόλει νεοπτόλει</l>
+          <l n="688" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:688" resp="#google-ocr">τῆνδ᾽ ὑψίπυργον ἀντεπύργωσαν τότε·</l>
+          <l n="689" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:689" resp="#google-ocr">"Αρει δ᾽ ἔθυον, ἔνθεν ἔστ᾽ ἐπώνυμος</l>
+          <l n="690" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:690" resp="#google-ocr">πέτρα, πάγος τ᾽ ῎Ἄρειος· ἐν δὲ τῶι σέβας</l>
+          <l n="691" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:691" resp="#google-ocr">ἀστῶν φόβος τε συγγενὴς τὸ μὴ ἀδικεῖν</l>
+          <l n="692" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:692" resp="#google-ocr">σχήσει κατ᾽ ἦμαρ καὶ κατ᾿ εὐφρόνην ὁμῶς,</l>
+          <l n="693" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:693" resp="#google-ocr">αὐτῶν πολιτῶν μὴ ᾿πιχραινόντων νόμους</l>
+          <l n="694" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:694" resp="#google-ocr">κακαῖς ἐπιρροαῖσι· βορβόρωι δ᾽ ὕδωρ</l>
+          <l n="695" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:695" resp="#google-ocr">λαμπρὸν μιαίνων οὔποθ᾽ εὑρήσεις ποτόν.</l>
+          <l n="696" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:696" resp="#google-ocr">τὸ μήτ᾽ ἄναρχον μήτε δεσποτούμενον</l>
+          <l n="697" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:697" resp="#google-ocr">ἀστοῖς περιστέλλουσι βουλεύω σέβειν,</l>
+          <pb n="54" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=62"/>
+          <l n="698" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:698" resp="#google-ocr">καὶ μὴ τὸ δεινὸν πᾶν πόλεως ἔξω βαλεῖν.</l>
+          <l n="699" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:699" resp="#google-ocr">τίς γὰρ δεδοικὼς μηδὲν ἔνδικος βροτῶν;</l>
+          <l n="700" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:700" resp="#google-ocr">τοιόνδε τοι ταρβοῦντες ἐνδίκως σέβας</l>
+          <l n="701" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:701" resp="#google-ocr">ἔρυμά τε χώρας καὶ πόλεως σωτήριον</l>
+          <l n="702" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:702" resp="#google-ocr">ἔχοιτ᾽ ἂν οἷον οὔτις ἀνθρώπων ἔχει,</l>
+          <l n="703" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:703" resp="#google-ocr">οὔτ᾽ ἐν Σκύθηισιν οὔτε Πέλοπος ἐν τόποις.</l>
+          <l n="704" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:704" resp="#google-ocr">κερδῶν ἄθικτον τοῦτο βουλευτήριον,</l>
+          <l n="705" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:705" resp="#google-ocr">αἰδοῖον, ὀξύθυμον, εὑδόντων ὑπερ</l>
+          <l n="706" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:706" resp="#google-ocr">ἐγρηγορὸς φρούρημα γῆς καθίσταμαι.</l>
+          <l n="707" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:707" resp="#google-ocr">ταύτην μὲν ἐξέτειν᾽ ἐμοῖς παραίνεσιν</l>
+          <l n="708" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:708" resp="#google-ocr">ἀστοῖσιν ἐς τὸ λοιπόν· ὀρθοῦσθαι δὲ χρὴ</l>
+          <l n="709" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:709" resp="#google-ocr">καὶ ψῆφον αἴρειν καὶ διαγνῶναι δίκην</l>
+          <l n="710" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:710" resp="#google-ocr">αἰδουμένους τὸν ὅρκον. εἴρηται λόγος.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="711" resp="#Smyth"/>
+          <l n="711" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:711" resp="#google-ocr">καὶ μὴν βαρεῖαν τῆνδ᾽ ὁμιλίαν χθονὸς</l>
+          <l n="712" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:712" resp="#google-ocr">ξύμβουλός εἰμι μηδαμῶς ἀτιμάσαι.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="713" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:713" resp="#google-ocr">κἄγωγε χρησμοὺς τοὺς ἐμούς τε καὶ Διὸς</l>
+          <l n="714" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:714" resp="#google-ocr">ταρβεῖν κελεύω μηδ᾽ ἀκαρπώτους κτίσαι.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="715" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:715" resp="#google-ocr">ἀλλ᾽ αἱματηρὰ πράγματ᾽ οὐ λαχὼν σέβεις,</l>
+          <l n="716" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:716" resp="#google-ocr">μαντεῖα δ᾽ οὐκέθ᾽ ἁγνὰ μαντεύσηι νέμων.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="717" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:717" resp="#google-ocr">ἢ καὶ πατήρ τι σφάλλεται βουλευμάτων</l>
+          <l n="718" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:718" resp="#google-ocr">πρωτοκτόνοισι προστροπαῖς Ἰξίονος;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="719" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:719" resp="#google-ocr">λέγεις· ἐγὼ δὲ μὴ τυχοῦσα τῆς δίκης</l>
+          <l n="720" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:720" resp="#google-ocr">βαρεῖα χώρᾶι τῆιδ᾽ ὁμιλήσω πάλιν.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="721" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:721" resp="#google-ocr">ἀλλ᾽ ἔν τε τοῖς νέοισι καὶ παλαιτέροις</l>
+          <l n="722" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:722" resp="#google-ocr">θεοῖς ἄτιμος εἶ σύ· νικήσω δ᾽ ἐγώ.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="723" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:723" resp="#google-ocr">τοιαῦτ᾽ ἔδρασας καὶ Φέρητος ἐν δόμοις·</l>
+          <l n="724" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:724" resp="#google-ocr">Μοίρας ἔπεισας ἀφθίτους θεῖναι βροτούς.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <l n="725" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:725" resp="#google-ocr">οὔκουν δίκαιον τὸν σέβοντ᾽ εὐεργετεῖν,</l>
+          <l n="726" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:726" resp="#google-ocr">ἄλλως τε πάντως χὔτε δεόμενος τύχοι;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="727" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:727" resp="#google-ocr">σύ τοι παλαιὰς διανομὰς καταφθίσας</l>
+          <l n="728" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:728" resp="#google-ocr">οἴνωι παρηπάφησας ἀρχαίας θεάς.</l>
+        </sp>
+        <sp who="#spk-apollo">
+          <speaker>Ἀπόλλων</speaker>
+          <pb n="55" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=63"/>
+          <l n="729" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:729" resp="#google-ocr">σύ τοι τάχ᾽ οὐκ ἔχουσα τῆς δίκης τέλος</l>
+          <l n="730" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:730" resp="#google-ocr">ἐμῆι τὸν ἰὸν οὐδὲν ἐχθροῖσιν βαρύν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="731" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:731" resp="#google-ocr">ἐπεὶ καθιππάζηι με πρεσβῦτιν νέος,</l>
+          <l n="732" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:732" resp="#google-ocr">δίκης γενέσθαι τῆσδ᾽ ἐπήκοος μένω,</l>
+          <l n="733" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:733" resp="#google-ocr">ὡς ἀμφίβουλος οὖσα θυμοῦσθαι πόλει.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="734" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:734" resp="#google-ocr">ἐμὸν τόδ᾽ ἔργον, λοισθίαν κρῖναι δίκην·</l>
+          <l n="735" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:735" resp="#google-ocr">ψῆφον δ᾽ Ὀρέστηι τῆνδ᾽ ἐγὼ προσθήσομαι.</l>
+          <l n="736" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:736" resp="#google-ocr">μήτηρ γὰρ οὔτις ἐστὶν ἢ μ᾿ ἐγείνατο,</l>
+          <l n="737" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:737" resp="#google-ocr">τὸ δ᾽ ἄρσεν αἰνῶ πάντα, πλὴν γάμου τυχεῖν,</l>
+          <l n="738" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:738" resp="#google-ocr">ἅπαντι θυμῶι, κάρτα δ᾽ εἰμὶ τοῦ πατρός.</l>
+          <l n="739" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:739" resp="#google-ocr">οὕτω γυναικὸς οὐ προτιμήσω μόρον</l>
+          <l n="740" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:740" resp="#google-ocr">ἄνδρα κτανούσης δωμάτων ἐπίσκοπον.</l>
+          <l n="741" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:741" resp="#google-ocr">νικᾶι δ᾽ Ὀρέστης, κἂν ἰσόψηφος κριθῆι.</l>
+          <l n="742" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:742" resp="#google-ocr">ἐκβάλλεθ᾽ ὡς τάχιστα τευχέων πάλους</l>
+          <l n="743" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:743" resp="#google-ocr">ὅσοις δικαστῶν τοῦτ᾽ ἐπέσταλται τέλος.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <milestone unit="card" n="744" resp="#Smyth"/>
+          <l n="744" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:744" resp="#google-ocr">ὦ Φοῖβ᾽ Απολλον, πῶς ἀγὼν κριθήσεται;</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="745" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:745" resp="#google-ocr">ὦ Νὺξ μέλαινα μῆτερ, ἆρ᾽ ὁρᾶις τάδε;</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="746" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:746" resp="#google-ocr">νῦν ἀγχόνης μοι τέρματ᾽, ἢ φάος βλέπειν.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <l n="747" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:747" resp="#google-ocr">ἡμῖν γὰρ ἔρρειν, ἢ πρόσω τιμὰς νέμειν.</l>
+          <l n="748" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:748" resp="#google-ocr">ΑΒ. πεμπάζετ᾽ ὀρθῶς ἐκβολὰς ψήφων, ξένοι,</l>
+          <l n="749" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:749" resp="#google-ocr">τὸ μὴ ἀδικεῖν σέβοντες ἐν διαιρέσει.</l>
+          <l n="750" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:750" resp="#google-ocr">γνώμης δ᾽ ἀπούσης πῆμα γίγνεται μέγα,</l>
+          <l n="751" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:751" resp="#google-ocr">μολοῦσά τ᾽ οἶκον ψῆφος ὤρθωσεν μία.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="752" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:752" resp="#google-ocr">ἀνὴρ ὅδ᾽ ἐκπέφευγεν αἵματος δίκην·</l>
+          <l n="753" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:753" resp="#google-ocr">ἴσον γάρ ἐστι τἀρίθμημα τῶν πάλων.</l>
+        </sp>
+        <sp who="#spk-orestes">
+          <speaker>Ὀρέστης</speaker>
+          <pb n="56" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=64"/>
+          <l n="754" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:754" resp="#google-ocr">ὦ Παλλάς, ὦ σώσασα τοὺς ἐμοὺς δόμους,</l>
+          <l n="755" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:755" resp="#google-ocr">γαίας πατρώιας ἐστερημένον σύ τοι</l>
+          <l n="756" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:756" resp="#google-ocr">κατώικισάς με· καί τις Ἑλλήνων ἐρεῖ,</l>
+          <l n="757" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:757" resp="#google-ocr">“Αργεῖος ἁνὴρ αὖθις ἔν τε χρήμασιν</l>
+          <l n="758" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:758" resp="#google-ocr">οἰκεῖ πατρώιοις, Παλλάδος καὶ Λοξίου</l>
+          <l n="759" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:759" resp="#google-ocr">ἕκατι καὶ τοῦ πάντα κραίνοντος τρίτου</l>
+          <l n="760" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:760" resp="#google-ocr">σωτῆρος, ὃς πατρῶιον αἰδεσθεὶς μόρον</l>
+          <l n="761" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:761" resp="#google-ocr">σώιζει με μητρὸς τᾶσδε συνδίκους ὁρῶν.”</l>
+          <l n="762" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:762" resp="#google-ocr">ἐγὼ δὲ χώρᾶι τῆιδε καὶ τῶι σῶι στρατῶι</l>
+          <l n="763" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:763" resp="#google-ocr">τὸ λοιπὸν εἰς ἅπαντα πλειστήρη χρόνον</l>
+          <l n="764" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:764" resp="#google-ocr">ὁρκωμοτήσας νῦν ἄπειμι πρὸς δόμους,</l>
+          <l n="765" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:765" resp="#google-ocr">μήτοι τιν᾿ ἄνδρα δεῦρο πρυμνήτην χθονὸς</l>
+          <l n="766" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:766" resp="#google-ocr">ἐλθόντ᾽ ἐποίσειν εὖ κεκασμένον δόρυ.</l>
+          <l n="767" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:767" resp="#google-ocr">αὐτοὶ γὰρ ἡμεῖς ὄντες ἐν τάφοις τότε</l>
+          <l n="768" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:768" resp="#google-ocr">τοῖς τἀμὰ παρβαίνουσι νῦν ὁρκώματα</l>
+          <l n="770" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:770" resp="#google-ocr">ὁδοὺς ἀθύμους καὶ παρόρνιθας πόρους</l>
+          <l n="771" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:771" resp="#google-ocr">τιθέντες, ὡς αὐτοῖσι μεταμέληι πόνος</l>
+          <l n="769" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:769" resp="#google-ocr">ἀμηχάνοισι πράξομεν δυσπραξίαις·</l>
+          <l n="772" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:772" resp="#google-ocr">ὀρθουμένων δὲ καὶ πόλιν τὴν Παλλάδος</l>
+          <l n="773" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:773" resp="#google-ocr">τιμῶσιν αἰεὶ τῆνδε συμμάχωι δορὶ</l>
+          <l n="774" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:774" resp="#google-ocr">αὐτοῖσιν ἡμεῖς ἐσόμεθ᾽ εὐμενέστεροι.</l>
+          <l n="775" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:775" resp="#google-ocr">καὶ χαῖρε καὶ σὺ καὶ πολισσοῦχος λεώς·</l>
+          <l n="776" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:776" resp="#google-ocr">πάλαισμ᾽ ἄφυκτον τοῖς ἐναντίοις ἔχοις</l>
+          <l n="777" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:777" resp="#google-ocr">σωτήριόν τε καὶ δορὸς νικηφόρον.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="778" resp="#Smyth"/>
+          <l n="778" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:778" resp="#google-ocr">ἰὼ θεοὶ νεώτεροι, παλαιοὺς νόμους</l>
+          <l n="779" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:779" resp="#google-ocr">καθιππάσασθε κἀκ χερῶν εϊλεσθέ μου.</l>
+          <l n="780" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:780" resp="#google-ocr">ἐγὼ δ᾽ ἄτιμος ἡ τάλαινα βαρύκοτος</l>
+          <l n="781" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:781" resp="#google-ocr">ἐν γᾶι τᾶιδε, φεῦ,</l>
+          <l n="782" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:782" resp="#google-ocr">ἰὸν ἰὸν ἀντιπενθῆ μεθεῖσα καρδίας</l>
+          <l n="783" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:783" resp="#google-ocr">σταλαγμὸν χθονί</l>
+          <pb n="57" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=65"/>
+          <l n="784" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:784" resp="#google-ocr">ἄφορον· ἐκ δὲ τοῦ</l>
+          <l n="785" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:785" resp="#google-ocr">λειχὴν ἄφυλλος, ἄτεκνος,</l>
+          <l n="786" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:786" resp="#google-ocr">ἰὼ Δίκα, πέδον ἐπισύμενος</l>
+          <l n="787" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:787" resp="#google-ocr">βροτοφθόρους κηλίδας ἐν χώρᾶι βαλεῖ,</l>
+          <l n="788" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:788" resp="#google-ocr">(στενάζω· τί ῥέξω; γένωμαι;) δύσοισθ᾽ (ἆς)</l>
+          <l n="790" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:790" resp="#google-ocr">πολίταις ἔπαθον.</l>
+          <l n="791" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:791" resp="#google-ocr">ἰὼ μεγάλα τοι κόραι δυστυχεῖς</l>
+          <l n="792" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:792" resp="#google-ocr">Νυκτὸς ἀτιμοπενθεῖς.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="793" resp="#Smyth"/>
+          <l n="793" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:793" resp="#google-ocr">ἐμοὶ πίθεσθε μὴ βαρυστόνως φέρειν.</l>
+          <l n="795" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:795" resp="#google-ocr">οὐ γὰρ νενίκησθ᾽, ἀλλ᾿ ἰσόψηφος δίκη</l>
+          <l n="796" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:796" resp="#google-ocr">ἐξῆλθ᾽ ἀληθῶς, οὐκ ἀτιμίᾶι σέθεν.</l>
+          <l n="797" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:797" resp="#google-ocr">ἀλλ᾽ ἐκ Διὸς γὰρ λαμπρὰ μαρτύρια παρῆν,</l>
+          <l n="798" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:798" resp="#google-ocr">αὐτός θ᾽ ὁ χρήσας αὐτὸς ἦν ὁ μαρτυρῶν,</l>
+          <l n="799" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:799" resp="#google-ocr">ὡς ταῦτ᾽ Ὀρέστην δρῶντα μὴ βλάβας ἔχειν.</l>
+          <l n="800" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:800" resp="#google-ocr">ὑμεῖς δὲ τῆι γῆι τῆιδε μὴ θυμοῦσθε, μὴ</l>
+          <l n="801" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:801" resp="#google-ocr">βαρὺν κότον σκήψητε, μηδ᾽ ἀκαρπίαν</l>
+          <l n="802" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:802" resp="#google-ocr">τεύξητ᾽, ἀφεῖσαι δαιμόνων σταλάγματα,</l>
+          <l n="803" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:803" resp="#google-ocr">βρωτῆρας αἰχμὰς σπερμάτων ἀνημέρους.</l>
+          <l n="804" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:804" resp="#google-ocr">ἐγὼ γὰρ ὑμῖν πανδίκως ὑπίσχομαι</l>
+          <l n="805" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:805" resp="#google-ocr">ἕδρας τε καὶ κευθμῶνας ἐνδίκου χθονὸς</l>
+          <l n="806" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:806" resp="#google-ocr">λιπαροθρόνοισιν ἡμένας ἐπ᾽ ἐσχάραις</l>
+          <l n="807" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:807" resp="#google-ocr">ἕξειν ὑπ᾽ ἀστῶν τῶνδε τιμαλφουμένας.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="808" resp="#Smyth"/>
+          <l n="808" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:808" resp="#google-ocr">ἰὼ θεοὶ νεώτεροι, παλαιοὺς νόμους</l>
+          <l n="809" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:809" resp="#google-ocr">καθιππάσασθε κἀκ χερῶν εἵλεσθέ μου.</l>
+          <l n="810" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:810" resp="#google-ocr">ἐγὼ δ᾽ ἄτιμος ἡ τάλαινα βαρύκοτος</l>
+          <pb n="58" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=66"/>
+          <l n="811" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:811" resp="#google-ocr">ἐν γᾶι τᾶιδε, φεῦ,</l>
+          <l n="812" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:812" resp="#google-ocr">ἰὸν ἰὸν ἀντιπενθῆ μεθεῖσα καρδίας</l>
+          <l n="813" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:813" resp="#google-ocr">σταλαγμὸν χθονί</l>
+          <l n="814" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:814" resp="#google-ocr">ἄφορον· ἐκ δὲ τοῦ</l>
+          <l n="815" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:815" resp="#google-ocr">λειχὴν ἄφυλλος, ἄτεκνος,</l>
+          <l n="816" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:816" resp="#google-ocr">ἰὼ Δίκα, πέδον ἐπισύμενος</l>
+          <l n="817" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:817" resp="#google-ocr">βροτοφθόρους κηλίδας ἐν χώρᾶι βαλεῖ,</l>
+          <l n="818" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:818" resp="#google-ocr">(στενάζω· τί ῥέξω; γένωμαι;) δύσοισθ᾽ (ἆς)</l>
+          <l n="820" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:820" resp="#google-ocr">πολίταις ἔπαθον.</l>
+          <l n="821" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:821" resp="#google-ocr">ἰὼ μεγάλα τοι κόραι δυστυχεῖς</l>
+          <l n="822" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:822" resp="#google-ocr">Νυκτὸς ἀτιμοπενθεῖς.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="823" resp="#Smyth"/>
+          <l n="823" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:823" resp="#google-ocr">οὐκ ἔστ᾽ ἄτιμοι, μηδ᾽ ὑπερθύμως ἄγαν</l>
+          <l n="825" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:825" resp="#google-ocr">θεαὶ βροτῶν κτίσητε δύσκηλον χθόνα.</l>
+          <l n="826" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:826" resp="#google-ocr">κἀγὼ πέποιθα Ζηνί, καὶ τί δεῖ λέγειν;</l>
+          <l n="827" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:827" resp="#google-ocr">καὶ κλῆιδας οἶδα δώματος μόνη θεῶν,</l>
+          <l n="828" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:828" resp="#google-ocr">ἐν ὧι κεραυνός ἐστιν ἐσφραγισμένος·</l>
+          <l n="829" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:829" resp="#google-ocr">ἀλλ᾽ οὐδὲν αὐτοῦ δεῖ· σὺ δ᾽ εὐπειθὴς ἐμοὶ</l>
+          <l n="830" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:830" resp="#google-ocr">γλώσσης ματαίας μὴ ᾿κβαλοῦσ᾽ ἔπη, χθονὶ</l>
+          <l n="831" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:831" resp="#google-ocr">καρπὸν φέροντα πάντα μὴ πράσσειν καλῶς,</l>
+          <l n="832" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:832" resp="#google-ocr">κοίμα κελαινοῦ κύματος πικρὸν μένος,</l>
+          <l n="833" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:833" resp="#google-ocr">ὡς σεμνότιμος καὶ ξυνοικήτωρ ἐμοί·</l>
+          <l n="834" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:834" resp="#google-ocr">πολλῆς δὲ χώρας τῆσδ᾽ ἔτ᾿ ἀκροθίνια</l>
+          <l n="835" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:835" resp="#google-ocr">θύη πρὸ παίδων καὶ γαμηλίου τέλους</l>
+          <l n="836" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:836" resp="#google-ocr">ἔχουσ᾽ ἐς αἰεὶ τόνδ᾽ ἐπαινέσεις λόγον.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="837" resp="#Smyth"/>
+          <l n="837" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:837" resp="#google-ocr">ἐμὲ παθεῖν τάδε, φεῦ,</l>
+          <l n="838" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:838" resp="#google-ocr">ἐμὲ παλαιόφρονα, κατά τε γᾶς οἰχνεῖν</l>
+          <l n="839" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:839" resp="#google-ocr">ἀτίετον, φεῦ, μύσος.</l>
+          <pb n="59" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=67"/>
+          <l n="840" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:840" resp="#google-ocr">πνέω τοι μένος ἅπαντά τε κότον.</l>
+          <l n="841" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:841" resp="#google-ocr">οἰοῖ δᾶ, φεῦ.</l>
+          <l n="842" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:842" resp="#google-ocr">τίς μ᾽ ὑποδύεται πλευράς, (τίς) ὀδύνα</l>
+          <l n="843" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:843" resp="#google-ocr">θυμόν; ἄϊε, μᾶτερ</l>
+          <l n="846" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:846" resp="#google-ocr">Νύξ· ἀπὸ γάρ με τιμᾶν δαναιᾶν θεῶν</l>
+          <l n="847" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:847" resp="#google-ocr">δυσπάλαμοι παρ᾽ οὐδὲν ἦραν δόλοι.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="848" resp="#Smyth"/>
+          <l n="848" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:848" resp="#google-ocr">ὀργὰς ξυνοίσω σοι· γεραιτέρα γὰρ εἶ.</l>
+          <l n="849" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:849" resp="#google-ocr">καὶ τῶι μὲν εἶ σὺ κάρτ᾽ ἐμοῦ σοφωτέρα,</l>
+          <l n="850" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:850" resp="#google-ocr">φρονεῖν δὲ κἀμοὶ Ζεὺς ἔδωκεν οὐ κακῶς.</l>
+          <l n="851" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:851" resp="#google-ocr">ὑμεῖς δ᾽ ἐς ἀλλόφυλον ἐλθοῦσαι χθόνα</l>
+          <l n="852" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:852" resp="#google-ocr">γῆς τῆσδ᾽ ἐρασθήσεσθε· προυννέπω τάδε.</l>
+          <l n="853" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:853" resp="#google-ocr">οὑπιρρέων γὰρ τιμιώτερος χρόνος</l>
+          <l n="854" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:854" resp="#google-ocr">ἔσται πολίταις τοῖσδε. καὶ σὺ τιμίαν</l>
+          <l n="855" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:855" resp="#google-ocr">ἕδραν ἔχουσα πρὸς δόμοις Ἐρεχθέως</l>
+          <l n="856" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:856" resp="#google-ocr">τεύξηι παρ᾽ ἀνδρῶν καὶ γυναικείων στόλων,</l>
+          <l n="857" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:857" resp="#google-ocr">ὅσην παρ᾽ ἄλλων οὔποτ᾽ ἂν σχέθοις βροτῶν.</l>
+          <l n="858" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:858" resp="#google-ocr">σὺ δ᾽ ἐν τόποισι τοῖς ἐμοῖσι μὴ βάληις</l>
+          <l n="859" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:859" resp="#google-ocr">μήθ᾽ αἱματηρὰς θηγάνας σπλάγχνων βλάβας</l>
+          <l n="860" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:860" resp="#google-ocr">νέων ἀοίνοις ἐμμανέσι θυμώμασιν,</l>
+          <l n="861" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:861" resp="#google-ocr">μήτ᾽ ἐξελοῦσ᾽ ὡς καρδίαν ἀλεκτόρων</l>
+          <l n="862" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:862" resp="#google-ocr">ἐν τοῖς ἐμοῖς ἀστοῖσιν ἱδρύσηις "Αρη</l>
+          <pb n="60" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=68"/>
+          <l n="863" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:863" resp="#google-ocr">ἐμφύλιόν τε καὶ πρὸς ἀλλήλους θρασύν.</l>
+          <l n="864" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:864" resp="#google-ocr">θυραῖος ἔστω πόλεμος, οὐ μόλις παρών,</l>
+          <l n="865" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:865" resp="#google-ocr">ἐν ὧι τις ἔσται δεινὸς εὐκλείας ἔρως·</l>
+          <l n="866" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:866" resp="#google-ocr">ἐνοικίου δ᾽ ὄρνιθος οὐ λέγω μάχην.</l>
+          <l n="867" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:867" resp="#google-ocr">τοιαῦθ᾽ ἑλέσθαι σοι πάρεστιν ἐξ ἐμοῦ,</l>
+          <l n="868" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:868" resp="#google-ocr">εὖ δρῶσαν, εὖ πάσχουσαν, εὖ τιμωμένην</l>
+          <l n="869" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:869" resp="#google-ocr">χώρας μετασχεῖν τῆσδε θεοφιλεστάτης.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="870" resp="#Smyth"/>
+          <l n="870" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:870" resp="#google-ocr">ἐμὲ παθεῖν τάδε, φεῦ,</l>
+          <l n="871" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:871" resp="#google-ocr">ἐμὲ παλαιόφρονα, κατά τε γᾶς οἰχνεῖν,</l>
+          <l n="872" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:872" resp="#google-ocr">ἀτίετον, φεῦ, μύσος.</l>
+          <l n="873" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:873" resp="#google-ocr">πνέω τοι μένος ἅπαντά τε κότον.</l>
+          <l n="874" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:874" resp="#google-ocr">οἰοῖ δᾶ, φεῦ.</l>
+          <l n="875" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:875" resp="#google-ocr">τίς μ᾽ ὑποδύεται πλευράς, (τίς) ὀδύνα</l>
+          <l n="876" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:876" resp="#google-ocr">θυμόν; ἄἱε, μᾶτερ</l>
+          <l n="878" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:878" resp="#google-ocr">Νύξ· ἀπὸ γάρ με τιμᾶν δαναιᾶν θεῶν</l>
+          <l n="880" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:880" resp="#google-ocr">δυσπάλαμοι παρ᾽ οὐδὲν ἦραν δόλοι.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="881" resp="#Smyth"/>
+          <l n="881" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:881" resp="#google-ocr">οὔτοι καμοῦμαί σοι λέγουσα τἀγαθά,</l>
+          <l n="882" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:882" resp="#google-ocr">ὡς μήποτ᾽ εἴπηις πρὸς νεωτέρας ἐμοῦ</l>
+          <l n="883" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:883" resp="#google-ocr">θεὸς παλαιὰ καὶ πολισσούχων βροτῶν</l>
+          <l n="884" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:884" resp="#google-ocr">ἄτιμος ἔρρειν τοῦδ᾽ ἀπόξενος πέδου.</l>
+          <l n="885" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:885" resp="#google-ocr">ἀλλ᾽ εἰ μὲν ἁγνόν ἐστί σοι Πειθοῦς σέβας,</l>
+          <l n="886" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:886" resp="#google-ocr">γλώσσης ἐμῆς μείλιγμα καὶ θελκτήριον,</l>
+          <l n="887" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:887" resp="#google-ocr">σὺ δ᾽ οὖν μένοις ἄν· εἰ δὲ μὴ θέλεις μένειν,</l>
+          <l n="888" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:888" resp="#google-ocr">οὐ τἂν δικαίως τῆιδ᾽ ἐπιρρέποις πόλει</l>
+          <l n="889" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:889" resp="#google-ocr">μῆνίν τιν᾿ ἢ κότον τιν᾿ ἢ βλάβην στρατῶι.</l>
+          <l n="890" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:890" resp="#google-ocr">ἔξεστι γάρ σοι τῆσδε γαμόρωι χθονός</l>
+          <l n="891" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:891" resp="#google-ocr">εἶναι δικαίως ἐς τὸ πᾶν τιμωμένηι.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <pb n="61" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=69"/>
+          <l n="892" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:892" resp="#google-ocr">ἄνασσ᾽ Ἀθάνα, τίνα με φὴις ἕξειν ἕδραν;</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="893" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:893" resp="#google-ocr">πάσης ἀπήμον᾽ οἰζύος· δέχου δὲ σύ.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="894" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:894" resp="#google-ocr">καὶ δὴ δέδεγμαι· τίς δέ μοι τιμὴ μένει;</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="895" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:895" resp="#google-ocr">ὡς μή τιν᾿ οἶκον εὐθενεῖν ἄνευ σέθεν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="896" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:896" resp="#google-ocr">σὺ τοῦτο πράξεις, ὥστε με σθένειν τόσον;</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="897" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:897" resp="#google-ocr">τῶι γὰρ σέβοντι συμφορὰς ὀρθώσομεν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="898" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:898" resp="#google-ocr">καί μοι πρόπαντος ἐγγύην θήσηι χρόνου;</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="899" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:899" resp="#google-ocr">ἔξεστι γάρ μοι μὴ λέγειν ἃ μὴ τελῶ.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="900" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:900" resp="#google-ocr">θέλξειν μ᾽ ἔοικας καὶ μεθίσταμαι κότου.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="901" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:901" resp="#google-ocr">τοιγὰρ κατὰ χθόν᾽ οὖσ᾽ ἐπικτήσηι φίλους.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <l n="902" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:902" resp="#google-ocr">τί οὖν μ᾽ ἄνωγας τῆιδ᾽ ἐφυμνῆσαι χθονί;</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <l n="903" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:903" resp="#google-ocr">ὁποῖα νίκης μὴ κακῆς ἐπίσκοπα,</l>
+          <l n="904" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:904" resp="#google-ocr">καὶ ταῦτα γῆθεν ἔκ τε ποντίας δρόσου,</l>
+          <l n="905" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:905" resp="#google-ocr">ἐξ οὐρανοῦ τε τἀνέμων ἀήματα</l>
+          <l n="906" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:906" resp="#google-ocr">εὐηλίως πνέοντ᾽ ἐπιστείχειν χθόνα·</l>
+          <l n="907" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:907" resp="#google-ocr">καρπόν τε γαίας καὶ βοτῶν ἐπίρρυτον</l>
+          <l n="908" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:908" resp="#google-ocr">ἀστοῖσιν εὐθενοῦντα μὴ κάμνειν χρόνωι,</l>
+          <l n="909" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:909" resp="#google-ocr">καὶ τῶν βροτείων σπερμάτων σωτηρίαν.</l>
+          <l n="910" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:910" resp="#google-ocr">τῶν δυσσεβούντων δ᾽ ἐκφορωτέρα πέλοις.</l>
+          <l n="911" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:911" resp="#google-ocr">στέργω γάρ, ἀνδρὸς φιτυποίμενος δίκην,</l>
+          <l n="912" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:912" resp="#google-ocr">τὸ τῶν δικαίων τῶνδ᾽ ἀπένθητον γένος.</l>
+          <l n="913" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:913" resp="#google-ocr">τοιαῦτα σοὔστι. τῶν ἀρειφάτων δ᾽ ἐγὼ</l>
+          <l n="914" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:914" resp="#google-ocr">πρεπτῶν ἀγώνων οὐκ ἀνέξομαι τὸ μὴ οὐ</l>
+          <l n="915" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:915" resp="#google-ocr">τῆνδ᾽ ἀστύνικον ἐν βροτοῖς τιμᾶν πόλιν.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="916" resp="#Smyth"/>
+          <l n="916" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:916" resp="#google-ocr">δέξομαι Παλλάδος ξυνοικίαν,</l>
+          <l n="917" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:917" resp="#google-ocr">οὐδ᾽ ἀτιμάσω πόλιν,</l>
+          <label type="strophe">στρ. α</label>
+          <l n="918" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:918" resp="#google-ocr">τὰν καὶ Ζεὺς ὁ παγκρατὴς Ἄρης τε φρούριον</l>
+          <l n="919" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:919" resp="#google-ocr">θεῶν νέμει,</l>
+          <l n="920" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:920" resp="#google-ocr">ῥυσίβωμον Ἑλλάνων ἄγαλμα δαιμόνων (θ᾽)·</l>
+          <l n="921" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:921" resp="#google-ocr">ἆιτ᾽ ἐγὼ κατεύχομαι</l>
+          <l n="922" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:922" resp="#google-ocr">θεσπίσασα πρευμενῶς ἐπισσύτους βίου τύχας</l>
+          <l n="923" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:923" resp="#google-ocr">ὀνησίμους</l>
+          <pb n="62" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=70"/>
+          <l n="925" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:925" resp="#google-ocr">γαίας ἐξαμβρύσειν</l>
+          <l n="926" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:926" resp="#google-ocr">φαιδρὸν ἁλίου σέλας.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="927" resp="#Smyth"/>
+          <l n="927" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:927" resp="#google-ocr">τάδ᾽ ἐγὼ προφρόνως τοῖσδε πολίταις</l>
+          <l n="928" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:928" resp="#google-ocr">πράσσω, μεγάλας καὶ δυσαρέστους</l>
+          <l n="929" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:929" resp="#google-ocr">δαίμονας αὐτοῦ κατανασσαμένη.</l>
+          <l n="930" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:930" resp="#google-ocr">πάντα γὰρ αὗται τὰ κατ᾿ ἀνθρώπους</l>
+          <l n="931" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:931" resp="#google-ocr">ἔλαχον διέπειν.</l>
+          <l n="932" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:932" resp="#google-ocr">ὁ γε μὴν κύρσας βαρεῶν τούτων</l>
+          <l n="933" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:933" resp="#google-ocr">οὐκ οἶδεν ὅθεν<lb/>πληγαὶ βιότου - -).</l>
+          <l n="934" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:934" resp="#google-ocr">τὰ γὰρ ἐκ προτέρων ἀπλακήματά νιν</l>
+          <l n="935" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:935" resp="#google-ocr">πρὸς τᾶσδ᾽ ἀπάγει, σιγῶν (δ᾽ ὄλεθρος</l>
+          <l n="936" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:936" resp="#google-ocr">καὶ μέγα φωνοῦντ᾽</l>
+          <l n="937" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:937" resp="#google-ocr">ἐχθραῖς ὀργαῖς ἀμαθύνει.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="938" resp="#Smyth"/>
+          <l n="938" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:938" resp="#google-ocr">δενδροπήμων δὲ μὴ πνέοι βλάβα,</l>
+          <l n="939" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:939" resp="#google-ocr">τὰν ἐμὰν χάριν λέγω·</l>
+          <label type="strophe">ἀντ. α</label>
+          <l n="940" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:940" resp="#google-ocr">φλογμόν (τ᾿ ὀμματοστερή φυτῶν τὸ μὴ περᾶν</l>
+          <l n="941" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:941" resp="#google-ocr">ὅρον τόπων,</l>
+          <l n="942" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:942" resp="#google-ocr">μηδ᾽ ἄκαρπος αἰανὴς ἐφερπέτω νόσος,</l>
+          <l n="943" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:943" resp="#google-ocr">μῆλά τ᾽ εὐθενοῦντα γᾶ</l>
+          <l n="945" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:945" resp="#google-ocr">ξὺν διπλοῖσιν ἐμβρύοις τρέφοι χρόνωι τεταγμένωι 945</l>
+          <l n="946" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:946" resp="#google-ocr">γόνον &lt;τελεῖν·</l>
+          <l n="947" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:947" resp="#google-ocr">πλουτόχθων (θ᾽) ἑρμαία</l>
+          <l n="948" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:948" resp="#google-ocr">δαιμόνων δόσις τίοι.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="949" resp="#Smyth"/>
+          <l n="949" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:949" resp="#google-ocr">ἢ τάδ᾽ ἀκούεις, πόλεως φρούριον,</l>
+          <l n="950" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:950" resp="#google-ocr">οἷ᾽ ἐπικραίνει;<lb/>μέγα γὰρ δύναται πότνι᾽ Ἐρινὺς</l>
+          <l n="951" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:951-952" resp="#google-ocr">παρά τ᾿ ἀθανάτοις τοῖς θ᾽ ὑπὸ γαῖαν,</l>
+          <pb n="63" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=71"/>
+          <l n="952" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:952-953" resp="#google-ocr">περί τ᾽ ἀνθρώπων φανερῶς τελέως</l>
+          <l n="953" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:953" resp="#google-ocr">διαπράσσουσιν, τοῖς μὲν ἀοιδάς,</l>
+          <l n="954" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:954" resp="#google-ocr">τοῖς δ᾽ αὖ δακρύων</l>
+          <l n="955" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:955" resp="#google-ocr">βίον ἀμβλωπὸν παρέχουσαι.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="956" resp="#Smyth"/>
+          <l n="957" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:957" resp="#google-ocr">ἀνδροκμῆτας δ᾽ ἀώρους ἀπεννέπω τύχας,</l>
+          <label type="strophe">στρ. β</label>
+          <l n="958" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:958" resp="#google-ocr">νεανίδων τ᾽ ἐπηράτων</l>
+          <l n="960" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:960" resp="#google-ocr">ἀνδροτυχεῖς βιότους δότε, κύρι᾽ ἔχοντες,</l>
+          <l n="962" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:962" resp="#google-ocr">θεαί τ᾽ ὦ Μοῖραι ματροκασιγνήται,</l>
+          <l n="963" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:963" resp="#google-ocr">δαίμονες ὀρθονόμοι,</l>
+          <l n="964" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:964" resp="#google-ocr">παντὶ δόμωι μετάκοινοι,</l>
+          <l n="965" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:965" resp="#google-ocr">παντὶ χρόνωι δ᾽ ἐπιβριθεῖς</l>
+          <l n="966" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:966" resp="#google-ocr">ἐνδίκοις ὁμιλίαις,</l>
+          <l n="967" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:967" resp="#google-ocr">παντᾶι τιμιώταται θεῶν.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="968" resp="#Smyth"/>
+          <l n="968" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:968" resp="#google-ocr">τάδε τοι χώρᾶι τἠμῆι προφρόνως</l>
+          <l n="969" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:969" resp="#google-ocr">ἐπικραινομένων</l>
+          <l n="970" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:970" resp="#google-ocr">γάνυμαι· στέργω δ᾽ ὄμματα Πειθοῦς,</l>
+          <l n="971" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:971" resp="#google-ocr">ὅτι μοι γλῶσσαν καὶ στόμ᾽ ἐπώπα</l>
+          <l n="972" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:972" resp="#google-ocr">πρὸς τᾶσδ᾽ ἀγρίως ἀπανηναμένας·</l>
+          <l n="973" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:973" resp="#google-ocr">ἀλλ᾽ ἐκράτησε Ζεὺς ἀγοραῖος,</l>
+          <l n="974" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:974" resp="#google-ocr">νικᾶι δ᾽ ἀγαθῶν</l>
+          <l n="975" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:975" resp="#google-ocr">ἔρις ἡμετέρα διὰ παντός.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="976" resp="#Smyth"/>
+          <l n="977" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:977" resp="#google-ocr">τὰν δ᾽ ἄπληστον κακῶν μήποτ᾽ ἐν πόλει στάσιν</l>
+          <label type="strophe">ἀντ. β</label>
+          <l n="978" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:978" resp="#google-ocr">τᾶιδ᾽ ἐπεύχομαι βρέμειν.</l>
+          <l n="980" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:980" resp="#google-ocr">μηδὲ πιοῦσα κόνις μέλαν αἷμα πολιτᾶν</l>
+          <l n="982" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:982" resp="#google-ocr">ὀργᾶι ποινὰς ἀντιφόνους (τ᾿ ἄτας</l>
+          <l n="983" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:983" resp="#google-ocr">ἁρπαλίσαι πόλεως.</l>
+          <l n="984" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:984" resp="#google-ocr">χάρματα δ᾽ ἀντιδιδοῖεν</l>
+          <l n="985" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:985" resp="#google-ocr">κοινοφιλεῖ διανοίᾶι,</l>
+          <l n="986" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:986" resp="#google-ocr">καὶ στυγεῖν μιᾶι φρενί.</l>
+          <l n="987" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:987" resp="#google-ocr">πολλῶν γὰρ τόδ᾽ ἐμ βροτοῖς ἄκος.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="988" resp="#Smyth"/>
+          <l n="988" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:988" resp="#google-ocr">ἆρα φρονοῦσιν γλώσσης ἀγαθῆς</l>
+          <pb n="64" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=72"/>
+          <l n="989" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:989" resp="#google-ocr">ὁδὸν εὑρίσκειν;</l>
+          <l n="990" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:990" resp="#google-ocr">ἐκ τῶν φοβερῶν τῶνδε προσώπων</l>
+          <l n="991" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:991" resp="#google-ocr">μέγα κέρδος ὁρῶ τοῖσδε πολίταις.</l>
+          <l n="992" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:992" resp="#google-ocr">τᾶσδε γὰρ εὔφρονας εὔφρονες αἰεὶ</l>
+          <l n="993" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:993" resp="#google-ocr">μέγα τιμῶντες καὶ γῆν καὶ πόλιν</l>
+          <l n="994" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:994" resp="#google-ocr">ὀρθοδίκαιον</l>
+          <l n="995" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:995" resp="#google-ocr">πρέψετε πάντως διάγοντες.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="996" resp="#Smyth"/>
+          <l n="996" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:996" resp="#google-ocr">χαίρετε χαίρετ᾽ ἐν αἰσιμίαισιν πλούτου.</l>
+          <label type="strophe">στρ. γ</label>
+          <l n="998" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:998" resp="#google-ocr">χαίρετ᾽ ἀστικὸς λεώς, ἴκταρ ἥμενοι Διός,</l>
+          <l n="999" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:999" resp="#google-ocr">παρθένου φίλας φίλοι σωφρονοῦντες ἔμφρονος.</l>
+          <l n="1002" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1002" resp="#google-ocr">Παλλάδος δ᾽ ὑπὸ πτεροῖς ὄντας ἅζεται πατήρ.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="1003" resp="#Smyth"/>
+          <l n="1003" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1003" resp="#google-ocr">χαίρετε χὐμεῖς· προτέραν δ᾽ ἐμὲ χρὴ</l>
+          <l n="1004" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1004" resp="#google-ocr">στείχειν θαλάμους ἀποδείξουσαν</l>
+          <l n="1005" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1005" resp="#google-ocr">πρὸς φῶς ἱερὸν τῶνδε προπομπῶν.</l>
+          <l n="1006" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1006" resp="#google-ocr">ἴτε καὶ σφαγίων τῶνδ᾽ ὑπὸ σεμνῶν</l>
+          <l n="1007" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1007" resp="#google-ocr">κατὰ γῆς σύμεναι<lb/>τὸ μὲν ἀτηρὸν χώρᾶι κατέχειν,</l>
+          <l n="1008" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1008" resp="#google-ocr">τὸ δὲ κερδαλέον</l>
+          <l n="1009" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1009" resp="#google-ocr">πέμπειν πόλεως ἐπὶ νίκηι.</l>
+          <l n="1010" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1010" resp="#google-ocr">〈χ)ὑμεῖς δ᾽ ἡγεῖσθε, πολισσοῦχοι</l>
+          <l n="1011" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1011" resp="#google-ocr">παῖδες Κραναοῦ, ταῖσδε μετοίκοις.</l>
+          <l n="1012" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1012" resp="#google-ocr">εἴη δ᾽ ἀγαθῶν</l>
+          <l n="1013" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1013" resp="#google-ocr">ἀγαθὴ διάνοια πολίταις.</l>
+        </sp>
+        <sp who="#spk-chorus">
+          <speaker>Χορός</speaker>
+          <milestone unit="card" n="1014" resp="#Smyth"/>
+          <l n="1014" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1014" resp="#google-ocr">χαίρετε, χαίρετε δ᾽ αὖθις, ἐπανδιπλοίζω,</l>
+          <label type="strophe">ἀντ. γ</label>
+          <l n="1016" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1016" resp="#google-ocr">πάντες οἱ κατὰ πτόλιν, δαίμονές τε καὶ βροτοί,</l>
+          <l n="1018" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1018" resp="#google-ocr">Παλλάδος πόλιν νέμοντες· μετοικίαν δ᾽ ἐμὴν</l>
+          <l n="1020" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1020" resp="#google-ocr">εὖ σέβοντες οὔτι μέμψεσθε συμφορὰς βίου.</l>
+        </sp>
+        <sp who="#spk-athena">
+          <speaker>Ἀθηνᾶ</speaker>
+          <milestone unit="card" n="1021" resp="#Smyth"/>
+          <l n="1021" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1021" resp="#google-ocr">αἰνῶ τε μύθους τῶνδε τῶν κατευγμάτων</l>
+          <l n="1022" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1022" resp="#google-ocr">πέμψω τε φέγγει λαμπάδων σελασφόρων</l>
+          <l n="1023" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1023" resp="#google-ocr">ἐς τοὺς ἔνερθε καὶ κατὰ χθονὸς τόπους</l>
+          <l n="1024" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1024" resp="#google-ocr">ξὺμ προσπόλοισιν, αἵτε φρουροῦσιν βρέτας</l>
+          <pb n="65" facs="https://hdl.handle.net/2027/coo.31924072599198?urlappend=%3Bseq=73"/>
+          <l n="1025" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1025" resp="#google-ocr">τοὐμὸν δικαίως. ὄμμα γὰρ πάσης χθονὸς</l>
+          <l n="1026" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1026" resp="#google-ocr">Θησῆιδος ἐξίκοιτ᾽ ἂν εὐκλεὴς λόχος</l>
+          <l n="1027" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1027" resp="#google-ocr">παίδων, γυναικῶν, καὶ στόλος πρεσβυτίδων.</l>
+          <l n="1028" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1028" resp="#google-ocr">φοινικοβάπτοις ἐνδυτοῖς ἐσθήμασι</l>
+          <l n="1029" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1029" resp="#google-ocr">τιμᾶτε, καὶ τὸ φέγγος ὁρμάσθω πυρός,</l>
+          <l n="1030" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1030" resp="#google-ocr">ὅπως ἂν εὔφρων ἦδ᾽ ὁμιλία χθονὸς</l>
+          <l n="1031" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1031" resp="#google-ocr">τὸ λοιπὸν εὐάνδροισι συμφοραῖς πρέπηι.</l>
+        </sp>
+        <sp who="#spk-escorts">
+          <speaker>Πρόπομποι</speaker>
+          <milestone unit="card" n="1032" resp="#Smyth"/>
+          <l n="1032" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1032" resp="#google-ocr">βᾶτ᾽ ἐς ὁδόν, μεγάλαι φιλότιμοι</l>
+          <l n="1033" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1033" resp="#google-ocr">Νυκτὸς παῖδες ἄπαιδες, ὑπ᾽ εὐθύφρονι πομπᾶι</l>
+          <milestone unit="card" n="1035" resp="#Smyth"/>
+          <l n="1035" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1035" resp="#google-ocr">εὐφαμεῖτε δέ, χωρῖται -</l>
+          <l n="1036" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1036" resp="#google-ocr">γᾶς ὑπὸ κεύθεσιν ὠγυγίοισιν,</l>
+          <l n="1037" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1037" resp="#google-ocr">τιμαῖς καὶ θυσίαις περισέπταισι τύχᾶι τε.</l>
+          <l n="1038" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1038" resp="#google-ocr">εὐφαμεῖτε δὲ πανδαμεί.</l>
+          <milestone unit="card" n="1040" resp="#Smyth"/>
+          <l n="1040" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1040" resp="#google-ocr">ἵλαοι δὲ καὶ εὐθύφρονες γᾶι</l>
+          <l n="1041" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1041" resp="#google-ocr">δεῦρ᾽ ἴτε, Σεμναί, 〈τᾶι〉 πυριδάπτωι</l>
+          <l n="1042" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1042" resp="#google-ocr">λαμπάδι τερπόμεναι καθ᾽ ὁδόν, —</l>
+          <l n="1043" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1043" resp="#google-ocr">ὀλολύξατε νῦν ἐπὶ μολπαῖς —</l>
+          <milestone unit="card" n="1044" resp="#Smyth"/>
+          <l n="1045" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1045" resp="#google-ocr">Παλλάδος ἀστοῖς· Ζεὺς ὁ πανόπτας</l>
+          <label type="strophe">στρ. α</label>
+          <label type="strophe">ἀντ. α</label>
+          <label type="strophe">στρ. β</label>
+          <l n="1044" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1044" resp="#google-ocr">σπονδᾶι δ᾽ ἐς πρόπαν ἔνδαιτες οἴκων</l>
+          <label type="strophe">αντ. β</label>
+          <l n="1046" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1046" resp="#google-ocr">οὕτω Μοῖρό τε συγκατέβα.</l>
+          <l n="1047" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1047" resp="#google-ocr">ὀλολύξατε νῦν ἐπὶ μολπαῖς.</l>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>
