@@ -1,6 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader xml:lang="eng">
     <fileDesc>
       <titleStmt>
@@ -49,7 +48,7 @@
         </cRefPattern>
       </refsDecl>
       <p>Encoded in accordance with EpiDoc and CTS/CITE conventions.</p>
-    </encodingDesc>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match="div//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="deu">German</language>
@@ -62,7 +61,7 @@
       <change when="2026-08-16" who="#gcrane">Transferred every Smyth card milestone through Wilamowitz's Greek line correspondences and German line markers; generated an auditable alignment report.</change>
     </revisionDesc>
   </teiHeader>
-  <text>
+  <text xml:lang="deu">
     <front><div type="textpart" subtype="introduction">
     <pb n="209" facs="#217"/>
     <head>Einleitung.</head>
@@ -1204,8 +1203,8 @@
 </div>
 
 </front>
-    <body>
-      <div type="translation" xml:lang="deu" n="urn:cts:greekLit:tlg0085.tlg007.wilamowitz-ger1"><pb n="254"/>
+    <body xml:base="urn:cts:greekLit:tlg0085.tlg007.wilam1919-ger1">
+      <div type="translation" xml:lang="deu" n="urn:cts:greekLit:tlg0085.tlg007.wilam1919-ger1"><pb n="254"/>
     <list><head>PERSONEN.</head>
       <item>Apollon.</item>
       <item>Hermes.</item>

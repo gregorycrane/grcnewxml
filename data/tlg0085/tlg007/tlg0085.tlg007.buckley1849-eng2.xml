@@ -61,7 +61,13 @@
     </fileDesc>
 
     <encodingDesc>
-      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl>
+<refsDecl xml:id="CTS">
+  <citeStructure match="/TEI/text/body" use="@xml:base">
+    <citeStructure unit="card" delim=":" match="div//milestone[@unit='card']" use="@n" n="chunk"/>
+  </citeStructure>
+</refsDecl>
+</encodingDesc>
 
     <profileDesc>
       <langUsage>
@@ -101,7 +107,7 @@
 
 
 
-</front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg007.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1-63"><speaker>PRIESTESS</speaker><p><milestone unit="card" n="1" resp="Smyth"/>First indeed with these prayers I honor Earth
+</front><body xml:base="urn:cts:greekLit:tlg0085.tlg007.buckley1849-eng2"><div type="edition" n="urn:cts:greekLit:tlg0085.tlg007.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1-63"><speaker>PRIESTESS</speaker><p><milestone unit="card" n="1" resp="Smyth"/>First indeed with these prayers I honor Earth
             the first-prophetess of the Deities: and after her<ref n="179.1" target="#app-tlg007-fn-179.1">1</ref> Themis,
             who then next sat on this, her mother's, oracular seat, as a
             certain legend runs. But in the third turn, [Themis] being

@@ -49,15 +49,10 @@
       <refsDecl n="CTS">
         <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
-      <refsDecl xml:id="CTS-modern">
-        <citeStructure match="/TEI/text/body/div" use="@n">
-          <citeStructure unit="line" match=".//l" use="@n"/>
-        </citeStructure>
-      </refsDecl>
       <editorialDecl>
         <correction status="low">Text was recovered conservatively from Google OCR. Clear layout artifacts were removed; uncertain readings remain marked with low certainty rather than being silently replaced from Smyth.</correction>
       </editorialDecl>
-    </encodingDesc>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div//milestone[@unit='card']" use="@n" unit="card" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Ancient Greek</language>

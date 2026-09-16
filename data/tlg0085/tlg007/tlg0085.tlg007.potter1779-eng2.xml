@@ -53,7 +53,13 @@
       <projectDesc>
         <p>CTS edition: urn:cts:greekLit:tlg0085.tlg007.potter1779-eng2.</p>
       </projectDesc>
-    </encodingDesc>
+
+<refsDecl xml:id="CTS">
+  <citeStructure match="/TEI/text/body" use="@xml:base">
+    <citeStructure unit="card" delim=":" match="div//milestone[@unit='card']" use="@n" n="chunk"/>
+  </citeStructure>
+</refsDecl>
+</encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="eng">English</language>
@@ -193,7 +199,7 @@
       <div type="textpart" subtype="cast-list"><fw type="header">Perſons of the Drama.</fw>
           <list><item>THE PYTHIAN PRIESTESS.</item><item>APOLLO.</item><item>MINERVA.</item><item>THE GHOST OF CLYTEMNESTRA.</item><item>ORESTES.</item><item>CHORUS, THE FURIES.</item></list></div>
     </front>
-    <body>
+    <body xml:base="urn:cts:greekLit:tlg0085.tlg007.potter1779-eng2">
       <div type="edition" n="urn:cts:greekLit:tlg0085.tlg007.potter1779-eng2" xml:lang="eng">
         <pb n="227"/>
         <sp>

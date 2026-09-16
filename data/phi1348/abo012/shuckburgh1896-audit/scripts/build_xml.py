@@ -1,0 +1,23 @@
+from pathlib import Path
+from lxml import etree as E
+import json,re,shutil
+R=Path(__file__).parent;O=R.parents[1]/'outputs/Shuckburgh-Augustus';ns=json.load(open(R/'edition-notes.json'));refs=json.load(open(R/'reference-sections.json'))['12'];T='{http://www.tei-c.org/ns/1.0}';X='{http://www.w3.org/XML/1998/namespace}';work='phi1348.abo012';v='shuckburgh1896-com-eng1'
+def sub(p,tag,text=None,**a):e=E.SubElement(p,T+tag,**a);e.text=text;return e
+root=E.Element(T+'TEI',nsmap={None:T[1:-1]});h=sub(root,'teiHeader');fd=sub(h,'fileDesc');ts=sub(fd,'titleStmt');sub(ts,'title','Divus Augustus: Shuckburgh commentary (1896; OCR draft)');sub(ts,'author','Suetonius');sub(ts,'editor','Evelyn S. Shuckburgh');resp=sub(ts,'respStmt');resp.set(X+'id','ocr-editor');sub(resp,'resp','OCR collation, lemma markup, and chapter/section alignment');sub(resp,'name','Digital edition preparation');pub=sub(fd,'publicationStmt');sub(pub,'p','Local Perseus Multitext edition; see accompanying shuckburgh1896-audit.');sd=sub(fd,'sourceDesc');bib=sub(sd,'bibl');sub(bib,'title','C. Suetoni Tranquilli Divus Augustus');sub(bib,'editor','Evelyn S. Shuckburgh');sub(bib,'publisher','Cambridge University Press');sub(bib,'pubPlace','Cambridge');sub(bib,'date','1896',when='1896')
+for w,hdl in [('MDP (base)','mdp.39015028728833'),('UC1 (comparison)','uc1.31158008883992')]:sub(bib,'ref',w,target='https://hdl.handle.net/2027/'+hdl)
+enc=sub(h,'encodingDesc');sub(enc,'p','Commentary from printed pages 1–176, separated from the Latin reading text and marginal summaries. Full supplied OCR witnesses, including Latin, introduction and appendices, are retained in the audit archive. Chapter numbers follow Shuckburgh; section targets follow Ihm perseus-lat2. Lemmas use mentioned linked to commentary notes. Exact phrase matching supplies provisional section attribution, supplemented by reviewed decisions. No replacement of authorial wording by another edition. Line/page hyphen joins and selected repairs supported by UC1 are logged. OCR corruption, possible unsegmented notes and displaced column fragments remain explicitly inventoried. Page facsimile references identify the source page containing a note opening. This is a working OCR edition, not a fully proofread transcription.');ref=sub(enc,'refsDecl',n='CTS');pat=sub(ref,'cRefPattern',n='chapter-section',matchPattern=r'(\d+)\.(\d+)',replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])");sub(pat,'p','Ihm chapter and section reference scheme.');cs=sub(ref,'citeStructure',unit='chapter',match='/TEI/text/body/div/div',use='@n');sub(cs,'citeStructure',unit='section',match='div',use='@n',delim='.');rev=sub(h,'revisionDesc');sub(rev,'change','Collated two OCR witnesses; reviewed page stream boundaries and lemma candidates, and prepared section-aligned commentary with audit records.',when='2026-09-07');tx=sub(root,'text');tx.set(X+'lang','eng');body=sub(tx,'body');main=sub(body,'div',type='commentary',n='urn:cts:latinLit:'+work+'.'+v);sections={}
+for ch,rs in refs.items():
+ d=sub(main,'div',type='textpart',subtype='chapter',n=ch)
+ for r in rs:sections[int(ch),r['sec']]=sub(d,'div',type='textpart',subtype='section',n=r['sec'],corresp=f'urn:cts:latinLit:{work}.perseus-lat2:{ch}.{r["sec"]}')
+pageoffs=json.load(open(R/'page-offsets.json'));pages=json.load(open(R/'commentary-pages.json'))['mdp'];flags=[]
+for n in ns:
+ ch,sec=n['chapter'],n['section'];assert sec is not None,n['id'];urn=f'urn:cts:latinLit:{work}.perseus-lat2:{ch}.{sec}';p=sub(sections[ch,sec],'p',corresp=urn);p.set(X+'id',n['id']+'.p');pg=next(o['page'] for o in reversed(pageoffs) if o['offset']<=n['offset']);scan=next(o['scan'] for o in pages if o['page']==pg);p.set('facs','https://hdl.handle.net/2027/mdp.39015028728833?urlappend=%3Bseq='+str(scan));a=n['lemma_start'];b=a+n['lemma_length'];p.text=n['text'][:a];m=sub(p,'mentioned',n['text'][a:b],ana='#'+n['id'],corresp=urn,cert='medium');m.set(X+'lang','lat');note=sub(p,'note',n['text'][b:],type='commentary');note.set(X+'id',n['id'])
+# Preserve the language of Greek lemmas and mixed Greek/Latin phrases.
+for m in root.findall('.//'+T+'mentioned'):
+ txt=m.text or ''
+ if re.search(r'[\u0370-\u03ff]',txt):
+  if not re.search('[A-Za-z]',txt):m.set(X+'lang','grc')
+  else:
+   gm=re.search(r'[\u0370-\u03ff\u1f00-\u1fff]+',txt);m.text=txt[:gm.start()];g=sub(m,'foreign',gm[0]);g.set(X+'lang','grc');g.tail=txt[gm.end():]
+E.ElementTree(root).write(str(O/(work+'.'+v+'.xml')),encoding='UTF-8',xml_declaration=True,pretty_print=True)
+shutil.copy2(R/'edition-notes.json',O/'note-inventory.json');print('Wrote XML',len(ns),'notes',len(set((n['chapter'],n['section']) for n in ns)),'occupied sections')

@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<TEI xmlns:ns0="http://www.tei-c.org/ns/1.0"><teiHeader xml:lang="en">
+<TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader xml:lang="en">
   <fileDesc>
     <titleStmt>
       <title xml:lang="la">Aeschyli Eumenides</title>
@@ -61,7 +61,7 @@
     </editorialDecl>
     <refsDecl n="CTS">
       <cRefPattern n="line" matchPattern="(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/descendant::tei:l[@n='$1'])"/></refsDecl>
-  </encodingDesc>
+  <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div//milestone[@unit='card']" use="@n" unit="card" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc>
 
   <profileDesc>
     <langUsage>
@@ -80,7 +80,7 @@
     <change when="2025-11-09" who="#Perseus">Header created/updated from HathiTrust record 012467585 (Aeschylus, Tragoediae, Berlin: Weidmann, 1914; ed. Wilamowitz).</change>
   <change when="2026-08-15">Composite volume split into a play-level CTS edition for Eumenides; edition language and CTS identifiers corrected.</change></revisionDesc>
 </teiHeader>
-    <text><body><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0085.tlg007.wilam1914-grc1">
+    <text xml:lang="grc"><body xml:base="urn:cts:greekLit:tlg0085.tlg007.wilam1914-grc2"><div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0085.tlg007.wilam1914-grc2">
 
             
                 <div type="textpart" subtype="episode">

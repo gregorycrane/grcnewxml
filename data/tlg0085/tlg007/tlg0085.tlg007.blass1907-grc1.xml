@@ -49,16 +49,11 @@
       <refsDecl n="CTS">
         <cRefPattern n="line" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"/>
       </refsDecl>
-      <refsDecl xml:id="CTS-modern">
-        <citeStructure match="/TEI/text/body/div" use="@n">
-          <citeStructure unit="line" match=".//l" use="@n"/>
-        </citeStructure>
-      </refsDecl>
       <editorialDecl>
         <correction status="low">Clear OCR glyph and layout errors were corrected. The text was not normalized to Smyth; low-confidence line alignments are explicitly marked.</correction>
         <interpretation>Each verse carries a corresp link to the independently identified line in Smyth. This remains valid where Blass relocates verses.</interpretation>
       </editorialDecl>
-    </encodingDesc>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div//milestone[@unit='card']" use="@n" unit="card" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Ancient Greek</language>

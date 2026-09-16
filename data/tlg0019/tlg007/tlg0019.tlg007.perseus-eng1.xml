@@ -1,0 +1,3932 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader xml:lang="eng">
+	<fileDesc>
+	    <titleStmt>
+		<title>Lysistrata</title><author n="Aristoph.">Aristophanes</author>
+		<editor role="translator">Jack Lindsay</editor>
+		
+	    <sponsor>Perseus Project, Tufts University</sponsor><principal>Gregory Crane</principal><respStmt xml:id="migration"><resp>TEI P5 migration, source preservation audit and reference-card mapping</resp><name>Perseus Multitext migration, 2026-09-08</name></respStmt></titleStmt>
+	    <extent>About 120kb</extent>
+	    
+   <publicationStmt><publisher>Perseus Project</publisher><date when="2026-09-08">2026-09-08</date><idno type="filename">tlg0019.tlg007.perseus-eng1.xml</idno><availability><p>Migrated from the supplied Perseus legacy source. This migration adds no new claim concerning rights in the underlying translation or editorial matter.</p></availability></publicationStmt><sourceDesc>
+       <biblStruct>
+           <monogr>
+	       <title>Lysistrata</title>
+	       <author>Aristophanes</author>
+               <imprint><date>Publication date not supplied in legacy source</date></imprint>
+           </monogr>
+       </biblStruct>
+	   <bibl><ref target="file:///Users/gcrane/Desktop/OldMacintoshHD/sgml/texts/Classics/Aristophanes/copyright/aristoph.lys.lindsay_eng.xml">aristoph.lys.lindsay_eng.xml</ref><note>Legacy source SHA-256: 3bc865db89e112b9c8c06dca79f3249514790aee66b62759424b551419c13d5c</note></bibl></sourceDesc>
+		   </fileDesc>
+		   <encodingDesc><refsDecl n="CTS"><cRefPattern n="line" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])"><p>Translation verse ordinal.</p></cRefPattern></refsDecl><editorialDecl><p>Character content, notes, stage directions and front matter are preserved from the source, apart from expansion of XML character entities and the single Beta Code speaker-label conversion recorded in the inventory. Legacy card divisions are retained; explicit card milestones align the translation to the canonical Greek reference. Boundary adjustments are recorded in the migration inventory. Source line milestones remain reference anchors, not newly inferred translation verse numbers.</p><p>The source verse lines are numbered sequentially in their existing order for this digital edition. These numbers are translation-specific editorial ordinals, not printed Greek reference numbers; the legacy Frogs n="tr" placeholder is replaced. Greek alignment is supplied by card milestones and corresp attributes.</p></editorialDecl></encodingDesc><profileDesc>
+		   <langUsage>
+		       <language ident="eng">English</language>
+		       <language ident="grc">Greek</language>
+		       <language ident="lat">Latin</language>
+	       </langUsage>
+	       </profileDesc>
+    	<revisionDesc>
+    		<change when="2026-09-08" who="#migration">Migrated to TEI P5; resolved named character entities; retained original wording and note locations; added explicit reference card alignment. See migration inventory.</change><change>5/27/09 RS (n/a) 
+    			   
+    				$Log: aristoph.lys.lindsay_eng.xml,v $
+    				Revision 1.3  2013-06-30 12:34:34  gcrane
+    				the card divs had had a line range but there was a problem with this, so we just have the start line in the n attribute.
+
+    				Revision 1.1  2009/10/08 19:12:31  rsingh04
+    				began reorganizing texts module by collection.  created separate work directory in texts module to keep hopper files separate from in progress files
+
+    				Revision 1.4  2009/07/15 16:23:27  student
+    				edited entity tags CEH
+
+    				Revision 1.3  2009/05/27 15:55:16  rsingh04
+    				added cvs log keyword
+
+    			 
+    		</change></revisionDesc>
+	   </teiHeader>
+	   <text xml:lang="eng">
+	       <front>
+		   
+		   <div type="textpart" subtype="foreword">
+		   <head>LYSISTRATA</head>
+		   <head>Translated from the Greek of ARISTOPHANES</head>
+
+		   <head>FOREWORD</head>
+
+<p><title>Lysistrata</title> is the greatest work by Aristophanes. This blank and rash statement is made that it may be rejected. But first let it be understood that I do not mean it is a better written work than the <title>Birds</title> or the <title>Frogs</title>, or that (to descend to the scale of values that will be naturally imputed to me) it has any more appeal to the collectors of “curious literature” than the <title>Ecclesiazusae</title> or the <title>Thesmophoriazusae</title>. On the mere grounds of taste I can see an at least equally good case made out for the <title>Birds</title>. That brightly plumaged fantasy has an aerial wit and colour all its own. But there are certain works in which a man finds himself at an angle of vision where there is an especially felicitous union of the aesthetic and emotional elements which constitute the basic qualities of his uniqueness. We recognize these works as being welded into a strange unity, as having a homogeneous texture of ecstasy over them that surpasses any aesthetic surface of harmonic colour, though that harmony also is understood by the deeper welling of imagery from the core of creative exaltation. And I think that this occurs in <title>Lysistrata</title>. The intellectual and spiritual tendrils of the poem are more truly interwoven, the operation of their centres more nearly unified; and so the work goes deeper into life. It is his greatest play because of this, because it holds an intimate perfume of femininity and gives the finest sense of the charm of a cluster of girls, the sweet sense of their chatter, and the contact of their bodies, that is to be found before Shakespeare, because that mocking gaiety we call Aristophanies reaches here its most positive acclamation of life, vitalizing sex with a deep delight, a rare happiness of the spirit.</p>
+
+<p>Indeed it is precisely for these reasons that it is <emph>not</emph> considered Aristophanes' greatest play.</p>
+
+<p>To take a case which is sufficiently near to the point in question, to make clear what I mean: the supremacy of <title>Antony and Cleopatra</title> in the Shakespearean aesthetic is yet jealously disputed, and it seems silly to the academic to put it up against a work like <title>Hamlet</title>. But it is the comparatively more obvious achievement of <title>Hamlet</title>, its surface intellectuality, which made it the favourite of actors and critics. It is much more difficult to realize the complex and delicately passionate edge of the former play's rhythm, its tides of hugely wandering emotion, the restless, proud, gay, and agonized reaction from life, of the blood, of the mind, of the heart, which is its unity, than to follow the relatively straightforward definition of Hamlet's nerves. Not that anything derogatory to <title>Hamlet</title> or the <title>Birds</title> is intended; but the value of such works is not enhanced by forcing them into contrast with other works which cover deeper and wider nexus of aesthetic and spiritual material. It is the very subtlety of the vitality of such works as <title>Antony and Cleopatra</title> and <title>Lysistrata</title> that makes it so easy to undervalue them, to see only a phallic play and political pamphlet in one, only a chronicle play in a grandiose method in the other. For we have to be in a highly sensitized condition before we can get to that subtle point where life and the image mix, and so really perceive the work at all; whereas we can command the response to a lesser work which does not call so finely on the full breadth and depth of our spiritual resources.</p>
+
+<p>I amuse myself at times with the fancy that Homer, Sappho, and Aristophanes are the inviolable Trinity of poetry, even to the extent of being reducible to One. For the fiery and lucid directness of Sappho, if her note of personal lyricism is abstracted, is seen to be an element of Homer, as is the profoundly balanced humour of Aristophanes, at once tenderly human and cruelly hard, as of a god to whom all sympathies and tolerances are known, but who is invulnerable somewhere, who sees from a point in space where the pressure of earth's fear and pain, and so its pity, is lifted. It is here that the Shakespearean and Homeric worlds impinge and merge, not to be separated by any academic classifications. They meet in this sensitivity equally involved and aloof, sympathetic and arrogant, suffering and joyous; and in this relation we see Aristophanes as the forerunner of Shakespeare, his only one. We see also that the whole present aesthetic of earth is based in Homer. We live and grow in the world of consciousness bequeathed to us by him; and if we grow beyond it through deeper Shakespearean ardours, it is because those beyond are rooted in the broad basis of the Homeric imagination. To shift that basis is to find the marshes of primitive night and fear alone beneath the feet: Christianity.</p>
+
+<p>And here we return to the question of the immorality of <title>Lysistrata</title>. First we may inquire: is it possible for a man whose work has so tremendous a significance in the spiritual development of mankind—and I do not think anyone nowadays doubts that a work of art is the sole stabilizing force that exists for life—is it possible for a man who stands so grandly at head of an immense stream of liberating effort to write an immoral work? Surely the only enduring moral virtue which can be claimed is for that which moves to more power, beauty and delight in the future? The plea that the question of changing customs arises is not valid, for customs ratified by Aristophanes, by Rabelais, by Shakespeare, have no right to change. If they have changed, let us try immediately to return from our disgraceful refinements to the nobler and more rarefied heights of lyric laughter, tragic intensity, and wit, for we cannot have the first two without the last. And anyhow, how can a social custom claim precedence over the undying material of the senses and the emotions of man, over the very generating forces of life?</p>
+
+<p>How could the humanistic emotions, such as pity, justice, sympathy, exist save as pacifistic quietings of the desire to slay, to hurt, to torment. Where the desire to hurt is gone pity ceases to be a significant, a central emotion. It must of course continue to exist, but it is displaced in the spiritual hierarchy; and all that moves courageously, desirously, and vitally into the action of life takes on a deeper and subtler intention. Lust, then, which on the lower plane was something to be very frightened of, becomes a symbol of the highest spirituality. It is right for Paul to be terrified of sex and so to hate it, because he has so freshly escaped a bestial condition of life that it threatens to plunge him back if he listens to one whisper But it is also right for a Shakespeare to suck every drop of desire from life, for he is building into a higher condition, one se1f-willed, self- responsible, the discipline of which comes from joy, not fear.</p>
+
+<p>Sex, therefore, is an animal function, one admits, one insists; it may be only that. But also in the bewildering and humorous and tragic duality of all life's energies, it is the bridge to every eternity which is not merely a spectral condition of earth disembowelled of its lusts. For sex holds the substance of the image. But we must remember with Heine that Aristophanes is the God of this ironic earth, and that all argument is apparently vitiated from the start by the simple fact that Wagner and a rooster are given an analogous method of making love. And therefore it seems impeccable logic to say that all that is most unlike the rooster is the most spiritual part of love. All will agree on that, schisms only arise when one tries to decide what does go farthest from the bird's automatic mechanism. Certainly not a Dante-Beatrice affair which is only the negation of the rooster in terms of the swooning bombast of adolescence, the first onslaught of a force which the sufferer cannot control or inhabit with all the potentialities of his body and soul. But the rooster is troubled by no dreams of a divine orgy, no carnival-loves like Beethoven's <title>Fourth Symphony</title>, no heroic and shining lust gathering and swinging into a merry embrace like the third act of <title>Siegfried</title>. It is desire in this sense that goes farthest from the animal.</p>
+
+<p>Consciously, no one can achieve the act of love on earth as a completed thing of grace, with whatever delirium of delight, with whatever ingenious preciosity, we go through its process. Only as an image of beauty mated in some strange hermaphroditic ecstasy is that possible. I mean only as a dream projected into a hypothetical, a real heaven. But on earth we cannot complete the cycle in consciousness that would give us the freedom of an image in which two identities mysteriously realize their separate unities by the absorption of a third thing, the constructive rhythm of a work of art. It is thus that Tristan and Isolde become wholly distinct individuals, yet wholly submerged in the unity that is Wagner; and so reconcile life's duality by balancing its opposing laughters in a definite form—thereby sending out into life a profounder duality than existed before. A Platonic equipoise, Nietzsche's Eternal Recurrence—the only real philosophic problem, therefore one of which these two philosophers alone are aware.</p>
+
+<p>But though Wagner with Mathilde Wesendonck in his arms was Tristan in the arms of Isolde, he did not find a melody instead of a kiss on his lips; he did not find a progression of harmonies melting through the contours of a warm beauty with a blur of desperate ecstasies, semitones of desire, he found only the anxious happiness of any other lover. Nevertheless, he was gathering the substance of the second act of <title>Tristan und Isolde</title>. And it is this that Plato means when he says that fornication is something immortal in mortality. He does not mean that the act itself is a godlike thing, a claim which any bedroom mirror would quickly deride. He means that it is a symbol, an essential condition, and a part of something that goes deeper into life than any geometry of earth's absurd, passionate, futile, and very necessary antics would suggest.</p>
+
+<p>It is a universal fallacy that because works like the comedies of Aristophanes discuss certain social or ethical problems, they are inspired by them. Aristophanes wrote to express his vision on life, his delight in life itself seen behind the warping screen of contemporary event; and for his purposes anything from Euripides to Cleon served as ground work. Not that he would think in those terms, naturally: but the rationalizing process that goes on in consciousness during the creation of a work of art, for all its appearance of directing matters, is the merest weathercock in the wind of the subconscious intention. As an example of how utterly it is possible to misunderstand the springs of inspiration in a poem, we may take the following remark of B. B. Rogers: <quote>It is much to be regretted that the phallus element should be so conspicuous in this play.... (This) coarseness, so repulsive to ourselves, was introduced, it is impossible to doubt, for the express purpose of counter-balancing the extreme earnestness and gravity of the play</quote>. It seems so logical, so irrefutable; and so completely misinterprets every creative force of Aristophanes' Psyche that it certainly deserves a little admiration. It is in the best academic tradition, and everyone respects a man for writing so mendaciously. The effort of these castrators is always to show that the parts considered offensive are not the natural expression of the poet, that they are dictated externally. They argue that Shakespeare's coarseness is the result of the age and not personal predilection, completely ignoring the work of men like Sir Philip Sidney and Spenser, indeed practically all the pre-Shakespearean writers, in whom none of this so-called grossness exists. Shakespeare wrote sculduddery because he liked it, and for no other reason; his sensuality is the measure of his vitality. These liars pretend similarly that because Rabelais had a humanistic reason for much of his work—the destructior Mediaevalism, and the Church, which purpose they construe of course as an effort to purify, etc.—therefore he only put the lewdery to make the rest palatable, when it should be obvious even to an academic how he glories in his wild humour.</p>
+
+<p>What the academic cannot understand is that in such works, while attacking certain conditions, the creative power of the vigorous spirits is so great that it overflows and saturates the intellectual conception with their own passionate sense of life. It is for this reason that these works have an eternal significance. If Rabelais were merely a social reformer, then the value of his work would not have outlived his generation. If <title>Lysistrata</title> were but a wise political tract, it would have merely an historical interest, and it would have ceased spiritually at <date when="-0404">404 B.C.</date></p>
+
+<p>But Panurge is as fantastic and fascinating a character now as he was 3OO years ago, Lysistrata and her girls as freshly bodied as any girl kissed to-day. Therefore the serious part of the play is that which deals with them, the frivolous part that in which Rogers detects gravity and earnestness.</p>
+
+<p>Aristophanes is the lord of all who take life as a gay adventure, who defy all efforts to turn life into a social, economic, or moral abstraction. Is it therefore just that the critics who, by some dark instinct, unerringly pick out the exact opposite of any creator's real virtues as his chief characteristics, should praise him as an idealistic reformer? An “ideal” state of society was the last thing Aristophanes desired. He wished, certainly, to eliminate inhumanities and baseness; but only that there might be free play for laughter, for individual happiness.</p>
+
+<p>Consequently the critics lay the emphasis on the effort to cleanse society, not the method of laughter. Aristophanes wished to destroy Cleon because that demagogue failed to realize the poet's conception of dignified government and tended to upset the stability of <placeName key="tgn,1000074">Hellas</placeName>. But it was the stability of life, the vindication of all individual freedoms, in which he was ultimately interested.</p>
+
+<closer>JACK LINDSAY.</closer>
+</div>
+</front>
+
+
+<body><div type="translation" n="urn:cts:greekLit:tlg0019.tlg007.perseus-eng1" xml:lang="eng">
+    <head>LYSISTRATA</head>
+
+<castList>
+    <head>The Persons of the drama.</head>
+
+    <castItem><role>LYSISTRATA</role></castItem>
+    <castItem><role>CALONICE</role></castItem>
+    <castItem><role>MYRRHINE</role></castItem>
+    <castItem><role>LAMPITO</role></castItem>
+    <castItem><role>Stratyllis, etc.</role></castItem>
+    <castItem><role>Chorus of Women.</role></castItem>
+    <castItem><role>MAGISTRATE</role></castItem>
+    <castItem><role>CINESIAS</role></castItem>
+    <castItem><role>SPARTAN HERALD</role></castItem>
+    <castItem><role>ENVOYS</role></castItem>
+    <castItem><role>ATHENIANS</role></castItem>
+    <castItem><role>Porter, Market Idlers, etc.</role></castItem>
+    <castItem><role>Chorus of old Men.</role></castItem>
+</castList>
+
+<milestone unit="Prologue"/>
+<div type="textpart" n="1" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1-45">
+<milestone unit="card" n="1" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1-45" xml:id="card-1"/><stage>LYSISTRATA stands alone with the Propylaea at her back.</stage>
+
+<sp><speaker> LYSISTRATA</speaker>
+
+
+<l n="1" xml:id="line-1">If they were trysting for a Bacchanal,</l>
+<l n="2" xml:id="line-2">A feast of Pan or Colias or Genetyllis,</l>
+<l n="3" xml:id="line-3">The tambourines would block the rowdy streets,</l>
+<l n="4" xml:id="line-4">But now there's not a woman to be seen</l>
+<l n="5" xml:id="line-5">Except—ah, yes—this neighbour of mine yonder.</l>
+
+<stage>Enter CALONICE.</stage>
+
+<l n="6" xml:id="line-6">Good day Calonice.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="7" xml:id="line-7">Good day Lysistrata.</l>
+<l n="8" xml:id="line-8">But what has vexed you so? Tell me, child.</l>
+<l n="9" xml:id="line-9">What are these black looks for? It doesn't suit you</l>
+<l n="10" xml:id="line-10">To knit your eyebrows up glumly like that.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="11" xml:id="line-11">Calonice, it's more than I can bear,</l>
+<l n="12" xml:id="line-12">I am hot all over with blushes for our sex.</l>
+<l n="13" xml:id="line-13">Men say we're slippery rogues—</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="14" xml:id="line-14">And aren't they right?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="15" xml:id="line-15">Yet summoned on the most tremendous business</l>
+<l n="16" xml:id="line-16">For deliberation, still they snuggle in bed.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="17" xml:id="line-17">My dear, they'll come. It's hard for women, you know,</l>
+<l n="18" xml:id="line-18">To get away. There's so much to do;</l>
+<l n="19" xml:id="line-19">Husbands to be patted and put in good tempers:</l>
+<l n="20" xml:id="line-20">Servants to be poked out: children washed</l>
+<l n="21" xml:id="line-21">Or soothed with lullays or fed with mouthfuls of pap.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="22" xml:id="line-22">But I tell you, here's a far more weighty object.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="23" xml:id="line-23">What is it all about, dear Lysistrata,</l>
+<l n="24" xml:id="line-24">That you've called the women hither in a troop?</l>
+<l n="25" xml:id="line-25">What kind of an object is it?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="26" xml:id="line-26">A tremendous thing!</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="27" xml:id="line-27">And long?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="28" xml:id="line-28">Indeed, it may be very lengthy.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="29" xml:id="line-29">Then why aren't they here?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="30" xml:id="line-30">No man's connected with it;</l>
+<l n="31" xml:id="line-31">If that was the case, they'd soon come fluttering along.</l>
+<l n="32" xml:id="line-32">No, no. It concerns an object I've felt over</l>
+<l n="33" xml:id="line-33">And turned this way and that for sleepless nights.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="34" xml:id="line-34">It must be fine to stand such long attention.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="35" xml:id="line-35">So fine it comes to this—<placeName key="tgn,1000074">Greece</placeName> saved by Woman!</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="36" xml:id="line-36">By Woman? Wretched thing, I'm sorry for it.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="37" xml:id="line-37">Our country's fate is henceforth in our hands:</l>
+<l n="38" xml:id="line-38">To destroy the Peloponnesians root and branch—</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="39" xml:id="line-39">What could be nobler!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="40" xml:id="line-40">Wipe out the Boeotians—</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+    <l n="41" xml:id="line-41">Not utterly. Have mercy on the eels!<note>The Boeotian eels were highly esteemed delicacies in <placeName key="perseus,Athens">Athens</placeName>.</note></l></sp>
+
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="42" xml:id="line-42">But with regard to <placeName key="perseus,Athens">Athens</placeName>, note I'm careful</l>
+<l n="43" xml:id="line-43">Not to say any of these nasty things;</l>
+<l n="44" xml:id="line-44">Still, thought is free.... But if the women join us</l>
+<l n="45" xml:id="line-45">From <placeName key="tgn,7017076">Peloponnesus</placeName> and <placeName key="tgn,7002683">Boeotia</placeName>, then</l>
+<l n="46" xml:id="line-46">Hand in hand we'll rescue <placeName key="tgn,1000074">Greece</placeName>.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="47" xml:id="line-47">How could we do</l>
+<l n="48" xml:id="line-48">Such a big wise deed? We women who dwell</l>
+<l n="49" xml:id="line-49">Quietly adorning ourselves in a back-room</l>
+<l n="50" xml:id="line-50">With gowns of lucid gold and gawdy toilets</l>
+<l n="51" xml:id="line-51">Of stately silk and dainty little slippers....</l></sp>
+
+</div>
+
+<div type="textpart" n="46" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:46-85">
+<milestone unit="card" n="46" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:46-85" xml:id="card-46"/><sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="52" xml:id="line-52">These are the very armaments of the rescue.</l>
+<l n="53" xml:id="line-53">These crocus-gowns, this outlay of the best myrrh,</l>
+<l n="54" xml:id="line-54">Slippers, cosmetics dusting beauty, and robes</l>
+<l n="55" xml:id="line-55">With rippling creases of light.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="56" xml:id="line-56">Yes, but how?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="57" xml:id="line-57">No man will lift a lance against another—</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="58" xml:id="line-58">I'll run to have my tunic dyed crocus.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="59" xml:id="line-59">Or take a shield—</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="60" xml:id="line-60">I'll get a stately gown.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="61" xml:id="line-61">Or unscabbard a sword—</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="62" xml:id="line-62">Let me buy a pair of slipper.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="63" xml:id="line-63">Now, tell me, are the women right to lag?</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="64" xml:id="line-64">They should have turned birds, they should have grown</l>
+<l n="65" xml:id="line-65">wings and flown.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="66" xml:id="line-66">My friend, you'll see that they are true Athenians:</l>
+<l n="67" xml:id="line-67">Always too late. Why, there's not a woman</l>
+<l n="68" xml:id="line-68">From the shoreward demes arrived, not one from <placeName key="perseus,Salamis, Cyprus">Salamis</placeName>.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="69" xml:id="line-69">I know for certain they awoke at dawn,</l>
+<l n="70" xml:id="line-70">And got their husbands up if not their boat sails.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="71" xml:id="line-71">And I'd have staked my life the Acharnian dames</l>
+<l n="72" xml:id="line-72">Would be here first, yet they haven't come either!</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="73" xml:id="line-73">Well anyhow there is Theagenes' wife</l>
+<l n="74" xml:id="line-74">We can expect—she consulted Hecate.</l>
+<l n="75" xml:id="line-75">But look, here are some at last, and more behind them.</l>
+<l n="76" xml:id="line-76">See ... where are they from?</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="77" xml:id="line-77">From Anagyra they come.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="78" xml:id="line-78">Yes, they generally manage to come first.</l></sp>
+
+<stage>Enter MYRRHINE.</stage>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="79" xml:id="line-79">Are we late, Lysistrata? ... What is that?</l>
+<l n="80" xml:id="line-80">Nothing to say?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="81" xml:id="line-81">I've not much to say for you,</l>
+<l n="82" xml:id="line-82">Myrrhine, dawdling on so vast an affair.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="83" xml:id="line-83">I couldn't find my girdle in the dark.</l>
+<l n="84" xml:id="line-84">But if the affair's so wonderfull, tell us, what is it?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="85" xml:id="line-85">No, let us stay a little longer till</l>
+<l n="86" xml:id="line-86">The Peloponnesian girls and the girls of <placeName key="tgn,7002683">Boeotia</placeName></l>
+<l n="87" xml:id="line-87">Are here to listen.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="88" xml:id="line-88">That's the best advice.</l>
+<l n="89" xml:id="line-89">Ah, there comes Lampito.</l></sp>
+
+<stage>Enter LAMPITO.</stage>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="90" xml:id="line-90">Welcome Lampito!</l>
+<l n="91" xml:id="line-91">Dear Spartan girl with a delightful face,</l>
+<l n="92" xml:id="line-92">Washed with the rosy spring, how fresh you look</l>
+<l n="93" xml:id="line-93">In the easy stride of your sleek slenderness,</l>
+<l n="94" xml:id="line-94">Why you could strangle a bull!</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="95" xml:id="line-95">I think I could.</l>
+<l n="96" xml:id="line-96">It's frae exercise and kicking high behint.<note>The translator has put the speech of the Spartan characters in Scotch dialect which is related to English about as was the Spartan dialect to the speech of <placeName key="perseus,Athens">Athens</placeName>. The Spartans, in their character, anticipated the shrewd, canny, uncouth Scotch highlander of modern times.</note></l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="97" xml:id="line-97">What lovely breasts to own!</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="98" xml:id="line-98">Oo ... your fingers</l>
+<l n="99" xml:id="line-99">Assess them, ye tickler, wi' such tender chucks</l>
+<l n="100" xml:id="line-100">I feel as if I were an altar-victim.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="101" xml:id="line-101">Who is this youngster?</l></sp>
+
+</div>
+
+<div type="textpart" n="86" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:86-129">
+<milestone unit="card" n="86" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:86-129" xml:id="card-86"/><sp><speaker>LAMPITO</speaker>
+
+<l n="102" xml:id="line-102">A Boeotian lady.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="103" xml:id="line-103">There never was much undergrowth in <placeName key="tgn,7002683">Boeotia</placeName>,</l>
+<l n="104" xml:id="line-104">Such a smooth place, and this girl takes after it.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="105" xml:id="line-105">Yes, I never saw a skin so primly kept.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="106" xml:id="line-106">This girl?</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="107" xml:id="line-107">A sonsie open-looking jinker!</l>
+<l n="108" xml:id="line-108">She's a Corinthian.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="109" xml:id="line-109">Yes, isn't she</l>
+<l n="110" xml:id="line-110">Very open, in some ways particularly.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+<l n="111" xml:id="line-111">But who's garred this Council o' Women to meet here?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="112" xml:id="line-112">I have.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+<l n="113" xml:id="line-113">Propound then what you want o' us.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="114" xml:id="line-114">What is the amazing news you have to tell?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="115" xml:id="line-115">I'll tell you, but first answer one small question.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="116" xml:id="line-116">As you like.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="117" xml:id="line-117">Are you not sad your children's fathers</l>
+<l n="118" xml:id="line-118">Go endlessly off soldiering afar</l>
+<l n="119" xml:id="line-119">In this plodding war? I am willing to wager</l>
+<l n="120" xml:id="line-120">There's not one here whose husband is at home.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="121" xml:id="line-121">Mine's been in <placeName key="tgn,7002756">Thrace</placeName>, keeping an eye on Eucrates</l>
+<l n="122" xml:id="line-122">For five months past.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="123" xml:id="line-123">And mine left me for <placeName key="perseus,Pylos">Pylos</placeName></l>
+<l n="124" xml:id="line-124">Seven months ago at least.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="125" xml:id="line-125">And as for mine</l>
+<l n="126" xml:id="line-126">No sooner has he slipped out frae the line</l>
+<l n="127" xml:id="line-127">He straps his shield and he's snickt off again.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="128" xml:id="line-128">And not the slightest glitter of a lover!</l>
+<l n="129" xml:id="line-129">And since the Milesians betrayed us, I've not seen</l>
+<l n="130" xml:id="line-130">The image of a single upright man</l>
+<l n="131" xml:id="line-131">To be a marble consolation to us.</l>
+<l n="132" xml:id="line-132">Now will you help me, if I find a means</l>
+<l n="133" xml:id="line-133">To stamp the war out.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="134" xml:id="line-134">By the two Goddesses, Yes!</l>
+<l n="135" xml:id="line-135">I will though I've to pawn this very dress</l>
+<l n="136" xml:id="line-136">And drink the barter-money the same day.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="137" xml:id="line-137">And I too though I'm split up like a turbot</l>
+<l n="138" xml:id="line-138">And half is hackt off as the price of peace.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="139" xml:id="line-139">And I too! Why, to get a peep at the shy thing</l>
+<l n="140" xml:id="line-140">I'd clamber up to the tip-top o' Taygetus.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="141" xml:id="line-141">Then I'll expose my mighty mystery.</l>
+<l n="142" xml:id="line-142">O women, if we would compel the men</l>
+<l n="143" xml:id="line-143">To bow to Peace, we must refrain—</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="144" xml:id="line-144">From what?</l>
+<l n="145" xml:id="line-145">O tell us!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="146" xml:id="line-146">Will you truly do it then?</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="147" xml:id="line-147">We will, we will, if we must die for it.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="148" xml:id="line-148">We must refrain from every depth of love....</l>
+<l n="149" xml:id="line-149">Why do you turn your backs? Where are you going?</l>
+<l n="150" xml:id="line-150">Why do you bite your lips and shake your heads?</l>
+<l n="151" xml:id="line-151">Why are your faces blanched? Why do you weep?</l>
+<l n="152" xml:id="line-152">Will you or won't you, or what do you mean?</l></sp>
+</div>
+
+<div type="textpart" n="130" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:130-174">
+<milestone unit="card" n="130" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:130-174" xml:id="card-130"/><sp><speaker>MYRRHINE</speaker>
+
+<l n="153" xml:id="line-153">No, I won't do it. Let the war proceed.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="154" xml:id="line-154">No, I won't do it. Let the war proceed.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="155" xml:id="line-155">You too, dear turbot, you that said just now</l>
+<l n="156" xml:id="line-156">You didn't mind being split right up in the least?</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="157" xml:id="line-157">Anything else? O bid me walk in fire</l>
+<l n="158" xml:id="line-158">But do not rob us of that darling joy.</l>
+<l n="159" xml:id="line-159">What else is like it, dearest Lysistrata?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="160" xml:id="line-160">And you?</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="161" xml:id="line-161">O please give me the fire instead.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="162" xml:id="line-162">Lewd to the least drop in the tiniest vein,</l>
+<l n="163" xml:id="line-163">Our sex is fitly food for Tragic Poets,</l>
+<l n="164" xml:id="line-164">Our whole life's but a pile of kisses apd babies.</l>
+<l n="165" xml:id="line-165">But, hardy Spartan, if you join with me</l>
+<l n="166" xml:id="line-166">All may be righted yet. O help me, help me.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="167" xml:id="line-167">It's a sair, sair thing to ask of us, by the Twa,</l>
+<l n="168" xml:id="line-168">A lass to sleep her lane and never fill</l>
+<l n="169" xml:id="line-169">Love's lack except wi' makeshifts.... But let it be.</l>
+<l n="170" xml:id="line-170">Peace maun be thought of first.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="171" xml:id="line-171">My friend, my friend!</l>
+<l n="172" xml:id="line-172">The only one amid this herd of weaklings.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="173" xml:id="line-173">But if—which heaven forbid—we should refrain</l>
+<l n="174" xml:id="line-174">As you would have us, how is Peace induced?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="175" xml:id="line-175">By the two Goddesses, now can't you see</l>
+<l n="176" xml:id="line-176">All we have to do is idly sit indoors</l>
+<l n="177" xml:id="line-177">With smooth roses powdered on our cheeks,</l>
+<l n="178" xml:id="line-178">Our bodies burning naked through the folds</l>
+<l n="179" xml:id="line-179">Of shining <placeName key="perseis.Amorgos City">Amorgos</placeName>' silk, and meet the men</l>
+<l n="180" xml:id="line-180">With our dear Venus-plats plucked trim and neat.</l>
+<l n="181" xml:id="line-181">Their stirring love will rise up furiously,</l>
+<l n="182" xml:id="line-182">They'll beg our arms to open. That's our time!</l>
+<l n="183" xml:id="line-183">We'll disregard their knocking, beat them off—</l>
+<l n="184" xml:id="line-184">And they will soon be rabid for a Peace.</l>
+<l n="185" xml:id="line-185">I'm sure of it.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l rend="indent" n="186" xml:id="line-186">Just as Menelaus, they say,</l>
+<l n="187" xml:id="line-187">Seeing the bosom of his naked Helen</l>
+<l n="188" xml:id="line-188">Flang down the sword.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l rend="indent" n="189" xml:id="line-189">But we'll be tearful fools</l>
+<l n="190" xml:id="line-190">If our husbands take us at our word and leave us.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+    <l n="191" xml:id="line-191">There's only left then, in Pherecrates' phrase,</l>
+	<l n="192" xml:id="line-192"><quote rend="ital">To flay a skinned dog</quote>—flay more our flayed desires.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="193" xml:id="line-193">Bah, proverbs will never warm a celibate.</l>
+<l n="194" xml:id="line-194">But what avail will your scheme be if the men</l>
+<l n="195" xml:id="line-195">Drag us for all our kicking on to the couch?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="196" xml:id="line-196">Cling to the doorposts.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="indent" n="197" xml:id="line-197">But if they should force us?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="198" xml:id="line-198">Yield then, but with a sluggish, cold indifference.</l>
+<l n="199" xml:id="line-199">There is no joy to them in sullen mating.</l>
+<l n="200" xml:id="line-200">Besides we have other ways to madden them;</l>
+<l n="201" xml:id="line-201">They cannot stand up long, and they've no delight</l>
+<l n="202" xml:id="line-202">Unless we fit their aim with merry succour.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="203" xml:id="line-203">Well if you must have it so, we'll all agree.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="204" xml:id="line-204">For us I ha' no doubt. We can persuade</l>
+<l n="205" xml:id="line-205">Our men to strike a fair an' decent Peace,</l>
+<l n="206" xml:id="line-206">But how will ye pitch out the battle-frenzy</l>
+<l n="207" xml:id="line-207">O' the Athenian populace?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="208" xml:id="line-208">I promise you</l>
+<l n="209" xml:id="line-209">We'll wither up that curse.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="210" xml:id="line-210">I don't believe it.</l>
+<l n="211" xml:id="line-211">Not while they own ane trireme oared an' rigged,</l>
+<l n="212" xml:id="line-212">Or a' those stacks an' stacks an' stacks O' siller.</l></sp>
+</div>
+
+<div type="textpart" n="175" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:175-214">
+<milestone unit="card" n="175" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:175-214" xml:id="card-175"/><sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="213" xml:id="line-213">I've thought the whole thing out till there's no flaw.</l>
+<l n="214" xml:id="line-214">We shall surprise the Acropolis today:</l>
+<l n="215" xml:id="line-215">That is the duty set the older dames.</l>
+<l n="216" xml:id="line-216">While we sit here talking, they are to go</l>
+<l n="217" xml:id="line-217">And under pretence of sacrificing, seize it.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+<l n="218" xml:id="line-218">Certie, that's fine; all's warking for the best.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="219" xml:id="line-219">Now quickly, Lampito, let us tie ourselves</l>
+<l n="220" xml:id="line-220">To this high purpose as tightly as the hemp of words</l>
+<l n="221" xml:id="line-221">Can knot together.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+
+<l n="222" xml:id="line-222">Set out the terms in detail</l>
+<l n="223" xml:id="line-223">And we'll a' swear to them.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="224" xml:id="line-224">Of course.... Well then</l>
+<l n="225" xml:id="line-225">Where is our Scythianess? Why are you staring?</l>
+<l n="226" xml:id="line-226">First lay the shield, boss downward, on the floor</l>
+<l n="227" xml:id="line-227">And bring the victim's inwards.</l></sp>
+
+<sp><speaker>CAILONICE</speaker>
+
+
+<l n="228" xml:id="line-228">But, Lysistrata,</l>
+<l n="229" xml:id="line-229">What is this oath that we're to swear?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="230" xml:id="line-230">What oath!</l>
+<l n="231" xml:id="line-231">In Aeschylus they take a slaughtered sheep</l>
+<l n="232" xml:id="line-232">And swear upon a buckler. Why not we?</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="233" xml:id="line-233">O Lysistrata, Peace sworn on a buckler!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="234" xml:id="line-234">What oath would suit us then?</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="235" xml:id="line-235">Something burden bearing</l>
+<l n="236" xml:id="line-236">Would be our best insignia.... A white horse!</l>
+<l n="237" xml:id="line-237">Let's swear upon its entrails.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="238" xml:id="line-238">A horse indeed!</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="239" xml:id="line-239">Then what will symbolise us?</l></sp>
+    
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="240" xml:id="line-240">This, as I tell you—</l>
+<l n="241" xml:id="line-241">First set a great dark bowl upon the ground</l>
+<l n="242" xml:id="line-242">And disembowel a skin of Thasian wine,</l>
+<l n="243" xml:id="line-243">Then swear that we'll not add a drop of water.</l>
+</sp>
+
+<sp><speaker>LAMPITO</speaker>
+<l rend="indent" n="244" xml:id="line-244">Ah, what aith could clink pleasanter than that!</l>
+</sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+<l rend="indent" n="245" xml:id="line-245">Bring me a bowl then and a skin of wine.</l>
+</sp>
+
+<sp><speaker>CALONICE</speaker>
+<l rend="indent" n="246" xml:id="line-246">My dears, see what a splendid bowl it is;</l>
+<l rend="indent" n="247" xml:id="line-247">I'd not say No if asked to sip it off.</l>
+</sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+<l rend="indent" n="248" xml:id="line-248">Put down the bowl. Lay hands, all, on the victim.</l>
+<l rend="indent" n="249" xml:id="line-249">Skiey Queen who givest the last word in arguments,</l>
+<l rend="indent" n="250" xml:id="line-250">And thee, O Bowl, dear comrade, we beseech:</l>
+<l rend="indent" n="251" xml:id="line-251">Accept our oblation and be propitious to us.</l>
+</sp>
+
+<sp><speaker>CALONICE</speaker>
+<l rend="indent" n="252" xml:id="line-252">What healthy blood, la, how it gushes out!</l>
+</sp>
+
+
+<sp><speaker>LAMPITO</speaker>
+<l rend="indent" n="253" xml:id="line-253">An' what a leesome fragrance through the air.</l>
+</sp>
+
+
+<sp><speaker>LYSISTRATA</speaker>
+<l rend="indent" n="254" xml:id="line-254">Now, dears, if you will let me, I'll speak first.</l>
+</sp>
+
+
+<sp><speaker>CALONICE</speaker>
+<l rend="indent" n="255" xml:id="line-255">Only if you draw the lot, by Aphrodite!</l>
+</sp>
+
+
+<sp><speaker>LYSISTRATA</speaker>
+<l rend="indent" n="256" xml:id="line-256">SO, grasp the brim, you, Lampito, and all.</l>
+<l rend="indent" n="257" xml:id="line-257">You, Calonice, repeat for the rest</l>
+<l rend="indent" n="258" xml:id="line-258">Each word I say. Then you must all take oath</l>
+<l rend="indent" n="259" xml:id="line-259">And pledge your arms to the same stern conditions—</l>
+</sp>
+
+
+<sp><speaker>LYSISTRATA</speaker>
+<l rend="indent" n="260" xml:id="line-260">To husband or lover I'll not open arms</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="261" xml:id="line-261">To husband or lover I'll not open arms</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="262" xml:id="line-262">Though love and denial may enlarge his charms.</l></sp>
+</div>
+
+<div type="textpart" n="215" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:215-253">
+<milestone unit="card" n="215" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:215-253" xml:id="card-215"/><sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="263" xml:id="line-263">Though love and denial may enlarge his charms.</l>
+<l n="264" xml:id="line-264">O, O, my knees are failing me, Lysistrata!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="265" xml:id="line-265">But still at home, ignoring him, I'll stay,</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="266" xml:id="line-266">But still at home, ignoring him, I'll stay,</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="267" xml:id="line-267">Beautiful, clad in saffron silks all day.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="268" xml:id="line-268">Beautiful, clad in saffron silks all day.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="269" xml:id="line-269">If then he seizes me by dint of force,</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="270" xml:id="line-270">If then he seizes me by dint of force,</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="271" xml:id="line-271">I'll give him reason for a long remorse.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="272" xml:id="line-272">I'll give him reason for a long remorse.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="273" xml:id="line-273">I'll never lie and stare up at the ceiling,</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="274" xml:id="line-274">I'll never lie and stare up at the ceiling,</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="275" xml:id="line-275">Nor like a lion on all fours go kneeling.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="276" xml:id="line-276">Nor like a lion on all fours go kneeling.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="277" xml:id="line-277">If I keep faith, then bounteous cups be mine.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l rend="ital" n="278" xml:id="line-278">If I keep faith, then bounteous cups be mine.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+    <l n="279" xml:id="line-279">If not, to nauseous water change this wine.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+<l rend="ital" n="280" xml:id="line-280">If not, to nauseous water change this wine.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="281" xml:id="line-281">Do you all swear to this?</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="282" xml:id="line-282">We do, we do.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+    <l n="283" xml:id="line-283">Then I shall immolate the victim thus.</l></sp>
+
+<stage>She drinks.</stage>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="284" xml:id="line-284">Here now, share fair, haven't we made a pact?</l>
+<l n="285" xml:id="line-285">Let's all quaff down that friendship in our turn.</l></sp>
+
+<sp><speaker>LAMPITO</speaker>
+
+<l n="286" xml:id="line-286">Hark, what caterwauling hubbub's that?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="287" xml:id="line-287">As I told you,</l>
+<l n="288" xml:id="line-288">The women have appropriated the citadel.</l>
+<l n="289" xml:id="line-289">So, Lampito, dash off to your own land</l>
+<l n="290" xml:id="line-290">And raise the rebels there. These will serve as hostages,</l>
+<l n="291" xml:id="line-291">While we ourselves take our places in the ranks</l>
+<l n="292" xml:id="line-292">And drive the bolts right home.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="293" xml:id="line-293">But won't the men</l>
+<l n="294" xml:id="line-294">March straight against us?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="295" xml:id="line-295">And what if they do?</l>
+<l n="296" xml:id="line-296">No threat shall creak our hinges wide, no torch</l>
+<l n="297" xml:id="line-297">Shall light a fear in us; we will come out</l>
+<l n="298" xml:id="line-298">To Peace alone.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="299" xml:id="line-299">That's it, by Aphrodite!</l>
+<l n="300" xml:id="line-300">As of old let us seem hard and obdurate.</l></sp>
+
+</div>
+
+<div type="textpart" n="254" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:254-255">
+<milestone unit="card" n="254" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:254-255" xml:id="card-254"/><milestone unit="Parodos"/>
+<stage>LAMPITO and some go off; the others go up into the Acropolis.</stage>
+
+<stage>Chorus of OLD MEN enter to attack the captured Acropolis.</stage>
+
+<sp><speaker>Chorus of MEN</speaker>
+<l n="301" xml:id="line-301">Make room, Draces, move ahead; why your shoulder's chafed, I see,</l>
+<l n="302" xml:id="line-302">With lugging uphill these lopped branches of the olive-tree.</l>
+</sp>
+<milestone unit="strophe" n="1"/>
+</div>
+
+<div type="textpart" n="258" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:256-265">
+<milestone unit="card" n="256" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:256-265" xml:id="card-256"/><sp><speaker>Chorus of MEN</speaker>
+<l n="303" xml:id="line-303">How upside-down and wrong-way-round a long life sees things grow.</l>
+<l n="304" xml:id="line-304">Ah, Strymodorus, who'd have thought affairs could tangle so?</l>
+
+
+<l n="305" xml:id="line-305">The women whom at home we fed,</l>
+<l n="306" xml:id="line-306">Like witless fools, with fostering bread,</l>
+<l n="307" xml:id="line-307">Have impiously come to this—</l>
+<l n="308" xml:id="line-308">They've stolen the Acropolis,</l>
+<l n="309" xml:id="line-309">With bolts and bars our orders flout</l>
+<l n="310" xml:id="line-310">And shut us out.</l>
+</sp>
+</div>
+
+<div type="textpart" n="266" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:266-270">
+
+<milestone unit="card" n="266" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:266-270" xml:id="card-266"/><sp><speaker>Chorus of MEN</speaker>
+<l n="311" xml:id="line-311">Come, Philurgus, bustle thither; lay our faggots on the ground,</l>
+<l n="312" xml:id="line-312">In neat stacks beleaguering the insurgents all around;</l>
+<l n="313" xml:id="line-313">And the vile conspiratresses, plotters of such mischief dire,</l>
+<l n="314" xml:id="line-314">Pile and burn them all together in one vast and righteous pyre:</l>
+<l n="315" xml:id="line-315">Fling with our own hands Lycon's wife to fry in the thickest fire.</l>
+</sp>
+</div>
+
+<div type="textpart" n="273" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:273-280">
+<milestone unit="card" n="273" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:273-280" xml:id="card-273"/><milestone unit="antistrophe" n="1"/>
+<sp><speaker>Chorus of MEN</speaker>
+<l n="316" xml:id="line-316">By Demeter, they'll get no brag while I've a vein to beat!</l>
+<l n="317" xml:id="line-317">Cleomenes himself was hurtled out in sore defeat.</l>
+<l n="318" xml:id="line-318">His stiff-backed Spartan pride was bent.</l>
+<l n="319" xml:id="line-319">Out, stripped of all his arms, he went:</l>
+<l n="320" xml:id="line-320">A pigmy cloak that would not stretch</l>
+<l n="321" xml:id="line-321">To hide his rump (the draggled wretch),</l>
+<l n="322" xml:id="line-322">Six sprouting years of beard, the spilth</l>
+<l n="323" xml:id="line-323">Of six years' filth.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="281" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:281-285">
+<milestone unit="card" n="281" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:281-285" xml:id="card-281"/><milestone unit="tetrameters"/>
+<sp><speaker>Chorus of MEN</speaker>
+<l n="324" xml:id="line-324">That was a siege! Our men were ranged in lines of seventeen deep</l>
+<l n="325" xml:id="line-325">Before the gates, and never left their posts there, even to sleep.</l>
+<l n="326" xml:id="line-326">Shall I not smite the rash presumption then of foes like these,</l>
+<l n="327" xml:id="line-327">Detested both of all the gods and of Euripides—</l>
+<l n="328" xml:id="line-328">Else, may the Marathon-plain not boast my trophied victories!</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="286" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:286-295">
+<milestone unit="card" n="286" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:286-295" xml:id="card-286"/><milestone unit="strophe" n="2"/>
+<sp><speaker>Chorus of MEN</speaker>
+<l n="329" xml:id="line-329">Ah, now, there's but a little space</l>
+<l n="330" xml:id="line-330">To reach the place!</l>
+<l n="331" xml:id="line-331">A deadly climb it is, a tricky road</l>
+<l n="332" xml:id="line-332">With all this bumping load:</l>
+<l n="333" xml:id="line-333">A pack-ass soon would tire....</l>
+<l n="334" xml:id="line-334">How these logs bruise my shoulders! further still</l>
+<l n="335" xml:id="line-335">Jog up the hill,</l>
+<l n="336" xml:id="line-336">And puff the fire inside,</l>
+<l n="337" xml:id="line-337">Or just as we reach the top we'll find it's died.</l>
+<l n="338" xml:id="line-338">Ough, phew!</l>
+<l n="339" xml:id="line-339">I choke with the smoke.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="296" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:296-305">
+<milestone unit="card" n="296" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:296-305" xml:id="card-296"/><milestone unit="antistophe" n="2"/>
+<sp><speaker>Chorus of MEN</speaker>
+<l n="340" xml:id="line-340">Lord Heracles, how acrid-hot</l>
+<l n="341" xml:id="line-341">Out of the pot</l>
+<l n="342" xml:id="line-342">This mad-dog smoke leaps, worrying me</l>
+<l n="343" xml:id="line-343">And biting angrily....</l>
+<l n="344" xml:id="line-344">'Tis Lemnian fire that smokes,</l>
+<l n="345" xml:id="line-345">Or else it would not sting my eyelids thus....</l>
+<l n="346" xml:id="line-346">Haste, all of us;</l>
+<l n="347" xml:id="line-347">Athene invokes our aid.</l>
+<l n="348" xml:id="line-348">Laches, now or never the assault must be made!</l>
+<l n="349" xml:id="line-349">Ough, phew!</l>
+<l n="350" xml:id="line-350">I choke with the smoke. ..</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="306" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:306-320">
+<milestone unit="card" n="306" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:306-320" xml:id="card-306"/><milestone unit="tetrameters"/>
+<sp><speaker>Chorus of MEN</speaker>
+<l n="351" xml:id="line-351">Thanked be the gods! The fire peeps up and crackles as it should.</l>
+<l n="352" xml:id="line-352">Now why not first slide off our backs these weary loads of wood</l>
+<l n="353" xml:id="line-353">And dip a vine-branch in the brazier till it glows, then straight</l>
+<l n="354" xml:id="line-354">Hurl it at the battering-ram against the stubborn gate?</l>
+<l n="355" xml:id="line-355">If they refuse to draw the bolts in immediate compliance,</l>
+<l n="356" xml:id="line-356">We'll set fire to the wood, and smoke will strangle their defiance.</l>
+
+
+<l n="357" xml:id="line-357">Phew, what a spluttering drench of smoke! Come, now from off my back....</l>
+<l n="358" xml:id="line-358">Is there no Samos-general to help me to unpack?</l>
+<l n="359" xml:id="line-359">Ah there, that's over! For the last time now it's galled my shoulder.</l>
+<l n="360" xml:id="line-360">Flare up thine embers, brazier, and dutifully smoulder,</l>
+<l n="361" xml:id="line-361">To kindle a brand, that I the first may strike the citadel.</l>
+<l n="362" xml:id="line-362">Aid me, Lady Victory, that a triumph-trophy may tell</l>
+<l n="363" xml:id="line-363">How we did anciently this insane audacity quell!</l>
+</sp>
+
+
+<milestone unit="lyric"/>
+<sp><speaker>Chorus of WOMEN.</speaker>
+
+
+<l n="364" xml:id="line-364">What's that rising yonder? That ruddy glare, that smoky skurry?</l>
+<l n="365" xml:id="line-365">O is it something in a blaze? Quick, quick, my comrades, hurry!</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="321" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:321-334">
+<milestone unit="card" n="321" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:321-334" xml:id="card-321"/><milestone unit="strophe" n="3"/>
+<sp><speaker>Chorus of WOMEN.</speaker>
+<l n="366" xml:id="line-366">Nicodice, helter-skelter!</l>
+<l n="367" xml:id="line-367">Or poor Calyce's in flames</l>
+<l n="368" xml:id="line-368">And Cratylla's stifled in the welter.</l>
+<l n="369" xml:id="line-369">O these dreadful old men</l>
+<l n="370" xml:id="line-370">And their dark laws of hate!</l>
+<l n="371" xml:id="line-371">There, I'm all of a tremble lest I turn out to be too late.</l>
+<l n="372" xml:id="line-372">I could scarcely get near to the spring though I rose before dawn,</l>
+<l n="373" xml:id="line-373">What with tattling of tongues and rattling of pitchers in one jostling din</l>
+<l n="374" xml:id="line-374">With slaves pushing in!....</l>
+
+<l n="375" xml:id="line-375">Still here at last the water's drawn</l>
+<l n="376" xml:id="line-376">And with it eagerly I run</l>
+<l n="377" xml:id="line-377">To help those of my friends who stand</l>
+<l n="378" xml:id="line-378">In danger of being burned alive.</l>
+</sp>
+</div>
+
+<div type="textpart" n="335" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:335-349">
+<milestone unit="card" n="335" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:335-349" xml:id="card-335"/><milestone unit="antistrophe" n="3"/>
+<sp><speaker>Chorus of WOMEN.</speaker>
+<l n="379" xml:id="line-379">For I am told a dribbling band</l>
+<l n="380" xml:id="line-380">Of greybeards hobble to the field,</l>
+<l n="381" xml:id="line-381">Great faggots in each palsied hand,</l>
+<l n="382" xml:id="line-382">As if a hot bath to prepare,</l>
+<l n="383" xml:id="line-383">And threatening that out they'll drive</l>
+<l n="384" xml:id="line-384">These wicked women or soon leave them charring into ashes</l>
+<l n="385" xml:id="line-385">there.</l>
+<l n="386" xml:id="line-386">O Goddess, suffer not, I pray, this harsh deed to be done,</l>
+<l n="387" xml:id="line-387">But show us <placeName key="tgn,1000074">Greece</placeName> and <placeName key="perseus,Athens">Athens</placeName> with their warlike acts repealed!</l>
+<l n="388" xml:id="line-388">For this alone, in this thy hold,</l>
+<l n="389" xml:id="line-389">Thou Goddess with the helm of gold,</l>
+<l n="390" xml:id="line-390">We laid hands on thy sanctuary,</l>
+<l n="391" xml:id="line-391">Athene.... Then our ally be</l>
+<l n="392" xml:id="line-392">And where they cast their fires of slaughter</l>
+<l n="393" xml:id="line-393">Direct our water!</l></sp>
+
+</div>
+
+<div type="textpart" n="350" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:350-386">
+<milestone unit="card" n="350" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:350-386" xml:id="card-350"/><milestone unit="tetrameters"/>
+<sp><speaker>STRATYLLIS</speaker> <stage>(caught)</stage>
+
+<l n="394" xml:id="line-394">Let me go!</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="395" xml:id="line-395">You villainous old men, what's this you do?</l>
+<l n="396" xml:id="line-396">No honest man, no pious man, could do such things as you.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="397" xml:id="line-397">Ah ha, here's something most original, I have no doubt:</l>
+<l n="398" xml:id="line-398">A swarm of women sentinels to man the walls without.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="399" xml:id="line-399">So then we scare you, do we? Do we seem a fearful host?</l>
+<l n="400" xml:id="line-400">You only see the smallest fraction mustered at this post.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="401" xml:id="line-401">Ho, Phaedrias, shall we put a stop to all these chattering tricks?</l>
+<l n="402" xml:id="line-402">Suppose that now upon their backs we splintered these our sticks?</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="403" xml:id="line-403">Let us lay down the pitchers, so our bodies will be free,</l>
+<l rend="indent" n="404" xml:id="line-404">In case these lumping fellows try to cause some injury.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="405" xml:id="line-405">O hit them hard and hit again and hit until they run away,</l>
+<l n="406" xml:id="line-406">And perhaps they'll learn, like Bupalus, not to have too much to say.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="407" xml:id="line-407">Come on, then—do it! I won't budge, but like a dog I'll bite</l>
+<l n="408" xml:id="line-408">At every little scrap of meat that dangles in my sight.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="409" xml:id="line-409">Be quiet, or I'll bash you out of any years to come.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="410" xml:id="line-410">Now you just touch Stratyllis with the top-joint of your thumb.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="411" xml:id="line-411">What vengeance can you take if with my fists your face I beat?</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="412" xml:id="line-412">I'll rip you with my teeth and strew your entrails at your feet.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="413" xml:id="line-413">Now I appreciate Euripides' strange subtlety:</l>
+<l n="414" xml:id="line-414">Woman is the most shameless beast of all the beasts that be.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="415" xml:id="line-415">Rhodippe, come, and let's pick up our water-jars once more.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="416" xml:id="line-416">Ah cursed drab, what have you brought this water for?</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="417" xml:id="line-417">What is your fire for then, you smelly corpse? Yourself to burn?</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="418" xml:id="line-418">To build a pyre and make your comrades ready for the urn.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="419" xml:id="line-419">And I've the water to put out your fire immediately.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="420" xml:id="line-420">What, you put out my fire?</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="421" xml:id="line-421">Yes, sirrah, as you soon will see.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="422" xml:id="line-422">I don't know why I hesitate to roast you with this flame.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="423" xml:id="line-423">If you have any soap you'll go off cleaner than you came.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="424" xml:id="line-424">Cleaner, you dirty slut?</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="425" xml:id="line-425">A nuptial-bath in which to lie!</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="426" xml:id="line-426">Did you hear that insolence?</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="427" xml:id="line-427">I'm a free woman, I.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+    <l n="428" xml:id="line-428">I'll make you hold your tongue.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="429" xml:id="line-429">Henceforth you'll serve in no more juries.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="430" xml:id="line-430">Burn off her hair for her.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="431" xml:id="line-431">Now forward, water, quench their furies!</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="432" xml:id="line-432">O dear, O dear!</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="433" xml:id="line-433">So ... was it hot?</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="434" xml:id="line-434">Hot! ... Enough, O hold.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="435" xml:id="line-435">Watered, perhaps you'll bloom again—why not?</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="436" xml:id="line-436">Brrr, I'm wrinkled up from shivering with cold.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+    <l n="437" xml:id="line-437">Next time you've fire you'll warm yourself and leave us to our lot.</l></sp>
+
+</div>
+
+<div type="textpart" n="387" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:387-442">
+<milestone unit="card" n="387" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:387-442" xml:id="card-387"/><milestone unit="Episode"/>
+<stage>MAGISTRATE enters with attendant SCYTHIANS.</stage>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="438" xml:id="line-438">Have the luxurious rites of the women glittered</l>
+<l n="439" xml:id="line-439">Their libertine show, their drumming tapped out crowds,</l>
+<l n="440" xml:id="line-440">The Sabazian Mysteries summoned their mob,</l>
+<l n="441" xml:id="line-441">Adonis been wept to death on the terraces,</l>
+<l n="442" xml:id="line-442">As I could hear the last day in the Assembly?</l>
+<l n="443" xml:id="line-443">For Demostratus—let bad luck befoul him—</l>
+<l n="444" xml:id="line-444">Was roaring, “We must sail for <placeName key="tgn,7003122">Sicily</placeName>,”</l>
+<l n="445" xml:id="line-445">While a woman, throwing herself about in a dance</l>
+<l n="446" xml:id="line-446">Lopsided with drink, was shrilling out “Adonis,</l>
+<l n="447" xml:id="line-447">Woe for Adonis.” Then Demostratus shouted,</l>
+<l n="448" xml:id="line-448">“We must levy hoplites at <placeName key="tgn,7011374">Zacynthus</placeName>,”</l>
+<l n="449" xml:id="line-449">And there the woman, up to the ears in wine,</l>
+<l n="450" xml:id="line-450">Was screaming “Weep for Adonis” on the house-top,</l>
+<l n="451" xml:id="line-451">The scoundrelly politician, that lunatic ox,</l>
+<l n="452" xml:id="line-452">Bellowing bad advice through tipsy shrieks:</l>
+<l n="453" xml:id="line-453">Such are the follies wantoning in them.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="454" xml:id="line-454">O if you knew their full effronery!</l>
+<l n="455" xml:id="line-455">All of the insults they've done, besides sousing us</l>
+<l n="456" xml:id="line-456">With water from their pots to our public disgrace</l>
+<l n="457" xml:id="line-457">For we stand here wringing our clothes like grown-up infants.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+    <l n="458" xml:id="line-458">By Poseidon, justly done! For in part with us</l>
+<l n="459" xml:id="line-459">The blame must lie for dissolute behaviour</l>
+<l n="460" xml:id="line-460">And for the pampered appetites they learn.</l>
+<l n="461" xml:id="line-461">Thus grows the seedling lust to blossoming:</l>
+<l n="462" xml:id="line-462">We go into a shop and say, “Here, goldsmith,</l>
+<l n="463" xml:id="line-463">You remember the necklace that you wrought my wife;</l>
+<l n="464" xml:id="line-464">Well, the other night in fervour of a dance</l>
+<l n="465" xml:id="line-465">Her clasp broke open. Now I'm off for <placeName key="perseus,Salamis, Cyprus">Salamis</placeName>;</l>
+<l n="466" xml:id="line-466">If you've the leisure, would you go tonight</l>
+<l n="467" xml:id="line-467">And stick a bolt-pin into her opened clasp.”</l>
+<l n="468" xml:id="line-468">Another goes to a cobbler; a soldierly fellow,</l>
+<l n="469" xml:id="line-469">Always standing up erect, and says to him,</l>
+<l n="470" xml:id="line-470">“Cobbler, a sandal-strap of my wife's pinches her,</l>
+<l n="471" xml:id="line-471">Hurts her little toe in a place where she's sensitive.</l>
+<l n="472" xml:id="line-472">Come at noon and see if you can stretch out wider</l>
+<l n="473" xml:id="line-473">This thing that troubles her, loosen its tightness.”</l>
+<l n="474" xml:id="line-474">And so you view the result. Observe my case—</l>
+<l n="475" xml:id="line-475">I, a magistrate, come here to draw</l>
+<l n="476" xml:id="line-476">Money to buy oar-blades, and what happens?</l>
+<l n="477" xml:id="line-477">The women slam the door full in my face.</l>
+<l n="478" xml:id="line-478">But standing still's no use. Bring me a crowbar,</l>
+<l n="479" xml:id="line-479">And I'll chastise this their impertinence.</l>
+<l n="480" xml:id="line-480">What do you gape at, wretch, with dazzled eyes?</l>
+<l n="481" xml:id="line-481">Peering for a tavern, I suppose.</l>
+<l n="482" xml:id="line-482">Come, force the gates with crowbars, prise them apart!</l>
+<l n="483" xml:id="line-483">I'll prise away myself too....</l> <stage>(LYSISTRATA appears.)</stage></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="484" xml:id="line-484">Stop this banging.</l>
+<l n="485" xml:id="line-485">I'm coming of my own accord.... Why bars?</l>
+<l n="486" xml:id="line-486">It is not bars we need but common sense.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="487" xml:id="line-487">Indeed, you slut! Where is the archer now?</l>
+<l n="488" xml:id="line-488">Arrest this woman, tie her hands behind.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="489" xml:id="line-489">If he brushes me with a finger, by Artemis,</l>
+<l n="490" xml:id="line-490">The public menial, he'll be sorry for it.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="491" xml:id="line-491">Are you afraid? Grab her about the middle.</l>
+<l n="492" xml:id="line-492">Two of you then, lay hands on her and end it.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+
+<l n="493" xml:id="line-493">By Pandrosos I if your hand touches her</l>
+<l n="494" xml:id="line-494">I'll spread you out and trample on your guts.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="495" xml:id="line-495">My guts! Where is the other archer gone?</l>
+<l n="496" xml:id="line-496">Bind that minx there who talks so prettily.</l></sp>
+</div>
+
+<div type="textpart" n="443" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:443-466">
+<milestone unit="card" n="443" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:443-466" xml:id="card-443"/><sp><speaker>MYRRHINE</speaker>
+
+
+<l n="497" xml:id="line-497">By Phosphor, if your hand moves out her way</l>
+<l n="498" xml:id="line-498">You'd better have a surgeon somewhere handy.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="499" xml:id="line-499">You too! Where is that archer? Take that woman.</l>
+<l n="500" xml:id="line-500">I'll put a stop to these surprise-parties.</l></sp>
+
+<sp><speaker>STRATYLLIS</speaker>
+
+
+<l n="501" xml:id="line-501">By the Tauric Artemis, one inch nearer</l>
+<l n="502" xml:id="line-502">My fingers, and it's a bald man that'll be yelling.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="503" xml:id="line-503">Tut tut, what's here? Deserted by my archers....</l>
+<l n="504" xml:id="line-504">But surely women never can defeat us;</l>
+<l n="505" xml:id="line-505">Close up your ranks, my Scythians. Forward at them.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="506" xml:id="line-506">By the Goddesses, you'll find that here await you</l>
+<l n="507" xml:id="line-507">Four companies of most pugnacious women</l>
+<l n="508" xml:id="line-508">Armed cap-a-pie from the topmost louring curl</l>
+<l n="509" xml:id="line-509">To the lowest angry dimple.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="510" xml:id="line-510">On, Scythians, bind them.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="511" xml:id="line-511">On, gallant allies of our high design,</l>
+<l n="512" xml:id="line-512">Vendors of grain-eggs-pulse-and-vegetables,</l>
+<l n="513" xml:id="line-513">Ye garlic-tavern-keepers of bakeries,</l>
+<l n="514" xml:id="line-514">Strike, batter, knock, hit, slap, and scratch our foes,</l>
+<l n="515" xml:id="line-515">Be finely imprudent, say what you think of them....</l>
+<l n="516" xml:id="line-516">Enough! retire and do not rob the dead.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="517" xml:id="line-517">How basely did my archer-force come off.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="518" xml:id="line-518">Ah, ha, you thought it was a herd of slaves</l>
+<l n="519" xml:id="line-519">You had to tackle, and you didn't guess</l>
+<l n="520" xml:id="line-520">The thirst for glory ardent in our blood.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="521" xml:id="line-521">By Apollo, I know well the thirst that heats you—</l>
+<l n="522" xml:id="line-522">Especially when a wine-skin's close.</l></sp>
+
+</div>
+
+<div type="textpart" n="467" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:467-475">
+<milestone unit="card" n="467" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:467-475" xml:id="card-467"/><milestone unit="Agon"/>
+<milestone unit="prelude"/>
+<sp><speaker>MEN</speaker>
+
+
+<l n="523" xml:id="line-523">You waste your breath, dear magistrate, I fear, in answering back.</l>
+<l n="524" xml:id="line-524">What's the good of argument with such a rampageous pack?</l>
+<l n="525" xml:id="line-525">Remember how they washed us down (these very clothes I wore)</l>
+<l n="526" xml:id="line-526">With water that looked nasty and that smelt so even more.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="527" xml:id="line-527">What else to do, since you advanced too dangerously nigh.</l>
+<l n="528" xml:id="line-528">If you should do the same again, I'll punch you in the eye.</l>
+<l n="529" xml:id="line-529">Though I'm a stay-at-home and most a quiet life enjoy,</l>
+<l n="530" xml:id="line-530">Polite to all and every (for I'm naturally coy),</l>
+<l n="531" xml:id="line-531">Still if you wake a wasps' nest then of wasps you must beware.</l></sp>
+
+</div>
+
+<div type="textpart" n="476" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:476-483">
+<milestone unit="card" n="476" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:476-483" xml:id="card-476"/><milestone unit="strophe" n="1"/>
+<sp><speaker>MEN</speaker>
+
+<l n="532" xml:id="line-532">How may this ferocity be tamed? It grows too great to bear.</l>
+<l n="533" xml:id="line-533">Let us question them and find if they'll perchance declare</l>
+<l n="534" xml:id="line-534">The reason why they strangely dare</l>
+<l n="535" xml:id="line-535">To seize on Cranaos' citadel,</l>
+<l n="536" xml:id="line-536">This eyrie inaccessible,</l>
+<l n="537" xml:id="line-537">This shrine above the precipice,</l>
+<l n="538" xml:id="line-538">The Acropolis.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="484" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:484-485">
+<milestone unit="card" n="484" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:484-485" xml:id="card-484"/><milestone unit="katakeleusmenos" n="anapests"/>
+<sp><speaker>MEN</speaker>
+<l n="539" xml:id="line-539">Probe them and find what they mean with this idle talk; listen,</l>
+<l n="540" xml:id="line-540">but watch they don't try to deceive.</l>
+<l n="541" xml:id="line-541">You'd be neglecting your duty most certainly if now this mystery</l>
+<l n="542" xml:id="line-542">unplumbed you leave.</l></sp>
+
+</div>
+
+<div type="textpart" n="486" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:486-531">
+<milestone unit="card" n="486" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:486-531" xml:id="card-486"/><milestone unit="epirrheme" n="anapests"/>
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="543" xml:id="line-543">Women there! Tell what I ask you, directly....</l>
+<l n="544" xml:id="line-544">Come, without rambling, I wish you to state</l>
+<l n="545" xml:id="line-545">What's your rebellious intention in barring up thus on our noses</l>
+<l n="546" xml:id="line-546">our own temple-gate.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="547" xml:id="line-547">To take first the treasury out of your management, and so stop the war</l>
+<l n="548" xml:id="line-548">through the absence of gold.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="549" xml:id="line-549">Is gold then the cause of the war?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="550" xml:id="line-550">Yes, gold caused it and miseries more, too many to be told.</l>
+<l n="551" xml:id="line-551">'Twas for money, and money alone, that Pisander with all of the army of</l>
+<l n="552" xml:id="line-552">mob-agitators.</l>
+<l n="553" xml:id="line-553">Raised up revolutions. But, as for the future, it won't be worth while</l>
+<l n="554" xml:id="line-554">to set up to be traitors.</l>
+<l n="555" xml:id="line-555">Not an obol they'll get as their loot, not an obol! while we have the</l>
+<l n="556" xml:id="line-556">treasure-chest in our command.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="557" xml:id="line-557">What then is that you propose?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="558" xml:id="line-558">Just this—merely to take the exchequer henceforth in hand.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="559" xml:id="line-559">The exchequer!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="560" xml:id="line-560">Yes, why not? Of our capabilities you have had various clear evidences.</l>
+<l n="561" xml:id="line-561">Firstly remember we have always administered soundly the budget of all</l>
+<l n="562" xml:id="line-562">home-expenses.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="563" xml:id="line-563">But this matter's different.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="564" xml:id="line-564">How is it different?</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="565" xml:id="line-565">Why, it deals chiefly with war-time supplies.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="566" xml:id="line-566">But we abolish war straight by our policy.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="567" xml:id="line-567">What will you do if emergencies arise?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="568" xml:id="line-568">Face them our own way.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="569" xml:id="line-569">What <emph rend="ital">you</emph> will?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="570" xml:id="line-570">Yes <emph rend="ital">we</emph> will!</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="571" xml:id="line-571">Then there's no help for it; we're all destoryed.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="572" xml:id="line-572">No, willy-nilly you must be safeguarded.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="573" xml:id="line-573">What madness is this?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="574" xml:id="line-574">Why, it seems you're annoyed.</l>
+<l n="575" xml:id="line-575">It must be done, that's all.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="576" xml:id="line-576">Such awful oppression never,</l>
+<l n="577" xml:id="line-577">O never in the past yet I bore.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="578" xml:id="line-578">You must be saved, sirrah—that's all there is to it.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="579" xml:id="line-579">If we don't want to be saved?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="580" xml:id="line-580">All the more.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="581" xml:id="line-581">Why do you women come prying and meddling in matters of state touching</l>
+<l n="582" xml:id="line-582">war-time and peace?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="583" xml:id="line-583">That I will tell you.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="584" xml:id="line-584">O tell me or quickly I'll—</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="585" xml:id="line-585">Hearken awhile and from threatening cease.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="586" xml:id="line-586">I cannot, I cannot; it's growing too insolent.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="587" xml:id="line-587">Come on; you've far more than we have to dread.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="588" xml:id="line-588">Stop from your croaking, old carrion-crow there....</l>
+<l n="589" xml:id="line-589">Continue</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="590" xml:id="line-590">Be calm then and I'll go ahead.</l>
+<l n="591" xml:id="line-591">All the long years when the hopeless war dragged along we, unassuming,</l>
+<l n="592" xml:id="line-592">forgotten in quiet,</l>
+<l n="593" xml:id="line-593">Endured without question, endured in our loneliness all your incessant</l>
+<l n="594" xml:id="line-594">child's antics and riot.</l>
+<l n="595" xml:id="line-595">Our lips we kept tied, though aching with silence, though well all the</l>
+<l n="596" xml:id="line-596">while in our silence we knew</l>
+<l n="597" xml:id="line-597">How wretchedly everything still was progressing by listening dumbly the</l>
+<l n="598" xml:id="line-598">day long to you.</l>
+<l n="599" xml:id="line-599">For always at home you continued discussing the war and its politics</l>
+<l n="600" xml:id="line-600">loudly, and we</l>
+<l n="601" xml:id="line-601">Sometimes would ask you, our hearts deep with sorrowing though we spoke</l>
+<l n="602" xml:id="line-602">lightly, though happy to see,</l>
+<l n="603" xml:id="line-603">“What's to be inscribed on the side of the Treaty-stone</l>
+<l n="604" xml:id="line-604">What, dear, was said in the Assembly today?”</l>
+<l n="605" xml:id="line-605">“Mind your own business,” he'd answer me growlingly</l>
+<l n="606" xml:id="line-606">“hold your tongue, woman, or else go away.”</l>
+<l n="607" xml:id="line-607">And so I would hold it.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="608" xml:id="line-608">I'd not be silent for any man living on earth, no, not I!</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="609" xml:id="line-609">Not for a staff?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="610" xml:id="line-610">Well, so I did nothing but sit in the house, feeling dreary, and sigh,</l>
+<l n="611" xml:id="line-611">While ever arrived some fresh tale of decisions more foolish by far and</l>
+<l n="612" xml:id="line-612">presaging disaster.</l>
+<l n="613" xml:id="line-613">Then I would say to him, “O my dear husband, why still do they rush on</l>
+<l n="614" xml:id="line-614">destructlon the faster?”</l>
+<l n="615" xml:id="line-615">At which he would look at me sideways, exclaiming, “Keep for your web</l>
+<l n="616" xml:id="line-616">and your shuttle your care,</l>
+<l n="617" xml:id="line-617">Or for some hours hence your cheeks will be sore and hot; leave this</l>
+<l n="618" xml:id="line-618">alone, war is Man's sole affair!”</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="619" xml:id="line-619">By Zeus, but a man of fine sense, he.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="620" xml:id="line-620">How sensible?</l>
+<l n="621" xml:id="line-621">You dotard, because he at no time had lent</l>
+<l n="622" xml:id="line-622">His intractible ears to absorb from our counsel one temperate word of</l>
+<l n="623" xml:id="line-623">advice, kindly meant?</l>
+<l n="624" xml:id="line-624">But when at the last in the streets we heard shouted (everywhere ringing</l>
+<l n="625" xml:id="line-625">the ominous cry)</l>
+<l n="626" xml:id="line-626">“Is there no one to help us, no saviour in <placeName key="perseus,Athens">Athens</placeName>?” and, “No, there is</l>
+<l n="627" xml:id="line-627">no one,” come back in reply.</l>
+<l n="628" xml:id="line-628">At once a convention of all wives through <placeName key="tgn,1000074">Hellas</placeName> here for a serious</l>
+<l n="629" xml:id="line-629">purpose was held,</l>
+<l n="630" xml:id="line-630">To determine how husbands might yet back to wisdom despite their</l>
+<l n="631" xml:id="line-631">reluctance in time be compelled.</l>
+<l n="632" xml:id="line-632">Why then delay any longer? It's settled. For the future you'll take</l>
+<l n="633" xml:id="line-633">up our old occupation.</l>
+<l n="634" xml:id="line-634">Now in turn you're to hold tongue, as we did, and listen while we show</l>
+<l n="635" xml:id="line-635">the way to recover the nation.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="636" xml:id="line-636"><emph rend="ital">You</emph> talk to <emph rend="ital">us!</emph> Why, you're mad. I'll not stand it.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="637" xml:id="line-637">Cease babbling, you fool; till I end, hold your tongue.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="638" xml:id="line-638">If I should take orders from one who wears veils, may my</l>
+<l n="639" xml:id="line-639">neck straightaway be deservedly wrung.</l></sp>
+
+</div>
+
+<div type="textpart" n="532" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:531b-538">
+<milestone unit="card" n="531b" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:531b-538" xml:id="card-531b"/><milestone unit="pnigos" n="anapests"/>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="640" xml:id="line-640">O if that keeps pestering you,</l>
+<l n="641" xml:id="line-641">I've a veil here for your hair,</l>
+<l n="642" xml:id="line-642">I'll fit you out in everything</l>
+<l n="643" xml:id="line-643">As is only fair.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="644" xml:id="line-644">Here's a spindle that will do.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="645" xml:id="line-645">I'll add a wool-basket too.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="646" xml:id="line-646">Girdled now sit humbly at home,</l>
+<l n="647" xml:id="line-647">Munching beans, while you card wool and comb. For war from now on</l>
+<l n="648" xml:id="line-648">is the Women's affair.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="539" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:539-540">
+<milestone unit="card" n="539" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:539-540" xml:id="card-539"/><milestone unit="antiprelude" n="trochees"/>
+<sp><speaker>WOMEN.</speaker>
+
+
+<l n="649" xml:id="line-649">Come then, down pitchers, all,</l>
+<l n="650" xml:id="line-650">And on, courageous of heart,</l>
+<l n="651" xml:id="line-651">In our comradely venture</l>
+<l n="652" xml:id="line-652">Each taking her due part.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="541" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:541-547">
+<milestone unit="card" n="541" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:541-547" xml:id="card-541"/><milestone unit="antistrophe" n="1"/>
+
+<sp><speaker>WOMEN.</speaker>
+<l n="653" xml:id="line-653">I could dance, dance, dance, and be fresher after,</l>
+<l n="654" xml:id="line-654">I could dance away numberless suns,</l>
+<l n="655" xml:id="line-655">To no weariness let my knees bend.</l>
+<l n="656" xml:id="line-656">Earth I could brave with laughter,</l>
+<l n="657" xml:id="line-657">Having such wonderful girls here to friend.</l>
+<l n="658" xml:id="line-658">O the daring, the gracious, the beautiful ones!</l>
+<l n="659" xml:id="line-659">Their courage unswerving and witty</l>
+<l n="660" xml:id="line-660">Will rescue our city.</l>
+</sp>
+
+
+</div>
+
+<div type="textpart" n="549" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:549-550">
+<milestone unit="card" n="549" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:549-550" xml:id="card-549"/><milestone unit="antikatakeleusmenos" n="anapests"/>
+
+<sp><speaker>WOMEN.</speaker>
+<l n="661" xml:id="line-661">O sprung from the seed of most valiant-wombed grand-</l>
+<l n="662" xml:id="line-662">mothers, scions of savage and dangerous nettles!</l>
+<l n="663" xml:id="line-663">Prepare for the battle, all. Gird up your angers. Our way</l>
+<l n="664" xml:id="line-664">the wind of sweet victory settles.</l></sp>
+
+</div>
+
+<div type="textpart" n="551" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:551-597">
+<milestone unit="card" n="551" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:551-597" xml:id="card-551"/><milestone unit="antepirrheme" n="anapests"/>
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="665" xml:id="line-665">O tender Eros and Lady of <placeName key="tgn,1000112">Cyprus</placeName>, some flush of beauty I</l>
+<l n="666" xml:id="line-666">pray you devise</l>
+<l n="667" xml:id="line-667">To flash on our bosoms and, O Aphrodite, rosily gleam on</l>
+<l n="668" xml:id="line-668">our valorous thighs!</l>
+<l n="669" xml:id="line-669">Joy will raise up its head through the legions warring and</l>
+<l n="670" xml:id="line-670">all of the far-serried ranks of mad-love</l>
+<l n="671" xml:id="line-671">Bristle the earth to the pillared horizon, pointing in vain to</l>
+<l n="672" xml:id="line-672">the heavens above.</l>
+<l n="673" xml:id="line-673">I think that perhaps then they'll give us our title—</l>
+<l n="674" xml:id="line-674">Peace-makers.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l rend="indent" n="675" xml:id="line-675">What do you mean? Please explain.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l rend="indent" n="676" xml:id="line-676">First, we'll not see you now flourishing arms about into the</l>
+<l rend="indent" n="677" xml:id="line-677">Marketing-place clang again.</l>
+</sp>
+
+
+<sp><speaker>WOMEN</speaker>
+<l rend="indent" n="678" xml:id="line-678">No, by the Paphian.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="679" xml:id="line-679">Still I can conjure them as past were the herbs stand or crockery's sold</l>
+<l n="680" xml:id="line-680">Like Corybants jingling (poor sots) fully armoured, they noisily round</l>
+<l n="681" xml:id="line-681">on their promenade strolled.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="682" xml:id="line-682">And rightly; that's discipline, they—</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="683" xml:id="line-683">But what's sillier than to go on an errand of buying a fish</l>
+<l n="684" xml:id="line-684">Carrying along an immense. Gorgon-buckler instead the usual platter</l>
+<l n="685" xml:id="line-685">or dish?</l>
+<l n="686" xml:id="line-686">A phylarch I lately saw, mounted on horse-back, dressed for the part</l>
+<l n="687" xml:id="line-687">with long ringlets and all,</l>
+<l n="688" xml:id="line-688">Stow in his helmet the omelet bought steaming from an old woman who</l>
+<l n="689" xml:id="line-689">kept a food-stall.</l>
+<l n="690" xml:id="line-690">Nearby a soldier, a Thracian, was shaking wildly his spear like Tereus</l>
+<l n="691" xml:id="line-691">in the play,</l>
+<l n="692" xml:id="line-692">To frighten a fig-girl while unseen the ruffian filched from her</l>
+<l n="693" xml:id="line-693">fruit-trays the ripest away.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="694" xml:id="line-694">How, may I ask, will your rule re-establish order and justice in lands</l>
+<l n="695" xml:id="line-695">so tormented?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="696" xml:id="line-696">Nothing is easier.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="697" xml:id="line-697">Out with it speedily—what is this plan that you boast you've invented?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="698" xml:id="line-698">If, when yarn we are winding, It chances to tangle, then, as perchance you</l>
+<l n="699" xml:id="line-699">may know, through the skein</l>
+<l n="700" xml:id="line-700">This way and that still the spool we keep passing till it is finally clear</l>
+<l n="701" xml:id="line-701">all again:</l>
+<l n="702" xml:id="line-702">So to untangle the War and its errors, ambassadors out on all sides we will</l>
+<l n="703" xml:id="line-703">send</l>
+<l n="704" xml:id="line-704">This way and that, here, there and round about—soon you will find that the</l>
+<l n="705" xml:id="line-705">War has an end.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="706" xml:id="line-706">So with these trivial tricks of the household, domestic analogies of</l>
+<l n="707" xml:id="line-707">threads, skeins and spools,</l>
+<l n="708" xml:id="line-708">You think that you'll solve such a bitter complexity, unwind such political</l>
+<l n="709" xml:id="line-709">problems, you fools!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="710" xml:id="line-710">Well, first as we wash dirty wool so's to cleanse it, so with a pitiless</l>
+<l n="711" xml:id="line-711">zeal we will scrub</l>
+<l n="712" xml:id="line-712">Through the whole city for all greasy fellows; burrs too, the parasites,</l>
+<l n="713" xml:id="line-713">off we will rub.</l>
+<l n="714" xml:id="line-714">That verminous plague of insensate place-seekers soon between thumb and</l>
+<l n="715" xml:id="line-715">forefinger we'll crack.</l>
+<l n="716" xml:id="line-716">All who inside <placeName key="perseus,Athens">Athens</placeName>' walls have their dwelling into one great common</l>
+<l n="717" xml:id="line-717">basket we'll pack.</l>
+<l n="718" xml:id="line-718">Disenfranchised or citizens, allies or aliens, pell-mell the lot of them</l>
+<l n="719" xml:id="line-719">in we will squeeze.</l>
+<l n="720" xml:id="line-720">Till they discover humanity's meaning.... As for disjointed and far</l>
+<l n="721" xml:id="line-721">colonies,</l>
+<l n="722" xml:id="line-722">Them you must never from this time imagine as scattered about just like</l>
+<l n="723" xml:id="line-723">lost hanks of wool.</l>
+<l n="724" xml:id="line-724">Each portion we'll take and wind in to this centre, inward to <placeName key="perseus,Athens">Athens</placeName></l>
+<l n="725" xml:id="line-725">each loyalty pull,</l>
+<l n="726" xml:id="line-726">Till from the vast heap where all's piled together at last can be woven</l>
+<l n="727" xml:id="line-727">a strong Cloak of State.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="728" xml:id="line-728">How terrible is it to stand here and watch them carding and winding at</l>
+<l n="729" xml:id="line-729">will with our fate,</l>
+<l n="730" xml:id="line-730">Witless in war as they are.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="731" xml:id="line-731">What of us then, who ever in vain for our children must weep</l>
+<l n="732" xml:id="line-732">Borne but to perish afar and in vain?</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="733" xml:id="line-733">Not that, O let that one memory sleep!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="734" xml:id="line-734">Then while we should be companioned still merrily, happy as brides may,</l>
+<l n="735" xml:id="line-735">the livelong night,</l>
+<l n="736" xml:id="line-736">Kissing youth by, we are forced to lie single.... But leave for a moment</l>
+<l n="737" xml:id="line-737">our pitiful plight,</l>
+<l n="738" xml:id="line-738">It hurts even more to behold the poor maidens helpless wrinkling in</l>
+<l n="739" xml:id="line-739">staler virginity.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="740" xml:id="line-740">Does not a man age?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="741" xml:id="line-741">Not in the same way. Not as a woman grows withered, grows he.</l>
+<l n="742" xml:id="line-742">He, when returned from the war, though grey-headed, yet</l>
+<l n="743" xml:id="line-743">if he wishes can choose out a wife.</l>
+<l n="744" xml:id="line-744">But she has no solace save peering for omens, wretched and</l>
+<l n="745" xml:id="line-745">lonely the rest of her life.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="598" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:598-607">
+<milestone unit="card" n="598" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:598-607" xml:id="card-598"/><milestone unit="antipnigos" n="anapests"/>
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="746" xml:id="line-746">But the old man will often select—</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="747" xml:id="line-747">O why not finish and die?</l>
+<l n="748" xml:id="line-748">A bier is easy to buy,</l>
+<l n="749" xml:id="line-749">A honey-cake I'll knead you with joy,</l>
+<l n="750" xml:id="line-750">This garland will see you are decked.</l></sp>
+
+<sp><speaker>CALONICE</speaker>
+
+<l n="751" xml:id="line-751">I've a wreath for you too.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="752" xml:id="line-752">I also will fillet you.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="753" xml:id="line-753">What more is lacking? Step aboard the boat.</l>
+<l n="754" xml:id="line-754">See, Charon shouts ahoy.</l>
+<l n="755" xml:id="line-755">You're keeping him, he wants to shove afloat.</l></sp>
+
+</div>
+
+<div type="textpart" n="608" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:608-613">
+<milestone unit="card" n="608" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:608-613" xml:id="card-608"/><milestone unit="Episode"/>
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="756" xml:id="line-756">Outrageous insults! Thus my place to flout!</l>
+<l n="757" xml:id="line-757">Now to my fellow-magistrates I'll go</l>
+<l n="758" xml:id="line-758">And what you've perpetrated on me show.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="759" xml:id="line-759">Why are you blaming us for laying you out?</l>
+<l n="760" xml:id="line-760">Assure yourself we'll not forget to make</l>
+<l n="761" xml:id="line-761">The third day offering early for your sake.</l></sp>
+
+<stage>MAGISTRATE retires, LYSISTRATA returns within.</stage>
+
+
+</div>
+
+<div type="textpart" n="614" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:614-625">
+<milestone unit="card" n="614" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:614-625" xml:id="card-614"/><milestone unit="Choral"/>
+<milestone unit="trochees"/>
+<sp><speaker>OLD MEN.</speaker>
+
+
+<l n="762" xml:id="line-762">All men who call your loins your own, awake at last, arise</l>
+<l n="763" xml:id="line-763">And strip to stand in readiness. For as it seems to me</l>
+<l n="764" xml:id="line-764">Some more perilous offensive in their heads they now devise.</l>
+</sp>
+
+<milestone unit="strophe" n="1"/>
+<sp><speaker>OLD MEN.</speaker>
+<l n="765" xml:id="line-765">I'm sure a Tyranny</l>
+<l n="766" xml:id="line-766">Like that of Hippias</l>
+<l n="767" xml:id="line-767">In this I detect....</l>
+<l n="768" xml:id="line-768">They mean to put us under</l>
+<l n="769" xml:id="line-769">Themselves I suspect,</l>
+<l n="770" xml:id="line-770">And that Laconians assembling</l>
+<l n="771" xml:id="line-771">At Cleisthenes' house have played</l>
+<l n="772" xml:id="line-772">A trick-of-war and provoked them</l>
+<l n="773" xml:id="line-773">Madly to raid</l>
+<l n="774" xml:id="line-774">The Treasury, in which term I include</l>
+<l n="775" xml:id="line-775">The Pay for my food.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="626" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:626-635">
+<milestone unit="card" n="626" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:626-635" xml:id="card-626"/><milestone unit="trochees"/>
+
+<sp><speaker>OLD MEN.</speaker>
+<l n="776" xml:id="line-776">For is it not preposterous</l>
+<l n="777" xml:id="line-777">They should talk this way to us</l>
+<l n="778" xml:id="line-778">On a subject such as battle!</l>
+
+
+<l n="779" xml:id="line-779">And, women as they are, about bronze bucklers dare prattle—</l>
+<l n="780" xml:id="line-780">Make alliance with the Spartans—people I for one</l>
+<l n="781" xml:id="line-781">Like very hungry wolves would always most sincere shun....</l>
+<l n="782" xml:id="line-782">Some dirty game is up their sleeve,</l>
+<l n="783" xml:id="line-783">I believe.</l>
+<l n="784" xml:id="line-784">A Tyranny, no doubt... but they won't catch me, that know.</l>
+<l n="785" xml:id="line-785">Henceforth on my guard I'll go,</l>
+<l n="786" xml:id="line-786">A sword with myrtle-branches wreathed for ever in my hand,</l>
+<l n="787" xml:id="line-787">And under arms in the Public Place I'll take my watchful stand,</l>
+<l n="788" xml:id="line-788">Shoulder to shoulder with Aristogeiton. Now my staff I'll draw</l>
+<l n="789" xml:id="line-789">And start at once by knocking</l>
+<l n="790" xml:id="line-790">that shocking</l>
+<l n="791" xml:id="line-791">Hag upon the jaw.</l></sp>
+
+</div>
+
+<div type="textpart" n="636" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:636-647">
+<milestone unit="card" n="636" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:636-647" xml:id="card-636"/><milestone unit="antistrophe" n="1"/>
+<sp><speaker>WOMEN.</speaker>
+
+    
+<l n="792" xml:id="line-792">Your own mother will not know you when you get back to the town.</l>
+<l n="793" xml:id="line-793">But first, my friends and allies, let us lay these garments down,</l>
+<l n="794" xml:id="line-794">And all ye fellow-citizens, hark to me while I tell</l>
+<l n="795" xml:id="line-795">What will aid <placeName key="perseus,Athens">Athens</placeName> well.</l>
+<l n="796" xml:id="line-796">Just as is right, for I</l>
+<l n="797" xml:id="line-797">Have been a sharer</l>
+<l n="798" xml:id="line-798">In all the lavish splendour</l>
+<l n="799" xml:id="line-799">Of the proud city.</l>
+<l n="800" xml:id="line-800">I bore the holy vessels</l>
+<l n="801" xml:id="line-801">At seven, then</l>
+<l n="802" xml:id="line-802">I pounded barley</l>
+<l n="803" xml:id="line-803">At the age of ten,</l>
+<l n="804" xml:id="line-804">And clad in yellow robes,</l>
+<l n="805" xml:id="line-805">Soon after this,</l>
+<l n="806" xml:id="line-806">I was Little Bear to</l>
+<l n="807" xml:id="line-807">Brauronian Artemis;</l>
+<l n="808" xml:id="line-808">Then neckletted with figs,</l>
+<l n="809" xml:id="line-809">Grown tall and pretty,</l>
+<l n="810" xml:id="line-810">I was a Basket-bearer,</l>
+<l n="811" xml:id="line-811">And so it's obvious I should</l>
+<l n="812" xml:id="line-812">Give you advice that I think good,</l>
+<l n="813" xml:id="line-813">The very best I can.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="648" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:648-657">
+<milestone unit="card" n="648" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:648-657" xml:id="card-648"/><milestone unit="trochees"/>
+<sp><speaker>WOMEN.</speaker>
+<l n="814" xml:id="line-814">It should not prejudice my voice that I'm not born a man,</l>
+<l n="815" xml:id="line-815">If I say something advantageous to the present situation.</l>
+<l n="816" xml:id="line-816">For I'm taxed too, and as a toll provide men for the nation</l>
+<l n="817" xml:id="line-817">While, miserable greybeards, you,</l>
+<l n="818" xml:id="line-818">It is true,</l>
+<l n="819" xml:id="line-819">Contribute nothing of any importance whatever to our needs;</l>
+<l n="820" xml:id="line-820">But the treasure raised against the Medes</l>
+<l n="821" xml:id="line-821">You've squandered, and do nothing in return, save that you make</l>
+<l n="822" xml:id="line-822">Our lives and persons hazardous by some imbecile mistakes</l>
+<l n="823" xml:id="line-823">What can you answer? Now be careful, don't arouse my spite,</l>
+<l n="824" xml:id="line-824">Or with my slipper I'll take you napping,</l>
+<l n="825" xml:id="line-825">faces slapping</l>
+<l n="826" xml:id="line-826">Left and right.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="658" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:658-670">
+<milestone unit="card" n="658" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:658-670" xml:id="card-658"/><milestone unit="strophe" n="2"/>
+<sp><speaker>MEN.</speaker>
+
+
+<l n="827" xml:id="line-827">What villainies they contrive!</l>
+<l n="828" xml:id="line-828">Come, let vengeance fall,</l>
+<l n="829" xml:id="line-829">You that below the waist are still alive,</l>
+<l n="830" xml:id="line-830">Off with your tunics at my call—</l>
+<l n="831" xml:id="line-831">Naked, all.</l>
+<l n="832" xml:id="line-832">For a man must strip to battle like a man.</l>
+<l n="833" xml:id="line-833">No quaking, brave steps taking, careless what's ahead, white shoed,</l>
+<l n="834" xml:id="line-834">in the nude, onward bold,</l>
+<l n="835" xml:id="line-835">All ye who garrisoned Leipsidrion of old....</l>
+<l n="836" xml:id="line-836">Let each one wag</l>
+<l n="837" xml:id="line-837">As youthfully as he can,</l>
+<l n="838" xml:id="line-838">And if he has the cause at heart</l>
+<l n="839" xml:id="line-839">Rise at least a span.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="672" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:672-681">
+<milestone unit="card" n="672" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:672-681" xml:id="card-672"/><milestone unit="trochees"/>
+
+<sp><speaker>MEN.</speaker>
+<l n="840" xml:id="line-840">We must take a stand and keep to it,</l>
+<l n="841" xml:id="line-841">For if we yield the smallest bit</l>
+<l n="842" xml:id="line-842">To their importunity.</l>
+<l n="843" xml:id="line-843">Then nowhere from their inroads will be left to us immunity.</l>
+<l n="844" xml:id="line-844">But they'll be building ships and soon their navies will attack us,</l>
+<l n="845" xml:id="line-845">As Artemisia did, and seek to fight us and to sack us.</l>
+<l n="846" xml:id="line-846">And if they mount, the Knights they'll rob</l>
+<l n="847" xml:id="line-847">Of a job,</l>
+<l n="848" xml:id="line-848">For everyone knows how talented they all are in the saddle,</l>
+<l n="849" xml:id="line-849">Having long practised how to straddle;</l>
+<l n="850" xml:id="line-850">No matter how they're jogged there up and down, they're never thrown.</l>
+<l n="851" xml:id="line-851">Then think of Myron's painting, and each horse-backed Amazon</l>
+<l n="852" xml:id="line-852">In combat hand-to-hand with men.... Come, on these women fall,</l>
+<l n="853" xml:id="line-853">And in pierced wood-collars let's stick</l>
+<l n="854" xml:id="line-854">quick</l>
+<l n="855" xml:id="line-855">The necks of one and all.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="683" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:683-695">
+<milestone unit="card" n="683" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:683-695" xml:id="card-683"/><milestone unit="antistrophe" n="2"/>
+<sp><speaker>WOMEN.</speaker>
+
+
+<l n="856" xml:id="line-856">Don't cross me or I'll loose</l>
+<l n="857" xml:id="line-857">The Beast that's kennelled here....</l>
+<l n="858" xml:id="line-858">And soon you will be howling for a truce,</l>
+<l n="859" xml:id="line-859">Howling out with fear.</l>
+<l n="860" xml:id="line-860">But my dear,</l>
+<l n="861" xml:id="line-861">Strip also, that women may battle unhindered....</l>
+<l n="862" xml:id="line-862">But you, you'll be too sore to eat garlic more, or one black bean,</l>
+<l n="863" xml:id="line-863">I really mean, so great's my spleen, to kick you black and blue</l>
+<l n="864" xml:id="line-864">With these my dangerous legs.</l>
+<l n="865" xml:id="line-865">I'll hatch the lot of you,</l>
+<l n="866" xml:id="line-866">If my rage you dash on,</l>
+<l n="867" xml:id="line-867">The way the relentless Beetle</l>
+<l n="868" xml:id="line-868">Hatched the Eagle's eggs.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="696" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:696-705">
+<milestone unit="card" n="696" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:696-705" xml:id="card-696"/><milestone unit="trochees"/>
+<sp><speaker>WOMEN.</speaker>
+
+<l n="869" xml:id="line-869">Scornfully aside I set</l>
+<l n="870" xml:id="line-870">Every silly old-man threat</l>
+<l n="871" xml:id="line-871">While Lampito's with me.</l>
+<l n="872" xml:id="line-872">Or dear Ismenia, the noble Theban girl. Then let decree</l>
+<l n="873" xml:id="line-873">Be hotly piled upon decree; in vain will be your labours,</l>
+<l n="874" xml:id="line-874">You futile rogue abominated by your suffering neighbour</l>
+<l n="875" xml:id="line-875">To Hecate's feast I yesterday went-</l>
+<l n="876" xml:id="line-876">Off I sent</l>
+<l n="877" xml:id="line-877">To our neighbours in <placeName key="tgn,7002683">Boeotia</placeName>, asking as a gift to me</l>
+<l n="878" xml:id="line-878">For them to pack immediately</l>
+<l n="879" xml:id="line-879">That darling dainty thing ... a good fat eel<note><foreign xml:lang="lat">Vide supra</foreign>, p. 23.</note> I meant of course;</l>
+
+
+<l n="880" xml:id="line-880">But they refused because some idiotic old decree's in force.</l>
+<l n="881" xml:id="line-881">O this strange passion for decrees nothing on earth can check,</l>
+<l n="882" xml:id="line-882">Till someone puts a foot out tripping you,</l>
+<l n="883" xml:id="line-883">and slipping you</l>
+<l n="884" xml:id="line-884">Break your neck.</l></sp>
+
+</div>
+
+<div type="textpart" n="706" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:706-748">
+<milestone unit="card" n="706" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:706-748" xml:id="card-706"/><milestone unit="Episode"/>
+<stage>LYSISTRATA enters in dismay.</stage>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="885" xml:id="line-885">Dear Mistress of our martial enterprise,</l>
+<l n="886" xml:id="line-886">Why do you come with sorrow in your eyes?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="887" xml:id="line-887">O 'tis our naughty femininity,</l>
+<l n="888" xml:id="line-888">So weak in one spot, that hath saddened me.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="889" xml:id="line-889">What's this? Please speak.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="890" xml:id="line-890">Poor women, O so weak!</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="891" xml:id="line-891">What can it be? Surely your friends may know.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="892" xml:id="line-892">Yea, I must speak it though it hurt me so.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="893" xml:id="line-893">Speak; can we help? Don't stand there mute in need.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="894" xml:id="line-894">I'll blurt it out then—our women's army's mutinied.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="895" xml:id="line-895">O Zeus!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="896" xml:id="line-896">What use is Zeus to our anatomy?</l>
+<l n="897" xml:id="line-897">Here is the gaping calamity I meant:</l>
+<l n="898" xml:id="line-898">I cannot shut their ravenous appetites</l>
+<l n="899" xml:id="line-899">A moment more now. They are all deserting.</l>
+<l n="900" xml:id="line-900">The first I caught was sidling through the postern</l>
+<l n="901" xml:id="line-901">Close by the Cave of Pan: the next hoisting herself</l>
+<l n="902" xml:id="line-902">With rope and pulley down: a third on the point</l>
+<l n="903" xml:id="line-903">Of slipping past: while a fourth malcontent, seated</l>
+<l n="904" xml:id="line-904">For instant flight to visit Orsilochus</l>
+<l n="905" xml:id="line-905">On bird-back, I dragged off by the hair in time....</l>
+<l n="906" xml:id="line-906">They are all snatching excuses to sneak home.</l>
+<l n="907" xml:id="line-907">Look, there goes one.... Hey, what's the hurry?</l></sp>
+
+<sp><speaker>1ST WOMAN</speaker>
+
+
+<l n="908" xml:id="line-908">I must get home. I've some Milesian wool</l>
+<l n="909" xml:id="line-909">Packed wasting away, and moths are pushing through it.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="910" xml:id="line-910">Fine moths indeed, I know. Get back within.</l></sp>
+
+<sp><speaker>1ST WOMAN</speaker>
+
+
+<l n="911" xml:id="line-911">By the Goddesses, I'll return instantly.</l>
+<l n="912" xml:id="line-912">I only want to stretch it on my bed.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="913" xml:id="line-913">You shall stretch nothing and go nowhere either.</l></sp>
+
+<sp><speaker>1ST WOMAN</speaker>
+
+<l n="914" xml:id="line-914">Must I never use my wool then?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="915" xml:id="line-915">If needs be.</l></sp>
+
+<sp><speaker>2ND WOMAN</speaker>
+
+
+<l n="916" xml:id="line-916">How unfortunate I am! O my poor flax!</l>
+<l n="917" xml:id="line-917">It's left at home unstript.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="918" xml:id="line-918">So here's another</l>
+<l n="919" xml:id="line-919">That wishes to go home and strip her flax.</l>
+<l n="920" xml:id="line-920">Inside again!</l></sp>
+
+<sp><speaker>2ND WOMAN</speaker>
+
+
+<l n="921" xml:id="line-921">No, by the Goddess of Light,</l>
+<l n="922" xml:id="line-922">I'll be back as soon as I have flayed it properly.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="923" xml:id="line-923">You'll not flay anything. For if you begin</l>
+<l n="924" xml:id="line-924">There'll not be one here but has a patch to be flayed.</l></sp>
+
+<sp><speaker>3RD WOMAN</speaker>
+
+
+<l n="925" xml:id="line-925">O holy Eilithyia, stay this birth</l>
+<l n="926" xml:id="line-926">Till I have left the precincts of the place!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="927" xml:id="line-927">What nonsense is this?</l></sp>
+
+<sp><speaker>3RD WOMAN</speaker>
+
+<l n="928" xml:id="line-928">I'll drop it any minute.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="929" xml:id="line-929">Yesterday you weren't with child.</l></sp>
+
+<sp><speaker>3RD WOMAN</speaker>
+
+
+<l n="930" xml:id="line-930">But I am today.</l>
+<l n="931" xml:id="line-931">O let me find a midwife, Lysistrata.</l>
+<l n="932" xml:id="line-932">O quickly!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="933" xml:id="line-933">Now what story is this you tell?</l>
+<l n="934" xml:id="line-934">What is this hard lump here?</l></sp>
+
+<sp><speaker>3RD WOMAN</speaker>
+
+<l n="935" xml:id="line-935">It's a male child.</l></sp>
+</div>
+
+<div type="textpart" n="749" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:749-780">
+<milestone unit="card" n="749" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:749-780" xml:id="card-749"/><sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="936" xml:id="line-936">By Aphrodite, it isn't. Your belly's hollow,</l>
+<l n="937" xml:id="line-937">And it has the feel of metal.... Well, I soon can see.</l>
+<l n="938" xml:id="line-938">You hussy, it's Athene's sacred helm,</l>
+<l n="939" xml:id="line-939">And you said you were with child.</l></sp>
+
+<sp><speaker>3RD WOMAN</speaker>
+
+<l n="940" xml:id="line-940">And so I am.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="941" xml:id="line-941">Then why the helm?</l></sp>
+
+<sp><speaker>3RD WOMAN</speaker>
+
+
+<l n="942" xml:id="line-942">So if the throes should take me</l>
+<l n="943" xml:id="line-943">Still in these grounds I could use it like a dove</l>
+<l n="944" xml:id="line-944">As a laying-nest in which to drop the child.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="945" xml:id="line-945">More pretexts! You can't hide your clear intent,</l>
+<l n="946" xml:id="line-946">And anyway why not wait till the tenth day</l>
+<l n="947" xml:id="line-947">Meditating a brazen name for your brass brat?</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+
+<l n="948" xml:id="line-948">And I can't sleep a wink. My nerve is gone</l>
+<l n="949" xml:id="line-949">Since I saw that snake-sentinel of the shrine.</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+
+<l n="950" xml:id="line-950">And all those dreadful owls with their weird hooting!</l>
+<l n="951" xml:id="line-951">Though I'm wearied out, I can't close an eye.</l>
+</sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="952" xml:id="line-952">You wicked women, cease from juggling lies.</l>
+<l n="953" xml:id="line-953">You want your men. But what of them as well?</l>
+<l n="954" xml:id="line-954">They toss as sleepless in the lonely night,</l>
+<l n="955" xml:id="line-955">I'm sure of it. Hold out awhile, hold out,</l>
+<l n="956" xml:id="line-956">But persevere a teeny-weeny longer.</l>
+<l n="957" xml:id="line-957">An oracle has promised Victory</l>
+<l n="958" xml:id="line-958">If we don't wrangle. Would you hear the words?</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="959" xml:id="line-959">Yes, yes, what is it?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+    <l n="960" xml:id="line-960">Silence then, you chatterboxes.</l>
+<l n="961" xml:id="line-961">Here—</l> <l rend="ital" n="962" xml:id="line-962">Whenas the swallows flocking in one place from the hoopoes</l>
+<l rend="ital" n="963" xml:id="line-963">Deny themselves love's gambols any more,</l>
+<l rend="ital" n="964" xml:id="line-964">All woes shall then have ending and great Zeus the Thunderer</l>
+<l rend="ital" n="965" xml:id="line-965">Shall put above what was below before.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+    <l n="966" xml:id="line-966">Will the men then always be kept under us?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+	
+    <l rend="ital" n="967" xml:id="line-967">But if the swallows squabble among themselves and fly away</l>
+<l rend="ital" n="968" xml:id="line-968">Out of the temple, refusing to agree,</l>
+<l rend="ital" n="969" xml:id="line-969">Then The Most Wanton Birds in all the World</l>
+<l rend="ital" n="970" xml:id="line-970">They shall be named for ever. That's his decree.</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+    <l n="971" xml:id="line-971">It's obvious what it means.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="972" xml:id="line-972">Now by all the gods</l>
+<l n="973" xml:id="line-973">We must let no agony deter from duty,</l>
+<l n="974" xml:id="line-974">Back to your quarters. For we are base indeed,</l>
+<l n="975" xml:id="line-975">My friends, if we betray the oracle.</l></sp>
+
+<stage>She goes out.</stage>
+
+</div>
+
+<div type="textpart" n="781" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:781-804">
+<milestone unit="card" n="781" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:781-804" xml:id="card-781"/><milestone unit="Lyric-Scene"/>
+<milestone unit="strophe" n="1"/>
+<sp><speaker> OLD MEN.</speaker>
+
+
+<l n="976" xml:id="line-976">I'd like to remind you of a fable they used to employ,</l>
+<l n="977" xml:id="line-977">When I was a little boy:</l>
+<l n="978" xml:id="line-978">How once through fear of the marriage-bed a young man,</l>
+<l n="979" xml:id="line-979">Melanion by name, to the wilderness ran,</l>
+<l n="980" xml:id="line-980">And there on the hills he dwelt.</l>
+<l n="981" xml:id="line-981">For hares he wove a net</l>
+<l n="982" xml:id="line-982">Which with his dog he set—</l>
+<l n="983" xml:id="line-983">Most likely he's there yet.</l>
+<l n="984" xml:id="line-984">For he never came back home, so great was the fear he felt.</l>
+<l n="985" xml:id="line-985">I loathe the sex as much as he,</l>
+<l n="986" xml:id="line-986">And therefore I no less shall be</l>
+<l n="987" xml:id="line-987">As chaste as was Melanion.</l></sp>
+
+<sp><speaker>MAN</speaker>
+
+<l n="988" xml:id="line-988">Grann'am, do you much mind men?</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+<l n="989" xml:id="line-989">Onions you won't need, to cry.</l></sp>
+
+<sp><speaker>MAN</speaker>
+
+<l n="990" xml:id="line-990">From my foot you shan't escape.</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+<l n="991" xml:id="line-991">What thick forests I espy.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="992" xml:id="line-992">So much Myronides' fierce beard</l>
+<l n="993" xml:id="line-993">And thundering black back were feared,</l>
+<l n="994" xml:id="line-994">That the foe fled when they were shown—</l>
+<l n="995" xml:id="line-995">Brave he as Phormion.</l></sp>
+
+</div>
+
+<div type="textpart" n="805" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:805-828">
+<milestone unit="card" n="805" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:805-828" xml:id="card-805"/><milestone unit="antistrophe" n="2"/>
+<sp><speaker>WOMEN.</speaker>
+
+
+<l n="996" xml:id="line-996">Well, I'll relate a rival fable just to show to you</l>
+<l n="997" xml:id="line-997">A different point of view:</l>
+<l n="998" xml:id="line-998">There was a rough-hewn fellow, Timon, with a face</l>
+<l n="999" xml:id="line-999">That glowered as through a thorn-bush in a wild, bleak place.</l>
+<l n="1000" xml:id="line-1000">He too decided on flight,</l>
+<l n="1001" xml:id="line-1001">This very Furies' son,</l>
+<l n="1002" xml:id="line-1002">All the world's ways to shun</l>
+<l n="1003" xml:id="line-1003">And hide from everyone,</l>
+<l n="1004" xml:id="line-1004">Spitting out curses on all knavish men to left and right.</l>
+<l n="1005" xml:id="line-1005">But though he reared this hate for men,</l>
+<l n="1006" xml:id="line-1006">He loved the women even then,</l>
+<l n="1007" xml:id="line-1007">And never thought them enemies.</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+<l n="1008" xml:id="line-1008">O your jaw I'd like to break.</l></sp>
+
+<sp><speaker>MAN</speaker>
+
+<l n="1009" xml:id="line-1009">That I fear do you suppose?</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+<l n="1010" xml:id="line-1010">Learn what kicks my legs can make.</l></sp>
+
+<sp><speaker>MAN</speaker>
+
+    <l n="1011" xml:id="line-1011">Raise them up, and you'll expose—</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+
+<l n="1012" xml:id="line-1012">Nay, you'll see there, I engage,</l>
+<l n="1013" xml:id="line-1013">All is well kept despite my age,</l>
+<l n="1014" xml:id="line-1014">And tended smooth enough to slip</l>
+<l n="1015" xml:id="line-1015">From any adversary's grip.</l></sp>
+
+</div>
+
+<div type="textpart" n="829" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:829-869">
+<milestone unit="card" n="829" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:829-869" xml:id="card-829"/><stage>LYSISTRATA appears.</stage>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1016" xml:id="line-1016">Hollo there, hasten hither to me</l>
+<l n="1017" xml:id="line-1017">Skip fast along.</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+<l n="1018" xml:id="line-1018">What is this? Why the noise?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1019" xml:id="line-1019">A man, a man! I spy a frenzied man!</l>
+<l n="1020" xml:id="line-1020">He carries Love upon him like a staff.</l>
+<l n="1021" xml:id="line-1021">O Lady of <placeName key="tgn,1000112">Cyprus</placeName>, and <placeName key="tgn,7010869">Cythera</placeName>, and <placeName key="tgn,7002373">Paphos</placeName>,</l>
+<l n="1022" xml:id="line-1022">I beseech you, keep our minds and hands to the oath.</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+<l n="1023" xml:id="line-1023">Where is he, whoever he is?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1024" xml:id="line-1024">By the Temple of Chloe.</l></sp>
+
+<sp><speaker>WOMAN</speaker>
+
+<l n="1025" xml:id="line-1025">Yes, now I see him. but who can he be?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1026" xml:id="line-1026">Look at him. Does anyone recognise his face?</l>
+</sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1027" xml:id="line-1027">I do. He is my husband, Cinesias.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1028" xml:id="line-1028">You know how to work. Play with him, lead him on,</l>
+<l n="1029" xml:id="line-1029">Seduce him to the cozening-point—kiss him, kiss him,</l>
+<l n="1030" xml:id="line-1030">Then slip your mouth aside just as he's sure of it,</l>
+<l n="1031" xml:id="line-1031">Ungirdle every caress his mouth feels at</l>
+<l n="1032" xml:id="line-1032">Save that the oath upon the bowl has locked.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1033" xml:id="line-1033">You can rely on me.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1034" xml:id="line-1034">I'll stay here to help</l>
+<l n="1035" xml:id="line-1035">In working up his ardor to its height</l>
+<l n="1036" xml:id="line-1036">Of vain magnificence.... The rest to their quarters.</l>
+
+<stage>Enter CINESIAS.</stage>
+
+<l n="1037" xml:id="line-1037">Who is this that stands within our lines?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+    <l n="1038" xml:id="line-1038">I.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1039" xml:id="line-1039">A man?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1040" xml:id="line-1040">Too much a man!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1041" xml:id="line-1041">Then be off at once.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1042" xml:id="line-1042">Who are you that thus eject me?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1043" xml:id="line-1043">Guard for the day.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1044" xml:id="line-1044">By all the gods, then call Myrrhine hither.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1045" xml:id="line-1045">So, call Myrrhine hither! Who are you?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1046" xml:id="line-1046">I am her husband Cinesias, son of Anthros.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1047" xml:id="line-1047">Welcome, dear friend! That glorious name of yours</l>
+<l n="1048" xml:id="line-1048">Is quite familiar in our ranks. Your wife</l>
+<l n="1049" xml:id="line-1049">Continually has it in her mouth.</l>
+<l n="1050" xml:id="line-1050">She cannot touch an apple or an egg</l>
+<l n="1051" xml:id="line-1051">But she must say, “This to Cinesias!”</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1052" xml:id="line-1052">O is that true?</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1053" xml:id="line-1053">By Aphrodite, it is.</l>
+<l n="1054" xml:id="line-1054">If the conversation strikes on men, your wife</l>
+<l n="1055" xml:id="line-1055">Cuts in with, “All are boobies by Cinesias.”</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1056" xml:id="line-1056">Then call her here.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1057" xml:id="line-1057">And what am I to get?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1058" xml:id="line-1058">This, if you want it.... See, what I have here.</l>
+<l n="1059" xml:id="line-1059">But not to take away.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1060" xml:id="line-1060">Then I'll call her.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1061" xml:id="line-1061">Be quick, be quick. All grace is wiped from life</l>
+<l n="1062" xml:id="line-1062">Since she went away. O sad, sad am I</l>
+<l n="1063" xml:id="line-1063">When there I enter on that loneliness,</l>
+<l n="1064" xml:id="line-1064">And wine is unvintaged of the sun's flavour.</l>
+<l n="1065" xml:id="line-1065">And food is tasteless. But I've put on weight.</l></sp>
+
+</div>
+
+<div type="textpart" n="870" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:870-914">
+
+
+
+<milestone unit="card" n="870" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:870-914" xml:id="card-870"/><sp><speaker>MYRRHINE</speaker> <stage>(above)</stage>
+<l n="1066" xml:id="line-1066">I love him O so much! but he won't have it.</l>
+<l n="1067" xml:id="line-1067">Don't call me down to him.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1068" xml:id="line-1068">Sweet little Myrrhine!</l>
+<l n="1069" xml:id="line-1069">What do you mean? Come here.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="1070" xml:id="line-1070">O no I won't.</l>
+<l n="1071" xml:id="line-1071">Why are you calling me? You don't want me.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1072" xml:id="line-1072">Not want you! with this week-old strength of love.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1073" xml:id="line-1073">Farewell.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1074" xml:id="line-1074">Don't go, please don't go, Myrrhine.</l>
+<l n="1075" xml:id="line-1075">At least you'll hear our child. Call your mother, lad.</l></sp>
+
+<sp><speaker>CHILD</speaker>
+
+<l n="1076" xml:id="line-1076">Mummy ... mummy ... mummy!</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1077" xml:id="line-1077">There now, don't you feel pity for the child?</l>
+<l n="1078" xml:id="line-1078">He's not been fed or washed now for six days.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1079" xml:id="line-1079">I certainly pity him with so heartless a father.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1080" xml:id="line-1080">Come down, my sweetest, come for the child's sake.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1081" xml:id="line-1081">A trying life it is to be a mother!</l>
+<l n="1082" xml:id="line-1082">I suppose I'd better go.</l></sp>
+<stage>She comes down.</stage>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1083" xml:id="line-1083">How much younger she looks,</l>
+<l n="1084" xml:id="line-1084">How fresher and how prettier! Myrrhine,</l>
+<l n="1085" xml:id="line-1085">Lift up your lovely face, your disdainful face;</l>
+<l n="1086" xml:id="line-1086">And your ankle ... let your scorn step out its worst;</l>
+<l n="1087" xml:id="line-1087">It only rubs me to more ardor here.</l>
+
+<p>MYRRHINE <stage>(playing with the child)</stage></p>
+
+
+<l n="1088" xml:id="line-1088">You're as innocent as he's iniquitous.</l>
+<l n="1089" xml:id="line-1089">Let me kiss you, honey-petling, mother's darling.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1090" xml:id="line-1090">How wrong to follow other women's counsel</l>
+<l n="1091" xml:id="line-1091">And let loose all these throbbing voids in yourself</l>
+<l n="1092" xml:id="line-1092">As well as in me. Don't you go throb-throb?</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1093" xml:id="line-1093">Take away your hands.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1094" xml:id="line-1094">Everything in the house</l>
+<l n="1095" xml:id="line-1095">Is being ruined.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1096" xml:id="line-1096">I don't care at all.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1097" xml:id="line-1097">The roosters are picking all your web to rags.</l>
+<l n="1098" xml:id="line-1098">Do you mind that?</l>
+</sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1099" xml:id="line-1099">Not I.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1100" xml:id="line-1100">What time we've wasted</l>
+<l n="1101" xml:id="line-1101">We might have drenched with Paphian laughter, flung</l>
+<l n="1102" xml:id="line-1102">On Aphrodite's Mysteries. O come here.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1103" xml:id="line-1103">Not till a treaty finishes the war.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1104" xml:id="line-1104">If you must have it, then we'll get it done.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1105" xml:id="line-1105">Do it and I'll come home. Till then I am bound.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1106" xml:id="line-1106">Well, can't your oath perhaps be got around?</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1107" xml:id="line-1107">No ... no ... still I'll not say that I don't love you.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1108" xml:id="line-1108">You love me! Then dear girl, let me also love you.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1109" xml:id="line-1109">You must be joking. The boy's looking on.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1110" xml:id="line-1110">Here, Manes, take the child home!... There, he's gone.</l>
+<l n="1111" xml:id="line-1111">There's nothing in the way now. Come to the point.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1112" xml:id="line-1112">Here in the open! In plain sight?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1113" xml:id="line-1113">In Pan's cave.</l>
+<l n="1114" xml:id="line-1114">A splendid place.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="1115" xml:id="line-1115">Where shall I dress my hair again</l>
+<l n="1116" xml:id="line-1116">Before returning to the citadel?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1117" xml:id="line-1117">You can easily primp yourself in the Clepsydra.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1118" xml:id="line-1118">But how can I break my oath?</l></sp>
+
+</div>
+
+<div type="textpart" n="915" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:915-953">
+<milestone unit="card" n="915" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:915-953" xml:id="card-915"/><sp><speaker>CINESIAS</speaker>
+
+
+<l n="1119" xml:id="line-1119">Leave that to me,</l>
+<l n="1120" xml:id="line-1120">I'll take all risk.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1121" xml:id="line-1121">Well, I'll make you comfortable.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1122" xml:id="line-1122">Don't worry. I'd as soon lie on the grass.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1123" xml:id="line-1123">No, by Apollo, in spite of all your faults</l>
+<l n="1124" xml:id="line-1124">I won't have you lying on the nasty earth.</l></sp>
+
+<stage>(From here MYRRHINE keeps on going off to fetch things.)</stage>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1125" xml:id="line-1125">Ah, how she loves me.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="1126" xml:id="line-1126">Rest there on the bench,</l>
+<l n="1127" xml:id="line-1127">While I arrange my clothes. O what a nuisance,</l>
+<l n="1128" xml:id="line-1128">I must find some cushions first.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1129" xml:id="line-1129">Why some cushions?</l>
+<l n="1130" xml:id="line-1130">Please don't get them!</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="1131" xml:id="line-1131">What? The plain, hard wood?</l>
+<l n="1132" xml:id="line-1132">Never, by Artemis! That would be too vulgar.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1133" xml:id="line-1133">Open your arms!</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1134" xml:id="line-1134">No. Wait a second.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1135" xml:id="line-1135">O....</l>
+<l n="1136" xml:id="line-1136">Then hurry back again.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="1137" xml:id="line-1137">Here the cushions are.</l>
+<l n="1138" xml:id="line-1138">Lie down while I—O dear! But what a shame,</l>
+<l n="1139" xml:id="line-1139">You need more pillows.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1140" xml:id="line-1140">I don't want them, dear.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1141" xml:id="line-1141">But I do.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1142" xml:id="line-1142">Thwarted affection mine,</l>
+<l n="1143" xml:id="line-1143">They treat you just like Heracles at a feast</l>
+<l n="1144" xml:id="line-1144">With cheats of dainties, O disappointing arms!</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1145" xml:id="line-1145">Raise up your head.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1146" xml:id="line-1146">There, that's everything at last.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1147" xml:id="line-1147">Yes, all.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1148" xml:id="line-1148">Then run to my arms, you golden girl.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="1149" xml:id="line-1149">I'm loosening my girdle now. But you've not forgotten?</l>
+<l n="1150" xml:id="line-1150">You're not deceiving me about the Treaty?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1151" xml:id="line-1151">No, by my life, I'm not.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1152" xml:id="line-1152">Why, you've no blanket.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1153" xml:id="line-1153">It's not the silly blanket's warmth but yours I want.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1154" xml:id="line-1154">Never mind. You'll soon have both. I'll come straight back.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1155" xml:id="line-1155">The woman will choke me with her coverlets.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1156" xml:id="line-1156">Get up a moment.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1157" xml:id="line-1157">I'm up high enough.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1158" xml:id="line-1158">Would you like me to perfume you?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1159" xml:id="line-1159">By Apollo, no!</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1160" xml:id="line-1160">By Aphrodite, I'll do it anyway.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1161" xml:id="line-1161">Lord Zeus, may she soon use up all the myrrh.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1162" xml:id="line-1162">Stretch out your hand. Take it and rub it in.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1163" xml:id="line-1163">Hmm, it's not as fragrant as might be; that is,</l>
+<l n="1164" xml:id="line-1164">Not before it's smeared. It doesn't smell of kisses.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1165" xml:id="line-1165">How silly I am: I've brought you Rhodian scents.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1166" xml:id="line-1166">It's good enough, leave it, love.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1167" xml:id="line-1167">You must be jesting.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1168" xml:id="line-1168">Plague rack the man who first compounded scent!</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+<l n="1169" xml:id="line-1169">Here, take this flask.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+
+<l n="1170" xml:id="line-1170">I've a far better one.</l>
+<l n="1171" xml:id="line-1171">Don't tease me, come here, and get nothing more.</l></sp>
+
+<sp><speaker>MYRRHINE</speaker>
+
+
+<l n="1172" xml:id="line-1172">I'm coming.... I'm just drawing off my shoes....</l>
+<l n="1173" xml:id="line-1173">You're sure you will vote for Peace?</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+    <l n="1174" xml:id="line-1174">I'll think about it.</l>
+    <stage>She runs off.</stage>
+    <l n="1175" xml:id="line-1175">I'm dead: the woman's worn me all away.</l>
+<l n="1176" xml:id="line-1176">She's gone and left me with an anguished pulse.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="954" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:954-979">
+<milestone unit="card" n="954" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:954-979" xml:id="card-954"/><milestone unit="lyric"/>
+<sp><speaker>MEN</speaker>
+
+
+<l n="1177" xml:id="line-1177">Baulked in your amorous delight</l>
+<l n="1178" xml:id="line-1178">How melancholy is your plight.</l>
+<l n="1179" xml:id="line-1179">With sympathy your case I view;</l>
+<l n="1180" xml:id="line-1180">For I am sure it's hard on you.</l>
+<l n="1181" xml:id="line-1181">What human being could sustain</l>
+<l n="1182" xml:id="line-1182">This unforeseen domestic strain,</l>
+<l n="1183" xml:id="line-1183">And not a single trace</l>
+<l n="1184" xml:id="line-1184">Of willing women in the place!</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+<l n="1185" xml:id="line-1185">O Zeus, what throbbing suffering!</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="1186" xml:id="line-1186">She did it all, the harlot, she</l>
+<l n="1187" xml:id="line-1187">With her atrocious harlotry.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="1188" xml:id="line-1188">Nay, rather call her darling-sweet.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="1189" xml:id="line-1189">What, sweet? She's a rude, wicked thing.</l></sp>
+
+<sp><speaker>CINESIAS</speaker>
+
+    
+	<l n="1190" xml:id="line-1190">A wicked thing, as I repeat.</l>
+<l n="1191" xml:id="line-1191">O Zeus, O Zeus,</l>
+<l n="1192" xml:id="line-1192">Canst Thou not suddenly let loose</l>
+<l n="1193" xml:id="line-1193">Some twirling hurricane to tear</l>
+<l n="1194" xml:id="line-1194">Her flapping up along the air</l>
+<l n="1195" xml:id="line-1195">And drop her, when she's whirled around,</l>
+<l n="1196" xml:id="line-1196">Here to the ground</l>
+<l n="1197" xml:id="line-1197">Neatly impaled upon the stake</l>
+<l n="1198" xml:id="line-1198">That's ready upright for her sake.</l>
+</sp>
+
+<stage>He goes out.</stage>
+
+
+</div>
+
+<div type="textpart" n="980" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:980-1013">
+<milestone unit="card" n="980" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:980-1013" xml:id="card-980"/><milestone unit="iambics"/>
+<stage>Enter SPARTAN HERALD.</stage>
+
+<stage>The MAGISTRATE comes forward.</stage>
+
+<sp><speaker>HERALD</speaker>
+
+
+<l n="1199" xml:id="line-1199">What here gabs the Senate an' the Prytanes?</l>
+<l n="1200" xml:id="line-1200">I've fetcht despatches for them.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="1201" xml:id="line-1201">Are you a man</l>
+<l n="1202" xml:id="line-1202">Or a monstrosity?</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+
+<l n="1203" xml:id="line-1203">My scrimp-brained lad,</l>
+<l n="1204" xml:id="line-1204">I'm a herald, as ye see, who hae come frae <placeName key="perseus,Sparta">Sparta</placeName></l>
+<l n="1205" xml:id="line-1205">Anent a Peace.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="1206" xml:id="line-1206">Then why do you hide that lance</l>
+<l n="1207" xml:id="line-1207">That sticks out under your arms?</l></sp>
+
+<sp><speaker>HERALD.</speaker>
+
+<l n="1208" xml:id="line-1208">I've brought no lance.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="1209" xml:id="line-1209">Then why do you turn aside and hold your cloak</l>
+<l n="1210" xml:id="line-1210">So far out from your body? Is your groin swollen</l>
+<l n="1211" xml:id="line-1211">With stress of travelling?</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+
+<l n="1212" xml:id="line-1212">By Castor, I'll swear</l>
+<l n="1213" xml:id="line-1213">The man is wud.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="1214" xml:id="line-1214">Indeed, your cloak is wide,</l>
+<l n="1215" xml:id="line-1215">My rascal fellow.</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+
+<l n="1216" xml:id="line-1216">But I tell ye No!</l>
+<l n="1217" xml:id="line-1217">Enow o' fleering!</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="1218" xml:id="line-1218">Well, what is it then?</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+<l n="1219" xml:id="line-1219">It's my despatch cane.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="1220" xml:id="line-1220">Of course—a Spartan cane!</l>
+<l n="1221" xml:id="line-1221">But speak right out. I know all this too well.</l>
+<l n="1222" xml:id="line-1222">Are new privations springing up in <placeName key="perseus,Sparta">Sparta</placeName>?</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+
+<l n="1223" xml:id="line-1223">Och, hard as could be: in lofty lusty columns</l>
+<l n="1224" xml:id="line-1224">Our allies stand united. We maun get <placeName key="perseus,Pellene">Pellene</placeName>.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="1225" xml:id="line-1225">Whence has this evil come? Is it from Pan?</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+
+<l n="1226" xml:id="line-1226">No. Lampito first ran asklent, then the ithers</l>
+<l n="1227" xml:id="line-1227">Sprinted after her example, and blocked, the hizzies,</l>
+<l n="1228" xml:id="line-1228">Their wames unskaithed against our every fleech.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+<l n="1229" xml:id="line-1229">What did you do?</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+
+<l n="1230" xml:id="line-1230">We are broken, and bent double,</l>
+<l n="1231" xml:id="line-1231">Limp like men carrying lanthorns in great winds</l>
+<l n="1232" xml:id="line-1232">About the city. They winna let us even</l>
+<l n="1233" xml:id="line-1233">Wi' lightest neif skim their primsie pretties</l>
+<l n="1234" xml:id="line-1234">Till we've concluded Peace-terms wi' a' <placeName key="tgn,1000074">Hellas</placeName>.</l></sp>
+
+<sp><speaker>MAGISTRATE</speaker>
+
+
+<l n="1235" xml:id="line-1235">So the conspiracy is universal;</l>
+<l n="1236" xml:id="line-1236">This proves it. Then return to <placeName key="perseus,Sparta">Sparta</placeName>. Bid them</l>
+<l n="1237" xml:id="line-1237">Send envoys with full powers to treat of Peace;</l>
+<l n="1238" xml:id="line-1238">And I will urge the Senate here to choose</l>
+<l n="1239" xml:id="line-1239">Plenipotentiary ambassadors,</l>
+<l n="1240" xml:id="line-1240">As argument adducing this connection.</l></sp>
+
+<sp><speaker>HERALD</speaker>
+
+    <l n="1241" xml:id="line-1241">I'm off. Your wisdom nane could contravert.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="1014" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1014-1042">
+<milestone unit="card" n="1014" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1014-1042" xml:id="card-1014"/><milestone unit="choral"/>
+<milestone unit="trochees"/>
+<stage>They retire.</stage>
+
+<sp><speaker>MEN</speaker>
+
+<l n="1242" xml:id="line-1242">There is no beast, no rush of fire, like woman so untamed.</l>
+<l n="1243" xml:id="line-1243">She calmly goes her way where even panthers would be shamed.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="1244" xml:id="line-1244">And yet you are fool enough, it seems, to dare to war with me,</l>
+<l n="1245" xml:id="line-1245">When for your faithful ally you might win me easily.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="1246" xml:id="line-1246">Never could the hate I feel for womankind grow less.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="1247" xml:id="line-1247">Then have your will. But I'll take pity on your nakedness.</l>
+<l n="1248" xml:id="line-1248">For I can see just how ridiculous you look, and so</l>
+<l n="1249" xml:id="line-1249">Will help you with your tunic if close up I now may go.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="1250" xml:id="line-1250">Well, that, by Zeus, is no scoundrel-deed, I frankly will admit.</l>
+<l n="1251" xml:id="line-1251">I only took them off myself in a scoundrel raging-fit.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="1252" xml:id="line-1252">Now you look sensible, and that you're men no one could doubt.</l>
+<l n="1253" xml:id="line-1253">If you were but good friends again, I'd take the insect out</l>
+<l n="1254" xml:id="line-1254">That hurts your eye.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="1255" xml:id="line-1255">Is that what's wrong? That nasty bitie thing.</l>
+<l n="1256" xml:id="line-1256">Please squeeze it out, and show me what it is that makes this sting.</l>
+<l n="1257" xml:id="line-1257">It's been paining me a long while now.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+
+<l n="1258" xml:id="line-1258">Well I'll agree to that,</l>
+<l n="1259" xml:id="line-1259">Although you're most unmannerly. O what a giant gnat.</l>
+<l n="1260" xml:id="line-1260">Here, look! It comes from marshy Tricorysus, I can tell.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="1261" xml:id="line-1261">O thank you. It was digging out a veritable well.</l>
+<l n="1262" xml:id="line-1262">Now that it's gone, I can't hold back my tears. See how they fall.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="1263" xml:id="line-1263">I'll wipe them off, bad as you are, and kiss you after all.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+<l n="1264" xml:id="line-1264">I won't be kissed.</l></sp>
+
+<sp><speaker>WOMEN</speaker>
+
+<l n="1265" xml:id="line-1265">O yes, you will. Your wishes do not matter.</l></sp>
+
+<sp><speaker>MEN</speaker>
+
+
+<l n="1266" xml:id="line-1266">O botheration take you all! How you cajole and flatter.</l>
+<l n="1267" xml:id="line-1267">A hell it is to live with you; to live without, a hell:</l>
+<l n="1268" xml:id="line-1268">How truly was that said. But come, these enmities let's quell.</l>
+<l n="1269" xml:id="line-1269">You stop from giving orders and I'll stop from doing wrong.</l>
+<l n="1270" xml:id="line-1270">So let's join ranks and seal our bargain with a choric song.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="1043" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1043-1057">
+<milestone unit="card" n="1043" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1043-1057" xml:id="card-1043"/><milestone unit="Choral"/>
+<milestone unit="strophe" n="1"/>
+<sp><speaker>CHORUS.</speaker>
+
+
+<l n="1271" xml:id="line-1271">Athenians, it's not our intention</l>
+<l n="1272" xml:id="line-1272">To sow political dissension</l>
+<l n="1273" xml:id="line-1273">By giving any scandal mention;</l>
+<l n="1274" xml:id="line-1274">But on the contrary to promote good feeling in the state</l>
+<l n="1275" xml:id="line-1275">By word and deed. We've had enough calamities of late.</l>
+<l n="1276" xml:id="line-1276">So let a man or woman but divulge</l>
+<l n="1277" xml:id="line-1277">They need a trifle, say,</l>
+<l n="1278" xml:id="line-1278">Two minas, three or four,</l>
+<l n="1279" xml:id="line-1279">I've purses here that bulge.</l>
+<l n="1280" xml:id="line-1280">There's only one condition made</l>
+<l n="1281" xml:id="line-1281">(Indulge my whim in this I pray)—</l>
+<l n="1282" xml:id="line-1282">When Peace is signed once more,</l>
+<l n="1283" xml:id="line-1283">On no account am I to be repaid.</l>
+
+</sp>
+
+</div>
+
+<div type="textpart" n="1058" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1058-1071">
+<milestone unit="card" n="1058" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1058-1071" xml:id="card-1058"/><milestone unit="antistrophe" n="1"/>
+<sp><speaker>CHORUS.</speaker>
+
+<l n="1284" xml:id="line-1284">And I'm making preparation</l>
+<l n="1285" xml:id="line-1285">For a gay select collation</l>
+<l n="1286" xml:id="line-1286">With some youths of reputation.</l>
+<l n="1287" xml:id="line-1287">I've managed to produce some soup and they're slaughtering for me</l>
+<l n="1288" xml:id="line-1288">A sucking-pig: its flesh should taste as tender as could be.</l>
+<l n="1289" xml:id="line-1289">I shall expect you at my house today.</l>
+<l n="1290" xml:id="line-1290">To the baths make an early visit,</l>
+<l n="1291" xml:id="line-1291">And bring your children along;</l>
+<l n="1292" xml:id="line-1292">Don't dawdle on the way.</l>
+<l n="1293" xml:id="line-1293">Ask no one; enter as if the place</l>
+<l n="1294" xml:id="line-1294">Was all your own—yours henceforth is it.</l>
+<l n="1295" xml:id="line-1295">If nothing chances wrong,</l>
+<l n="1296" xml:id="line-1296">The door will then be shut bang in your face.</l></sp>
+
+<stage>The SPARTAN AMBASSADORS approach.</stage>
+
+
+</div>
+
+<div type="textpart" n="1072" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1072-1111">
+<milestone unit="card" n="1072" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1072-1111" xml:id="card-1072"/><milestone unit="anapests"/>
+<sp><speaker>CHORUS</speaker>
+
+
+<l n="1297" xml:id="line-1297">Here come the Spartan envoys with long, worried beards.</l>
+<l n="1298" xml:id="line-1298">Hail, Spartans how do you fare?</l>
+<l n="1299" xml:id="line-1299">Did anything new arise?</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1300" xml:id="line-1300">No need for a clutter o' words. Do ye see our condition?</l></sp>
+
+<sp><speaker>CHORUS</speaker>
+
+
+<l n="1301" xml:id="line-1301">The situation swells to greater tension.</l>
+<l n="1302" xml:id="line-1302">Something will explode soon.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+
+<l n="1303" xml:id="line-1303">It's awfu' truly.</l>
+<l n="1304" xml:id="line-1304">But come, let us wi' the best speed we may</l>
+<l n="1305" xml:id="line-1305">Scribble a Peace.</l></sp>
+
+<sp><speaker>CHORUS</speaker>
+
+
+<l n="1306" xml:id="line-1306">I notice that our men</l>
+<l n="1307" xml:id="line-1307">Like wrestlers poised for contest, hold their clothes</l>
+<l n="1308" xml:id="line-1308">Out from their bellies. An athlete's malady!</l>
+<l n="1309" xml:id="line-1309">Since exercise alone can bring relief.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1310" xml:id="line-1310">Can anyone tell us where Lysistrata is?</l>
+<l n="1311" xml:id="line-1311">There is no need to describe our men's condition,</l>
+<l n="1312" xml:id="line-1312">It shows up plainly enough.</l></sp>
+
+<sp><speaker>CHORUS</speaker>
+
+
+<l n="1313" xml:id="line-1313">It's the same disease.</l>
+<l n="1314" xml:id="line-1314">Do you feel a jerking throbbing in the morning?</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1315" xml:id="line-1315">By Zeus, yes! In these straits, I'm racked all through.</l>
+<l n="1316" xml:id="line-1316">Unless Peace is soon declared, we shall be driven</l>
+<l n="1317" xml:id="line-1317">In the void of women to try Cleisthenes.</l></sp>
+
+<sp><speaker>CHORUS</speaker>
+
+
+<l n="1318" xml:id="line-1318">Be wise and cover those things with your tunics.</l>
+<l n="1319" xml:id="line-1319">Who knows what kind of person may perceive you?</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1320" xml:id="line-1320">By Zeus, you're right.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+
+<l n="1321" xml:id="line-1321">By the Twa Goddesses,</l>
+<l n="1322" xml:id="line-1322">Indeed ye are. Let's put our tunics on.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1323" xml:id="line-1323">Hail O my fellow-sufferers, hail Spartans.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+
+<l n="1324" xml:id="line-1324">O hinnie darling, what a waefu' thing!</l>
+<l n="1325" xml:id="line-1325">If they had seen us wi' our lunging waddies!</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1326" xml:id="line-1326">Tell us then, Spartans, what has brought you here?</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1327" xml:id="line-1327">We come to treat o' Peace.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1328" xml:id="line-1328">Well spoken there!</l>
+<l n="1329" xml:id="line-1329">And we the same. Let us callout Lysistrata</l>
+<l n="1330" xml:id="line-1330">Since she alone can settle the Peace-terms.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1331" xml:id="line-1331">Callout Lysistratus too if ye don't mind.</l></sp>
+
+<sp><speaker>CHORUS</speaker>
+
+<l n="1332" xml:id="line-1332">No indeed. She hears your voices and she comes.</l>
+
+<stage>Enter LYSISTRATA</stage>
+
+
+<l n="1333" xml:id="line-1333">Hail, Wonder of all women! Now you must be in turn</l>
+<l n="1334" xml:id="line-1334">Hard, shifting, clear, deceitful, noble, crafty, sweet, and stern.</l>
+<l n="1335" xml:id="line-1335">The foremost men of <placeName key="tgn,1000074">Hellas</placeName>, smitten by your fascination,</l>
+<l n="1336" xml:id="line-1336">Have brought their tangled quarrels here for your sole arbitration.</l></sp>
+
+
+</div>
+
+<div type="textpart" n="1112" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1112-1156">
+<milestone unit="card" n="1112" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1112-1156" xml:id="card-1112"/><milestone unit="anapests"/>
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1337" xml:id="line-1337">An easy task if the love's raging home-sickness</l>
+<l n="1338" xml:id="line-1338">Doesn't start trying out how well each other</l>
+<l n="1339" xml:id="line-1339">Will serve instead of us. But I'll know at once</l>
+<l n="1340" xml:id="line-1340">If they do. O where's that girl, Reconciliation?</l>
+<l n="1341" xml:id="line-1341">Bring first before me the Spartan delegates,</l>
+<l n="1342" xml:id="line-1342">And see you lift no rude or violent hands—</l>
+<l n="1343" xml:id="line-1343">None of the churlish ways our husbands used.</l>
+<l n="1344" xml:id="line-1344">But lead them courteously, as women should.</l>
+<l n="1345" xml:id="line-1345">And if they grudge fingers, guide them by other methods,</l>
+<l n="1346" xml:id="line-1346">And introduce them with ready tact. The Athenians</l>
+<l n="1347" xml:id="line-1347">Draw by whatever offers you a grip.</l>
+<l n="1348" xml:id="line-1348">Now, Spartans, stay here facing me. Here you,</l>
+<l n="1349" xml:id="line-1349">Athenians. Both hearken to my words.</l>
+<l n="1350" xml:id="line-1350">I am a woman, but I'm not a fool.</l>
+<l n="1351" xml:id="line-1351">And what of natural intelligence I own</l>
+<l n="1352" xml:id="line-1352">Has been filled out with the remembered precepts</l>
+<l n="1353" xml:id="line-1353">My father and the city-elders taught me.</l>
+<l n="1354" xml:id="line-1354">First I reproach you both sides equally</l>
+<l n="1355" xml:id="line-1355">That when at Pylae and <placeName key="perseus,Olympia">Olympia</placeName>,</l>
+<l n="1356" xml:id="line-1356">At <placeName key="tgn,7010770">Pytho</placeName> and the many other shrines</l>
+<l n="1357" xml:id="line-1357">That I could name, you sprinkle from one cup</l>
+<l n="1358" xml:id="line-1358">The altars common to all Hellenes, yet</l>
+<l n="1359" xml:id="line-1359">You wrack Hellenic cities, bloody <placeName key="tgn,1000074">Hellas</placeName></l>
+<l n="1360" xml:id="line-1360">With deaths of her own sons, while yonder clangs</l>
+<l n="1361" xml:id="line-1361">The gathering menace of barbarians.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1362" xml:id="line-1362">We cannot hold it in much longer now.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1363" xml:id="line-1363">Now unto you, O Spartans, do I speak.</l>
+<l n="1364" xml:id="line-1364">Do you forget how your own countryman,</l>
+<l n="1365" xml:id="line-1365">Pericleidas, once came hither suppliant</l>
+<l n="1366" xml:id="line-1366">Before our altars, pale in his purple robes,</l>
+<l n="1367" xml:id="line-1367">Praying for an army when in <placeName key="tgn,7011369">Messenia</placeName></l>
+<l n="1368" xml:id="line-1368">Danger growled, and the Sea-god made earth quayer.</l>
+<l n="1369" xml:id="line-1369">Then with four thousand hoplites Cimon marched</l>
+<l n="1370" xml:id="line-1370">And saved all <placeName key="perseus,Sparta">Sparta</placeName>. Yet base ingrates now,</l>
+<l n="1371" xml:id="line-1371">You are ravaging the soil of your preservers.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1372" xml:id="line-1372">By Zeus, they do great wrong, Lysistrata.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1373" xml:id="line-1373">Great wrang, indeed. O! What a luscious wench!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1374" xml:id="line-1374">And now I turn to the Athenians.</l>
+<l n="1375" xml:id="line-1375">Have you forgotten too how once the Spartans</l>
+<l n="1376" xml:id="line-1376">In days when you wore slavish tunics, came</l>
+<l n="1377" xml:id="line-1377">And with their spears broke a Thessalian host</l>
+<l n="1378" xml:id="line-1378">And all the partisans of Hippias?</l>
+<l n="1379" xml:id="line-1379">They alone stood by your shoulder on that day.</l>
+<l n="1380" xml:id="line-1380">They freed you, so that for the slave's short skirt</l>
+<l n="1381" xml:id="line-1381">You should wear the trailing cloak of liberty.</l></sp>
+</div>
+
+<div type="textpart" n="1157" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1157-1188">
+<milestone unit="card" n="1157" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1157-1188" xml:id="card-1157"/><sp><speaker>SPARTANS</speaker>
+
+<l n="1382" xml:id="line-1382">I've never seen a nobler woman anywhere.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1383" xml:id="line-1383">Nor I one with such prettily jointing hips.</l>
+</sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1384" xml:id="line-1384">Now, brethren twined with mutual benefactions,</l>
+<l n="1385" xml:id="line-1385">Can you still war, can you suffer such disgrace?</l>
+<l n="1386" xml:id="line-1386">Why not be friends? What is there to prevent you?</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1387" xml:id="line-1387">We're agreed, gin that we get this tempting Mole.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1388" xml:id="line-1388">Which one?</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+
+<l n="1389" xml:id="line-1389">That ane we've wanted to get into,</l>
+<l n="1390" xml:id="line-1390">O for sae lang.... <placeName key="perseus,Pylos">Pylos</placeName>, of course.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1391" xml:id="line-1391">By Poseidon,</l>
+<l n="1392" xml:id="line-1392">Never!</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1393" xml:id="line-1393">Give it up.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1394" xml:id="line-1394">Then what will we do?</l>
+<l n="1395" xml:id="line-1395">We need that ticklish place united to us—</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1396" xml:id="line-1396">Ask for some other lurking-hole in return.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1397" xml:id="line-1397">Then, ah, we'll choose this snug thing here, <placeName key="perseus,Echinus">Echinus</placeName>,</l>
+<l n="1398" xml:id="line-1398">Shall we call the nestling spot? And this backside haven,</l>
+<l n="1399" xml:id="line-1399">These desirable twin promontories, the Maliac,</l>
+<l n="1400" xml:id="line-1400">And then of course these Megarean Legs.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1401" xml:id="line-1401">Not that, O surely not that, never that.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+<l n="1402" xml:id="line-1402">Agree! Now what are two legs more or less?</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1403" xml:id="line-1403">I want to strip at once and plough my land.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1404" xml:id="line-1404">And mine I want to fertilize at once.</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1405" xml:id="line-1405">And so you can, when Peace is once declared.</l>
+<l n="1406" xml:id="line-1406">If you mean it, get your allies' heads together</l>
+<l n="1407" xml:id="line-1407">And come to some decision.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1408" xml:id="line-1408">What allies?</l>
+<l n="1409" xml:id="line-1409">There's no distinction in our politics:</l>
+<l n="1410" xml:id="line-1410">We've risen as one man to this conclusion;</l>
+<l n="1411" xml:id="line-1411">Every ally is jumping-mad to drive it home.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1412" xml:id="line-1412">And ours the same, for sure.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1413" xml:id="line-1413">The Carystians first!</l>
+<l n="1414" xml:id="line-1414">I'll bet on that</l></sp>
+
+<sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1415" xml:id="line-1415">I agree with all of you.</l>
+<l n="1416" xml:id="line-1416">Now off, and cleanse yourselves for the Acropolis,</l>
+<l n="1417" xml:id="line-1417">For we invite you all in to a supper</l>
+<l n="1418" xml:id="line-1418">From our commissariat baskets. There at table</l>
+<l n="1419" xml:id="line-1419">You will pledge good behaviour and uprightness;</l>
+<l n="1420" xml:id="line-1420">Then each man's wife is his to hustle home.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+<l n="1421" xml:id="line-1421">Come, as quickly as possible.</l>
+</sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+
+<l n="1422" xml:id="line-1422">As quick as ye like.</l>
+<l n="1423" xml:id="line-1423">Lead on.</l></sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+    <l n="1424" xml:id="line-1424">O Zeus, quick, quick, lead quickly on.</l></sp>
+
+<stage>They hurry off.</stage>
+
+
+</div>
+
+<div type="textpart" n="1189" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1189-1202">
+<milestone unit="card" n="1189" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1189-1202" xml:id="card-1189"/><milestone unit="antistrophe" n="2"/>
+<sp><speaker>CHORUS.</speaker>
+
+    
+<l n="1425" xml:id="line-1425">Broidered stuffs on high I'm heaping,</l>
+<l n="1426" xml:id="line-1426">Fashionable cloaks and sweeping</l>
+<l n="1427" xml:id="line-1427">Trains, not even gold gawds keeping.</l>
+<l n="1428" xml:id="line-1428">Take them all, I pray you, take them all (I do not care)</l>
+<l n="1429" xml:id="line-1429">And deck your children—your daughter, if the Basket she's to bear.</l>
+<l n="1430" xml:id="line-1430">Come, everyone of you, come in and take</l>
+<l n="1431" xml:id="line-1431">Of this rich hoard a share.</l>
+<l n="1432" xml:id="line-1432">Nought's tied so skilfully</l>
+<l n="1433" xml:id="line-1433">But you its seal can break</l>
+<l n="1434" xml:id="line-1434">And plunder all you spy inside.</l>
+<l n="1435" xml:id="line-1435">I've laid out all that I can spare,</l>
+<l n="1436" xml:id="line-1436">And therefore you will see</l>
+<l n="1437" xml:id="line-1437">Nothing unless than I you're sharper-eyed.</l>
+<l n="1438" xml:id="line-1438">If lacking corn a man should be</l>
+<l n="1439" xml:id="line-1439">While his slaves clamour hungrily</l>
+<l n="1440" xml:id="line-1440">And his excessive progeny,</l>
+<l n="1441" xml:id="line-1441">Then I've a handfull of grain at home which is always to be had,</l>
+<l n="1442" xml:id="line-1442">And to which in fact a more-than-life-size loaf I'd gladly add.</l>
+</sp>
+
+</div>
+
+<div type="textpart" n="1203" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1203-1215">
+<milestone unit="card" n="1203" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1203-1215" xml:id="card-1203"/><milestone unit="antistrophe" n="3"/>
+<sp><speaker>CHORUS.</speaker>
+<l n="1443" xml:id="line-1443">Then let the poor bring with them bag or sack</l>
+<l n="1444" xml:id="line-1444">And take this store of food.</l>
+<l n="1445" xml:id="line-1445">Manes, my man, I'll tell</l>
+<l n="1446" xml:id="line-1446">To help them all to pack</l>
+<l n="1447" xml:id="line-1447">Their wallets full. But O take care.</l>
+<l n="1448" xml:id="line-1448">I had forgotten; don't intrude,</l>
+<l n="1449" xml:id="line-1449">Or terrified you'll yell.</l>
+<l n="1450" xml:id="line-1450">My dog is hungry too, and bites—beware!</l></sp>
+
+
+
+</div>
+
+<div type="textpart" n="1216" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1216-1246">
+<milestone unit="card" n="1216" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1216-1246" xml:id="card-1216"/><milestone unit="Lyric-Scene"/>
+
+<stage>Some LOUNGERS from the Market with torches approach the Banqueting hall. The PORTER bars their entrance.</stage>
+
+<sp><speaker>1ST MARKET-LOUNGER</speaker>
+
+<l n="1451" xml:id="line-1451">Open the door.</l></sp>
+
+<sp><speaker>PORTER</speaker>
+
+<l n="1452" xml:id="line-1452">Here move along.</l></sp>
+
+<sp><speaker>1ST MARKET-LOUNGER</speaker>
+
+
+<l n="1453" xml:id="line-1453">What's this?</l>
+<l n="1454" xml:id="line-1454">You're sitting down. Shall I singe you with my torch?</l>
+<l n="1455" xml:id="line-1455">That's vulgar! O I couldn't do it ... yet</l>
+<l n="1456" xml:id="line-1456">If it would gratify the audience,</l>
+<l n="1457" xml:id="line-1457">I'll mortify myself.</l></sp>
+
+<sp><speaker>2ND MARKET-LOUNGER</speaker>
+
+
+<l n="1458" xml:id="line-1458">And I will too.</l>
+<l n="1459" xml:id="line-1459">We'll both be crude and vulgar, yes we will.</l></sp>
+
+<sp><speaker>PORTER</speaker>
+
+
+<l n="1460" xml:id="line-1460">Be off at o~ce now or you'll be wailing</l>
+<l n="1461" xml:id="line-1461">Dirges for your hair. Get off at once,</l>
+<l n="1462" xml:id="line-1462">And see you don't disturb the Spartan envoys</l>
+<l n="1463" xml:id="line-1463">Just coming out from the splendid feast they've had.</l></sp>
+
+
+<stage>The banqueters begin to come out.</stage>
+
+<sp><speaker>1ST ATHENIAN</speaker>
+
+
+<l n="1464" xml:id="line-1464">I've never known such a pleasant banquet before,</l>
+<l n="1465" xml:id="line-1465">And what delightful fellows the Spartans are.</l>
+<l n="1466" xml:id="line-1466">When we are warm with wine, how wise we grow.</l></sp>
+
+<sp><speaker>2ND ATHENIAN</speaker>
+
+
+<l n="1467" xml:id="line-1467">That's only fair, since sober we're such fools:</l>
+<l n="1468" xml:id="line-1468">This is the advice I'd give the Athenians—</l>
+<l n="1469" xml:id="line-1469">See our ambassadors are always drunk.</l>
+<l n="1470" xml:id="line-1470">For when we visit <placeName key="perseus,Sparta">Sparta</placeName> sober, then</l>
+<l n="1471" xml:id="line-1471">We're on the alert for trickery all the while</l>
+<l n="1472" xml:id="line-1472">So that we miss half of the things they say,</l>
+<l n="1473" xml:id="line-1473">And misinterpret things that were never said,</l>
+<l n="1474" xml:id="line-1474">And then report the muddle back to <placeName key="perseus,Athens">Athens</placeName>.</l>
+<l n="1475" xml:id="line-1475">But now we're charmed with each other. They might cap</l>
+<l n="1476" xml:id="line-1476">With the Telamon-catch instead of the Cleitagora,</l>
+<l n="1477" xml:id="line-1477">And we'd applaud and praise them just the same;</l>
+<l n="1478" xml:id="line-1478">We're not too scrupulous in weighing words.</l></sp>
+
+<sp><speaker>PORTER</speaker>
+
+
+<l n="1479" xml:id="line-1479">Why, here the rascals come again to plague me.</l>
+<l n="1480" xml:id="line-1480">Won't you move on, you sorry loafers there!</l></sp>
+
+<sp><speaker>MARKET-LOUNGER</speaker>
+
+<l n="1481" xml:id="line-1481">Yes, by Zeus, they're already coming out.</l></sp>
+
+<sp><speaker>SPARTANS</speaker>
+
+
+<l n="1482" xml:id="line-1482">Now hinnie dearest, please tak' up your pipe</l>
+<l n="1483" xml:id="line-1483">That I may try a spring an' sing my best</l>
+<l n="1484" xml:id="line-1484">In honour o' the Athenians an' oursels.</l>
+</sp>
+
+<sp><speaker>ATHENIANS</speaker>
+
+
+<l n="1485" xml:id="line-1485">Aye, take your pipe. By all the gods, there's nothing</l>
+<l n="1486" xml:id="line-1486">Could glad my heart more than to watch you dance.</l></sp>
+</div>
+
+<div type="textpart" n="1247" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1247-1270">
+<milestone unit="card" n="1247" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1247-1270" xml:id="card-1247"/><milestone unit="lyric"/>
+<sp><speaker>SPARTANS.</speaker>
+
+
+<l n="1487" xml:id="line-1487">Mnemosyne,</l>
+<l n="1488" xml:id="line-1488">Let thy fire storm these younkers,</l>
+<l n="1489" xml:id="line-1489">O tongue wi' stormy ecstasy</l>
+<l n="1490" xml:id="line-1490">My Muse that knows</l>
+<l n="1491" xml:id="line-1491">Our deeds and theirs, how when at sea</l>
+<l n="1492" xml:id="line-1492">Their navies swooped upon</l>
+    <l n="1493" xml:id="line-1493">The Medes at <placeName key="perseus,Artemision,Ephesos">Artemision</placeName>—</l>
+<l n="1494" xml:id="line-1494">Gods for their courage, did they strike</l>
+<l n="1495" xml:id="line-1495">Wrenching a triumph frae their foes;</l>
+<l n="1496" xml:id="line-1496">While at <placeName key="perseus,Thermopylae">Thermopylae</placeName></l>
+<l n="1497" xml:id="line-1497">Leonidas' army stood: wild-boars they were like</l>
+<l n="1498" xml:id="line-1498">Wild-boars that wi' fierce threat</l>
+<l n="1499" xml:id="line-1499">Their terrible tusks whet;</l>
+<l n="1500" xml:id="line-1500">The sweat ran streaming down each twisted face,</l>
+<l n="1501" xml:id="line-1501">Faem blossoming i' strange petals o' death</l>
+<l n="1502" xml:id="line-1502">Panted frae mortal breath,</l>
+<l n="1503" xml:id="line-1503">The sweat drenched a' their bodies i' that place,</l>
+<l n="1504" xml:id="line-1504">For the hurly-burly o' Persians glittered more</l>
+<l n="1505" xml:id="line-1505">Than the sands on the shore.</l>
+
+
+<l n="1506" xml:id="line-1506">Come, Hunting Girl, an' hear my prayer—</l>
+<l n="1507" xml:id="line-1507">You whose arrows whizz in woodlands, come an' bless</l>
+<l n="1508" xml:id="line-1508">This Peace we swear.</l>
+<l n="1509" xml:id="line-1509">Let us be fenced wi' age long amity,</l>
+<l n="1510" xml:id="line-1510">O let this bond stick ever firm through thee</l>
+<l n="1511" xml:id="line-1511">In friendly happiness.</l>
+<l n="1512" xml:id="line-1512">Henceforth no guilefu' perjury be seen!</l>
+<l n="1513" xml:id="line-1513">O hither, hither O</l>
+<l n="1514" xml:id="line-1514">Thou wildwood queen.</l></sp>
+
+</div>
+
+<div type="textpart" n="1273" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1273-1278">
+<milestone unit="card" n="1273" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1273-1278" xml:id="card-1273"/><sp><speaker>LYSISTRATA</speaker>
+
+
+<l n="1515" xml:id="line-1515">Earth is delighted now, peace is the voice of earth.</l>
+<l n="1516" xml:id="line-1516">Spartans, sort out your wives: Athenians, yours.</l>
+<l n="1517" xml:id="line-1517">Let each catch hands with his wife and dance his joy,</l>
+<l n="1518" xml:id="line-1518">Dance out his thanks, be grateful in music,</l>
+<l n="1519" xml:id="line-1519">And promise reformation with his heels.</l></sp>
+
+</div>
+
+<div type="textpart" n="1279" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1279-1294">
+<milestone unit="card" n="1279" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1279-1294" xml:id="card-1279"/><milestone unit="lyric"/>
+<sp><speaker>ATHENIANS.</speaker>
+
+
+<l n="1520" xml:id="line-1520">O Dancers, forward. Lead out the Graces,</l>
+<l n="1521" xml:id="line-1521">Call Artemis out;</l>
+<l n="1522" xml:id="line-1522">Then her brother, the Dancer of Skies,</l>
+<l n="1523" xml:id="line-1523">That gracious Apollo.</l>
+<l n="1524" xml:id="line-1524">Invoke with a shout</l>
+<l n="1525" xml:id="line-1525">Dionysus out of whose eyes</l>
+<l n="1526" xml:id="line-1526">Breaks fire on the maenads that follow;</l>
+<l n="1527" xml:id="line-1527">And Zeus with his flares of quick lightning, and call,</l>
+<l n="1528" xml:id="line-1528">Happy Hera, Queen of all,</l>
+<l n="1529" xml:id="line-1529">And all the Daimons summon hither to be</l>
+<l n="1530" xml:id="line-1530">Witnesses of our revelry</l>
+<l n="1531" xml:id="line-1531">And of the noble Peace we have made,</l>
+<l n="1532" xml:id="line-1532">Aphrodite our aid.</l>
+
+
+<l n="1533" xml:id="line-1533">Io Paieon, Io, cry—</l>
+    <l n="1534" xml:id="line-1534">For victory, leap!</l>
+<l n="1535" xml:id="line-1535">Attained by me, leap!</l>
+<l n="1536" xml:id="line-1536">Euoi Euoi Euai Euai.</l></sp>
+
+</div>
+
+<div type="textpart" n="1295" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1295-1320">
+<milestone unit="card" n="1295" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg007.perseus-grc2:1295-1320" xml:id="card-1295"/><milestone unit="lyric"/>
+<sp><speaker>SPARTANS</speaker>
+
+<l n="1537" xml:id="line-1537">Piper, gie us the music for a new sang.</l></sp>
+
+<sp><speaker>SPARTANS.</speaker>
+
+
+<l n="1538" xml:id="line-1538">Leaving again lovely lofty Taygetus</l>
+<l n="1539" xml:id="line-1539">Hither O Spartan Muse, hither to greet us,</l>
+<l n="1540" xml:id="line-1540">And wi' our choric voice to raise</l>
+<l n="1541" xml:id="line-1541">To Amyclean Apollo praise,</l>
+<l n="1542" xml:id="line-1542">And Tyndareus' gallant sons whose days</l>
+<l n="1543" xml:id="line-1543">Alang Eurotas' banks merrily pass,</l>
+<l n="1544" xml:id="line-1544">An' Athene o' the House o' Brass.</l>
+
+
+<l n="1545" xml:id="line-1545">Now the dance begin;</l>
+<l n="1546" xml:id="line-1546">Dance, making swirl your fringe o' woolly skin,</l>
+<l n="1547" xml:id="line-1547">While we join voices</l>
+<l n="1548" xml:id="line-1548">To hymn dear <placeName key="perseus,Sparta">Sparta</placeName> that rejoices</l>
+<l n="1549" xml:id="line-1549">I' a beautifu' sang,</l>
+<l n="1550" xml:id="line-1550">An' loves to see</l>
+<l n="1551" xml:id="line-1551">Dancers tangled beautifully;</l>
+<l n="1552" xml:id="line-1552">For the girls i' tumbled ranks</l>
+<l n="1553" xml:id="line-1553">Alang Eurotas' banks</l>
+<l n="1554" xml:id="line-1554">Like wanton fillies thrang,</l>
+<l n="1555" xml:id="line-1555">Frolicking there</l>
+
+
+
+<l n="1556" xml:id="line-1556">An' like Bacchantes shaking the wild air</l>
+<l n="1557" xml:id="line-1557">To comb a giddy laughter through the hair,</l>
+<l n="1558" xml:id="line-1558">Bacchantes that clench thyrsi as they sweep</l>
+<l n="1559" xml:id="line-1559">To the ecstatic leap.</l>
+
+
+<l n="1560" xml:id="line-1560">An' Helen, Child o' Leda, come</l>
+<l n="1561" xml:id="line-1561">Thou holy, nimble, gracefu' Queen,</l>
+<l n="1562" xml:id="line-1562">Lead thou the dance, gather thy joyous tresses up i' bands</l>
+<l n="1563" xml:id="line-1563">An' play like a fawn. To madden them, clap thy hands,</l>
+<l n="1564" xml:id="line-1564">And sing praise to the warrior goddess templed i' our lands,</l>
+<l n="1565" xml:id="line-1565">Her o' the House o' Brass.</l></sp>
+
+
+
+
+
+</div></div></body> </text></TEI>
