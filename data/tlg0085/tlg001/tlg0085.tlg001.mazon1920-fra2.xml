@@ -1,5 +1,79 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?><TEI xmlns="http://www.tei-c.org/ns/1.0"><teiHeader xml:lang="eng"><fileDesc><titleStmt><title xml:lang="fra">LES SUPPLIANTES</title><author>Aeschylus</author><editor>Gregory Crane</editor><sponsor>Perseus Project, Tufts University</sponsor><principal>Gregory Crane</principal><respStmt><resp>Prepared under the supervision of</resp><name>Gregory Crane</name></respStmt><funder>Schmidt Sciences</funder></titleStmt><extent>2 volumes; 20 cm</extent><publicationStmt><publisher>Trustees of Tufts University</publisher><pubPlace>Medford, MA</pubPlace><authority>Perseus Project</authority><idno type="filename">tlg0085.tlg001.mazon1920_fra2.xml</idno><availability><p>For scholarly use; verify rights against the source edition and repository policy.</p></availability></publicationStmt><sourceDesc><biblStruct><monogr><author>Aeschylus</author><title>Eschyle</title><title type="subtitle" xml:lang="fra">texte établi et traduit par Paul Mazon</title><editor role="editor">Paul Mazon</editor><imprint><pubPlace>Paris</pubPlace><publisher>Les Belles Lettres</publisher><date>1920-1925</date></imprint><biblScope unit="volume">2</biblScope></monogr><ref target="https://catalog.hathitrust.org/Record/001222416">HathiTrust catalog record</ref><note>French and Ancient Greek on opposite pages.</note></biblStruct></sourceDesc></fileDesc><encodingDesc><editorialDecl><quotation marks="none"/></editorialDecl><refsDecl n="CTS"><cRefPattern n="line" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:lb[@n='$1'])"><p>This pointer pattern extracts translation line markers</p></cRefPattern></refsDecl></encodingDesc><profileDesc><langUsage><language ident="fra">French</language><language ident="grc">Greek, Ancient (to 1453)</language><language ident="lat">Latin</language></langUsage></profileDesc><revisionDesc><change when="2026-08-15" who="Gregory Crane">Split and standardized from Mazon's bilingual complete Aeschylus (URN: urn:cts:greekLit:tlg0085.tlg001.mazon1920_fra2).</change><change when="2026-08-16" who="Gregory Crane">Transferred every Smyth card milestone through the EpiDoc Mazon Greek edition and refined between-anchor positions with bilingual Greek–French alignment; explicit gaps identify source/OCR omissions.</change></revisionDesc></teiHeader><text><body><div type="translation" n="urn:cts:greekLit:tlg0085.tlg001.mazon1920_fra2" xml:lang="fra"><head xml:lang="fra">LES SUPPLIANTES</head><pb n="13"/>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="fra">LES SUPPLIANTES</title>
+        <author>Aeschylus</author>
+        <editor>Gregory Crane</editor>
+        <sponsor>Perseus Project, Tufts University</sponsor>
+        <principal>Gregory Crane</principal>
+        <respStmt>
+          <resp>Prepared under the supervision of</resp>
+          <name>Gregory Crane</name>
+        </respStmt>
+        <funder>Schmidt Sciences</funder>
+      </titleStmt>
+      <extent>2 volumes; 20 cm</extent>
+      <publicationStmt>
+        <publisher>Trustees of Tufts University</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <authority>Perseus Project</authority>
+        <idno type="filename">tlg0085.tlg001.mazon1920_fra2.xml</idno>
+        <availability>
+          <p>For scholarly use; verify rights against the source edition and repository policy.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aeschylus</author>
+            <title>Eschyle</title>
+            <title type="subtitle" xml:lang="fra">texte établi et traduit par Paul Mazon</title>
+            <editor role="editor">Paul Mazon</editor>
+            <imprint>
+              <pubPlace>Paris</pubPlace>
+              <publisher>Les Belles Lettres</publisher>
+              <date>1920-1925</date>
+            </imprint>
+            <biblScope unit="volume">2</biblScope>
+          </monogr>
+          <ref target="https://catalog.hathitrust.org/Record/001222416">HathiTrust catalog record</ref>
+          <note>French and Ancient Greek on opposite pages.</note>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <quotation marks="none"/>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:lb[@n='$1'])">
+          <p>This pointer pattern extracts translation line markers</p>
+        </cRefPattern>
+      </refsDecl>
+      <refsDecl xml:id="CTS">
+        <citeStructure match="/TEI/text/body" use="@xml:base">
+          <citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="fra">French</language>
+        <language ident="grc">Greek, Ancient (to 1453)</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-15" who="Gregory Crane">Split and standardized from Mazon's bilingual complete Aeschylus (URN: urn:cts:greekLit:tlg0085.tlg001.mazon1920_fra2).</change>
+      <change when="2026-08-16" who="Gregory Crane">Transferred every Smyth card milestone through the EpiDoc Mazon Greek edition and refined between-anchor positions with bilingual Greek–French alignment; explicit gaps identify source/OCR omissions.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="fra">
+    <body xml:base="urn:cts:greekLit:tlg0085.tlg001.mazon1920-fra2">
+      <div type="translation" n="urn:cts:greekLit:tlg0085.tlg001.mazon1920_fra2" xml:lang="fra"><head xml:lang="fra">LES SUPPLIANTES</head><pb n="13"/>
                  <pb n="11"/>
                <stage type="melodrame">Mélodrame.</stage> <stage type="setting">Au fond de l'orchestre, un tertre portant un autel et des statues de dieux.</stage> <stage type="entrance">Entre le Chœur : cinquante princesses au masque hâlé, parées de bandeaux et de voiles à la mode barbare.</stage> <stage type="entrance">Cinquante suivantes les accompagnent.</stage> <sp>
                   <speaker>LE CORYPHÉE.</speaker> <p>
@@ -1734,4 +1808,7 @@ geste d'époux, geste procréateur, comme on le croit généralement.</note>: Io
                   </p>
                </sp>
                <stage>Les Danaïdes s'éloignent avec les Suivantes.</stage>
-            </div></body></text></TEI>
+            </div>
+    </body>
+  </text>
+</TEI>

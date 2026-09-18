@@ -1,0 +1,831 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Ichneutae: Pearson 1917 critical apparatus, corrected OCR review</title>
+        <author>Alfred Chilton Pearson</author>
+        <editor xml:id="pearson">Alfred Chilton Pearson</editor>
+        <respStmt xml:id="digital">
+          <resp>OCR collation, structural reconstruction, and reference alignment; working transcription prepared for Gregory Crane.</resp>
+          <name>Codex</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Working files prepared for the Perseus Multitext Viewer</publisher>
+        <date when="2026-09-15">2026-09-15</date>
+        <availability status="free">
+          <p>The 1917 source is in the public domain in the United States. No new license is assigned to third-party digital source files by this conversion.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="pearson1917">
+          <title>The Fragments of Sophocles</title>
+          <editor>A. C. Pearson</editor>
+          <date>1917</date>
+          <biblScope unit="volume">1</biblScope>
+          <biblScope unit="page">233–268; appendix 269</biblScope>
+          <ref target="https://hdl.handle.net/2027/mdp.39015010446022">Michigan scan, HathiTrust mdp.39015010446022</ref>
+        </bibl>
+        <p>Copy text: supplied ichneutae_ocr.txt, printed pp. 234–269. Structural comparison: supplied ichneutae_pearson_scaffold.xml. The opening two verses and opening note survive only in the scaffold; their printed page is inferred as 233. These are two transcriptions of the same edition, not independent textual witnesses. No page-image proofreading has been performed.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Pearson’s fragment 314 is the main play. Pearson’s line numbers remain in n; corresp points to the supplied Hunt/Perseus reference. Short apparatus is separate from discursive commentary. OCR errors are corrected only where supported by the supplied material or unambiguous context. Unresolved readings use sic; OCR gaps differ from ancient losses. Brackets are retained as transcription signs and are not claimed to be a new diplomatic transcription. Dot runs give unspecified loss, not measured character counts. Missing numbered positions follow Pearson’s printed numbering and do not assert an exact papyrus extent.</p>
+        <p>Reference gap/aggregate pointers (especially Pearson 24–27, 379–386, and 395–430) identify a reference placeholder, not exact verse equivalence. Pearson 414 is a marginally attested reading and is not evidence that a continuous verse survives. Content and references to introductory pages outside the supplied OCR have not been reconstructed.</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="editorial-status">
+          <category xml:id="ocr-review">
+            <catDesc>Unresolved OCR or transcription detail; consult the printed page.</catDesc>
+          </category>
+          <category xml:id="scaffold-only">
+            <catDesc>Present only in the older scaffold; absent from supplied new OCR.</catDesc>
+          </category>
+          <category xml:id="reference-gap">
+            <catDesc>Alignment to a reference gap placeholder.</catDesc>
+          </category>
+          <category xml:id="reference-aggregate">
+            <catDesc>Alignment to a reference aggregate rather than exact line.</catDesc>
+          </category>
+          <category xml:id="marginal-witness">
+            <catDesc>Reading reported from a margin, not a surviving complete verse.</catDesc>
+          </category>
+          <category xml:id="source-loss">
+            <catDesc>Loss reported in the printed ancient text.</catDesc>
+          </category>
+          <category xml:id="shared-verse">
+            <catDesc>Source verse shared across speakers or reference subdivisions.</catDesc>
+          </category>
+          <category xml:id="overlap">
+            <catDesc>Source line overlaps two reference lines.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="commline" matchPattern="([0-9]+[a-z]?(?:-[0-9]+[a-z]?)?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>Cite the printed Pearson line or the first line of a note; source and reference numbering are distinct.</p>
+        </cRefPattern>
+      </refsDecl>
+      <refsDecl n="TEI">
+        <citeStructure match="//tei:div[@subtype='commline']" use="@n" unit="commline"/>
+      </refsDecl>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//div[@subtype='commline']" unit="commline" use="@n" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="eng">English</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-09-15" who="#digital">Reconstructed from the supplied OCR and scaffold; explicit line concordance and source-page provenance added. OCR-review edition, not scan-proofread.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="lat">
+    <body xml:base="urn:cts:greekLit:tlg0011.tlg008.pearson1917-app-lat1">
+      <div type="apparatus" n="urn:cts:greekLit:tlg0011.tlg008.pearson1917-app-lat1" xml:lang="lat">
+        <div type="textpart" subtype="commline" n="1" xml:id="app.1" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:7" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:1">
+          <head>Pearson 1</head>
+          <pb n="233" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=337"/>
+          <p><seg xml:id="mvp-comment-1-1" type="comment">
+            <sic ana="#scaffold-only" resp="#digital"><mentioned xml:lang="grc">αγγελω</mentioned> in <mentioned xml:lang="grc">αγγελλω</mentioned> corr. pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="5" xml:id="app.5" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:11" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:5">
+          <head>Pearson 5</head>
+          <pb n="234" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338"/>
+          <p><seg xml:id="mvp-comment-2-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital">a[ in marg. add. pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="7" xml:id="app.7" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:13" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:7">
+          <head>Pearson 7</head>
+          <pb n="234" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338"/>
+          <p><seg xml:id="mvp-comment-3-1" type="comment"><mentioned xml:lang="grc">διασ</mentioned>[ in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="8" xml:id="app.8" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:14" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:8">
+          <head>Pearson 8</head>
+          <pb n="234" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338"/>
+          <p><seg xml:id="mvp-comment-4-1" type="comment">in marg. adscripta <mentioned xml:lang="grc">λα</mentioned>[ supra <mentioned xml:lang="grc">ου ην</mentioned>[ | <mentioned xml:lang="grc">ἰόντα τῆλε</mentioned> Hunt: fort. <mentioned xml:lang="grc">ἰόντων</mentioned></seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="9" xml:id="app.9" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:15" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:9">
+          <head>Pearson 9</head>
+          <pb n="234" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338"/>
+          <p><seg xml:id="mvp-comment-5-1" type="comment"><mentioned xml:lang="grc">τέχναισιν· ὡς</mentioned> Hunt: fort. <mentioned xml:lang="grc">τεχνάσματ· ἀλλ᾽</mentioned></seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="11" xml:id="app.11" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:17" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:11">
+          <head>Pearson 11</head>
+          <pb n="234" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338"/>
+          <p><seg xml:id="mvp-comment-6-1" type="comment"><mentioned xml:lang="grc">τόλμην</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="13" xml:id="app.13" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:19" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:13">
+          <head>Pearson 13</head>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <p><seg xml:id="mvp-comment-7-1" type="comment"><mentioned xml:lang="grc">ζητῶ</mentioned> Wilamowitz: <mentioned xml:lang="grc">στείχω</mentioned> Hunt | <mentioned xml:lang="grc">ματεύω</mentioned> ex <mentioned xml:lang="grc">ματεύων</mentioned> corr. pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="14" xml:id="app.14" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:20" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:14">
+          <head>Pearson 14</head>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <p><seg xml:id="mvp-comment-8-1" type="comment"><mentioned xml:lang="grc">τάδε</mentioned>: <mentioned xml:lang="grc">ο</mentioned> (i.e. <mentioned xml:lang="grc">τόδε</mentioned>) suprascr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="15" xml:id="app.15" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:21" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:15">
+          <head>Pearson 15</head>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <p><seg xml:id="mvp-comment-9-1" type="comment"><mentioned xml:lang="grc">εμμανῖς</mentioned> ex <mentioned xml:lang="grc">εμμανεις</mentioned> corr. pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="16" xml:id="app.16" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:22" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:16">
+          <head>Pearson 16</head>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <p><seg xml:id="mvp-comment-10-1" type="comment">]<mentioned xml:lang="grc">του</mentioned> in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="18" xml:id="app.18" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:25" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:18">
+          <head>Pearson 18 sqq.</head>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <p><seg xml:id="mvp-comment-11-1" type="comment">cum ex duobus fragmentis confecta sint, de singulorum sede minus constat</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="22" xml:id="app.22" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:31" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:22">
+          <head>Pearson 22</head>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <p><seg xml:id="mvp-comment-12-1" type="comment"><mentioned xml:lang="grc">ου</mentioned> (i.e. <mentioned xml:lang="grc">οὕτως</mentioned>) habet in marg. pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="23" xml:id="app.23" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:32" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:23">
+          <head>Pearson 23</head>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <p><seg xml:id="mvp-comment-13-1" type="comment">post v. 23 desunt fere quattuor versus</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="32" xml:id="app.32" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:38" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:32">
+          <head>Pearson 32</head>
+          <pb n="236" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340"/>
+          <p><seg xml:id="mvp-comment-14-1" type="comment">]<mentioned xml:lang="grc">θ</mentioned>[ in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="34" xml:id="app.34" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:40" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:34">
+          <head>Pearson 34</head>
+          <pb n="236" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340"/>
+          <p><seg xml:id="mvp-comment-15-1" type="comment"><mentioned xml:lang="grc">μαριλοκαυτῶν</mentioned> suppl. Wilamowitz | ]<mentioned xml:lang="grc">ν</mentioned> in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="37" xml:id="app.37" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:43" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:37">
+          <head>Pearson 37</head>
+          <pb n="236" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340"/>
+          <p><seg xml:id="mvp-comment-16-1" type="comment"><mentioned xml:lang="grc">τὸν φῶρα τῶν</mentioned> (<mentioned xml:lang="grc">τῶν</mentioned> Wilamowitz) Hunt: fort. <mentioned xml:lang="grc">τὰ ἕλωρα</mentioned></seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="38" xml:id="app.38" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:44" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:38">
+          <head>Pearson 38</head>
+          <pb n="236" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340"/>
+          <p><seg xml:id="mvp-comment-17-1" type="comment"><mentioned xml:lang="grc">τῷδ᾽ αὐτόχρημα</mentioned> Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="39" xml:id="app.39" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:45" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:39">
+          <head>Pearson 39</head>
+          <pb n="237" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341"/>
+          <p><seg xml:id="mvp-comment-18-1" type="comment"><mentioned xml:lang="grc">ἔα· τὰ</mentioned> suppl. Mekler</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="45" xml:id="app.45" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:51" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:45">
+          <head>Pearson 45 sq.</head>
+          <pb n="237" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341"/>
+          <p><seg xml:id="mvp-comment-19-1" type="comment">supplevi</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="47" xml:id="app.47" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:53" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:47">
+          <head>Pearson 47</head>
+          <pb n="237" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341"/>
+          <p><seg xml:id="mvp-comment-20-1" type="comment"><mentioned xml:lang="grc">οσσοισι</mentioned> ex <mentioned xml:lang="grc">οσοισι</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="52" xml:id="app.52" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:58" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:52">
+          <head>Pearson 52</head>
+          <pb n="238" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342"/>
+          <p><seg xml:id="mvp-comment-21-1" type="comment"><mentioned xml:lang="grc">ἀλλ</mentioned>]<mentioned xml:lang="grc">ότρια τ</mentioned>[ in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="59" xml:id="app.59" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:65" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:59">
+          <head>Pearson 59</head>
+          <pb n="238" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342"/>
+          <p><seg xml:id="mvp-comment-22-1" type="comment"><mentioned xml:lang="grc">τὰ ἴχν</mentioned>(<mentioned xml:lang="grc">η</mentioned>) in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="65" xml:id="app.65" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:71" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:65">
+          <head>Pearson 65</head>
+          <pb n="238" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342"/>
+          <p><seg xml:id="mvp-comment-23-1" type="comment"><mentioned xml:lang="grc">γῆρ</mentioned>[<mentioned xml:lang="grc">υν</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="66" xml:id="app.66" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:72" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:66">
+          <head>Pearson 66</head>
+          <pb n="238" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342"/>
+          <p><seg xml:id="mvp-comment-24-1" type="comment"><mentioned xml:lang="grc">διανυχ</mentioned>(<mentioned xml:lang="grc">ια</mentioned>) a Theone primitus scriptum in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="68" xml:id="app.68" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:74" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:68">
+          <head>Pearson 68</head>
+          <pb n="239" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343"/>
+          <p><seg xml:id="mvp-comment-25-1" type="comment">post hunc v. paragraphum habet pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="70" xml:id="app.70" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:76" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:70">
+          <head>Pearson 70</head>
+          <pb n="239" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343"/>
+          <p><seg xml:id="mvp-comment-26-1" type="comment">litteras <mentioned xml:lang="grc">σοφιλοσανετω</mentioned> add. pap.2 et <mentioned xml:lang="grc">ξυν</mentioned> ex <mentioned xml:lang="grc">συν</mentioned> corr.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="72" xml:id="app.72" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:77-78" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:72">
+          <head>Pearson 72</head>
+          <pb n="239" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343"/>
+          <p><seg xml:id="mvp-comment-27-1" type="comment"><mentioned xml:lang="grc">ἀρίζηλα</mentioned> in fine v. 71 pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="73" xml:id="app.73" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:79" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:73">
+          <head>Pearson 73</head>
+          <pb n="239" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343"/>
+          <p><seg xml:id="mvp-comment-28-1" type="comment"><mentioned xml:lang="grc">ε</mentioned>[..]<mentioned xml:lang="grc">υντηριε αρ᾽</mentioned> in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="74" xml:id="app.74" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:80" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:74">
+          <head>Pearson 74</head>
+          <pb n="239" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343"/>
+          <p><seg xml:id="mvp-comment-29-1" type="comment"><mentioned xml:lang="grc">πράγους</mentioned> ex <mentioned xml:lang="grc">πραγος</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="77" xml:id="app.77" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:83" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:77">
+          <head>Pearson 77</head>
+          <pb n="240" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344"/>
+          <p><seg xml:id="mvp-comment-30-1" type="comment">[ in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="78" xml:id="app.78" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:84" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:78">
+          <head>Pearson 78</head>
+          <pb n="240" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344"/>
+          <p><seg xml:id="mvp-comment-31-1" type="comment"><mentioned xml:lang="grc">τ᾽</mentioned>...<mentioned xml:lang="grc">φράσας</mentioned> Wilamowitz: <mentioned xml:lang="grc">γ᾽</mentioned>...<mentioned xml:lang="grc">δράσας</mentioned> pap. | <mentioned xml:lang="grc">τόδε</mentioned>: <mentioned xml:lang="grc">α</mentioned> (i.e. <mentioned xml:lang="grc">τάδε</mentioned>) suprascr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="79" xml:id="app.79" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:85" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:79">
+          <head>Pearson 79</head>
+          <pb n="240" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344"/>
+          <p><seg xml:id="mvp-comment-32-1" type="comment"><mentioned xml:lang="grc">παντελής</mentioned> scripsi: <mentioned xml:lang="grc">προστελὴς</mentioned> pap., <mentioned xml:lang="grc">συντελής</mentioned> Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="93" xml:id="app.93" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:99" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:93">
+          <head>Pearson 93</head>
+          <pb n="241" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345"/>
+          <p><seg xml:id="mvp-comment-33-1" type="comment"><mentioned xml:lang="grc">χρῆσθαι</mentioned> a Theone scriptum in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="94" xml:id="app.94" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:100" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:94">
+          <head>Pearson 94</head>
+          <pb n="241" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345"/>
+          <p><seg xml:id="mvp-comment-34-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">α</mentioned> in marg. centesimo versui adscriptum | alterum ea add. Wilamowitz</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="96" xml:id="app.96" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:102" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:96">
+          <head>Pearson 96</head>
+          <pb n="241" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345"/>
+          <p><seg xml:id="mvp-comment-35-1" type="comment"><mentioned xml:lang="grc">βήματα Ρ</mentioned>. Maas: <mentioned xml:lang="grc">σήματα</mentioned> olim Hunt (littera prima in pap. evanida)</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="97" xml:id="app.97" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:103" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:97">
+          <head>Pearson 97</head>
+          <pb n="241" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345"/>
+          <p><seg xml:id="mvp-comment-36-1" type="comment"><mentioned xml:lang="grc">σιγ</mentioned> add. pap.2 et paragraphum infra positum del.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="98" xml:id="app.98" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:104" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:98">
+          <head>Pearson 98 sqq.</head>
+          <pb n="241" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345"/>
+          <p><seg xml:id="mvp-comment-37-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital">secundum Wilamowitzium distributi, nisi quod ille chorum trifariam divisit. paragraphos post vv. 98, 99 (bis), 103, 104 habet pap. | <mentioned xml:lang="grc">ετιδ</mentioned> in rasura pap.2, tum e delevit (<mentioned xml:lang="grc">ἔτιδρ</mentioned>[..]<mentioned xml:lang="grc">τι</mentioned>x in marg. add. pap.2) | <mentioned xml:lang="grc">ἄρ᾽ ἤνομεν</mentioned> Murray: <mentioned xml:lang="grc">ἐξήνομεν</mentioned> Wilamowitz</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="102" xml:id="app.102" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:108" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:102">
+          <head>Pearson 102</head>
+          <pb n="242" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346"/>
+          <p><seg xml:id="mvp-comment-38-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">επισιμωμον</mentioned> in marg. add. pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="104" xml:id="app.104" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:110" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:104">
+          <head>Pearson 104</head>
+          <pb n="242" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346"/>
+          <p><seg xml:id="mvp-comment-39-1" type="comment"><mentioned xml:lang="grc">ἐκμεμαγμένον</mentioned> scripsi: <mentioned xml:lang="grc">ἐκμετρούμενον</mentioned> Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="105" xml:id="app.105" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:111" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:105">
+          <head>Pearson 105</head>
+          <pb n="242" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346"/>
+          <p><seg xml:id="mvp-comment-40-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">δρομωι</mentioned> suprascr. pap.2: <mentioned xml:lang="grc">χετ</mentioned>[ ]. pap. | <mentioned xml:lang="grc">κα</mentioned> in <mentioned xml:lang="grc">και</mentioned> corr. pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="107" xml:id="app.107" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:113" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:107">
+          <head>Pearson 107</head>
+          <pb n="242" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346"/>
+          <p><seg xml:id="mvp-comment-41-1" type="comment"><mentioned xml:lang="grc">ροιβδημ εαν τις</mentioned> ex <mentioned xml:lang="grc">ροιβδειαντι</mentioned> corr. pap.2: <mentioned xml:lang="grc">ροιβδοι</mentioned> primitus pap. | <mentioned xml:lang="grc">ἔσω πρὸς</mentioned>...<mentioned xml:lang="grc">μόλῃ</mentioned> scripsi: <mentioned xml:lang="grc">βοῶν δι'</mentioned>...<mentioned xml:lang="grc">λάβη</mentioned> Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="109" xml:id="app.109" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:115" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:109">
+          <head>Pearson 109</head>
+          <pb n="242" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346"/>
+          <p><seg xml:id="mvp-comment-42-1" type="comment"><mentioned xml:lang="grc">στιβ</mentioned> ex <mentioned xml:lang="grc">στιλβ</mentioned> corr. pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="113" xml:id="app.113" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:119" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:113">
+          <head>Pearson 113</head>
+          <pb n="243" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347"/>
+          <p><seg xml:id="mvp-comment-43-1" type="comment"><mentioned xml:lang="grc">εἰς</mentioned> pap. et saepius | <mentioned xml:lang="grc">αὖ</mentioned> pap., unde <mentioned xml:lang="grc">δέδορκεν αὖ· τάδ᾽</mentioned> Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="114" xml:id="app.114" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:120" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:114">
+          <head>Pearson 114</head>
+          <pb n="243" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347"/>
+          <p><seg xml:id="mvp-comment-44-1" type="comment"><mentioned xml:lang="grc">τουτί</mentioned>: <mentioned xml:lang="grc">α</mentioned> (i.e. <mentioned xml:lang="grc">ταυτί</mentioned>) suprascr. pap.2 | <mentioned xml:lang="grc">πράγματος</mentioned> in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="118" xml:id="app.118" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:124" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:118">
+          <head>Pearson 118</head>
+          <pb n="243" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347"/>
+          <p><seg xml:id="mvp-comment-45-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">εῦρες</mentioned> pap.</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="119" xml:id="app.119" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:125" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:119">
+          <head>Pearson 119</head>
+          <pb n="244" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348"/>
+          <p><seg xml:id="mvp-comment-46-1" type="comment"><mentioned xml:lang="grc">κεκλιμένον</mentioned> Hunt, interrogatione intra v. 118 terminata</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="122" xml:id="app.122" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:128" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:122">
+          <head>Pearson 122</head>
+          <pb n="244" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348"/>
+          <p><seg xml:id="mvp-comment-47-1" type="comment"><mentioned xml:lang="grc">κύβδα θυμαίνεις</mentioned> olim Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="123" xml:id="app.123" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:129" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:123">
+          <head>Pearson 123</head>
+          <pb n="244" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348"/>
+          <p><seg xml:id="mvp-comment-48-1" type="comment"><mentioned xml:lang="grc">τροπωι</mentioned> pap.: corr. Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="128" xml:id="app.128" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:134" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:128">
+          <head>Pearson 128</head>
+          <pb n="244" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348"/>
+          <p><seg xml:id="mvp-comment-49-1" type="comment">vid. comm. | <mentioned xml:lang="grc">ειμειρει</mentioned>[.] pap., primum e del. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="129" xml:id="app.129" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:135" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:129">
+          <head>Pearson 129</head>
+          <pb n="244" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348"/>
+          <p><seg xml:id="mvp-comment-50-1" type="comment"><mentioned xml:lang="grc">σιγᾶθ᾽ οἱ</mentioned> Theonem legisse testatur pap.2: [<mentioned xml:lang="grc">σιγ</mentioned>]<mentioned xml:lang="grc">ᾶτ᾿</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="137" xml:id="app.137" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:143" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:137">
+          <head>Pearson 137</head>
+          <pb n="245" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349"/>
+          <p><seg xml:id="mvp-comment-51-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">᾿κπλαγ</mentioned>(<mentioned xml:lang="grc">έντες</mentioned>) Aristophanem, <mentioned xml:lang="grc">ἐνθάδ᾽ ἐξενίσμεθα</mentioned> Theonem legisse testatur pap.2: <mentioned xml:lang="grc">π</mentioned>[<mentioned xml:lang="grc">λ</mentioned>]<mentioned xml:lang="grc">αγεντες</mentioned> . . <mentioned xml:lang="grc">ἐξ</mentioned>[.]. <mentioned xml:lang="grc">γισμεθα</mentioned> (<mentioned xml:lang="grc">ἐξωργίσμεθα</mentioned> ?) pap.</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="139" xml:id="app.139" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:145" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:139">
+          <head>Pearson 139</head>
+          <pb n="245" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349"/>
+          <p><seg xml:id="mvp-comment-52-1" type="comment">post <mentioned xml:lang="grc">ψόφον</mentioned> interpunxit pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="140" xml:id="app.140" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:146" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:140">
+          <head>Pearson 140</head>
+          <pb n="245" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349"/>
+          <p><seg xml:id="mvp-comment-53-1" type="comment"><mentioned xml:lang="grc">ἐκμεμαγμένα</mentioned> Aristophanem legisse testatur pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="144" xml:id="app.144" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:150" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:144">
+          <head>Pearson 144</head>
+          <pb n="246" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350"/>
+          <p><seg xml:id="mvp-comment-54-1" type="comment"><mentioned xml:lang="grc">σχήματ᾽</mentioned> malim</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="150" xml:id="app.150" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:156" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:150">
+          <head>Pearson 150</head>
+          <pb n="246" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350"/>
+          <p><seg xml:id="mvp-comment-55-1" type="comment"><mentioned xml:lang="grc">δειλουμένου</mentioned> in marg. Ni(candro) adscriptum: <mentioned xml:lang="grc">δουλουμένου</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="152" xml:id="app.152" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:158" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:152">
+          <head>Pearson 152</head>
+          <pb n="246" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350"/>
+          <p><seg xml:id="mvp-comment-56-1" type="comment"><mentioned xml:lang="grc">αἰχμαῖσιν</mentioned> scripsi: <mentioned xml:lang="grc">ἀκμαῖσιν</mentioned> Hunt | <mentioned xml:lang="grc">ἐξειργασμένου</mentioned> ex <mentioned xml:lang="grc">ἐξειργασμένα</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="153" xml:id="app.153" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:159" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:153">
+          <head>Pearson 153</head>
+          <pb n="247" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351"/>
+          <p><seg xml:id="mvp-comment-57-1" type="comment"><mentioned xml:lang="grc">ὑμῶν</mentioned> ex <mentioned xml:lang="grc">ἡμῶν</mentioned> corr. pap.2 | <mentioned xml:lang="grc">ὑπορρυπαίνεται</mentioned> praetulit Hunt | post hunc v. lacunam indicat Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="155" xml:id="app.155" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:161" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:155">
+          <head>Pearson 155</head>
+          <pb n="247" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351"/>
+          <p><seg xml:id="mvp-comment-58-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">τί</mentioned> supplevi: ov Wilamowitz</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="159" xml:id="app.159" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:165" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:159">
+          <head>Pearson 159</head>
+          <pb n="247" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351"/>
+          <p><seg xml:id="mvp-comment-59-1" type="comment"><mentioned xml:lang="grc">ἀφέντες</mentioned> ex <mentioned xml:lang="grc">αφαντες</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="165" xml:id="app.165" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:171" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:165">
+          <head>Pearson 165</head>
+          <pb n="248" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352"/>
+          <p><seg xml:id="mvp-comment-60-1" type="comment"><mentioned xml:lang="grc">λόγων</mentioned>, ut videtur, pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="168" xml:id="app.168" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:174" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:168">
+          <head>Pearson 168</head>
+          <pb n="248" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352"/>
+          <p><seg xml:id="mvp-comment-61-1" type="comment"><mentioned xml:lang="grc">ιει</mentioned> in <mentioned xml:lang="grc">εἶ᾽</mentioned> corr. pap. | <mentioned xml:lang="grc">ἀφίστω</mentioned> scripsi: <mentioned xml:lang="grc">ἐφίστω</mentioned> Hunt | <mentioned xml:lang="grc">οἵμου</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="172" xml:id="app.172" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:178" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:172">
+          <head>Pearson 172</head>
+          <pb n="249" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353"/>
+          <p><seg xml:id="mvp-comment-62-1" type="comment"><mentioned xml:lang="grc">ὑπό μ᾽ ἴδες</mentioned> ex <mentioned xml:lang="grc">ὑπ᾿ ἐμὲ ἴδες</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="173" xml:id="app.173" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:179" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:173">
+          <head>Pearson 173</head>
+          <pb n="249" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353"/>
+          <p><seg xml:id="mvp-comment-63-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">ἐν</mentioned> ex è corr. pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="174" xml:id="app.174" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:180" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:174">
+          <head>Pearson 174</head>
+          <pb n="249" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353"/>
+          <p><seg xml:id="mvp-comment-64-1" type="comment"><mentioned xml:lang="grc">έλελυθεν</mentioned> (bis) pap.: corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="176" xml:id="app.176" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:182" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:176">
+          <head>Pearson 176</head>
+          <pb n="249" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353"/>
+          <p><seg xml:id="mvp-comment-65-1" type="comment"><mentioned xml:lang="grc">δεῦτε ὦ</mentioned> in marg. pap.2: <mentioned xml:lang="grc">δευτερῳ</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="180" xml:id="app.180" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:186" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:180">
+          <head>Pearson 180</head>
+          <pb n="250" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354"/>
+          <p><seg xml:id="mvp-comment-66-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">νόμος νόμον</mentioned> Theonem legisse testatur pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="186" xml:id="app.186" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:192" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:186">
+          <head>Pearson 186</head>
+          <pb n="250" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354"/>
+          <p><seg xml:id="mvp-comment-67-1" type="comment"><mentioned xml:lang="grc">με</mentioned> ex <mentioned xml:lang="grc">δε</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="192" xml:id="app.192" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:198" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:192">
+          <head>Pearson 192</head>
+          <pb n="250" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354"/>
+          <p><seg xml:id="mvp-comment-68-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">ἤ</mentioned>: <mentioned xml:lang="grc">η</mentioned> supra <mentioned xml:lang="grc">ει</mentioned> scr. pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="193" xml:id="app.193" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:199" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:193">
+          <head>Pearson 193</head>
+          <pb n="250" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354"/>
+          <p><seg xml:id="mvp-comment-69-1" type="comment"><mentioned xml:lang="grc">ολβ</mentioned> legi posse negat Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="197" xml:id="app.197" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:203" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:197">
+          <head>Pearson 197</head>
+          <pb n="250" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354"/>
+          <p><seg xml:id="mvp-comment-70-1" type="comment"><mentioned xml:lang="grc">β</mentioned> in marg. ducentesimo versui adscriptum</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="199" xml:id="app.199" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:205-205c" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:199">
+          <head>Pearson 199</head>
+          <pb n="251" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=355"/>
+          <p><seg xml:id="mvp-comment-71-1" type="comment"><mentioned xml:lang="grc">τί ἔστιν</mentioned>; etiam Sileno, <mentioned xml:lang="grc">οὐ μενῶ</mentioned> choro, <mentioned xml:lang="grc">μέν᾽ εἰ δύνᾳ</mentioned> (quod ex v. 200 eiecto <mentioned xml:lang="grc">θέλεις</mentioned> huc transtulit Wilamowitz) Sileno tribuit Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="200" xml:id="app.200" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:206" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:200">
+          <head>Pearson 200 sqq.</head>
+          <pb n="251" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=355"/>
+          <p><seg xml:id="mvp-comment-72-1" type="comment">choro tribuit Hunt | <mentioned xml:lang="grc">ὅπῃ δύνᾳ</mentioned> scriptum fuisse, sed <mentioned xml:lang="grc">βέλτιον</mentioned> esse <mentioned xml:lang="grc">ὅπῃ θέλεις</mentioned> in marg. testatur pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="204" xml:id="app.204" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:210" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:204">
+          <head>Pearson 204 sqq.</head>
+          <pb n="252" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356"/>
+          <p><seg xml:id="mvp-comment-73-1" type="comment">Sileno tribuit Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="208" xml:id="app.208" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:214" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:208">
+          <head>Pearson 208</head>
+          <pb n="252" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356"/>
+          <p><seg xml:id="mvp-comment-74-1" type="comment"><mentioned xml:lang="grc">φθεγγμα αφυσ</mentioned>[<mentioned xml:lang="grc">ε</mentioned>]<mentioned xml:lang="grc">ις</mentioned> in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="214" xml:id="app.214" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:220" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:214">
+          <head>Pearson 214</head>
+          <pb n="252" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356"/>
+          <p><seg xml:id="mvp-comment-75-1" type="comment"><mentioned xml:lang="grc">εἰ</mentioned> pap.: <mentioned xml:lang="grc">ᾗ</mentioned> Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="211" xml:id="app.211" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:217" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:211">
+          <head>Pearson 211</head>
+          <pb n="252" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356"/>
+          <p><seg xml:id="mvp-comment-76-1" type="comment"><mentioned xml:lang="grc">ὁ δ᾽</mentioned> Hunt qui hunc et sequentes versus Sileno tribuit</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="215" xml:id="app.215" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:221" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:215">
+          <head>Pearson 215</head>
+          <pb n="253" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357"/>
+          <p><seg xml:id="mvp-comment-77-1" type="comment"><mentioned xml:lang="grc">χωρον</mentioned> legisse Aristophanem testatur pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="217" xml:id="app.217" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:223" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:217">
+          <head>Pearson 217</head>
+          <pb n="253" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357"/>
+          <p><seg xml:id="mvp-comment-78-1" type="comment"><mentioned xml:lang="grc">μετάστασις</mentioned> ex <mentioned xml:lang="grc">μετασις</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="218" xml:id="app.218" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:224" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:218">
+          <head>Pearson 218</head>
+          <pb n="253" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357"/>
+          <p><seg xml:id="mvp-comment-79-1" type="comment"><mentioned xml:lang="grc">εἶχες</mentioned> Wilamowitz: <mentioned xml:lang="grc">ειπες</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="219" xml:id="app.219" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:225" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:219">
+          <head>Pearson 219</head>
+          <pb n="254" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358"/>
+          <p><seg xml:id="mvp-comment-80-1" type="comment"><mentioned xml:lang="grc">υμειν</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="221" xml:id="app.221" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:227" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:221">
+          <head>Pearson 221</head>
+          <pb n="254" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358"/>
+          <p><seg xml:id="mvp-comment-81-1" type="comment"><mentioned xml:lang="grc">εὐιάζετ᾿</mentioned> pap.: <mentioned xml:lang="grc">εὐίαζες</mentioned> pap.2 | <mentioned xml:lang="grc">ζή</mentioned>(<mentioned xml:lang="grc">τει</mentioned>) in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="222" xml:id="app.222" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:228" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:222">
+          <head>Pearson 222</head>
+          <pb n="254" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358"/>
+          <p><seg xml:id="mvp-comment-82-1" type="comment"><mentioned xml:lang="grc">παίδων</mentioned> Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="223" xml:id="app.223" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:229" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:223">
+          <head>Pearson 223</head>
+          <pb n="254" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358"/>
+          <p><seg xml:id="mvp-comment-83-1" type="comment"><mentioned xml:lang="grc">νέον</mentioned> coni. Hunt, quia <mentioned xml:lang="grc">νέων</mentioned> spatium vix continet</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="224" xml:id="app.224" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:230" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:224">
+          <head>Pearson 224</head>
+          <pb n="254" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358"/>
+          <p><seg xml:id="mvp-comment-84-1" type="comment">post <mentioned xml:lang="grc">γάρ</mentioned> interpunxit Hunt | <mentioned xml:lang="grc">κατήλυθεν</mentioned> legisse Theonem testatur pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="237" xml:id="app.237" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:243" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:237">
+          <head>Pearson 237</head>
+          <pb n="255" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359"/>
+          <p><seg xml:id="mvp-comment-85-1" type="comment"><mentioned xml:lang="grc">νύμφη</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="238" xml:id="app.238" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:244" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:238">
+          <head>Pearson 238</head>
+          <pb n="255" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359"/>
+          <p><seg xml:id="mvp-comment-86-1" type="comment">supplevit Diehl | <mentioned xml:lang="grc">υ</mentioned> inseruit pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="239" xml:id="app.239" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:245" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:239">
+          <head>Pearson 239 sq.</head>
+          <pb n="255" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359"/>
+          <p><seg xml:id="mvp-comment-87-1" type="comment">supplevit Murray</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="241" xml:id="app.241" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:247" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:241">
+          <head>Pearson 241</head>
+          <pb n="256" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360"/>
+          <p><seg xml:id="mvp-comment-88-1" type="comment"><mentioned xml:lang="grc">μή</mentioned> pap.2: <mentioned xml:lang="grc">μηδέ</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="242" xml:id="app.242" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:248" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:242">
+          <head>Pearson 242 sq.</head>
+          <pb n="256" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360"/>
+          <p><seg xml:id="mvp-comment-89-1" type="comment">supplevit Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="244" xml:id="app.244" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:250" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:244">
+          <head>Pearson 244</head>
+          <pb n="256" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360"/>
+          <p><seg xml:id="mvp-comment-90-1" type="comment">in textu omissum, in marg. superiore add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="245-249" xml:id="app.245-249" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:251-255" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:245-249">
+          <head>Pearson 245-249</head>
+          <pb n="256" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360"/>
+          <p><seg xml:id="mvp-comment-91-1" type="comment">suppleverunt Murray et Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="247" xml:id="app.247" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:253" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:247">
+          <head>Pearson 247</head>
+          <pb n="256" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360"/>
+          <p><seg xml:id="mvp-comment-92-1" type="comment"><mentioned xml:lang="grc">λακασμάτων</mentioned> coni. Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="254" xml:id="app.254" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:260" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:254">
+          <head>Pearson 254</head>
+          <pb n="257" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361"/>
+          <p><seg xml:id="mvp-comment-93-1" type="comment"><mentioned xml:lang="grc">τοῦτο πῶς φωνεῖ</mentioned> legisse Theonem testatur pap.2, <mentioned xml:lang="grc">τοῦθ᾽ ὁ περιφωνεῖ</mentioned> H. Richards</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="268" xml:id="app.268" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:274" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:268">
+          <head>Pearson 268</head>
+          <pb n="258" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362"/>
+          <p><seg xml:id="mvp-comment-94-1" type="comment"><mentioned xml:lang="grc">κἄδεσμα</mentioned> Bucherer: <mentioned xml:lang="grc">κἀδεστὰ</mentioned> Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="272" xml:id="app.272" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:278" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:272">
+          <head>Pearson 272</head>
+          <pb n="258" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362"/>
+          <p><seg xml:id="mvp-comment-95-1" type="comment"><mentioned xml:lang="grc">ἄπαυστος</mentioned> supplevi: <mentioned xml:lang="grc">μέγιστος</mentioned> Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="273" xml:id="app.273" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:279" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:273">
+          <head>Pearson 273</head>
+          <pb n="258" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362"/>
+          <p><seg xml:id="mvp-comment-96-1" type="comment"><mentioned xml:lang="grc">ἡμέρας πεφασμένος</mentioned> in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="274" xml:id="app.274" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:280" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:274">
+          <head>Pearson 274</head>
+          <pb n="258" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362"/>
+          <p><seg xml:id="mvp-comment-97-1" type="comment"><mentioned xml:lang="grc">τύπους</mentioned> supplevi: <mentioned xml:lang="grc">γυίοις</mentioned> Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="275" xml:id="app.275" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:281" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:275">
+          <head>Pearson 275</head>
+          <pb n="258" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362"/>
+          <p><seg xml:id="mvp-comment-98-1" type="comment"><mentioned xml:lang="grc">ἐπισχολάζεται</mentioned> Athenaei et Eustathii codd.: correxerat Meineke</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="276" xml:id="app.276" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:282" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:276">
+          <head>Pearson 276</head>
+          <pb n="259" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363"/>
+          <p><seg xml:id="mvp-comment-99-1" type="comment"><mentioned xml:lang="grc">στέγει</mentioned> ex <mentioned xml:lang="grc">τέγει</mentioned> corr., etiam <mentioned xml:lang="grc">τρέφει</mentioned> in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="277" xml:id="app.277" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:283" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:277">
+          <head>Pearson 277</head>
+          <pb n="259" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363"/>
+          <p><seg xml:id="mvp-comment-100-1" type="comment"><mentioned xml:lang="grc">κατάσχετος</mentioned> supplevi: <mentioned xml:lang="grc">δυσεύρετος</mentioned> Murray</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="278" xml:id="app.278" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:284" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:278">
+          <head>Pearson 278</head>
+          <pb n="259" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363"/>
+          <p><seg xml:id="mvp-comment-101-1" type="comment"><mentioned xml:lang="grc">φθεγγμ</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="283" xml:id="app.283" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:290" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:283">
+          <head>Pearson 283</head>
+          <pb n="259" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363"/>
+          <p><seg xml:id="mvp-comment-102-1" type="comment"><mentioned xml:lang="grc">βοης</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="288" xml:id="app.288" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:295" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:288">
+          <head>Pearson 288</head>
+          <pb n="259" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363"/>
+          <p><seg xml:id="mvp-comment-103-1" type="comment"><mentioned xml:lang="grc">τὼς</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="290" xml:id="app.290" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:297" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:290">
+          <head>Pearson 290</head>
+          <pb n="259" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363"/>
+          <p><seg xml:id="mvp-comment-104-1" type="comment"><mentioned xml:lang="grc">γήρυν</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="292" xml:id="app.292" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:300" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:292">
+          <head>Pearson 292</head>
+          <pb n="260" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364"/>
+          <p><seg xml:id="mvp-comment-105-1" type="comment"><mentioned xml:lang="grc">γ</mentioned> in marg. trecentesimo versui adscriptum</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="293" xml:id="app.293" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:301" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:293">
+          <head>Pearson 293</head>
+          <pb n="260" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364"/>
+          <p><seg xml:id="mvp-comment-106-1" type="comment"><mentioned xml:lang="grc">τῶν δ᾽ ἄναυδος</mentioned> pap., <mentioned xml:lang="grc">ζῶν δὲ νη</mentioned>[<mentioned xml:lang="grc">ῦδος</mentioned>?] in marg. add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="295" xml:id="app.295" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:303" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:295">
+          <head>Pearson 295</head>
+          <pb n="260" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364"/>
+          <p><seg xml:id="mvp-comment-107-1" type="comment"><mentioned xml:lang="grc">χυτροιδης</mentioned> pap., <mentioned xml:lang="grc">τροχοιδη</mentioned>[<mentioned xml:lang="grc">ς</mentioned>] in marg. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="298" xml:id="app.298" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:306" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:298">
+          <head>Pearson 298</head>
+          <pb n="260" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364"/>
+          <p><seg xml:id="mvp-comment-108-1" type="comment"><mentioned xml:lang="grc">ιχνευμ</mentioned>[<mentioned xml:lang="grc">ο</mentioned>]<mentioned xml:lang="grc">νι</mentioned> pap. secundum ed. pr.: corr. Zielinski, <mentioned xml:lang="grc">ἰχνευτῇ</mentioned> in pap. iam invenit Hunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="303" xml:id="app.303" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:311" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:303">
+          <head>Pearson 303</head>
+          <pb n="261" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365"/>
+          <p><seg xml:id="mvp-comment-109-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">ορεινη</mentioned> (<mentioned xml:lang="grc">ε</mentioned> postea deleto) pap. | <mentioned xml:lang="grc">τωστρακρεων</mentioned> pap. : <mentioned xml:lang="grc">συγγονους οστρα</mentioned>[ legisse Theonem in marg. testatur pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="307" xml:id="app.307" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:314b" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:307">
+          <head>Pearson 307</head>
+          <pb n="261" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365"/>
+          <p><seg xml:id="mvp-comment-110-1" type="comment"><mentioned xml:lang="grc">κώστρακον</mentioned> coni. Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="311" xml:id="app.311" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:318" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:311">
+          <head>Pearson 311</head>
+          <pb n="262" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366"/>
+          <p><seg xml:id="mvp-comment-111-1" type="comment"><mentioned xml:lang="grc">κοιλάδος</mentioned> supplevit Mekler</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="313" xml:id="app.313" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:320" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:313">
+          <head>Pearson 313</head>
+          <pb n="262" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366"/>
+          <p><seg xml:id="mvp-comment-112-1" type="comment">o supra primum a add. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="318" xml:id="app.318" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:326" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:318">
+          <head>Pearson 318</head>
+          <pb n="262" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366"/>
+          <p><seg xml:id="mvp-comment-113-1" type="comment"><mentioned xml:lang="grc">ἀλυίων</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="321" xml:id="app.321" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:329" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:321">
+          <head>Pearson 321</head>
+          <pb n="262" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366"/>
+          <p><seg xml:id="mvp-comment-114-1" type="comment"><mentioned xml:lang="grc">ὀρθοψάλακτος</mentioned> Murray: <mentioned xml:lang="grc">οψαλακτος</mentioned> pap., <mentioned xml:lang="grc">ἀπροψάλακτος</mentioned> Wilamowitz | <mentioned xml:lang="grc">ὀμφὴ</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="322" xml:id="app.322" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:330" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:322">
+          <head>Pearson 322</head>
+          <pb n="263" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367"/>
+          <p><seg xml:id="mvp-comment-115-1" type="comment"><mentioned xml:lang="grc">πρεπτὰ δ᾽ αὖ</mentioned> Hunt: <mentioned xml:lang="grc">πρὲπτᾶ</mentioned> (sic) pap., sed <mentioned xml:lang="grc">πρ</mentioned> reformavit pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="323" xml:id="app.323" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:331" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:323">
+          <head>Pearson 323</head>
+          <pb n="263" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367"/>
+          <p><seg xml:id="mvp-comment-116-1" type="comment"><mentioned xml:lang="grc">ἐπανθεμίζεται</mentioned> legisse Theonem in marg. testatur pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="324" xml:id="app.324" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:332" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:324">
+          <head>Pearson 324</head>
+          <pb n="263" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367"/>
+          <p><seg xml:id="mvp-comment-117-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">οἶπερ</mentioned> coni. Hunt: <mentioned xml:lang="grc">οὗπερ</mentioned> pap. sed litteram <mentioned xml:lang="grc">υ</mentioned> seclusit pap.2</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="329" xml:id="app.329" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:337" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:329">
+          <head>Pearson 329</head>
+          <pb n="263" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367"/>
+          <p><seg xml:id="mvp-comment-118-1" type="comment"><mentioned xml:lang="grc">ἐμοὶ μηδὲ</mentioned> coni. Hunt: <mentioned xml:lang="grc">εμοι δε</mentioned> pap., <mentioned xml:lang="grc">μηδὲ</mentioned> Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="332" xml:id="app.332" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:340" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:332">
+          <head>Pearson 332</head>
+          <pb n="264" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368"/>
+          <p><seg xml:id="mvp-comment-119-1" type="comment">supplevit Mekler | <mentioned xml:lang="grc">φιλητην</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="336" xml:id="app.336" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:344" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:336">
+          <head>Pearson 336</head>
+          <pb n="264" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368"/>
+          <p><seg xml:id="mvp-comment-120-1" type="comment">quatenus processerit stichomythia non liquet</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="340" xml:id="app.340" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:348" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:340">
+          <head>Pearson 340</head>
+          <pb n="264" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368"/>
+          <p><seg xml:id="mvp-comment-121-1" type="comment"><mentioned xml:lang="grc">δορα</mentioned>[ pap.: corr. Robert</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="350" xml:id="app.350" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:359" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:350">
+          <head>Pearson 350</head>
+          <pb n="265" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369"/>
+          <p><seg xml:id="mvp-comment-122-1" type="comment">supplevi</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="352" xml:id="app.352" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:361" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:352">
+          <head>Pearson 352 sqq.</head>
+          <pb n="265" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369"/>
+          <p><seg xml:id="mvp-comment-123-1" type="comment">initia supplevi</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="354" xml:id="app.354" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:363" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:354">
+          <head>Pearson 354</head>
+          <pb n="265" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369"/>
+          <p><seg xml:id="mvp-comment-124-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">δ᾽ οὗ πλανᾷ δόμους</mentioned> scripsi: <mentioned xml:lang="grc">τουπαναι δομος</mentioned> pap., <mentioned xml:lang="grc">δ</mentioned> supra et spiritum asperum supra <mentioned xml:lang="grc">ου</mentioned> add. pap.2, <mentioned xml:lang="grc">δ᾽ οὐ πεινῇ δόμος</mentioned> Wilamowitz</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="355" xml:id="app.355" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:364" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:355">
+          <head>Pearson 355</head>
+          <pb n="265" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369"/>
+          <p><seg xml:id="mvp-comment-125-1" type="comment"><mentioned xml:lang="grc">ἄθρει</mentioned> Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="356" xml:id="app.356" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:365" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:356">
+          <head>Pearson 356</head>
+          <pb n="265" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369"/>
+          <p><seg xml:id="mvp-comment-126-1" type="comment"><mentioned xml:lang="grc">δ᾽</mentioned> ex <mentioned xml:lang="grc">τ᾽</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="357" xml:id="app.357" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:366" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:357">
+          <head>Pearson 357</head>
+          <pb n="265" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369"/>
+          <p><seg xml:id="mvp-comment-127-1" type="comment"><mentioned xml:lang="grc">εισι</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="358" xml:id="app.358" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:367" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:358">
+          <head>Pearson 358</head>
+          <pb n="266" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370"/>
+          <p><seg xml:id="mvp-comment-128-1" type="comment"><mentioned xml:lang="grc">κνικωι</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="360" xml:id="app.360" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:369" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:360">
+          <head>Pearson 360</head>
+          <pb n="266" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370"/>
+          <p><seg xml:id="mvp-comment-129-1" type="comment"><mentioned xml:lang="grc">εἰς θεοὺς</mentioned> Wilamowitz | <mentioned xml:lang="grc">λοια χρη</mentioned> in ras. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="361" xml:id="app.361" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:370" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:361">
+          <head>Pearson 361</head>
+          <pb n="266" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370"/>
+          <p><seg xml:id="mvp-comment-130-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">υστερωιτεγωγελω</mentioned> pap., <mentioned xml:lang="grc">η</mentioned> supra prius <mentioned xml:lang="grc">γ</mentioned> et <mentioned xml:lang="grc">υστερωσεγω</mentioned> in marg. add. pap.2, <mentioned xml:lang="grc">ὕστερ᾽</mentioned>; <mentioned xml:lang="grc">ὣς ἐγὼ λέγω</mentioned> Hunt, <mentioned xml:lang="grc">ὑστέρως</mentioned>, <mentioned xml:lang="grc">ἐγὼ λέγω</mentioned> Wilamowitz</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="362" xml:id="app.362" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:371" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:362">
+          <head>Pearson 362 sq.</head>
+          <pb n="266" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370"/>
+          <p><seg xml:id="mvp-comment-131-1" type="comment"><mentioned xml:lang="grc">μύθοις</mentioned> | <mentioned xml:lang="grc">ὁποίαν</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="363" xml:id="app.363" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:372" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:363">
+          <head>Pearson 363</head>
+          <pb n="266" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370"/>
+          <p><seg xml:id="mvp-comment-132-1" type="comment"><mentioned xml:lang="grc">θέλεις</mentioned> ex <mentioned xml:lang="grc">θέλοις</mentioned> corr. pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="365" xml:id="app.365" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:374" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:365">
+          <head>Pearson 365</head>
+          <pb n="266" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370"/>
+          <p><seg xml:id="mvp-comment-133-1" type="comment">
+            <sic ana="#ocr-review" resp="#digital"><mentioned xml:lang="grc">ὅπως</mentioned> Wilamowitz et Murray: <mentioned xml:lang="grc">πως</mentioned> pap. | <mentioned xml:lang="grc">χρῆμα οὗτος</mentioned> legisse Theonem testatur pap.2: <mentioned xml:lang="grc">χρηματουτεσ</mentioned> pap.</sic>
+          </seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="390" xml:id="app.390" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:398" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:390">
+          <head>Pearson 390</head>
+          <pb n="267" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371"/>
+          <p><seg xml:id="mvp-comment-134-1" type="comment"><mentioned xml:lang="grc">ὃς</mentioned> Wilamowitz et Murray: <mentioned xml:lang="grc">τον</mentioned> pap., <mentioned xml:lang="grc">ὅδ᾽</mentioned> pap.2 | <mentioned xml:lang="grc">ἐστὶν</mentioned> supplevit pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="391" xml:id="app.391" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:399" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:391">
+          <head>Pearson 391</head>
+          <pb n="267" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371"/>
+          <p><seg xml:id="mvp-comment-135-1" type="comment"><mentioned xml:lang="grc">ου</mentioned> supra <mentioned xml:lang="grc">παυσαι</mentioned> (i.e. <mentioned xml:lang="grc">παύου</mentioned>) add. pap.2 | <mentioned xml:lang="grc">τὸν Διὸς</mentioned> Wilamowitz</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="392" xml:id="app.392" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:400" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:392">
+          <head>Pearson 392</head>
+          <pb n="267" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371"/>
+          <p><seg xml:id="mvp-comment-136-1" type="comment"><mentioned xml:lang="grc">δ</mentioned> in marg. quadringentesimo versui adscriptum</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="393" xml:id="app.393" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:401" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:393">
+          <head>Pearson 393</head>
+          <pb n="267" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371"/>
+          <p><seg xml:id="mvp-comment-137-1" type="comment"><mentioned xml:lang="grc">πνε</mentioned>[.]<mentioned xml:lang="grc">γεις</mentioned> pap.</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="394" xml:id="app.394" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:402" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:394">
+          <head>Pearson 394</head>
+          <pb n="268" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372"/>
+          <p><seg xml:id="mvp-comment-138-1" type="comment"><mentioned xml:lang="grc">ἀπολεῖ σε</mentioned> coni. Murray</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="414" xml:id="app.414" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:414">
+          <head>Pearson 414</head>
+          <pb n="268" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372"/>
+          <p><seg xml:id="mvp-comment-139-1" type="comment">columna omnino periit, nisi quod verba <mentioned xml:lang="grc">π</mentioned>]<mentioned xml:lang="grc">ελέθοις βοῶν</mentioned> Theonem legisse in marg. testatur pap.2</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="431" xml:id="app.431" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:404" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:431">
+          <head>Pearson 431</head>
+          <pb n="268" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372"/>
+          <p><seg xml:id="mvp-comment-140-1" type="comment">post <mentioned xml:lang="grc">ἰοὺ ἰοὺ</mentioned> litterae <mentioned xml:lang="grc">π</mentioned>[.]<mentioned xml:lang="grc">γ</mentioned>. deletae sunt</seg></p>
+        </div>
+        <div type="textpart" subtype="commline" n="432" xml:id="app.432" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:405" source="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1:432">
+          <head>Pearson 432</head>
+          <pb n="268" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372"/>
+          <p><seg xml:id="mvp-comment-141-1" type="comment"><mentioned xml:lang="grc">τ</mentioned> ex <mentioned xml:lang="grc">δ</mentioned> corr. pap.2</seg></p>
+        </div>
+      </div>
+    </body>
+  </text>
+<standOff><linkGrp type="commentary"><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:7 #mvp-comment-1-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:11 #mvp-comment-2-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:13 #mvp-comment-3-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:14 #mvp-comment-4-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:15 #mvp-comment-5-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:17 #mvp-comment-6-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:19 #mvp-comment-7-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:20 #mvp-comment-8-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:21 #mvp-comment-9-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:22 #mvp-comment-10-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:25 #mvp-comment-11-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:31 #mvp-comment-12-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:32 #mvp-comment-13-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:38 #mvp-comment-14-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:40 #mvp-comment-15-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:43 #mvp-comment-16-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:44 #mvp-comment-17-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:45 #mvp-comment-18-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:51 #mvp-comment-19-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:53 #mvp-comment-20-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:58 #mvp-comment-21-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:65 #mvp-comment-22-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:71 #mvp-comment-23-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:72 #mvp-comment-24-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:74 #mvp-comment-25-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:76 #mvp-comment-26-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:77-78 #mvp-comment-27-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:79 #mvp-comment-28-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:80 #mvp-comment-29-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:83 #mvp-comment-30-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:84 #mvp-comment-31-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:85 #mvp-comment-32-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:99 #mvp-comment-33-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:100 #mvp-comment-34-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:102 #mvp-comment-35-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:103 #mvp-comment-36-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:104 #mvp-comment-37-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:108 #mvp-comment-38-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:110 #mvp-comment-39-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:111 #mvp-comment-40-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:113 #mvp-comment-41-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:115 #mvp-comment-42-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:119 #mvp-comment-43-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:120 #mvp-comment-44-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:124 #mvp-comment-45-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:125 #mvp-comment-46-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:128 #mvp-comment-47-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:129 #mvp-comment-48-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:134 #mvp-comment-49-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:135 #mvp-comment-50-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:143 #mvp-comment-51-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:145 #mvp-comment-52-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:146 #mvp-comment-53-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:150 #mvp-comment-54-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:156 #mvp-comment-55-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:158 #mvp-comment-56-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:159 #mvp-comment-57-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:161 #mvp-comment-58-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:165 #mvp-comment-59-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:171 #mvp-comment-60-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:174 #mvp-comment-61-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:178 #mvp-comment-62-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:179 #mvp-comment-63-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:180 #mvp-comment-64-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:182 #mvp-comment-65-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:186 #mvp-comment-66-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:192 #mvp-comment-67-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:198 #mvp-comment-68-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:199 #mvp-comment-69-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:203 #mvp-comment-70-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:205-205c #mvp-comment-71-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:206 #mvp-comment-72-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:210 #mvp-comment-73-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:214 #mvp-comment-74-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:220 #mvp-comment-75-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:217 #mvp-comment-76-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:221 #mvp-comment-77-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:223 #mvp-comment-78-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:224 #mvp-comment-79-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:225 #mvp-comment-80-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:227 #mvp-comment-81-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:228 #mvp-comment-82-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:229 #mvp-comment-83-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:230 #mvp-comment-84-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:243 #mvp-comment-85-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:244 #mvp-comment-86-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:245 #mvp-comment-87-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:247 #mvp-comment-88-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:248 #mvp-comment-89-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:250 #mvp-comment-90-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:251-255 #mvp-comment-91-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:253 #mvp-comment-92-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:260 #mvp-comment-93-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:274 #mvp-comment-94-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:278 #mvp-comment-95-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:279 #mvp-comment-96-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:280 #mvp-comment-97-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:281 #mvp-comment-98-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:282 #mvp-comment-99-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:283 #mvp-comment-100-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:284 #mvp-comment-101-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:290 #mvp-comment-102-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:295 #mvp-comment-103-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:297 #mvp-comment-104-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:300 #mvp-comment-105-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:301 #mvp-comment-106-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:303 #mvp-comment-107-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:306 #mvp-comment-108-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:311 #mvp-comment-109-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:314b #mvp-comment-110-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:318 #mvp-comment-111-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:320 #mvp-comment-112-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:326 #mvp-comment-113-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:329 #mvp-comment-114-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:330 #mvp-comment-115-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:331 #mvp-comment-116-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:332 #mvp-comment-117-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:337 #mvp-comment-118-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:340 #mvp-comment-119-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:344 #mvp-comment-120-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:348 #mvp-comment-121-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:359 #mvp-comment-122-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:361 #mvp-comment-123-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:363 #mvp-comment-124-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:364 #mvp-comment-125-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:365 #mvp-comment-126-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:366 #mvp-comment-127-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:367 #mvp-comment-128-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:369 #mvp-comment-129-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:370 #mvp-comment-130-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:371 #mvp-comment-131-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:372 #mvp-comment-132-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:374 #mvp-comment-133-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:398 #mvp-comment-134-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:399 #mvp-comment-135-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:400 #mvp-comment-136-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:401 #mvp-comment-137-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:402 #mvp-comment-138-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403 #mvp-comment-139-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:404 #mvp-comment-140-1"/><link target="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:405 #mvp-comment-141-1"/></linkGrp></standOff></TEI>

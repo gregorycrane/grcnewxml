@@ -49,7 +49,7 @@
         </cRefPattern>
       </refsDecl>
       <p>Encoded in accordance with EpiDoc and CTS/CITE conventions.</p>
-    </encodingDesc>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="deu">German</language>
@@ -62,7 +62,7 @@
       <change when="2026-08-16" who="#gcrane">Transferred every Smyth card milestone through Wilamowitz's Greek line correspondences and German line markers; generated an auditable alignment report.</change>
     </revisionDesc>
   </teiHeader>
-  <text>
+  <text xml:lang="deu">
     <front><div type="textpart" subtype="introduction">
       <pb n="121"/>
       <head>Einleitung.</head>
@@ -1013,7 +1013,7 @@
     </div>
 
     </front>
-    <body>
+    <body xml:base="urn:cts:greekLit:tlg0085.tlg006.wilam1919-ger1">
       <div type="translation" xml:lang="deu" n="urn:cts:greekLit:tlg0085.tlg006.wilamowitz-ger1"><pb n="156"/>
     <list><head>PERSONEN.</head>
       <item>Klytaimestra.</item>

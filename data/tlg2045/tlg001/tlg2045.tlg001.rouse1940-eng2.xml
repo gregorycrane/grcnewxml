@@ -47,11 +47,6 @@
       </sourceDesc>
     </fileDesc>
     <encodingDesc>
-      <refsDecl xml:id="CTS" n="CTS">
-        <citeStructure match="/TEI/text/body/div[@type='book']" unit="book" use="@n">
-          <citeStructure match="p" unit="paragraph" use="@n" delim="."/>
-        </citeStructure>
-      </refsDecl>
       <editorialDecl>
         <correction method="silent">
           <p>The ToposText wording and punctuation were retained. HTML-only spacing was normalized, and navigation and presentation markup were removed.</p>
@@ -63,7 +58,7 @@
           <p>ToposText links to people and places were retained as TEI name elements; other hyperlinks were retained as ref elements.</p>
         </interpretation>
       </editorialDecl>
-    </encodingDesc>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div[@type='book']" unit="book" use="@n" delim=":"><citeStructure match="p" unit="paragraph" use="@n" delim="."/></citeStructure></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="eng">English</language>

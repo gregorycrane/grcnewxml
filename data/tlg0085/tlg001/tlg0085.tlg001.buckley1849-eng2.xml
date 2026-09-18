@@ -61,7 +61,7 @@
     </fileDesc>
 
     <encodingDesc>
-      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition using source-supplied passage ranges. In the Suppliants, each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition using source-supplied passage ranges. In the Suppliants, each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
 
     <profileDesc>
       <langUsage>
@@ -84,7 +84,7 @@
 
 
             <div type="textpart" subtype="cast-list"><fw type="header">PERSONS REPRESENTED.</fw><list><item><roleName>CHORUS</roleName>, THE DAUGHTERS OF DANAUS.</item><item><roleName>DANAUS</roleName>.</item><item><roleName>PELASGUS</roleName>.</item><item><roleName>HERALD</roleName>.</item></list></div>
-            </front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg001.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:2-40">
+            </front><body xml:base="urn:cts:greekLit:tlg0085.tlg001.buckley1849-eng2"><div type="edition" n="urn:cts:greekLit:tlg0085.tlg001.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:2-40">
                 <speaker>CHORUS</speaker>
                 <p><milestone unit="card" n="1" resp="Smyth"/>May Jove, indeed, the god of suppliants benevolently regard our naval
                     train having set sail from the mouths of the Nile with its fine sands. But
@@ -936,7 +936,7 @@
                 <p>Father, I am afraid, as the swift-winged vessels are come, and there is
                     no length of time between. <milestone unit="card" n="736" resp="Smyth"/>In truth excessive fear possesses me: [I fear]
                     lest there be no advantage to me of my long flight. I perish, father, with
-                    terror. <milestone unit="card" n="739" resp="Smyth"/>  <gap reason="omitted" unit="line" quantity="4" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:739-742"/><milestone unit="card" n="739" resp="Smyth"/>The offspring of Ægyptus is bold and insolent, and insatiate of the
+                    terror. <milestone unit="card" n="739" resp="Smyth"/>  <gap reason="omitted" unit="line" quantity="4" corresp="urn:cts:greekLit:tlg0085.tlg001.perseus-grc2:739-742"/><milestone unit="card" n="739-cont2" resp="Smyth"/>The offspring of Ægyptus is bold and insolent, and insatiate of the
                     fight; and I speak to you who know it: <milestone unit="card" n="743" resp="Smyth"/>and possessing black wood-compacted
                     ships they have sailed here with wrath thus far successful, together with a
                     numerous swarthy host.</p>

@@ -61,7 +61,7 @@
     </fileDesc>
 
     <encodingDesc>
-      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
 
     <profileDesc>
       <langUsage>
@@ -83,7 +83,7 @@
 <p>THE siege of the city of Thebes, and the description of the seven champions of the Theban and Argive armies. The deaths of the brothers Polynices and Eteocles, the mournings over them, by their sisters Antigone and Ismene, and the public refusal of burial to the ashes of Polynices, against which Antigone boldly protests, conclude the play.</p>
 
 <div type="textpart" subtype="cast-list"><fw type="header">PERSONS REPRESENTED.</fw><list><item><roleName>ETEOCLES.</roleName></item><item><roleName>A MESSENGER.</roleName></item><item><roleName>CHORUS OF THEBAN VIRGINS.</roleName></item><item><roleName>ISMENE.</roleName></item><item><roleName>ANTIGONE.</roleName></item><item><roleName>A HERALD.</roleName></item></list></div>
-</front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg004.buckley1849-eng2" xml:lang="eng"><stage><seg type="stage-paragraph">SCENE. The Acropolis of Thebes. [Compare <bibl>v. 227, ed. Blomf.</bibl>]</seg>
+</front><body xml:base="urn:cts:greekLit:tlg0085.tlg004.buckley1849-eng2"><div type="edition" n="urn:cts:greekLit:tlg0085.tlg004.buckley1849-eng2" xml:lang="eng"><stage><seg type="stage-paragraph">SCENE. The Acropolis of Thebes. [Compare <bibl>v. 227, ed. Blomf.</bibl>]</seg>
 <seg type="stage-paragraph">TIME. Early in the morning; the length of the action can scarcely be fixed with absolute certainty. It certainly did not exceed twelve hours.</seg>
 <seg type="stage-paragraph"><seg type="citation"><quote>The expedition of "the Seven" against Thebes is fixed by Sir I. Newton, B.C. 928. Cf. <bibl>his Chronology, p. 27.</bibl> Blair carries it as far back as B.C. 1225.</quote>—<bibl>OLD TRANSLATOR.</bibl></seg></seg></stage>
 

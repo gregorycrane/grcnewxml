@@ -64,9 +64,9 @@
             <p>Greek text, line numbering, page breaks, scholia, and apparatus follow Wecklein's 1885 edition. Printed strophic labels are encoded as milestones; Smyth card milestones are added with resp="Smyth".</p>
          </editorialDecl>
          <refsDecl n="CTS">
-            <cRefPattern n="line" matchPattern="(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/descendant::tei:l[@n='$1'])" />
+            <cRefPattern n="line" matchPattern="(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='edition']/descendant::tei:l[@n='$1'])"/>
          </refsDecl>
-      </encodingDesc>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
       <profileDesc>
          <langUsage>
             <language ident="lat">Latin</language>
@@ -86,28 +86,28 @@
          <change when="2026-08-15" who="Gregory Crane">Regularized as a play-level EpiDoc edition with CTS URN urn:cts:greekLit:tlg0085.tlg006.wecklein1885-grc2; converted page wrappers to pb elements, regularized apparatus, and added aligned Smyth card milestones.</change>
       </revisionDesc>
    </teiHeader>
-   <text>
-      <front />
-      <body>
+   <text xml:lang="lat">
+      <front/>
+      <body xml:base="urn:cts:greekLit:tlg0085.tlg006.wecklein1885-grc2">
          <div type="edition" n="urn:cts:greekLit:tlg0085.tlg006.wecklein1885-grc2" xml:lang="grc">
-            <pb n="3" />
+            <pb n="3"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="1" resp="Smyth" />
-                  <milestone unit="card" n="1" resp="Smyth" /><l n="1" xml:id="l.1" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1">Ἑρμῆ χθόνιε, πατρῷ ἐποπτεύων κράτη</l>
+                  <milestone unit="card" n="1" resp="Smyth"/>
+                  <l n="1" xml:id="l.1" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1">Ἑρμῆ χθόνιε, πατρῷ ἐποπτεύων κράτη</l>
                   <l n="2" xml:id="l.2" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:2">σωτὴρ γενοῦ μοι σύμμαχός τ' αἰτουμένῳ·</l>
                   <l n="3" xml:id="l.3" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:3">ἥκω γὰρ ἐς γῆν τήνδε καὶ κατέρχομαι</l>
-                  <gap extent="*****" reason="omitted" />
+                  <gap extent="*****" reason="omitted"/>
                   <l n="4" xml:id="l.4" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:4">τύμβου δ᾽ ἐπ᾽ ὄχθῳ τῷδε κηρύσσω πατρὶ</l>
                   <l n="5" xml:id="l.5" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:5">κλύειν, ἀκοῦσαι·</l>
-                  <gap extent="*****" reason="omitted" />
+                  <gap extent="*****" reason="omitted"/>
                   <l n="6" xml:id="l.6" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:6">πλόκαμον Ἰνάχῳ θρεπτήριον,</l>
                   <l n="7" xml:id="l.7" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:7">τὸν δεύτερον δὲ τόνδε πενθητήριον</l>
-                  <gap extent="*****" reason="omitted" />
+                  <gap extent="*****" reason="omitted"/>
                   <l n="8" xml:id="l.8" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:8">οὐ γὰρ παρὼν ᾤμωξα σόν, πάτερ, μύρον</l>
                   <l n="9" xml:id="l.9" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:9">οὐδ᾽ ἐξέτεινα χεῖρ᾽ ἐπ᾿ ἐκφορᾷ νεκροῦ.</l>
-                  <gap extent="*****" reason="omitted" />
+                  <gap extent="*****" reason="omitted"/>
                   <l n="10" xml:id="l.10" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:10">τί χρῆμα λεύσσω; τίς ποθ᾽ ἦδ᾽ ὁμήγυρις</l>
                   <l n="11" xml:id="l.11" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:11">στείχει γυναικῶν φάρεσιν μελαγχίμοις</l>
                   <l n="12" xml:id="l.12" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:12">πρέπουσα; ποίᾳ ξυμφορᾷ προσεικάσω;</l>
@@ -144,7 +144,7 @@
                   <rdg wit="M">μειλίγμασιν Μ.</rdg>
                </app>
             </div>
-            <pb n="4" />
+            <pb n="4"/>
             <div type="textpart" subtype="episode">
                <l n="18" xml:id="l.18" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:18">πρέπουσαν. ὦ Ζεῦ, δός με τίσασθαι μόρον</l>
                <l n="19" xml:id="l.19" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:19">πατρός, γενοῦ δὲ σύμμαχος θέλων ἐμοί.</l>
@@ -152,9 +152,9 @@
                <l n="21" xml:id="l.21" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:21">μάθω γυναικῶν ἥτις ἥδε προστροπή.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="22" resp="Smyth" />
-                  <milestone unit="card" n="22" resp="Smyth" /><l n="22" xml:id="l.22" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:22">ἰαλτὸς ἐκ δόμων ἔβην</l>
+                  <milestone unit="strophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="22" resp="Smyth"/>
+                  <l n="22" xml:id="l.22" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:22">ἰαλτὸς ἐκ δόμων ἔβην</l>
                   <l n="23" xml:id="l.23" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:23">χοὰς προπομπὸς ὀξύχειρι σὺν κόπῳ.</l>
                   <l n="24" xml:id="l.24" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:24">πρέπει παρηὶς φοίνισσ᾽ ἀμυγμοῖς</l>
                   <l n="25" xml:id="l.25" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:25">ὄνυχος ἄλοκι νεοτόμῳ·</l>
@@ -164,9 +164,9 @@
                   <l n="29" xml:id="l.29" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:29" cert="low">πρόστερνοι στολμοὶ</l>
                   <l n="30" xml:id="l.30" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:30">πέπλων ἀγελάστοις</l>
                   <l n="31" xml:id="l.31" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:31">ξυμφοραῖς πεπληγμένων.</l>
-                  <milestone unit="antistrophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="32" resp="Smyth" />
-                  <milestone unit="card" n="32" resp="Smyth" /><l n="32" xml:id="l.32" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:32">τορὸς γὰρ Φοῖβος ὀρθόθριξ</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="32" resp="Smyth"/>
+                  <l n="32" xml:id="l.32" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:32">τορὸς γὰρ Φοῖβος ὀρθόθριξ</l>
                   <l n="33" xml:id="l.33" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:33">δόμων ὀνειρόμαντις ἐξ ὕπνου κότον</l>
                </sp>
             </div>
@@ -231,7 +231,7 @@
                   <rdg wit="Lachmann">τορὸς δὲ Lachmann.</rdg>
                </app>
             </div>
-            <pb n="5" />
+            <pb n="5"/>
             <div type="textpart" subtype="episode">
                <l n="34" xml:id="l.34" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:34">πνέων ἀωρόνυκτον ἀμβόαμα</l>
                <l n="35" xml:id="l.35" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:35">μυχόθεν ἔλακε περὶ φόβῳ,</l>
@@ -241,9 +241,9 @@
                <l n="39" xml:id="l.39" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:39">μέμφεσθαι τοὺς γᾶς</l>
                <l n="40" xml:id="l.40" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:40">νέρθεν περιθύμως</l>
                <l n="41" xml:id="l.41" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:41">τοῖς κτανοῦσί τ᾽ ἐγκοτεῖν.</l>
-               <milestone unit="strophe" resp="Wecklein" n="2" />
-               <milestone unit="card" n="42" resp="Smyth" />
-               <milestone unit="card" n="42" resp="Smyth" /><l n="42" xml:id="l.42" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:42">τοιάνδε χάριν ἀχάριτον ἀπότροπον κακῶν,</l>
+               <milestone unit="strophe" resp="Wecklein" n="2"/>
+               <milestone unit="card" n="42" resp="Smyth"/>
+               <l n="42" xml:id="l.42" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:42">τοιάνδε χάριν ἀχάριτον ἀπότροπον κακῶν,</l>
                <l n="43" xml:id="l.43" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:43">ἰὼ γαῖα μαῖα,</l>
                <l n="44" xml:id="l.44" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:45">μωμένα μ' ἰάλλει</l>
                <l n="45" xml:id="l.45" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:46">δύσθεος γυνά· (φοβο-</l>
@@ -312,14 +312,14 @@
                   <rdg wit="M">πανοϊζὺσ Μ.</rdg>
                </app>
             </div>
-            <pb n="6" />
+            <pb n="6"/>
             <div type="textpart" subtype="episode">
                <l n="50" xml:id="l.50" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:51">ἀνήλιοι, βροτοστυγεῖς</l>
                <l n="51" xml:id="l.51" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:52">δνόφοι καλύπτουσι δόμους</l>
                <l n="52" xml:id="l.52" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:53">δεσποτῶν θανάτοισι.</l>
-               <milestone unit="antistrophe" resp="Wecklein" n="2" />
-               <milestone unit="card" n="55" resp="Smyth" />
-               <milestone unit="card" n="55" resp="Smyth" /><l n="53" xml:id="l.53" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:55">σέβας δ᾽ ἄμαχον, ἀδάματον, ἀπόλεμον τὸ πρὶν</l>
+               <milestone unit="antistrophe" resp="Wecklein" n="2"/>
+               <milestone unit="card" n="55" resp="Smyth"/>
+               <l n="53" xml:id="l.53" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:55">σέβας δ᾽ ἄμαχον, ἀδάματον, ἀπόλεμον τὸ πρὶν</l>
                <l n="54" xml:id="l.54" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:56">δι᾽ ὤτων φρενός τε</l>
                <l n="55" xml:id="l.55" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:57">δαμίας περαῖνον</l>
                <l n="56" xml:id="l.56" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:58">νῦν ἀφίσταται. φοβεῖ-</l>
@@ -393,26 +393,26 @@
                   <rdg wit="Hermann">βρύει delevit Hermann.</rdg>
                </app>
             </div>
-            <pb n="7" />
+            <pb n="7"/>
             <div type="textpart" subtype="episode">
                <l n="63" xml:id="l.63" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:65">τοὺς δ᾽ ἄκραντος ἔχει νύξ.</l>
-               <milestone unit="strophe" resp="Wecklein" n="3" />
-               <milestone unit="card" n="66" resp="Smyth" />
-               <milestone unit="card" n="66" resp="Smyth" /><l n="64" xml:id="l.64" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:66">δι αἵματ᾽ ἔκποθεν ὑπὸ χθονός τροφοῦ</l>
+               <milestone unit="strophe" resp="Wecklein" n="3"/>
+               <milestone unit="card" n="66" resp="Smyth"/>
+               <l n="64" xml:id="l.64" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:66">δι αἵματ᾽ ἔκποθεν ὑπὸ χθονός τροφοῦ</l>
                <l n="65" xml:id="l.65" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:67">τίτας φόνος πέπηγεν οὐ διαρρύδαν.</l>
                <l n="66" xml:id="l.66" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:68" cert="low">διαλγὴς ἄτη</l>
                <l n="67" xml:id="l.67" ana="#unaligned">διαφέρει τὸν αἴτιον</l>
                <l n="68" xml:id="l.68" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:70">παναρκέτας νόσου βρύειν.</l>
-               <milestone unit="antistrophe" resp="Wecklein" n="3" />
-               <milestone unit="card" n="71" resp="Smyth" />
-               <milestone unit="card" n="71" resp="Smyth" /><l n="69" xml:id="l.69" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:71">θιγόντι δ᾽ οὔτι νυμφικῶν ἑδωλίων</l>
+               <milestone unit="antistrophe" resp="Wecklein" n="3"/>
+               <milestone unit="card" n="71" resp="Smyth"/>
+               <l n="69" xml:id="l.69" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:71">θιγόντι δ᾽ οὔτι νυμφικῶν ἑδωλίων</l>
                <l n="70" xml:id="l.70" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:72">ἄκος, πόροι τε πάντες ἐκ μιᾶς ὁδοῦ</l>
                <l n="71" xml:id="l.71" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:73" cert="low">βαίνοντες τὸν</l>
                <l n="72" xml:id="l.72" ana="#unaligned">χερομυσῆ φόνον καθαί-</l>
                <l n="73" xml:id="l.73" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:74" cert="low">ροντες ἰοῦσαν μάταν.</l>
-               <milestone unit="epode" resp="Wecklein" />
-               <milestone unit="card" n="75" resp="Smyth" />
-               <milestone unit="card" n="75" resp="Smyth" /><l n="74" xml:id="l.74" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:75">ἐμοὶ δ᾽ ἀνάγκαν γὰρ ἀμφίπτολιν</l>
+               <milestone unit="epode" resp="Wecklein"/>
+               <milestone unit="card" n="75" resp="Smyth"/>
+               <l n="74" xml:id="l.74" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:75">ἐμοὶ δ᾽ ἀνάγκαν γὰρ ἀμφίπτολιν</l>
             </div>
             <div type="commentary">
                <note target="#l.63">ἀντὶ τοῦ αἰώνιος θάνατος.</note>
@@ -468,7 +468,7 @@
                   <rdg wit="m">ἀμφιπτόλιν Μ, ἀμφίπτολιν m.</rdg>
                </app>
             </div>
-            <pb n="8" />
+            <pb n="8"/>
             <div type="textpart" subtype="episode">
                <l n="75" xml:id="l.75" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:76">θεοὶ προσήνεγκαν· ἐκ γὰρ οἴκων</l>
                <l n="76" xml:id="l.76" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:77">πατρῴων δούλιον ἐσᾶγον αἶσαν)</l>
@@ -480,8 +480,8 @@
                <l n="82" xml:id="l.82" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:83b">τύχαις, κρυφαίοις πένθεσιν παχνουμένη.</l>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="card" n="84" resp="Smyth" />
-                  <milestone unit="card" n="84" resp="Smyth" /><l n="83" xml:id="l.83" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:84">δμῳαὶ γυναῖκες, δωμάτων εὐθήμονες,</l>
+                  <milestone unit="card" n="84" resp="Smyth"/>
+                  <l n="83" xml:id="l.83" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:84">δμῳαὶ γυναῖκες, δωμάτων εὐθήμονες,</l>
                   <l n="84" xml:id="l.84" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:85">ἐπεὶ πάρεστε τῆσδε προστροπῆς ἐμοὶ</l>
                   <l n="85" xml:id="l.85" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:86">πομποί, γένεσθε τῶνδε σύμβουλοι πέρι·</l>
                   <l n="86" xml:id="l.86" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:87">τύμβῳ χέουσα τάσδε κηδείους χοὰς</l>
@@ -544,7 +544,7 @@
                   <rdg wit="M">κατεύξομαι Μ.</rdg>
                </app>
             </div>
-            <pb n="9" />
+            <pb n="9"/>
             <div type="textpart" subtype="episode">
                <l n="88" xml:id="l.88" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:89">πότερα λέγουσα παρὰ φίλης φίλῳ φέρειν</l>
                <l n="89" xml:id="l.89" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:90">γυναικὸς ἀνδρί, τῆς ἐμῆς μητρὸς πάρα;</l>
@@ -609,13 +609,13 @@
                   <rdg wit="m1">in marg. δεσποτούμ (cetera abscissa) ml.</rdg>
                </app>
             </div>
-            <pb n="10" />
+            <pb n="10"/>
             <div type="textpart" subtype="episode">
                <l n="104" xml:id="l.104" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:105">λέγοις ἄν, εἴ τι τῶνδ᾽ ἔχεις ὑπέρτερον.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="106" resp="Smyth" />
-                  <milestone unit="card" n="106" resp="Smyth" /><l n="105" xml:id="l.105" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:106">αἰδουμένη σοι βωμὸν ὣς τύμβον πατρὸς</l>
+                  <milestone unit="card" n="106" resp="Smyth"/>
+                  <l n="105" xml:id="l.105" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:106">αἰδουμένη σοι βωμὸν ὣς τύμβον πατρὸς</l>
                   <l n="106" xml:id="l.106" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:107">λέξω, κελεύεις γάρ, τὸν ἐκ φρενὸς λόγον.</l>
                </sp>
                <sp>
@@ -721,7 +721,7 @@
                   <rdg wit="Weil">λέγω; Weil.</rdg>
                </app>
             </div>
-            <pb n="11" />
+            <pb n="11"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΗΛ.</speaker>
@@ -817,7 +817,7 @@
                   <rdg wit="M">σοι fecit ex σου Μ.</rdg>
                </app>
             </div>
-            <pb n="12" />
+            <pb n="12"/>
             <div type="textpart" subtype="episode">
                <l n="140" xml:id="l.140" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:140">αὐτῇ τέ μοι δὸς σωφρονεστέραν πολὺ</l>
                <l n="141" xml:id="l.141" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:141">μητρὸς γενέσθαι χεῖρά τ᾽ εὐσεβεστέραν.</l>
@@ -833,8 +833,8 @@
                <l n="151" xml:id="l.151" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:151">παιῶνα τοῦ θανόντος ἐξαυδωμένας.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="152" resp="Smyth" />
-                  <milestone unit="card" n="152" resp="Smyth" /><l n="152" xml:id="l.152" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:152">ἵετε δάκρυ καναχὲς ὀλόμενον</l>
+                  <milestone unit="card" n="152" resp="Smyth"/>
+                  <l n="152" xml:id="l.152" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:152">ἵετε δάκρυ καναχὲς ὀλόμενον</l>
                   <l n="153" xml:id="l.153" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:153">ὀλομένῳ δεσπότα,</l>
                   <l n="154" xml:id="l.154" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:154">πρὸς ἔρυμα τόδε κακῶν κεδνῶν τ᾿</l>
                   <l n="155" xml:id="l.155" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:155">ἀπότροπον ἄγος ἀπεύχετον</l>
@@ -888,7 +888,7 @@
                   <rdg wit="Bamberger">μοι σέβας, κλύ᾽, ὦ Bamberger.</rdg>
                </app>
             </div>
-            <pb n="13" />
+            <pb n="13"/>
             <div type="textpart" subtype="episode">
                <l n="158" xml:id="l.158" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:158">ὀτοτοτοτοτοτοτοῖ,</l>
                <l n="159" xml:id="l.159" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:159">ἰὼ τίς δορυ-</l>
@@ -898,8 +898,8 @@
                <l n="163" xml:id="l.163" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:163">σχέδιά τ᾽ αὐτόκωπα νωμῶν βέλη.</l>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="card" n="164" resp="Smyth" />
-                  <milestone unit="card" n="164" resp="Smyth" /><l n="164" xml:id="l.164" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:164">ἔχει μὲν ἤδη γαπότους χοὰς πατήρ,</l>
+                  <milestone unit="card" n="164" resp="Smyth"/>
+                  <l n="164" xml:id="l.164" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:164">ἔχει μὲν ἤδη γαπότους χοὰς πατήρ,</l>
                   <l n="165" xml:id="l.165" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:165">νέου δὲ μύθου τοῦδε κοινωνήσατε.</l>
                </sp>
                <sp>
@@ -993,7 +993,7 @@
                   <rdg wit="M">* Μ.</rdg>
                </app>
             </div>
-            <pb n="14" />
+            <pb n="14"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΗΛ.</speaker>
@@ -1026,8 +1026,8 @@
                   <l n="191" xml:id="l.191" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:192">ἐγὼ δ᾽ ὅπως μὲν ἄντικρυς τάδ᾽ αἰνέσω,</l>
                   <l n="192" xml:id="l.192" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:193">εἶναι τόδ᾽ ἀγλάισμα μοι τοῦ φιλτάτου</l>
                   <l n="193" xml:id="l.193" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:194" cert="low">βροτῶν ᾿Ορέστου· σαίνομαι δ᾽ ὑπ᾽ ἐλπίδος.</l>
-                  <milestone unit="card" n="195" resp="Smyth" />
-                  <milestone unit="card" n="195" resp="Smyth" /><l n="194" xml:id="l.194" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:195b">φεῦ. εἴθ᾽ εἶχε φωνὴν ἔμφρον᾽ ἀγγέλου δίκην,</l>
+                  <milestone unit="card" n="195" resp="Smyth"/>
+                  <l n="194" xml:id="l.194" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:195b">φεῦ. εἴθ᾽ εἶχε φωνὴν ἔμφρον᾽ ἀγγέλου δίκην,</l>
                </sp>
             </div>
             <div type="commentary">
@@ -1080,7 +1080,7 @@
                   <rdg wit="M">εὔφρον Μ.</rdg>
                </app>
             </div>
-            <pb n="15" />
+            <pb n="15"/>
             <div type="textpart" subtype="episode">
                <l n="195" xml:id="l.195" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:196">ὅπως δίφροντις οὖσα μὴ κινυσσόμην,</l>
                <l n="196" xml:id="l.196" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:197" cert="low">ἀλλ᾽ εὖ σάφ᾽ ἦν ἢ τόνδ᾽ ἀποπτύσαι πλόκον,</l>
@@ -1147,7 +1147,7 @@
                   <rdg wit="M">paragraphis praefixis personarum vices in M notantur, nisi quod v. 218 Orestis nota praescripta.</rdg>
                </app>
             </div>
-            <pb n="16" />
+            <pb n="16"/>
             <div type="textpart" subtype="episode">
                <l n="212" xml:id="l.212" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:213">εὐχὰς ἐπαγγέλλουσα, τυγχάνειν καλῶς.</l>
                <sp>
@@ -1196,8 +1196,8 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="225" resp="Smyth" />
-                  <milestone unit="card" n="225" resp="Smyth" /><l n="224" xml:id="l.224" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:225">αὐτὸν μὲν οὖν ὁρῶσα δυσμαθεῖς ἐμέ,</l>
+                  <milestone unit="card" n="225" resp="Smyth"/>
+                  <l n="224" xml:id="l.224" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:225">αὐτὸν μὲν οὖν ὁρῶσα δυσμαθεῖς ἐμέ,</l>
                   <l n="225" xml:id="l.225" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:226">κουρὰν δὲ ἰδοῦσα τήνδε κηδείου τριχὸς</l>
                   <l n="226" xml:id="l.226" ana="#unaligned">ἀνεπτερώθης κἀδόκεις ὁρᾶν ἐμέ,</l>
                   <l n="227" xml:id="l.227" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:228">ἰχνοσκοποῦσά τ᾽ ἐν στίβοισι τοῖς ἐμοῖς.</l>
@@ -1269,7 +1269,7 @@
                   <rdg wit="M">σκέψαι το μὴ Μ.</rdg>
                </app>
             </div>
-            <pb n="17" />
+            <pb n="17"/>
             <div type="textpart" subtype="episode">
                <l n="231" xml:id="l.231" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:232">σπάθης τε πληγὰς ἠδὲ θήρειον γραφήν.</l>
                <l n="232" xml:id="l.232" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:233">ἔνδον γενοῦ, χαρᾷ δὲ μὴ ἐκπλαγῇς φρένας·</l>
@@ -1364,7 +1364,7 @@
                   <rdg wit="m">δινῆσ Μ, mut. in δεινῆσ m.</rdg>
                </app>
             </div>
-            <pb n="18" />
+            <pb n="18"/>
             <div type="textpart" subtype="episode">
                <l n="249" xml:id="l.249" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:250">νῆστις πιέζει λιμός· οὐ γὰρ ἐντελὴς</l>
                <l n="250" xml:id="l.250" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:251">θήραν πατρώαν προσφέρειν σκηνήμασιν.</l>
@@ -1382,8 +1382,8 @@
                <l n="262" xml:id="l.262" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:263">δόμον, δοκοῦντα κάρτα νῦν πεπτωκέναι.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="264" resp="Smyth" />
-                  <milestone unit="card" n="264" resp="Smyth" /><l n="263" xml:id="l.263" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:264">ὦ παῖδες, ὦ σωτῆρες ἑστίας πατρός,</l>
+                  <milestone unit="card" n="264" resp="Smyth"/>
+                  <l n="263" xml:id="l.263" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:264">ὦ παῖδες, ὦ σωτῆρες ἑστίας πατρός,</l>
                   <l n="264" xml:id="l.264" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:265">σιγᾶθ᾽, ὅπως μὴ πεύσεταί τις, ὦ τέκνα,</l>
                   <l n="265" xml:id="l.265" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:266">γλώσσης χάριν δὲ πάντ᾽ ἀπαγγείλη τάδε</l>
                   <l n="266" xml:id="l.266" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:267">πρὸς τοὺς κρατοῦντας· οὓς ἴδοιμ᾽ ἐγώ ποτε</l>
@@ -1436,7 +1436,7 @@
                   <rdg wit="M">ἴδοιμι Μ.</rdg>
                </app>
             </div>
-            <pb n="19" />
+            <pb n="19"/>
             <div type="textpart" subtype="episode">
                <l n="267" xml:id="l.267" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:268">θανόντας ἐν κηκίδι πισσήρει φλογός.</l>
                <sp>
@@ -1511,7 +1511,7 @@
                   <rdg wit="M">ἐπαντέλλει Μ.</rdg>
                </app>
             </div>
-            <pb n="20" />
+            <pb n="20"/>
             <div type="textpart" subtype="episode">
                <l n="282" xml:id="l.282" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:283">ἄλλας τ᾽ ἐφώνει προσβολὰς Ἐρινύων,</l>
                <l n="283" xml:id="l.283" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:284">ἐκ τῶν πατρῴων αἱμάτων τελουμένας</l>
@@ -1589,7 +1589,7 @@
                   <rdg wit="m">συμπίτνουσιν Μ, συμπίπτουσιν m.</rdg>
                </app>
             </div>
-            <pb n="21" />
+            <pb n="21"/>
             <div type="textpart" subtype="episode">
                <l n="299" xml:id="l.299" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:300">θεοῦ τ᾽ ἐφετμαί, καὶ πατρὸς πένθος μέγα,</l>
                <l n="300" xml:id="l.300" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:301">καὶ πρὸς πιέζει χρημάτων ἀχηνία,</l>
@@ -1599,8 +1599,8 @@
                <l n="304" xml:id="l.304" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:305">θήλεια γὰρ φρήν· εἰ δὲ μή, τάχ᾽ εἴσεται.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="306" resp="Smyth" />
-                  <milestone unit="card" n="306" resp="Smyth" /><l n="305" xml:id="l.305" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:306">ἀλλ᾽ ὦ μεγάλαι Μοῖραι, Διόθεν</l>
+                  <milestone unit="card" n="306" resp="Smyth"/>
+                  <l n="305" xml:id="l.305" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:306">ἀλλ᾽ ὦ μεγάλαι Μοῖραι, Διόθεν</l>
                   <l n="306" xml:id="l.306" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:307">τῇδε τελευτᾶν,</l>
                   <l n="307" xml:id="l.307" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:308">ᾗ τὸ δίκαιον μεταβαίνει.</l>
                   <l n="308" xml:id="l.308" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:309">ἀντὶ μὲν ἐχθρᾶς γλώσσης ἐχθρὰ</l>
@@ -1612,9 +1612,9 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="315" resp="Smyth" />
-                  <milestone unit="card" n="315" resp="Smyth" /><l n="314" xml:id="l.314" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:315">ὦ πάτερ αἰνόπατερ, τί σου</l>
+                  <milestone unit="strophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="315" resp="Smyth"/>
+                  <l n="314" xml:id="l.314" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:315">ὦ πάτερ αἰνόπατερ, τί σου</l>
                   <l n="315" xml:id="l.315" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:316">φάμενος ἢ τί ῥέξας</l>
                   <l n="316" xml:id="l.316" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:317">τύχοιμ᾽ ἂν ἕκαθεν οὐρίσας,</l>
                </sp>
@@ -1660,7 +1660,7 @@
                   <rdg wit="M">ἂν, καθεν Μ (superscr. ἕ m).</rdg>
                </app>
             </div>
-            <pb n="22" />
+            <pb n="22"/>
             <div type="textpart" subtype="episode">
                <l n="317" xml:id="l.317" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:318">ἔνθα σ᾽ ἔχουσιν εὐναί;</l>
                <l n="318" xml:id="l.318" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:319">σκότῳ φάος ἀντίμοιρον·</l>
@@ -1669,9 +1669,9 @@
                <l n="321" xml:id="l.321" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:322">προσθοδόμοις Ατρείδαις.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="323" resp="Smyth" />
-                  <milestone unit="card" n="323" resp="Smyth" /><l n="322" xml:id="l.322" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:323">τέκνον, φρόνημα τοῦ δαμάζει</l>
+                  <milestone unit="strophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="323" resp="Smyth"/>
+                  <l n="322" xml:id="l.322" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:323">τέκνον, φρόνημα τοῦ δαμάζει</l>
                   <l n="323" xml:id="l.323" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:324">θανόντος οὐ δαμάζει</l>
                   <l n="324" xml:id="l.324" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:325">πυρὸς μαλερὰ γνάθος,</l>
                   <l n="325" xml:id="l.325" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:326">φαίνει δ᾽ ὕστερον ὀργάς·</l>
@@ -1683,9 +1683,9 @@
                </sp>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="332" resp="Smyth" />
-                  <milestone unit="card" n="332" resp="Smyth" /><l n="331" xml:id="l.331" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:332">κλυθί νυν, ὦ πάτερ, ἐν μέρει</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="332" resp="Smyth"/>
+                  <l n="331" xml:id="l.331" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:332">κλυθί νυν, ὦ πάτερ, ἐν μέρει</l>
                </sp>
             </div>
             <div type="commentary">
@@ -1735,7 +1735,7 @@
                   <rdg wit="M">κλύθι νῦν Μ.</rdg>
                </app>
             </div>
-            <pb n="23" />
+            <pb n="23"/>
             <div type="textpart" subtype="episode">
                <l n="332" xml:id="l.332" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:333">πολυδάκρυτα πένθη.</l>
                <l n="333" xml:id="l.333" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:334">δίπαις τοί σ᾽ ἐπιτύμβιος</l>
@@ -1746,9 +1746,9 @@
                <l n="338" xml:id="l.338" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:339">οὐκ ἀτρίακτος ἄτα;</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="systrophe" resp="Wecklein" />
-                  <milestone unit="card" n="340" resp="Smyth" />
-                  <milestone unit="card" n="340" resp="Smyth" /><l n="339" xml:id="l.339" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:340">ἀλλ᾽ ἔτ᾽ ἂν ἐκ τῶνδε θεὸς χρήζων</l>
+                  <milestone unit="systrophe" resp="Wecklein"/>
+                  <milestone unit="card" n="340" resp="Smyth"/>
+                  <l n="339" xml:id="l.339" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:340">ἀλλ᾽ ἔτ᾽ ἂν ἐκ τῶνδε θεὸς χρήζων</l>
                   <l n="340" xml:id="l.340" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:341">θείη κελάδους εὐφθογγοτέρους·</l>
                   <l n="341" xml:id="l.341" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:342">ἀντὶ δὲ θρήνων ἐπιτυμβιδίων</l>
                   <l n="342" xml:id="l.342" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:343">παιὰν μελάθροις ἐν βασιλείοις</l>
@@ -1756,9 +1756,9 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="2" />
-                  <milestone unit="card" n="345" resp="Smyth" />
-                  <milestone unit="card" n="345" resp="Smyth" /><l n="344" xml:id="l.344" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:345">εἰ γὰρ ὑπ᾽ Ἰλίῳ</l>
+                  <milestone unit="strophe" resp="Wecklein" n="2"/>
+                  <milestone unit="card" n="345" resp="Smyth"/>
+                  <l n="344" xml:id="l.344" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:345">εἰ γὰρ ὑπ᾽ Ἰλίῳ</l>
                   <l n="345" xml:id="l.345" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:346">πρός τινος Λυκίων, πάτερ,</l>
                   <l n="346" xml:id="l.346" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:347">δορίτμητος κατηναρίσθης,</l>
                   <l n="347" xml:id="l.347" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:348">λιπὼν ἂν εὔκλειαν ἐν δόμοισιν</l>
@@ -1827,7 +1827,7 @@
                   <rdg wit="M">αἰῶνα Μ.</rdg>
                </app>
             </div>
-            <pb n="24" />
+            <pb n="24"/>
             <div type="textpart" subtype="episode">
                <l n="349" xml:id="l.349" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:350">ἐπιστρεπτὸν αἰῶ</l>
                <l n="350" xml:id="l.350" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:351">κτίσσας πολύχωστον ἂν εἶχες</l>
@@ -1835,9 +1835,9 @@
                <l n="352" xml:id="l.352" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:353">δώμασιν εὐφόρητον.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="354" resp="Smyth" />
-                  <milestone unit="card" n="354" resp="Smyth" /><l n="353" xml:id="l.353" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:354">φίλος φίλοισι τοῖς</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="354" resp="Smyth"/>
+                  <l n="353" xml:id="l.353" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:354">φίλος φίλοισι τοῖς</l>
                   <l n="354" xml:id="l.354" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:355">ἐκεῖ καλῶς θανοῦσιν,</l>
                   <l n="355" xml:id="l.355" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:356">κατὰ χθονὸς ἐμπρέπων</l>
                   <l n="356" xml:id="l.356" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:357">σεμνότιμος ἀνάκτωρ,</l>
@@ -1849,9 +1849,9 @@
                </sp>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="2" />
-                  <milestone unit="card" n="363" resp="Smyth" />
-                  <milestone unit="card" n="363" resp="Smyth" /><l n="362" xml:id="l.362" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:363">μηδ' ὑπὸ Τρωΐας</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="2"/>
+                  <milestone unit="card" n="363" resp="Smyth"/>
+                  <l n="362" xml:id="l.362" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:363">μηδ' ὑπὸ Τρωΐας</l>
                   <l n="363" xml:id="l.363" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:364">τείχεσι φθίμενος πατὴρ</l>
                   <l n="364" xml:id="l.364" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:365">μετ᾿ ἄλλῳ δουρικμῆτι λαῷ</l>
                </sp>
@@ -1920,7 +1920,7 @@
                   <rdg wit="M">δορικμῆτι Μ.</rdg>
                </app>
             </div>
-            <pb n="25" />
+            <pb n="25"/>
             <div type="textpart" subtype="episode">
                <l n="365" xml:id="l.365" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:366">παρὰ Σκαμάνδρου πόρον τεθάφθαι,</l>
                <l n="366" xml:id="l.366" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:367">πάρος δ᾽ οἱ κτανόντες</l>
@@ -1930,8 +1930,8 @@
                <l n="370" xml:id="l.370" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:371">τῶνδε πόνων ἄπειρον.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="372" resp="Smyth" />
-                  <milestone unit="card" n="372" resp="Smyth" /><l n="371" xml:id="l.371" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:372">ταῦτα μέν, ὦ παῖ, κρείσσονα χρυσοῦ,</l>
+                  <milestone unit="card" n="372" resp="Smyth"/>
+                  <l n="371" xml:id="l.371" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:372">ταῦτα μέν, ὦ παῖ, κρείσσονα χρυσοῦ,</l>
                   <l n="372" xml:id="l.372" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:373">μεγάλης δὲ τύχης καὶ ὑπερβορέου</l>
                   <l n="373" xml:id="l.373" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:374">μείζονα φωνεῖς· δύνασαι γάρ.</l>
                   <l n="374" xml:id="l.374" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:375">ἀλλὰ διπλῆς γὰρ τῆσδε μαράγνης</l>
@@ -1942,9 +1942,9 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="3" />
-                  <milestone unit="card" n="380" resp="Smyth" />
-                  <milestone unit="card" n="380" resp="Smyth" /><l n="379" xml:id="l.379" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:380">τοῦτο διαμπερὲς οὖς</l>
+                  <milestone unit="strophe" resp="Wecklein" n="3"/>
+                  <milestone unit="card" n="380" resp="Smyth"/>
+                  <l n="379" xml:id="l.379" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:380">τοῦτο διαμπερὲς οὖς</l>
                   <l n="380" xml:id="l.380" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:381">ἵκεθ᾽ ἅπερ τι βέλος.</l>
                </sp>
             </div>
@@ -2012,7 +2012,7 @@
                   <rdg wit="M">τε Μ.</rdg>
                </app>
             </div>
-            <pb n="26" />
+            <pb n="26"/>
             <div type="textpart" subtype="episode">
                <l n="381" xml:id="l.381" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:382">Ζεῦ Ζεῦ, κάτωθεν ἀμπέμπων</l>
                <l n="382" xml:id="l.382" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:383">ὑστερόποινον ἄταν</l>
@@ -2020,9 +2020,9 @@
                <l n="384" xml:id="l.384" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:385" cert="low">χειρί, τοκεῦσι δ᾽ ὅμως τελεῖται.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="2" />
-                  <milestone unit="card" n="386" resp="Smyth" />
-                  <milestone unit="card" n="386" resp="Smyth" /><l n="385" xml:id="l.385" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:386">ἐφυμνῆσαι γένοιτό μοι</l>
+                  <milestone unit="strophe" resp="Wecklein" n="2"/>
+                  <milestone unit="card" n="386" resp="Smyth"/>
+                  <l n="385" xml:id="l.385" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:386">ἐφυμνῆσαι γένοιτό μοι</l>
                   <l n="386" xml:id="l.386" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:387">πευκήεντ᾽ ολολυγμὸν ἀνδρὸς</l>
                   <l n="387" xml:id="l.387" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:388">θεινομένου, γυναικός το</l>
                   <l n="388" xml:id="l.388" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:389">ὀλλυμένας· τί γὰρ κεύθω</l>
@@ -2033,9 +2033,9 @@
                </sp>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="3" />
-                  <milestone unit="card" n="394" resp="Smyth" />
-                  <milestone unit="card" n="394" resp="Smyth" /><l n="393" xml:id="l.393" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:394">καὶ πότ᾽ ἂν ἀμφιθαλής</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="3"/>
+                  <milestone unit="card" n="394" resp="Smyth"/>
+                  <l n="393" xml:id="l.393" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:394">καὶ πότ᾽ ἂν ἀμφιθαλής</l>
                   <l n="394" xml:id="l.394" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:395">Ζεὺς ἐπὶ χεῖρα βάλοι,</l>
                   <l n="395" xml:id="l.395" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:396">φεῦ φεῦ, κάρανα δαΐξας;</l>
                   <l n="396" xml:id="l.396" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:397">πιστὰ γένοιτο χώρα.</l>
@@ -2103,15 +2103,15 @@
                   <rdg wit="M">καὶ πότ' corr. in καί ποτ' Μ.</rdg>
                </app>
             </div>
-            <pb n="27" />
+            <pb n="27"/>
             <div type="textpart" subtype="episode">
                <l n="397" xml:id="l.397" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:398">δίκαν δ᾽ ἐξ ἀδίκων ἀπαιτῶ.</l>
                <l n="398" xml:id="l.398" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:399">κλῦτε δὲ τα χθονίων τε τιμαί.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="antisystrophe" resp="Wecklein" />
-                  <milestone unit="card" n="400" resp="Smyth" />
-                  <milestone unit="card" n="400" resp="Smyth" /><l n="399" xml:id="l.399" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:400">ἀλλὰ νόμος μὲν φονίας σταγόνας</l>
+                  <milestone unit="antisystrophe" resp="Wecklein"/>
+                  <milestone unit="card" n="400" resp="Smyth"/>
+                  <l n="399" xml:id="l.399" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:400">ἀλλὰ νόμος μὲν φονίας σταγόνας</l>
                   <l n="400" xml:id="l.400" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:401">χυμένας ἐς πέδον ἄλλο προσαιτεῖν</l>
                   <l n="401" xml:id="l.401" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:402">αἷμα. βοᾷ γὰρ λοιγὸς Ἐρινὺν</l>
                   <l n="402" xml:id="l.402" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:403">παρὰ τῶν πρότερον φθιμένων ἄτην</l>
@@ -2119,9 +2119,9 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="4" />
-                  <milestone unit="card" n="405" resp="Smyth" />
-                  <milestone unit="card" n="405" resp="Smyth" /><l n="404" xml:id="l.404" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:405">ποῖ ποῖ δὴ νερτέρων τυραννίδες;</l>
+                  <milestone unit="strophe" resp="Wecklein" n="4"/>
+                  <milestone unit="card" n="405" resp="Smyth"/>
+                  <l n="404" xml:id="l.404" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:405">ποῖ ποῖ δὴ νερτέρων τυραννίδες;</l>
                   <l n="405" xml:id="l.405" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:406">ἴδετε πολυκρατεῖς ἀραὶ φθιμένων,</l>
                   <l n="406" xml:id="l.406" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:407" cert="low">ἴδεσθ' Ατρειδῶν τὰ λοιπ᾽ ἀμηχάνως</l>
                   <l n="407" xml:id="l.407" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:408">ἔχοντα καὶ δωμάτων</l>
@@ -2129,9 +2129,9 @@
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="2" />
-                  <milestone unit="card" n="410" resp="Smyth" />
-                  <milestone unit="card" n="410" resp="Smyth" /><l n="409" xml:id="l.409" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:410">πέπαλται δ᾽ αὐτέ μοι φίλον</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="2"/>
+                  <milestone unit="card" n="410" resp="Smyth"/>
+                  <l n="409" xml:id="l.409" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:410">πέπαλται δ᾽ αὐτέ μοι φίλον</l>
                   <l n="410" xml:id="l.410" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:411">κέαρ τόνδε κλύουσαν οἶκτον.</l>
                   <l n="411" xml:id="l.411" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:412">καὶ τότε μὲν δύσελπις,</l>
                </sp>
@@ -2192,7 +2192,7 @@
                   <rdg wit="M">κέαρ versui 409 addit M.</rdg>
                </app>
             </div>
-            <pb n="28" />
+            <pb n="28"/>
             <div type="textpart" subtype="episode">
                <l n="412" xml:id="l.412" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:413">σπλάγχνα δέ μοι κελαινοῦται</l>
                <l n="413" xml:id="l.413" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:414">πρὸς ἔπος κλυούσα.</l>
@@ -2201,9 +2201,9 @@
                <l n="416" xml:id="l.416" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:417">πρὸς τὸ φανεῖσθαί μοι καλῶς.</l>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="4" />
-                  <milestone unit="card" n="418" resp="Smyth" />
-                  <milestone unit="card" n="418" resp="Smyth" /><l n="417" xml:id="l.417" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:418">τί δ᾽ ἂν φάντες τύχοιμεν; ἢ τάπερ</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="4"/>
+                  <milestone unit="card" n="418" resp="Smyth"/>
+                  <l n="417" xml:id="l.417" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:418">τί δ᾽ ἂν φάντες τύχοιμεν; ἢ τάπερ</l>
                   <l n="418" xml:id="l.418" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:419">πάθομεν ἄχει πρός γε τῶν τεκομένων,</l>
                   <l n="419" xml:id="l.419" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:420">πάρεστι σαίνειν, τὰ δ᾽ οὔτι θέλγεται;</l>
                   <l n="420" xml:id="l.420" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:421">λύκος γὰρ ὥστ᾽ ὠμόφρων</l>
@@ -2211,9 +2211,9 @@
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="423" resp="Smyth" />
-                  <milestone unit="card" n="423" resp="Smyth" /><l n="422" xml:id="l.422" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:423">ἔκοψα κομμὸν Ἄριον ἔν τε Κισσίας</l>
+                  <milestone unit="strophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="423" resp="Smyth"/>
+                  <l n="422" xml:id="l.422" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:423">ἔκοψα κομμὸν Ἄριον ἔν τε Κισσίας</l>
                   <l n="423" xml:id="l.423" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:424">νόμοις ἰηλεμιστρίας</l>
                   <l n="424" xml:id="l.424" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:425">ἀπριγδόπληκτα πολυπλάνητα δ᾽ ἦν ἰδεῖν</l>
                   <l n="425" xml:id="l.425" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:426">ἐπασσυτεροτριβῆ τὰ χερὸς ὀρέγματα</l>
@@ -2302,12 +2302,12 @@
                   <rdg wit="m">εἰδεῖν Μ, superscr. m.</rdg>
                </app>
             </div>
-            <pb n="29" />
+            <pb n="29"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="card" n="429" resp="Smyth" />
-                  <milestone unit="card" n="429" resp="Smyth" /><l n="428" xml:id="l.428" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:429">ιώ ιώ δαΐα</l>
+                  <milestone unit="card" n="429" resp="Smyth"/>
+                  <l n="428" xml:id="l.428" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:429">ιώ ιώ δαΐα</l>
                   <l n="429" xml:id="l.429" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:430">πάντολμε μᾶτερ, δαΐαις ἐν ἐκφοραῖς</l>
                   <l n="430" xml:id="l.430" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:431" cert="low">ἄνευ πολιτῶν ἄνακτ',</l>
                   <l n="431" xml:id="l.431" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:432">ἄνευ δὲ πενθημάτων</l>
@@ -2315,9 +2315,9 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="2" />
-                  <milestone unit="card" n="434" resp="Smyth" />
-                  <milestone unit="card" n="434" resp="Smyth" /><l n="433" xml:id="l.433" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:434">τὸ πᾶν ἀτίμως ἔλεξας, οἴμοι.</l>
+                  <milestone unit="strophe" resp="Wecklein" n="2"/>
+                  <milestone unit="card" n="434" resp="Smyth"/>
+                  <l n="433" xml:id="l.433" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:434">τὸ πᾶν ἀτίμως ἔλεξας, οἴμοι.</l>
                   <l n="434" xml:id="l.434" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:435">πατρὸς δ᾽ ἀτίμωσιν άρα τίσει</l>
                   <l n="435" xml:id="l.435" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:436">ἕκατι μὲν δαιμόνων,</l>
                   <l n="436" xml:id="l.436" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:437">ἕκατι δ᾽ ἁμᾶν χερῶν.</l>
@@ -2325,9 +2325,9 @@
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="2" />
-                  <milestone unit="card" n="439" resp="Smyth" />
-                  <milestone unit="card" n="439" resp="Smyth" /><l n="438" xml:id="l.438" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:439">ἐμασχαλίσθη δέ γ', ὡς τόδ᾽ εἰδῇς,</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="2"/>
+                  <milestone unit="card" n="439" resp="Smyth"/>
+                  <l n="438" xml:id="l.438" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:439">ἐμασχαλίσθη δέ γ', ὡς τόδ᾽ εἰδῇς,</l>
                   <l n="439" xml:id="l.439" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:440">ἔπρασσε δ' απέρ νιν, ὧδε θάπτει,</l>
                   <l n="440" xml:id="l.440" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:441">μόρον κτίσαι μωμένα</l>
                </sp>
@@ -2394,15 +2394,15 @@
                   <rdg wit="M">κτεῖναι (ν in litura m1) Μ.</rdg>
                </app>
             </div>
-            <pb n="30" />
+            <pb n="30"/>
             <div type="textpart" subtype="episode">
                <l n="441" xml:id="l.441" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:442">ἄφερτον αἰῶνι σῷ.</l>
                <l n="442" xml:id="l.442" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:443">κλύεις πατρῴους δύας ἀτίμους.</l>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="445" resp="Smyth" />
-                  <milestone unit="card" n="445" resp="Smyth" /><l n="443" xml:id="l.443" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:445">λέγεις πατρῷον μόρον· ἐγὼ δ᾽ ἀπεστάτουν</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="445" resp="Smyth"/>
+                  <l n="443" xml:id="l.443" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:445">λέγεις πατρῷον μόρον· ἐγὼ δ᾽ ἀπεστάτουν</l>
                   <l n="444" xml:id="l.444" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:446">ἄτιμος, οὐδὲν ἀξία,</l>
                   <l n="445" xml:id="l.445" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:447">μυχοῦ δ᾽ ἄφερατος πολυσινοῦς κυνὸς δίκαν</l>
                   <l n="446" xml:id="l.446" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:448">ἑτοιμότερα γέλωτος ἀνέφερον λίβη,</l>
@@ -2411,8 +2411,8 @@
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="451" resp="Smyth" />
-                  <milestone unit="card" n="451" resp="Smyth" /><l n="449" xml:id="l.449" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:451">δι᾽ ὤτων δὲ συν-</l>
+                  <milestone unit="card" n="451" resp="Smyth"/>
+                  <l n="449" xml:id="l.449" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:451">δι᾽ ὤτων δὲ συν-</l>
                   <l n="450" xml:id="l.450" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:452">τέτραινε μῦθον ἡσύχῳ φρενῶν βάσει.</l>
                   <l n="451" xml:id="l.451" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:453">τὰ μὲν γὰρ οὕτως ἔχει,</l>
                   <l n="452" xml:id="l.452" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:454">τὰ δ᾽ αὐτὸς ὀργῇ μαθεῖν.</l>
@@ -2489,13 +2489,13 @@
                   <rdg wit="M">πρέπει» (fuerat πρέπεισ) δ᾽ ἀκάμπτων Μ.</rdg>
                </app>
             </div>
-            <pb n="31" />
+            <pb n="31"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" />
-                  <milestone unit="card" n="456" resp="Smyth" />
-                  <milestone unit="card" n="456" resp="Smyth" /><l n="454" xml:id="l.454" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:456">σέ τοι λέγω, ξυγγενοῦ, πάτερ, φίλοις.</l>
+                  <milestone unit="strophe" resp="Wecklein"/>
+                  <milestone unit="card" n="456" resp="Smyth"/>
+                  <l n="454" xml:id="l.454" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:456">σέ τοι λέγω, ξυγγενοῦ, πάτερ, φίλοις.</l>
                </sp>
                <sp>
                   <speaker>ΗΛ.</speaker>
@@ -2509,29 +2509,29 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" />
-                  <milestone unit="card" n="461" resp="Smyth" />
-                  <milestone unit="card" n="461" resp="Smyth" /><l n="459" xml:id="l.459" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:461">Ἄρης Ἄρει ξυμβαλεῖ, Δίκᾳ Δίκα.</l>
+                  <milestone unit="antistrophe" resp="Wecklein"/>
+                  <milestone unit="card" n="461" resp="Smyth"/>
+                  <l n="459" xml:id="l.459" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:461">Ἄρης Ἄρει ξυμβαλεῖ, Δίκᾳ Δίκα.</l>
                </sp>
                <sp>
                   <speaker>ΗΛ.</speaker>
-                  <l n="460" xml:id="l.460" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:462">ἰὼ θεοί, κραίνετ᾽ ἐνδίκως <gap extent="u _" reason="omitted" />.</l>
+                  <l n="460" xml:id="l.460" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:462">ἰὼ θεοί, κραίνετ᾽ ἐνδίκως <gap extent="u _" reason="omitted"/>.</l>
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
                   <l n="461" xml:id="l.461" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:463">τρόμος μ᾽ ὑφέρπει κλύουσαν εὐγμάτων.</l>
                   <l n="462" xml:id="l.462" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:464">τὸ μόρσιμον μένει πάλαι,</l>
                   <l n="463" xml:id="l.463" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:465">εὐχομένοις δ᾽ ἂν ἔλθοι.</l>
-                  <milestone unit="strophe" resp="Wecklein" />
-                  <milestone unit="card" n="466" resp="Smyth" />
-                  <milestone unit="card" n="466" resp="Smyth" /><l n="464" xml:id="l.464" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:466">ὦ πόνος ἐγγενὴς</l>
+                  <milestone unit="strophe" resp="Wecklein"/>
+                  <milestone unit="card" n="466" resp="Smyth"/>
+                  <l n="464" xml:id="l.464" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:466">ὦ πόνος ἐγγενὴς</l>
                   <l n="465" xml:id="l.465" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:467">καὶ παράμουσος ἄτης</l>
                   <l n="466" xml:id="l.466" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:468">αἱματόεσσα πλαγά.</l>
                   <l n="467" xml:id="l.467" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:469">ἰὼ δύστον᾽ ἄφερτα κήδη·</l>
                   <l n="468" xml:id="l.468" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:470">ἰὼ δυσκατάπαυστον ἄλγος.</l>
-                  <milestone unit="antistrophe" resp="Wecklein" />
-                  <milestone unit="card" n="471" resp="Smyth" />
-                  <milestone unit="card" n="471" resp="Smyth" /><l n="469" xml:id="l.469" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:471">δώμασιν ἔμμοτον</l>
+                  <milestone unit="antistrophe" resp="Wecklein"/>
+                  <milestone unit="card" n="471" resp="Smyth"/>
+                  <l n="469" xml:id="l.469" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:471">δώμασιν ἔμμοτον</l>
                </sp>
             </div>
             <div type="commentary">
@@ -2585,20 +2585,20 @@
                   <rdg>scribendum δυσκατάπαυτον.</rdg>
                </app>
             </div>
-            <pb n="32" />
+            <pb n="32"/>
             <div type="textpart" subtype="episode">
                <l n="470" xml:id="l.470" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:472" cert="low">τῶνδ᾽ ἄκος, οὐδ᾽ ἀπ᾿ ἄλλων</l>
                <l n="471" xml:id="l.471" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:473">ἔκτοθεν, ἀλλ᾽ ἀπ᾿ αὐτῶν</l>
                <l n="472" xml:id="l.472" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:474">δι' ὠμὰν ἔριν αἱματηράν.</l>
                <l n="473" xml:id="l.473" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:475">θεῶν τῶν κατὰ γᾶς ὅδ᾽ ὕμνος.</l>
-               <milestone unit="card" n="476" resp="Smyth" />
-               <milestone unit="card" n="476" resp="Smyth" /><l n="474" xml:id="l.474" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:476">ἀλλὰ κλύοντες, μάκαρες χθόνιοι,</l>
+               <milestone unit="card" n="476" resp="Smyth"/>
+               <l n="474" xml:id="l.474" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:476">ἀλλὰ κλύοντες, μάκαρες χθόνιοι,</l>
                <l n="475" xml:id="l.475" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:477">τῆσδε κατευχῆς πέμπετ᾽ ἀρωγὴν</l>
                <l n="476" xml:id="l.476" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:478">παισὶν προφρόνως ἐπὶ νίκῃ.</l>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="479" resp="Smyth" />
-                  <milestone unit="card" n="479" resp="Smyth" /><l n="477" xml:id="l.477" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:479">πάτερ, τρόποισιν οὐ τυραννικοῖς θανών,</l>
+                  <milestone unit="card" n="479" resp="Smyth"/>
+                  <l n="477" xml:id="l.477" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:479">πάτερ, τρόποισιν οὐ τυραννικοῖς θανών,</l>
                   <l n="478" xml:id="l.478" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:480">αἰτουμένῳ μοι δὸς κράτος τῶν σῶν δόμων.</l>
                </sp>
                <sp>
@@ -2670,7 +2670,7 @@
                   <rdg wit="M">ἐν πυροῖσι Μ.</rdg>
                </app>
             </div>
-            <pb n="33" />
+            <pb n="33"/>
             <div type="textpart" subtype="episode">
                <l n="486" xml:id="l.486" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:488">πάντων δὲ πρῶτον τόνδε πρεσβεύσω τάφον.</l>
                <sp>
@@ -2783,7 +2783,7 @@
                   <rdg wit="Schuetz">κληδόνος Schuetz.</rdg>
                </app>
             </div>
-            <pb n="34" />
+            <pb n="34"/>
             <div type="textpart" subtype="episode">
                <l n="504" xml:id="l.504" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:506">θανόντι· φελλοὶ δ᾽ ὡς ἄγουσι δίκτυον,</l>
                <l n="505" xml:id="l.505" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:507">τὸν ἐκ βυθοῦ κλωστῆρα σῴζοντες λίνου.</l>
@@ -2794,8 +2794,8 @@
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="510" resp="Smyth" />
-                  <milestone unit="card" n="510" resp="Smyth" /><l n="508" xml:id="l.508" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:510">καὶ μὴν ἀμεμφῆ τόνδ᾽ ἐτείνατον λόγον,</l>
+                  <milestone unit="card" n="510" resp="Smyth"/>
+                  <l n="508" xml:id="l.508" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:510">καὶ μὴν ἀμεμφῆ τόνδ᾽ ἐτείνατον λόγον,</l>
                   <l n="509" xml:id="l.509" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:511">τίμημα τύμβου τῆς ἀνοιμώκτου τύχης.</l>
                   <l n="510" xml:id="l.510" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:512">τὰ δ᾽ ἄλλ᾽, ἐπειδὴ δρᾶν κατώρθωσαι φρενί,</l>
                   <l n="511" xml:id="l.511" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:513">ἔρδοις ἂν ἤδη δαίμονος πειρώμενος.</l>
@@ -2862,7 +2862,7 @@
                   <rdg wit="Kirchhoff">δῶρ᾽, ὀλείζω Kirchhoff.</rdg>
                </app>
             </div>
-            <pb n="35" />
+            <pb n="35"/>
             <div type="textpart" subtype="episode">
                <l n="518" xml:id="l.518" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:520">τὰ πάντα γάρ τις ἐκχέας ἀνθ' αἵματος</l>
                <l n="519" xml:id="l.519" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:521">ἑνός, μάτην ὁ μόχθος· ὧδ᾽ ἔχει λόγος.</l>
@@ -2986,7 +2986,7 @@
                   <rdg wit="M">ἐπτωημένη ut vid. ante corr. Μ, corr. m1.</rdg>
                </app>
             </div>
-            <pb n="36" />
+            <pb n="36"/>
             <div type="textpart" subtype="episode">
                <l n="534" xml:id="l.534" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:536">πολλοὶ δ᾽ ἀνῆθον, ἐκτυφλωθέντες σκότῳ,</l>
                <l n="535" xml:id="l.535" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:537">λαμπτῆρες ἐν δόμοισι δεσποίνης χάριν</l>
@@ -2994,8 +2994,8 @@
                <l n="537" xml:id="l.537" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:539">ἄκος τομαῖον ἐλπίσασα πημάτων.</l>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="540" resp="Smyth" />
-                  <milestone unit="card" n="540" resp="Smyth" /><l n="538" xml:id="l.538" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:540">ἀλλ᾽ εὔχομαι γῇ τῇδε καὶ πατρὸς τάφῳ</l>
+                  <milestone unit="card" n="540" resp="Smyth"/>
+                  <l n="538" xml:id="l.538" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:540">ἀλλ᾽ εὔχομαι γῇ τῇδε καὶ πατρὸς τάφῳ</l>
                   <l n="539" xml:id="l.539" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:541">τοὔνειρον εἶναι τοῦτ᾽ ἐμοὶ τελεσφόρον.</l>
                   <l n="540" xml:id="l.540" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:542">κρίνω δέ τοί νιν ὥστε συγκόλλως ἔχειν.</l>
                   <l n="541" xml:id="l.541" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:543">εἰ γὰρ τὸν αὐτὸν χῶρον ἐκλιπὼν ἐμοὶ</l>
@@ -3069,7 +3069,7 @@
                   <rdg wit="M">τῶνδέπ' mut. in τῶνδέσ᾽ Μ.</rdg>
                </app>
             </div>
-            <pb n="37" />
+            <pb n="37"/>
             <div type="textpart" subtype="episode">
                <l n="550" xml:id="l.550" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:552">γένοιτο δ᾽ οὕτως. τἄλλα δ᾽ ἐξηγοῦ φίλοις,</l>
                <l n="551" xml:id="l.551" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:553">τοὺς δ᾽ ἕν τι ποιεῖν, τοὺς δὲ μή τι δρᾶν λέγων.</l>
@@ -3158,7 +3158,7 @@
                   <rdg wit="M">πυλήισι Μ.</rdg>
                </app>
             </div>
-            <pb n="38" />
+            <pb n="38"/>
             <div type="textpart" subtype="episode">
                <l n="568" xml:id="l.568" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:570">Αίγισθος, εἴπερ οἶδεν ἔνδημος παρών;</l>
                <l n="569" xml:id="l.569" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:571">εἰ δ᾽ οὖν ἀμείψω βαλὸν ἑρκείων πυλῶν</l>
@@ -3177,9 +3177,9 @@
                <l n="582" xml:id="l.582" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:584">ξιφηφόρους ἀγῶνας ὀρθώσαντί μοι.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="585" resp="Smyth" />
-                  <milestone unit="card" n="585" resp="Smyth" /><l n="583" xml:id="l.583" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:585">πολλὰ μὲν γὰ τρέφει</l>
+                  <milestone unit="strophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="585" resp="Smyth"/>
+                  <l n="583" xml:id="l.583" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:585">πολλὰ μὲν γὰ τρέφει</l>
                   <l n="584" xml:id="l.584" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:586">δεινὰ δειμάτων ἄχη,</l>
                </sp>
             </div>
@@ -3243,7 +3243,7 @@
                   <rdg wit="M">δεινὰ καὶ Μ.</rdg>
                </app>
             </div>
-            <pb n="39" />
+            <pb n="39"/>
             <div type="textpart" subtype="episode">
                <l n="585" xml:id="l.585" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:587">πόντιαί τ᾽ ἀγκάλαι κνωδάλων</l>
                <l n="586" xml:id="l.586" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:588">ἀνταίων βροτοῖσι</l>
@@ -3252,9 +3252,9 @@
                <l n="589" xml:id="l.589" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:591">πτανά τε καὶ πεδοβά-</l>
                <l n="590" xml:id="l.590" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:592" cert="low">μονα κἀνεμοέντων</l>
                <l n="591" xml:id="l.591" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:593">αἰγίδων φράσαι κότον.</l>
-               <milestone unit="antistrophe" resp="Wecklein" n="1" />
-               <milestone unit="card" n="594" resp="Smyth" />
-               <milestone unit="card" n="594" resp="Smyth" /><l n="592" xml:id="l.592" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:594">ἀλλ' ὑπέρτολμον ἀν-</l>
+               <milestone unit="antistrophe" resp="Wecklein" n="1"/>
+               <milestone unit="card" n="594" resp="Smyth"/>
+               <l n="592" xml:id="l.592" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:594">ἀλλ' ὑπέρτολμον ἀν-</l>
                <l n="593" xml:id="l.593" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:595">δρὸς φρόνημα τίς λέγοι</l>
                <l n="594" xml:id="l.594" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:596">καὶ γυναικῶν φρεσὶν τλημόνων</l>
                <l n="595" xml:id="l.595" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:597">παντόλμους ἔρωτας</l>
@@ -3315,13 +3315,13 @@
                   <rdg wit="M">ἀπέ.ρωτοσ, litera c ex π facta, Μ. παρανεκᾶι (fuerat fort. παρανεικᾶι) corr. in παρανικᾶι Μ.</rdg>
                </app>
             </div>
-            <pb n="40" />
+            <pb n="40"/>
             <div type="textpart" subtype="episode">
                <l n="599" xml:id="l.599" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:600">ἔρως παρανικᾷ</l>
                <l n="600" xml:id="l.600" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:601">κνωδάλων τε καὶ βροτῶν.</l>
-               <milestone unit="strophe" resp="Wecklein" n="2" />
-               <milestone unit="card" n="602" resp="Smyth" />
-               <milestone unit="card" n="602" resp="Smyth" /><l n="601" xml:id="l.601" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:602">ἴστω δ᾽ ὅστις οὐχ ὑπόπτερος</l>
+               <milestone unit="strophe" resp="Wecklein" n="2"/>
+               <milestone unit="card" n="602" resp="Smyth"/>
+               <l n="601" xml:id="l.601" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:602">ἴστω δ᾽ ὅστις οὐχ ὑπόπτερος</l>
                <l n="602" xml:id="l.602" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:603">φροντίσιν δαείς,</l>
                <l n="603" xml:id="l.603" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:604">τὰν ὁ παιδολυ-</l>
                <l n="604" xml:id="l.604" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:605">μὰς τάλαινα θεστιὰς μήσατο</l>
@@ -3331,9 +3331,9 @@
                <l n="608" xml:id="l.608" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:609">ματρόθεν κελάδησε</l>
                <l n="609" xml:id="l.609" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:610">ξύμμετρον τε δια βίου</l>
                <l n="610" xml:id="l.610" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:611">μοιρόκραντον ἐς ἦμαρ.</l>
-               <milestone unit="antistrophe" resp="Wecklein" n="2" />
-               <milestone unit="card" n="612" resp="Smyth" />
-               <milestone unit="card" n="612" resp="Smyth" /><l n="611" xml:id="l.611" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:612">ἄλλαν δή τιν' ἐν λόγοις στυγεῖν</l>
+               <milestone unit="antistrophe" resp="Wecklein" n="2"/>
+               <milestone unit="card" n="612" resp="Smyth"/>
+               <l n="611" xml:id="l.611" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:612">ἄλλαν δή τιν' ἐν λόγοις στυγεῖν</l>
                <l n="612" xml:id="l.612" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:613">φοινίαν Σκύλλαν,</l>
             </div>
             <div type="commentary">
@@ -3384,7 +3384,7 @@
                   <rdg wit="Paley">φ. γυναῖχ᾽ Paley.</rdg>
                </app>
             </div>
-            <pb n="41" />
+            <pb n="41"/>
             <div type="textpart" subtype="episode">
                <l n="613" xml:id="l.613" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:615">ἅτ᾽ ἐχθρῶν ὑπαὶ</l>
                <l n="614" xml:id="l.614" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:616">φῶτ᾽ ἀπώλεσεν φίλον Κρητικοῖς</l>
@@ -3394,9 +3394,9 @@
                <l n="618" xml:id="l.618" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:620">νοσφίσασ᾽ ἀπροβούλως</l>
                <l n="619" xml:id="l.619" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:621">πνέονθ᾽ ὁ κυνόφρων ὕπνῳ.</l>
                <l n="620" xml:id="l.620" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:622">κιγχάνει δέ νιν Ἑρμῆς.</l>
-               <milestone unit="strophe" resp="Wecklein" n="3" />
-               <milestone unit="card" n="623" resp="Smyth" />
-               <milestone unit="card" n="623" resp="Smyth" /><l n="621" xml:id="l.621" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:623">ἐπεὶ δ᾽ ἐπεμνασάμην ἀμειλίχων</l>
+               <milestone unit="strophe" resp="Wecklein" n="3"/>
+               <milestone unit="card" n="623" resp="Smyth"/>
+               <l n="621" xml:id="l.621" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:623">ἐπεὶ δ᾽ ἐπεμνασάμην ἀμειλίχων</l>
                <l n="622" xml:id="l.622" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:624">πόνων, ἀκαίρως δὲ δυσφιλὲς γαμή-</l>
                <l n="623" xml:id="l.623" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:625">λευμ᾽ ἀπεύχετον δόμοις</l>
                <l n="624" xml:id="l.624" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:626">γυναικοβούλους τε μήτιδας φρενῶν</l>
@@ -3482,11 +3482,11 @@
                   <rdg wit="Stanley">τίω Stanley.</rdg>
                </app>
             </div>
-            <pb n="42" />
+            <pb n="42"/>
             <div type="textpart" subtype="episode">
-               <milestone unit="antistrophe" resp="Wecklein" n="3" />
-               <milestone unit="card" n="631" resp="Smyth" />
-               <milestone unit="card" n="631" resp="Smyth" /><l n="629" xml:id="l.629" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:631">κακῶν δὲ πρεσβεύεται τὸ Λήμνιον</l>
+               <milestone unit="antistrophe" resp="Wecklein" n="3"/>
+               <milestone unit="card" n="631" resp="Smyth"/>
+               <l n="629" xml:id="l.629" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:631">κακῶν δὲ πρεσβεύεται τὸ Λήμνιον</l>
                <l n="630" xml:id="l.630" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:632">λόγῳ· γοᾶται δὲ δὴ ποθει κατά-</l>
                <l n="631" xml:id="l.631" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:633">πτυστον. ᾤκασεν δέ τις</l>
                <l n="632" xml:id="l.632" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:634">τὸ δεινὸν ἂν Λημνίοισι πήμασιν.</l>
@@ -3494,9 +3494,9 @@
                <l n="634" xml:id="l.634" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:636">βροτῶν ἀτιμωδὲν οἴχεται γένος.</l>
                <l n="635" xml:id="l.635" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:637">σέβει γὰρ οὔτις τὸ δυσφιλὲς θεοῖς.</l>
                <l n="636" xml:id="l.636" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:638">τί τῶνδ᾽ οὐκ ἐνδίκως ἀγείρω;</l>
-               <milestone unit="strophe" resp="Wecklein" n="4" />
-               <milestone unit="card" n="639" resp="Smyth" />
-               <milestone unit="card" n="639" resp="Smyth" /><l n="637" xml:id="l.637" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:639">τὸ δ᾽ ἄγχι πλευμόνων ξίφος</l>
+               <milestone unit="strophe" resp="Wecklein" n="4"/>
+               <milestone unit="card" n="639" resp="Smyth"/>
+               <l n="637" xml:id="l.637" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:639">τὸ δ᾽ ἄγχι πλευμόνων ξίφος</l>
                <l n="638" xml:id="l.638" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:640">διανταίαν ὀξυπευκὲς αὐτῷ</l>
                <l n="639" xml:id="l.639" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:641">διαὶ Δίκας. τὸ μὴ θέμις γὰρ οὐ</l>
                <l n="640" xml:id="l.640" ana="#unaligned">λὰξ πέδοι πατούμενον,</l>
@@ -3567,14 +3567,14 @@
                   <rdg wit="M">ἀδεμίστωσ, a mutato in ou, M.</rdg>
                </app>
             </div>
-            <pb n="43" />
+            <pb n="43"/>
             <div type="textpart" subtype="episode">
                <head>CHOEPHOROE.</head>
                <sp>
                   <speaker>ΧΟ.</speaker>
                   <stage>antistr. 4.</stage>
-                  <milestone unit="card" n="646" resp="Smyth" />
-                  <milestone unit="card" n="646" resp="Smyth" /><l n="643" xml:id="l.643" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:646">Δίκας δ᾽ ἐρείδεται πυθμήν·</l>
+                  <milestone unit="card" n="646" resp="Smyth"/>
+                  <l n="643" xml:id="l.643" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:646">Δίκας δ᾽ ἐρείδεται πυθμήν·</l>
                   <l n="644" xml:id="l.644" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:647">προχαλκεύει δ᾽ Αἶσα φασγανουργός·</l>
                   <l n="645" xml:id="l.645" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:648">τέκνον δ᾽ ἐπεισφέρει δίμασε</l>
                   <l n="646" xml:id="l.646" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:650">αἱμάτων παλαιτέρων</l>
@@ -3583,8 +3583,8 @@
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="653" resp="Smyth" />
-                  <milestone unit="card" n="653" resp="Smyth" /><l n="649" xml:id="l.649" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:653">παῖ παῖ, θύρας ἄκουσον ἑρκείας κτύπον.</l>
+                  <milestone unit="card" n="653" resp="Smyth"/>
+                  <l n="649" xml:id="l.649" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:653">παῖ παῖ, θύρας ἄκουσον ἑρκείας κτύπον.</l>
                   <l n="650" xml:id="l.650" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:654">τίς ἔνδον, ὦ παῖ, παῖ, μάλ᾽ αὖθις, ἐν δόμοις;</l>
                   <l n="651" xml:id="l.651" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:655">τρίτον τόδ᾽ ἐκπέραμα δωμάτων καλῶ,</l>
                   <l n="652" xml:id="l.652" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:656">εἴπερ φιλόξεν᾽ ἐστὶν Αἰγίσθου διαί.</l>
@@ -3664,7 +3664,7 @@
                   <rdg wit="Dindorf">καθιέναι Dindorf.</rdg>
                </app>
             </div>
-            <pb n="44" />
+            <pb n="44"/>
             <div type="textpart" subtype="episode">
                <l n="659" xml:id="l.659" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:663">ἐξελθέτω τις δωμάτων τελεσφόρος,</l>
                <l n="660" xml:id="l.660" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:664">γυνὴ ταπαρχος, ἄνδρα δ᾽ εὐπρεπέστερον·</l>
@@ -3735,7 +3735,7 @@
                   <rdg wit="Dindorf">πόδα Dindorf.</rdg>
                </app>
             </div>
-            <pb n="45" />
+            <pb n="45"/>
             <div type="textpart" subtype="episode">
                <head>CHOEPHOROE.</head>
                <l n="675" xml:id="l.675" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:679">Στροφίος ὁ Φωκεύς· πεύθομαι γὰρ ἐν λόγῳ·</l>
@@ -3752,8 +3752,8 @@
                <l n="686" xml:id="l.686" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:690">οὐκ οἶδα, τὸν τεκόντα δ᾽ εἰκὸς εἰδέναι.</l>
                <sp>
                   <speaker>ΚΛ.</speaker>
-                  <milestone unit="card" n="691" resp="Smyth" />
-                  <milestone unit="card" n="691" resp="Smyth" /><l n="687" xml:id="l.687" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:691">οἰ 'γώ, κατ᾿ ἄκρας ἐνπᾶς ὡς πορθούμεθα.</l>
+                  <milestone unit="card" n="691" resp="Smyth"/>
+                  <l n="687" xml:id="l.687" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:691">οἰ 'γώ, κατ᾿ ἄκρας ἐνπᾶς ὡς πορθούμεθα.</l>
                   <l n="688" xml:id="l.688" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:692">ὦ δυσπάλαιστε τῶνδε δωμάτων ἀρά,</l>
                   <l n="689" xml:id="l.689" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:693">ὡς πόλλ᾽ ἐπωπᾷς κἀκποδὼν εὖ κείμενα</l>
                   <l n="690" xml:id="l.690" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:694">τόξοις πρόσωθεν εἰσκόποις χειρουμένη</l>
@@ -3800,7 +3800,7 @@
                   <rdg wit="M">νομίζων Μ.</rdg>
                </app>
             </div>
-            <pb n="46" />
+            <pb n="46"/>
             <div type="textpart" subtype="episode">
                <l n="694" xml:id="l.694" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:698">νῦν δ᾽ ἵπερ ἐν δόμοισι βακχείας καλῆς</l>
                <l n="695" xml:id="l.695" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:699">ἰατρὸς ἐλπὶς ἦν παροῦσαν ἐγγράφει.</l>
@@ -3885,7 +3885,7 @@
                   <rdg wit="Pauw">ὀπισθόπους δὲ (τε Bamberger) τόνδε καὶ ξυνέμπορον Pauw.</rdg>
                </app>
             </div>
-            <pb n="47" />
+            <pb n="47"/>
             <div type="textpart" subtype="episode">
                <l n="710" xml:id="l.710" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:714">κἀκεῖ κυρούντων σώμασιν τὰ πρόσφορα.</l>
                <l n="711" xml:id="l.711" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:715">αἰνῶ δὲ πράσσειν ὡς ὑπευθύνῳ τάδε.</l>
@@ -3894,8 +3894,8 @@
                <l n="714" xml:id="l.714" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:718">βουλευσόμεσθα τῆσδε συμφορᾶς πέρι.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="719" resp="Smyth" />
-                  <milestone unit="card" n="719" resp="Smyth" /><l n="715" xml:id="l.715" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:719">εἶεν, φίλιαι δμωίδες οἴκων,</l>
+                  <milestone unit="card" n="719" resp="Smyth"/>
+                  <l n="715" xml:id="l.715" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:719">εἶεν, φίλιαι δμωίδες οἴκων,</l>
                   <l n="716" xml:id="l.716" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:720">πότε δὴ στομάτων</l>
                   <l n="717" xml:id="l.717" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:721">δείξομεν ἰσχὺν ἐπ᾽ Ὀρέστῃ;</l>
                   <l n="718" xml:id="l.718" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:722">ὦ πότνια χθὼν καὶ πότνι ἀκτὴ</l>
@@ -3906,8 +3906,8 @@
                   <l n="723" xml:id="l.723" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:727">ξυγκαταβῆναι, χθόνιον δ᾽ Ἑρμῆν</l>
                   <l n="724" xml:id="l.724" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:728">καὶ τὸν νύχιον τοῖσδ᾽ ἐφοδεῦσαι</l>
                   <l n="725" xml:id="l.725" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:729">ξιφοδηλήτοισιν ἀγῶσιν.</l>
-                  <milestone unit="card" n="730" resp="Smyth" />
-                  <milestone unit="card" n="730" resp="Smyth" /><l n="726" xml:id="l.726" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:730">ἔοικεν ἁνὴρ ὁ ξένος τεύχειν κακόν·</l>
+                  <milestone unit="card" n="730" resp="Smyth"/>
+                  <l n="726" xml:id="l.726" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:730">ἔοικεν ἁνὴρ ὁ ξένος τεύχειν κακόν·</l>
                   <l n="727" xml:id="l.727" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:731">τροφὸν δ᾽ Ὀρέστου τήνδ᾽ ὁρῶ κεκλαυμένην.</l>
                </sp>
             </div>
@@ -3977,7 +3977,7 @@
                   <rdg wit="M">ἀνὴρ Μ.</rdg>
                </app>
             </div>
-            <pb n="48" />
+            <pb n="48"/>
             <div type="textpart" subtype="episode">
                <l n="728" xml:id="l.728" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:732">ποῖ δὴ πατεῖς, Κίλισσα, δωμάτων πύλας;</l>
                <l n="729" xml:id="l.729" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:733">λύπη δ᾽ ἄμισθός ἐστί σοι ξυνέμπορος.</l>
@@ -4041,7 +4041,7 @@
                   <rdg wit="Butler">ἠνεσχόμην Butler.</rdg>
                </app>
             </div>
-            <pb n="49" />
+            <pb n="49"/>
             <div type="textpart" subtype="episode">
                <l n="746" xml:id="l.746" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:750">ὃν ἐξέθρεψα μητρόθεν δεδεγμένη,</l>
                <l n="747" xml:id="l.747" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:751">καὶ νυκτιπλάγκτων ὀρθίων κελευμάτων</l>
@@ -4061,8 +4061,8 @@
                <l n="761" xml:id="l.761" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:765">οἴκων, θέλων δὲ τόνδε πεύσεται λόγον.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="766" resp="Smyth" />
-                  <milestone unit="card" n="766" resp="Smyth" /><l n="762" xml:id="l.762" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:766">πῶς οὖν κελεύει νιν μολεῖν ἐσταλμένον;</l>
+                  <milestone unit="card" n="766" resp="Smyth"/>
+                  <l n="762" xml:id="l.762" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:766">πῶς οὖν κελεύει νιν μολεῖν ἐσταλμένον;</l>
                </sp>
                <sp>
                   <speaker>ΤΡ.</speaker>
@@ -4122,7 +4122,7 @@
                   <rdg wit="Canter">τί πῶς; Canter.</rdg>
                </app>
             </div>
-            <pb n="50" />
+            <pb n="50"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΧΟ.</speaker>
@@ -4172,8 +4172,8 @@
                <sp>
                   <speaker>ΧΟ.</speaker>
                   <stage>str. 1.</stage>
-                  <milestone unit="card" n="783" resp="Smyth" />
-                  <milestone unit="card" n="783" resp="Smyth" /><l n="779" xml:id="l.779" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:783">νῦν παραιτουμένᾳ μοι, πάτερ</l>
+                  <milestone unit="card" n="783" resp="Smyth"/>
+                  <l n="779" xml:id="l.779" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:783">νῦν παραιτουμένᾳ μοι, πάτερ</l>
                   <l n="780" xml:id="l.780" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:784">Ζεῦ θεῶν Ὀλυμπίων,</l>
                </sp>
             </div>
@@ -4246,21 +4246,21 @@
                   <rdg>Tres chori ordines canere videntur</rdg>
                </app>
             </div>
-            <pb n="51" />
+            <pb n="51"/>
             <div type="textpart" subtype="episode">
                <l n="781" xml:id="l.781" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:785">δὸς τύχας· τυχεῖν δέ μου κυρίως</l>
                <l n="782" xml:id="l.782" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:786">τὰ σωφροσύναις μαιομένοις ἰδεῖν.</l>
                <l n="783" xml:id="l.783" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:787">διαδικᾶσαι πᾶν ἔπος</l>
                <l n="784" xml:id="l.784" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:788">ἔλακον. Ζεῦ, σὺ δέ νιν φυλάσσοις.</l>
-               <milestone unit="card" n="789" resp="Smyth" />
-               <milestone unit="card" n="789" resp="Smyth" /><l n="785" xml:id="l.785" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:789">ἒ ἔ. πρὸ δὲ δὴ ᾽χθρῶν</l>
+               <milestone unit="card" n="789" resp="Smyth"/>
+               <l n="785" xml:id="l.785" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:789">ἒ ἔ. πρὸ δὲ δὴ ᾽χθρῶν</l>
                <l n="786" xml:id="l.786" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:790">τὸν ἔσωθεν μελάθρων, Ζεῦ,</l>
                <l n="787" xml:id="l.787" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:791">θές, ἐπεί νιν μέγαν ἄρας,</l>
                <l n="788" xml:id="l.788" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:792">δίδυμα καὶ τριπλᾶ</l>
                <l n="789" xml:id="l.789" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:793">παλίμποινα θέλων ἀμείψει.</l>
                <stage>antistr. 1.</stage>
-               <milestone unit="card" n="794" resp="Smyth" />
-               <milestone unit="card" n="794" resp="Smyth" /><l n="790" xml:id="l.790" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:794">ἴσθι δ᾽ ἀνδρὸς φίλου πῶλον εὖνιν</l>
+               <milestone unit="card" n="794" resp="Smyth"/>
+               <l n="790" xml:id="l.790" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:794">ἴσθι δ᾽ ἀνδρὸς φίλου πῶλον εὖνιν</l>
                <l n="791" xml:id="l.791" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:795" cert="low">ζυγέντ᾽ ἐν ἅρματι</l>
                <l n="792" xml:id="l.792" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:796">πημάτων, ἐν δρόμῳ προστιθεὶς</l>
                <l n="793" xml:id="l.793" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:797">μέτρον. τίς ἂν σῳζόμενον ῥυθμὸν</l>
@@ -4332,27 +4332,27 @@
                   <rdg wit="Hermann">γάπεδον Hermann.</rdg>
                </app>
             </div>
-            <pb n="52" />
+            <pb n="52"/>
             <div type="textpart" subtype="episode">
                <l n="795" xml:id="l.795" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:799">ἀνομένων βημάτων ὄρεγμα;</l>
                <stage>str. 2.</stage>
-               <milestone unit="card" n="800" resp="Smyth" />
-               <milestone unit="card" n="800" resp="Smyth" /><l n="796" xml:id="l.796" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:800">οἵ τ᾽ ἔσωθε δωμάτων</l>
+               <milestone unit="card" n="800" resp="Smyth"/>
+               <l n="796" xml:id="l.796" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:800">οἵ τ᾽ ἔσωθε δωμάτων</l>
                <l n="797" xml:id="l.797" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:801">πλουτογαθῆ μυχὸν νομίζετε,</l>
                <l n="798" xml:id="l.798" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:802">κλύετε, σύμφρονες θεοί·</l>
                <l n="799" xml:id="l.799" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:803">ἄγετε, τῶν πάλαι πεπραγμένων</l>
                <l n="800" xml:id="l.800" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:804">λύσασθ᾽ αἷμα προσφάτοις δίκαις.</l>
                <l n="801" xml:id="l.801" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:805">γέρων φόνος μηκέτ᾽ ἐν δόμοις τέκοι.</l>
-               <milestone unit="card" n="806" resp="Smyth" />
-               <milestone unit="card" n="806" resp="Smyth" /><l n="802" xml:id="l.802" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:806">Τὸ δὲ καλῶς κτίμενον ὦ</l>
+               <milestone unit="card" n="806" resp="Smyth"/>
+               <l n="802" xml:id="l.802" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:806">Τὸ δὲ καλῶς κτίμενον ὦ</l>
                <l n="803" xml:id="l.803" ana="#unaligned">μέγα ναίων στόμιον, εὖ</l>
                <l n="804" xml:id="l.804" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:807">δὸς ἀνιδεῖν δόμον ἀνδρός,</l>
                <l n="805" xml:id="l.805" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:808">καί νιν ἐλευθερίως</l>
                <l n="806" xml:id="l.806" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:809">λαμπρῶς ἰδεῖν φιλίοις</l>
                <l n="807" xml:id="l.807" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:810">ὄμμασι δνοφερᾶς καλύπτρας.</l>
                <stage>antistr. 2.</stage>
-               <milestone unit="card" n="811" resp="Smyth" />
-               <milestone unit="card" n="811" resp="Smyth" /><l n="808" xml:id="l.808" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:811">ξυλλάβοι δ᾽ ἐνδίκως</l>
+               <milestone unit="card" n="811" resp="Smyth"/>
+               <l n="808" xml:id="l.808" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:811">ξυλλάβοι δ᾽ ἐνδίκως</l>
                <l n="809" xml:id="l.809" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:812">παῖς ὁ Μαίας ἐπιφορώτατος</l>
             </div>
             <div type="commentary">
@@ -4421,7 +4421,7 @@
                   <rdg wit="Emperius">ἐπεὶ φορώτατος Emperius.</rdg>
                </app>
             </div>
-            <pb n="53" />
+            <pb n="53"/>
             <div type="textpart" subtype="episode">
                <l n="810" xml:id="l.810" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:813">πρᾶξιν οὐρίαν θέλων.</l>
                <l n="811" xml:id="l.811" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:815">πολλὰ δ᾽ ἄλλα φανεῖ χρηίζων,</l>
@@ -4429,8 +4429,8 @@
                <l n="813" xml:id="l.813" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:817">νύκτα πρό τ᾽ ὀμμάτων σκότον φέρει,</l>
                <l n="814" xml:id="l.814" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:818">καθ' ἡμέραν δ᾽ οὐδὲν ἐμφανέστερος.</l>
                <stage>str. 3.</stage>
-               <milestone unit="card" n="819" resp="Smyth" />
-               <milestone unit="card" n="819" resp="Smyth" /><l n="815" xml:id="l.815" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:819">καὶ τότ᾽ ἤδη πλοῦτον</l>
+               <milestone unit="card" n="819" resp="Smyth"/>
+               <l n="815" xml:id="l.815" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:819">καὶ τότ᾽ ἤδη πλοῦτον</l>
                <l n="816" xml:id="l.816" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:820">δωμάτων λυτήριον</l>
                <l n="817" xml:id="l.817" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:821" cert="low">θῆλον οὐριοστάταν</l>
                <l n="818" xml:id="l.818" ana="#unaligned">ὁμοῦ κρεκτὸν γού-</l>
@@ -4496,18 +4496,18 @@
                   <rdg wit="m">ἀποστάτεὶ Μ, ἀποστατεί m.</rdg>
                </app>
             </div>
-            <pb n="54" />
+            <pb n="54"/>
             <div type="textpart" subtype="episode">
                <l n="823" xml:id="l.823" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:826">τα δ᾽ ἀποστατεῖ φίλων.</l>
-               <milestone unit="card" n="827" resp="Smyth" />
-               <milestone unit="card" n="827" resp="Smyth" /><l n="824" xml:id="l.824" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:827">Σὺ δὲ θαρσῶν, ὅταν ἥκῃ</l>
+               <milestone unit="card" n="827" resp="Smyth"/>
+               <l n="824" xml:id="l.824" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:827">Σὺ δὲ θαρσῶν, ὅταν ἥκῃ</l>
                <l n="825" xml:id="l.825" ana="#unaligned">μέρος ἔργων,</l>
                <l n="826" xml:id="l.826" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:828">ἐπαΰσας πατρὸς ἔργῳ</l>
                <l n="827" xml:id="l.827" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:829">θροούσα πρὸς σὲ τέκνον πατρὸς αὐδάν,</l>
                <l n="828" xml:id="l.828" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:830">καὶ περαίνων ἐπίμομφον ἄταν.</l>
                <stage>antistr. 3.</stage>
-               <milestone unit="card" n="831" resp="Smyth" />
-               <milestone unit="card" n="831" resp="Smyth" /><l n="829" xml:id="l.829" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:831">Περσέως τ᾽ ἐν φρεσὶν</l>
+               <milestone unit="card" n="831" resp="Smyth"/>
+               <l n="829" xml:id="l.829" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:831">Περσέως τ᾽ ἐν φρεσὶν</l>
                <l n="830" xml:id="l.830" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:832">καρδίαν σχεθών,</l>
                <l n="831" xml:id="l.831" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:833">τοῖς δ᾽ ὑπὸ χθονὸς φίλοις,</l>
                <l n="832" xml:id="l.832" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:834">τοῖς τ᾽ ἄνωθεν προπράσσων</l>
@@ -4557,14 +4557,14 @@
                   <rdg wit="M">ἔνδοθεν ν. 833 addit M.</rdg>
                </app>
             </div>
-            <pb n="55" />
+            <pb n="55"/>
             <div type="textpart" subtype="episode">
                <l n="835" xml:id="l.835" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:836">φοινίαν ἄταν τιθείς, τὴν αἴτιον δ'</l>
                <l n="836" xml:id="l.836" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:837">ἐξαπολλὺς μόρου.</l>
                <sp>
                   <speaker>Αἴγισθος.</speaker>
-                  <milestone unit="card" n="838" resp="Smyth" />
-                  <milestone unit="card" n="838" resp="Smyth" /><l n="837" xml:id="l.837" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:838">ἥκω μὲν οὐκ ἄκλητος, ἀλλ᾽ ὑπάγγελος·</l>
+                  <milestone unit="card" n="838" resp="Smyth"/>
+                  <l n="837" xml:id="l.837" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:838">ἥκω μὲν οὐκ ἄκλητος, ἀλλ᾽ ὑπάγγελος·</l>
                   <l n="838" xml:id="l.838" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:839">νέαν φάτιν δὲ πεύδομαι λέγειν τινὰς</l>
                   <l n="839" xml:id="l.839" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:840">ξένους μολόντας οὐδαμῶς ἐφίμερον,</l>
                   <l n="840" xml:id="l.840" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:841">μόρον γ' Ὀρέστου. καὶ τόδ᾽ ἀμφέρειν δόμοις</l>
@@ -4656,14 +4656,14 @@
                   <rdg wit="M">η*** * κοτοσ Μ, δεν θνήσκοντοσ correxit et rursus in marg. εν θνήσκοντο(σ) adscr. m.</rdg>
                </app>
             </div>
-            <pb n="56" />
+            <pb n="56"/>
             <div type="textpart" subtype="episode">
                <l n="852" xml:id="l.852" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:853">εἴτ᾿ ἐξ ἀμαυρᾶς κληδόνος λέγει μαθών.</l>
                <l n="853" xml:id="l.853" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:854">οὔτοι φρέν᾽ ἂν κλέψειεν ὠμματωμένην.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="855" resp="Smyth" />
-                  <milestone unit="card" n="855" resp="Smyth" /><l n="854" xml:id="l.854" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:855">Ζεῦ Ζεῦ, τί λέγω, πόθεν ἄρξωμαι,</l>
+                  <milestone unit="card" n="855" resp="Smyth"/>
+                  <l n="854" xml:id="l.854" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:855">Ζεῦ Ζεῦ, τί λέγω, πόθεν ἄρξωμαι,</l>
                   <l n="855" xml:id="l.855" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:856" cert="low">τάδ᾽ ἐπευχομένη κἀπιδεάζουσ',</l>
                   <l n="856" xml:id="l.856" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:857">ὑπὸ δ᾽ εὐνοίας</l>
                   <l n="857" xml:id="l.857" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:858">πῶς ἴσον εἰποῦσ᾽ ἀνύσωμαι;</l>
@@ -4680,8 +4680,8 @@
                </sp>
                <sp>
                   <speaker>ΑΙ.</speaker>
-                  <milestone unit="card" n="869" resp="Smyth" />
-                  <milestone unit="card" n="869" resp="Smyth" /><l n="868" xml:id="l.868" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:869">ἒ ἔ, ὀτοτοτοῖ.</l>
+                  <milestone unit="card" n="869" resp="Smyth"/>
+                  <l n="868" xml:id="l.868" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:869">ἒ ἔ, ὀτοτοτοῖ.</l>
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
@@ -4740,14 +4740,14 @@
                   <rdg wit="m">ἄπο, σταθῶμεν m.</rdg>
                </app>
             </div>
-            <pb n="57" />
+            <pb n="57"/>
             <div type="textpart" subtype="episode">
                <l n="872" xml:id="l.872" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:873">ὅπως δοκῶμεν τῶνδ᾽ ἀναίτιαι κακῶν</l>
                <l n="873" xml:id="l.873" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:874">εἶναι· μάχης γὰρ δὴ κεκύρωται τέλος.</l>
                <sp>
                   <speaker>ΟΙ.</speaker>
-                  <milestone unit="card" n="875" resp="Smyth" />
-                  <milestone unit="card" n="875" resp="Smyth" /><l n="874" xml:id="l.874" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:875">οἴμοι πανοίμοι δεσπότου τελουμένου,</l>
+                  <milestone unit="card" n="875" resp="Smyth"/>
+                  <l n="874" xml:id="l.874" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:875">οἴμοι πανοίμοι δεσπότου τελουμένου,</l>
                   <l n="875" xml:id="l.875" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:876">οἴμοι μάλ᾽ αὖθις ἐν τρίτοις προσφθέγμασιν.</l>
                   <l n="876" xml:id="l.876" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:877">Αἴγισθος οὐκέτ᾽ ἔστιν. ἀλλ᾽ ἀνοίξατε</l>
                   <l n="877" xml:id="l.877" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:878">ὅπως τάχιστα, καὶ γυναικείους πύλας</l>
@@ -4853,7 +4853,7 @@
                   <rdg wit="m">τῶιδε δ'</rdg>
                </app>
             </div>
-            <pb n="58" />
+            <pb n="58"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΚΛ.</speaker>
@@ -4876,8 +4876,8 @@
                </sp>
                <sp>
                   <speaker>ΠΥ.</speaker>
-                  <milestone unit="card" n="900" resp="Smyth" />
-                  <milestone unit="card" n="900" resp="Smyth" /><l n="899" xml:id="l.899" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:900">ποῦ δαὶ τὰ λοιπὰ Λοξίου μαντεύματα</l>
+                  <milestone unit="card" n="900" resp="Smyth"/>
+                  <l n="899" xml:id="l.899" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:900">ποῦ δαὶ τὰ λοιπὰ Λοξίου μαντεύματα</l>
                   <l n="900" xml:id="l.900" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:901">τὰ πυθόχρηστα, πιστὰ δ᾽ εὐορκώματα;</l>
                   <l n="901" xml:id="l.901" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:902">ἅπαντας ἐχθροὺς τῶν θεῶν ἡγοῦ πλέον.</l>
                </sp>
@@ -4979,7 +4979,7 @@
                   <rdg wit="m1">σεβίζη</rdg>
                </app>
             </div>
-            <pb n="59" />
+            <pb n="59"/>
             <div type="textpart" subtype="episode">
                <sp>
                   <speaker>ΚΛ.</speaker>
@@ -5114,31 +5114,31 @@
                   <note>fort. τοῖνδε.</note>
                </app>
             </div>
-            <pb n="60" />
+            <pb n="60"/>
             <div type="textpart" subtype="episode">
                <l n="931" xml:id="l.931" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:932">ἐπεὶ δὲ πολλῶν αἱμάτων ἐπήχρισεν</l>
                <l n="932" xml:id="l.932" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:933">τλήμων Ὀρέστης, τοῦθ᾽ ὅμως αἱρούμεθα,</l>
                <l n="933" xml:id="l.933" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:934">ὀφθαλμὸν οἴκων μὴ πανώλεθρον πεσεῖν.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="935" resp="Smyth" />
-                  <milestone unit="card" n="935" resp="Smyth" /><l n="934" xml:id="l.934" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:935">ἔμολε μὲν δίκα Πριαμίδαις χρόνῳ,</l>
+                  <milestone unit="strophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="935" resp="Smyth"/>
+                  <l n="934" xml:id="l.934" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:935">ἔμολε μὲν δίκα Πριαμίδαις χρόνῳ,</l>
                   <l n="935" xml:id="l.935" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:936">βαρύδικος ποινά·</l>
                   <l n="936" xml:id="l.936" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:937">ἔμολε δ᾽ ἐς δόμον τὸν Ἀγαμέμνονος</l>
                   <l n="937" xml:id="l.937" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:938">διπλοῦς λέων, διπλοῦς Ἄρης.</l>
                   <l n="938" xml:id="l.938" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:939">ἔλασε δ᾽ ἐς τὸ πᾶν</l>
                   <l n="939" xml:id="l.939" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:940">ὁ πυθοχρήστας φυγὰς</l>
                   <l n="940" xml:id="l.940" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:941">θεόθεν εὖ φραδαῖσιν ὡρμημένος.</l>
-                  <milestone unit="card" n="942" resp="Smyth" />
-                  <milestone unit="card" n="942a" resp="Smyth" />
-                  <milestone unit="card" n="942" resp="Smyth" /><l n="941" xml:id="l.941" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:942">Ἐπολολύξατ᾽ ὦ δεσποσύνων δόμων</l>
+                  <milestone unit="card" n="942" resp="Smyth"/>
+                  <milestone unit="card" n="942a" resp="Smyth"/>
+                  <milestone unit="card" n="942-cont2" resp="Smyth"/><l n="941" xml:id="l.941" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:942">Ἐπολολύξατ᾽ ὦ δεσποσύνων δόμων</l>
                   <l n="942" xml:id="l.942" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:943">ἀναφυγὰς κακῶν καὶ κτεάνων τριβᾶς</l>
                   <l n="943" xml:id="l.943" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:944" cert="low">ὑπὸ δυοῖν μαστόροιν,</l>
                   <l n="944" xml:id="l.944" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:945">δυσοίμου τύχας.</l>
-                  <milestone unit="antistrophe" resp="Wecklein" n="1" />
-                  <milestone unit="card" n="946" resp="Smyth" />
-                  <milestone unit="card" n="946" resp="Smyth" /><l n="945" xml:id="l.945" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:946">ἔμολε δ᾽ ᾧ μέλει κρυπταδίου μάχας</l>
+                  <milestone unit="antistrophe" resp="Wecklein" n="1"/>
+                  <milestone unit="card" n="946" resp="Smyth"/>
+                  <l n="945" xml:id="l.945" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:946">ἔμολε δ᾽ ᾧ μέλει κρυπταδίου μάχας</l>
                   <l n="946" xml:id="l.946" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:947">δολιόφρων ποινά,</l>
                </sp>
             </div>
@@ -5208,25 +5208,25 @@
                   <note>fort. δολιόφρων δαίμων.</note>
                </app>
             </div>
-            <pb n="61" />
+            <pb n="61"/>
             <div type="textpart" subtype="episode">
                <l n="947" xml:id="l.947" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:948">ἔθιγε δ᾽ ἐν μάχᾳ χερὸς ἐτητύμως</l>
                <l n="948" xml:id="l.948" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:949" cert="low">Διὸς κόρα (Δίκαν δέ μιν</l>
                <l n="949" xml:id="l.949" ana="#unaligned">προσαγορεύομεν</l>
                <l n="950" xml:id="l.950" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:950">βροτοὶ τυχόντες καλῶς)</l>
                <l n="951" xml:id="l.951" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:951">ὀλέθριον πνέουσ' ἐν ἐχθροῖς κότον.</l>
-               <milestone unit="strophe" resp="Wecklein" n="2" />
-               <milestone unit="card" n="953" resp="Smyth" />
-               <milestone unit="card" n="942a" resp="Smyth" /><milestone unit="card" n="953" resp="Smyth" /><l n="952" xml:id="l.952" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:953" cert="low">τάπερ ὁ Λοξίας ὁ Παρνάσσιος</l>
+               <milestone unit="strophe" resp="Wecklein" n="2"/>
+               <milestone unit="card" n="953" resp="Smyth"/>
+               <milestone unit="card" n="942a-cont2" resp="Smyth"/><milestone unit="card" n="953-cont2" resp="Smyth"/><l n="952" xml:id="l.952" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:953" cert="low">τάπερ ὁ Λοξίας ὁ Παρνάσσιος</l>
                <l n="953" xml:id="l.953" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:954">μέγαν ἔχων μυχὸν χθονὸς ἐπ᾽ ὄχθει</l>
                <l n="954" xml:id="l.954" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:955" cert="low">ἄξεν ἀδόλως δολίας</l>
                <l n="955" xml:id="l.955" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:956" cert="low">βλαπτομέναν ἐν χρόνοις θεῖσαν ἐποίχεται.</l>
                <l n="956" xml:id="l.956" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:957">κρατεῖται πῶς τὸ θεῖον παρὰ τὸ μὴ</l>
                <l n="957" xml:id="l.957" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:958">ὑπουργεῖν κακοῖς;</l>
                <l n="958" xml:id="l.958" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:960" cert="low">ἄξιον δ᾽ οὐρανοῦχον ἀρχὴν σέβειν.</l>
-               <milestone unit="card" n="961" resp="Smyth" />
-               <milestone unit="card" n="972" resp="Smyth" />
-               <milestone unit="card" n="961" resp="Smyth" /><l n="959" xml:id="l.959" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:961">Πάρα τε φῶς ἰδεῖν μέγα τ᾽ ἀφηρέθη</l>
+               <milestone unit="card" n="961" resp="Smyth"/>
+               <milestone unit="card" n="972" resp="Smyth"/>
+               <milestone unit="card" n="961-cont2" resp="Smyth"/><l n="959" xml:id="l.959" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:961">Πάρα τε φῶς ἰδεῖν μέγα τ᾽ ἀφηρέθη</l>
                <l n="960" xml:id="l.960" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:962" cert="low">ψάλιον οἴκων.</l>
                <l n="961" xml:id="l.961" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:963">ἄναγε μάν, δόμοι· πολὺν ἄγαν χρόνον</l>
                <l n="962" xml:id="l.962" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:964">χαμαιπετεῖς ἔκεισθ᾽ ἀεί.</l>
@@ -5300,22 +5300,22 @@
                   <rdg wit="Meineke">ἔχεισθε δή</rdg>
                </app>
             </div>
-            <pb n="62" />
+            <pb n="62"/>
             <div type="textpart" subtype="episode">
-               <milestone unit="antistrophe" resp="Wecklein" n="2" />
-               <milestone unit="card" n="966" resp="Smyth" />
-               <milestone unit="card" n="966" resp="Smyth" /><l n="963" xml:id="l.963" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:965">τάχα δὲ παντελὴς χρόνος ἀμείψεται</l>
+               <milestone unit="antistrophe" resp="Wecklein" n="2"/>
+               <milestone unit="card" n="966" resp="Smyth"/>
+               <l n="963" xml:id="l.963" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:965">τάχα δὲ παντελὴς χρόνος ἀμείψεται</l>
                <l n="964" xml:id="l.964" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:966">πρόθυρα δωμάτων, ὅταν ἀφ᾽ ἑστίας</l>
                <l n="965" xml:id="l.965" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:967">μύσος πᾶν ἐλαθῇ</l>
                <l n="966" xml:id="l.966" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:968">καθαρμοῖσιν ἀτᾶν ἐλατηρίοις.</l>
                <l n="967" xml:id="l.967" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:969" cert="low">τύχα δ᾽ εὐπροσώπῳ κοίτα τὸ πᾶν</l>
                <l n="968" xml:id="l.968" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:970">ἰδεῖν ἀκοῦσαι θρεομένοις</l>
                <l n="969" xml:id="l.969" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:971">μέτοικοι δόμων πεσοῦνται πάλιν.</l>
-               <milestone unit="card" n="972" resp="Smyth" /><l n="970" xml:id="l.970" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:972">Πάρα τὸ φῶς ἰδεῖν.</l>
+               <milestone unit="card" n="972-cont2" resp="Smyth"/><l n="970" xml:id="l.970" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:972">Πάρα τὸ φῶς ἰδεῖν.</l>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="973" resp="Smyth" />
-                  <milestone unit="card" n="973" resp="Smyth" /><l n="971" xml:id="l.971" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:973">ἴδεσθε χώρας τὴν διπλῆν τυραννίδα</l>
+                  <milestone unit="card" n="973" resp="Smyth"/>
+                  <l n="971" xml:id="l.971" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:973">ἴδεσθε χώρας τὴν διπλῆν τυραννίδα</l>
                   <l n="972" xml:id="l.972" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:974">πατροκτόνους τε δωμάτων πορθήτορας.</l>
                   <l n="973" xml:id="l.973" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:975">σεμνοὶ μὲν ἦσαν ἐν θρόνοις τόθ' ἥμενοι,</l>
                   <l n="974" xml:id="l.974" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:976">φίλοι δὲ καὶ νῦν, ὡς ἐπεικάσαι πάθη</l>
@@ -5395,7 +5395,7 @@
                   <rdg wit="Thiersch">πάθει</rdg>
                </app>
             </div>
-            <pb n="63" />
+            <pb n="63"/>
             <div type="textpart" subtype="episode">
                <l n="976" xml:id="l.976" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:978">ξυνώμοσαν μὲν θάνατον ἀθλίῳ πατρὶ</l>
                <l n="977" xml:id="l.977" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:979">καὶ ξυνθανεῖσθαι· καὶ τάδ᾽ εὐόρκως ἔχει.</l>
@@ -5493,7 +5493,7 @@
                   <rdg wit="Weil">προσειπὼν καὶ τύχω</rdg>
                </app>
             </div>
-            <pb n="64" />
+            <pb n="64"/>
             <div type="textpart" subtype="episode">
                <l n="996" xml:id="l.996" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:998">ἄγρευμα θηρὸς ἢ νεκροῦ ποδένδυτον</l>
                <l n="997" xml:id="l.997" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:999">δροίτης κατασκήνωμα; δίκτυον μὲν οὖν.</l>
@@ -5506,17 +5506,17 @@
                <l n="1004" xml:id="l.1004" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1006">γένοιτ'· ὀλοίμην πρόσθεν ἐκ θεῶν ἄπαις.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="strophe" resp="Wecklein" />
-                  <milestone unit="card" n="1007" resp="Smyth" />
-                  <milestone unit="card" n="1007" resp="Smyth" /><l n="1005" xml:id="l.1005" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1007">αἰαῖ αἰαῖ μελέων ἔργων·</l>
+                  <milestone unit="strophe" resp="Wecklein"/>
+                  <milestone unit="card" n="1007" resp="Smyth"/>
+                  <l n="1005" xml:id="l.1005" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1007">αἰαῖ αἰαῖ μελέων ἔργων·</l>
                   <l n="1006" xml:id="l.1006" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1008">στυγερῷ θανάτῳ διεπράχθης,</l>
                   <l n="1006a" xml:id="l.1006a" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1008b">ἔ ἔ,</l>
                   <l n="1007" xml:id="l.1007" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1009">μίμνοντι δὲ καὶ πάθος ἀνθεῖ.</l>
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="1010" resp="Smyth" />
-                  <milestone unit="card" n="1010" resp="Smyth" /><l n="1008" xml:id="l.1008" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1010">ἔδρασεν ἢ οὐκ ἔδρασε; μαρτυρεῖ δέ μοι</l>
+                  <milestone unit="card" n="1010" resp="Smyth"/>
+                  <l n="1008" xml:id="l.1008" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1010">ἔδρασεν ἢ οὐκ ἔδρασε; μαρτυρεῖ δέ μοι</l>
                   <l n="1009" xml:id="l.1009" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1011">φᾶρος τόδ᾽, ὡς ἔβαψεν Αἰγίσθου ξίφος.</l>
                   <l n="1010" xml:id="l.1010" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1012">φόνου δὲ χηκὶς ξὺν χρόνῳ ξυμβάλλεται,</l>
                   <l n="1011" xml:id="l.1011" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1013">πολλὰς βαφὰς φθείρουσα τοῦ ποικίλματος.</l>
@@ -5596,23 +5596,23 @@
                   <rdg wit="M">ξυμβάλεται, λ supra adscr. m.</rdg>
                </app>
             </div>
-            <pb n="65" />
+            <pb n="65"/>
             <div type="textpart" subtype="episode">
                <l n="1014" xml:id="l.1014" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1016">ἀλγῶ μὲν ἔργα καὶ πάθος γένος τε πᾶν,</l>
                <l n="1015" xml:id="l.1015" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1017">ἄζηλα νίκης τῆσδ᾽ ἔχων μιάσματα.</l>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="antistrophe" resp="Wecklein" />
-                  <milestone unit="card" n="1018" resp="Smyth" />
-                  <milestone unit="card" n="1018" resp="Smyth" /><l n="1016" xml:id="l.1016" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1018">οὔτις μερόπων ἀσινῆ βίοτον</l>
+                  <milestone unit="antistrophe" resp="Wecklein"/>
+                  <milestone unit="card" n="1018" resp="Smyth"/>
+                  <l n="1016" xml:id="l.1016" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1018">οὔτις μερόπων ἀσινῆ βίοτον</l>
                   <l n="1017" xml:id="l.1017" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1019" cert="low">διὰ πάντ᾽ ἄτιμος ἀμείψεται,</l>
                   <l n="1017a" xml:id="l.1017a" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1020">ἔ ἔ,</l>
                   <l n="1018" xml:id="l.1018" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1020b">μόχθος δ᾽ ὃ μὲν αὐτίχ᾽, ἃ δ᾽ ἥξει.</l>
                </sp>
                <sp>
                   <speaker>ΟΡ.</speaker>
-                  <milestone unit="card" n="1021" resp="Smyth" />
-                  <milestone unit="card" n="1021" resp="Smyth" /><l n="1019" xml:id="l.1019" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1021">ἀλλ᾽ ὡς ἂν εἰδῆτ᾽, οὐ γὰρ οἶδ' ὅπῃ τελεῖ,</l>
+                  <milestone unit="card" n="1021" resp="Smyth"/>
+                  <l n="1019" xml:id="l.1019" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1021">ἀλλ᾽ ὡς ἂν εἰδῆτ᾽, οὐ γὰρ οἶδ' ὅπῃ τελεῖ,</l>
                   <l n="1020" xml:id="l.1020" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1022">ὥσπερ ξὺν ἵπποις ἡνιοστρόφου δρόμου</l>
                   <l n="1021" xml:id="l.1021" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1023">ἐξωτέρω· φέρουσι γὰρ νικώμενον</l>
                   <l n="1022" xml:id="l.1022" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1024">φρένες δύσαρκτοι· πρὸς δὲ καρδίᾳ φόβος</l>
@@ -5702,7 +5702,7 @@
                   <rdg wit="Schuetz">ἐφίξεται</rdg>
                </app>
             </div>
-            <pb n="66" />
+            <pb n="66"/>
             <div type="textpart" subtype="episode">
                <l n="1032" xml:id="l.1032" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1034">καὶ νῦν ὁρᾶτέ μ', ὡς παρεσκευασμένος</l>
                <l n="1033" xml:id="l.1033" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1035">ξὺν τῷδε θαλλῷ καὶ στέφει προσίξομαι</l>
@@ -5730,8 +5730,8 @@
                </sp>
                <sp>
                   <speaker>ΧΟ.</speaker>
-                  <milestone unit="card" n="1051" resp="Smyth" />
-                  <milestone unit="card" n="1051" resp="Smyth" /><l n="1049" xml:id="l.1049" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1051">τίνες σε δόξαι, φίλτατ' ἀνθρώπων πατρί,</l>
+                  <milestone unit="card" n="1051" resp="Smyth"/>
+                  <l n="1049" xml:id="l.1049" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1051">τίνες σε δόξαι, φίλτατ' ἀνθρώπων πατρί,</l>
                   <l n="1050" xml:id="l.1050" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1052">στροβοῦσιν; ἴσχε, μὴ φόβου νικῶ πολύ.</l>
                </sp>
                <sp>
@@ -5809,7 +5809,7 @@
                   <rdg wit="M">φοβοῦ νικῶν</rdg>
                </app>
             </div>
-            <pb n="67" />
+            <pb n="67"/>
             <div type="textpart" subtype="episode">
                <l n="1052" xml:id="l.1052" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1054">σαφῶς γὰρ αἶδε μητρὸς ἔγκοτοι κύνες.</l>
                <sp>
@@ -5836,8 +5836,8 @@
                   <speaker>ΧΟ.</speaker>
                   <l n="1061" xml:id="l.1061" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1063">ἀλλ᾽ εὐτυχοίης, καί σ᾽ ἐποπτεύων πρόφρων</l>
                   <l n="1062" xml:id="l.1062" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1064">θεὸς φυλάσσοι καιρίοισι συμφοραῖς.</l>
-                  <milestone unit="card" n="1065" resp="Smyth" />
-                  <milestone unit="card" n="1065" resp="Smyth" /><l n="1063" xml:id="l.1063" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1065">ὅδε τοι μελάθροις τοῖς βασιλείοις</l>
+                  <milestone unit="card" n="1065" resp="Smyth"/>
+                  <l n="1063" xml:id="l.1063" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1065">ὅδε τοι μελάθροις τοῖς βασιλείοις</l>
                   <l n="1064" xml:id="l.1064" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1066">τρίτος αὖ χειμών</l>
                   <l n="1065" xml:id="l.1065" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1067">πνεύσας γονίας ἐτελέσθη.</l>
                   <l n="1066" xml:id="l.1066" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1068">παιδοβόροι μὲν πρῶτον ὑπῆρξαν</l>

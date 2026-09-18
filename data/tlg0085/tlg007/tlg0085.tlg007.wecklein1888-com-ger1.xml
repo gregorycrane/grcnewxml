@@ -53,8 +53,8 @@
         </cRefPattern>
       </refsDecl>
       <refsDecl xml:id="CTS-modern">
-        <citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="@n" n="chunk"/></citeStructure></refsDecl>
-    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
+        <citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="concat(@n, '.', @xml:id)" n="chunk"/></citeStructure></refsDecl>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="concat(@n, '.', @xml:id)" n="chunk"/></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="ger">German</language>
@@ -66,7 +66,7 @@
       <change when="2026-09-07">Initial conservative commentary integration with original OCR and alignment audit.</change>
     </revisionDesc>
   </teiHeader>
-  <text xml:lang="ger">
+  <text xml:lang="deu">
     <body xml:base="urn:cts:greekLit:tlg0085.tlg007.wecklein1888-com-ger1">
       <div type="commentary" n="urn:cts:greekLit:tlg0085.tlg007.wecklein1888-com-ger1">
         <div type="textpart" subtype="commline" n="1-139" corresp="urn:cts:greekLit:tlg0085.tlg007.perseus-grc2:1-139" xml:id="comm-1-139">

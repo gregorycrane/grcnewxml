@@ -1,0 +1,991 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Ichneutae: Pearson 1917, corrected OCR working edition</title>
+        <author>Sophocles</author>
+        <editor xml:id="pearson">Alfred Chilton Pearson</editor>
+        <respStmt xml:id="digital">
+          <resp>OCR collation, structural reconstruction, and reference alignment; working transcription prepared for Gregory Crane.</resp>
+          <name>Codex</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Working files prepared for the Perseus Multitext Viewer</publisher>
+        <date when="2026-09-15">2026-09-15</date>
+        <availability status="free">
+          <p>The 1917 source is in the public domain in the United States. No new license is assigned to third-party digital source files by this conversion.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="pearson1917">
+          <title>The Fragments of Sophocles</title>
+          <editor>A. C. Pearson</editor>
+          <date>1917</date>
+          <biblScope unit="volume">1</biblScope>
+          <biblScope unit="page">233–268; appendix 269</biblScope>
+          <ref target="https://hdl.handle.net/2027/mdp.39015010446022">Michigan scan, HathiTrust mdp.39015010446022</ref>
+        </bibl>
+        <p>Copy text: supplied ichneutae_ocr.txt, printed pp. 234–269. Structural comparison: supplied ichneutae_pearson_scaffold.xml. The opening two verses and opening note survive only in the scaffold; their printed page is inferred as 233. These are two transcriptions of the same edition, not independent textual witnesses. No page-image proofreading has been performed.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Pearson’s fragment 314 is the main play. Pearson’s line numbers remain in n; corresp points to the supplied Hunt/Perseus reference. Short apparatus is separate from discursive commentary. OCR errors are corrected only where supported by the supplied material or unambiguous context. Unresolved readings use sic; OCR gaps differ from ancient losses. Brackets are retained as transcription signs and are not claimed to be a new diplomatic transcription. Dot runs give unspecified loss, not measured character counts. Missing numbered positions follow Pearson’s printed numbering and do not assert an exact papyrus extent.</p>
+        <p>Reference gap/aggregate pointers (especially Pearson 24–27, 379–386, and 395–430) identify a reference placeholder, not exact verse equivalence. Pearson 414 is a marginally attested reading and is not evidence that a continuous verse survives. Content and references to introductory pages outside the supplied OCR have not been reconstructed.</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="editorial-status">
+          <category xml:id="ocr-review">
+            <catDesc>Unresolved OCR or transcription detail; consult the printed page.</catDesc>
+          </category>
+          <category xml:id="scaffold-only">
+            <catDesc>Present only in the older scaffold; absent from supplied new OCR.</catDesc>
+          </category>
+          <category xml:id="reference-gap">
+            <catDesc>Alignment to a reference gap placeholder.</catDesc>
+          </category>
+          <category xml:id="reference-aggregate">
+            <catDesc>Alignment to a reference aggregate rather than exact line.</catDesc>
+          </category>
+          <category xml:id="marginal-witness">
+            <catDesc>Reading reported from a margin, not a surviving complete verse.</catDesc>
+          </category>
+          <category xml:id="source-loss">
+            <catDesc>Loss reported in the printed ancient text.</catDesc>
+          </category>
+          <category xml:id="shared-verse">
+            <catDesc>Source verse shared across speakers or reference subdivisions.</catDesc>
+          </category>
+          <category xml:id="overlap">
+            <catDesc>Source line overlaps two reference lines.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="line" matchPattern="([0-9]+[a-z]?(?:-[0-9]+[a-z]?)?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:l[@n='$1'])">
+          <p>Cite the printed Pearson line or the first line of a note; source and reference numbering are distinct.</p>
+        </cRefPattern>
+      </refsDecl>
+      <refsDecl n="TEI">
+        <citeStructure match="//tei:l" use="@n" unit="line"/>
+      </refsDecl>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div" unit="text" use="'whole'" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="eng">English</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-09-15" who="#digital">Reconstructed from the supplied OCR and scaffold; explicit line concordance and source-page provenance added. OCR-review edition, not scan-proofread.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="grc">
+    <body xml:base="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1">
+      <div type="edition" n="urn:cts:greekLit:tlg0011.tlg008.pearson1917-grc1" xml:lang="grc">
+        <sp>
+          <speaker>Ἀπόλλων</speaker>
+          <pb n="233" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=337"/>
+          <l n="1" xml:id="l.1" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:7" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=337">
+            <sic ana="#scaffold-only" resp="#digital">[......]ν ἀγγέλλω [β]ροτο[ῖς</sic>
+          </l>
+          <l n="2" xml:id="l.2" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:8" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=337">
+            <sic ana="#scaffold-only" resp="#digital">[...... δῶρ᾽ ὑπισ]χνοῦμαι τελεῖ[ν</sic>
+          </l>
+          <pb n="234" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338"/>
+          <l n="3" xml:id="l.3" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:9" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[................. ἀ]πόπροθεν·</l>
+          <l n="4" xml:id="l.4" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:10" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[....]ον[......... δύσ]λοφον φρενὶ</l>
+          <l n="5" xml:id="l.5" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:11" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[..]τα[......... βο]ῦς ἀμολγάδας</l>
+          <l n="6" xml:id="l.6" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:12" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[μόσ]χους [.............]α πορτίδων</l>
+          <l n="7" xml:id="l.7" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:13" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[...]. ταφρ[.........]ν ἰχνοσκοπῶ</l>
+          <l n="8" xml:id="l.8" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:14" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[λαθ]ραῖ᾽ ἰόν[τ...... βου]στάθμου κάπης</l>
+          <l n="9" xml:id="l.9" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:15" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[ἀφα]νῶς τεχνα[..... ἐ]γὼ οὐκ ἂν ᾠόμην</l>
+          <l n="10" xml:id="l.10" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:16" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[οὔτ᾽ ἂ]ν θεῶν τιν[᾽ οὔτ᾽ ἐφημ]έρων βροτῶν</l>
+          <l n="11" xml:id="l.11" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:17" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[δρᾶσ]αι τόδ᾽ ἔργ[ον ὧδε] πρὸς τόλμαν πεσεῖν.</l>
+          <l n="12" xml:id="l.12" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:18" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=338">[ταῦτ]᾽ οὖν ἐπείπερ [ἔμα]θον, ἐκπλαγεὶς ὄκνῳ</l>
+          <pb n="235" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339"/>
+          <l n="13" xml:id="l.13" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:19" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[ζητ]ῶ ματεύω, παντελὲς κήρυγμ᾽ ἔχων</l>
+          <l n="14" xml:id="l.14" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:20" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[θεοῖ]ς βροτοῖς τε μηδέν᾽ ἀγνοεῖν τάδε·</l>
+          <l n="15" xml:id="l.15" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:21" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[....]υθίᾳ γὰρ ἐμμανὴς κυνηγετῶ.</l>
+          <l n="16" xml:id="l.16" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:22" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[.....]ων δ᾽ ἐπῆλθον φ[ῦ]λα τ[οῦ] παντὸς στρατ[οῦ</l>
+          <l n="17" xml:id="l.17" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:23" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[......]τισ[.......................].[............]</l>
+          <l n="18" xml:id="l.18" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:25" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[...]σ[</l>
+          <l n="19" xml:id="l.19" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:26" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">
+            <sic ana="#ocr-review" resp="#digital">[.....]λ[....]κιο[</sic>
+          </l>
+          <l n="20" xml:id="l.20" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:27" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[.....]ισ[....] ἔπειτα [δὲ</l>
+          <l n="21" xml:id="l.21" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:30" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[τ]ὰ Θεσσαλῶν [........] ἐπεσσύθ[ην</l>
+          <l n="22" xml:id="l.22" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:31" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">Βοιωτίας τε γ[ῆς .....]ς [πό]λ[εις,</l>
+          <l n="23" xml:id="l.23" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:32" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[ἔπει]τα δ᾽[...].[........]</l>
+          <l n="24" xml:id="l.24" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:33" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339" ana="#reference-gap #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="25" xml:id="l.25" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:33" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339" ana="#reference-gap #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="26" xml:id="l.26" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:33" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339" ana="#reference-gap #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="27" xml:id="l.27" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:33" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339" ana="#reference-gap #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="28" xml:id="l.28" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:34" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[..........]ς Δωρικο[</l>
+          <l n="29" xml:id="l.29" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:35" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=339">[....... γεί]τον᾽, ἔνθ[εν</l>
+          <pb n="236" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340"/>
+          <l n="30" xml:id="l.30" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:36" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[..........] ἥκω ξυν[.]α.[</l>
+          <l n="31" xml:id="l.31" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:37" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[....... Κυλ]λήνης τε δύ[σβατον</l>
+          <l n="32" xml:id="l.32" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:38" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[..........] τε χῶρον ἐς δ᾽ ὑ[</l>
+          <l n="33" xml:id="l.33" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:39" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[ὡς εἴτε ποι]μὴν εἴτ᾽ ἀγρωστή[ρων τις ἢ</l>
+          <l n="34" xml:id="l.34" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:40" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[μαριλοκαυ]τῶν ἐν λόγῳ παρ[ίσταται</l>
+          <l n="35" xml:id="l.35" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:41" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[ἢ τῶν ὀρ]είων νυμφογεννή[του γένους</l>
+          <l n="36" xml:id="l.36" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:42" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[θηρῶ]ν τίς ἐστι, πᾶσιν ἀγγέλ[λω τάδε,</l>
+          <l n="37" xml:id="l.37" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:43" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[....]ωρα τοῦ Παιῶνος ὅστις ἂ[ν λάβῃ,</l>
+          <l n="38" xml:id="l.38" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:44" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=340">[....]. τὸ χρῆμα μισθός ἐσθ᾽ ὁ κε[ίμενος.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <pb n="237" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341"/>
+          <l n="39" xml:id="l.39" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:45" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">[ἔα· τὰ] σοῦ φωνήμαθ᾽ ὡς ἐπέκλυον</l>
+          <l n="40" xml:id="l.40" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:46" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">[βοῶ]ντος ὀρθίοισι σὺν κηρύγμασ[ι,</l>
+          <l n="41" xml:id="l.41" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:47" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">[σ]πουδῇ τάδ᾽ ἣ πάρεστι πρεσβύτῃ [μαθών,</l>
+          <l n="42" xml:id="l.42" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:48" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">[σ]οί, Φοῖβ᾽ Ἄπολλον, προσφιλὴς εὐεργέτης</l>
+          <l n="43" xml:id="l.43" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:49" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">θέλων γενέσθαι τῷδ᾽ ἐπεσσύθην δρ[όμῳ,]</l>
+          <l n="44" xml:id="l.44" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:50" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">ἄν πως τὸ χρῆμα τοῦτό σοι κυνηγ[έσω.</l>
+          <l n="45" xml:id="l.45" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:51" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">τ[ὸ] γὰρ γέρας μοι κείμενον χρυσο[σ]τεφέ[ς]</l>
+          <l n="46" xml:id="l.46" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:52" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">μά[λι]στ᾽ ἐπ[ιστολ]αῖσ[ι προσθέσθαι χρεών,</l>
+          <l n="47" xml:id="l.47" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:53" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">παῖδας δ᾽ ἐμ[οὺς ὄσσοισι [...]αυε[.]βα[..] [....]</l>
+          <l n="48" xml:id="l.48" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:54" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=341">[......][.]ν εἴπερ ἐκτε[λ]εῖς ἅπερ λέγεις.</l>
+        </sp>
+        <sp>
+          <speaker>Ἀπόλλων</speaker>
+          <pb n="238" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342"/>
+          <l n="49" xml:id="l.49" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:55" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">[.........].[.]ω· μοῦνον ἐμπ[έδου τ]άδ[ε.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="50" xml:id="l.50" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:56" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">τὰ[ς βοῦς ἀπάξω σ]οι· σὺ δ᾽ ἐμπέδου [δόσι]ν.</l>
+        </sp>
+        <sp>
+          <speaker>Ἀπόλλων</speaker>
+          <l n="51" xml:id="l.51" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:57" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">[ἕξει σφ᾽ ὁ γ᾽ εὑ]ρὼν ὅστις ἔσθ᾽· ἑτ[οῖ]μ[α] δέ.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="52" xml:id="l.52" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:58" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">[..............]ισ..[. ε[.]ζητ[.....</l>
+        </sp>
+        <sp>
+          <speaker>Ἀπόλλων</speaker>
+          <l n="53" xml:id="l.53" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:59" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">[.....................]εσο.[</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="54" xml:id="l.54" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:60" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">[...]</l>
+        </sp>
+        <sp>
+          <speaker>Ἀπόλλων</speaker>
+          <l n="55" xml:id="l.55" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:61" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">[...].α[</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="56" xml:id="l.56" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:62" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">τί τοῦτο; πο[ι............. λέγ]εις;</l>
+        </sp>
+        <sp>
+          <speaker>Ἀπόλλων</speaker>
+          <l n="57" xml:id="l.57" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:63" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">ἐλεύθερος σὺ [πᾶν τε γένος ἔσται τέκ]νων.</l>
+        </sp>
+        <sp>
+          <speaker>Χορὸς Σατύρων</speaker>
+          <l n="58" xml:id="l.58" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:64" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">ἴθ᾽ ἄγε. [................</l>
+          <l n="59" xml:id="l.59" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:65" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">πόδα βάσιν τε [.........]ν</l>
+          <l n="60" xml:id="l.60" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:66" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">ἀπαπαπ[αῖ .............]</l>
+          <l n="61" xml:id="l.61" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:67" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">ὦ ὦ, σέ τοι [..............]</l>
+          <l n="62" xml:id="l.62" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:68" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">ἔπιθι κλωπ[............]</l>
+          <l n="63" xml:id="l.63" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:69" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">ὑπόνομα κ[..............]</l>
+          <l n="64" xml:id="l.64" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:70" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">
+            <sic ana="#ocr-review" resp="#digital">διανύτων ο[.............]</sic>
+          </l>
+          <l n="65" xml:id="l.65" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:71" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">πατρικὰν γᾶρ[υν ..........]</l>
+          <l n="66" xml:id="l.66" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:72" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=342">πῶς πᾷ τὰ λάθρι[α νύχια</l>
+          <pb n="239" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343"/>
+          <l n="67" xml:id="l.67" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:73" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343">κλέμματα ποσσὶ [..........]</l>
+          <l n="68" xml:id="l.68" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:74" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343">εἴ πως, ἂν τύχω, πο[..........]</l>
+          <l n="69" xml:id="l.69" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:75" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343">πατρί τ᾽ ἐλεύθερον β[..]..μετ[.]</l>
+          <l n="70" xml:id="l.70" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:76" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343">ξὺν ἅμα θεὸς ὁ φίλος ἀνέτω</l>
+          <l n="71" xml:id="l.71" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:77" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343">πόνους προφήνας</l>
+          <l n="72" xml:id="l.72" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:77-78" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343" ana="#overlap" cert="high">ἀρίζηλα χρυσοῦ παραδείγματα.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="73" xml:id="l.73" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:79" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343">θεοὶ Τύχη [κ]αὶ δαῖμον ἰθυντήριε,</l>
+          <l n="74" xml:id="l.74" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:80" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=343">τυχ[ε]ῖν με πράγους οὗ δράμημ᾽ ἐπείγεται,</l>
+          <pb n="240" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344"/>
+          <l n="75" xml:id="l.75" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:81" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">λείαν ἄγραν σύλη[σ]ιν ἐκκυνηγέσαι</l>
+          <l n="76" xml:id="l.76" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:82" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">Φοίβου κλ[ο]παίας βοῦς ἀπεστερημένο[υ.</l>
+          <l n="77" xml:id="l.77" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:83" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">[τ]ῶν εἴ τις ὀπτήρ ἐστι[ν] ἢ κατήκοος,</l>
+          <l n="78" xml:id="l.78" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:84" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">[ἐμοί] τ᾽ ἂν [ε]ἴη προσφιλὴς φράσας τόδε,</l>
+          <l n="79" xml:id="l.79" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:85" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">[Φοίβῳ τ]᾽ ἄνακτι παντελὴς εὐεργ[έ]της.</l>
+          <l n="80" xml:id="l.80" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:86" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">
+            <sic ana="#ocr-review" resp="#digital">[....]α[..].[..]ς τοῦ λόγου θ᾽ ἅμα</sic>
+          </l>
+          <l n="81" xml:id="l.81" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:87" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">μήνυ[τρα ............]</l>
+          <l n="82" xml:id="l.82" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:88" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">ἰὼ σ[............]</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="83" xml:id="l.83" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:89" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">ὑπο[............]</l>
+          <l n="84" xml:id="l.84" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:90" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">δ᾽ οὐδ[............]</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="85" xml:id="l.85" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:91" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">φησίν τις, ἢ [............]</l>
+          <l n="86" xml:id="l.86" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:92" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">ἔοικεν ἤδη κ[............]</l>
+          <l n="87" xml:id="l.87" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:93" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">ἄγ᾽ εἷα δὴ πᾶς σ[............]</l>
+          <l n="88" xml:id="l.88" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:94" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">ῥινηλατῶν ὀσμ[αῖσι ............]</l>
+          <l n="89" xml:id="l.89" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:95" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">αὔρας ἐάν πῃ πρ[............]</l>
+          <l n="90" xml:id="l.90" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:96" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=344">
+            <sic ana="#ocr-review" resp="#digital">διπλοῦς ὀκλάζω[ν ............]ν</sic>
+          </l>
+          <pb n="241" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345"/>
+          <l n="91" xml:id="l.91" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:97" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">ὕποσμος ἐν χρῷ [..............]</l>
+          <l n="92" xml:id="l.92" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:98" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">οὕτως ἔρευναν καὶ π[............]</l>
+          <l n="93" xml:id="l.93" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:99" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">ἅπαντα χρηστὰ καὶ [......] τελεῖν.</l>
+        </sp>
+        <sp>
+          <speaker>Ἡμιχόριον</speaker>
+          <l n="94" xml:id="l.94" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:100" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">θεὸς θεὸς θεὸς θεός· ἔα [ἔα·</l>
+          <l n="95" xml:id="l.95" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:101" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">ἔχειν ἔοιγμεν· ἴσχε· μὴ ρ[...]τει.</l>
+          <l n="96" xml:id="l.96" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:102" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">ταῦτ᾽ ἔστ᾽ ἐκεῖνα τῶν β[οῶν τὰ] βήματα.</l>
+          <l n="97" xml:id="l.97" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:103" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">σίγ[α]· θεός τις τὴν ἀποι[κία]ν ἄγει.</l>
+          <l n="98" xml:id="l.98" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:104" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345">τί δρῶμεν, ὦ τᾶν; ἢ τὸ δέον [ἄρ᾽] ἤνομεν;</l>
+          <l n="99" xml:id="l.99" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:105-105b" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=345" ana="#shared-verse" cert="high">τί; τοῖσ[ι] ταύτῃ πῶς δοκεῖ;  <pb n="242" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346"/> ἩΜΙΧ. δοκεῖ πάνυ.</l>
+          <l n="100" xml:id="l.100" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:106" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">σαφῆ [γ]ὰρ αὔθ᾽ ἕκαστα σημαίνει τάδε.</l>
+          <l n="101" xml:id="l.101" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:107" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">ἰδού, ἰδού·</l>
+          <l n="102" xml:id="l.102" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:108" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">καὶ τοὐπίσημον αὐτὸ τῶν ὁπλῶν πάλι[ν].</l>
+          <l n="103" xml:id="l.103" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:109" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">ἄθρει μάλα·</l>
+          <l n="104" xml:id="l.104" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:110" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">αὔτ᾽ ἐστὶ τοῦτο μέτρον [ἐκμεμαγ]μ[ένον.</l>
+          <l n="105" xml:id="l.105" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:111" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">χ[ώ]ρει δρόμῳ καὶ τα[...]ν ἔχου</l>
+          <l n="106" xml:id="l.106" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:112" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">[...]οπ.[.....].[........]μενος</l>
+          <l n="107" xml:id="l.107" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:113" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">ῥοίβδημ᾽ ἐάν τι τῶν [ἔσω πρὸς οὖς μόλῃ.</l>
+          <l n="108" xml:id="l.108" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:114" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">οὐκ εἰσακούω πω [τορῶς τοῦ φθέγματος,</l>
+          <l n="109" xml:id="l.109" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:115" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=346">ἀλλ᾽ αὐτὰ μὴν ἴχ[νη τε] χὠ στίβος τάδε</l>
+          <pb n="243" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347"/>
+          <l n="110" xml:id="l.110" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:116" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">κείνων ἐναργῆ τῶν β[ο]ῶν μαθεῖν πάρα.</l>
+          <l n="111" xml:id="l.111" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:117" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">ἔα μάλα.</l>
+          <l n="112" xml:id="l.112" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:118" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">παλινστραφῆ τοι ναὶ μὰ Δία τὰ βήματα</l>
+          <l n="113" xml:id="l.113" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:119" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">ἐς τοὔμπαλιν δέδορκεν· αὐτὰ δ᾽ εἴσιδε.</l>
+          <l n="114" xml:id="l.114" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:120" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">τί ἐστι τουτί; τίς ὁ τρόπος τοῦ τάγματ[ος;]</l>
+          <l n="115" xml:id="l.115" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:121" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">ἐ[ς] τοὐπίσω τὰ πρόσθεν ἤλλακται, τὰ δ᾽ αὖ</l>
+          <l n="116" xml:id="l.116" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:122" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">ἐναντί᾽ ἀλλήλοισι συμπ[επλεγμένα.</l>
+          <l n="117" xml:id="l.117" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:123" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">δεινὸς κυκησμὸς εἶχε τὸν [βοη]λάτην.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="118" xml:id="l.118" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:124" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=347">τίν᾽ αὖ τέχνην σὺ τήν[δ᾽ ἄρ᾽ ἐξ]ηῦρες, τίν᾽ αὖ,</l>
+          <pb n="244" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348"/>
+          <l n="119" xml:id="l.119" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:125" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">πρόσπαιον ὧδε κεκλιμ[ένος] κυνηγετεῖν</l>
+          <l n="120" xml:id="l.120" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:126" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">πρὸς γῇ; τίς ὑμῶν ὁ τρόπος; οὐχὶ μανθάνω.</l>
+          <l n="121" xml:id="l.121" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:127" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">[ἐχῖνος ὡς τ[ι]ς ἐν λόχμῃ κεῖσαι πεσών,</l>
+          <l n="122" xml:id="l.122" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:128" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">[ἤ τις πίθηκος κύβδ᾽ ἀποθυμαίνεις τινί.</l>
+          <l n="123" xml:id="l.123" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:129" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">τ[ί] ταῦτα; π[οῦ] γῆς ἐμάθετ᾽; ἐν π[οί]ῳ τόπῳ;</l>
+          <l n="124" xml:id="l.124" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:130" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">[σημήνατ᾽, ο[ὐ γὰρ ἴδρις εἰμὶ τοῦ τρόπου.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="125" xml:id="l.125" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:131" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">
+            <sic ana="#ocr-review" resp="#digital">ὕ [ὖ] ὔ ὖ.</sic>
+          </l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="126" xml:id="l.126" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:132" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">[τί τοῦτ᾽ ἰύζεις;] τίνα φοβῇ; τίν᾽ εἰσορᾷς;</l>
+          <l n="127" xml:id="l.127" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:133" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">[τί δεῖμ᾽ ὄπωπας; τί ποτε βακχεύεις ἔχων;</l>
+          <l n="128" xml:id="l.128" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:134" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">[ἀλλ᾽ οὐ τίς ἠχε]ῖ κέρχνος ἱμείρει[ς] μαθεῖν;</l>
+          <l n="129" xml:id="l.129" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:135" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=348">τ[ί δῆτα σιγ]ᾶθ᾽, οἱ πρ[ὸ τοῦ λαλίστ]ατοι;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <pb n="245" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349"/>
+          <l n="130" xml:id="l.130" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:136" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">σ[ίγα μὲν οὖν.]</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="131" xml:id="l.131" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:137" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">τίν᾽ ἔστ᾽ ἐκεῖθεν ἁπονοσ[φίζ]εις ἔχων;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="132" xml:id="l.132" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:138" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">ἄ[κουε δή.]</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="133" xml:id="l.133" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:139" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">καὶ πῶς ἀκούσ[ω μηδεν]ὸς φωνὴν κλύων;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="134" xml:id="l.134" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:140" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">ἐμοὶ πιθοῦ.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="135" xml:id="l.135" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:141" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">ἐμ[ὸν] δίω[γμά γ᾽ οὐδαμῶς ὀνήσετε.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="136" xml:id="l.136" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:142" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">ἄκουσον αὖ τ[οῦ χρήματ[ο]ς χρόνον τινά,</l>
+          <l n="137" xml:id="l.137" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:143" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">[ο]ἴῳ ᾽κπ[λαγέντες ἐν[θάδ᾽] ἐξενίσμεθα</l>
+          <l n="138" xml:id="l.138" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:144" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">ψόφῳ τὸν οὐδε[ὶ]ς π[ώπο]τ᾽ ἤκουσεν βροτῶν.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="139" xml:id="l.139" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:145" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">τί μοι ψόφον φοβ[εῖσθε] κα[ὶ] δειμαίνετε,</l>
+          <l n="140" xml:id="l.140" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:146" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">μάλθης ἄναγνα σώματ᾽ ἐκμεμαγμένοι,</l>
+          <l n="141" xml:id="l.141" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:147" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">κάκιστα θηρῶν ὄντ[ες, ἐν [π]άσῃ σκιᾷ</l>
+          <l n="142" xml:id="l.142" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:148" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">φόβον βλέποντες, πάν[τα] δειματούμενοι,</l>
+          <l n="143" xml:id="l.143" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:149" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=349">ἄνευρα κἀκόμιστ[α] κἀνε[λε]ύθερα</l>
+          <pb n="246" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350"/>
+          <l n="144" xml:id="l.144" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:150" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">διακονοῦντες, [σ]ώ[μ]ατ᾽ εἰ[σ]ιδ[ε]ῖν μόνον</l>
+          <l n="145" xml:id="l.145" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:151" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">καὶ γλῶσσα κα[ὶ] φ[αλ]ῆτες, — εἰ δέ που δέῃ,</l>
+          <l n="146" xml:id="l.146" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:152" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">πιστοὶ λόγοισιν ὄντες ἔργα φεύγετε</l>
+          <l n="147" xml:id="l.147" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:153" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">τοιοῦ[δ]ε πατρός, ὦ κάκιστα θηρίων,</l>
+          <l n="148" xml:id="l.148" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:154" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">οὗ πόλλ᾽ ἐφ᾽ ἥβης μνήματ᾽ ἀνδρείας ὕπο</l>
+          <l n="149" xml:id="l.149" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:155" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">κ[ε]ῖται παρ᾽ οἴκοις νυμφικοῖς ἠσκημένα,</l>
+          <l n="150" xml:id="l.150" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:156" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">οὐκ ἐς φυγὴν κλίνοντος, οὐ δειλ[ο]υμένου,</l>
+          <l n="151" xml:id="l.151" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:157" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">οὐδὲ ψόφοισι τῶν ὀρειτρόφων βοτῶν</l>
+          <l n="152" xml:id="l.152" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:158" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=350">[π]τήσσοντος, ἀλλ᾽ α[ἰχ]μαῖσιν ἐξει[ρ]γασμένου</l>
+          <pb n="247" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351"/>
+          <l n="153" xml:id="l.153" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:159" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">[ἃ] νῦν ὑφ᾽ ὑμῶν λάμ[πρ᾽ ἀ]πορρυπαίνεται</l>
+          <l n="154" xml:id="l.154" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:160" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">[ψόφῳ νεώρει κόλακ[ι] ποιμένων π[ο]θέν;</l>
+          <l n="155" xml:id="l.155" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:161" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">[τί] δὴ φοβεῖσθε παῖδες ὣς πρὶν εἰσιδεῖν,</l>
+          <l n="156" xml:id="l.156" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:162" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">πλοῦτον δὲ χ[ρ]υσόφαντον ἐξαφί[ε]τε</l>
+          <l n="157" xml:id="l.157" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:163" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">ὃν Φοῖβος ὑμῖν εἶπε κ[ἀνεδέξατο,</l>
+          <l n="158" xml:id="l.158" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:164" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">καὶ τὴν ἐλευθέρωσιν ἣν κατήνεσεν</l>
+          <l n="159" xml:id="l.159" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:165" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">ὑμῖν τε κἀμοί; ταῦτ᾽ ἀφέντες εὕδετε.</l>
+          <l n="160" xml:id="l.160" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:166" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">εἰ μὴ ᾽νανοστήσαντες ἐξιχνεύσετε</l>
+          <l n="161" xml:id="l.161" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:167" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=351">τὰς βοῦς ὅπῃ βεβᾶσι καὶ τὸν βουκόλο[ν,</l>
+          <pb n="248" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352"/>
+          <l n="162" xml:id="l.162" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:168" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352">κλαίοντες αὐτῇ δειλίᾳ ψοφή[σ]ετε.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="163" xml:id="l.163" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:169" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352">πάτερ, παρὼν αὐτός με συμποδηγέτε[ι,</l>
+          <l n="164" xml:id="l.164" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:170" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352">ἵν᾽ εὖ κατειδῇς εἴ τίς ἐστι δειλία.</l>
+          <l n="165" xml:id="l.165" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:171" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352">γνώσῃ γὰρ αὐτὸς ἂν παρῇς οὐδὲν λέγων.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="166" xml:id="l.166" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:172" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352">ἐγὼ πα[ρ]ὼν αὐτός σε προσβιβῶ λόγῳ</l>
+          <l n="167" xml:id="l.167" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:173" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352">κυνορτικὸν σύριγμα διακαλούμεν[ος].</l>
+          <l n="168" xml:id="l.168" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:174" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=352">ἀλλ᾽ εἶ᾽ [ἀ]φίστω τριζύγης οἵμου βάσιν,</l>
+          <pb n="249" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353"/>
+          <l n="169" xml:id="l.169" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:175" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">ἐγὼ δ᾽ ἐν [ἔ]ργοις παρμένων σ᾽ ἀπευθυνῶ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="170" xml:id="l.170" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:176" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">ὗ ὗ ὗ, ψ ψ, ἆ ἆ. λέγ᾽ ὅ τι πονεῖς.</l>
+          <l n="171" xml:id="l.171" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:177" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">τί μάτην ὑπέκλαγες ὑπέκριγες</l>
+          <l n="172" xml:id="l.172" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:178" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">ὑπό μ᾽ ἴδες; ἔχεται</l>
+          <l n="173" xml:id="l.173" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:179" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">ἐν πρώτῳ τίς ὅδε τρόπῳ;</l>
+          <l n="174" xml:id="l.174" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:180" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">ἔχει· ἐλήλυθεν, ἐλήλυθεν·</l>
+          <l n="175" xml:id="l.175" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:181" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">ἐμὸς εἶ, ἀνάγου.</l>
+          <l n="176" xml:id="l.176" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:182" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">δεῦτ᾽, ὦ, τίς ὅδε [....].της</l>
+          <l n="177" xml:id="l.177" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:183" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=353">ὁ δράκις, ὁ γράπις [.....]</l>
+          <pb n="250" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354"/>
+          <l n="178" xml:id="l.178" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:184" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">
+            <sic ana="#ocr-review" resp="#digital">[ο]ὐρίας οὐρίας αδ[....]κεις</sic>
+          </l>
+          <l n="179" xml:id="l.179" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:185" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">παρέβης· μεθυ[.........]</l>
+          <l n="180" xml:id="l.180" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:186" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">
+            <sic ana="#ocr-review" resp="#digital">ὅτι ποτε φερε[.........].ι[.]ν</sic>
+          </l>
+          <l n="181" xml:id="l.181" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:187" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ἔποχον ἔχει τι[...........]</l>
+          <l n="182" xml:id="l.182" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:188" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">
+            <sic ana="#ocr-review" resp="#digital">στίβος ὁδενεσ[...........]</sic>
+          </l>
+          <l n="183" xml:id="l.183" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:189" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">στράτιος στράτ[ιος ......]υ[..]</l>
+          <l n="184" xml:id="l.184" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:190" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">δεῦρ᾽ ἕπου· τ[.] δρ[..............]</l>
+          <l n="185" xml:id="l.185" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:191" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ἔνι β[ο]ῦς ἔνι πόνο[</l>
+          <l n="186" xml:id="l.186" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:192" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">
+            <sic ana="#ocr-review" resp="#digital">μὴ μεθῇ κρ[ο]κία[ς</sic>
+          </l>
+          <l n="187" xml:id="l.187" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:193" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">σὺ τί καλὸν ἐπιδ[</l>
+          <l n="188" xml:id="l.188" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:194" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ὅδε γ᾽ ἀγαθὸς ὁ τρέχις</l>
+          <l n="189" xml:id="l.189" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:195" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">κατὰ νόμον ἔπεται</l>
+          <l n="190" xml:id="l.190" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:196" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ἐφέπου ἐφέπου μ[</l>
+          <l n="191" xml:id="l.191" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:197" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ὀπποποῖ· ἆ μιαρέ, γε[</l>
+          <l n="192" xml:id="l.192" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:198" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ἦ τάχ᾽ ὁπόταν ἀπίῃς</l>
+          <l n="193" xml:id="l.193" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:199" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ἀπελεύθερος ὢν ὀλ.[</l>
+          <l n="194" xml:id="l.194" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:200" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ἀλλὰ μὴ παραπλακ[</l>
+          <l n="195" xml:id="l.195" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:201" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">ἔπ[ι]θ᾽ [ἔ]πεχ᾽ εἴσιθ᾽ ἴθι [</l>
+          <l n="196" xml:id="l.196" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:202" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">τ[ὸ] δὲ πλάγιον ἔχομεν</l>
+          <l n="197" xml:id="l.197" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:203" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">π[άτερ, τί σ[ιγᾷς; μῶν ἀληθὲς εἴπομεν;</l>
+          <l n="198" xml:id="l.198" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:204" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354">οὐκ εἰσακούεις, ἢ κεκώ[φησαι, ψόφον;</l>
+        </sp>
+        <sp>
+          <speaker>Διάλογος</speaker>
+          <l n="199" xml:id="l.199" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:205-205c" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=354" ana="#shared-verse" cert="high">ΣΙ. σί[γα.  <pb n="251" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=355"/> ΧΟ. τί ἔστιν;   ΣΙ. οὐ μενῶ.   ΧΟ. μέν᾽, εἰ θέλεις.</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="200" xml:id="l.200" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:206" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=355">οὐκ ἔστιν, ἀλλ᾽ αὐτὸς σὺ ταῦθ᾽ [ὅπῃ θέλεις</l>
+          <pb n="252" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356"/>
+          <l n="201" xml:id="l.201" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:207" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">ζήτει τε κἀξίχνευε καὶ πλού[τει λαβὼν</l>
+          <l n="202" xml:id="l.202" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:208" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">τὰς βοῦς τε κα[ὶ] τὸν χρυσὸν [.........]ε[.]</l>
+          <l n="203" xml:id="l.203" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:209" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">
+            <sic ana="#ocr-review" resp="#digital">μὴ πλεῖστ[..].τι[..]ν[..............] χρόνον.</sic>
+          </l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="204" xml:id="l.204" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:210" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">ἀλλ᾽ οὔ τι μ[....] μ[...............]</l>
+          <l n="205" xml:id="l.205" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:211" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">οὐδ᾽ ἐξυπελ[θεῖ]ν τ[...............]φῶς</l>
+          <l n="206" xml:id="l.206" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:212" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">εἰδῶμεν ὅν[...].[...............]</l>
+          <l n="207" xml:id="l.207" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:213" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">ἰὼ γ.[...............]</l>
+          <l n="208" xml:id="l.208" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:214" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">φθέγμ᾽ ἀφύσ[ε]ις[.........]ου</l>
+          <l n="209" xml:id="l.209" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:215" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">[.]ηδ[........... μισ-]</l>
+          <l n="210" xml:id="l.210" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:216" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">θὸν δόμοισιν ὀλβίσῃς.</l>
+          <l n="211" xml:id="l.211" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:217" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">ὅ[δ᾽ ο]ὐ φαν[εῖτ]αι τοῖσιν· ἀλλ᾽ ἐγὼ τάχα</l>
+          <l n="212" xml:id="l.212" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:218" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">φ[έρων κτύ[π]ον πέδορτον ἐξαναγκάσω</l>
+          <l n="213" xml:id="l.213" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:219" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">π[η]δήμασιν κραιπνοῖσι καὶ λακτίσμασιν</l>
+          <l n="214" xml:id="l.214" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:220" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=356">ὥστ᾽ εἰσακοῦσαι κεἰ λίαν κωφός τις εἶ.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <pb n="253" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357"/>
+          <l n="215" xml:id="l.215" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:221" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357">θῆρες, τί [τό]νδε χλοερὸν ὑλώδη πάγον</l>
+          <l n="216" xml:id="l.216" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:222" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357">ἔν[θ]ηρον ὡρμήθητε σὺν πολλῇ βοῇ;</l>
+          <l n="217" xml:id="l.217" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:223" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357">τίς ἥδε τέχνη, τίς μετάστασις πόνων</l>
+          <l n="218" xml:id="l.218" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:224" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=357">οὓς πρόσθεν εἶχες δεσπότῃ χάριν φέρων,</l>
+          <pb n="254" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358"/>
+          <l n="219" xml:id="l.219" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:225" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">ὑμῖν ὃς αἰεὶ νεβρίνῃ καθημμέν[ο]ς</l>
+          <l n="220" xml:id="l.220" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:226" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">δορᾷ χερ[ο]ῖν τε θύρσ[ο]ν εὐπαλῆ φέρων</l>
+          <l n="221" xml:id="l.221" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:227" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">ὄπισθεν εὐιάζετ᾽ ἀμφὶ τὸν θεὸν</l>
+          <l n="222" xml:id="l.222" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:228" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">σὺν ἐγγόνοις νύμφαισι καὶ ποδῶν ὄχλῳ;</l>
+          <l n="223" xml:id="l.223" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:229" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">νῦν δ᾽ ἀγνοῶ τὸ χρῆμα· ποῖ στροφαὶ νέ[ω]ν</l>
+          <l n="224" xml:id="l.224" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:230" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">μανιῶν στρέφουσι; θαῦμα γὰρ κατέκλ[υ]ον,</l>
+          <l n="225" xml:id="l.225" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:231" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">ὁμοῦ πρέπον κέλευμά πως κ[υ]νηγετ[ῶν</l>
+          <l n="226" xml:id="l.226" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:232" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">ἐγγὺς μολόντων θηρὸς εὐναί[ου] τρο[φ]ῆς,</l>
+          <l n="227" xml:id="l.227" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:233" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=358">ὁμοῦ δ᾽ ἂν αὖτι[ς..]..αι φωρ[...]..[..]</l>
+          <pb n="255" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359"/>
+          <l n="228" xml:id="l.228" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:234" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">
+            <sic ana="#ocr-review" resp="#digital">γλώσσης ἐτεινε[. ε]ἰς κλοπὴν [.....].εναι·</sic>
+          </l>
+          <l n="229" xml:id="l.229" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:235" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">αὖτις δ᾽ α[...] [...]μένων [...</l>
+          <l n="230" xml:id="l.230" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:236" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">κηρυκ[..]..ι [.....].κηρυγμα[...</l>
+          <l n="231" xml:id="l.231" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:237" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">καὶ τ[α]ῦτ᾽ ἀφεῖσα σὺν ποδῶν λακτίσμασι</l>
+          <l n="232" xml:id="l.232" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:238" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">[κ]ληδὼν ὁμοῦ πάμφυρ[τ]᾽ ἐγειτν[ία στέγῃ.]</l>
+          <l n="233" xml:id="l.233" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:239" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">[καὶ] ταῦτ᾽ ἂν ἄλλως ἢ κλ[.].....[........]</l>
+          <l n="234" xml:id="l.234" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:240" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">[φων]ῶν ἀκούσασ᾽ ὧδε παραπεπαισμένων</l>
+          <l n="235" xml:id="l.235" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:241" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">
+            <sic ana="#ocr-review" resp="#digital">[...].[.][.]....νων ὑμᾶς νοσεῖν</sic>
+          </l>
+          <l n="236" xml:id="l.236" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:242" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">νο[... τί νύμφην ἔτι ποεῖτ᾽ ἀναιτίαν;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="237" xml:id="l.237" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:243" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">νύμφα βαθύζωνε π[αῦσαι χόλου</l>
+          <l n="238" xml:id="l.238" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:244" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">τοῦδ᾽, οὔτε γὰρ νεῖκος [ἥκω φέρων</l>
+          <l n="239" xml:id="l.239" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:245" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=359">δά[ο]υ μάχας οὐδ᾽ ἄξενό[ς που σέθεν</l>
+          <pb n="256" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360"/>
+          <l n="240" xml:id="l.240" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:246" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">γλ[ῶ]σσ᾽ ἂν μάταιός τ[᾽ ἀφ᾽ ἡμῶν θίγοι.</l>
+          <l n="241" xml:id="l.241" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:247" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">μή με μὴ προψαλ[άξῃς κακοῖς,</l>
+          <l n="242" xml:id="l.242" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:248" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">ἀλλ᾽ [εὐ]πετῶς μοι πρόφανον τὸ πρᾶγ-</l>
+          <l n="243" xml:id="l.243" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:249" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">μ᾽, ἐν [τ]όποις τοῖσ[δε τίς νέρθε γᾶς ὧδ᾽ ἀγα-</l>
+          <l n="244" xml:id="l.244" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:250" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">στῶς ἐγάρυσε θέσπιν αὐδάν;</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="245" xml:id="l.245" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:251" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">ταῦτ᾽ ἔστ᾽ ἐκείνων νῦν [τρόπων πεπαίτερα,</l>
+          <l n="246" xml:id="l.246" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:252" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">καὶ τοῖσδε θηρῶν ἐκπύθοιο μᾶλλον ἂν</l>
+          <l n="247" xml:id="l.247" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:253" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">ἀλκασμάτων διειλῆς [τε πειρατηρίων</l>
+          <l n="248" xml:id="l.248" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:254" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">νύμφης· ἐμοὶ γὰρ οὐκ [ἀρεστόν ἐστ᾽ ἔριν</l>
+          <l n="249" xml:id="l.249" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:255" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">ὀρθοψάλακτον ἐν [λόγο[ισ]ιν [ἱστάναι.</l>
+          <l n="250" xml:id="l.250" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:256" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">ἀλλ᾽ ἥσυχος πρόφαινε καὶ μήνυ[έ μοι</l>
+          <l n="251" xml:id="l.251" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:257" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">ὅτου μάλιστα πράγματος χρείαν ἔχεις.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="252" xml:id="l.252" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:258" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">τόπων ἄνασσα τῶν[δ]ε, Κυλλήνης σθένος,</l>
+          <l n="253" xml:id="l.253" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:259" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=360">ὅτου μὲν οὕνεκ᾽ ἦλθ[ο]ν ὕστερον φράσω·</l>
+          <pb n="257" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361"/>
+          <l n="254" xml:id="l.254" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:260" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">τὸ φθέγμα δ᾽ ἡμῖν τοῦ[θ᾽] ὅπερ φωνεῖ φράσον</l>
+          <l n="255" xml:id="l.255" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:261" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">καὶ τίς ποτ᾽ αὐτῷ δι[α]χαράσσεται βροτῶν.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="256" xml:id="l.256" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:262" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">ὑμᾶς μὲν αὐτοὺς χρὴ τάδ᾽ εἰδέναι σαφῶς</l>
+          <l n="257" xml:id="l.257" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:263" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">ὡς εἰ φανεῖτε τὸν λόγον τὸν ἐξ ἐμοῦ,</l>
+          <l n="258" xml:id="l.258" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:264" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">αὐτοῖσιν ὑμῖν ζημία πορίζεται.</l>
+          <l n="259" xml:id="l.259" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:265" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">καὶ γὰρ κέκρυπ[ται] τοὔργον ἐν [θ]ε[ῶν ἔδραις,</l>
+          <l n="260" xml:id="l.260" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:266" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">Ἥραν ὅπως μὴ πύστ[ι]ς ἵξεται λόγου.</l>
+          <l n="261" xml:id="l.261" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:267" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">Ζ[εὺ]ς γ[ὰρ] κρυφ[αίαν ἐς στέγην Ἀτλαντίδος</l>
+          <l n="262" xml:id="l.262" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:268" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">[..............]εύσατο</l>
+          <l n="263" xml:id="l.263" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:269" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">[..............]υ.[.]φίλας</l>
+          <l n="264" xml:id="l.264" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:270" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">[..............] λήθῃ τῆς βαθυζώνου θεᾶς.</l>
+          <l n="265" xml:id="l.265" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:271" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">κατὰ σπέος δὲ παῖδ᾽ ἐφίτυσεν μόνον.</l>
+          <l n="266" xml:id="l.266" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:272" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=361">[τοῦτον δὲ] χερσὶ ταῖς ἐμαῖς ἐγὼ τρέφω·</l>
+          <pb n="258" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362"/>
+          <l n="267" xml:id="l.267" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:273" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[μητρὸς γ]ὰρ ἰσχὺς ἐν νόσῳ χειμάζεται·</l>
+          <l n="268" xml:id="l.268" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:274" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[κἄδεσμ]α καὶ ποτῆτα καὶ κοιμήματα</l>
+          <l n="269" xml:id="l.269" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:275" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[πρὸς σπ]αργάνοις μένουσα λικνῖτιν τροφὴν</l>
+          <l n="270" xml:id="l.270" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:276" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[ἐξευθ]ετίζω νύκτα καὶ καθ᾽ ἡμέραν.</l>
+          <l n="271" xml:id="l.271" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:277" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[ὁ δ᾽ α]ὔξεται κατ᾽ ἦμαρ οὐκ ἐπεικότα</l>
+          <l n="272" xml:id="l.272" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:278" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[ἄπαυ]στος, ὥστε θαῦμα καὶ φόβος μ᾽ ἔχει.</l>
+          <l n="273" xml:id="l.273" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:279" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[οὔπω γὰρ ἔκτον ἦμαρ ἐκπεφασμέν[ο]ς</l>
+          <l n="274" xml:id="l.274" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:280" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">
+            <sic ana="#ocr-review" resp="#digital">[τύπο]υς ἐρείδει παιδὸς εἰς ἥβης ἀκμήν,</sic>
+          </l>
+          <l n="275" xml:id="l.275" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:281" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=362">[κἀξορ]μενίζει κοὐκέτι σχολάζεται</l>
+          <pb n="259" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363"/>
+          <l n="276" xml:id="l.276" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:282" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">[βλάστη·] τοιόνδε παῖδα θησαυρὸς στέγει.</l>
+          <l n="277" xml:id="l.277" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:283" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">[κατάσχε]τος [δ᾽ ἔτ]᾽ ἐστὶ τοῦ πατρὸς θέσει.</l>
+          <l n="278" xml:id="l.278" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:284" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">ἀφ[............ φ]θέγμα μηχανῇ βρέμ[ον</l>
+          <l n="279" xml:id="l.279" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:285" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">καὶ π[όλ]λ᾽ ἐθά[μβεις, αὐτὸ]ς ἡμέρᾳ μιᾷ</l>
+          <l n="280" xml:id="l.280" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:286" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">ἐξ ὑπτίας κ[...... ἐμηχ]ανήσατο·</l>
+          <l n="281" xml:id="l.281" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:287" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">τοιόνδε θη[ρὸς ἐκ θανόντ]ος ἡδονῆς</l>
+          <l n="282" xml:id="l.282" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:288" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">ἔμμεστον ἀ[......... κ]αὶ κάτω δ[ονεῖ].</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="283" xml:id="l.283" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:290" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">
+            <sic ana="#ocr-review" resp="#digital">ἄφρασ[το.........] παῖς βοᾶς</sic>
+            <note type="meter" resp="#pearson">ἀντιστρ.</note>
+          </l>
+          <l n="284" xml:id="l.284" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:291" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">
+            <sic ana="#ocr-review" resp="#digital">παιδο[............]μαζεισ[</sic>
+          </l>
+          <l n="285" xml:id="l.285" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:292" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">
+            <sic ana="#ocr-review" resp="#digital">θηρευμ[α...........]· λέγει[ς</sic>
+          </l>
+          <l n="286" xml:id="l.286" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:293" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">
+            <sic ana="#ocr-review" resp="#digital">φωνημ[α...........]σεθου[</sic>
+          </l>
+          <l n="287" xml:id="l.287" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:294" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">
+            <sic ana="#ocr-review" resp="#digital">τόνδ᾽ ἀφ[............]ον[</sic>
+          </l>
+          <l n="288" xml:id="l.288" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:295" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">
+            <sic ana="#ocr-review" resp="#digital">τως ἐξεφ[............]</sic>
+          </l>
+          <l n="289" xml:id="l.289" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:296" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">
+            <sic ana="#ocr-review" resp="#digital">ροντ᾽ ἄπα[............] ἐ[κ θανόν-</sic>
+          </l>
+          <l n="290" xml:id="l.290" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:297" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">τος πορίζειν τοιάνδε γᾶρυν.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="291" xml:id="l.291" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:298" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=363">μή νυν ἀπίστε[ι]· πιστὰ γάρ σε προσγελᾷ θεᾶς ἔπη.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <pb n="260" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364"/>
+          <l n="292" xml:id="l.292" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:300" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">καὶ πῶς πίθωμαι τοῦ θανόντος φθέγμα τοιοῦτον βρέμειν;</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="293" xml:id="l.293" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:301" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">πιθοῦ· θανὼν γὰρ ἔσχε φωνήν, ζῶν δ᾽ ἄναυδος ἦν ὁ θήρ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="294" xml:id="l.294" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:302" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">ποῖός τις ἦν εἶδος; πρ[ο]μήκης, ἢ ᾽πίκυρτος, ἢ βραχύς;</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="295" xml:id="l.295" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:303" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">βραχὺς χυτρώδης πο[ι]κίλῃ δορᾷ κατερρικνωμένος.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="296" xml:id="l.296" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:304" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">ὡς αἰέλουρος εἰκάσαι πέφυκεν ἤ τως πόρδαλις;</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="297" xml:id="l.297" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:305" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">πλεῖστον με[τ]αξύ· γογγύλον γάρ ἐστι καὶ βραχυσκελές.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="298" xml:id="l.298" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:306" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">οὐδ᾽ ὡς ἰχνευτῇ προσφερὲς πέφυκεν οὐδ᾽ ὡς καρκίνῳ;</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="299" xml:id="l.299" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:307" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">οὐδ᾽ αὖ τοιοῦτόν ἐστιν, ἀλλ᾽ ἄλλον τιν᾽ ἐξευροῦ τρόπον.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="300" xml:id="l.300" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:308" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">ἀλλ᾽ ὡς κεράστ[η]ς κάνθαρος δῆτ᾽ ἐστὶν Αἰτναῖος φυήν;</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="301" xml:id="l.301" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:309" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">νῦν ἐγγὺς ἔγν[ως] ᾧ μάλιστα προσφερὲς τὸ κνώδαλον.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="302" xml:id="l.302" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:310" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=364">τ[ί δ᾽ αὖ τὸ] φων[οῦ]ν ἐστιν αὐτοῦ, τοὐντὸς ἢ τοὔξω, φράσον.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <pb n="261" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365"/>
+          <l n="303" xml:id="l.303" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:311" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">[.........]λο[...]ορίνη σύγγονος τῶ⟨<supplied reason="omitted" resp="#pearson">ν ὀ</supplied>⟩στράκων.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="304" xml:id="l.304" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:312" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">[ποῖον δὲ τοὔνομ᾽ ἐν]νέ[πει]ς; πόρσυνον, εἴ τι πλ[έ]ον ἔχεις.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="305" xml:id="l.305" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:313" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">[τὸν θῆρα μὲν χέλυν, τὸ φωνο]ῦν δ᾽ αὖ λύραν ὁ π[αῖς καλεῖ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="306" xml:id="l.306" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:314" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">
+            <sic ana="#ocr-review" resp="#digital">[<gap reason="lost" quantity="22" unit="character"/>].κτέανον ησυ[...] .τινι;</sic>
+          </l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="307" xml:id="l.307" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:314b" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">[<gap reason="lost" quantity="23" unit="character"/>] δέρμα κ[..]στ.[</l>
+          <l n="308" xml:id="l.308" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:315" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">[<gap reason="lost" quantity="23" unit="character"/>]ον ὧδ[ε] κλαγγάνει</l>
+          <l n="309" xml:id="l.309" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:316" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">[<gap reason="lost" quantity="23" unit="character"/>]όρως ἐρείδεται</l>
+          <l n="310" xml:id="l.310" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:317" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=365">
+            <sic ana="#ocr-review" resp="#digital">[<gap reason="lost" quantity="24" unit="character"/>] πλεκτα.[</sic>
+          </l>
+          <pb n="262" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366"/>
+          <l n="311" xml:id="l.311" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:318" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">[<gap reason="lost" quantity="24" unit="character"/>κοι]λάδος κ[</l>
+          <l n="312" xml:id="l.312" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:319" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">[<gap reason="lost" quantity="21" unit="character"/>κόλ]λοπες δε[</l>
+          <l n="313" xml:id="l.313" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:320" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">
+            <sic ana="#ocr-review" resp="#digital">[<gap reason="lost" quantity="24" unit="character"/>]αμματω[</sic>
+          </l>
+          <l n="314" xml:id="l.314" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:321" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">[<gap reason="lost" quantity="25" unit="character"/>]ον[</l>
+          <l n="315" xml:id="l.315" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:322" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="316" xml:id="l.316" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:322" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="317" xml:id="l.317" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:325" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">καὶ τοῦτο λύπη[ς] ἔστ᾽ ἄκεστρον καὶ παραψυκ[τ]ήρ[ιον</l>
+          <l n="318" xml:id="l.318" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:326" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">κείνῳ μόνον, χα[ίρει δ᾽ ἀλύων καί τι προσφων[ῶν μέλος</l>
+          <l n="319" xml:id="l.319" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:327" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">ξύμφωνον· ἐξα[ίρει γὰρ αὐτὸν αἰόλισμα τῆς λ[ύ]ρας.</l>
+          <l n="320" xml:id="l.320" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:328" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">οὕτως ὁ παῖς θανόντι θηρὶ φθέγμ᾽ ἐμηχανήσατ[ο.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="321" xml:id="l.321" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:329" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=366">ὀ⟨<supplied reason="omitted" resp="#pearson">ρθο</supplied>⟩ψάλακτός τις ὀμφὰ κατοιχνεῖ τόπου,<note type="meter" resp="#pearson">στρ.</note></l>
+          <pb n="263" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367"/>
+          <l n="322" xml:id="l.322" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:330" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">πρεπτὰ ⟨<supplied reason="omitted" resp="#pearson">δ᾽ αὖ</supplied>⟩ διὰ τόνου φάσματ᾽ ἔγ-</l>
+          <l n="323" xml:id="l.323" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:331" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">χωρ᾽ ἐπανθεμίζει·</l>
+          <l n="324" xml:id="l.324" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:332" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">τὸ πρᾶγμα δ᾽ οἶπερ πορεύω βάδην,</l>
+          <l n="325" xml:id="l.325" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:333" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">ἴσθι τὸν δα[ί]μον᾽ ὅστις ποθ᾽ ὃς</l>
+          <l n="326" xml:id="l.326" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:334" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">ταῦτ᾽ ἐτεχνήσατ᾽, οὐκ ἄλλος ἐστὶν κλ[οπεὺς</l>
+          <l n="327" xml:id="l.327" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:335" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">ἀντ᾽ ἐκείνου, γύναι, σάφ᾽ ἴσθι.</l>
+          <l n="328" xml:id="l.328" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:336" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">σὺ δ᾽ ἀντὶ τῶνδε μὴ χαλε-</l>
+          <l n="329" xml:id="l.329" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:337" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=367">φθῇς ἐμοὶ ⟨<supplied reason="omitted" resp="#pearson">μη</supplied>⟩δὲ δυσφορηθῇς.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <pb n="264" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368"/>
+          <l n="330" xml:id="l.330" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:338" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[τίς ἔχει πλά]νη σε; τίνα κλοπὴν ὠνείδισ[ας;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="331" xml:id="l.331" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:339" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[οὐ μὰ Δία σ᾽, ὦ πρέσ]βειρα, χειμάζειν [θέλω.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="332" xml:id="l.332" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:340" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[τὸν δ᾽ ἐκ Διὸς βλαστό]ντα φηλήτην καλ[εῖς;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="333" xml:id="l.333" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:341" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[...........] ἂν αὐτῇ τῇ κλο[πῇ.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="334" xml:id="l.334" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:342" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[............ ε]ἴ γε τἀ[λ]ηθῆ λέ[γεις.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="335" xml:id="l.335" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:343" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[............ τ]ἀληθῆ λέγ[ω.</l>
+        </sp>
+        <sp>
+          <speaker>Ἀβέβαιος ὁ λέγων</speaker>
+          <l n="336" xml:id="l.336" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:344" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[...... κεκλο]φέναι σαφ[</l>
+          <l n="337" xml:id="l.337" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:345" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[............] δὲ βοῦς πάνυ</l>
+          <l n="338" xml:id="l.338" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:346" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[............]ᾳ καθήρ[μ]ο[σε</l>
+          <l n="339" xml:id="l.339" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:347" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[............]λου τεμὼν [</l>
+          <l n="340" xml:id="l.340" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:348" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[.............]φο.δ[ο]ρᾷ</l>
+          <l n="341" xml:id="l.341" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:349" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="342" xml:id="l.342" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:349" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="343" xml:id="l.343" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:352" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[........] ἄρτι μανθάνω χρόνῳ</l>
+          <l n="344" xml:id="l.344" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:353" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[......... ἐγχ]άσκοντα τῇ ᾽μῇ μωρίᾳ</l>
+          <l n="345" xml:id="l.345" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:354" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[.......... ο]ὐδέν, ἀλλὰ παιδιᾶς χάριν.</l>
+          <l n="346" xml:id="l.346" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:355" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[σὺ δ᾽ οὖν τὸ λοιπὸ]ν εἰς ἔμ᾽ εὐδίαν ἔχων,</l>
+          <l n="347" xml:id="l.347" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:356" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[εἴ σοι φέρει χάρ]μ᾽ ἤ τι κερδαίνειν δοκεῖς,</l>
+          <l n="348" xml:id="l.348" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:357" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=368">[ὅπως θέλεις κά]χαζε καὶ τέρπου φρένα·</l>
+          <pb n="265" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369"/>
+          <l n="349" xml:id="l.349" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:358" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[τὸν παῖδα δ᾽ ὄ]ντα τοῦ Διὸς σαφεῖ λόγῳ</l>
+          <l n="350" xml:id="l.350" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:359" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[μὴ βλάπτε κιν]ῶν ἐν νέῳ νέον λόγον.</l>
+          <l n="351" xml:id="l.351" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:360" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[οὗτος γὰρ οὔτε] πρὸς πατρὸς κλέπτης ἔφυ</l>
+          <l n="352" xml:id="l.352" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:361" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[οὔτ᾽ ἐγγενὴς μ]ήτρωσιν ἡ κλοπὴ κρατεῖ.</l>
+          <l n="353" xml:id="l.353" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:362" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[σὺ δ᾽ ἄλλοσ᾽ εἴ] τις ἐστι, τὸν κλέπτην σκόπει</l>
+          <l n="354" xml:id="l.354" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:363" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[καὶ γῆν ἄ]καρπον· τοῦδε δ᾽, οὗ πλανᾷ δόμους,</l>
+          <l n="355" xml:id="l.355" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:364" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[αἴν]ει γένος, πρόσαπτε τὴν πονηρίαν</l>
+          <l n="356" xml:id="l.356" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:365" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">[πρὸ]ς ὅντιν᾽ ἥκει· τῷδε δ᾽ οὐχ οὕτω πρέπει.</l>
+          <l n="357" xml:id="l.357" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:366" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=369">ἀ[λλ᾽] αἰὲν εἶ σὺ παῖς· νέος γὰρ ὢν ἀνὴρ</l>
+          <pb n="266" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370"/>
+          <l n="358" xml:id="l.358" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:367" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">π[ώγ]ωνι θάλλων ὡς τράγος κνήκῳ χλιδᾷς.</l>
+          <l n="359" xml:id="l.359" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:368" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">παύου τὸ λεῖον φαλακρὸν ἡδονῇ πιτνάς.</l>
+          <l n="360" xml:id="l.360" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:369" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">[ο]ὐκ ἐκ θεῶν τὰ μωρὰ καὶ γέλοια χρὴ</l>
+          <l n="361" xml:id="l.361" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:370" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">[χ]ανόντα κλαίειν ὕστερ᾽, ὡς ⟨<supplied reason="omitted" resp="#pearson">σ᾽</supplied>⟩ ἐγὼ γελῶ;</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="362" xml:id="l.362" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:371" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">στρέφου λυγίζου τε μύθοις, ὁποί-<note type="meter" resp="#pearson">ἀντιστρ.</note></l>
+          <l n="363" xml:id="l.363" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:372" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">αν θέλεις βάξιν εὕρισκ᾽ ἀπό-</l>
+          <l n="364" xml:id="l.364" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:373" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">ψηκτον· οὐ γάρ με ταῦτα πείσεις</l>
+          <l n="365" xml:id="l.365" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:374" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">⟨<supplied reason="omitted" resp="#pearson">ὅ</supplied>⟩πως τὸ χρῆμ᾽ οὗτος εἰργασμένος</l>
+          <l n="366" xml:id="l.366" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:375" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">ῥινοκόλλητον ἄλλων ἔκλεψεν βοῶν</l>
+          <l n="367" xml:id="l.367" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:376" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">που δορὰ[ς ἢ] ᾽πὸ τῶν Λοξίου.</l>
+          <l n="368" xml:id="l.368" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:377" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370">μή με τᾶ[σδ᾽ ἐ]ξ ὁδοῦ βίβαζε.</l>
+          <l n="369" xml:id="l.369" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:378" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="370" xml:id="l.370" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:378" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="371" xml:id="l.371" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:378" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="372" xml:id="l.372" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:378" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=370" ana="#reference-gap #source-loss" cert="medium">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <pb n="267" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371"/>
+          <l n="373" xml:id="l.373" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:379" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">[ὁ Ζ]εὺς γὰρ [</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="374" xml:id="l.374" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:380" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">[ὁ] παῖς κλο[π</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="375" xml:id="l.375" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:381" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">[εἴ] τοι πονη[ρὰ δρᾷ, πονηρὸς ὢν κυρεῖ.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="376" xml:id="l.376" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:382" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">[κ]ακῶς ἀκού[ειν οὐ πρέπει Διὸς γόνῳ.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="377" xml:id="l.377" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:383" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">[ε]ἰ δ᾽ ἔστ᾽ ἀλη[θῆ, χρή με καὶ λέγειν τάδε.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="378" xml:id="l.378" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:384" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">[ο]ὐ μὴ τάδ᾽ [εἴπῃς</l>
+          <l n="379" xml:id="l.379" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">[</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="380" xml:id="l.380" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">[</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="381" xml:id="l.381" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">τ[</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="382" xml:id="l.382" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">ι[</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="383" xml:id="l.383" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">
+            <sic ana="#ocr-review" resp="#digital">υ[</sic>
+          </l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="384" xml:id="l.384" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">[</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="385" xml:id="l.385" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">λ[</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="386" xml:id="l.386" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:385" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371" ana="#reference-aggregate" cert="medium">γ.[....]α..[</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="387" xml:id="l.387" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:395" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">πο[ῦ] καὶ βόας νέμουσι τ[</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="388" xml:id="l.388" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:396" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">π[λ]είους δέ γ᾽ ἤδη νῦν [</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="389" xml:id="l.389" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:397" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">τίς, ὦ πονήρ᾽, ἔχει; τί πλ[</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="390" xml:id="l.390" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:398" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">ὁ παῖς ὃς ἔνδον ἐστὶν ἐγκεκλῃ[μένος.</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="391" xml:id="l.391" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:399" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">[τὸ]ν παῖδα παῦσαι τοῦ Διὸς [κακῶς λέγων.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="392" xml:id="l.392" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:400" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">π[α]ύοιμ᾽ ἂ[ν εἰ] τὰς βοῦς τις ἐ[</l>
+        </sp>
+        <sp>
+          <speaker>Κυλλήνη</speaker>
+          <l n="393" xml:id="l.393" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:401" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=371">ἤδη με πν[ί]γεις καὶ σὺ χα[ἱ βόες σέθεν.</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <pb n="268" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372"/>
+          <l n="394" xml:id="l.394" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:402" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">
+            <sic ana="#ocr-review" resp="#digital">[...]λεισεπρ[...]υ[. ἐ]ξελαυν[</sic>
+          </l>
+          <l n="395" xml:id="l.395" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="396" xml:id="l.396" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="397" xml:id="l.397" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="398" xml:id="l.398" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="399" xml:id="l.399" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="400" xml:id="l.400" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="401" xml:id="l.401" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="402" xml:id="l.402" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="403" xml:id="l.403" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="404" xml:id="l.404" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="405" xml:id="l.405" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="406" xml:id="l.406" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="407" xml:id="l.407" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="408" xml:id="l.408" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="409" xml:id="l.409" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="410" xml:id="l.410" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="411" xml:id="l.411" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="412" xml:id="l.412" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="413" xml:id="l.413" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+        </sp>
+        <sp>
+          <speaker>Ἀβέβαιος ὁ λέγων</speaker>
+          <l n="414" xml:id="l.414" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #marginal-witness" cert="low">π]ελέθοις βοῶν [<note type="editorial" xml:lang="eng" resp="#digital">Marginal reading reported by Pearson; reference 403 represents the lost column.</note></l>
+          <l n="415" xml:id="l.415" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="416" xml:id="l.416" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="417" xml:id="l.417" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="418" xml:id="l.418" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="419" xml:id="l.419" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="420" xml:id="l.420" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="421" xml:id="l.421" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="422" xml:id="l.422" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="423" xml:id="l.423" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="424" xml:id="l.424" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="425" xml:id="l.425" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="426" xml:id="l.426" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate #source-loss" cert="low">
+            <gap reason="lost" extent="unknown" unit="line"/>
+          </l>
+          <l n="427" xml:id="l.427" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate" cert="low">[...]</l>
+          <l n="428" xml:id="l.428" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate" cert="low">[</l>
+          <l n="429" xml:id="l.429" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate" cert="low">[</l>
+          <l n="430" xml:id="l.430" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:403" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372" ana="#reference-aggregate" cert="low">[</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="431" xml:id="l.431" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:404" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">ἰοὺ ἰοὺ [</l>
+          <l n="432" xml:id="l.432" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:405" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">
+            <sic ana="#ocr-review" resp="#digital">ἦν τ᾽ ἔφη π[</sic>
+          </l>
+          <l n="433" xml:id="l.433" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:406" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">οὗτος οὐ φ[</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="434" xml:id="l.434" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:407" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">ὦ Λ[οξία</l>
+          <l n="435" xml:id="l.435" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:408" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">ἰὼ δ[</l>
+        </sp>
+        <sp>
+          <speaker>Χορός</speaker>
+          <l n="436" xml:id="l.436" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:409" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">ὦ Λοξία δε[</l>
+          <l n="437" xml:id="l.437" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:410" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">καὶ παρη[</l>
+          <l n="438" xml:id="l.438" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:411" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">τῶν [β]οῶ[ν</l>
+        </sp>
+        <sp>
+          <speaker>Ἀπόλλων</speaker>
+          <l n="439" xml:id="l.439" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:412" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">[.]νυ.[</l>
+          <l n="440" xml:id="l.440" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:413" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">ε[.]ει[</l>
+          <l n="441" xml:id="l.441" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:414" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">βο[</l>
+          <l n="442" xml:id="l.442" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:415" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">ὁπο[</l>
+          <l n="443" xml:id="l.443" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:416" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">πρ[</l>
+          <l n="444" xml:id="l.444" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:417" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">μισθὸς [</l>
+          <l n="445" xml:id="l.445" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:418" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">ἐλεύθερο[</l>
+        </sp>
+        <sp>
+          <speaker>Σιληνός</speaker>
+          <l n="446" xml:id="l.446" corresp="urn:cts:greekLit:tlg0011.tlg008.perseus-grc2:419" source="#pearson1917" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=372">τὸν ἐγ[</l>
+        </sp>
+      </div>
+    </body>
+  </text>
+</TEI>

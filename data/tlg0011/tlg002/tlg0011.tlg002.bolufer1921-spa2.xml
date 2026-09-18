@@ -1,0 +1,2316 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="work" n="Ant.">Antígona</title>
+                <title type="sub">Texto digitalizado basado en la edición de 1921</title>
+                <author n="Soph.">Sófocles</author>
+                <editor role="translator">José Alemany Bolufer</editor>
+                <sponsor>Perseus Digital Library</sponsor>
+                <principal>Gregory Crane</principal>
+                <respStmt>
+                    <resp>Codificación TEI XML realizada por</resp>
+                    <name>Gemini</name>
+                </respStmt>
+            </titleStmt>
+            <extent>Aproximadamente 9000 palabras</extent>
+            <publicationStmt>
+                <publisher>Tufts University</publisher>
+                <pubPlace>Medford, MA</pubPlace>
+                <authority>Perseus Project</authority>
+            </publicationStmt>
+            <sourceDesc>
+                <biblStruct>
+                    <monogr>
+                        <author>Sófocles</author>
+                        <title>Las siete tragedias de Sófocles, traducidas al castellano por José Alemany Bolufer</title>
+                        <imprint>
+                            <pubPlace>Madrid</pubPlace>
+                            <publisher>Librería de los Sucesores de Hernando</publisher>
+                            <date>1921</date>
+                        </imprint>
+                    </monogr>
+                </biblStruct>
+            </sourceDesc>
+        </fileDesc>
+    <encodingDesc><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts turns.</p></cRefPattern></refsDecl><refsDecl xml:id="CTS-modern"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//sp" unit="turn" use="@n" delim=":" n="chunk"/></citeStructure></refsDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//milestone[@unit='card']" unit="card" use="@n" delim=":" n="chunk"/></citeStructure></refsDecl><refsDecl xml:id="CTS-card"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//milestone[@unit='card']" unit="card" use="@n" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc><revisionDesc><change when="2026-08-30" who="#gcrane">Added CTS metadata and aligned every translation speech to the Storr reference edition. Modern citeStructure and legacy refsDecl declarations are both retained.</change></revisionDesc></teiHeader>
+    <text xml:lang="spa">
+        <body xml:base="urn:cts:greekLit:tlg0011.tlg002.bolufer1921-spa2">
+            <div type="translation" n="urn:cts:greekLit:tlg0011.tlg002.bolufer1921-spa2" xml:lang="spa">
+                <pb n="201"/>
+                <head>ANTÍGONA</head>
+
+                <div type="textpart" subtype="stage">
+                    <head>PERSONAJES DE LA TRAGEDIA</head>
+                    <list>
+                        <item>ANTÍGONA.</item>
+                        <item>ISMENA.</item>
+                        <item>CORO DE ANCIANOS TEBANOS.</item>
+                        <item>CREONTE.</item>
+                        <item>UN CENTINELA.</item>
+                        <item>HEMÓN.</item>
+                        <item>TIRESIAS.</item>
+                        <item>UN MENSAJERO.</item>
+                        <item>EURÍDICE.</item>
+                        <item>OTRO MENSAJERO.</item>
+                    </list>
+                </div>
+
+                <div type="textpart" subtype="scene" n="Prologos">
+
+                    <sp n="1" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1-10">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            <milestone unit="card" n="1" edRef="Storr"/>¡Oh compañera cabecita de mi propia hermana Ismena! ¿No sabes que de las
+                            maldiciones de Edipo no quedará ninguna a la cual Júpiter no dé cumplimiento
+                            en vida nuestra? Porque nada hay más doloroso,
+                            ni ominoso, ni torpe, ni deshonroso que no haya visto yo en tus desgracias y en las mías.
+                            Y ahora, ¿cuál es ese nuevo pregón que dicen ha publicado por toda la ciudad el
+                            reciente jefe? ¿Estás enterada de algo que hayas oído? ¿O ignoras los males
+                            que los enemigos han dispuesto contra los nuestros?
+                        </p>
+                    </sp>
+
+                    <sp n="2" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:11-17">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            A mí, <choice><sic>Antigona</sic><corr>Antígona</corr></choice>, ninguna noticia referente
+                            a nuestros amigos, ni agradable ni dolorosa, ha llegado
+                            desde que perdimos a nuestros dos hermanos, que en
+                            un mismo día se mataron uno a otro. Y desde que el ejército de los argivos
+                            se ha marchado en esta misma noche, nada sé que pueda hacerme más feliz o desgraciada.
+                            </p>
+                    </sp>
+
+                    <pb n="202"/>
+                    <sp n="3" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:18-19">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Bien lo sabía; y por eso te he hecho salir fuera de palacio, para que tú sola me escuches.
+                        </p>
+                    </sp>
+
+                    <sp n="4" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:20-20">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            ¿Qué hay? Pues manifiestas inquietud por decir algo.
+                        </p>
+                    </sp>
+
+                    <sp n="5" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:21-38">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            ¿Pues no ha dispuesto Creonte que, de nuestros dos hermanos, se le hagan a uno
+                            las honras fúnebres y se deje al otro insepulto? A Eteocles, según dicen, en
+                            cumplimiento de la ley divina y humana, sepultó
+                            en tierra para que obtenga todos los honores, <choice><sic>allå</sic><corr>allá</corr></choice>
+                            bajo, entre los muertos. Y respecto del cadáver de Polinices,
+                            que miserablemente ha muerto, dicen que ha publicado
+                            un bando para que ningún ciudadano lo entierre
+                            ni lo llore; sino que insepulto y sin los honores del llanto,
+                            lo dejen para sabrosa presa de las aves que se abalancen a devorarlo. Ese bando
+                            dicen que el bueno de Creonte ha hecho pregonar por ti y por <choice><sic>mi</sic><corr>mí</corr></choice>, quiero
+                            decir que por <choice><sic>mi</sic><corr>mí</corr></choice>; y que vendrá aquí para anunciar en alta voz
+                            esa orden a los que no la conozcan; y que la cosa se ha de tomar no de
+                            cualquier manera, porque quien se atreva a hacer algo de lo que prohíbe, se expone a
+                            morir lapidado por el pueblo. Ya sabes lo que hay, y pronto podrás demostrar si eres
+                            de sangre noble o una cobarde que desdice de la nobleza de sus padres.
+                        </p>
+                    </sp>
+
+                    <sp n="6" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:39-40">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            <milestone unit="card" n="39" edRef="Storr"/>¿Y qué, ¡oh desdichada!, si las cosas están así, podré remediar yo, tanto si desobedezco
+                            como si acato esas órdenes?
+                        </p>
+                    </sp>
+
+                    <sp n="7" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:41-41">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Si me acompañarás y me ayudarás, es lo que has de pensar.
+                        </p>
+                    </sp>
+
+                    <sp n="8" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:42-42">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            ¿En qué empresa? ¿Qué es lo que piensas?
+                        </p>
+                    </sp>
+
+                    <sp n="9" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:43-43">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Si vendrás conmigo a levantar el cadáver.
+                        </p>
+                    </sp>
+
+                    <sp n="10" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:44-44">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            ¿Piensas sepultarlo, a pesar de haberlo prohibido a toda la ciudad?
+                        </p>
+                    </sp>
+
+                    <pb n="203"/>
+                    <sp n="11" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:45-46">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            A mi hermano, y no al tuyo, si tú no quieres; pues nunca dirán de mí que
+                            lo he abandonado.
+                        </p>
+                    </sp>
+
+                    <sp n="12" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:47-47">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            ¡Oh desdichada! ¿Habiéndolo prohibido Creonte?
+                        </p>
+                    </sp>
+
+                    <sp n="13" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:48-48">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Ningún derecho tiene a privarme de los míos.
+                        </p>
+                    </sp>
+
+                    <sp n="14" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:49-68">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            ¡Ay de mí! Reflexiona, hermana, que nuestro padre murió aborrecido e infamado,
+                            <choice><sic>depues</sic><corr>después</corr></choice> que, por los <choice><sic>peçados</sic><corr>pecados</corr></choice> que en sí mismo
+                            había descubierto, se arrancó los ojos él mismo con su propia mano. También
+                            su madre y mujer —nombres que se contradicen— con un lazo de trenza se quitó la
+                            vida. Y como tercera desgracia, nuestros dos hermanos en un mismo día se degüellan
+                            los desdichados, dándose muerte uno a otro con sus propias manos. Y ahora que solas
+                            quedamos nosotras dos, considera de qué manera más infame moriremos si con desprecio
+                            de la ley desobedecemos la orden y autoridad del tirano. Pues preciso es pensar ante
+                            todo que somos mujeres, para no querer luchar contra los hombres; y luego, que estamos
+                            bajo la autoridad de los superiores, para obedecer estas órdenes y otras más severas.
+                            Lo que <choice><sic>ês</sic><corr>es</corr></choice> yo, rogando a los que están bajo tierra que me tengan
+                            indulgencia, como que cedo contra mi voluntad, obedeceré a los que están en el poder;
+                            porque el querer hacer más que lo que uno puede, no es cosa razonable.
+                        </p>
+                    </sp>
+
+                    <sp n="15" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:69-77">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            <milestone unit="card" n="69" edRef="Storr"/>Ni te lo mandaré, ni aunque luego lo quieras hacer, tendré gusto en que me ayudes.
+                            Haz de ti lo que te parezca. A él, yo le sepultaré; si hago esto, bello me será morir.
+                            Amada yaceré con él, con el amado, después de cumplir con todos los deberes piadosos;
+                            porque mayor es el tiempo que debo complacer a los muertos que a los vivos.
+                            Pero tú, si te parece, haz desprecio de lo que en más estimación tienen los dioses.
+                        </p>
+                    </sp>
+
+                    <pb n="204"/>
+                    <sp n="16" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:78-79">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            Yo no hago <choice><sic>desprecio</sic><corr>desprecio</corr></choice> de eso; pero soy impotente para obrar
+                            contra la voluntad de los ciudadanos.
+                        </p>
+                    </sp>
+
+                    <sp n="17" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:80-81">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Tú puedes dar esas excusas; que yo me voy ya a erigir una tumba a mi queridísimo hermano.
+                        </p>
+                    </sp>
+
+                    <sp n="18" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:82-82">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            ¡Ay, pobre de mí! ¡Cómo estoy temblando por ti!
+                        </p>
+                    </sp>
+
+                    <sp n="19" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:83-83">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Por mí no te preocupes; procura por tu suerte.
+                        </p>
+                    </sp>
+
+                    <sp n="20" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:84-85">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            Pues al menos no digas a nadie tu proyecto; guárdalo en secreto, que yo haré lo mismo.
+                        </p>
+                    </sp>
+
+                    <sp n="21" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:86-87">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            ¡Oh de mí! Divúlgalo; que más odiosa me serás si callas y no lo dices a todos.
+                        </p>
+                    </sp>
+
+                    <sp n="22" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:88-88">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            Ardiente corazón tienes en cosas que hielan de espanto.
+                        </p>
+                    </sp>
+
+                    <sp n="23" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:89-89">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Pero sé que agrado a quienes principalmente debo agradar.
+                        </p>
+                    </sp>
+
+                    <sp n="24" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:90-90">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            Si es que puedes; porque intentas un imposible.
+                        </p>
+                    </sp>
+
+                    <sp n="25" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:91-91">
+                         <speaker>Antígona</speaker>
+                        <p>
+                            Pues cuando no pueda, <choice><sic>desistirê</sic><corr>desistiré</corr></choice>.
+                        </p>
+                    </sp>
+
+                    <sp n="26" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:92-92">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            De ningún modo conviene perseguir lo imposible.
+                        </p>
+                    </sp>
+
+                    <sp n="27" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:93-97">
+                        <speaker>Antígona</speaker>
+                        <p>
+                            Si eso dices serás odiada de mí, y odiosa serás para el muerto, con justicia.
+                            Pero deja que yo, con mi mal consejo, sufra estos horrores; porque nada sentiré
+                            tanto como un no bello morir.
+                        </p>
+                    </sp>
+
+                    <sp n="28" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:98-154">
+                        <speaker>Ismena</speaker>
+                        <p>
+                            Pues si te parece, anda; pero ten esto en cuenta, que procedes insensatamente,
+                            bien que muy amable a los seres queridos.
+                        </p>
+                    </sp>
+
+                </div>
+
+
+<div type="textpart" subtype="scene" n="Parodos">
+
+
+
+<sp n="29" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:100-161b">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="100" edRef="Storr"/>¡Rayo del Sol, la más hermosa luz de las que
+antes brillaban en Tebas, la de siete puertas! Apare.
+ciste ya, ¡oh resplandor del áureo día!, viniendo por
+encima de la fuente Dircea, y haciendo huir, fugitivo,
+a la carrera, en veloz corcel, al ejército de blanco escudo <pb n="205"/> que de Argos había venido con todo aparato bélico.
+<milestone unit="card" n="110" edRef="Storr"/>Ejército que en contra nuestra había levantado Polini-
+ces, excitado por discorde lucha, y que como águila que
+dando agudos graznidos se lanza sobre la tierra, así
+aquél se abalanzó protegido en sus escudos blancos
+como la nieve, con sus armas y cascos empenachados
+de crin de caballo; <milestone unit="card" n="117" edRef="Storr"/>y después de asediar la ciudad con
+sus lanzas, ávidas de <choice><sic>carniceria</sic><corr>carnicería</corr></choice>, abriendo la boca por
+todo el circuito de las siete puertas, se marchó sin po-
+der hartar su voracidad en nuestra sangre, ni pren-
+der el fuego de resinosa tea en los muros de nuestras
+torres: tal le atacó por la espalda el estrépito de Marte,
+irresistible para el contrario dragón. <milestone unit="card" n="127" edRef="Storr"/>Júpiter, pues, odia las bravatas de orgullosa lengua; y al ver que se aba-
+lanzaban como impetuosa corriente, arrogantes con el
+estruendo de sus doradas armas, hirió con su rayo de
+fuego al que, preparado ya para el asalto de nuestras
+almenas, se disponía a cantar victoria. <milestone unit="card" n="134" edRef="Storr"/>Y sobre el suelo
+que retumbó al chocar con él, cayó herido del rayo el
+que llevaba el fuego en el momento en que, con furioso
+empuje y lleno de rabia, respiraba contra nosotros el
+soplo del más desolador viento. No sucedió como él lo
+deseaba; que otros reveses infería a los demás, destru-
+yéndolos, el potente Marte en su impetuosidad a favor
+nuestro. <milestone unit="card" n="141" edRef="Storr"/>Pues los siete jefes que en las siete puertas
+se habían colocado contra los otros siete, dejaron sus
+<choice><sic>broncineas</sic><corr>broncíneas</corr></choice> armas, con las que elevaremos un trofeo a
+Júpiter, que los puso en fuga, excepto los dos infelices
+que, nacidos de un mismo padre y una misma madre,
+clavándose uno a otro sus soberanas lanzas, obtuvieron
+los dos la misma suerte en muerte común. <milestone unit="card" n="148" edRef="Storr"/>Pero, puesto
+que la gloriosa victoria llegó felicitando a Tebas la de
+muchos carros, olvidémonos de la reciente guerra y
+vayamos a los templos de los dioses con nocturnos coros  <pb n="206"/>
+guiados por Baco, que a Tebas pone en conmoción.
+<milestone unit="card" n="155" edRef="Storr"/>Pero he ahí al rey de esta tierra, a Creonte, el hijo de Me-
+neceo, que con motivo de los felices y recientes aconte-
+cimientos que los dioses nos han enviado, se acerca me-
+ditando algún proyecto que viene a proponer a esta
+asamblea de ancianos que ha convocado por público
+pregón.</p>
+    </sp>
+            </div>
+<div type="textpart" subtype="scene" n="Epeisodion_1">
+                    <sp n="30" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:162-210">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            <milestone unit="card" n="162" edRef="Storr"/>¡Ciudadanos! Los dioses al fin han enderezado
+                            los asuntos de la ciudad, después de haberla agitado
+                            en revuelta confusión. Y yo os mandé por mis emisarios
+                            que os reunierais aquí, separadamente de todos
+                            los demás, porque sé que siempre respetasteis como es
+                            debido las órdenes del trono de Layo, lo mismo que luego,
+                            cuando Edipo regía la ciudad; y después que él
+                            cayó, persististeis también en vuestra constante fidelidad
+                            alrededor de sus hijos. Mas cuando éstos, por
+                            doble fatalidad, han muerto en un mismo día al herir
+                            y ser heridos con sus propias y mancilladas manos,
+                            quedo yo en poder del imperio y del trono, por ser el
+                            pariente más próximo de los muertos.
+                        </p>
+                        <p>
+                            Difícil es conocer la índole, los sentimientos y
+                            opinión de un hombre antes de que se le vea en el
+                            ejercicio de la soberanía y aplicación de la ley. Pues
+                            a mí, quien gobernando a una ciudad no se atiene a
+                            los mejores consejos, sino que procura que el miedo
+                            tenga amordazada la lengua, ése me parece ser el
+                            peor gobernante, ahora y siempre; y a quien estime
+                            a un amigo más que a su propia patria, no lo estimo
+                            en nada. Pues yo, juro por Júpiter, que todo lo tiene presente
+                            siempre, nunca ocultará el daño que vea amenace
+                            la salvación de los ciudadanos, ni concederé mi amistad
+                            a ningún hombre enemigo de la patria, porque <choice><sic>sẻ</sic><corr>sé</corr></choice>
+                            que ésta es la que nos conserva, y que si la <choice><sic>goberna · mos</sic><corr>gobernamos</corr></choice>
+                            con recto timón, logramos amigos.
+                        </p>
+
+                        <p>
+                            Con estas leyes voy a procurar el fomento de la
+                            ciudad, y conformes  <pb n="207"/> con ellas, he promulgado a los
+                            ciudadanos las referentes a los hijos de Edipo. A
+                            Eteocles, que murió luchando por la ciudad después
+                            de hacer prodigios con su lanza, que se le entierre en
+                            un sepulcro y se le hagan todos los sacrificios expiatorios
+                            que deben acompañar a los manes de los valientes
+                            que bajan a los infiernos. Pero al hermano de éste,
+                            a Polinices me refiero, que volviendo de su destierro
+                            quería abrasar por todos lados a la patria y a los dioses
+                            tutelares, y quería además beberse la sangre de su hermano
+                            y hacer esclavos a los ciudadanos, para ése, he
+                            mandado pregonar por toda la ciudad que nadie le honre
+                            con sepultura ni le llore; sino que lo dejen insepulto
+                            y su cuerpo expuesto <choice><sic>ignominiosamente</sic><corr>ignominiosamente</corr></choice> a las aves y a los perros para
+                            que lo devoren. Tal es mi determinación; pues nunca
+                            de mí alcanzarán los malos el honor que se debe a los
+                            hombres de bien. Pero cualquiera que sea el que haga
+                            bien a la ciudad, ése, lo mismo vivo que muerto, será
+                            honrado por mí.
+                        </p>
+                    </sp>
+
+                    <sp n="31" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:211-214">
+                        <speaker>Coro</speaker>
+                        <p>
+                            <milestone unit="card" n="211" edRef="Storr"/>Sea como te place, Creonte, hijo de Meneceo,
+                            respecto de los amigos y enemigos de esta ciudad;
+                            pues en tu derecho estás de aplicar absolutamente la ley
+                            en lo que toca a los muertos y a todos cuantos vivimos.
+                        </p>
+                    </sp>
+
+
+                <sp n="32" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:215-215">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            ¿Cómo, pues, vigilaréis ahora por el cumplimiento
+                            de mis órdenes?
+                        </p>
+                    </sp>
+
+                    <sp n="33" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:216-216">
+                        <speaker>Coro</speaker>
+                        <p>
+                            Eso, encárgalo a otro más joven.
+                        </p>
+                    </sp>
+
+                    <sp n="34" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:217-217">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            Pues dispuestos están ya los que han de
+                            vigilar el cadáver.
+                        </p>
+                    </sp>
+
+                    <sp n="35" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:218-218">
+                        <speaker>Coro</speaker>
+                        <p>
+                            ¿Qué otra cosa quieres aún encargarnos?
+                        </p>
+                    </sp>
+
+                    <sp n="36" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:219-219">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            Que no condescendáis con los que desobedezcan
+                            la orden.
+                        </p>
+                    </sp>
+
+                    <sp n="37" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:220-220">
+                        <speaker>Coro</speaker>
+                        <p>
+                            No hay nadie tan necio que desee morir.
+                        </p>
+                    </sp>
+
+                    <sp n="38" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:221-222">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            Ése, en efecto, será el pago; pero la esperanza
+                            del lucro pierde muchas veces a los hombres.
+                        </p>
+                    </sp>
+                    <stage>El Centinela.</stage>
+
+                    <sp n="39" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:223-236">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            ¡Rey!, no diré que llego sin aliento
+                            <pb n="208"/> por venir de prisa y a todo correr, porque con frecuencia
+                            me he parado a pensar, dando vueltas por el camino,
+                            si me volvería atrás. Mi corazón me decía muchas
+                            veces aconsejándome : «¡Infeliz!, ¿por qué vas adonde
+                            la pagarás así que llegues? ¡Desgraciado!, ¿persistes
+                            aún? Y si Creonte se enterase de esto por otro hombre,
+                            ¿cómo tú no lo habías de sentir?» Revolviendo tales
+                            pensamientos <choice><sic>venia</sic><corr>venía</corr></choice> lenta y pausadamente; de modo
+                            que un camino breve me ha resultado largo. Al fin me
+                            <choice><sic>decidi</sic><corr>decidí</corr></choice> a llegar a tu presencia; y aunque nada te pueda
+                            aclarar, hablaré, sin embargo; pues vengo fortalecido
+                            con la esperanza de que no me podrá pasar nada fuera
+                            de lo que me tenga reservado el destino.
+                        </p>
+                    </sp>
+
+                    <sp n="40" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:237-237">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            <milestone unit="card" n="237" edRef="Storr"/>¿Qué es lo que te causa ese desaliento?
+                        </p>
+                    </sp>
+
+                    <sp n="41" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:238-240">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            Decirte quiero primero lo que me
+                            importa a mí; porque ni yo hice la cosa, ni vi tampoco
+                            quien la hiciera, ni en justicia se me puede castigar.
+                        </p>
+                    </sp>
+
+                    <sp n="42" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:241-242">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            ¿Para qué me echas ese exordio y rodeas
+                            el hecho con tantas precauciones? Con ello manifiestas
+                            que alguna novedad importante vienes a anunciarme.
+                        </p>
+                    </sp>
+
+                    <sp n="43" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:243-243">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            El miedo, en efecto, origina mucha
+                            intranquilidad.
+                        </p>
+                    </sp>
+
+                    <sp n="44" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:244-244">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            ¿No hablarás ya y te alejarás en seguida?
+                        </p>
+                    </sp>
+
+                    <sp n="45" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:245-247">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            Pues te hablo: al muerto lo ha sepultado
+                            alguien hace poco, y después de cubrir con
+                            polvo seco el cadáver y celebrar las sagradas ceremonias,
+                            ha desaparecido.
+                        </p>
+                    </sp>
+
+                    <sp n="46" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:248-248">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            ¿Qué dices? ¿Qué hombre es el que se ha
+                            atrevido a eso?
+                        </p>
+                    </sp>
+
+                    <sp n="47" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:249-277">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            No sé. Allí no se ven señales de golpes
+                            de azada, ni de que el suelo haya sido removido con
+                            la ligona. La tierra está dura y apretada, sin carriles
+                            de que haya pasado ningún carro. Quien lo haya hecho,
+                            no ha dejado huella. Cuando el primer <choice><sic>vigia</sic><corr>vigía</corr></choice> de la ma-
+                            <pb n="209"/> ñana nos ha dado la noticia, triste asombro se apoderó
+                            de todos. El cadáver no se <choice><sic>veia</sic><corr>veía</corr></choice>; pero no estaba sepultado,
+                            sino cubierto de ligero polvo, como para evitar el
+                            sacrilegio. Ni señales de fiera ni de perro que viniese
+                            y lo hubiese destrozado se <choice><sic>veian</sic><corr>veían</corr></choice> tampoco. Palabras
+                            maliciosas susurran entonces por los <choice><sic>oidos</sic><corr>oídos</corr></choice> de todos; un
+                            centinela acusaba a otro, y aquello hubiera acabado
+                            en lucha, sin que hubiera nadie que lo impidiese. Cada
+                            uno creía que era el otro el que lo había hecho, y nadie
+                            confesaba, sino que todos negaban. Estábamos ya dispuestos
+                            a [la prueba de] tomar el hierro candente en
+                            las manos y pasar por el fuego y jurar por los dioses
+                            que ni lo habíamos hecho ni nos <choice><sic>habiamos</sic><corr>habíamos</corr></choice> confabulado
+                            con quien lo hubiese proyectado ni con el que lo <choice><sic>habia</sic><corr>había</corr></choice>
+                            hecho. Por fin, cuando nada nos quedaba ya por examinar,
+                            habló uno que a todos nos hizo inclinar la cara
+                            al suelo de miedo, porque no <choice><sic>podiamos</sic><corr>podíamos</corr></choice> ni contradecirle
+                            ni proponerle cómo lo <choice><sic>hariamos</sic><corr>haríamos</corr></choice> para salir bien. <choice><sic>Fué</sic><corr>Fue</corr></choice> su
+                            proposición que se te debía comunicar el hecho y no
+                            ocultártelo; ella venció, y a mí, como más desgraciado,
+                            tocó la suerte para encargarme de esta hermosa comisión.
+                            <choice><sic>Aqui</sic><corr>Aquí</corr></choice> me tienes contra mi voluntad y contra la
+                            tuya, lo sé; pues nadie estima al portador de malas noticias.
+                            </p>
+                    </sp>
+
+                    <sp n="48" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:278-279">
+                        <speaker>Coro</speaker>
+                        <p>
+                            <milestone unit="card" n="278" edRef="Storr"/>¡Rey!, a mí, en verdad, me brujulea el corazón
+                            hace ya rato, si ese hecho ha sido promovido por
+                            algún dios.
+                        </p>
+                    </sp>
+
+                    <sp n="49" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:280-314">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            Calla, antes de que me llenes de cólera
+                            con tu discurso; no descubras que eres mentecato y viejo
+                            a la vez. Porque dices lo que no se puede aguantar,
+                            al indicar que los dioses tengan cuidado de lo que a ese
+                            cadáver se refiere. ¿Cómo ellos, honrándolo como a un
+                            benemérito, pueden haber sepultado al mismo que venia
+                            a incendiar sus templos asentados sobre columnas,
+                            <pb n="210"/> y sus ofrendas, y a destruir su país y su culto? ¿Has
+                            visto jamás que los dioses honren a los malvados? No
+                            es posible; sino que algunos ciudadanos, que hace ya
+                            tiempo llevan esto a mal, murmuran de mí; y sacudiendo
+                            en secreto la cabeza, no tienen a bien sujetar su
+                            cerviz al yugo para complacerme. Por ésos, lo sé muy
+                            bien, inducidos otros por los premios que les han ofrecido,
+                            han hecho esto. No ha habido entre los hombres
+                            invención más funesta que la del dinero : ella devasta
+                            las ciudades, ella saca a los hombres de su casa, ella
+                            los industria y pervierte sus buenos sentimientos, disponiéndolos
+                            para todo hecho punible; ella enseñó a los
+                            hombres a valerse de todos los medios y a ingeniarse
+                            para cometer toda clase de impiedad. Pero los que dejándose
+                            corromper por el dinero han perpetrado esto,
+                            lo han hecho de manera que con el tiempo pagarán su
+                            culpa. Porque tan cierto como Júpiter obtiene todavía
+                            mi veneración — <choice><sic>fijate</sic><corr>fíjate</corr></choice> bien en esto; te lo digo con juramento
+                            —, si al autor de ese enterramiento no me descubrís
+                            y presentáis ante mis ojos, la sola muerte no será
+                            bastante para vosotros, que seréis colgados vivos hasta
+                            que me denunciéis al culpable; para que, advertidos,
+                            saquéis provecho en adelante de donde sea lícito sacarlo,
+                            y aprendáis que no debe uno querer lucrar en todo
+                            negocio. [Pues por mor de ilícitas ganancias, más hombres
+                            verás perdidos que salvados.]
+                        </p>
+                    </sp>
+
+                    <sp n="50" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:315-315">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            <milestone unit="card" n="315" edRef="Storr"/>¿Me permites hablar, o doy la vuelta
+                            y me voy?
+                        </p>
+                    </sp>
+
+                    <sp n="51" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:316-316">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            ¿No sabes ya cuánto me irritan tus palabras?
+                            </p>
+                    </sp>
+
+                    <sp n="52" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:317-317">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            ¿Dónde te escuecen, en el oído o en
+                            el corazón?
+                        </p>
+                    </sp>
+
+                    <sp n="53" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:318-318">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            ¿Qué te importa averiguar dónde me
+                            oprime el dolor?
+                        </p>
+                    </sp>
+
+                    <sp n="54" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:319-319">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            <pb n="211"/> Quien lo haya hecho te aflige el
+                            corazón; yo, los <choice><sic>oidos</sic><corr>oídos</corr></choice>.
+                        </p>
+                    </sp>
+
+                    <sp n="55" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:320-320">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            ¡Ay, qué charlatán manifiestas ser!
+                        </p>
+                    </sp>
+
+                    <sp n="56" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:321-321">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            Pero nunca el autor de ese crimen.
+                        </p>
+                    </sp>
+
+                    <sp n="57" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:322-322">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            Es fácil que por dinero te hayas vendido.
+                        </p>
+                    </sp>
+
+                    <sp n="58" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:323-323a">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            ¡Huy! Difícil es que a quien haya
+                            formado una opinión se le convenza de su falsedad.
+                        </p>
+                    </sp>
+
+                    <sp n="59" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:324-326">
+                        <speaker>Creonte</speaker>
+                        <p>
+                            Charla ahora acerca de la opinión; que
+                            si no me descubrís a los culpables, os veréis obligados
+                            a confesar que las malas ganancias acarrean desgracias.
+                        </p>
+                    </sp>
+                    <stage>Sale Creonte.</stage>
+
+                    <sp n="60" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:327-375">
+                        <speaker>El Centinela</speaker>
+                        <p>
+                            Pues ¡ojalá sean descubiertos! Pero
+                            lo mismo si se encuentran que si no — pues de esto la
+                            suerte decidirá —, no es posible que me veas volver
+                            aquí; pues si, contra lo que esperaba y temía, me voy
+                            salvo ahora, debo dar muchas gracias a los dioses.
+                        </p>
+                    </sp>
+                </div>
+
+                <div type="textpart" subtype="scene" n="Stasimon_1">
+
+                    <sp n="61" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:343-383">
+                        <speaker>Coro</speaker>
+                        <p>
+                            Muchas cosas hay admirables, pero ninguna
+                            es más admirable que el hombre. Él es quien al otro
+                            lado del espumante mar se traslada llevado del impetuoso
+                            viento a través de las olas que braman en derredor;
+                            y a la más excelsa de las diosas, a la Tierra, incorruptible
+                            e incansable, esquilma con el arado, que dando
+                            vueltas sobre ella año tras año, la revuelve con
+                            ayuda de la raza caballar. <milestone unit="card" n="343" edRef="Storr"/>Y de la raza ligera de las
+                            aves, tendiendo redes, se apodera; y también de las
+                            bestias salvajes y de los peces del mar, con cuerdas tejidas
+                            en malla, la habilidad del hombre. Domeña con
+                            su ingenio a la fiera salvaje que en el monte vive; y al
+                            crinado caballo y al indómito toro montaraz, les hace
+                            amar el yugo al que sujetan su cerviz. <milestone unit="card" n="354" edRef="Storr"/>Y en el arte de
+                            la palabra, y en el pensamiento sutil como el viento, y
+                            en las asambleas que dan leyes a la ciudad se amaestró;
+                            y también en evitar las molestias de la lluvia, de la intemperie
+                            y del inhabitable invierno. Teniendo recursos
+                            para todo, no queda sin ellos ante lo que ha de ve-
+                            <pb n="212"/> nir. Solamente contra la muerte no encuentra remedio;
+                            pero sabe precaverse de las molestas enfermedades,
+                            procurando evitarlas. <milestone unit="card" n="365" edRef="Storr"/>Y poseyendo la industriosa habilidad
+                            del arte más de lo que <choice><sic>podia</sic><corr>podía</corr></choice> esperarse, procede
+                            unas veces bien o se arrastra hacia el mal, conculcando
+                            las leyes de la patria y el sagrado juramento de los
+                            dioses. Quien, ocupando un elevado cargo en la ciudad,
+                            se habitúa al mal por osadía, es indigno de vivir en
+                            ella : que nunca sea mi huésped, y menos amigo mío,
+                            el que tales cosas haga. <milestone unit="card" n="376" edRef="Storr"/>Ante el admirable prodigio que
+                            se me presenta a la vista, estoy dudando. ¿Cómo, si la
+                            estoy viendo, podré negar que no sea ésta la niña Antígona?
+                            ¡Oh hija infeliz de Edipo, infeliz padre! ¿Qué es
+                            esto? ¿Es que, por desobedecer los mandatos del rey,
+                            te traen éstos habiéndote sorprendido en tal imprudencia?
+                            </p>
+                    </sp>
+                </div>
+
+
+<div type="textpart" subtype="scene" n="Epeisodion_2">
+
+    <sp n="62" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:384-385">
+        <speaker>EL CENTINELA</speaker>
+        <p><milestone unit="card" n="384" edRef="Storr"/>
+            Ésta es la que el crimen ha per-
+petrado; la sorprendimos cuando estaba sepultándolo.
+¿Pero dónde está Creonte?</p></sp>
+        <sp n="63" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:386-386">
+        <speaker>CORO</speaker>
+        <p>Helo saliendo de casa, que a propósito viene.
+        </p></sp>
+        <sp n="64" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:387-387">
+        <speaker>CREONTE</speaker><p>¿Qué hay? ¿Qué coincidencia me hace
+llegar oportunamente?
+        </p>
+    </sp>
+    <sp n="65" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:388-400">
+        <speaker>EL CENTINELA</speaker>
+        <p>Señor, para los hombres nada hay
+irrevocable, porque la reflexión modifica el primer pensamiento.
+Cuando a duras penas hubiera creido yo volver
+aqui, por las amenazas con que me helé de terror
+entonces [pero porque la alegria súbita e inesperada no
+tiene comparación con ningún otro placer, vengo, aunque
+sea faltando a mis juramentos], con esta muchacha,
+que ha sido sorprendida cuando preparaba la sepultura.
+Ahora no se han echado suertes, sino que mio es, y
+no de otro, este mensaje. Y ahora, ¡oh señor!, que aquí
+la tienes, interrógala a tu gusto y júzgala; que yo, en
+justicia, quedo absuelto y libre de este crimen.</p>
+    </sp>
+
+    <pb n="213"/>
+
+    <sp n="66" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:401-401">
+        <speaker>CREONTE</speaker>
+        <p>Llevas a ésta, ¿cómo, dónde la has cogido?</p>
+</sp>
+    <sp n="67" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:402-402">
+        <speaker>EL CENTINELA</speaker>
+        <p>Ésta sepultó al hombre; ya lo sabes
+todo.</p>
+    </sp>
+    <sp n="68" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:403-403">
+        <speaker>CREONTE</speaker>
+        <p>¿Tienes conciencia y dices verdad en lo
+que afirmas?</p>
+    </sp>
+    <sp n="69" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:404-405">
+        <speaker>EL CENTINELA</speaker>
+        <p>La vi dando sepultura al cadáver
+que tú habías prohibido que se sepultara. ¿Hablo clara
+y expresamente?</p>
+    </sp>
+    <sp n="70" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:406-406">
+        <speaker>CREONTE</speaker>
+        <p>¿Y cómo <choice><sic>fué</sic><corr>fue</corr></choice> vista y cogida en flagrante?</p>
+    </sp>
+    <sp n="71" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:407-440">
+        <speaker>EL CENTINELA</speaker>
+        <p><milestone unit="card" n="407" edRef="Storr"/>La cosa ocurrió de esta manera:
+cuando yo llegué asustado por las terribles amenazas
+tuyas, después de quitar todo el polvo que cubría al
+cadáver y dejar bien al desnudo el cuerpo, que estaba
+ya en putrefacción, nos apostamos en lo alto de un
+otero, resguardados del aire y bastante lejos para que
+no nos diera el mal olor de aquél, excitando a la vigilancia
+cada uno a su compañero con eficaces reproches,
+si es que alguien se descuidaba de su tarea. Esto duró
+hasta la hora en que en medio del cielo se coloca el
+brillante astro del día y abrasa el calor. Entonces, de
+repente, un tifón levantando de tierra terrible tempestad
+con un rayo que <choice><sic>parecia</sic><corr>parecía</corr></choice> grito del cielo, invadió la
+campiña, devastando el follaje de la campestre selva. Se
+llenó de polvo todo el aire; y nosotros, con los ojos cerrados,
+aguantábamos el castigo que el cielo nos enviaba.
+Cuando se apaciguó la tempestad, después de mucho
+tiempo, vimos a la muchacha que se quejaba dando
+agudos lamentos, como el ave dolorida cuando advierte
+vacío el lecho de su nido por haberle arrebatado los .
+polluelos. Así también ésta, cuando <choice><sic>vió</sic><corr>vio</corr></choice> el cadáver al
+desnudo, rompió en amargo llanto y lanzó horribles
+maldiciones contra los que le <choice><sic>habian</sic><corr>habían</corr></choice> inferido el ultraje.
+Recogió en seguida con las manos polvo seco; y vertiendo <pb n="214"/> de un vaso de bronce bien forjado tres libaciones
+sobre el cadáver, lo cubrió. Nosotros que la vimos,
+nos abalanzamos y la cogimos en seguida, sin que ella
+se asustara de nada: la acusamos del hecho anterior
+y del presente, y no negó nada, con gusto mio y con
+pena a la vez; porque el quedar uno libre del castigo
+es muy dulce; pero implicar a un amigo en la desgracia,
+es doloroso. No obstante, natural es que esto último
+tenga para mi menos importancia que mi propia
+salvación.</p>
+    </sp>
+    <sp n="72" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:441-442">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="441" edRef="Storr"/>Tú, tú que inclinas la cara hacia el suelo,
+¿afirmas o niegas haber hecho eso?</p>
+    </sp>
+    <sp n="73" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:443-443">
+        <speaker>ANTIGONA</speaker>
+        <p>Afirmo que lo he hecho, y no lo niego.</p>
+    </sp>
+    <sp n="74" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:444-447">
+        <speaker>CREONTE</speaker>
+        <p>Tú puedes irte adonde
+quieras, libre de la acusación que pesaba sobre ti. Y tú, dime, no con muchas palabras, sino
+brevemente: ¿conocías el bando que prohibía eso?</p>
+    </sp>
+    <sp n="75" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:448-448">
+        <speaker>ANTIGONA</speaker>
+        <p>Lo conocía. ¿Cómo no debía conocerlo?
+Público era.</p>
+    </sp>
+    <sp n="76" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:449-449">
+        <speaker>CREONTE</speaker>
+        <p>Y, así, ¿te atreviste a desobedecer las
+leyes?</p>
+    </sp>
+    <sp n="77" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:450-470">
+        <speaker>ANTIGONA</speaker>
+        <p>Como que no era Júpiter quien me las
+<choice><sic>habia</sic><corr>había</corr></choice> promulgado; ni tampoco Justicia, la compañera
+de los dioses infernales, ha impuesto esas leyes a los
+hombres; ni creí yo que tus decretos tuvieran fuerza
+para borrar e invalidar las leyes divinas, de manera
+que un mortal pudiese quebrantarlas. Pues no son de
+hoy ni de ayer, sino que siempre han estado en vigor
+y nadie sabe cuándo aparecieron. Por esto no <choice><sic>debia</sic><corr>debía</corr></choice> yo,
+por temor al castigo de ningún hombre, violarlas para
+exponerme a sufrir el castigo de los dioses. <choice><sic>Sabia</sic><corr>Sabía</corr></choice> que
+tenía que morir, ¿cómo no?, aunque tú no lo hubieses
+pregonado. Y si muero antes de tiempo, eso creo yo
+que gano; pues quien viva, como yo, en medio de tantas <pb n="215"/> desgracias, ¿cómo no lleva ganancia en la muerte?
+Así que para mi no es pena ninguna el alcanzar muerte
+violenta; pero lo sería si hubiese tolerado que quedara
+insepulto el cadáver de mi difunto hermano: eso
+sí que lo hubiera sentido; esto no me aflige. Y si ahora
+te parece que soy necia por lo que he hecho, puedo decir
+que de necia soy acusada por un necio.</p>
+    </sp>
+    <sp n="78" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:471-472">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="471" edRef="Storr"/>Demuestra esa <choice><sic>indole</sic><corr>índole</corr></choice> tenaz que es hija de
+padre tenaz; no sabe rendirse a la desgracia.</p>
+    </sp>
+    <sp n="79" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:473-496">
+        <speaker>CREONTE</speaker>
+        <p>Pues has de saber que los caracteres,
+cuanto más pertinaces, ceden más fácilmente; y muchas
+veces verás que el resistente hierro cocido al fuego,
+después de <choice><sic>frio</sic><corr>frío</corr></choice> se quiebra y rompe. Con un peque-
+ño freno sé yo domar a los enfurecidos caballos; pues
+no debe ensoberbecerse quien es esclavo de otro. Y ésta
+sabía, en verdad, la insolencia que cometía al desobedecer
+las leyes decretadas. Insolencia cuando perpetró
+el hecho, y nueva insolencia cuando se envanece de
+haberlo cometido y se <choice><sic>rie</sic><corr>ríe</corr></choice>. Ciertamente, pues, que ahora
+no sería yo hombre, sino ella, si tanta audacia quedara
+impune. Y aunque sea hija de mi hermana, y
+aunque fuera el más próximo pariente de todos los que
+en el patio de mi casa se <choice><sic>reunen</sic><corr>reúnen</corr></choice> en torno de mi Júpiter
+protector, ella y su hermana no escaparán de la muerte
+más ignominiosa. Porque a aquélla, lo mismo que
+a ésta, acuso como autora de este sepelio. Llamadla,
+pues, que dentro la vi hace poco, llena de rabia y fuera
+de sí misma; porque la conciencia de aquellos que
+nada bueno traman secretamente, suele acusarles de
+su crimen antes de que se les descubra. Y sobre todo
+detesto al que, sorprendido en el crimen, quiere luego  adornarlo con especiosos razonamientos.</p>
+    </sp>
+    <sp n="80" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:497-497">
+        <speaker>ANTIGONA</speaker>
+        <p>¿Quieres algo más que matarme, después
+de haberme cogido?</p>
+    </sp>
+
+    <pb n="216"/>
+
+    <sp n="81" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:498-498">
+        <speaker>CREONTE</speaker>
+        <p>Yo, en verdad, nada. Teniendo esto, lo
+tengo todo.</p>
+    </sp>
+    <sp n="82" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:499-507">
+        <speaker>ANTIGONA</speaker>
+        <p><milestone unit="card" n="499" edRef="Storr"/>¿Pues qué esperas ya? A mi, tus razonamientos
+ni me gustan ni me podrán gustar; y lo
+mismo a ti, los mios nunca te han agradado. Y a la verdad,
+¿cómo hubiera yo podido alcanzar gloria más célebre
+que dando sepultura a mi propio hermano? Todos
+éstos dirían que lo que he hecho es de su agrado, si el
+miedo no les trabase la lengua. Pero los tiranos tienen
+ésta y muchas otras ventajas, y les es permitido hacer
+y decir cuanto quieran.</p>
+    </sp>
+    <sp n="83" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:508-508">
+        <speaker>CREONTE</speaker>
+        <p>Tú sola, entre los cadmeos, ves la cosa
+de ese modo.</p>
+    </sp>
+    <sp n="84" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:509-509">
+        <speaker>ANTIGONA</speaker>
+        <p>La ven también éstos; pero cierran la
+boca por ti.</p>
+    </sp>
+    <sp n="85" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:510-510">
+        <speaker>CREONTE</speaker>
+        <p>¿Y tú no te avergüenzas de disentir de
+los demás?</p>
+    </sp>
+    <sp n="86" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:511-511">
+        <speaker>ANTIGONA</speaker>
+        <p>No es vergonzoso honrar a los hermanos.</p>
+    </sp>
+    <sp n="87" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:512-512">
+        <speaker>CREONTE</speaker>
+        <p>¿No era hermano también el que frente
+a él murió?</p>
+    </sp>
+    <sp n="88" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:513-513">
+        <speaker>ANTIGONA</speaker>
+        <p>Hermano de la misma madre y del mismo
+padre.</p>
+    </sp>
+    <sp n="89" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:514-514">
+        <speaker>CREONTE</speaker>
+        <p>¿Cómo, pues, honras a ése con honores
+que te hacen impía ante aquél?</p>
+    </sp>
+    <sp n="90" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:515-515">
+        <speaker>ANTIGONA</speaker>
+        <p>No atestiguará eso el cadáver del muerto.</p>
+    </sp>
+    <sp n="91" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:516-516">
+        <speaker>CREONTE</speaker>
+        <p>Sí; cuando le honras lo mismo que al <choice><sic>impio</sic><corr>impío</corr></choice>.</p>
+    </sp>
+    <sp n="92" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:517-517">
+        <speaker>ANTIGONA</speaker>
+        <p>No murió siendo esclavo suyo, sino hermano.</p>
+</sp>
+    <sp n="93" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:518-518">
+        <speaker>CREONTE</speaker>
+        <p>Que <choice><sic>venia</sic><corr>venía</corr></choice> a devastar la patria, que éste
+<choice><sic>defendia</sic><corr>defendía</corr></choice>.</p>
+    </sp>
+    <sp n="94" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:519-519">
+        <speaker>ANTIGONA</speaker>
+        <p>Sin embargo, Plutón quiere una misma
+ley para todos.</p>
+    </sp>
+    <sp n="95" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:520-520">
+        <speaker>CREONTE</speaker>
+        <p>Pero nunca el bueno debe obtener igual
+premio que el malvado.</p>
+    </sp>
+
+    <pb n="217"/>
+
+    <sp n="96" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:521-521">
+        <speaker>ANTIGONA</speaker>
+        <p>¿Quién sabe si allí bajo estas mis obras
+son santas?</p>
+    </sp>
+    <sp n="97" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:522-522">
+        <speaker>CREONTE</speaker>
+        <p>Nunca el enemigo, ni después de muerto,
+es amigo.</p>
+    </sp>
+    <sp n="98" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:523-523">
+        <speaker>ANTIGONA</speaker>
+        <p>No he nacido para compartir odio, sino
+amor.</p>
+    </sp>
+    <sp n="99" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:524-525">
+        <speaker>CREONTE</speaker>
+        <p>Pues bajando al infierno, si necesidad
+tienes de amar, ama a los muertos; que viviendo yo,
+no mandará una mujer.</p>
+    </sp>
+    <sp n="100" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:526-530">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="526" edRef="Storr"/>Ya en la puerta tienes a Ismena derramando
+lágrimas de amor por su hermana; la nube de dolor
+que le oprime los ojos ensombrece su encendida cara,
+bañándole las hermosas mejillas.</p>
+    </sp>
+    <sp n="101" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:531-535">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="531" edRef="Storr"/>¡Tú, la que deslizándote por palacio como
+una <choice><sic>vibora</sic><corr>víbora</corr></choice>, sin advertirlo yo, me chupabas la sangre!
+No <choice><sic>sabia</sic><corr>sabía</corr></choice> yo que alimentara a dos furias que se revolvian
+contra mi trono. ¡Ea!, dime ya: tú en este sepelio,
+¿confiesas haber tenido parte, o juras que no lo
+sabias?</p>
+    </sp>
+    <sp n="102" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:536-537">
+        <speaker>ISMENA</speaker>
+        <p>He hecho yo la cosa lo mismo que ésta:
+obro de concierto con ella, tengo mi parte y respondo
+de mi culpa.</p>
+    </sp>
+    <sp n="103" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:538-539">
+        <speaker>ANTIGONA</speaker>
+        <p>Pero no permitirá eso la Justicia, porque
+ni tú quisiste ni yo me puse de acuerdo contigo.</p>
+    </sp>
+    <sp n="104" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:540-541">
+        <speaker>ISMENA</speaker>
+        <p>Pero en la desgracia en que te hallas no
+me avergüenzo de hacerme copartícipe de tu sufrimiento.</p>
+</sp>
+    <sp n="105" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:542-543">
+        <speaker>ANTIGONA</speaker>
+        <p>De quién sea el hecho, Plutón y los
+dioses infernales lo saben. Yo, <choice><sic>à</sic><corr>a</corr></choice> la que ama de palabra,
+no la estimo por amiga.</p>
+    </sp>
+    <sp n="106" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:544-545">
+        <speaker>ISMENA</speaker>
+        <p>No, ¡oh hermana!, me consideres indigna
+de morir contigo ni de haber ofrecido el sacrificio por
+el difunto.</p>
+    </sp>
+    <sp n="107" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:546-547">
+        <speaker>ANTIGONA</speaker>
+        <p>Ni quiero que mueras conmigo, ni que <pb n="218"/> te atribuyas aquello en que no has puesto manos. Bastará
+que muera yo.</p>
+    </sp>
+    <sp n="108" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:548-548">
+        <speaker>ISMENA</speaker>
+        <p>¿Y cómo la vida, privada yo de ti, me será
+querida?</p>
+    </sp>
+    <sp n="109" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:549-549">
+        <speaker>ANTIGONA</speaker>
+        <p>Pregúntaselo a Creonte, pues de él has
+sido defensora.</p>
+    </sp>
+    <sp n="110" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:550-550">
+        <speaker>ISMENA</speaker>
+        <p>¿Por qué me afliges así, sin sacar ningún
+provecho?</p>
+    </sp>
+    <sp n="111" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:551-551">
+        <speaker>ANTIGONA</speaker>
+        <p>Lo siento en verdad, aun cuando me ria
+de ti.</p>
+    </sp>
+    <sp n="112" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:552-552">
+        <speaker>ISMENA</speaker>
+        <p>¿En qué otra cosa ahora te podré ser útil yo?</p>
+    </sp>
+    <sp n="113" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:553-553">
+        <speaker>ANTIGONA</speaker>
+        <p>Sálvate a ti misma. No envidio el que
+tú te libres.</p>
+    </sp>
+    <sp n="114" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:554-554">
+        <speaker>ISMENA</speaker>
+        <p>¡Ay infeliz de mi! ¿Y no he de obtener tu
+misma muerte?</p>
+    </sp>
+    <sp n="115" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:555-555">
+        <speaker>ANTIGONA</speaker>
+        <p>Tú, en verdad, preferiste vivir, y yo
+morir.</p>
+    </sp>
+    <sp n="116" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:556-556">
+        <speaker>ISMENA</speaker>
+        <p><milestone unit="card" n="556" edRef="Storr"/>Pero mis razones no quedaron sin decir.</p>
+    </sp>
+    <sp n="117" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:557-557">
+        <speaker>ANTIGONA</speaker>
+        <p>Por buenas las tuviste tú; pero las mias
+crei yo que eran más prudentes.</p>
+    </sp>
+    <sp n="118" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:558-558">
+        <speaker>ISMENA</speaker>
+        <p>Pues, en verdad, igual de las dos <choice><sic>ès</sic><corr>es</corr></choice> el
+delito.</p>
+    </sp>
+    <sp n="119" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:559-560">
+        <speaker>ANTIGONA</speaker>
+        <p>Ten ánimo; tú vives aún, pero mi corazón
+hace ya tiempo que ha muerto; de modo que sólo
+puede servir a los muertos.</p>
+    </sp>
+    <sp n="120" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:561-562">
+        <speaker>CREONTE</speaker>
+        <p>De estas dos muchachas digo que la una
+se ha vuelto loca desde hace poco; la otra lo está desde
+que nació.</p>
+    </sp>
+    <sp n="121" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:563-564">
+        <speaker>ISMENA</speaker>
+        <p>Nunca, ¡oh rey!, ni siquiera la razón con
+que Naturaleza nos dota al nacer persiste en los desgraciados,
+sino que se les altera.</p>
+    </sp>
+    <sp n="122" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:565-565">
+        <speaker>CREONTE</speaker>
+        <p>Como a ti, que prefieres hacerte cómplice
+de un crimen.</p>
+    </sp>
+    <sp n="123" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:566-566">
+        <speaker>ISMENA</speaker>
+        <p>Y yo sola, sin ésta, ¿cómo he de poder vivir?</p>
+    </sp>
+
+    <pb n="219"/>
+
+    <sp n="124" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:567-567">
+        <speaker>CREONTE</speaker>
+        <p>Pues de ésta, en verdad, no hables; como
+si no viviera.</p>
+    </sp>
+    <sp n="125" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:568-568">
+        <speaker>ISMENA</speaker>
+        <p>¿Y matarás a la novia de tu propio hijo?</p>
+    </sp>
+    <sp n="126" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:569-569">
+        <speaker>CREONTE</speaker>
+        <p>Otros campos tiene donde podrá arar.</p>
+    </sp>
+    <sp n="127" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:570-570">
+        <speaker>ISMENA</speaker>
+        <p>Pero no como se había concertado entre él
+y ésta.</p>
+    </sp>
+    <sp n="128" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:571-571">
+        <speaker>CREONTE</speaker>
+        <p>Yo, malas mujeres para mis hijos, no
+quiero.</p>
+    </sp>
+    <sp n="129" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:572-572">
+        <speaker>ANTIGONA</speaker>
+        <p>¡Oh queridísimo Hemón, cómo te insulta
+tu padre!</p>
+    </sp>
+    <sp n="130" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:573-573">
+        <speaker>CREONTE</speaker>
+        <p>Demasiado me molestais ya tú y tus bodas.</p>
+    </sp>
+    <sp n="131" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:574-574">
+        <speaker>CORO</speaker>
+        <p>¿Pero privarás de ésta a tu propio hijo?</p>
+    </sp>
+    <sp n="132" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:575-575">
+        <speaker>CREONTE</speaker>
+        <p>Es Plutón quien ha de poner fin a estas
+nupcias.</p>
+    </sp>
+    <sp n="133" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:576-576">
+        <speaker>CORO</speaker>
+        <p>Decretada está, a lo que parece, la muerte
+de ésta.</p>
+    </sp>
+    <sp n="134" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:577-625">
+        <speaker>CREONTE</speaker>
+        <p>Como lo dices, así me parece. Ya no hay
+dilación; llevadla dentro, esclavos. Mujeres como ésta
+es preciso que se las sujete bien y no se las deje libres;
+porque hasta las más valientes huyen cuando ven que
+ya tienen la muerte cerca de la vida.</p>
+    </sp>
+</div>
+
+<div type="textpart" subtype="scene" n="Stasimon_2">
+
+    <sp n="135" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:583-630">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="583" edRef="Storr"/>¡Dichosos todos los que pasan la vida sin probar
+un infortunio! Porque aquellos cuya casa recibe
+una sacudida de los dioses, no queda calamidad que no
+caiga sobre toda su descendencia, al modo que cuando
+el oleaje, hinchado por los impetuosos vientos marinos
+de la Tracia, se rompe en el negro abismo del mar y
+revuelve desde su fondo el negro y turbulento limo y
+retumban con estruendo las orillas que lo rechazan.
+<milestone unit="card" n="593" edRef="Storr"/>Sobre las antiguas calamidades de la familia de los
+Labdácidas veo que caen otras que con nuevas desgracias
+se suceden sin cesar de una en otra generación.
+Algún dios aniquila esta raza, no hay remedio. Porque
+la esperanza que en el palacio de Edipo se fundaba <pb n="220"/> ahora en su último vástago, la acaba de segar la cruenta
+hoz de los dioses infernales, a la vez que la demencia
+de la razón y la furia del ánimo. <milestone unit="card" n="605" edRef="Storr"/>Tu poder, ¡oh Júpiter!,
+¿qué hombre en su arrogancia lo podrá resistir,
+cuando ni lo domina jamás el sueño que a todo el mundo
+subyuga, ni lo disipan los años que sin cesar se suceden,
+y siempre joven en el tiempo mantienes el reverberante
+esplendor del Olimpo? Al presente, en el
+porvenir y en el pasado regirá siempre esta ley común
+a todos los pueblos: «Nada ocurre en la vida humana
+exento de dolor.» <milestone unit="card" n="615" edRef="Storr"/>Pues, en verdad, la vagarosa esperanza que para muchos hombres es una ayuda, es para
+otros engaño de fútiles anhelos; pues se insinúa sin que
+uno lo advierta hasta que ponga el pie en el ardiente
+fuego. De la <choice><sic>sabiduria</sic><corr>sabiduría</corr></choice> de alguien procede esta célebre
+máxima: El mal a veces parece bien a aquel cuya mente
+lleva un dios a la perdición; y pasa muy poco tiempo
+sin que caiga en la ruina. <milestone unit="card" n="626" edRef="Storr"/>Pero he <choice><sic>ahi</sic><corr>ahí</corr></choice> a Hemón, el más
+joven pimpollo de tus hijos. ¿Acaso viene entristecido
+por la suerte de su novia Antígona, doliéndole el desencanto
+de sus nupcias?</p>
+    </sp>
+</div>
+
+<div type="textpart" subtype="scene" n="Epeisodion_3">
+
+    <sp n="136" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:631-634">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="631" edRef="Storr"/>Pronto lo sabremos de él, mejor que de
+cualquier adivino. ¡Hijo!, ¿acaso, al enterarte del irrevocable
+decreto acerca de tu futura esposa, vienes rabioso
+contra tu padre, o soy de ti siempre querido de
+cualquier modo que proceda?</p>
+    </sp>
+    <sp n="137" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:635-638">
+        <speaker>HEMÓN</speaker>
+        <p>Padre, tuyo soy, y tú me diriges con buenos
+consejos, que yo debo obedecer; pues para mi ningún
+casamiento será digno de más aprecio que el dejarme
+llevar de ti, bien dirigido.</p>
+    </sp>
+    <sp n="138" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:639-680">
+        <speaker>CREONTE</speaker>
+        <p>Así, hijo mío, conviene que lo tomes a
+pechos para posponerlo todo a la opinión de tu padre.
+Por esto, pues, desean los hombres engendrar y tener
+en casa hijos obedientes, para que rechacen con ofensa <pb n="221"/> a los enemigos y honren al amigo lo mismo que a su
+padre. Quien <choice><sic>cria</sic><corr>cría</corr></choice> hijos que no le reporten ningún provecho,
+¿qué podrás decir de él sino que engendró molestias
+para <choice><sic>si</sic><corr>sí</corr></choice> y risa abundante para sus enemigos?
+Nunca jamás, ¡oh hijo!, te rinda el placer de manera
+que abdiques de tu razón por culpa de una mujer, sabiendo
+qué frío resulta el abrazo cuando tienes en casa
+por esposa a una mujer mala. ¿Pues <choice><sic>què</sic><corr>qué</corr></choice> plaga puede
+resultar mayor que una mala compañera? Despreciándola,
+pues, como a una perversa, deja que esa muchacha
+se case con otro en el infierno. Porque cuando a
+ella <choice><sic>cogi</sic><corr>cogí</corr></choice> yo públicamente, a ella sola entre todos los
+ciudadanos, desobedeciendo mis órdenes, no he de quedar
+como un farsante ante la ciudad, sino que la mataré,
+aunque implore a Júpiter, protector de la familia;
+porque si a los deudos, por el parentesco, les he de tolerar
+sus rebeldías, con mayor razón a los que no sean
+de la familia; porque el hombre que sea cuidadoso en
+los asuntos domésticos, será también justo en los asuntos
+de la ciudad; pero quien atropellándolo todo, o quebranta
+las leyes o piensa mandar de los que gobiernan,
+ése no es posible que obtenga mi alabanza; porque a
+quien la ciudad coloca en el trono, a ése hay que obedecer
+en las cosas pequeñas, en las justas y en las que
+no sean ni pequeñas ni justas. Y un hombre tal no puedo
+dudar yo que es el que gobierna bien y quiere ser bien
+gobernado; ése, en el tumulto de la batalla, permanecerá
+firme en su lugar, como fiel y valiente defensor.
+No hay mayor mal que la <choice><sic>anarquia</sic><corr>anarquía</corr></choice>: ella arruina las
+ciudades, ella introduce la discordia en las familias,
+ella rompe y pone en fuga al ejército del aliado; pero
+la obediencia salva las más veces la vida de los que
+cumplen con su deber. Así hay que defender el orden
+y la disciplina, y no dejarse nunca dominar por una <pb n="222"/> mujer. Mejor es, si es preciso, caer ante un hombre;
+que así nunca podrán decir que somos inferiores a una
+hembra.</p>
+    </sp>
+    <sp n="139" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:681-682">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="681" edRef="Storr"/>A mi, si no es que por la edad chocheo, me
+parece razonable lo que has dicho.</p>
+    </sp>
+    <sp n="140" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:683-723">
+        <speaker>HEMÓN</speaker>
+        <p>Padre, los dioses han dado a los hombres la
+razón como el mayor bien de todos los que existen, y
+yo ni podría ni sabría decir que no hayas hablado con
+rectitud. Pero la cosa, sin embargo, puede que parezca
+bien vista de otra manera; y yo, que soy tu hijo, debo
+considerar todo lo que pueda alguien decir, tratar o
+murmurar de ti; pues tu aspecto infunde tanto <choice><sic>terror-</sic><corr>terror</corr></choice>
+al ciudadano, que no se atreve a decirte aquello que tú
+no gustes <choice><sic>oir</sic><corr>oír</corr></choice>. Pero a mi me es fácil <choice><sic>oir</sic><corr>oír</corr></choice> lo que en secreto
+se dice; cómo llora la ciudad por esta muchacha,
+que, entre todas las mujeres, no merece de ninguna
+manera morir ignominiosamente por su <choice><sic>gloriosisima</sic><corr>gloriosísima</corr></choice>
+hazaña. La que a su propio hermano, muerto en la pelea,
+no quiso dejar insepulto para que fuese pasto de
+los voraces perros ni de ninguna de las aves, ésa, ¿no
+es digna de obtener una gloriosa recompensa? Tal es
+el rumor que silenciosa y secretamente corre. Para mí,
+padre, no hay ninguna cosa que me sea más estimada
+que el que tú vivas feliz. ¿Pues qué mayor dechado de
+gloria para los hijos que la prosperidad del padre, o
+para el padre que la de los hijos? No te obstines, pues,
+en mantener en ti, como única, la opinión de que lo que
+tú dices es lo razonable, y no lo que diga otro; porque
+los que creen que solamente ellos poseen la <choice><sic>sabiduria</sic><corr>sabiduría</corr></choice>,
+la elocuencia y el valor que no tienen los demás, ésos,
+al ser examinados, se encuentran <choice><sic>vacios</sic><corr>vacíos</corr></choice>. Porque al
+hombre, por sabio que uno sea, no le es vergonzoso el
+aprender muchas veces, ni tampoco el no resistir más
+allá de lo razonable. Tú ves en los torrentes invernales <pb n="223"/> que cuantos árboles ceden, conservan sus ramas; pero
+los que resisten, son arrancados con sus mismas raíces.
+Asimismo, el que atesando firmemente la bolina no quiere
+ceder, hace que zozobre la nave y navega en adelante
+en las tablas. Cede, pues, y da largas a tu enojo.
+Pues si algún consejo, a pesar de ser tan joven, me
+asiste, afirmo yo que seria lo mejor que todo hombre
+naciera henchido de <choice><sic>sabiduria</sic><corr>sabiduría</corr></choice>; pero que como esto no
+suele suceder así, bueno es aprender de los que bien te
+aconsejan.</p>
+    </sp>
+    <sp n="141" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:724-725">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="724" edRef="Storr"/>Rey, conviene que si algo oportuno dice éste,
+lo atiendas; y también éste a ti, pues los dos habéis
+hablado bien..</p>
+    </sp>
+    <sp n="142" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:726-727">
+        <speaker>CREONTE</speaker>
+        <p>Llegados a esta edad, ¿tendremos que
+aprender prudencia de un jovencito imberbe como éste?</p>
+    </sp>
+    <sp n="143" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:728-729">
+        <speaker>HEMÓN</speaker>
+        <p>No en lo que no sea justo; que aunque sea
+más joven, no se debe mirar a la edad, sino al consejo.</p>
+    </sp>
+    <sp n="144" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:730-730">
+        <speaker>CREONTE</speaker>
+        <p>¿Y tu consejo es que honremos a los sediciosos?</p>
+</sp>
+    <sp n="145" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:731-731">
+        <speaker>HEMÓN</speaker>
+        <p>Nunca <choice><sic>aconsejarẻ</sic><corr>aconsejaré</corr></choice> yo honrar a los malvados.</p>
+</sp>
+    <sp n="146" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:732-732">
+        <speaker>CREONTE</speaker>
+        <p>Pues ésta, ¿no ha sido sorprendida en tal
+malicia?</p>
+    </sp>
+    <sp n="147" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:733-733">
+        <speaker>HEMÓN</speaker>
+        <p>No dice eso ningún ciudadano de Tebas.</p>
+    </sp>
+    <sp n="148" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:734-734">
+        <speaker>CREONTE</speaker>
+        <p>¡Qué!, ¿la ciudad es la que me ha de decir
+lo que debo disponer?</p>
+    </sp>
+    <sp n="149" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:735-735">
+        <speaker>HEMÓN</speaker>
+        <p>¿Ves cómo eso que has dicho es propio de
+un imberbe?</p>
+    </sp>
+    <sp n="150" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:736-736">
+        <speaker>CREONTE</speaker>
+        <p>¿Pero es que yo he de gobernar esta tierra
+por el consejo de otro y no por el mío?</p>
+    </sp>
+    <sp n="151" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:737-737">
+        <speaker>HEMÓN</speaker>
+        <p>No hay ciudad que se halle <choice><sic>constituída</sic><corr>constituida</corr></choice>
+por un solo hombre.</p>
+    </sp>
+    <sp n="152" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:738-738">
+        <speaker>CREONTE</speaker>
+        <p>¿No se dice que la ciudad es del que
+manda?</p>
+    </sp>
+
+    <pb n="224"/>
+
+    <sp n="153" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:739-739">
+        <speaker>HEMÓN</speaker>
+        <p>Y muy bien, si reinases tú solo en tierra
+despoblada.</p>
+    </sp>
+    <sp n="154" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:740-740">
+        <speaker>CREONTE</speaker>
+        <p>Éste, a lo que parece, contiende por la
+muchacha.</p>
+    </sp>
+    <sp n="155" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:741-741">
+        <speaker>HEMÓN</speaker>
+        <p>Como si tú fueras la muchacha; pues por
+ti, en verdad, me preocupo.</p>
+    </sp>
+    <sp n="156" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:742-742">
+        <speaker>CREONTE</speaker>
+        <p>¡Ah malvado! ¿En pleitos vienes contra
+tu padre?</p>
+    </sp>
+    <sp n="157" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:743-743">
+        <speaker>HEMÓN</speaker>
+        <p>Porque te veo faltar a la justicia.</p>
+    </sp>
+    <sp n="158" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:744-744">
+        <speaker>CREONTE</speaker>
+        <p>¿Falto, pues, manteniendo el respeto a mi
+autoridad?</p>
+    </sp>
+    <sp n="159" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:745-745">
+        <speaker>HEMÓN</speaker>
+        <p>No la respetas, cuando conculcas las leyes.</p>
+    </sp>
+    <sp n="160" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:746-746">
+        <speaker>CREONTE</speaker>
+        <p>¡Oh asquerosa ralea, y vencido por una
+mujer!</p>
+    </sp>
+    <sp n="161" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:747-747">
+        <speaker>HEMÓN</speaker>
+        <p>Pero nunca me cogerás vencido por bajas
+pasiones.</p>
+    </sp>
+    <sp n="162" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:748-748">
+        <speaker>CREONTE</speaker>
+        <p>Todo lo que estás diciendo, ¿lo dices por
+aquélla?</p>
+    </sp>
+    <sp n="163" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:749-749">
+        <speaker>HEMÓN</speaker>
+        <p>Y por ti y por mi y por los dioses infernales.</p>
+</sp>
+    <sp n="164" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:750-750">
+        <speaker>CREONTE</speaker>
+        <p>Puesto que eres <choice><sic>esclavó</sic><corr>esclavo</corr></choice> de una mujer,
+not me fatigues con tu charla.</p>
+    </sp>
+    <sp n="165" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:751-751">
+        <speaker>HEMÓN</speaker>
+        <p>¿Quieres inculpar y que no se defienda uno
+de tus inculpaciones?</p>
+    </sp>
+    <sp n="166" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:752-752">
+        <speaker>CREONTE</speaker>
+        <p>A ésa ya no es posible que la desposes
+viva.</p>
+    </sp>
+    <sp n="167" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:753-753">
+        <speaker>HEMÓN</speaker>
+        <p>Ella morirá, y muriendo matará a alguien.</p>
+    </sp>
+    <sp n="168" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:754-754">
+        <speaker>CREONTE</speaker>
+        <p>¿Es que hasta amenazarme llega tu audacia?</p>
+</sp>
+    <sp n="169" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:755-755">
+        <speaker>HEMÓN</speaker>
+        <p>¿Qué amenaza es combatir fútiles razones?</p>
+    </sp>
+    <sp n="170" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:756-756">
+        <speaker>CREONTE</speaker>
+        <p>Llorando vendrás en razón, ya que <choice><sic>vacio</sic><corr>vacío</corr></choice>
+de ella estás.</p>
+    </sp>
+    <sp n="171" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:757-757">
+        <speaker>HEMÓN</speaker>
+        <p>Si no fueras mi padre, <choice><sic>diria</sic><corr>diría</corr></choice> que no estás
+en tu juicio.</p>
+    </sp>
+
+    <pb n="225"/>
+
+    <sp n="172" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:758-761">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="758" edRef="Storr"/>¿Si? Pues, por el Olimpo, sabe que no te
+alegrarás de haberme injuriado con tanto insulto. Traed
+a esa odiosa, para que ante su vista, al punto, muera
+cerca y en presencia del novio.</p>
+    </sp>
+    <sp n="173" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:762-765">
+        <speaker>HEMÓN</speaker>
+        <p>No; de ninguna manera; eso no lo creas
+nunca; ella no morirá delante de mí, ni tú tampoco verás
+ya mi cara ante tus ojos; para que te enfurezcas
+con los amigos que te quieran aguantar.</p>
+    </sp>
+    <sp n="174" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:766-767">
+        <speaker>CORO</speaker>
+        <p>Ese hombre, ¡oh rey!, se ha ido apresuradamente,
+tomado de la cólera; y en su edad, la mente perturbada
+por la pasión, es cosa grave.</p>
+    </sp>
+    <sp n="175" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:768-769">
+        <speaker>CREONTE</speaker>
+        <p>Ido ya, que haga lo que le plazca y se
+enorgullezca más de lo que debe el hombre; que a estas
+dos muchachas no las librará de la muerte.</p>
+    </sp>
+    <sp n="176" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:770-770">
+        <speaker>CORO</speaker>
+        <p>¿Pues a las dos piensas matar?</p>
+    </sp>
+    <sp n="177" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:771-771">
+        <speaker>CREONTE</speaker>
+        <p>A la que no ha tocado el cadáver, no;
+bien me lo adviertes.</p>
+    </sp>
+    <sp n="178" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:772-772">
+        <speaker>CORO</speaker>
+        <p>¿Y con qué clase de suplicio piensas que
+muera?</p>
+    </sp>
+    <sp n="179" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:773-800">
+        <speaker>CREONTE</speaker>
+        <p>Llevándola a sitio donde no se vea huella
+humana, haré que la encierren viva en una pétrea caverna,
+con el alimento preciso para evitar el sacrilegio,
+a fin de que la ciudad se libre del crimen de homicidio.
+Y una vez allí, si implora a Plutón, que es el único a
+quien adora entre los dioses, tal vez alcance el que la
+libre de la muerte; o mejor, conocerá, pero ya tarde,
+que es trabajo superfluo rendir culto a los manes.</p>
+    </sp>
+</div>
+<div type="textpart" subtype="scene" n="Stasimon_3">
+
+    <sp n="180" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:781-805">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="781" edRef="Storr"/>¡Amor invencible en la pelea! ¡Amor que en
+el corazón te infundes, que en las tiernas mejillas de la
+muchacha te posas y pasas al otro lado del mar y frecuentas
+las rústicas cabañas! De ti no se libra nadie
+entre los inmortales, ni entre los efímeros hombres; y
+quien te recibe, se enfurece. <milestone unit="card" n="791" edRef="Storr"/>Tú de los hombres justos
+arrancas injustas determinaciones, para arruinarlos; y <pb n="226"/> también tú has concitado la rencilla en esta familia.
+Triunfa el brillante atractivo de los ojos de la novia
+que ha de alegrar el lecho, y que atrae contra las más
+grandes instituciones; pues sin que se la pueda resistir,
+juega de nosotros la diosa Venus. <milestone unit="card" n="801" edRef="Storr"/>Ahora, en verdad,
+yo mismo me dejo llevar fuera de lo debido, y no
+puedo contener las lágrimas de mis ojos al ver que
+Antígona camina hacia el lecho que a todo el mundo
+adormece.</p>
+    </sp>
+</div>
+
+<div type="textpart" subtype="scene" n="Epeisodion_4">
+
+    <sp n="181" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:806-815">
+        <speaker>ANTIGONA</speaker>
+        <p><milestone unit="card" n="806" edRef="Storr"/>Miradme, ¡oh ciudadanos de mi patria!,
+comenzando mi último viaje y mirando por última vez
+la luz del sol, que ya no veré más; porque Plutón, que
+a todos recibe, me lleva viva a las orillas del <choice><sic>Aqueron-</sic><corr>Aqueron-</corr></choice>
+te, sin haber participado de <choice><sic>himeneó</sic><corr>himeneo</corr></choice> y sin que ningún
+himno nupcial me haya celebrado; pero con Aqueronte
+me casaré.</p>
+    </sp>
+    <sp n="182" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:817-822">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="817" edRef="Storr"/>Pues ilustre y llena de gloria te vas a ese
+abismo de la muerte, sin que te mate mortal enfermedad
+ni haber sido reducida a servidumbre como <choice><sic>botin</sic><corr>botín</corr></choice>
+de guerra; sino que, autónoma y en vida, tú sola vas a
+bajar a la mansión de los muertos.</p>
+    </sp>
+    <sp n="183" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:823-831">
+        <speaker>ANTIGONA</speaker>
+        <p><milestone unit="card" n="823" edRef="Storr"/>Ya <choice><sic>oi</sic><corr>oí</corr></choice> contar la <choice><sic>deplorabilisima</sic><corr>deplorabilísima</corr></choice> muerte
+de la extranjera Frigia, hija de Tántalo, en la cima del
+Sipilo, a la cual, como espesa hiedra, ciñó por todas partes
+el brote de la piedra; y ni las lluvias, según dicen los
+hombres, ni la nieve dejan que su cadáver se corrompa,
+sino que de sus ojos, que no cesan de llorar, humedece
+los collados. De modo muy semejante al de aquélla en
+el lecho me tiende el destino.</p>
+    </sp>
+    <sp n="184" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:834-838">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="834" edRef="Storr"/>Pero ella, en verdad, es diosa, y de un dios
+había nacido; mas nosotros somos mortales, y de hombres
+procedemos; y para un mortal, el obtener suerte
+semejante a la de los dioses es grande gloria.</p>
+    </sp>
+    <sp n="185" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:839-851">
+        <speaker>ANTIGONA</speaker>
+        <p><milestone unit="card" n="839" edRef="Storr"/>¡Ay, cómo se mofan de mi! ¿Por qué, por <pb n="227"/> los dioses patrios, no <choice><sic>aguardáis</sic><corr>aguardais</corr></choice> a insultarme cuando me
+haya ido ya, y lo hacéis en mi presencia? ¡Oh ciudad!
+¡Oh ricos hombres de la ciudad! ¡Oh dirceas fuentes y
+bosque sagrado de Tebas, la de hermosos carros! Os invoco
+para que todos a la vez atestigüeis cómo sin que
+me lloren los amigos, y por qué leyes, me llevan hacia
+las rocas amontonadas en forma de túmulo de inaudita
+sepultura. ¡Infortunada de mi, que estando entre los
+mortales no existo ya, y ni me hallo entre los vivos ni
+entre los muertos!</p>
+    </sp>
+    <sp n="186" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:853-856">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="853" edRef="Storr"/>Por haber querido traspasar los <choice><sic>limites</sic><corr>límites</corr></choice> del
+atrevimiento, chocaste, ¡oh hija!, en el <choice><sic>altisimo</sic><corr>altísimo</corr></choice> trono
+de la Justicia, que es muy excelso. Algún delito de tu
+padre expías.</p>
+    </sp>
+    <sp n="187" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:858-871">
+        <speaker>ANTIGONA</speaker>
+        <p><milestone unit="card" n="858" edRef="Storr"/>Llegaste a poner tu lengua en mis más
+dolorosos remordimientos: el infortunio de mi padre,
+que ha pesado sobre tres generaciones, y la fatalidad
+de toda nuestra familia, de los ilustres Labdácidas. ¡Oh
+funesto lecho de mi madre, y concubinato por ella engendrado
+con mi mismo padre, hijo de tan desdichada
+madre, por los cuales yo infeliz fui concebida!, hacia
+vosotros, maldecida y soltera, vedme aquí que caminando
+voy. ¡Oh hermano, que tan infaustos honores
+alcanzaste!, muerto tú, me mataste viva.</p>
+    </sp>
+    <sp n="188" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:872-875">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="872" edRef="Storr"/>Respetar a los muertos, es piedad; y el imperio,
+sea cualquiera en quien resida, nunca debe conculcarse.
+Tu independiente carácter te ha perdido.</p>
+    </sp>
+    <sp n="189" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:876-882">
+        <speaker>ANTIGONA</speaker>
+        <p><milestone unit="card" n="876" edRef="Storr"/>Sin consuelos, sin amigos, sin himeneo,
+emprendo mi último viaje. ¡Ya no me es permitido ver
+más esta sagrada luz del sol! ¡Infeliz de mi! Y mi muerte
+sin lágrimas, ningún amigo la llora.</p>
+    </sp>
+    <sp n="190" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:883-890">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="883" edRef="Storr"/>¿Acaso no sabéis que de cantos y lloros
+antes de morir no hay ninguno que desistiera si le hubieran
+de ser útiles? Que os la llevéis en seguida; y una <pb n="228"/> vez la encerréis en aquella abovedada tumba, como os
+he mandado, dejadla sola y abandonada, ya desee morir,
+ya desposarse viviendo en tal morada; que yo quedo
+exento del delito de sacrilegio por lo que se refiere
+a esta muchacha; porque sólo se la privará de habitar
+entre los vivos.</p>
+    </sp>
+    <sp n="191" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:891-928">
+        <speaker>ANTIGONA</speaker>
+        <p>¡Oh tumba, oh tálamo nupcial, oh subterránea
+mansión que me has de tener encerrada para
+siempre! Ahí voy hacia los míos, a gran número de los
+cuales, difuntos ya, ha recibido Proserpina entre los
+muertos. De ellos, la última yo y de modo desdichadisimo,
+soy la que bajo antes de llegar al término fijado
+de mi vida. Pero en bajando, abrigo la firme esperanza
+de que he de llegar muy agradable a mi padre, y muy
+querida de ti, ¡oh madre!, y también de ti, hermano
+mío. Porque al morir vosotros, yo con mis propias manos
+os lavé y adorné, y sobre vuestra tumba <choice><sic>ofreci</sic><corr>ofrecí</corr></choice>
+libaciones. Y ahora, ¡oh Polinices!, por haber sepultado
+tu cadáver, tal premio alcanzo. Y ciertamente que con
+razón te hice los honores, según los hombres sensatos;
+[porque nunca jamás, ni por mis hijos, si hubiera llegado
+a ser madre; ni por mi marido, si su cadáver se hubiese
+estado pudriendo, habría emprendido tal trabajo
+en contra de las leyes de la ciudad. ¿Y por qué razón
+digo esto? Marido, en verdad, si el mío <choice><sic>moria</sic><corr>moría</corr></choice>, otro podría
+tener; y también hijos de otro varón, si me privaba
+del que tuviera. Pero encerrados ya en el infierno
+mi madre y mi padre, no es posible que pueda nacerme
+un hermano]. Y sin embargo, porque teniendo esto en
+cuenta te honré por encima de todo, pareció a Creonte
+que había <choice><sic>caido</sic><corr>caído</corr></choice> en falta, y que mi atrevimiento mere-
+<choice><sic>cia</sic><corr>cía</corr></choice> terrible castigo, ¡oh querido hermano! Y ahora me
+llevan entre manos, así presa, virgen, sin himeneo, sin
+llegar a alcanzar las dulzuras del matrimonio ni de la  <pb n="229"/>
+maternidad; sino que, abandonada de los amigos y desdichada,
+me llevan viva a las cóncavas mansiones de
+los muertos. ¿Qué transgresión he cometido contra ninguna
+ley divina? ¿Qué necesidad tengo, en mi desdicha,
+de elevar mi mirada hacia los dioses? ¿Para qué llamarlos
+en mi ayuda, si por haber obrado piadosamente me
+acusan de impiedad? Porque si esto merece la aprobación
+de los dioses, reconoceré que sufro por haber pecado;
+pero si son ellos los que pecan, no deseo que sufran
+otros males que los que me hacen sufrir injustamente.</p>
+    </sp>
+    <sp n="192" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:929-930">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="929" edRef="Storr"/>Aún la están dominando los <choice><sic>impetus</sic><corr>ímpetus</corr></choice> de las
+mismas pasiones.</p>
+    </sp>
+    <sp n="193" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:931-936">
+        <speaker>CREONTE</speaker>
+        <p>Y en verdad que llorarán los que la llevan,
+por avanzar tan lentamente.</p>
+    </sp>
+    <sp n="194" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:937-943">
+        <speaker>ANTIGONA</speaker>
+        <p>¡Ay de mí! Esa voz suena muy cerca de
+mi muerte.</p>
+    </sp>
+    <sp n="195" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:937-943">
+        <speaker>CREONTE</speaker>
+        <p>No te aconsejo que <choice><sic>confies</sic><corr>confíes</corr></choice> en que estas
+órdenes han de quedar incumplidas.</p>
+    </sp>
+    <sp n="196" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:937-976">
+        <speaker>ANTIGONA</speaker>
+        <p>¡Oh patria, ciudad de la tebana tierra,
+y dioses de mis abuelos! Ya me llevan; nada espero.
+¡Mirad, príncipes de Tebas [a la princesa única que
+queda], lo que sufro y de qué hombres, por haber practicado
+la piedad!</p>
+    </sp>
+</div>
+
+<div type="textpart" subtype="scene" n="Stasimon_4">
+
+    <sp n="197" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:944-987">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="944" edRef="Storr"/>También sufrió Dánae cambiar la celestial
+luz por las tinieblas en mansión ceñida de bronce, y
+escondida en funerario tálamo está aprisionada. Y en
+verdad que por su nacimiento era ilustre, ¡oh niña,
+niña!, y guardaba en su seno los gérmenes de la lluvia
+de oro de Júpiter. Pero la fatalidad tiene una fuerza
+terrible ni las riquezas, ni Marte, ni las torres, ni las
+negras naves que sufren el embate de las olas la pueden
+evitar. <milestone unit="card" n="955" edRef="Storr"/><choice><sic>Fué</sic><corr>Fue</corr></choice> encadenado también el irascible niño
+hijo de Driante y rey de los edones, quien, por su <choice><sic>indole</sic><corr>índo-
+le</corr></choice> procaz, <choice><sic>fué</sic><corr>fue</corr></choice> encerrado por Dióniso en pétrea cárcel; <pb n="230"/> y así, la terrible y vigorosa violencia de su iracundia
+se desvanece gota a gota; reconoció él que en su furor
+había insultado a un dios con su ultrajante lengua.
+Quería, en verdad, acabar con las endemoniadas bacantes
+y con el báquico fuego, y ultrajaba a las musas
+amantes de las flautas. <milestone unit="card" n="966" edRef="Storr"/>Y junto a las negras rocas de
+los dos mares<note>El Ponto y el Bósforo.</note> están las orillas del Bósforo y la inhospitalaria
+Salmideso de los tracios, en donde Marte, el
+protector de la ciudad, <choice><sic>vió</sic><corr>vio</corr></choice> la execrable herida que a
+los dos hijos de Fineo infirió la fiera madrastra, que les
+arrancó los ojos de las órbitas, cruelmente doloridas,
+sin valerse de espada, sino con sangrientas manos y
+aguda punta de lanzadera; <milestone unit="card" n="977" edRef="Storr"/>y deshaciéndose en <choice><sic>lågrimas</sic><corr>lágri-
+mas</corr></choice> los desdichados, lloraban la desdichada suerte que
+les cupo por nacer del <choice><sic>ilegitimo</sic><corr>ilegítimo</corr></choice> casamiento de su madre;
+y ella era de la raza de los antiguos Erectidas, y
+se había criado en los lejanos antros, en medio de las
+tempestuosas tormentas de su padre Bóreas, que, <choice><sic>rápido</sic><corr>rápi-
+do</corr></choice> como un corcel, corría a pie firme sobre el helado
+mar, pues era hijo de un dios. Pero sobre ella estaban
+las Parcas de larga vida, ¡oh hija!</p>
+    </sp>
+</div>
+
+<div type="textpart" subtype="scene" n="Epeisodion_5">
+
+    <sp n="198" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:988-990">
+        <speaker>TIRESIAS</speaker>
+        <p><milestone unit="card" n="988" edRef="Storr"/>Señores de Tebas: venimos dos en compañía
+con los ojos de uno solo; pues los ciegos, para
+caminar, necesitamos de un <choice><sic>guia</sic><corr>guía</corr></choice>.</p>
+    </sp>
+    <sp n="199" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:991-991">
+        <speaker>CREONTE</speaker>
+        <p>¿Qué hay de nuevo, anciano Tiresias?</p>
+    </sp>
+    <sp n="200" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:992-992">
+        <speaker>TIRESIAS</speaker>
+        <p>Yo te lo diré y tú obedece al adivino.</p>
+    </sp>
+    <sp n="201" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:993-993">
+        <speaker>CREONTE</speaker>
+        <p>Nunca, hasta hoy, me he apartado de <choice><sic>tūs</sic><corr>tus</corr></choice>
+consejos.</p>
+    </sp>
+    <sp n="202" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:994-994">
+        <speaker>TIRESIAS</speaker>
+        <p>Por eso rectamente has gobernado la
+ciudad.</p>
+    </sp>
+    <sp n="203" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:995-995">
+        <speaker>CREONTE</speaker>
+        <p>Puedo atestiguar que me has dado útiles
+consejos.</p>
+    </sp>
+
+    <pb n="231"/>
+
+    <sp n="204" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:996-996">
+        <speaker>TIRESIAS</speaker>
+        <p>Piensa que ahora caminas sobre el filo
+de una navaja.</p>
+    </sp>
+    <sp n="205" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:997-997">
+        <speaker>CREONTE</speaker>
+        <p>¿Qué sucede? ¡Cómo me horrorizan tus
+palabras!</p>
+    </sp>
+    <sp n="206" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:998-1032">
+        <speaker>TIRESIAS</speaker>
+        <p>Lo sabrás <choice><sic>asi</sic><corr>así</corr></choice> que oigas los pronósticos
+de mi arte; pues al tomar asiento en el antiguo sitial
+de mis agoreras observaciones, donde tengo la estación
+de toda suerte de <choice><sic>aligeros</sic><corr>alígeros</corr></choice>, <choice><sic>oi</sic><corr>oí</corr></choice> desconocidos gritos de
+aves que graznaban con infausta y extraña furia, y
+comprendí que se desgarraban unas a otras con sus ensangrentadas
+garras, porque el ruido de su aleteo no
+era equívoco. En seguida, lleno de temor, quise hacer
+la prueba en las ofrendas que tenía en los altares, del
+todo encendidos. Pero el fuego no sacaba llama de las
+<choice><sic>victimas</sic><corr>víctimas</corr></choice>, sino que la grasa derretida de los muslos se
+<choice><sic>fundia</sic><corr>fundía</corr></choice> sobre la ceniza y humeaba y chisporroteaba; la
+hiel se disipaba en vapor, y de los muslos, destilando
+la grasa que los cubría, quedaron los huesos. Tales son
+los presagios funestos de estos misteriosos sacrificios
+que he sabido por este niño; pues él me <choice><sic>guia</sic><corr>guía</corr></choice> a mí, así
+como yo <choice><sic>guio</sic><corr>guío</corr></choice> a los demás. Y esto lo sufre la ciudad por
+causa de tu determinación; porque nuestros altares y
+hogares sagrados han sido invadidos todos por las aves
+y los perros que se han saciado en el cadáver del infeliz
+hijo de Edipo. Por esto los dioses no aceptan de nosotros
+ni las plegarias de los sacrificios ni la llama de
+los muslos de las <choice><sic>victimas</sic><corr>víctimas</corr></choice>; ni ave alguna deja oír gritos
+de buen agüero, porque se han saciado en la pringue
+de la sangre corrupta de un cadáver. Por esto,
+hijo, reflexiona, ya que común a todos los hombres es
+el errar; pero cuando el hombre yerra no es necio ni
+infeliz si, reconociendo su error, se enmienda y no es
+terco; que la terquedad acusa ignorancia. Aplácate,
+pues, ante el difunto y no aguijonees a un cadáver. </p>
+    </sp>
+
+    <pb n="232"/>
+
+    <sp n="207" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:998-1032">
+        <speaker>TIRESIAS</speaker>
+        <p>¿Qué valor es ensañarse en un muerto? Llevado de mis
+buenos sentimientos para contigo, te aconsejo bien; y el
+hacer caso del que bien <choice><sic>àconseja</sic><corr>aconseja</corr></choice>, es cosa muy grata si
+el consejo es provechoso.</p>
+    </sp>
+    <sp n="208" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1033-1047">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1033" edRef="Storr"/>¡Oh anciano! Todos, como arqueros al
+blanco, disparáis contra mí; y ni siquiera he quedado
+libre de tu arte adivinatorio, porque he sido vendido
+y traicionado por mis parientes hace ya tiempo; lucraos,
+comprad el electro de Sardes si queréis, y el oro de la
+India; pero a ése no enterraréis en sepultura: ni aunque
+las águilas de Júpiter, arrebatándolo, se lo quisieran
+llevar para pasto al trono del mismo dios, ni aun
+así — sin temor ninguno de cometer sacrilegio-permitiré
+yo que sepulten a ése; pues bien sé que amancillar
+a los dioses no puede ningún mortal. Y los hombres
+más hábiles, ¡oh viejo Tiresias!, suelen caer en vergonzosas
+caídas cuando exponen bellamente reprobables
+discursos, sólo por afán de lucro.</p>
+    </sp>
+    <sp n="209" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1048-1048a">
+        <speaker>TIRESIAS</speaker>
+        <p>¡Huy! ¿Acaso sabe algún hombre, acaso
+piensa...</p>
+    </sp>
+    <sp n="210" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1049-1049">
+        <speaker>CREONTE</speaker>
+        <p>¿Qué...?</p>
+    </sp>
+    <sp n="211" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1050-1050">
+        <speaker>TIRESIAS</speaker>
+        <p>cuánto más vale el buen consejo que las
+riquezas?</p>
+    </sp>
+    <sp n="212" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1051-1051">
+        <speaker>CREONTE</speaker>
+        <p>Tanto, que yo creo que la necedad es el
+mayor de los males.</p>
+    </sp>
+    <sp n="213" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1052-1052">
+        <speaker>TIRESIAS</speaker>
+        <p>De ese mal, no obstante, estás tú lleno.</p>
+    </sp>
+    <sp n="214" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1053-1053">
+        <speaker>CREONTE</speaker>
+        <p>No quiero a un adivino, aunque me injurie,
+injuriar.</p>
+    </sp>
+    <sp n="215" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1054-1054">
+        <speaker>TIRESIAS</speaker>
+        <p>Pues eso haces al decir que mis adivinaciones
+son falsas.</p>
+    </sp>
+    <sp n="216" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1055-1055">
+        <speaker>CREONTE</speaker>
+        <p>Porque toda la raza de los adivinos es
+amiga del dinero.</p>
+    </sp>
+    <sp n="217" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1056-1056">
+        <speaker>TIRESIAS</speaker>
+        <p>Y la de los tiranos desea enriquecerse
+torpemente.</p>
+    </sp>
+
+    <pb n="233"/>
+
+    <sp n="218" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1057-1057">
+        <speaker>CREONTE</speaker>
+        <p>¿No sabes que es tu soberano contra quien
+estás diciendo lo que dices?</p>
+    </sp>
+    <sp n="219" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1058-1058">
+        <speaker>TIRESIAS</speaker>
+        <p>Lo sé; pues por mí posees esta ciudad,
+que salvaste.</p>
+    </sp>
+    <sp n="220" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1059-1059">
+        <speaker>CREONTE</speaker>
+        <p>Tú eres hábil adivino, pero te gusta la
+injusticia.</p>
+    </sp>
+    <sp n="221" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1060-1060">
+        <speaker>TIRESIAS</speaker>
+        <p>Me incitarás a revelar lo que debía quedar
+oculto en mi corazón.</p>
+    </sp>
+    <sp n="222" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1061-1061">
+        <speaker>CREONTE</speaker>
+        <p>Revélalo; pero que no sea el interés quien
+te haga hablar.</p>
+    </sp>
+    <sp n="223" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1062-1062">
+        <speaker>TIRESIAS</speaker>
+        <p>Ahora y antes creo que hablo en interés
+tuyo.</p>
+    </sp>
+    <sp n="224" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1063-1063">
+        <speaker>CREONTE</speaker>
+        <p>Pues sabe que no vas a lograr mi aprobación.</p>
+</sp>
+    <sp n="225" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1064-1090">
+        <speaker>TIRESIAS</speaker>
+        <p><milestone unit="card" n="1064" edRef="Storr"/>Pero tú también has de saber que ya no
+verificará el Sol muchas revoluciones en su lucha con
+la tiniebla, sin que en ellas tú mismo tengas que dar un
+muerto de tus propias entrañas a cambio de esos dos
+cadáveres, de los cuales has echado uno de la luz a las
+tinieblas, encerrando inicuamente a una alma viviente
+en la sepultura; y retienes aquí arriba al otro, privando
+de él a los dioses infernales por tenerlo insepulto y
+sin los debidos honores, en lo cual no tienes tú poder,
+ni tampoco los dioses de aquí arriba; procedes, pues,
+violentamente en todo esto. Por lo cual, las vengativas
+Furias de Plutón y de los dioses, que tras sí llevan
+la ruina, te están acechando para envolverte en males
+iguales <choice><sic>à</sic><corr>a</corr></choice> éstos. Y considera si digo esto por amor
+al dinero. No pasará mucho tiempo sin que oigas en tu
+palacio los lamentos de los hombres y de las mujeres:
+ya se concitan contra ti, como enemigas, todas las ciudades
+en las que los perros o las fieras o algún ave voladora
+hayan depositado en sus aras algunos trozos del
+cadáver, llevando el impuro olor a los altares de la ciu- <pb n="234"/> dad. Ahí tienes, aunque lo sientas, las certeras flechas
+que, cual si fuera arquero enfurecido, lanzo contra tu
+corazón, de las cuales no evitarás el dolor. ¡Oh niño!,
+<choice><sic>guiame</sic><corr>guíame</corr></choice> a casa para que éste descargue su cólera en
+gente más joven, y aprenda a tener la lengua más sosegada
+y sentimientos mejores que los que ahora tiene.</p>
+    </sp>
+    <sp n="226" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1091-1094">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1091" edRef="Storr"/>Ese hombre, ¡oh rey!, se va después de anunciar terribles <choice><sic>profecias</sic><corr>profecías</corr></choice>; y yo sé por experiencia que
+desde que cambié mi negro cabello por este blanco,
+nunca jamás ha dicho mentiras a la ciudad.</p>
+    </sp>
+    <sp n="227" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1095-1097">
+        <speaker>CREONTE</speaker>
+        <p>También lo sé yo, y mi mente se agita
+en un mar de confusiones; porque el ceder es terrible;
+pero si resisto, es posible que mi ira se estrelle en la
+terrible fatalidad.</p>
+    </sp>
+    <sp n="228" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1098-1098">
+        <speaker>CORO</speaker>
+        <p>Buen consejo es menester, Creonte, hijo de
+Meneceo.</p>
+    </sp>
+    <sp n="229" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1099-1099">
+        <speaker>CREONTE</speaker>
+        <p>¿Qué he de hacer, pues? <choice><sic>Dimelo</sic><corr>Dímelo</corr></choice>, que yo
+obedeceré.</p>
+    </sp>
+    <sp n="230" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1100-1101">
+        <speaker>CORO</speaker>
+        <p>Corriendo saca a la muchacha de la subterránea
+prisión, y prepara sepultura para el que yace
+insepulto.</p>
+    </sp>
+    <sp n="231" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1102-1102">
+        <speaker>CREONTE</speaker>
+        <p>¿Y esto lo apruebas tú y crees que debo
+obedecerte?</p>
+    </sp>
+    <sp n="232" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1103-1104">
+        <speaker>CORO</speaker>
+        <p>Cuanto antes, ¡oh rey!; porque el castigo de
+los dioses, con sus ligeros pies, corta los pasos a los
+malaconsejados.</p>
+    </sp>
+    <sp n="233" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1105-1106">
+        <speaker>CREONTE</speaker>
+        <p>¡Ay de mí! <choice><sic>Dificilmente</sic><corr>Difícilmente</corr></choice>, en verdad, y
+contra mi corazón, me decido a hacerlo; pero contra la
+necesidad no se puede luchar con éxito.</p>
+    </sp>
+    <sp n="234" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1107-1107">
+        <speaker>CORO</speaker>
+        <p>Hazlo, pues, corriendo, y no lo encargues a
+otros.</p>
+    </sp>
+    <sp n="235" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1108-1145">
+        <speaker>CREONTE</speaker>
+        <p>Pues así como estoy, me voy a ir. Venid,
+venid, compañeros los que estáis presentes y los ausentes;
+y con hachas en las manos corred hacia el lugar <pb n="235"/> famoso <note>Falta un verso en el original.</note>. Y yo, puesto que mi opinión así ha cambiado,
+y yo mismo la aprisioné, quiero estar presente para
+salvarla; pues temo no sea la mejor resolución el vivir
+observando las leyes establecidas.</p>
+    </sp>
+</div>
+
+<div type="textpart" subtype="scene" n="Stasimon_5">
+
+    <sp n="236" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1115-1152">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1115" edRef="Storr"/>¡Oh dios de muchos nombres, que de la ninfa
+Cadmea eres orgullo, y del altitonante Júpiter hijo;
+que te complaces de vivir en la <choice><sic>inclita</sic><corr>ínclita</corr></choice> Italia y reinas
+en los valles, comunes a todos, de Ceres Eleusinia! ¡Oh
+Baco, que habitas en Tebas, metrópoli de las bacantes,
+junto a la <choice><sic>liquida</sic><corr>líquida</corr></choice> corriente del Ismeno, donde fueron
+sembrados los dientes del feroz dragón! <milestone unit="card" n="1126" edRef="Storr"/>Hacia ti se dirige
+la llama que brilla sobre este monte de dos cimas,
+por donde corren las Coricias ninfas bacantes y la fuente
+de Castalia. Y a ti, las escarpadas alturas de los montes
+de Nisa, cubiertos de hiedra, y la verde falda en que
+abunda la vid, <choice><sic>envian</sic><corr>envían</corr></choice>, resonando los inmortales himnos
+evohé, evohé, a visitar las calles de Tebas, a la cual <milestone unit="card" n="1137" edRef="Storr"/>extraordinariamente
+honras sobre todas las ciudades, con
+tu madre, la herida del rayo. Y ahora que toda nuestra
+ciudad está infestada de violenta pestilencia, ven
+con saludable pie por encima del monte Parnaso y el
+resonante estrecho. <milestone unit="card" n="1146" edRef="Storr"/>¡Oh jefe del coro de los astros que
+respiran fuego, inspector de las nocturnas músicas, niño
+hijo de Júpiter, hazte presente, ¡oh rey!, junto con tus
+compañeras las Tiadas, que enfurecidas celebran en
+coros todas las noches a Baco su señor!</p>
+    </sp>
+</div>
+
+<div type="textpart" subtype="scene" n="Exodos">
+
+    <sp n="237" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1155-1171">
+        <speaker>UN MENSAJERO</speaker>
+        <p><milestone unit="card" n="1155" edRef="Storr"/>¡Vecinos de Tebas y de la mansión
+de Anfión! Nunca más yo admiraré como feliz ni compadeceré
+como desgraciado a ningún hombre mientras
+le dure la vida; porque la suerte ensalza y la suerte
+abate sin cesar al hombre feliz y al hombre desgraciado.
+Y no hay quien adivine lo que le ha de suceder a <pb n="236"/>
+ningún mortal. Porque Creonte era digno de envidia, a
+mi parecer, cuando después de haber libertado de enemigos
+a esta tierra cadmea y apoderarse del mando
+supremo de la región, la gobernaba y vivía lleno de
+alegría por la generosa <choice><sic>indole</sic><corr>índole</corr></choice> de sus hijos. Mas ahora
+se ha desvanecido toda esa dicha; pues cuando el hombre
+llega a perder la <choice><sic>alegria</sic><corr>alegría</corr></choice> y el placer, en mi concepto
+ya no vive, y lo considero como un cadáver animado.
+Amontona, pues, riquezas en tu casa, si te place, y vive
+fastuosamente con el aparato de un tirano; que si con
+todo eso te falta la <choice><sic>alegria</sic><corr>alegría</corr></choice>, todo lo demás, comparado
+con el placer, no lo compraría yo para el hombre por la
+sombra del humo.</p>
+    </sp>
+    <sp n="238" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1172-1172">
+        <speaker>CORO</speaker>
+        <p>¿Qué nueva calamidad de los reyes vienes a
+anunciarnos?</p>
+    </sp>
+
+    <sp n="239" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1173-1173">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Han muerto; y los que viven son, culpables de la muerte.</p>
+    </sp>
+    <sp n="240" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1174-1174">
+        <speaker>CORO</speaker>
+        <p>¿Y quién ha matado? ¿Quién yace muerto? Di.</p>
+    </sp>
+    <sp n="241" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1175-1175">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Hemón ha muerto: con la propia mano se ha herido.</p>
+    </sp>
+    <sp n="242" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1176-1176">
+        <speaker>CORO</speaker>
+        <p>¿Cuál? ¿La del padre o la suya propia?</p>
+    </sp>
+    <sp n="243" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1177-1177">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Él mismo se ha suicidado, rabioso contra su padre por la sentencia de muerte.</p>
+    </sp>
+    <sp n="244" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1178-1178">
+        <speaker>CORO</speaker>
+        <p>– ¡Oh adivino! ¡Cuán cumplidamente diste la <choice><sic>profecia</sic><corr>profecía</corr></choice>!</p>
+    </sp>
+    <sp n="245" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1179-1179">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Y siendo la cosa así, hay que pensar en lo demás.</p>
+    </sp>
+    <sp n="246" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1180-1182">
+        <speaker>CORO</speaker>
+        <p>Y en verdad que veo a la desdichada Eurídice, la esposa de Creonte, que sale de casa; ya sea por haber <choice><sic>oido</sic><corr>oído</corr></choice> algo de su hijo, ya por casualidad.</p>
+    </sp>
+    <sp n="247" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1183-1218">
+        <speaker>EURÍDICE</speaker>
+        <p><milestone unit="card" n="1183" edRef="Storr"/>¡Oh ciudadanos todos! <choice><sic>Oi</sic><corr>Oí</corr></choice> algunas de vuestras palabras cuando iba a salir para llegarme a invocar con mis plegarias a la diosa Minerva. Y me hallaba aflojando la cerradura de la puerta para abrirla, <pb n="237"/> cuando me hirió los oídos el rumor de alguna desgracia de mi familia. Llena de miedo, caí de espaldas sobre mis esclavas y <choice><sic>perdi</sic><corr>perdí</corr></choice> el sentido. Pero cualquiera que fuese vuestra conversación, repetidmela; que no ignoro lo que son las desgracias, para poder escucharlas.</p>
+    </sp>
+    <sp n="248" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1219-1243">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Yo, querida reina, que estuve presente, te contaré la verdad, y no omitiré palabra. ¿Pues para qué te he de sosegar con un relato que luego me ha de hacer aparecer como embustero? Lo mejor, siempre es la verdad. Yo seguía a tu marido acompañándolo hacia la eminencia del paraje donde aun yacía el no llorado cadáver de Polinices despedazado por los perros; y <choice><sic>à</sic><corr>a</corr></choice> éste, después de suplicar a la diosa protectora del tránsito y a Plutón, para que <choice><sic>benevolos</sic><corr>benévolos</corr></choice> aplacaran su ira, lavamos con agua lustral y quemamos sus restos sobre ramas recién cortadas; y habiéndole erigido un elevado túmulo con tierra de la patria, nos fuimos en seguida hacia la gruta que de piedras se había hecho para cámara nupcial de los desposorios de la muchacha con Plutón. Uno de nosotros oye el grito de agudos lamentos que lejanos resonaban en aquella cámara privada de los fúnebres honores, y corriendo, se lo anuncia al amo Creonte. Y cuando éste, que <choice><sic>oia</sic><corr>oía</corr></choice> el confuso clamor de tristes lamentos, llegó más cerca de la tumba, rompiendo en llanto se arrojó con estas dolorosas palabras: «¡Ah infeliz de mí! ¿Será cierto lo que me dice el corazón? ¿Acaso me hallo en el tránsito más desdichado de los pasos de mi vida? Me suena la voz de mi hijo. Pero, ¡siervos!, venid aquí corriendo; y llegados a la tumba, arrancad la piedra que cierra la boca del hueco; y entrando en él, ved si es de Hemón la voz que oigo, o si me engañan los dioses.» <milestone unit="card" n="1219" edRef="Storr"/>Y mira lo que vimos al cumplir las órdenes de nuestro abatido señor en el fondo de la tumba vimos a ella ahorcada en un lazo <pb n="238"/> que, formado con la tela del ceñidor, se había adaptado al cuello; y a él, que <choice><sic>echadó</sic><corr>echado</corr></choice> sobre ella la encerraba en sus brazos, llorando la pérdida de su prometida, que ya <choice><sic>vivia</sic><corr>vivía</corr></choice> en el infierno, y la orden de su padre y su infortunado casamiento. Éste, así que lo <choice><sic>vió</sic><corr>vio</corr></choice>, dando un horrible grito se lanza dentro hacia él, y gimiendo amargamente le dice: «¡Ah infeliz! ¿Qué has hecho? ¿Qué pensamiento ha sido el tuyo? ¿En qué desgracia te vas a perder? Sal de <choice><sic>ahi</sic><corr>ahí</corr></choice>, te lo ruego, <choice><sic>suplicandó</sic><corr>suplicando</corr></choice>.» Pero el muchacho, mirándole con enfurecidos ojos, y escupiéndole a la cara y sin contestarle, tira de su espada de doble filo y erró a su padre, porque éste se <choice><sic>dió</sic><corr>dio</corr></choice> a la fuga. Entonces el infeliz, irritado contra sí mismo como estaba, se inclinó apoyando el costado en la punta de la espada; y en sus teñidos brazos, anhelante aún, se abrazó de la muchacha, enviándole en su estertor rápido chorro de sangre, algunas gotas de la cual enrojecieron las pálidas mejillas de la novia. Y <choice><sic>alli</sic><corr>allí</corr></choice> yace un cadáver sobre otro cadáver, habiendo alcanzado el desdichado el cumplimiento de sus bodas en la mansión de Plutón, y demostrando a los mortales que la imprudencia es para el hombre la mayor de las desgracias.</p>
+    </sp>
+    <sp n="249" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1244-1245">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1244" edRef="Storr"/>¿Qué conjeturas ahora? Esa mujer ha desaparecido sin proferir buena ni mala palabra.</p>
+    </sp>
+    <sp n="250" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1246-1250">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Yo mismo estoy asombrado; pero abrigo la esperanza de que, enterada ella de la muerte del hijo, no creerá que deba llorarlo por las calles de la ciudad; sino que, yéndose a casa, anunciará a las esclavas la desgracia de la familia para que lo lloren; porque no está tan falta de juicio que cometa una atrocidad.</p>
+    </sp>
+    <sp n="251" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1251-1252">
+        <speaker>CORO</speaker>
+        <p>No sé; porque a mí, el demasiado silencio me parece compañero de algo grave, lo mismo que el inmoderado clamor.</p>
+    </sp>
+
+    <pb n="239"/>
+
+    <sp n="252" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1253-1256">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Pues vamos a verlo yéndonos a palacio; no sea que algo reprimido oculte secretamente en su irritado corazón; porque bien dices que el demasiado silencio es cosa grave.</p>
+    </sp>
+    <sp n="253" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1257-1260">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1257" edRef="Storr"/>Pues he <choice><sic>ahi</sic><corr>ahí</corr></choice> al mismo rey, que viene llevando en sus manos la señal evidente, no de ajena culpa, si me es permitido hablar así, sino de su propio pecado.</p>
+    </sp>
+    <sp n="254" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1261-1269">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1261" edRef="Storr"/>¡Oh crueles y mortales pecados de mis desatentados consejos! ¡Oh vosotros que veis al muerto y al matador en una misma familia! ¡Oh infaustas resoluciones <choice><sic>mias</sic><corr>mías</corr></choice>! ¡Oh hijo! ¡Tan joven, y de prematura muerte, ayay, ayay, has muerto! Te has ido por mis funestas resoluciones, no por las tuyas.</p>
+    </sp>
+    <sp n="255" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1270-1270">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1270" edRef="Storr"/>¡Ay!, que tarde parece que reconoces la justicia.</p>
+    </sp>
+    <sp n="256" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1271-1276">
+        <speaker>CREONTE</speaker>
+        <p>¡Ay de mí! La conozco en mi desgracia. Pero en aquel entonces, en verdad, entonces un dios gravemente irritado contra <choice><sic>mi</sic><corr>mí</corr></choice>, me sacudía la cabeza y me lanzó por funestas sendas, ¡ay de mí!, destruyendo mi felicidad, que holló con sus pies. ¡Huy, huy! ¡Oh infructuosos afanes de los mortales!</p>
+    </sp>
+    <sp n="257" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1278-1280">
+        <speaker>EL MENSAJERO</speaker>
+        <p><milestone unit="card" n="1278" edRef="Storr"/>¡Ah, señor! ¡Cómo teniendo y sintiendo la desgracia que llevas en tus manos, tienes otra en casa, que pronto verás!</p>
+    </sp>
+    <sp n="258" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1281-1281">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1281" edRef="Storr"/>¿Qué hay, pues, peor que el mismo mal?</p>
+    </sp>
+    <sp n="259" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1282-1283">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Tu mujer ha muerto; la infeliz, madre amantísima de ese cadáver, se acaba de inferir herida mortal.</p>
+    </sp>
+    <sp n="260" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1284-1292">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1284" edRef="Storr"/>¡Ay, ay, implacable puerto del infierno! ¿Por qué, pues, a mí, por qué me arruinas? ¡Oh tú, que vienes con tan fatales y funestas noticias! ¿Qué es lo que dices? ¡Ayay! A un hombre muerto ya, has rematado. ¿Qué dices, hombre? ¿Esa nueva noticia que me <pb n="240"/> anuncias, ¡ayay, ayay!, es la cruel muerte de mi mujer sobre la de mi hijo?</p>
+    </sp>
+    <sp n="261" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1293-1293">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1293" edRef="Storr"/>Puedes verla, pues no está en el interior de palacio.</p>
+    </sp>
+    <sp n="262" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1294-1300">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1294" edRef="Storr"/>¡Ay de mí! ¡Esta es otra nueva desgracia que veo! ¡Infeliz de mí! ¿Qué otra, pues, qué otra fatalidad me espera? Tengo en brazos a mi hijo, que acaba de morir, y veo enfrente otro cadáver. ¡Infeliz de mí! ¡Ay, ay, madre desdichada! ¡Ay, hijo!</p>
+    </sp>
+    <sp n="263" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1301-1305">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Ella, gravemente herida, <choice><sic>dió</sic><corr>dio</corr></choice> reposo a sus ensombrecidos ojos alrededor del altar después de llorar la gloriosa muerte de su hijo Megareo, que <choice><sic>perdió</sic><corr>perdió</corr></choice> antes, y luego la de éste; y lanzando últimamente maldiciones sobre ti por tus imprudentes determinaciones como asesino de tu hijo.</p>
+    </sp>
+    <sp n="264" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1306-1311">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1306" edRef="Storr"/>¡Ayay, ayay! Estoy pasmado de horror. ¿Por qué no me <choice><sic>matáis</sic><corr>matais</corr></choice> con espada de dos filos? ¡Qué miserable soy! ¡Ayay! ¡Estoy envuelto en fatal calamidad!</p>
+    </sp>
+    <sp n="265" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1306-1313">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Como que fuiste acusado por la difunta de tener tú la culpa de la muerte de ella y de la de aquél.</p>
+    </sp>
+    <sp n="266" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1314-1314">
+        <speaker>CREONTE</speaker>
+        <p>¿Y de qué manera se mató?</p>
+    </sp>
+    <sp n="267" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1314-1316">
+        <speaker>EL MENSAJERO</speaker>
+        <p>Hiriéndose con su propia mano en el corazón, así que supo la <choice><sic>deplorabilisima</sic><corr>deplorabilísima</corr></choice> muerte de su hijo.</p>
+    </sp>
+    <sp n="268" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1317-1325">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1317" edRef="Storr"/>¡Ay de mí! No se impute nada de esto a otro hombre, porque ha sucedido por mi culpa. Pues yo, yo te maté, desdichado, yo; lo digo verdaderamente. ¡Oh siervos!, echadme a toda prisa; echadme fuera de aquí, que ya no soy nada.</p>
+    </sp>
+    <sp n="269" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1326-1327">
+        <speaker>CORO</speaker>
+        <p>Bien nos exhortas, si es que algún bien puede haber en el mal; pues de los males presentes, los más breves son los mejores.</p>
+    </sp>
+
+    <pb n="241"/>
+
+    <sp n="270" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1328-1332">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1328" edRef="Storr"/>¡Venga, venga! ¡Aparezca el último y más deseado de mis infortunios, trayéndome el fin de mis <choice><sic>dias</sic><corr>días</corr></choice>! ¡Venga, venga, para que ya no vea otro sol!</p>
+    </sp>
+    <sp n="271" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1334-1335">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1334" edRef="Storr"/>Esas cosas están por venir. De las presentes conviene que nos preocupemos; pues de las otras, ya cuidarán aquellos que deben cuidarse.</p>
+    </sp>
+    <sp n="272" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1336-1336">
+        <speaker>CREONTE</speaker>
+        <p>Pero lo que deseo es lo que pido en mis súplicas.</p>
+    </sp>
+    <sp n="273" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1337-1338">
+        <speaker>CORO</speaker>
+        <p>Pues no pidas nada; que de la suerte que el destino tenga asignada a los mortales, no hay quien pueda evadirse.</p>
+    </sp>
+    <sp n="274" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1339-1346">
+        <speaker>CREONTE</speaker>
+        <p><milestone unit="card" n="1339" edRef="Storr"/>Echad de aquí a un hombre inútil, que, ¡ay, hijo!, te maté sin querer; y a ésta también. ¡Pobre de mí! No sé hacia qué lado deba inclinarme, porque todo lo que tocan mis manos se vuelve contra mí; sobre mi cabeza descargó intolerable fatalidad.</p>
+    </sp>
+    <sp n="275" corresp="urn:cts:greekLit:tlg0011.tlg002.perseus-grc2:1347-1353">
+        <speaker>CORO</speaker>
+        <p><milestone unit="card" n="1347" edRef="Storr"/>La prudencia es la primera condición para la felicidad; y es menester, en todo lo que a los dioses se refiere, no cometer impiedad; pues las insolentes bravatas que castigan a los soberbios con atroces desgracias, les enseñan a ser prudentes en la vejez.</p>
+    </sp>
+</div>
+            </div>
+        </body>
+    </text>
+</TEI>

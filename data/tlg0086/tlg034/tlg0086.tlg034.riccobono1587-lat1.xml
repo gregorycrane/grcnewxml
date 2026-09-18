@@ -1,0 +1,1284 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="lat">De poetica</title>
+        <author ref="https://viaf.org/viaf/7524651/">Aristotle</author>
+        <respStmt>
+          <resp>Translated into Latin by</resp>
+          <name xml:id="riccobono" ref="https://viaf.org/viaf/64020182/">Antonio Riccobono</name>
+        </respStmt>
+        <respStmt>
+          <resp>Edited in the 1831 collected edition by</resp>
+          <name xml:id="bekker" ref="https://viaf.org/viaf/68999415/">Immanuel Bekker</name>
+        </respStmt>
+        <respStmt>
+          <resp>OCR source</resp>
+          <name xml:id="ocr">User-supplied transcription</name>
+        </respStmt>
+        <respStmt>
+          <resp>TEI encoding and section alignment</resp>
+          <name xml:id="encoder">Codex</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Unpublished electronic transcription</publisher>
+        <pubPlace>New York, NY</pubPlace>
+        <date type="release" when="2026-07-27">2026</date>
+        <idno type="filename">tlg0086.tlg034.riccobono-lat1.xml</idno>
+        <idno type="CTS-URN">urn:cts:greekLit:tlg0086.tlg034.riccobono1587-lat1</idno>
+        <availability>
+          <p>The 1831 source edition and Riccobono's translation are in the public domain. No additional rights are asserted here for the supplied OCR or this structural encoding.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aristotle</author>
+            <title xml:lang="lat">Aristotelis opera. Tomus tertius: Aristoteles Latine interpretibus variis</title>
+            <editor role="editor">Immanuel Bekker</editor>
+            <imprint>
+              <pubPlace>Berolini</pubPlace>
+              <publisher>Apud Georgium Reimerum</publisher>
+              <date type="printing" when="1831">1831</date>
+            </imprint>
+            <biblScope unit="volume">3</biblScope>
+            <biblScope unit="page">742–750</biblScope>
+          </monogr>
+          <note>The Poetics is headed “De poetica. Antonio Riccobono interprete.” The supplied transcription includes printed-volume page markers and Bekker pagination; page furniture and printed line numbers have been removed from the aligned reading text.</note>
+          <ref target="https://commons.wikimedia.org/wiki/File:Aristotelis_opera_(IA_aristotelisopera03arisrich).pdf">Wikimedia Commons scan of volume 3</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>This file converts a user-supplied transcription of Antonio Riccobono's Latin Poetics in Bekker's 1831 volume 3 into TEI XML. It follows the 26-chapter, 381-subchapter hierarchy used in the preceding Segni Poetics project, while retaining Riccobono's source order.</p>
+      </projectDesc>
+      <editorialDecl>
+        <p>OCR readings, historical spelling, punctuation, and embedded Greek are retained. Words divided by a hyphen at the end of a transcription line have been rejoined. Scan-page banners, running headers, printed page numbers, column letters, and printed line numbers have been removed. Unmistakable residual OCR damage identified in a conservative first pass is encoded as choice containing the source reading in sic and a suggested reading in corr. No systematic correction or modernization has been attempted.</p>
+      </editorialDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="section" matchPattern="(\w+)\.(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+          <p>This pointer pattern extracts chapter and section.</p>
+        </cRefPattern>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts chapter.</p>
+        </cRefPattern>
+      </refsDecl>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//div[@subtype='chapter']" use="@n" unit="chapter" delim=":" n="chunk"><citeStructure match="./div[@subtype='subchapter']" use="@n" unit="subchapter" delim="."/></citeStructure></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="lat">Latin</language>
+        <language ident="grc">Greek</language>
+        <language ident="eng">English</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-07-27" who="#encoder">Converted the supplied OCR to chapter-and-section TEI XML and aligned it to the 26-chapter, 381-section hierarchy of the preceding Aristotle Poetics work.</change>
+      <change when="2026-07-27" who="#encoder">Encoded unmistakable malformed OCR readings and residual line-break artifacts as choice/sic/corr, retaining the source reading and supplying a suggested correction.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="lat">
+    <body xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono1587-lat1">
+      <div type="translation" n="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1" xml:lang="lat">
+        <div type="textpart" subtype="chapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.1">
+            <p>De poetica et ipsa et formis ipsius, quam vim habeat unaquaeque, et quomodo oporteat componi fabulas, si habitura sit se recte poesis, praeterea vero ex quot et qualibus constet partibus, similiter autem et de aliis quae eiusdem methodi sunt, dicamus incipientes secundum <choice><sic>naturain</sic><corr>naturam</corr></choice> primum a primis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.2">
+            <p>iam vero epopoeia et tragoediae poësis, praeterea comoedia et dithyrambopoëtica, et auleticae maxima pars et citharisticae, omnes sunt imitatio in universum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.3">
+            <p>differunt autem inter se tribus: aut enim quod genere diversis imitantur, aut quod diversa, aut quod diverso et non eodem modo.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.4">
+            <p>ut enim et coloribus et figuris multa imitantur aliqui effigiem exprimentes, partim quidem per artem partim vero per consuetudinem, alii autem utrisque, sic in dictis artibus omnes faciunt imitationem in numero et oratione et harmonia, atque his separatim aut mixtis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.5">
+            <p>ut harmonia quidem et numero utuntur solum et auletica et citharistica, et si quae aliae sunt tales potestate, ut fistularum. ipso autem numero imitantur sine harmonia,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.6">
+            <p>qui sunt inter saltatores: etenim isti per figuratos numeros imitantur et mores et perturbationes et actiones. epopoeia vero solum sermonibus nudis vel metris,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.7">
+            <p>et his sive mixtis inter se sive uno aliquo genere utens metrorum, qualis fuit usque adhuc.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.8">
+            <p>non enim rem communem possemus nominare Sophronis et Xenarchi mimos et Socratis sermones,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.9">
+            <p>neque si quis per trimetra vel elegos vel alia quaedam talia conficeret imitationem;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.10">
+            <p>nisi quod homines coniungentes cum metro ipsum fingere, alios quidem elegorum fictores alios vero epicorum fictores nominant, non secundum imitationem sed communiter secundum metrum appellantes poëtas.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.11">
+            <p>etenim si medicinae aut musicae aliquid per metra proferunt, sic appellare consueverunt: nihil autem commune est Homero et Empedocli praeter metrum; quare illum quidem poëtam iustum est appellare, hunc vero physiologum magis quam poëtam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.12">
+            <p>similiter vero etiam si quis omnia metra miscens non faciat imitationem, quemadmodum Chaeremon fecit Centaurum, mixtam rhapsodiam ex omnibus metris, iam poëta non est appellandus. atque haec quidem hunc in modum explicata sint.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.13">
+            <p>sunt autem aliquae quae omnibus utuntur iis quae dicta sunt, nempe numero et concentu et metro, sicut dithyrambicorum poësis et nomorum. praeterea tragoedia et comoedia. differunt vero, quod illae quidem simul omnibus, hae vero secundum partem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:1" xml:id="riccobono-1.14">
+            <p>atque has quidem dico differentias artium, in quibus faciunt imitationem.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:2" xml:id="riccobono-2.1">
+            <p>Quoniam autem ii qui imitantur agentes imitantur, necesse vero est eos aut bonos <choice><sic>ant</sic><corr>aut</corr></choice> malos esse (mores enim ferme hos consequuntur solos: nam vitiositate et virtute in moribus differunt omnes), aut meliores quam secundum nos aut peiores necesse est imitari, ut ex pictoribus Polygnotus quidem meliores,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:2" xml:id="riccobono-2.2">
+            <p>Pauson vero deteriores, at Dionysius similes pingebat. manifestum autem est quod et ex iis quae dictae sunt imitationibus unaquaeque habebit has differentias,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:2" xml:id="riccobono-2.3">
+            <p>et erit diversa eo quod diversa imitabitur. nam in saltatione et auletica et citharistica possunt esse huiusmodi <choice><sic>dissimi- litudines</sic><corr>dissimilitudines</corr></choice>.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:2" xml:id="riccobono-2.4">
+            <p>et circa sermones et nuda metra, ut Homerus quidem meliores,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:2" xml:id="riccobono-2.5">
+            <p>Cleophon vero similes: at Hegemon Thasius, qui parodias, et Nicocharis, qui Deiliada, peiores.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:2" xml:id="riccobono-2.6">
+            <p>similiter vero etiam circa dithyrambos et circa nomos, ut qui fecit Cyclopes Timotheus et Philoxenus, posset aliquis imitari.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:2" xml:id="riccobono-2.7">
+            <p>in eadem vero differentia et tragoedia et comoedia separata est: haec enim peiores, illa meliores imitari vult quam ii qui nunc sint.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:3" xml:id="riccobono-3.1">
+            <p>Praeterea vero in his tertia differentia est, ut singula haec imitaretur aliquis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:3" xml:id="riccobono-3.2">
+            <p>etenim in iisdem et eadem imitari licet interdum quidem exponentem vel aliud quippiam factum, ut Homerus facit, vel ut eundem et non se immutantem; vel omnes ut agentes et molientes aliquid, quos imitantur. iam vero in tribus his differentiisimitatio est, ut dicebamus in principio, tum in quibus, tum quae, tum quomodo.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:3" xml:id="riccobono-3.3">
+            <p>quare in una quadam parte idem erit imitator cum Homero Sophocles, imitantur enim ambo bonos, in altera vero cum Aristophane, molientes enim aliquid et agentes ambo imitantur.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:3" xml:id="riccobono-3.4">
+            <p>quamobrem sibi vindicant eo tragoediam et comoediam Dorienses, comoediam quidem Megarenses, et qui hic sunt, tanquam in ipsorum democratia natam, et qui sunt ex Sicilia:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:3" xml:id="riccobono-3.5">
+            <p>inde enim Epicharmus poëta multo prius quam Chonnides et Magnetes. et tragoediam aliqui eorum qui sunt in Peloponneso, ducentes a nominibus signum: hi enim comas pagos appellare se dicunt, Athenienses vero demos, quasi comoedi non a xwμdev dicti sint, sed nominati ab errore per pagos ex urbe.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:3" xml:id="riccobono-3.6">
+            <p>et facere ipsi quidem ostendunt se dicere Spav, Athenienses vero páτTv. ac de differentiis quidem imitationis,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:3" xml:id="riccobono-3.7">
+            <p>et quot et quae sint, tam multa dicta sint.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.1">
+            <p>Videntur autem genuisse in universum poëticam causae duae, atque ipsae naturales. nam imitari insitum hominibus a pueris est,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.2">
+            <p>et hac re differunt ipsi ab aliis animalibus, quod homo est animal maxime accommodatum ad imitandum. et perceptiones faciunt primas per imitationem. et gaudent omnes rebus imitatione expressis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.3">
+            <p>signum autem huius rei est id quod contingit in operibus opificum: quae enim ipsa moleste cernimus, horum imagines exactissime expressas dum spectamus <choice><sic>gandemus</sic><corr>gaudemus</corr></choice>, ut ferarum formas abiectissimarum et cadaverum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.4">
+            <p>ac signum huius rei etiam est, quod discere non solum philosophis iucundissimum est, sed etiam aliis similiter, qui tamen parum eius participes sunt: ob id enim gaudent cernentes imagines, quia contingit spectantes discere et ratiocinari quid unumquodque sit,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.5">
+            <p>ut hunc illum esse; quoniam nisi contigerit eum prius vidisse, non propter id quod imitatione expressum est,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.6">
+            <p>efficiet voluptatem, sed propter artificium aut colorem aut talem aliquam causam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.7">
+            <p>verum cum secundum naturam sit in nobis ipsum imitari et harmonia et numerus (nam metra particulas esse numerorum manifestum est), a principio, qui natura apti erant ad haec ipsa maxime, paulatim promoventes et genuerunt poësim ex iis quae subito dicebantur.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.8">
+            <p>divisa autem est secundum proprios mores poësis:: nam grandiores honestas imitabantur actiones ac huiusmodi hominum, humiliores vero malorum, facientes primum vituperationes, quemadmodum alteri hymnos et encomia.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.9">
+            <p>atque eorum quidem qui ante Homerum fuerunt, nullius possumus nominare poëma tale: verisimile autem est multos esse.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.10">
+            <p>at ab Homero exorsis licet, ut est illius Margites et talia. quibus secundum id quod conveniebat, iambicum accessit metrum. itaque et iambicum vocatur nunc, quod et in hoc metro convicia inter se exercebant;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.11">
+            <p>et fuerunt ex priscis alii quidem heroicorum, alii vero iamborum poëtae.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.12">
+            <p>quemadmodum autem et in gravibus maxime poëta fuit Homerus (solus enim fuit non solum quia bene, sed etiam quia imitationes dramatice fecit), sic et comoediae figuras primus submonstravit, non vituperationem sed ridiculum dramate complectens: nam Margites propor tionem habet, ut Hias et Odyssea ad tragoedias, sic et ipse ad comoedias.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.13">
+            <p>cum autem apparuisset tragoedia et comoedia, qui ad utranque poësim ferebantur secundum propriam naturam, partim quidem pro iambicis comici facti sunt, partim vero pro epicis tragici, quia maiores et honoratiores figurae essent hae quam illae. ac considerare quidem utrum sufficienter se habeat iam tragoedia in formis ipsius necne, tum si res ipsa per se iudicetur, tum ad theatra, alia ratio est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.14">
+            <p>nata igitur est a principio ex tempore et ipsa et comoedia, et una quidem ab iis qui dithyrambum canebant, altera vero ab iis qui phallica, quae propterea etiam nunc in multis civitatibus manent legibus constituta, paulatim aucta est, producentibus quantum ipsius factum est manifestum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.15">
+            <p>et multas mutationes cum habuisset tragoedia, conquievit, quia consecuta est suam ipsius naturam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.16">
+            <p>ac histrionum multitudinem ex uno ad duos primus Aeschylus produxit, et ea quae ad chorum pertinent minuit, et orationem primarum partium instituit; tres autem, et scenae ornamentum, Sophocles.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.17">
+            <p>praeterea magnitudo ex parvis fabulis et locatione ridicula, propterea quod ex Satyrico mutata est, tarde granditatem habuit. ac metrum ex tetrametro iambicum factum est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.18">
+            <p>nam primum tetrametro utebantur propterea quod Satyrica et magis saltatoria erat poësis. locutione autem nata, ipsa natura proprium metrum invenit. maxime vero sermoni accommodatum omnium metrorum iambicum est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.19">
+            <p>signumque huius rei est, quod plurima iambica proferimus in collocutione, quam in vicem habemus, hexametra vero raro,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.20">
+            <p>et exeuntes ex accommodata sermoni harmonia. praeterea vero episodiorum multitudines, et alia ut singula se habent, ornata esse dicuntur. ac de his quidem tam multa a nobis dicta sint:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:4" xml:id="riccobono-4.21">
+            <p>plura enim fortasse dicenda essent, si singula essent explicanda.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.1">
+            <p>Comoedia vero est, ut dicebamus, imitatio peiorum. at non secundum omne vitium: sed turpitudinis est particula ridiculum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.2">
+            <p>etenim ridiculum est erratum quoddam, et turpitudo sine dolore, et non habent vim interimendi, ut statim ridicula facies turpis ac distorta sine dolore.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.3">
+            <p>ac mutationes quidem tragoediae, et per quos factae sint, non latent: comoedia vero, quia in ipsa a principio positum studium non est, latuit. etenim chorum comoedorum sero magistratus dedit: sed illi voluntarii erant.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.4">
+            <p>atque cum figuras quasdam iam ipsa nacta esset, pauci ipsius poëtae commemorantur. quis autem personas assignaverit aut prologos aut multitudines histrio num, et quaecunque talia, ignorantur.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.5">
+            <p>at fabulas facere Epicharmus et Phormis coeperunt. ac ex Sicilia quidem a principio venit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.6">
+            <p>eorum vero qui Athenis orti sunt, Crates primus, cum iambicam formam abiecisset, coepit in universum facere sermones vel fabulas.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.7">
+            <p>epopoeia igitur tragoediam usque ad solum hunc terminum <choice><sic>conse- cuta</sic><corr>consecuta</corr></choice> est, quod sit cum sermone imitatio bonorum. in eo autem differunt, quod illa quidem metrum simplex habet, et enarratio est, praeterea longa est:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.8">
+            <p>haec vero quam maxime conatur <choice><sic>suh</sic><corr>sub</corr></choice> uno solis ambitu esse aut paulisper variare, cum epopoeia indefinita sit tempore.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.9">
+            <p>atque in hoc differt, etiam si primis temporibus id simi liter faciebant, tum in tragoediis tum in epicis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.10">
+            <p>partes <choice><sic>antem</sic><corr>autem</corr></choice> quaedam eaedem sunt, quaedam propriae tragoediae.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:5" xml:id="riccobono-5.11">
+            <p>quare quicunque cognitionem habuerit tragoediae bonae et malae, habuerit etiam epicorum: quae enim epopoeia habet, insunt in tragoedia, quae vero ipsa, non omnino in epopoeia.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.1">
+            <p>Ac de imitatione quidem quae fit hexametro, et de comoedia posterius dicemus. de tragoedia vero dicamus, assumentes ipsius definitionem, quae ex iis quae dicta sunt nascitur, unde patet ipsius natura.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.2">
+            <p>est igitur tragoedia imitatio actionis probae et perfectae, magnitudinem habentis, suavi sermone, separatim singulis formis in partibus agentibus, et non per enarrationem, sed per misericordiam et metum inducens talium perturbationum purgationem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.3">
+            <p>iam dico suavem sermonem habentem numerum et harmoniam et melodiam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.4">
+            <p>illud autem separatim formis" propterea quod quaedam solum efficiuntur per metra, et rursus alia per melodiam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.5">
+            <p>quoniam autem agentes faciunt imitationem, primum quidem ex necessitate erit aliqua pars tragoediae apparatus, deinde melopoeia et dictio: in his enim faciunt imitationem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.6">
+            <p>ac dico dictionem ipsam metrorum <choice><sic>com-. positionem</sic><corr>compositionem</corr></choice>, melopoeiam vero id ipsum quod manifestam omnibus vim habet.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.7">
+            <p>et quoniam actionis est imitatio, atque agitur a quibusdam agentibus, quos necesse est cuiusdam modi esse et secundum mores et sententiam (nam propter haec etiam actiones dicimus esse cuiusdam modi),</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.8">
+            <p>naturaliter sunt duae causae actionum, sententia et mores. et secundum has tum fortunati tum infortunati sunt omnes. est autem actionis quidem fabula imitatio: dico enim fabulam hanc rerum compositionem, mores vero secundum quos cuiusdam modi esse dicimus agentes, at sententiam ea omnia in quibus dicentes demonstrant aliquid vel etiam enuntiant mentem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.9">
+            <p>necesse igitur est omnis tragoediae partes esse sex, secundum quas cuiusdammodi est tragoedia;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.10">
+            <p>atque hae sunt fabula, mores et dictio et sententia et apparatus et melopoeia.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.11">
+            <p>quibus enim imitantur, duae partes sunt, quomodo imitantur, una, quas imitantur, tres. etenim apparatus habet omne et mores et fabulam et dictionem et melos et sententiam similiter.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.12">
+            <p>maximum vero horum est rerum compositio. tragoedia enim imitatio est non hominum sed actionum et vitae et felicitatis et infelicitatis. etenim felicitas in actione est, et finis actio quaedam est, non qualitas.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.13">
+            <p>ac sunt quidem secundum mores cuiusdam modi, at secundum actiones felices vel contra. non igitur agunt ut imitentur mores, sed propter actiones mores complectuntur.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.14">
+            <p>quare res et fabula finis est tragoediae,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.15">
+            <p>ac finis maximum omnium est. nam sine actione non fieret tragoedia, at sine moribus fieret. recentium enim plurimorum tragoediae sine moribus sunt; et omnino poëtae multi tales, sicut et ex pictoribus Zeuxis ad Polygnotum se habet:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.16">
+            <p>nam Polygnotus bonus morum descriptor, at Zeuxidis pictura prorsus caret moribus. praeterea si quis ordine posuerit collocutiones moratas et dictiones et sententias benefactas, non efficiet quod est tragoediae opus: sed multo magis efficiet tragoedia, quae his quidem deterioribus usa sit, at habeat fabulam et compositionem rerum bene factam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.17">
+            <p>ad haec maximae res quibus capit animos tragoedia, sunt fabulae partes, nempe peripetiae et agnitiones.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.18">
+            <p>praeterea signum est, quod et qui conantur rem poëticam agere, prius possunt dictione et moribus res exquisite tractare quam res componere, ut primi poetae ferme omnes.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.19">
+            <p>ac principium quidem et tanquam animus tragoediae fabula est, secundum autem mores.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.20">
+            <p>assimile enim est in pictura: nam si quis illineret pulcherrimis coloribus fusim, non similiter delectaret ac si quis albo describeret imaginem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.21">
+            <p>est autem imitatio actionis, et per hanc maxime agentium.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.22">
+            <p>tertium vero sententia. id autem est dicere posse insita et convenientia,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.23">
+            <p>quod in orationibus politicae et rhetoricae opus est:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="24" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.24">
+            <p>nam prisci politice introducebant dicentes, qui vero nunc sunt, rhetorice. iam mores sunt tale quiddam, quod aperit praeelectionem, qualis sit in illis in quibus non est manifestum utrum dicens eligat aut fugiat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="25" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.25">
+            <p>sententia vero est in illis in quibus demonstrant aliquid aut esse aut non esse, aut enuntiant aliquid in universum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="26" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.26">
+            <p>quartum est sermonum dictio. ac voco, quemadmodum prius dictum est, dictionem per verba interpretationem, quod et in metris et in orationibus eandem vim habet.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="27" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.27">
+            <p>reliquarum vero quinque melopoeia est maximum condimentorum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="28" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:6" xml:id="riccobono-6.28">
+            <p>et apparatus allicit quidem animos, sed maxime est artis expers et minime proprius poeticae: nam tragoediae vis et sine certamine et histrionibus est. praeterea o vero potentior est circa fabricam apparatuum ars illius qui scenam conficit quam ars poetarum.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.1">
+            <p>Explicatis autem his, dicamus deinceps qualem esse oporteat rerum compositionem, quoniam iam hoc et primum et maximum tragoediae est. positum autem est a nobis perfectae atque totius actionis esse imitationem, habentis aliquam magnitudinem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.2">
+            <p>totum autem est habens principium et medium et finem. ac principium est, quod ipsum ex necessitate post aliud non est, post illud vero aliud naturaliter est aut fit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.3">
+            <p>finis contrarium, quod ipsum post so aliud naturaliter est, aut ex necessitate aut plerunque, post hoc autem aliud nihil.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.4">
+            <p>medium, quod et ipsum post aliud est et post illud aliud. oportet igitur bene compositas fabulas neque unde libet incipere, neque ubi libet finire, sed uti dictis formis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.5">
+            <p>praeterea vero, quoniam pulchrum et animal et omnem rem, quae ex quibusdam composita est, non solum haec ordinata habere oportet, verum etiam esse magnam, sed non quomodo libet:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.6">
+            <p>nam pulchrum in magnitudine et ordine consistit;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.7">
+            <p>unde neque omnino parvum animal esse potest pulchrum (confunditur enim spectatio, quae prope insensibili tem pore fiat) neque omnino magnum (non enim simul spectatio fit,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.8">
+            <p>sed perit spectantibus unum et totum ex spectatione, ut si decem milium stadiorum sit animal), propterea oportet, quemadmodum in corporibus et in animalibus inesse quidem magnitudinem, sed eam quae facile conspici possit,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.9">
+            <p>sic et in fabulis inveniri quidem longitudinem, sed eam quae facile retineri memoria possit. longitudinis autem terminus ad contentiones et sensum non artis est:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.10">
+            <p>si enim termino opus esset causa tragoedias recitandi, ad clepsydras contenderent, quemadmodum quondam et aliis temporibus factum esse affirmant.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.11">
+            <p>terminus autem rei secundum ipsam naturam semper quidem, qui maior est, quatenus simul patet, pulchrior est secundum magnitudinem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:7" xml:id="riccobono-7.12">
+            <p>verum ut simpliciter re definita dicam, in quanta magnitudine secundum verisimile et necessarium deinceps nascentibus rebus contingit in prosperam fortunam ex adversa aut ex prospera in adversam mutari, sufficiens terminus est magnitudinis.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:8" xml:id="riccobono-8.1">
+            <p>Fabula autem est una non ut aliqui putant, si circa unum sit: multa enim et infinita genere contingunt, ex quibus nonnullis nihil est unum. sed et actiones unius multae sunt, ex quibus nulla actio est una.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:8" xml:id="riccobono-8.2">
+            <p>quare omnes videntur peccare, quicunque ex poetis Herculeidem Theseidem et talia poemata fecerunt: putant enim, quoniam unus erat Hercules, unam etiam fabulam convenire.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:8" xml:id="riccobono-8.3">
+            <p>at Homerus ut et in aliis excellit, sic etiam hoc videtur pulchre vidisse, sive propter artem sive propter naturam. Odysseam enim faciens non descripsit omnia quaecunque ipsi contigerunt, ut eum accepisse vulnus in Parnasso, et simulasse insaniam in coitione exercitus, ex quibus non erat necessarium, altero facto, alterum factum esse; sed circa unam actionem, qualem dicimus esse Odysseam, invasit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:8" xml:id="riccobono-8.4">
+            <p>similiter et Iliadem. oportet igitur, ut in aliis imitatricibus una imitatio unius est, sic et fabulam, quoniam actionis imitatio est, et unius esse et huius totius, et partes constare rerum sić ut transposita aliqua aut ablata diversum reddatur et moveatur totum: quod enim cum adest aut non adest, nihil facit quod appareat, id ne pars quidem est.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.1">
+            <p>Manifestum autem est ex iis quae dicta sunt, non esse poetae munus facta dicere, sed qualia fieri debent et qua fieri possunt, secundum verisimile vel necessarium.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.2">
+            <p>nam historicus et poeta non a eo quod aut cum metro dicant aut sine metro, inter se "differunt: liceret enim, quae Herodoti, in metris ponere, et nihilo minus esset historia quaedam cum metro quam sine metris. sed in hoc est differentia, quod unus quidem facta dicit, alter vero qualia fieri debent.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.3">
+            <p>quamobrem et res magis philosophica et melior poësis est quam historia: nam poësis magis universalia, historia magis singularia dicit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.4">
+            <p>est autem universale, cum exponitur quemadmodum tali talia contingat dicere aut facere secundum verisimile aut necessarium; id quod spectat poesis, nomina imponens. singulare vero, quid Alcibiades fecerit aut passus sit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.5">
+            <p>ac in comoedia quidem iam hoc manifestum factum est: nam cum constituerint fabulam per verisimilia, sic quaelibet nomina imponunt, et non ut iambici circa aliquem singularem faciunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.6">
+            <p>in tragoedia autem factis nominibus haerent. causa vero est, quod persuasibile est possibile; ac non facta quidem non credimus esse possibilia, facta vero manifestum est possibilia esse: non enim facta essent, si impossibilia essent.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.7">
+            <p>nec tamen non in aliquibus tragoediis unum aut duo sunt ex notis nominibus, alia vero ficta. in quibusdam autem nullum, ut in Agathonis Flore: similiter enim in hoc et res et nomina ficta sunt, et nihilo minus delectat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.8">
+            <p>quare non omnino quaerendum est ut traditis fabulis, in quibus tragoediae versantur, haereamus: nam est ridiculum hoc quaerere, quoniam et nota paucis nota sunt, et tamen delectant omnes.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.9">
+            <p>manifestum igitur ex his poetam esse oportere magis fabularum effectorem quam metrorum, quatenus poeta secundum imitationem est, imitatur autem actiones.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.10">
+            <p>quamvis igitur contigerit facta pangere, nihilo minus poeta est. factorum enim nonnulla nihil prohibet talia esse qualia verisimile est fieri et possibilia esse,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.11">
+            <p>secundum quod ille ipsorum poeta est. simplicium autem fabularum et actionum episodicae sunt pessimae. dico episodicam fabulam, in qua episodia altera post altera esse neque verisimile neque necesse est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.12">
+            <p>ac tales efficiuntur a malis quidem poetis propter ipsos, a bonis vero propter histriones: certamina enim facientes, et supra facultatem fabulam extendentes, distorquere <choice><sic>sae- penumero</sic><corr>saepenumero</corr></choice> coguntur quod ex ordine est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.13">
+            <p>quoniam autem non solum est perfectae actionis imitatio sed etiam terribilium et miserabilium, atque haec fiunt maxime talia, et magis, cum fiant praeter opinionem inter se (nam admirabile sic habebunt magis quam si a casu et fortuna,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.14">
+            <p>quoniam et eorum quae a fortuna sunt, haec maxime admirabilia videntur quaecunque tanquam ex industria apparent facta fuisse, sicuti statua Mityi Argis interfecit eum qui fuit causa interitus Mityi, cum in eius caput incidisset, dum ipse spectaret:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:9" xml:id="riccobono-9.15">
+            <p>videntur enim talia non temere facta esse), iccirco necesse est tales fabulas pulchriores esse.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:10" xml:id="riccobono-10.1">
+            <p>Ac fabularum aliae simplices sunt aliae implexae. etenim actiones quarum imitationes fabulae sunt, ne aliud quaeramus, sunt tales.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:10" xml:id="riccobono-10.2">
+            <p>appello simplicem actionem, qua facta, ut definitum est, continua et una, transitus fit sine peripetia vel agnitione.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:10" xml:id="riccobono-10.3">
+            <p>implexa est, ex qua cum agnitione aut peripetia aut ambabus transitus fit haec autem oportet fieri ex ipsa constitutione fabulae,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:10" xml:id="riccobono-10.4">
+            <p>ut ex anteactis <choice><sic>ant</sic><corr>aut</corr></choice> ex necessitate aut secundum verisimile haec fieri contingat. differt enim multum utrum haec propter haec an post haec fiant.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.1">
+            <p>Est vero peripetia in contrarium eorum quae aguntur mutatio, ut dictum est; atque hoc, ut dicimus, secundum verisimile aut necessarium.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.2">
+            <p>ut in Oedipode, cum venisset nuntius tanquam laetitiam allaturus Oedipodi eumque metu liberaturus adversus matrem, ut aperuit quisnam esset, contrarium fecit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.3">
+            <p>et in Lynceo, cum ipse quidem duceretur ut moriturus, Danaus vero persequeretur ut interfecturus, hunc quidem contigit ex rebus gestis mori, illum vero servari.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.4">
+            <p>agnitio autem est, ut etiam nomen significat, ex ignoratione in cognitioném mutatio, aut ad amicitiam aut inimicitiam eornm qui ad prosperam fortunam vel adversam definití sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.5">
+            <p>ac pulcherrima agnitio est cum simul peripetiae fiunt, ut se habet in Oedipode.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.6">
+            <p>ac sunt quidem etiam aliae cognitiones. etenim ad inanimata pertinet agnitio, et ad quaecunque, ut dictum est, a fortuna aliquando esse contingit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.7">
+            <p>et si fecit aliquis aut non fecit, licet agnoscere, sed quae maxime pertinet ad fabnlaure quae maxime ad actionem, est ea quae dicta est: talis enim agnitio et peripetia <choice><sic>ant</sic><corr>aut</corr></choice> misericordiam habebit aut metum; qualium actionum tragoedia imitatio supponitur. praeterea vero et adversa fortuna uti et prospera in talibus continget.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.8">
+            <p>iam quoniam agnitio quorundam est agnitio, aliae quidem sunt alterius ad alterum solum, cum fuerit manifestus alter quis sit; aliquando vero ambos oportet agnoscere, ut Iphigenia ab Öreste agnita est ex missione epistolae, illi autem erga Iphigeniam alia opus fuit agnitione.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.9">
+            <p>ac duae quidem fabulae partes circa haec sunt, peripetia et agnitio. tertia vero est passio. atque ex his peripetia et agnitio expositae sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:11" xml:id="riccobono-11.10">
+            <p>passio vero est actio habens vim interimendi aut graves dolores afferendi, ut quae in aperto sunt mortes et ciulationes et vulnerationes, et quaecunque talia.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.1">
+            <p>Iam partes tragoediae, quibus <choice><sic>nt</sic><corr>ut</corr></choice> formis oportet <choice><sic>nti</sic><corr>uti</corr></choice>, <choice><sic>prins</sic><corr>prius</corr></choice> diximus. at secundum quantitatem, et in quas ipsa dividitur separatas, hae sunt, prologus episodium exodus choricum, et huius quidem una pars parodus altera vero stasimum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.2">
+            <p>atque hae quidem communes omnium,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.3">
+            <p>propriae vero illae a scena et commi. ac prologus est pars integra tragoediae ante chori parodum,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.4">
+            <p>episodium pars integra tragoediae interiecta inter integros choricos cantus,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.5">
+            <p>exodus pars integra tragoediae, post quam non est chori cantus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.6">
+            <p>chorici autem parodus prima dictio integri chori, stasimum vero cantus chori sine anapaesto et trochaeo.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.7">
+            <p>at commus lamentatio communis chori et a scena.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.8">
+            <p>ac partes quidem tragoediae,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.9">
+            <p>quibus oportet uti, prius dictae: at secundum quantitatem,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:12" xml:id="riccobono-12.10">
+            <p>et in quas ipsa dividitur separatas, hae sunt.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.1">
+            <p>Quae vero oportet spectare et quae oportet cavere constituentes fabulas, et unde erit tragoediae opus, sequitur ut dicamus post illa quae adhuc dicta sunt. quoniam igitur constitutionem pulcherrimae tragoediae oportet esse non simplicem sed nexam, eamque terribilium et miserabilium imitationem (hoc enim proprium huiusmodi est imitationis),</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.2">
+            <p>primum quidem manifestum est <choice><sic>neqne</sic><corr>neque</corr></choice> aequos viros mutatos apparere oportere ex prospera fortuna in adversam (id enim non est terribile nec miserabile, sed sceleratum) neque improbos ex infortunio in prosperam fortunam (id enim maxime omnium a tragoedia alienum est,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.3">
+            <p>quia nihil habet eorum quae oportet: neque enim gratum hominibus neque miserabile neque terribile est),</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.4">
+            <p>neque rursus valde malum ex prospera fortuna in adversam cadere: quod enim gratum est hominibus, id quidem habet talis constitutio, sed neque misericordiam habet neque timorem: illa enim est circa eum qui indigne adversa fortuna utatur, hic vero circa similem, quare neque miserabile neque terribile apparet quod contingit. reliquus igitur est inter hos interiectus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.5">
+            <p>est autem talis, qui neque virtute praestat et <choice><sic>institia</sic><corr>iustitia</corr></choice>, neque propter vitium et pravitatem mutatur in adversam fortunam, sed propter errorem aliquem, eorum qui sunt in magna existimatione et fortunae prosperitate, cuiusmodi Oedipus et Thyestes, et qui ex talibus familiis illustres viri sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.6">
+            <p>necesse enim est egregie se habentem fabulam esse magis simplicem quam duplicem, ut quidam dicunt; et mutari non in prosperam fortunam ex adversa, sed contra ex prospera in adversam, non propter improbitatem sed propter errorem magnum, aut talis personae qualis dictum est, aut melioris magis quam peioris.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.7">
+            <p>signum autem est etiam id quod observatur: nam antea quidem poëtae quaslibet fabulas enumerabant, nunc vero circa paucas domos pulcherrimae componuntur tragoediae, ut circa Alcmaeonem et Oedipum et Orestem et Meleagrum et Thyestem et Telephum, et quibuscunque aliis contingit atrocia aut pati <choice><sic>ant</sic><corr>aut</corr></choice> facere.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.8">
+            <p>ac secundum artem quidem pulcherrima est tragoedia ex hac constitutione.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.9">
+            <p>quare et errant qui accusant Euripidem in eadem re, quod hoc faciat in tragoediis, et mnltae ipsius in adversam fortunam terminent.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.10">
+            <p>id enim rectum est, ut diximus. ac signum maximum est, quod in scenis et certaminibus tales maxime apparent tragicae, si recte dirigantur; et Euripides quamvis alia non bene disponat, hac tamen in parte inter poëtas maxime apparet tragicus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.11">
+            <p>iam vero secunda constitutio est, quae a quibusdam prima dicta est, eius fabulae quae duplicem habet constitutionem, ut Odyssea, et desinit ex contrarietate melioribus et peioríbus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.12">
+            <p>videtur autem esse prima propter theatrorum imbecillitatem: nam poëtae eam consequuntur morem gerentes spectatoribus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:13" xml:id="riccobono-13.13">
+            <p>atque haec ea non est quae a tragoedia proficiscitur voluptas, sed magis comoediae propria: in ea enim fabula si inimicissimi sint, ut Orestes et Aegisthus, amici tandem facti exeunt et nullus per alterum moritur.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.1">
+            <p>Ac licet quidem terribile et miserabile ex apparatu fieri, licet vero etiam ex ipsa constitutione; id quod prius est et poëtae melioris.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.2">
+            <p>oportet enim etiam sine visu fabulam sic constitutam esse, <choice><sic>nt</sic><corr>ut</corr></choice> audiens res quae fiunt, et horreat et misereatur ex iis quae contingunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.3">
+            <p>in quas perturbationes cadet ille qui Oedipodis fabulam audiat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.4">
+            <p>efficere autem hoc per apparatum est magis artificii expers, et sumptus requirit. atque qui non solum terribile per apparatum sed monstruosum efficiunt, nihil commune habent cum <choice><sic>tra- goedia</sic><corr>tragoedia</corr></choice>: non enim omnem a tragoedia oportet voluptatem quaerere, sed propriam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.5">
+            <p>quoniam vero ex misericordia et metu per imitationem poëtam efficere oportet voluptatem, id in rebus efficiendum esse manifestum est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.6">
+            <p>qualia igitur atrocia aut qualia miserabilia appareant, ex iis assumamus quae contingunt. necesse autem est aut amicorum esse inter se tales actiones, aut inimicorum, aut neutrorum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.7">
+            <p>quodsi inimicus inimicum occiderit, nihil miserabile, neque dum facit neque dum facturus est, monstrat,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.8">
+            <p>praeterquam in illa ipsa perturbatione.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.9">
+            <p>neque qui se neutro modo habent. quando autem in amicitiis sunt perturbationes, ut si frater fratrem aut filius patrem aut mater filium aut filius matrem occiderit aut occisurus fuerit <choice><sic>ant</sic><corr>aut</corr></choice> tale aliquid aliud faciat, haec quaerere oportet.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.10">
+            <p>ac receptas quidem fabulas solvere non licet: dico autem ut Clytaemnestram occisam ab Oreste et Eriphylen ab Alcmaeone. ipsum vero invenire ac traditis recte uti oportet.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.11">
+            <p>idque quod dicimus se recte habere, apertius exponamus. licet enim sic actionem fieri ut antiqui faciebant,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.12">
+            <p>ut eam praestarent scientes et cognoscentes, quemadmodum occidentem filium Medeam Euripides fecit. at licet agere ita ut ignorantes rem agant atrocem,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.13">
+            <p>postea vero amicitiam <choice><sic>agno- scant</sic><corr>agnoscant</corr></choice>, ut Sophoclis Oedipus. atque hoc quidem extra actionem. in ipsa vero tragoedia, ut Alcmaeon Astydamantis vel Telegonus in vulnerato Ulysse.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.14">
+            <p>praeterea tertium est, cum quis aliquid laevi propter ignorantiam facturus erat et priusquam faceret agnovit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.15">
+            <p>et praeter haec aliter non licet: aut enim facere necesse est aut non,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.16">
+            <p>et scientes aut non scientes. horum autem pessimum est, cum quis facturus fuit et non fecit: sceleratum enim habet et non tragicum, nam sine affectu est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.17">
+            <p>quare nemo facit similiter nisi raro,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.18">
+            <p>ut in <choice><sic>An- tigona</sic><corr>Antigona</corr></choice> Creontem Haemon: nam fecisse secundum est. ac melius est ignorantem quidem fecisse, cum autem fecerit, agnovisse: sceleratum enim non adest,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.19">
+            <p>agnitio stuporem gignit. optimum vero est postremum. dico autem ut in Cresphonte Merope interfectura quidem filium erat, sed cum agnovisset, non interfecit. et in Iphigenia soror fratrem. et in Helle filius matrem dediturus agnovit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.20">
+            <p>quapropter quod pridem dictum est, non circa multas sunt <choice><sic>tragoe- diae</sic><corr>tragoediae</corr></choice> familias: quaerentes enim non ab arte sed a fortuna huiusmodi fabulae confectionem invenerunt; itaque ad has domos coguntur occurrere, quibuscunque tales contigerunt perturbationes.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:14" xml:id="riccobono-14.21">
+            <p>ac de rerum constitutione, et quales fabulas esse oporteat, satis dictum est.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.1">
+            <p>Ceterum de moribus quattuor sunt quae spectare oportet. unum quidem et primum, quomodo boni sint.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.2">
+            <p>habebit autem mores, si, ut dictum est, oratio aut actio manifestam efficiat praeelectionem aliquam; malos quidem, si malam, bonos vero, si bonam,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.3">
+            <p>est vero hoc in unoquoque genere: etenim mulier est bona et servus, etiamsi fortasse ex his illud quidem peius, hoc omnino malum est. secundum est, quando sint convenientes: est enim virorum mos,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.4">
+            <p>sed non conveniens mulieri, fortem vel terribilem esse. tertium quando sint similes:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.5">
+            <p>hoc enim aliud est ab eo quod est bonos et convenientes mores facere, ut dictum est. quartum,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.6">
+            <p>quomodo aequales: tametsi enim inaequalis quidam sit qui praebet imitationem, et talibus moribus suppositus sit,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.7">
+            <p>tamen aequaliter inaequalem oportet esse. est autem exemplum improborum morum non ex necessitate, ut Menelaus in Oreste,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.8">
+            <p>eius vero quod non deceat et non conveniat, tum lamentatio Ulyssis in Scylla, tum Menalippae dictio.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.9">
+            <p>at inaequalium in Aulide Iphigenia: nullam enim in partem similis est, dum orat, ei quae apparet posterius.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.10">
+            <p>oportet autem et in moribus, ut etiam in rerum constitutione, semper quaerere vel necessarium vel verisimile; et hoc post hoc fieri vel ex necessitate vel ex verisimilitudine.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.11">
+            <p>apparet igitur et solutiones fa¿ bularum ex ipsa oportere fabula contingere, et non ut in Medea a machina, et in Iliade ea quae sunt circa renavigationem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.12">
+            <p>sed machina uti opus est ad ea quae sunt extra actionem, aut quaecunque ante facta sunt, quae fieri non potest ut homo sciat, aut quaecunque postea, quae egent praedicatione et nuntiatione: omnia enim videre tribuimus diis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.13">
+            <p>at sine ratione in rebus nihil esse oportet: sin minus, id extra tragoediam sit, ut quae sunt in Oedipode Sophoclis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.14">
+            <p>quoniam autem tragoedia est meliorum imitatio, oportet nos imitari bonos formarum fictores. etenim illi cum tribuant propriam formam, faciendo similes pulchriores fingunt. sic etiam oportet poetam imitantem et iracundos et socordes et alia talia habentes in moribus, cum tales sint, probitatis facere exemplum ac duritiae, at Achillem bonum etiam Homerus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:15" xml:id="riccobono-15.15">
+            <p>iam vero haec oportet servare, et ad haec ea quae sub sensum cadunt consequentia poëticae, praeter illa quae sunt ex necessitate: etenim secundum ipsa saepenumero contingit peccare. dictum autem est satis de ipsis in editis libris.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.1">
+            <p>Ac agnitio quid sit, dictum est prius. species autem agnitionis prima est, quae maxime expers est artis et qua plurimi utuntur propter penuriam,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.2">
+            <p>quae per signa fit; eaque partim innata, ut lanceam quam Terrigenae ferunt, aut stellas, quales in Thyeste dicit Carcinus;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.3">
+            <p>partim adventicia, aut in corpore, ut cicatrices, aut extra, ut monilia, et ut in Tyrone per scapham.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.4">
+            <p>ac licet his uti vel melius vel peius, ut Ulysses per cicatricem aliter agnitus est a nutrice, aliter a subulcis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.5">
+            <p>et sunt quidem, quae fidei causa adhibentur, magis artis expertes, etiam huiusmodi omnes. quae vero ex peripetia, ut quae in Niptris, meliores. secundae sunt quae a poëta factae sunt. itaque expertes artis, ut Orestes in Iphigenia agnovit sororem agnitus ab ipsa.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.6">
+            <p>haec quidem agnita per epistolam, ille vero per signa. ac ipse quidem dicit quae vult poëta, sed non fabula.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.7">
+            <p>quare a dicto peccato non longe abest (licebat enim quaedam interponere) etiam in Sophoclis Tereo radii vox. tertia agnitio est quae per memoriam fit, cum quis sentit aliquid videndo, ut quae in Cypriis Dicaeogenis: cum enim picturam inspexisset, luxit; et quae in Alcinoi apologo: citharoedum audiens et recordatus lacrimavit;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.8">
+            <p>unde agniti sunt. quarta quae ex syllogismo, ut in Choephoris, quia similis quidam venit: atqui similis nullus praeterquam Orestes: ergo iste venit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.9">
+            <p>et quae Polyidis sophistae de Iphigenia: verisimile namque est Orestem ratiocinari et sororem immolatam esse et ipsi contingere immolari. et in Tydeo Theodectis, quod cum venisset ut inventurus filium, ipse periit. et quae in Phoenicibus: cum enim locum vidissent, ratiocinatae sunt fatum, quod fato statutum esset ipsis moriendum esse: etenim ibi expositae sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.10">
+            <p>est etiam quaedam composita ex paralogismo theatri, ut in Ulysse falso nuntio: hic enim inquit se arcum cogniturum, quem non viderat; ille vero quasi is agnovisset, propterea paralogismum fecit. omnium autem optima agnitio est, quae ex ipsis rebus est, facta consternatione per verisimilia,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.11">
+            <p>ut in Sophoclis Oedipode et in Iphigenia: verisimile enim est eam velle dare litteras: tales enim solae sine factis signis et monilibus sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:16" xml:id="riccobono-16.12">
+            <p>at secundae sunt quae per syllogismum fiunt.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.1">
+            <p>Fabulae autem sunt constituendae et elocutione conficiendae quam maxime ante oculos ponendo: sic enim evidentissime perspiciens, tanquam rebus ipsis praesens fuerit dum gerebantur, inveniet quod decet, et ipsum minime fallent subcontraria.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.2">
+            <p>signum autem huius rei est quod reprehenditur in Carcino: Amphiaraus enim e fano exiit; quod fefellit spectatorem non videntem: in scena vero lapsus est, aegre ferentibus id spectatoribus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.3">
+            <p>quantum autem fieri potest, oportet figuris exornando exercere poësim: maxime enim persuasibiles sunt ab eadem natura, qui in perturbationibus sunt; quamobrem et fluctuare facit Auctuans, et ad iram concitat iratus verissime.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.4">
+            <p>itaque ingeniosi poëtica est vel furore perciti: ex his enim alii quidem bene fortunati,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.5">
+            <p>alii vero extra se positi sunt. hos autem sermones oportet esse factos, et ipsum facientem <choice><sic>expo- nere</sic><corr>exponere</corr></choice> in universum, deinde episodiis uti, eaque inserere.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.6">
+            <p>dico vero sic universum spectari, ut Iphigeniae. cum esset immolata quaedam virgo sublataque immolantibus non manifesto ac compostata in aliam regionem, in qua lex erat hospites deae immolare, hoc sacerdotium obtinuit. tempore autem sequenti fratri sacerdotis huc venire contigit propter nescio quid, quoniam responsum dedit deus propter aliquam causam, quae extra universum est, eo venire: sed quamobrem, id extra fabulam est. cum vero venisset et captus esset, dum immolandus esset, agnovit, sive ut Euripides sive ut <choice><sic>Po- lyides</sic><corr>Polyides</corr></choice> fecit, dicens secundum verisimile non solum sororem sed etiam ipsum sacrificari oportuisse, et hinc salutem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.7">
+            <p>post haec cum quis iam nomina supposuerit, eum episodiis uti oportebit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.8">
+            <p>et quando erunt propria episodia, considerare, ut in Oreste insania, propter quam captus est, et salus per expiationem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.9">
+            <p>ac in dramatibus quidem episodia concisa sunt, epopoeia vero his producitur.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.10">
+            <p>Odysseae enim longus sermo est, de quodam multos annos peregrinante et observato a Neptuno, et dum solus esset; et praeterea sic se habentibus domesticis rebus ut fortunae ipsius a procis <choice><sic>consumeren- tur</sic><corr>consumerentur</corr></choice> et filius insidiis peteretur, ipse venit tempestatibus perturbatus, et cum quosdam agnovisset, ipsos decipiens ipse quidem servatus est, inimicos vero perdidit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:17" xml:id="riccobono-17.11">
+            <p>ac proprium quidem est hoc, alia vero episodia.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.1">
+            <p>Est autem omnis tragoediae una quidem pars nexus, altera vero solutio.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.2">
+            <p>ea quidem quae sunt extra, et aliqua eorum quae intra, saepenumero sunt nexus, reliquum vero est solutio.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.3">
+            <p>dico <choice><sic>antem</sic><corr>autem</corr></choice> nexum esse eum qui a principio est usque ad eam partem quae postrema est, ex qua transit in prosperam fortunam vel adversam,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.4">
+            <p>solutionem vero, quae est a principio transitus usque ad finem, ut in Lynceo Theodectis nexus sunt ea quae gesta sunt et pueri <choice><sic>sum- ptio</sic><corr>sumptio</corr></choice>, at solutio, quae est ab obiectione mortis usque ad finem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.5">
+            <p>tragoediae species sunt quattuor: tot enim etiam partes dictae sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.6">
+            <p>una quidem implexa, cuius totum est peripetia et agnitio;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.7">
+            <p>altera vero affecta, ut Aiaces et Ixiones;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.8">
+            <p>tertia morata, ut Phthiotides et Peleus; quarta, ut Phorcides et Prometheus, et quaecunque apud inferos.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.9">
+            <p>ac omnia quidem maximopere conandum est ut habeantur: sin autem, maxima et plurima, praesertim ut nunc criminationem obiiciunt poetis. cum enim bonì fuerint secundum unamquanque partem poetae, unum superare singulos in proprio bono dignum existimant.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.10">
+            <p>iustum autem est et tragoediam aliam et eandem dicere nihil fortasse ob fabulam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.11">
+            <p>hoc vero intelligitur in iis quarum eadem plicatio et solutio est. multi qui bene plicarunt, solvunt male.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.12">
+            <p>ac ambo semper cum plausu excipi oportet. et oportet, quod dictum est, saepe in memoriam revocare, et non efficere ut tragoedia sit epopoeica constitutio. dico epopoeicam, quae multas fabulas continet, ut si quis totam fabulam Iliadis conficiat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.13">
+            <p>ibi enim propter longitudinem partes assumunt convenientem magnitudinem. in dramatibus vero multum praeter existimationem accidit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.14">
+            <p>signum vero est, quod quicunque expugnationem Ilii totam fecerunt et non secundum partem, ut Euripides Hecubam et non ut Aeschylus,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.15">
+            <p>vel labuntur vel male certant, siquidem Agathon in hoc solo lapsus est. in peripetiis autem et in simplicibus rebus assequuntur quod volunt,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.16">
+            <p>per admirabile: tragicum enim hoc et gratum hominibus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.17">
+            <p>est autem hoc, quando sapiens quidem sed cum improbitate deceptus fuerit, ut Sisyphus, et fortis quidem sed iniustus superatus sit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.18">
+            <p>atque hoc verisimile est, ut Agathon dicit: verisimile enim est multa fieri etiam praeter verisimile.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.19">
+            <p>et existimandum est chorum esse unum de histrionibus et partem totius, ac simul contendere, non ut apud Euripidem, sed ut apud Sophoclem. quae vero conceduntur aliis, magis sunt fabulae et tragoediae alterius.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:18" xml:id="riccobono-18.20">
+            <p>quamobrem embolima canunt, cum primus Agathon rem talem inceperit. atqui quid interest, si quis embolima canat, vel dictionem ex alio in aliud accommodet?</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.1">
+            <p>Ac de aliis quidem iam dictum est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.2">
+            <p>reliquum vero est de elocutione vel sententia dicere. ac quae pertinent quidem ad sententiam, in libris de rhetorica posita sunt: hoc enim methodi illius magis est proprium. sunt autem secundum sententiam ea quaecunque ab oratione paranda sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.3">
+            <p>et eorum partes sunt tum demon¿ strare et solvere,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.4">
+            <p>tum perturbationes parare, ut misericordiam vel metum vel iram et quaecunque talia, tum praeterea amplificare et diminuere.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.5">
+            <p>manifestum autem est et in actionibus utendum esse iisdem formis, cum miserabilia aut terribilia aut magna aut verisimilia parare oportuerit;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.6">
+            <p>nisi quod ea sola differentia est, quod haec quidem apparere sine doctrina oportet, quae vero in oratione posita sunt, a dicente parari et per orationem fieri.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.7">
+            <p>quod enim esset dicentis munus, si apparerent iucunda et non per orationem? eorum vero quae pertinent ad elocutionem una species est contemplationis, quae considerat figuras elocutionis, quas scire est histrionicae, et eius qui talem habeat architectonicam, ut quid sit mandatum et quid precatio et narratio et mina et interrogatio et responsio, et si quid aliud huiusmodi.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.8">
+            <p>ab horum enim cognitione vel ignorantia nulla reprehensio in poeticam affertur, quae curanda sit. qui enim fieri potest ut aliquis existimet errorem commissum esse in iis quae Protagoras reprehendit, quod putans precari praecipit, dicens 'iram diya cane?" nam iubere, inquit, ut aliquid faciat aut non faciat praeceptio est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:19" xml:id="riccobono-19.9">
+            <p>quamobrem omittatur, ut quae alterius et non poeticae sit contemplatio.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.1">
+            <p>Iam vero elocutionis omnis hae sunt partes, elementum, syllaba, coniunctio, nomen, verbum, articulus, casus, oratio.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.2">
+            <p>ac elementum quidem est vox individua, non omnis, sed ex qua naturaliter vox fit, quae intelligi possit: etenim beluarum sunt voces individuae, quarum nullam elementum voco.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.3">
+            <p>huius autem partes sunt tum vocale tum semivocale tum mutum. atque vocale est, quod sine ictu vocem habet quae audiri potest, ut a et w; semivocale, quod cum ictu vocem habet quae audiri potest, ut σ et p; mutum, quod cum ictu per se quidem nullam habet vocem, sed cum habentibus aliquam vocem fit huiusmodi ut audiri possit, ut y et.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.4">
+            <p>atque haec inter se differunt tum figuris oris tum locis tum crassitudine tum tenuitate tum longitudine tum brevitate, praeterea vero acumine et gravitate et medio, de quibus singulis in metricis convenit contemplari.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.5">
+            <p>syllaba est vox significationis expers, composita ex muto et vocem habente: etenim yp sine a syllaba est, et cum a, ut ypa. sed et horum intueri differentias metricae est. coniunctio est vox significationis expers,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.6">
+            <p>quae neque impedit neque facit vocem unam significativam, quae ex pluribus vocibus componatur, tam in extremis quam in medio, nisi congruerit in principio orationis ponere per se, ut µáv, to, dn. vel vox non significativa ex pluribus quidem vocibus una sed significativis, idonea quae faciat unam vocem. articulus est vox significationis expers, orationis initium aut Gnem aut distinctionem indicans, ut τὸ φημί, τὸ περί et alia.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.7">
+            <p>vel vox significationis expers, quae neque impedit neque facit vocem unam significativam ex pluribus vocibus, idoneam quae com ponatur et in extremis et in medio.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.8">
+            <p>nomen est vox composita significativa sine tempore, cuius pars nulla est per se significativa: nam in duplicibus non utimur ut etiam ipsum per se significet, veluti in Theodoro illud Supov non significat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.9">
+            <p>verbum est vox composita significativa cum tempore, cuius per se pars nulla significat, ut etiam in nominibus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.10">
+            <p>illud enim homo vel album non adsignificat quando: at illud ambulat vel ambulavit adsignificat, alterum quidem praesens tempus, alterum vero praeteritum. casus est nominis aut verbi, nnus quidem secundum id quod est huius vel huic significans, et quaecunque talia; alter vero secundum id quod uni vel multis, vel homines vel homo;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.11">
+            <p>alius autem secundum ea quae ad gestum pertinent, ut per interrogationem vel praeceptionem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.12">
+            <p>nam ambulavit vel ambulat casus verbi secundum has species est. oratio est vox composita significativa, cuius aliquae partes per se significant aliquid: nec enim omnis oratio ex verbis constat et nominibus, quemadmodum hominis definitio, sed contingit sine verbis esse orationem. atqui partem semper quampiam significantem habebit, ut in illo ambulat Cleon" id ipsum Cleon.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:20" xml:id="riccobono-20.13">
+            <p>una autem est oratio duobus modis: aut enim quae unum significat, aut quae ex pluribus coniunctionibus est, ut Ilias quidem est coniunctione una, hominis vero definitio eo quod unum significet.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="21" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.1">
+            <p>Iam nominis species una quidem simplex est (voco simce plicem, quae constat ex non significantibus) altera vero duplex; atque haec partim ex significante et non significante, partim ex significantibus constat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.2">
+            <p>potest etiam esse triplex et quadruplex nomen, et multiplex, ut multa Megaliotarum, Hermocaicoxanthus. omne autem nomen est aut proprium aut lingua aut translatio aut ornatus aut factum aut protractum aut subtractum aut immutatum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.3">
+            <p>voco proprium quo utuntur singuli,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.4">
+            <p>linguam illud quo diversi, quamobrem apparet fieri posse ut lingua et proprium sit idem,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.5">
+            <p>non autem iisdem: nam sigynon Cypriis est proprium, nobis lingua.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.6">
+            <p>translatio est nominis alieni illatio, aut a genere ad speciem, aut a specie ad genus, aut a specie ad speciem, aut secundum proportionem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.7">
+            <p>dico a genere ad speciem, ut "navis autem mihi haec stetit": nam in portu esse stare quoddam est. a specie ad genus, "iam decem milia Ulysses bona egit":</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.8">
+            <p>nam decem milia multa sunt, quibus nunc usus est pro multis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.9">
+            <p>a specie ad speciem, ut aere animum cum hausisset, incidit indefesso aere." hic enim haurire pro incidere et incidere pro haurire dixit: ambo enim sunt quoddam auferre.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.10">
+            <p>proportionem dico, quando similiter se habeat secundum ad primum ac quartum ad tertium. nam dicit pro secundo quartum aut pro quarto secundum,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.11">
+            <p>et interdum apponunt pro quo dicit ad quod est. dico <choice><sic>antem</sic><corr>autem</corr></choice>, ut similiter se habet poculum ad Bacchum et scutum ad Martem:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.12">
+            <p>dicet igitur et scutum poculum Martis et poculum scutum Bacchi. praeterea similiter se habet vesper ad diem et senectus ad vitam: dicet igitur vesperam senectutem diei et senectutem vesperam vitae, vel <choice><sic>nt</sic><corr>ut</corr></choice> Empedocles, occasum vitae.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.13">
+            <p>nonnullis vero non est nomen positum eorum quae sunt ex proportione, sed nihilo minus similiter dicetur, ut illud, semen quidem iacere, serere, flammam vero emitti a sole sine nomine est:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.14">
+            <p>sed similiter se habet hoc ad solem et serere ad semen, quamobrem dictum est "serens a deo conditam flammam." ac licet uti hoc translationis modo et aliter, ut cum appellaverit id quod alienum est, neget aliquid eorum quae propria sunt; ut si scutum dicat poculum non Martis, sed sine vino.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.15">
+            <p>factum est, quod ab aliquibus prorsus non appellatum ipse ponit poeta:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.16">
+            <p>videntur enim aliqua esse talia, ut cornua èpvutas et sacerdotem apninpa.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.17">
+            <p>protractum est vel subtractum, illud quidem, si vocali longiore usum fuerit quam propria sit, vel syllaba inculcata; hoc vero si sublatum fuerit quippiam vel ab ipso vel ab eo quod inculcatum est. protractum quidem, ut illud noλews noλnos, et illud πηλείδου πηληϊάδεω.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.18">
+            <p>sublatum vero, ut illud κpt et illud δῶ et μία γίνεται ἀμφοτέρων ὄψ.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.19">
+            <p>immutatum est, quod nominati unam quidem partem reliquerit, alteram vero fecerit, ut illud degiтεpov xaτa μagov pro detov.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.20">
+            <p>praeterea ex nominibus alia virilia alia muliebria alia interiecta, virilia quidem, quaecunque desinant in v et p,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.21">
+            <p>et <choice><sic>quae- cunque</sic><corr>quaecunque</corr></choice> ex aliquo eorum quae muta sunt constant.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.22">
+            <p>atque ea sunt duo, et muliebria vero, quaecunque ex vocalibus in ea quae semper longa sunt,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.23">
+            <p>ut in w, et ex iis quae producuntur in a. quare evenit ut aequalia sint multitudine, in quaecunque desinunt virilia et muliebria: nam et eadem sunt.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="24" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.24">
+            <p>in mutum autem nullum nemen desinit, neque in vocale breve.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="25" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.25">
+            <p>at in tria sola, µéλi, xóµµı, πέπερι.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="26" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:21" xml:id="riccobono-21.26">
+            <p>et in u quinque πῶς, νάπυ, γόνυ, δόρυ, ἄστυ. interiecta vero in haec et v et oσ.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="22" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.1">
+            <p>Elocutionis autem virtus est, ut sit perspicua et non humilis. ac maxime quidem perspicua est quae ex propriis nominibus constat, sed humilis. exemplum est Cleophontis poesis et Stheneli.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.2">
+            <p>at grandis et immutans id quod vulgare est,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.3">
+            <p>quae peregrinis utitur, peregrinum autem voco linguam et translationem et protractionem, et quidquid praeter proprium est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.4">
+            <p>sed si quis simul omnia talia fecerit, aut aenigma erit aut barbarismus. si igitur ex translationibus, aenigma, si ex linguis, etiam barbarismus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.5">
+            <p>aenigmatis autem forma est, ut qui dicit, copulet ea quae fieri non possunt. at secundum compositionem quidem nominum id fieri non potest: verum secundum translationem contingit,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.6">
+            <p>ut "virum vidi igne aes viro <choice><sic>aggluti- nantem</sic><corr>agglutinantem</corr></choice>" et talia.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.7">
+            <p>ex linguis vero barbarismus. quamobrem aliquo modo his temperatur;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.8">
+            <p>ac non vulgare quidem efficiet humile neque lingua et translatio et ornatus et aliae formae quae dictae sunt, perspicuitatem vero proprium. at non minimam partem conferunt ad perspicuam elocutionem et non vulgarem protractiones et subtractiones et immutationes nominum:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.9">
+            <p>nam quoniam hoc aliter se habet Bbbbb ac proprium, quod factum est praeter consuetum, non vulgare efficiet; quoniam autem commune aliquid habet cum eo quod est consuetam, erit perspicuum. quare non recte vituperant, qui reprehendont talem modum locutionis ac maledictis poetam insectantur, ut Euclides ille antiquus, quod facile sit poetice agere, si quis concesserit protrahere, quantum velit, eum qui iambis usus sit in eadem locutione, ut ἠτίχαριν εἶδον Μαραθῶνα βαδίζοντα,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.10">
+            <p>εἰ οὐκ ἂν γεινάμενος τὸν ἐκείνου ἐξ ἐλλέβορον.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.11">
+            <p>ac cum appareat quidem aliquo modo aliquem sequi hunc ipsum nsum, id ridicnlum est. mensura vero communis est omnium partium.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.12">
+            <p>etenim qui translationibus et linguis et aliis formis uteretur indecore et studiose ad ridicula, idem efficeret.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.13">
+            <p>id autem quod congruit, quantum excellat in heroico carmine, consideretur iniectis nominibus in metrum. et certe in linguis et in translationibus et in aliis formis, si quis posuerit propria nomina, videbit a nobis dici ea quae vera sunt, ut cum eundem iambicum fecit Aeschylus et Euripides, et unum solum nomen immutavit, et posnit linguam pro proprio consueto. atque unum quidem apparet pulchrum, alterum vero humile. nam Aeschylus in Philoctete fecit "phagedaena, quae mei carnes comedit pedis," hic vero pro obis posuit fotvarat, epulatur. et nunc autem me, qui est parvusque et nihili et indecens."</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.14">
+            <p>si quis dicit positis propriis "nunc autem me, qui est parvusque et imbecillis et deformis." et "sedile non conveniens cum posuisset, paucamque mensam." et illud "littora vociferantur," littora clamant. praeterea vero Ariphrades tragoedis maledicebat, quod quae nemo diceret in sermone, iis uterentur, quale illud est, δωμάτων απο domibus ab, sed non ἀπὸ δωμάτων a domibus; et illud v tui; et illud y di viv ego autem ipsum;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.15">
+            <p>et il lnd ᾿Αχιλλέως πέρι Achille de, sed non περὶ ᾿Αχιλλέως de Achille; et quaecunque alia talia.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.16">
+            <p>nam quoniam non sunt in propriis, faciunt id quod non vulgare est haec omnia in elocutione: ille vero hoc nesciebat. iam magnum est uti congruenter unoquoque de iis quae dicta sunt, et duplicibus nominibus et linguis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.17">
+            <p>at maximum est metaphoricum esse: solum enim hoc neque ab alio licet assnmere, et boni ingenii signum est. bene enim transferre est simile intueri.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.18">
+            <p>ex nominibus autem duplicia quidem maxime conveniunt dithyrambis, linguae vero heroicis, at translationes iambicis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.19">
+            <p>et in heroicis quidem omnia utilia quae dicta sunt: verum in iambicis, quia quam maxime collocutionem imitantur, ex nominibus illa congruunt quibuscunque etiam in sermonibus aliquis uteretur. sunt <choice><sic>antem</sic><corr>autem</corr></choice> talia proprium et translatio et ornatus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:22" xml:id="riccobono-22.20">
+            <p>ac de tragoedia quidem, et de imitatione quae in agendo posita est, nobis satis sint quae exposita sunt.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="23" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:23" xml:id="riccobono-23.1">
+            <p>De narrativa autem et in metro imitatione oportet fabnlas constituere, quemadmodum dramaticus in tragoediis, et circa unam actionem totam et perfectam, habentem principium et medium et finem,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:23" xml:id="riccobono-23.2">
+            <p>ut quemadmodum animal unum totum efficiat propriam voluptatem, nec similes esse historias consuetas, in quibus necesse est non unius actionis efficere expositionem sed unius temporis,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:23" xml:id="riccobono-23.3">
+            <p>quaecunque in eo evenerunt circa unum vel plures, quorum unumquodque, ut sors tulit, alterum respicit. quemadmodum enim secundum eadem tempora et in Salamine facta est navalis pugna et in Sicilia Carthaginiensium pugna,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:23" xml:id="riccobono-23.4">
+            <p>nequaquam ad eundem tendentes finem,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:23" xml:id="riccobono-23.5">
+            <p>sic et in temporibus consequentibus aliquando fit alterum cum altero, ex quibus non est unus finis. ac ferme id faciunt poëtarum multi. quamobrem, ut iam dicebamus, et in hac parte divinns apparere Homerus praeter ceteros potest, et quia neque bellum, quamvis habens principium et finem, aggressus est versibus totum describere (valde enim magnum, et quod non facile conspici poterat, evasurum erat) vel magnitudine se modice habens intertextum varietate. nunc autem cum abstulisset unam partem, episodiis usus est ipsorum multis, ut navium catalogo et aliis episodiis, quibus distinguit poësim.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:23" xml:id="riccobono-23.6">
+            <p>alii vero circa unum canunt et circa unum tempus et unam actionem multarum partium, ut qui Cyprica fecit et parvam Iliadem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:23" xml:id="riccobono-23.7">
+            <p>igitur ex Iliade et Odyssea una tragoedia fit ex utraque, vel duae solae; at ex Cypriis multae, et ex parva Iliade plus quam octo, ut armorum iudicium, Philoctetes, Neoptolemus, Eurypylus, mendicatio, Lacaenae, Hii direptio et reditus classis et Sinon et Troades.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="24" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.1">
+            <p>Praeterea vero epopoeiam oportet habere formas easdem cum tragoedia:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.2">
+            <p>aut enim simplicem <choice><sic>ant</sic><corr>aut</corr></choice> implexam aut moratam aut affectam oportet esse.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.3">
+            <p>et partes extra melopoeiam et apparatum easdem:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.4">
+            <p>etenim ei opus est peripetiis et agnitionibus et affectibus. praeterea sententias et elocutionem recte habere. <choice><sic>quibns</sic><corr>quibus</corr></choice> omnibus Homerus usus est primus et satis: etenim poëmatum utrumque constitutum est,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.5">
+            <p>Ilias quidem simplex et affectam, Odyssea vero implexum: agnitio enim per totum et moralis est. ad haec dictione et sententia omnes superavit. differt autem epopoeia et constitutionis longitudine et metro.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.6">
+            <p>ac longitudinis quidem terminus sufhciens dictus est: debet enim esse eiusmodi ut simul conspici et principium et finis possit. id sane esset, si priscis minores <choice><sic>constitu- tiones</sic><corr>constitutiones</corr></choice> essent, et pervenirent ad multitudinem tragoediarum quae in unam ponerentur auditionem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.7">
+            <p>habet vero multum quiddam epopoeia, et quidem proprium, ut extendere magnitudinem possit, propterea quod non contingit in tragoedia imitari multas partes, quae eodem tempore geruntur, sed eam solam quae geritur in scena et histrionum est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.8">
+            <p>at in epopoeia, quia narratio est, licet efficere at simul multae partes ad finem perducantur, quae cum propriae sint, augent poëmatis molem.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.9">
+            <p>quare hoc habet, quod bonum est ad magnificentiam et ad mutationem audientis et ad incrementum, quod fit dissimilibus episodiis: simile enim, quod cito satietatem affert, eſſicit ut tragoediae displiceant. metrum autem heroicum ex experientia quadravit:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.10">
+            <p>nam si quis aliquo alio metro narrativam imitationem efficeret aut multis, indecorum certe appareret.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.11">
+            <p>heroicum enim firmissimum et tumidissimum est metrorum;</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.12">
+            <p>quamobrem et linguas et translationes maxime recipit. supervacanea enim est narrativa motio aliorum. iambicum vero et tetrametrum mobilia sunt, hoc quidem ad saltationem accommodatum, illud vero rebus agendis idoneum. praeterea vero absurdius fit, si quis ipsa misceat ut Chaeremon. quamobrem nemo fecit longam constitutionem alio nisi heroo.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.13">
+            <p>sed ut dicimus, ipsa docet natura ut illud ipsum partiamur quod congruit. Homerus autem et in aliis multis dignus est qui laudetur, et in hoc etiam, quod solus inter poētas id non ignorat quod ipsum facere oportet.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.14">
+            <p>ipsi enim poëtae quam paucissima dicenda sunt: etenim ipse non est secundum haec imitator. ac alii quidem ipsi per totum in actione versantur, et pauca imitantur ac paucis in locis: at hic cum pauca praefatus sit, statim inducit virum so aut mulierem aut aliquos alios mores, et nihil morum expers, sed habens mores.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.15">
+            <p>ac oportet quidem in tragoediis efficere id quod admirabile est: sed magis in epopoeia contingit id quod ratione vacat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.16">
+            <p>quamobrem contingit maxime id quod admirabile est, quia non spectant in agentem, quoniam quae evenerunt circa Hectoris insectationem, in scena certe apparerent ridicula, hi quidem stantes et non insectantes,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.17">
+            <p>hic vero rennens: at in epicis latent. iam admirabile iucundum est. ac signum est, quod omnes addentes nuntiant, tanquam gratificantes.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.18">
+            <p>et docuit maxime Homerus alios falsa dicere ut oportet. atque hoc naturam habet paralogismi: existimant enim homines, quando, dum unum est aut factum est, alterum fit, si posterius est, etiam prius esse vel fieri; hoc autem mendacium est. iccirco primum iam certe mendacium est. sed necesse non est, dum unum est, ut alterum sit vel fiat vel apponatur. nam quia scit hoc verum esse, falso ratiocinatur animus noster etiam primum, tanquam id quod sit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.19">
+            <p>eligenda autem sunt quae fieri non possunt et verisimilia sunt, magis quam quae heri possunt et parum apposita sunt ad persuadendum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.20">
+            <p>ac sermones non constituendi ex partibus carentibus ratione, sed maxime quidem, ut nihil habeant quod careat ratione, si vero non sint tales, at certe habeant extra faculam, ut Oedipus illud habet quod nesciat quomodo Lains mortuus sit. non autem in dramate, ut in Electra,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.21">
+            <p>qui Pythia nuntiant, <choice><sic>ant</sic><corr>aut</corr></choice> in Mysis, qui sinc voce ex Tegea in Mysiam venit. quare ridiculum est dicere fabulam interituram, quia a principio non oportet constituere tales.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.22">
+            <p>quodsi quis constituerit et apparuerit magis consentaneum recipere, erit etiam absurdum, quoniam et quae sunt in Odyssea sine ratione, nempe quae circa expositionem, nullo modo tolerabilia esse manifestum foret, si ipsa malus poëta faceret.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:24" xml:id="riccobono-24.23">
+            <p>nunc autem aliis bonis poëta obscurat, iucundum reddens absurdum. dictione autem oportet laborare in partibus otiosis et non moratis neque sententiarum pleuis: contra enim occultat dictio valde splendida tum mores tum sententias.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="25" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.1">
+            <p>Iam de quaestionibus et solutionibus, tum ex quot tum ex qualibus formis sint, hoc pacto contemplantibus het sine dubio manifestum.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.2">
+            <p>quoniam enim poëta est imitator, quemadmodum etiam pictor vel quis alius imaginum effector, necesse est imitari de iis quae numero sunt tria, unum aliquod semper: aut enim qualia erant aut sunt; aut qualia aiunt aut videntur; aut qualia esse oportet.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.3">
+            <p>haec autem exponuntur dictione vel et linguis et translationibus. et multae affectiones sunt dictionis: haec enim poëtis concedimus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.4">
+            <p>praeterea vero non est eadem rectitudo politicae et poëticae, neque aliarum artium et poëticae.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.5">
+            <p>ipsius autem poëticae duplex erratum: nam unum per se, alterum per accidens.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.6">
+            <p>etenim aut praeeligit imitationem rei quae ultra facultatem est, quod erratum ipsius est; aut praeeligit non recte, quod per accidens est, sed fecit equum moventem utramque dextram partem. aut erratum est secundum unamquamque artem, quemadmodum secundum medicinam aut aliam artem. aut quae fieri non possunt, ficta sunt. haec igitur qualiacunque fuerint, non per se sunt. quare reprehensiones in quaestionibus ex his considerando solvendae sunt. primum enim si quae adversus ipsam artem sunt, ficta sint huiusmodi ut fieri non possint, erratum sit. sed recte se res habet, si consequitur finem ipsius. finis enim dictus est, quemadmodum si sit magis ad consternandum vel ipsa accommodetur vel alteram partem accommodet. exemplum Hectoris insectatio.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.7">
+            <p>nam si finis vel magis vel minus contingebat inesse, etiam secundum eam artem quae de his est, peccatum est non recte: oportet enim, si fieri potest, omnino nusquam errari.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.8">
+            <p>praeterea utrorum est peccatum maius, eorumne quae sunt secundum artem, an eorum quae sunt secundum aliud accidens. minus enim est, si nesciebat in cervorum specie feminam cornua non habere, quam si mala imitatione describeret.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.9">
+            <p>ad haec si opponitur non esse vera, at qualia oportet, ut Sophocles inquit se quidem facere quales oportet, Euripides vero quales sunt, quamobrem hac ratione solvendum est. sin autem neutro modo, quod sic aiunt, ut quae de deis dicuntur.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.10">
+            <p>fortasse enim neque licet dicere melius sic, neque vera sunt, sed casu accidit, quemadmodum Xenophanes, sed non aiunt haec.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.11">
+            <p>fortasse autem non melius quidem, sed sic se res habebat, quemadmodum quae de armis dicuntur "lanceae vero ipsius rectae in saurotere:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.12">
+            <p>id enim tunc institutum habebant, quemadmodum etiam nunc Illyrici.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.13">
+            <p>de illo autem quod bene aut non bene <choice><sic>ant</sic><corr>aut</corr></choice> dictum est ab aliquo aut factum, non solum considerandum est,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.14">
+            <p>in ipsum quod factum est aut dictum intuendo, utrum ipsum laude an reprehensione dignum sit, sed etiam in agentem aut dicentem, erga quem aut quando aut quomodo aut cuius causa, quemadmodum aut maioris boni, ut fiat, aut maioris mali, ut ne fiat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.15">
+            <p>haec autem intuendo ad elocutionem solvenda sunt, quemadmodum per linguam oveñas μev pτov "mulos quidem prius." fortasse enim non mulos sed custodes dicit. et in Dolonem "specie quidem erat malus," non corpore incomposito, sed facie turpi: nam Cretenses pulchritudinem faciei vocant evides. et illud Sporepov de xspaupe *meracius autem misce," non meracius, ut temulentis, sed citius. illud autem per translationem dictum est, ἄλλοι μέν ῥα Θεοί τε καὶ ἀνέρες εἶδον παννύχιοι “alii quidem diique et homines dormiebant totam noctem."</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.16">
+            <p>et illud ἤτοι ὅτ᾽ ἐς πεδίον τὸ Τρωϊκὸν ἀθρήσειεν, καὶ αὐλῶν συρίγγων τε ὁμαδόν “sive hic in campum Troianum respiceret, et tibiarum fistularumque vocem. nan πάντες omnes” pro hac voce nohoi "multi" secundum translationem dictum est, quia nav "omne" est nokú re “multum quiddam." et illud oin d'auuoco; "sola expers” secundum translationem: quod enim notissimum est, solum est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.17">
+            <p>et secundum accentum, quemadmodum Hippias Thasius solvebat illud δίδομεν δέ οἱ. εἰ τὸ μὲν οὗ καταπύθεται ὄμβρῳ hoc quidem, ubi corrumpitur imbre." haec autem divisione, ut Empedocles αἶψα δε θνητ᾽ ἐφύοντο τὰ πρὶν μάθον ἀθάνατα εἶναι,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.18">
+            <p>ζῶρά τε piv axpnta "extemplo autem mortalia nata sunt, quae prius didiceram immortalia esse, mixtaque prius pura." haec vero per ambiguitatem, παρώχηκε δὲ πλέον νύξ.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.19">
+            <p>praeteriit autem plus nox: illud iov ambiguum est. atque haec secundum consuetudinem locutionis: ut aqua temperatum yinum dicunt esse.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.20">
+            <p>unde factum nam * est κνημὶς νεοτεύκτου “κασσιτέροιο ocrea recens fabrefacti stammi.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.21">
+            <p>et vocanti xaλxias aerarios, qui ferrum exercent. unde dictus est Ganymedes lovi olvoxosusiv vinum ministrare, non bibentibus vinum diis.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.22">
+            <p>quando autem nomen aliquod videtur subcontrarium aliquod significare, attendendum est quotupliciter significet hoc in eo quod dictum est, ut pσXεTO Xaλxεov lyxos, eo quod prohibitum sit. illud autem quotupliciter" contingit sic quodammodo.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.23">
+            <p>maxime vero si quis suspicetur per eam rationem quae e regione est,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="24" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.24">
+            <p>velut ut Glauco dicit, quod nonnulli sine ratione praesumunt et ipsi, cum iam alterum condemnaverint, syllogismo concludunt, et tanquam eos qui dixerint quod videtur reprehendunt, si subcontrarium fuerit ipsorum existimationi. atque hoc patiuntur quae de Icario dicuntur. existimant enim ipsum Laconem esse: absurdum igitur,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="25" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.25">
+            <p>aiunt, est non congressum esse cum eo Telemachum, cum Lacedaemona ivit. idque fortasse se habet ut Cephalenes aiunt: a se enim uxorem duxisse dicunt Ulyssem, et esse Icadium, non Icarium propter erratum. quaestio autem res verisimilis est.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="26" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.26">
+            <p>omnino vero, quod fieri non potest, vel ad poësim vel ad melius vel ad <choice><sic>opinio- nem</sic><corr>opinionem</corr></choice> oportet redigere.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="27" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.27">
+            <p>nam quod attinet ad poësim, magis eligendum est appositum ad persuadendum, quod fieri non potest, quam non appositum ad persuadendum, quod fieri potest.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="28" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.28">
+            <p>ac fieri non potest ut tales sint quales Zeuxis pingebat. verum spectatur etiam melius: nam exemplum debet exsuperare.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="29" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.29">
+            <p>ad ea quae aiunt, reducuntur ea quae sine ratione sunt. et sic etiam dicendum, quod aliquando non est praeter rationem: verisimile enim est etiam praeter verisimile fieri.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="30" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.30">
+            <p>subcontraria vero, ut dicta sunt, oportet considerare, quemadmodum in sermonibus refutationes, si idem et ad idem et simili modo. quare et ipse respicit aut ad ea quae ipse dicit, aut ad id quod prudens supponat.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="31" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.31">
+            <p>iam recta reprehensio est et vacare ratione, et pravum apparere, quando, dum necessitas non est, usus fuerit aliquo quod vacet ratione, quemadmodum Euripides illo Aegeesti, et pravitate, ut Menelai in Oreste.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="32" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:25" xml:id="riccobono-25.32">
+            <p>atque has quidem reprehensiones ex quinque formis afferunt: nam sunt aut tanquam ea quae fieri non possunt, aut tanquam sine ratione, aut tanquam perniciosa, aut tanquam subcontraria, aut tanquam praeter eam rectitudinem quae secundum artem est. solutiones vero ex dictis numeris considerandae; et duodecim sunt.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="26" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1">
+          <div type="textpart" subtype="subchapter" n="1" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.1">
+            <p>Iam vero <choice><sic>ntrum</sic><corr>utrum</corr></choice> sit melior epopoeica imitatio an tragica, dubitare aliquis posset.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.2">
+            <p>nam si quae minus onerosa est, melior est, et talis pertinet ad spectatores meliores, manifestum est, quae omnia imitatur,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.3">
+            <p>onerosam esse: quasi enim non sentientibus nisi ipse poeta multam adiunxerit motionem moventur, ut mali tibicines vol. ventes se, si discum oporteat imitari, et trahentes coryphaeum, si Scyllam cecinerint.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.4">
+            <p>ac tragoedia quidem talis est, quemadmodum etiam qui prius fuerunt, existimabant posteriores histriones: nam Mynniscus Callipedem vocabat tanquam nimis exsuperantem simiam.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.5">
+            <p>ac talis quoque opinio de Pindaro erat. ut autem isti se habeant in vicem, sic tota ars ad epopoeiam se habet. atque hanc quidem circa spectatores probos aiunt esse; quamobrem nihil egeat figuris. tragicam vero ad improbos. igitur onerosa peior profecto erit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.6">
+            <p>ac primum quidem accusatio non est artis poeticae sed histrionicae, quoniam potest uti signis etiam qui recitat epopoeiam, id quod faciebat Sosistratus, et qui canit, id quod faciebat Mnasitheus Opuntius.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.7">
+            <p>deinde non omnis motio improbanda, si quidem neque saltatio, sed motio improborum. id quod etiam Callipidi vitio dabatur, et nunc aliis, tanquam non ingenuas mulieres <choice><sic>imitanti- bus</sic><corr>imitantibus</corr></choice>.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.8">
+            <p>praeterea tragoedia etiam sine motione facit illud quod habet proprium, ut epopoeia: nam per lectionem manifesta est qualis sit.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.9">
+            <p>si igitur est in aliis melior, hoc certe ut ipsi insit necessarium non est. deinde quoniam habet omnia quae habet epopoeia. etenim metro licet uti,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.10">
+            <p>et quod non parvam partem habet musicam, et apparatum, per quam voluptates constituuntur evidentissime.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.11">
+            <p>deinde et evidens habet et in lectione et in actibus.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.12">
+            <p>accedit quod finis imitationis est in minore longitudine: nam strictius est <choice><sic>iucun- d dius</sic><corr>iucundius</corr></choice> quam id quod multi temporis mixtionem habet. dico autem quemadmodum si quis componeret Oedipodem Sophoclis in quot versibus Ilias est. praeterea minus una est qualiscunque imitatio epicorum:</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.13">
+            <p>signum autem est, quod ex qualicunque imitatione plu'DE POETICA. res tragoediae conficiuntur.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.14">
+            <p>quare si unam fabulam faciant, necesse est vel ut breviter ostensa appareat canda muris, vel ut sequens metri longitudinem appareat aqnea. sed si faciant plures, quemadmodum si ex pluribus actionibus fuerit composita, non erit una; ut Ilias habet <choice><sic>mnltas</sic><corr>multas</corr></choice> tales partes, et Odyssea, quae etiam per se habent magnitudinem,</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.15">
+            <p>etiam si haec poemata constituta sint, quantum fieri potest, optima, et quam maxime sint imitatio actionis unius. si igitur et propter haec omnia praestat et propter artis etiam opus (oportet enim ipsas non quamlibet efficere voluptatem, sed eam quae dicta est), apparet eam quae magis finem consequitur, meliorem sine dubio esse epopoeia.</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" xml:base="urn:cts:greekLit:tlg0086.tlg034.riccobono-lat1:26" xml:id="riccobono-26.16">
+            <p>ac de tragoedia quidem et epopoeia et ipsis et formis et partibus ipsarum, et quot sint et quid differant, et quae causae sint eius quod bene est et quod bene non est, et de reprehensionibus et solutionibus, tam multa dicta sint.</p>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

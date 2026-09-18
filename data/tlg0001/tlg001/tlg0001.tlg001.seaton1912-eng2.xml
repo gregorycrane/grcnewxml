@@ -1,6 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+<?xml-model href="https://vault.tei-c.org/P5/current/xml/tei/custom/schema/relaxng/tei_all.rng" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
   <teiHeader>
     <fileDesc>
       <titleStmt>
@@ -46,23 +47,7 @@
       </sourceDesc>
     </fileDesc>
         <encodingDesc>
- <refsDecl xml:id="CTS" n="CTS">
-  <citeStructure match="/TEI/text/body/div[@type='edition']" use="@n">
-    <citeStructure match="div[@subtype='book']" unit="book" use="@n" delim=":">
-      <citeStructure match="l" unit="line" use="@n" delim="." />
-    </citeStructure>
-  </citeStructure>
-</refsDecl>
-
-<refsDecl xml:id="CTS-card">
-    <citeStructure match="/TEI/text/body" use="@xml:base">
-       <citeStructure unit="book" delim=":" match="div[@subtype='book']" use="@n">
-          <citeStructure match=".//milestone[@unit='card']"
-             unit="card" delim="." use="@n" n="chunk" />
-       </citeStructure>
-    </citeStructure>
- </refsDecl>
-                  <editorialDecl>
+ <editorialDecl>
         <correction method="silent">
           <p>Obvious OCR errors and end-of-line hyphenation were corrected against the public-domain Project Gutenberg transcription of the same 1912 Seaton volume. Loeb page breaks derive from the attached HathiTrust OCR.</p>
         </correction>
@@ -70,7 +55,7 @@
           <p>English paragraphs are aligned monotonically to the facing Seaton Greek text. Correspondence targets the explicit Seaton 1900 Greek edition URN; Mooney card milestones are projected through the facing-page alignment.</p>
         </segmentation>
       </editorialDecl>
-        </encodingDesc>
+        <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div[@type='book']" unit="book" use="@n" delim=":"><citeStructure match="p" unit="paragraph" use="@n" delim="."/></citeStructure></citeStructure></refsDecl><refsDecl xml:id="CTS-card"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match="div[@type='book']" unit="book" use="@n" delim=":"><citeStructure match=".//milestone[@unit='card']" unit="card" use="@n" delim="." n="chunk"/></citeStructure></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="eng">English</language>

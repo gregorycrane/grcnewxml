@@ -50,11 +50,11 @@
         <cRefPattern n="commline" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@subtype='commline'][@n='$1'])"/>
       </refsDecl>
       <refsDecl xml:id="CTS-modern">
-        <citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="@n" n="chunk"/></citeStructure></refsDecl>
+        <citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="concat(@n, '.', @xml:id)" n="chunk"/></citeStructure></refsDecl>
       <editorialDecl>
         <correction status="low">Text was recovered conservatively from Google OCR. Clear layout artifacts were removed; uncertain readings remain marked with low certainty rather than being silently replaced from Smyth.</correction>
       </editorialDecl>
-    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="commline" delim=":" match=".//div[@subtype='commline']" use="concat(@n, '.', @xml:id)" n="chunk"/></citeStructure></refsDecl></encodingDesc>
     <profileDesc>
       <langUsage>
         <language ident="grc">Ancient Greek</language>

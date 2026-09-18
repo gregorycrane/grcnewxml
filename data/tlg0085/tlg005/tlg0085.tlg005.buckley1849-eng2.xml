@@ -61,7 +61,7 @@
     </fileDesc>
 
     <encodingDesc>
-      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
 
     <profileDesc>
       <langUsage>
@@ -92,7 +92,7 @@
         </item><item>
           <roleName>AEGISTHUS</roleName>
         </item></list></div>
-      </front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg005.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg005.perseus-grc2:1-39">
+      </front><body xml:base="urn:cts:greekLit:tlg0085.tlg005.buckley1849-eng2"><div type="edition" n="urn:cts:greekLit:tlg0085.tlg005.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg005.perseus-grc2:1-39">
         <speaker>WATCHMAN</speaker>
         <p><milestone unit="card" n="1" resp="Smyth"/>I pray the gods a deliverance from these toils, a remedy <ref n="95.1" target="#app-tlg005-fn-95.1">1</ref> for my year-long watch, in which, couching on my elbows <ref n="95.2" target="#app-tlg005-fn-95.2">2</ref> on the roofs of the Atreidae, like a dog, I have contemplated the host <ref n="95.3" target="#app-tlg005-fn-95.3">3</ref> of the nightly stars, and the bright potentates that bear winter and summer to mortals, conspicuous in the firmament. And now I am watching for the signal of the beacon, the blaze of fire that brings a voice from Troy, and tidings of its capture; for thus strong in hope is the woman's heart, of manly counsel <ref n="95.4" target="#app-tlg005-fn-95.4">4</ref>. And whilst
           <pb n="96"/>

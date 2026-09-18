@@ -61,7 +61,7 @@
     </fileDesc>
 
     <encodingDesc>
-      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
 
     <profileDesc>
       <langUsage>
@@ -78,7 +78,7 @@
 
           <p>PROMETHEUS having, by his attention to the wants of men, provoked the anger of Jove, is bound down, in a cleft of a rock in a distant desert of Scythia. Here he not only relates the wanderings, but foretells the future lot of Io, and likewise alludes to the fall of Jove's dynasty. Disdaining to explain his meaning to Mercury, he is swept into the abyss amidst terrific hurricane and earthquake.</p>
           <div type="textpart" subtype="cast-list"><fw type="header">PERSONS REPRESENTED.</fw><list><item><roleName>STRENGTH.</roleName></item><item><roleName>FORCE.</roleName></item><item><roleName>VULCAN.</roleName></item><item><roleName>PROMETHEUS.</roleName></item><item><roleName>CHORUS OF NYMPHS, DAUGHTERS OF OCEAN.</roleName></item><item><roleName>IO, DAUGHTER OF INACHUS.</roleName></item><item><roleName>MERCURY.</roleName></item></list></div>
-          </front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg003.buckley1849-eng2" xml:lang="eng"><stage>STRENGTH, FORCE, VULCAN, PROMETHEUS.
+          </front><body xml:base="urn:cts:greekLit:tlg0085.tlg003.buckley1849-eng2"><div type="edition" n="urn:cts:greekLit:tlg0085.tlg003.buckley1849-eng2" xml:lang="eng"><stage>STRENGTH, FORCE, VULCAN, PROMETHEUS.
           </stage>
           <sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg003.perseus-grc2:1-11"><speaker>STRENGTH</speaker> <p> <milestone unit="card" n="1" resp="Smyth"/>We<ref n="1.1" target="#app-tlg003-fn-1.1"/> are come to a plain, the distant boundary
 

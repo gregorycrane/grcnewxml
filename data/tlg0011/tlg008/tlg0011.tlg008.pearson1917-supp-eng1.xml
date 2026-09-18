@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title>Ichneutae: Pearson fragments 315–316, supplementary material</title>
+        <author>Alfred Chilton Pearson</author>
+        <editor xml:id="pearson">Alfred Chilton Pearson</editor>
+        <respStmt xml:id="digital">
+          <resp>OCR collation, structural reconstruction, and reference alignment; working transcription prepared for Gregory Crane.</resp>
+          <name>Codex</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Working files prepared for the Perseus Multitext Viewer</publisher>
+        <date when="2026-09-15">2026-09-15</date>
+        <availability status="free">
+          <p>The 1917 source is in the public domain in the United States. No new license is assigned to third-party digital source files by this conversion.</p>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl xml:id="pearson1917">
+          <title>The Fragments of Sophocles</title>
+          <editor>A. C. Pearson</editor>
+          <date>1917</date>
+          <biblScope unit="volume">1</biblScope>
+          <biblScope unit="page">233–268; appendix 269</biblScope>
+          <ref target="https://hdl.handle.net/2027/mdp.39015010446022">Michigan scan, HathiTrust mdp.39015010446022</ref>
+        </bibl>
+        <p>Copy text: supplied ichneutae_ocr.txt, printed pp. 234–269. Structural comparison: supplied ichneutae_pearson_scaffold.xml. The opening two verses and opening note survive only in the scaffold; their printed page is inferred as 233. These are two transcriptions of the same edition, not independent textual witnesses. No page-image proofreading has been performed.</p>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <editorialDecl>
+        <p>Pearson’s fragment 314 is the main play. Pearson’s line numbers remain in n; corresp points to the supplied Hunt/Perseus reference. Short apparatus is separate from discursive commentary. OCR errors are corrected only where supported by the supplied material or unambiguous context. Unresolved readings use sic; OCR gaps differ from ancient losses. Brackets are retained as transcription signs and are not claimed to be a new diplomatic transcription. Dot runs give unspecified loss, not measured character counts. Missing numbered positions follow Pearson’s printed numbering and do not assert an exact papyrus extent.</p>
+        <p>Reference gap/aggregate pointers (especially Pearson 24–27, 379–386, and 395–430) identify a reference placeholder, not exact verse equivalence. Pearson 414 is a marginally attested reading and is not evidence that a continuous verse survives. Content and references to introductory pages outside the supplied OCR have not been reconstructed.</p>
+      </editorialDecl>
+      <classDecl>
+        <taxonomy xml:id="editorial-status">
+          <category xml:id="ocr-review">
+            <catDesc>Unresolved OCR or transcription detail; consult the printed page.</catDesc>
+          </category>
+          <category xml:id="scaffold-only">
+            <catDesc>Present only in the older scaffold; absent from supplied new OCR.</catDesc>
+          </category>
+          <category xml:id="reference-gap">
+            <catDesc>Alignment to a reference gap placeholder.</catDesc>
+          </category>
+          <category xml:id="reference-aggregate">
+            <catDesc>Alignment to a reference aggregate rather than exact line.</catDesc>
+          </category>
+          <category xml:id="marginal-witness">
+            <catDesc>Reading reported from a margin, not a surviving complete verse.</catDesc>
+          </category>
+          <category xml:id="source-loss">
+            <catDesc>Loss reported in the printed ancient text.</catDesc>
+          </category>
+          <category xml:id="shared-verse">
+            <catDesc>Source verse shared across speakers or reference subdivisions.</catDesc>
+          </category>
+          <category xml:id="overlap">
+            <catDesc>Source line overlaps two reference lines.</catDesc>
+          </category>
+        </taxonomy>
+      </classDecl>
+      <refsDecl n="CTS">
+        <cRefPattern n="commline" matchPattern="([0-9]+[a-z]?(?:-[0-9]+[a-z]?)?)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>Cite the printed Pearson line or the first line of a note; source and reference numbering are distinct.</p>
+        </cRefPattern>
+      </refsDecl>
+      <refsDecl n="TEI">
+        <citeStructure match="//tei:div[@subtype='commline']" use="@n" unit="commline"/>
+      </refsDecl>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//div[@subtype='fragment']" unit="fragment" use="concat('fragment-', @n)" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Ancient Greek</language>
+        <language ident="eng">English</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-09-15" who="#digital">Reconstructed from the supplied OCR and scaffold; explicit line concordance and source-page provenance added. OCR-review edition, not scan-proofread.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="eng">
+    <body xml:base="urn:cts:greekLit:tlg0011.tlg008.pearson1917-supp-eng1">
+      <div type="supplement" n="urn:cts:greekLit:tlg0011.tlg008.pearson1917-supp-eng1" xml:lang="eng">
+        <div type="textpart" subtype="fragment" n="315">
+          <head>Pearson fragment 315 (unplaced; not play line 315)</head>
+          <pb n="269" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=373"/>
+          <quote xml:lang="grc"><seg>ἐνήλατα ξύλα</seg>
+<seg>τρίγομφα διατορεῦσαι σε δεῖται</seg>
+</quote>
+          <p>315 <cit><bibl n="Pollux 10. 34">Pollux 10. 34</bibl> <quote xml:lang="grc">μέρη δὲ κλίνης ἐνήλατα καὶ ἐπίκλιντρον</quote></cit>, <mentioned xml:lang="grc">τὸ μέν γε ἐπίκλιντρον ὑπὸ ᾿Αριστοφάνους</mentioned> (fr. 44, I 403 <mentioned xml:lang="grc">Κ</mentioned>.) <mentioned xml:lang="grc">εἰρημένον· Σοφοκλῆς δ᾽ ἐν Ἰχνευταῖς σατύροις ἔφη</mentioned> ‘<mentioned xml:lang="grc">ἐνήλατα</mentioned>...<mentioned xml:lang="grc">δεῖται</mentioned>.' Rutherford (New Phryn. p. 267) pronounces these words to be 'too corrupt to convey any meaning.' The conjectures hitherto recorded assume that the sense required is 'the posts must be pierced with nails. Thus Pauw (after Hemsterhuis) conjectured <mentioned xml:lang="grc">τριγόμφοις διατορεῦσαι δεῖ</mentioned>, and Valckenaer on <bibl n="Phoen. 1186">Phoen. 1186</bibl> (1179) <mentioned xml:lang="grc">ἐνήλατα τρίγομφα διατορεῖν σε δεῖ</mentioned>, omitting <mentioned xml:lang="grc">ξύλα</mentioned>. Lobeck (Phryn. p. 178) gave as alternatives <mentioned xml:lang="grc">ἐνήλατα ξυλ</mentioned>&lt;<mentioned xml:lang="grc">ουργέ</mentioned> &gt; <mentioned xml:lang="grc">γόμφοις διατορεῖν σε δεῖ</mentioned>, and <mentioned xml:lang="grc">ἐνήλατα ξύγγομφα διατρῆσαί σε δεῖ</mentioned>, with the obscure comment 'spondas prius ad eum finem perforatas <mentioned xml:lang="grc">συγγομφῶσαι</mentioned>.” But none of these suggestions is satisfactory. <mentioned xml:lang="grc">ἐνήλατα</mentioned> are the four posts or bars' bedrails' which, when jointed together, form the framework of the <mentioned xml:lang="grc">κλίνη</mentioned>; they are supported by the feet, which are screwed into them. Cf. <bibl n="Hesych. 1">Hesych. 1</bibl> p. 193 <mentioned xml:lang="grc">ἑρμῖνα· πόδα κλίνης· ἀπὸ τοῦ ἐνείρεσθαι τῷ ἐνηλάτῳ</mentioned>. Phrynichus (CLV R.) states that <mentioned xml:lang="grc">κραστήρια</mentioned> is the correct Attic term for <mentioned xml:lang="grc">ἐνήλατα</mentioned>, but there is no material to test his authority. The meaning is placed beyond doubt by Artemid. oneirocr. 1. 74, quoted by Mau in Pauly-Wissowa III 370. The interpretation of <mentioned xml:lang="grc">τρίγομφα</mentioned> and <mentioned xml:lang="grc">διατορεῦσαι</mentioned> is doubtful; but I think it is possible to get nearer to the truth. (1) The sense usually given to <mentioned xml:lang="grc">τρίγομφα</mentioned>, ‘fastened with three nails,' is absurd. I should rather suppose that it means 'firmly-bolted,' and that <mentioned xml:lang="grc">τρι</mentioned>- has the same force as in <mentioned xml:lang="grc">τριγέρων</mentioned>, <mentioned xml:lang="grc">τρίδουλος</mentioned>, <mentioned xml:lang="grc">τριπάλαι</mentioned>, <mentioned xml:lang="grc">τριπανούργος</mentioned>, <mentioned xml:lang="grc">τρισάθλιος</mentioned> and many others. (2) <mentioned xml:lang="grc">διατορεῦσαι</mentioned> is not to bore through, but to engrave, chase; and, although it may be an error for <mentioned xml:lang="grc">διατορῆσαι</mentioned> or <mentioned xml:lang="grc">διατορεῖν σε</mentioned>, the corruption is not likely. On the other hand, the context does not suggest an allusion to <mentioned xml:lang="grc">τορευτική</mentioned>; for, although the bedstead of Odysseus was adorned with gold, silver and ivory (<bibl n="Hom. 4200">Hom. 4200</bibl>), the verb required here must have been appropriate to <mentioned xml:lang="grc">ξύλα</mentioned>. But <mentioned xml:lang="grc">τορεύειν</mentioned> and its cognates are constantly confused with <mentioned xml:lang="grc">τορνεύειν</mentioned> etc.; and <mentioned xml:lang="grc">διατορνεύειν</mentioned>, to finish off with the lathe, is exactly what we want (Hom. <mentioned xml:lang="grc">Γ</mentioned> 391). I suggest, therefore, that we should read something like <mentioned xml:lang="grc">ξύλα</mentioned> | <mentioned xml:lang="grc">ἐνηλάτων τρίγομφα διατορνεύσεως</mentioned> | <mentioned xml:lang="grc">δεῖται</mentioned>, or perhaps simply <mentioned xml:lang="grc">διατορνεύσεται</mentioned>. In Aelian var. hist. 14. 7 perhaps <mentioned xml:lang="grc">διατορνευθέντες</mentioned> would be an improvement for <mentioned xml:lang="grc">διατορευθέντες</mentioned> (cf. <mentioned xml:lang="grc">ἀποτορνεύω</mentioned>). I find that Blaydes has suggested <mentioned xml:lang="grc">ἐνήλατ' οὖν τρίγομφα τορνεῦσαί σε δεῖ</mentioned>, besides alternatives; and Herwerden <mentioned xml:lang="grc">ἐνήλατα</mentioned> |&lt; <mentioned xml:lang="grc">κλινῶν</mentioned> &gt; <mentioned xml:lang="grc">τρίγομφα</mentioned> &lt;<mentioned xml:lang="grc">πολλά πολλά</mentioned> &gt; <mentioned xml:lang="grc">τορνεῦσαί σε δεῖ</mentioned>. R. Ellis conjectured <mentioned xml:lang="grc">διατόρευτ᾽ ἀποξῦσαί σε δεῖ</mentioned>. It should be added that Robert guesses that Hermes had concealed the lyre in his mother's bed, and that we should read <mentioned xml:lang="grc">δεῖ τρίγομφ᾽ ἐνήλατα</mentioned> | &lt;<mentioned xml:lang="grc">νῦν</mentioned> &gt; <mentioned xml:lang="grc">διατορεῦσαι</mentioned> (? <mentioned xml:lang="grc">διατορῆσαι</mentioned>) <mentioned xml:lang="grc">σ'</mentioned>. Even if the facts were as supposed, the method proposed for discovering the lost instrument would be a very strange one. -For Schenkl's view see on fr. 314, 309.</p>
+        </div>
+        <div type="textpart" subtype="fragment" n="316">
+          <head>Pearson fragment 316 (unplaced; not play line 316)</head>
+          <pb n="269" facs="https://babel.hathitrust.org/cgi/pt?id=mdp.39015010446022&amp;seq=373"/>
+          <quote xml:lang="grc"><seg>ῥικνοῦσθαι</seg>
+</quote>
+          <p>316 Phot. lex. p. 489, 1 = Suid. s.v. <mentioned xml:lang="grc">ῥικνοῦσθαι· τὸ διέλκεσθαι καὶ παντοδαπῶς διαστρέφεσθαι κατ' εἶδος</mentioned>. <mentioned xml:lang="grc">λέγεται δὲ καὶ ῥικνοῦσθαι</mentioned> (<mentioned xml:lang="grc">ῥιγνοῦσθαι</mentioned> Phot.) <mentioned xml:lang="grc">τὸ καμπύλον γίγνεσθαι ἀσχημόνως καὶ κατὰ συνουσίαν καὶ ὄρχησιν κάμπτοντα τὴν ὀσφύν</mentioned>. <mentioned xml:lang="grc">Σοφοκλῆς Ἰχνευταῖς</mentioned>. Cf. <cit><bibl n="Hesych. III p. 429">Hesych. III p. 429</bibl> <quote xml:lang="grc">ῥικνοῦσθαι· διέλκεσθαι καὶ παντοδαπῶς διαστρέφεσθαι</quote></cit> (<mentioned xml:lang="grc">διαφέρεσθαι</mentioned> cod.) <mentioned xml:lang="grc">κατ' εἶδος</mentioned>. p. 431 <mentioned xml:lang="grc">ῥιχνοῦσθαι· κινεῖσθαι ἀσχημόνως</mentioned>. Moeris p. 208, 25 <mentioned xml:lang="grc">ῥικνοῦσθαι· τὸ ἀσχημόνως κινεῖσθαι ᾿Αττικοί</mentioned>. There was also the compound <mentioned xml:lang="grc">διαρρικνοῦσθαι</mentioned> mentioned by <bibl n="Pollux 4. 99">Pollux 4. 99</bibl> among a list of dances and defined as <mentioned xml:lang="grc">τὸ τὴν ὀσφὺν φορτικῶς περιάγειν</mentioned>. <mentioned xml:lang="grc">Το</mentioned> the same effect Etym. M. p. 270, 5, who quotes <mentioned xml:lang="grc">Κράτης</mentioned> (1. <mentioned xml:lang="grc">Κρατίνος</mentioned>) <mentioned xml:lang="grc">Τροφωνίῳ</mentioned> (fr. 219, 179 K.): <mentioned xml:lang="grc">ξίφιζε καὶ σπόδιζε καὶ διαρρικνοῦ</mentioned>. The lemma is not a reference to fr. 314, 295.</p>
+        </div>
+      </div>
+    </body>
+  </text>
+<standOff><linkGrp type="commentary"/></standOff></TEI>

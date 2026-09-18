@@ -1,0 +1,358 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+    <fileDesc>
+      <titleStmt>
+        <title xml:lang="grc">Περὶ ποιητικῆς</title>
+        <title xml:lang="eng">Aristotle's theory of poetry and fine art : with a critical text and translation of the Poetics</title>
+        <author>Aristotle</author>
+        <editor>S. H. Butcher</editor>
+        <respStmt>
+          <resp>Prepared by</resp>
+          <name>Gemini Philological AI</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Gemini Philological Services</publisher>
+        <pubPlace>Digital Environment</pubPlace>
+        <authority>TEI XML Butcher Project</authority>
+        <date type="release" when="2026">2026</date>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <title xml:lang="eng">Aristotle's theory of poetry and fine art : with a critical text and translation of the Poetics</title>
+            <author>Butcher, S. H. (Samuel Henry), 1850-1910.</author>
+            <edition>4th ed., [reprinted with corrections]</edition>
+            <imprint>
+              <publisher>Macmillan</publisher>
+              <pubPlace>London</pubPlace>
+              <date when="1911">1911</date>
+            </imprint>
+          </monogr>
+          <ref target="https://hdl.handle.net/2027/uc2.ark:/13960/t7rn31s8t">HathiTrust / University of California</ref>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS">
+        <cRefPattern n="subchapter" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+          <p>This pointer pattern extracts chapter and subchapter (section).</p>
+        </cRefPattern>
+        <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+          <p>This pointer pattern extracts chapter.</p>
+        </cRefPattern>
+      </refsDecl>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//div[@subtype='chapter']" use="@n" unit="chapter" delim=":" n="chunk"><citeStructure match="./div[@subtype='section']" use="@n" unit="section" delim="."/></citeStructure></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Greek</language>
+        <language ident="eng">English</language>
+        <language ident="lat">Latin</language>
+      </langUsage>
+    </profileDesc>
+  </teiHeader>
+  <text xml:lang="grc">
+    <body xml:base="urn:cts:greekLit:tlg0086.tlg034.butcher1911-grc2">
+      <div type="edition" xml:lang="grc" n="urn:cts:greekLit:tlg0086.tlg034.butcher-1911">
+        <div type="textpart" subtype="chapter" n="1">
+          <div type="textpart" subtype="section" n="1">
+            <p>
+              <milestone unit="page" resp="Bekker" n="1447a"/>
+              <milestone unit="line" resp="Bekker" n="8"/>
+              Περὶ ποιητικῆς αὐτῆς τε καὶ τῶν εἰδῶν αὐτῆς, ἥν τινα δύναμιν ἕκαστον ἔχει, καὶ πῶς δεῖ συνίστασθαι τοὺς μύθους εἰ μέλλει καλῶς ἕξειν ἡ ποίησις, ἔτι δὲ ἐκ πόσων καὶ ποίων ἐστὶ μορίων, ὁμοίως δὲ καὶ περὶ τῶν ἄλλων ὅσα τῆς αὐτῆς ἐστι μεθόδου, 
+              <app>
+                <lem>λέγωμεν</lem>
+                <rdg wit="#apogr">λέγωμεν</rdg>
+                <rdg>λέγομεν</rdg>
+                <note>habuit iam var. lect., 'et dicamus et dicimus' Arabs</note>
+              </app> 
+              ἀρξάμενοι κατὰ φύσιν πρῶτον ἀπὸ τῶν πρώτων.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="2">
+            <p>
+              ἐποποιία δὴ καὶ ἡ τῆς τραγῳδίας ποίησις ἔτι δὲ κωμῳδία καὶ ἡ διθυραμβοποιητικὴ καὶ τῆς 
+              <milestone unit="line" resp="Bekker" n="15"/> 
+              αὐλητικῆς ἡ πλείστη καὶ κιθαριστικῆς πᾶαι τυγχάνουσιν οὖσαι μιμήσεις τὸ σύνολον,
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="3">
+            <p>
+              διαφέρουσι δὲ ἀλλήλων τρισίν, ἢ γὰρ τῷ 
+              <app>
+                <lem>ἐν ἑτέροις</lem>
+                <rdg resp="#Forchhammer">ἐν ἑτέροις</rdg>
+                <rdg wit="#Ac">γένει</rdg>
+                <note>'imitatur rebus diversis' Arabs</note>
+              </app> 
+              μιμεῖσθαι ἢ τῷ ἕτερα ἢ τῷ ἑτέρως καὶ μὴ τὸν αὐτὸν τρόπον.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="4">
+            <p>
+              ὥσπερ γὰρ καὶ χρώμασι καὶ σχήμασι πολλὰ μιμοῦνταί τινες ἀπεικάζοντες (οἱ μὲν διὰ τέχνης οἱ δὲ διὰ συνηθείας), ἕτεροι δὲ διὰ 
+              <app>
+                <lem>τῆς φωνῆς</lem>
+                <rdg wit="#codd">τῆς φωνῆς</rdg>
+                <rdg resp="#Maggi">τῆς φύσεως</rdg>
+                <rdg resp="#Spengel">αὐτῆς τῆς φύσεως</rdg>
+                <note>'per sonos' Arabs</note>
+              </app>, 
+              οὕτω 
+              <app>
+                <lem>κἀν</lem>
+                <rdg wit="#Parisinus2038">κὰν</rdg>
+                <rdg wit="#apogr">καὶ ἐν</rdg>
+                <rdg wit="#Ac">καὶ</rdg>
+              </app> 
+              ταῖς εἰρημέναις τέχναις· ἅπασαι μὲν ποιοῦνται τὴν μίμησιν ἐν ῥυθμῷ καὶ λόγῳ καὶ ἁρμονίᾳ, τούτοις δ᾽ ἢ χωρὶς ἢ μεμιγμένοις· οἷον ἁρμονίᾳ μὲν καὶ ῥυθμῷ χρώμεναι μόνον ἥ τε αὐλητικὴ καὶ ἡ κιθαριστικὴ κἂν εἴ τινες ἕτεραι τυγχάνουσιν οὖσαι τοιαῦται τὴν δύναμιν, οἷον ἡ τῶν συρίγγων.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="5">
+            <p>
+              <app>
+                <lem resp="#Butcher">αὐτῷ δὲ τῷ ῥυθμῷ</lem>
+                <rdg wit="#Sigma" type="variant">τῷ αὐτῷ δὲ</rdg>
+                <note>Σ male (Margoliouth)</note>
+              </app> 
+              <app>
+                <lem resp="#Butcher">[μιμοῦνται]</lem>
+                <note>del. Spengel (confirm. Arabs)</note>
+              </app> 
+              χωρὶς ἁρμονίας 
+              <app>
+                <lem wit="#apogr">ἡ</lem>
+                <note>ἡ apogr. ('ars instrumenti' [Arabs])</note>
+              </app>
+              τῶν ὀρχηστῶν, καὶ γὰρ οὗτοι διὰ τῶν σχηματιζομένων ῥυθμῶν μιμοῦνται καὶ ἤθη καὶ πάθη καὶ πράξεις.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="6">
+            <p>
+              ἡ δὲ 
+              <app>
+                <lem resp="#Ueberweg">[ἐποποιία]</lem>
+                <note>om. Sigma</note>
+              </app> 
+              μόνον τοῖς λόγοις ψιλοῖς ἢ τοῖς μέτροις καὶ τούτοις 
+              <milestone unit="page" resp="Bekker" n="1447b"/>
+              <milestone unit="line" resp="Bekker" n="8"/>
+              εἴτε μιγνῦσα μετ’ ἀλλήλων εἴθ’ ἑνί τινι γένει χρωμένη τῶν μέτρων, 
+              <app>
+                <lem resp="#Bernays" cert="high">ἀνώνυμος</lem>
+                <note>confirmante Arabe 'quae sine nomine est adhuc'</note>
+              </app> 
+              <app>
+                <lem resp="#Suckow">τυγχάνει οὖσα</lem>
+                <rdg>τυγχάνουσα</rdg>
+              </app> 
+              μέχρι τοῦ νῦν.
+            </p>
+          </div>
+        </div>
+
+
+
+        <div type="textpart" subtype="chapter" n="4">
+          <div type="textpart" subtype="section" n="7">
+            <p>
+              <milestone unit="line" resp="Bekker" n="24"/>
+              διεσπάσθη δὲ κατὰ τὰ οἰκεῖα ἤθη ἡ ποίησις· 
+              <milestone unit="line" resp="Bekker" n="25"/>
+              οἱ μὲν γὰρ σεμνότεροι τὰς καλὰς ἐμιμοῦντο πράξεις καὶ τὰς τῶν τοιούτων, οἱ δὲ εὐτελέστεροι τὰς τῶν φαύλων, πρῶτον ψόγους ποιοῦντες, ὥσπερ 
+              <app>
+                <lem resp="#Spengel">ἅτεροι</lem>
+                <rdg wit="#codd">ἕτεροι</rdg>
+              </app> 
+              ὕμνους καὶ ἐγκώμια.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="8">
+            <p>
+              τῶν μὲν οὖν πρὸ Ὁμήρου οὐδενὸς ἔχομεν εἰπεῖν τοιοῦτον 
+              <milestone unit="line" resp="Bekker" n="29"/>
+              ποίημα, εἰκὸς δὲ εἶναι πολλούς, ἀπὸ δὲ Ὁμήρου ἀρξαμένοις ἔστιν, οἷον ἐκείνου ὁ Μαργίτης καὶ τὰ τοιαῦτα.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="9">
+            <p>
+              <milestone unit="line" resp="Bekker" n="31"/>
+              ἐν οἷς καὶ τὸ ἁρμόττον 
+              <app>
+                <lem resp="#Butcher">[ἰαμβεῖον]</lem>
+                <note>secl. Butcher; ἰαμβίον (bis) A</note>
+              </app> 
+              ἦλθε μέτρον, διὸ καὶ ἰαμβεῖον καλεῖται νῦν, ὅτι ἐν τῷ μέτρῳ τούτῳ ἰάμβιζον ἀλλήλους. καὶ ἐγένοντο τῶν παλαιῶν οἱ μὲν ἡρωικῶν οἱ δὲ ἰάμβων ποιηταί.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="10">
+            <p>
+              <milestone unit="line" resp="Bekker" n="34"/>
+              ὥσπερ δὲ καὶ τὰ σπουδαῖα μάλιστα ποιητὴς Ὅμηρος ἦν (μόνος γὰρ 
+              <app>
+                <lem resp="#Bonitz">οὐχ ὅτι εὖ ἀλλὰ</lem>
+                <rdg wit="#codd">ἀλλ' ὅτι</rdg>
+                <rdg resp="#Tucker">ἀλλ' ἔτι</rdg>
+              </app>
+              <app>
+                <lem resp="#Butcher">[ὅτι]</lem>
+              </app> 
+              καὶ μιμήσεις 
+              <app>
+                <lem wit="#Ac">δραματικάς</lem>
+                <rdg wit="#apogr">δραματικῶς</rdg>
+              </app> 
+              ἐποίησεν), οὕτως καὶ τὰ τῆς κωμῳδίας σχήματα πρῶτος ὑπέδειξεν, οὐ ψόγον ἀλλὰ τὸ γελοῖον δραματοποιήσας· 
+              <milestone unit="page" resp="Bekker" n="1449a"/>
+              ὁ γὰρ Μαργίτης ἀνάλογον ἔχει, ὥσπερ Ἰλιὰς καὶ ἡ Ὀδύσσεια πρὸς τὰς τραγῳδίας, οὕτω καὶ οὗτος πρὸς τὰς κωμῳδίας.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="11">
+            <p>
+              <milestone unit="line" resp="Bekker" n="2"/>
+              παραφανείσης δὲ τῆς τραγῳδίας καὶ κωμῳδίας οἱ ἐφ᾽ ἑκατέραν τὴν ποίησιν ὁρμῶντες κατὰ τὴν οἰκείαν φύσιν οἱ μὲν ἀντὶ τῶν ἰάμβων κωμῳδοποιοὶ ἐγένοντο, οἱ δὲ ἀντὶ τῶν ἐπῶν τραγῳδοδιδάσκαλοι, διὰ τὸ 
+              <app>
+                <lem wit="#apogr">μείζονα</lem>
+                <rdg wit="#Ac">μείζω</rdg>
+              </app> 
+              καὶ ἐντιμότερα τὰ σχήματα εἶναι ταῦτα ἐκείνων.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="12">
+            <p>
+              <milestone unit="line" resp="Bekker" n="7"/>
+              τὸ μὲν οὖν ἐπισκοπεῖν 
+              <app>
+                <lem resp="#Vahlen">εἰ ἄρ᾽ ἔχει</lem>
+                <rdg wit="#Parisinus2038">εἰ ἄρα ἔχει</rdg>
+                <rdg wit="#Ac">παρέχει</rdg>
+              </app> 
+              ἤδη ἡ τραγῳδία τοῖς εἴδεσιν ἱκανῶς ἢ οὔ, αὐτό τε καθ᾽ αὑτὸ 
+              <app>
+                <lem>†κρίνεται ἢ ναὶ†</lem>
+                <rdg resp="#Forchhammer">κρῖναι</rdg>
+                <note>κρίνεται εἶναι καὶ apogr.; κρεῖττον ἢ πρὸς θάτερα Σ (Margoliouth)</note>
+              </app> 
+              καὶ πρὸς τὰ θέατρα, ἄλλος λόγος.
+            </p>
+            <p>
+              <milestone unit="line" resp="Bekker" n="9"/>
+              γενομένη 
+              <app>
+                <lem wit="#Riccardianus46">δ᾽</lem>
+                <rdg wit="#apogr">οὖν</rdg>
+                <rdg wit="#Ac">γενομένης οὖν</rdg>
+              </app> 
+              οὖν ἀπ᾿ ἀρχῆς 
+              <app>
+                <lem wit="#apogr">αὐτοσχεδιαστική</lem>
+                <rdg wit="#Ac">αὐτοσχεδιαστικῆς</rdg>
+              </app>, 
+              καὶ αὐτὴ καὶ ἡ κωμῳδία...
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="13">
+            <p>
+              <milestone unit="line" resp="Bekker" n="15"/>
+              καὶ πολλὰς μεταβολὰς μεταβαλοῦσα ἡ τραγῳδία ἐπαύσατο, ἐπεὶ ἔσχε τὴν 
+              <app>
+                <lem resp="#Bekker">αὐτῆς</lem>
+                <rdg wit="#apogr">ἑαυτῆς</rdg>
+              </app> 
+              φύσιν. καὶ τό τε τῶν ὑποκριτῶν πλῆθος ἐξ ἑνὸς εἰς δύο πρῶτος Αἰσχύλος ἤγαγε καὶ τὰ τοῦ χοροῦ ἠλάττωσε καὶ τὸν λόγον πρωταγωνιστὴν παρεσκεύασεν, τρεῖς δὲ καὶ σκηνογραφίαν Σοφοκλῆς.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="14">
+            <p>
+              <milestone unit="line" resp="Bekker" n="19"/>
+              ἔτι δὲ τὸ μέγεθος ἐκ μικρῶν μύθων καὶ 
+              <app>
+                <lem>λέξεως</lem>
+                <rdg resp="#Christ">ἡ λέξις ἐκ λέξεως</rdg>
+                <note>λέξεις Σ ('orationes' Arabs); Margoliouth suspicatur 'ὑψηγορία'</note>
+              </app> 
+              γελοίας διὰ τὸ ἐκ 
+              <app>
+                <lem resp="#Butcher">σατυρικοῦ</lem>
+                <rdg wit="#Ac">σατυριακοῦ</rdg>
+              </app> 
+              μεταβαλεῖν ὀψὲ ἀπεσεμνύνθη.
+            </p>
+          </div>
+        </div>
+
+        <div type="textpart" subtype="chapter" n="5">
+          <div type="textpart" subtype="section" n="1">
+            <p>
+              <milestone unit="line" resp="Bekker" n="31"/>
+              Ἡ δὲ κωμῳδία ἐστὶν ὥσπερ εἴπομεν μίμησις φαυλοτέρων μέν, οὐ μέντοι κατὰ πᾶσαν κακίαν, 
+              <app>
+                <lem>ἀλλὰ τοῦ αἰσχροῦ ἐστι τὸ γελοῖον μόριον.</lem>
+                <rdg resp="#Friedreich">ἀλλ’ οὐ τοῦ αἰσχροῦ</rdg>
+                <note>Christ coni. ἀλλὰ κατὰ τὸ γελοῖον, τοῦ δ' αἰσχροῦ</note>
+              </app>
+              <milestone unit="line" resp="Bekker" n="33"/>
+              τὸ γὰρ γελοῖόν ἐστιν ἁμάρτημά τι καὶ αἶσχος ἀνώδυνον καὶ οὐ φθαρτικόν...
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="4">
+            <p>
+              <milestone unit="page" resp="Bekker" n="1449b"/>
+              <milestone unit="line" resp="Bekker" n="9"/>
+              ἡ μὲν οὖν ἐποποιία τῇ τραγῳδίᾳ μέχρι μὲν τοῦ 
+              <app>
+                <lem resp="#Thurot">μετὰ μέτρου</lem>
+                <rdg wit="#codd">μέτρου μεγάλου</rdg>
+                <note>μετὰ λόγου Ald. et Σ</note>
+              </app> 
+              μίμησις εἶναι σπουδαίων ἠκολούθησεν...
+            </p>
+          </div>
+        </div>
+
+        <div type="textpart" subtype="chapter" n="6">
+          <div type="textpart" subtype="section" n="2">
+            <p>
+              <milestone unit="line" resp="Bekker" n="24"/>
+              ἔστιν οὖν τραγῳδία μίμησις πράξεως σπουδαίας καὶ τελείας μέγεθος ἐχούσης... 
+              <app>
+                <lem wit="#apogr">παθημάτων</lem>
+                <rdg wit="#Ac">μαθημάτων</rdg>
+              </app> 
+              κάθαρσιν.
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="4">
+            <p>
+              <milestone unit="line" resp="Bekker" n="34"/>
+              ...πρῶτον μὲν ἐξ ἀνάγκης ἂν εἴη τι μόριον τραγωδίας ὁ τῆς ὄψεως κόσμος, εἶτα μελοποιία καὶ λέξις· ἐν τούτοις γὰρ ποιοῦνται τὴν μίμησιν. λέγω δὲ λέξιν μὲν 
+              <app>
+                <lem>αὐτὴν</lem>
+                <rdg resp="#Bywater">ταύτην</rdg>
+              </app> 
+              τὴν τῶν μέτρων σύνθεσιν...
+            </p>
+          </div>
+          <div type="textpart" subtype="section" n="9">
+            <p>
+              <milestone unit="page" resp="Bekker" n="1450a"/>
+              <milestone unit="line" resp="Bekker" n="8"/>
+              ἀνάγκη οὖν πάσης τραγῳδίας μέρη εἶναι ἕξ... ταῦτα δ᾽ ἐστὶ μῦθος καὶ ἤθη καὶ λέξις καὶ διάνοια καὶ ὄψις καὶ μελοποιία. τούτοις μὲν οὖν 
+              <app>
+                <lem resp="#Butcher" cert="low">πάντες</lem>
+                <rdg resp="#codd">οὐκ ὀλίγοι αὐτῶν</rdg>
+                <note>secluso glossemate 'οὐκ ὀλίγοι αὐτῶν' scripsi πάντες; cf. Diels</note>
+              </app> 
+              ὡς εἰπεῖν κέχρηνται τοῖς εἴδεσιν...
+            </p>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>

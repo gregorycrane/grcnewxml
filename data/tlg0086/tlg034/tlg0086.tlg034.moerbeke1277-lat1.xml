@@ -1,0 +1,2522 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-model href="https://epidoc.stoa.org/schema/latest/tei-epidoc.rng" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader xml:lang="eng">
+      <fileDesc>
+         <titleStmt>
+           <title xml:lang="lat">De arte poetica liber (Aristoteles Latinus)</title>
+            <author>Aristotle</author>
+           <editor>Lorenzo Minio-Paluello</editor>
+           <editor>Ezio Franceschini</editor>
+           <editor>Ernesto Valgimigli</editor>
+           <respStmt>
+             <resp>Translated by</resp>
+             <name>Guilelmus de Moerbeke</name>
+           </respStmt>
+           <sponsor>Perseus Project, Tufts University</sponsor>
+           <principal>Gregory Crane</principal>
+           <respStmt>
+             <resp>Prepared under the supervision of</resp>
+             <name>Lisa Cerrato</name>
+             <name>William Merrill</name>
+             <name>Elli Mylonas</name>
+             <name>David Smith</name>
+           </respStmt>
+           <funder n="org:AnnCPB">The Annenberg CPB/Project</funder>
+         </titleStmt>
+
+        <publicationStmt>
+          <publisher>Trustees of Tufts University</publisher>
+          <pubPlace>Medford, MA</pubPlace>
+          <authority>Perseus Digital Library Project</authority>
+          <date type="release" when="2026" cert="high">Perseus 6.0</date>
+          <idno type="filename">tlg0086.tlg034.morbeke-lat.xml</idno>
+          <availability>
+            <licence target="https://creativecommons.org/licenses/by-sa/4.0/">Available under a Creative Commons Attribution-ShareAlike 4.0 International License</licence>
+          </availability>
+        </publicationStmt>
+
+         <sourceDesc>
+            <biblStruct>
+               <monogr>
+                 <title xml:lang="lat">De arte poetica : Guillelmo de Moerbeke interprete</title>
+                  <author>Aristotle</author>
+                  <editor>Lorenzo Minio-Paluello</editor>
+                  <editor>Ezio Franceschini</editor>
+                  <editor>Ernesto Valgimigli</editor>
+                  <imprint>
+                     <publisher>Desclée de Brouwer</publisher>
+                     <pubPlace>Bruges</pubPlace>
+                     <date type="printing">1953</date>
+                  </imprint>
+                  <extent>xix, 77 p. ; 25 cm.</extent>
+               </monogr>
+               <note type="academicSeries">At head of title: Union académique internationale. Aristoteles Latinus XXXIII.</note>
+            </biblStruct>
+         </sourceDesc>
+      </fileDesc>
+
+      <encodingDesc>
+        <refsDecl n="CTS">
+          <cRefPattern n="subchapter" matchPattern="(\w+).(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1']/tei:div[@n='$2'])">
+            <p>This pointer pattern extracts chapter and subchapter.</p>
+          </cRefPattern>
+          <cRefPattern n="chapter" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@n='$1'])">
+            <p>This pointer pattern extracts chapter.</p>
+          </cRefPattern>
+        </refsDecl>
+         <refsDecl n="text=1">
+            <refState unit="text"/>
+            <refState unit="chapter" n="chunk"/>
+            <refState unit="subchapter"/>
+         </refsDecl>
+      <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//div[@subtype='chapter']" use="@n" unit="chapter" delim=":" n="chunk"><citeStructure match="./div[@subtype='subchapter']" use="@n" unit="subchapter" delim="."/></citeStructure></citeStructure></refsDecl></encodingDesc>
+    
+      <profileDesc>
+         <langUsage>
+            <language ident="lat">Latin</language>
+            <language ident="grc">Greek</language>
+         </langUsage>
+         <textClass>
+            <keywords scheme="LCSH">
+               <term>Aesthetics -- Early works to 1800</term>
+               <term>Poetry -- Early works to 1800</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+    
+      <revisionDesc>
+        <change when="2026-05-25" who="AI">Created TEI Header following Kassel structural template using 1953 Aristoteles Latinus printed metadata.</change>
+      </revisionDesc>
+ </teiHeader>
+    
+    <text xml:lang="lat"><body xml:base="urn:cts:greekLit:tlg0086.tlg034.moerbeke1277-lat1">
+
+<div type="translation" xml:lang="lat" n="urn:cts:greekLit:tlg0086.tlg034.moerbeke1277-lat1">
+<pb n="3"/>
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="1">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="1">
+<p>
+De poetica ipsaque et speciebus ipsius, quam virtutem
+habet, et quomodo oportet constituere fabulas si debeat bene
+habere poesis, adhuc autem ex quot et qualibus est partibus,
+similiter autem et de aliis quecumque sunt eiusdem methodi,
+dicamus incipientes secundum naturam primo a primis. —
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="2">
+<p>Epopoiia itaque et que tragodie poesis, adhuc autem komodia
+et que dithyrambopoetica et fystulative plurima et cytharistice,
+omnes existunt entes imitationes secundum totum; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="3">
+<p>differunt autem ab invicem tribus: aut enim per genere alteris imitari, aut per altera, aut per aliter et non eodem modo. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="4">
+<p>Sicut enim et coloribus et figuris multa imitantur quosdam assimilantes hii quidem per artem, hii autem per consuetudinem, alteri autem per vocem, sic et dictis artibus. Omnibus quidem faciunt imitationem in rythmo et sermone et armonia, hiis autem aut separatim aut mixtis: </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="5">
+<p>puta armonia quidem et rythmo 
+<pb n="4"/>
+
+utentes solo fystulativaque et cytharistica et si que alie sint habentes talem potentiam, puta que tubarum; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="6">
+<p>ipso autem rythmo imitantur sine armonia qui saltatricum ; et enim isti per figuratos rythmos imitantur et mores et passiones et actiones. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="7">
+<p>Epopoiia autem solum sermonibus nudis aut metris, et hiis aut miscens cum invicem aut uno aliquo genere utens metrorum existens usque nunc. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="8">
+<p>Nichil enim habemus nominare commune Sofronis et Xenarchi mymos et Socraticos sermones </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="9">
+<p>neque si quis per trimetra aut elegeia aut per alia aliqua talia faciat imitationem ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="10">
+<p>nisi quod homines, copulantes metro le facere, elegeioficos, hos autem versificos nominant; non tamquam secundum imitationem poetas, sed communiter secundum metrum appellantes. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="11">
+<p>Et enim si medicinale aut musicum aliquid per metra efferant, sic vocare consueverunt; nichil autem commune est Homero et Empedocli preter metrum, propter quod hunc quidem poetam iustum vocare, hunc autem fysiologum magis quam poetam. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="12">
+<p>Similiter autem et si quis omnia metra miscens faciat imitationem, sicut Kherimon fecit Centaurum mixtam rapsodiam ex omnibus metris, et poetam appellandum. De hiis quidem igitur determinatum sit hoc modo. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="13">
+<p>Sunt autem aliqui qui omnibus dictis utuntur, dico autem puta rythmo et melodia et metro, sicut que dithyrambicorum poesis et que nomorum (idest legum) et tragodiaque et komodia ; differunt autem quia hee quidem simul omnibus, hee autem secundum partem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:1" n="14">
+<p>Has quidem igitur dico differentias artium in quibus faciunt imitationem.  </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="2">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:2" n="1">
+<p>Quoniam autem imitantes imitantur agentes, necesse
+autem hos aut studiosos aut pravos esse (mores enim fere semper
+hiis assecuntur solis, malitia enim et virtute secundum mores
+differunt omnes) aut meliores quam secundum nos aut peiores
+aut et tales, sicut pictores : </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:2" n="2">
+<p>Polygnostus quidem enim meliores,
+Pauson autem peiores, Dionisius autem similes assimilavit.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:2" n="3">
+<p>Palam autem quod et dictarum imitationum unaqueque
+
+
+
+<pb n="5"/>
+
+habebit has differentias et erit altera per altera imitari hoc
+modo. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:2" n="4">
+<p>Et enim in saltatione et fystulatione et cytharizatione
+est fieri has dissimilitudines. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:2" n="5">
+<p>Et circa sermones autem et nudam
+metrizationem, puta Homerus quidem meliores, Cleofon autem
+similes, Igimon autem Thasius parodias poetizans primus,
+et Nicokhares qui Diliadem peiores. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:2" n="6">
+<p>Similiter autem et circa
+dithyrambos et circa leges, sicut Kyclopas Thimotheus et
+Filoxenus, imitabitur utique aliquis. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:2" n="7">
+<p>In ipsa autem differentia
+et tragodia ad komodiam distat: hec quidem enim peiores,
+hec autem meliores imitari vult nunc. — </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="3">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:3" n="1">
+<p>Adhuc autem
+horum tertia differentia per quomodo singula horum imitetur
+utique aliquis. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:3" n="2">
+<p>Et enim in eisdem et eadem imitari
+est aliquando quidem enuntiantem aut alterum aliquid gerentem
+sicut Homerus facit, aut ut eundem et non transmutantem,
+aut omnes ut actitantes et operantes imitantes.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:3" n="3">
+<p>In tribus itaque hiis differentiis imitatio est, ut diximus
+secundum principia, in quibusque et quomodo. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:3" n="4">
+<p>Quare hac
+quidem idem utique erit imitator Homero Sophocles, imitantur
+enim ambo studiosos; hac autem Aristofani, agentes enim
+imitantur et actitantes ambo. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:3" n="5">
+<p>Unde et dramata (idest actitamina)
+vocari ipsa quidam aiunt quia imitantur actitantes.
+— Propter quod et contrafaciunt tragodiamque et komodiam
+Doriees (komodiam quidem enim Megarei et qui hic ut in ea
+que apud ipsos democratia facta, et qui ex Sicilia; inde enim
+fuit Epikharmus poeta multo prius ens Khonido et Magnite,
+et tragodiam quidam eorum qui in Peloponiso) facientes nomina.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:3" n="6">
+<p>Signum autem: isti quidem enim 'komas' perioikidas (idest
+ambulatoria circa domos) vocare aiunt, Athenienses autem
+'demos', ut komodos non a 'komazare' dictos, sed ea que per
+komas (idest vicos) seductione dehonoratos ex municipio, et
+poein ipsi quidem 'dran' (idest actitare), Athenienses autem
+'prattin' (idest agere) appellant. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:3" n="7">
+<p>De differentiis quidem igitur,
+et quot et que imitationis, dicta sint hec.
+
+<pb n="6"/>
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="4">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="1">
+<p>Videntur autem genuisse omnino poeticam cause due
+quedam, et ipse naturales. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="2">
+<p>Nam imitari connatum hominibus
+est ex pueris, et hoc differunt ab aliis animalibus, quia maxime
+imitativum est et imitationes facit et propter
+gaudere imitaminibus omnes. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="3">
+<p>Signum autem huius, quod accidit
+in opere. Que enim ipsa tristabiliter videmus, horum ymagines
+que maxime expresse considerantes gaudemus, puta bestiolarum
+formas vilissimarum et mortuorum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="4">
+<p>Causa autem et huius,
+quia addiscere non solum philosophis delectabilissimum, sed
+et aliis similiter omnibus ad breve communicantibus ipso.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="5">
+<p>Propter hoc enim gaudent ymagines aspicientes, quia accidit
+considerantes addiscere et sillogizare quid unumquodque, puta
+quod iste ille; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="6">
+<p>quoniam si forte non prius vidit, non imitamen
+faciet delectationem, sed propter elaborationem aut colorationem
+aut propter talem aliquam aliam causam. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="7">
+<p>Secundum
+naturam autem ente nobis ipso imitari et armonia et rythmo
+(metra enim quod sint partes rythmorum manifestum) a principio
+apti nati et ipsa maxime paulative adducentes produxerunt
+poesim ex informibus. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="8">
+<p>Distracta est autem, secundum proprios
+mores, poesis' qui quidem enim reverentiores bonas imitabantur
+actiones et eas que talium, qui autem viliores eas que
+pravorum ; primo vituperia facientes, sicut alii hymnos et laudes.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="9">
+<p>Eorum quidem igitur qui ante Homerum, nullius habemus
+dicere tale poema ; verisimile autem esse multos. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="10">
+<p>Ab Homero
+autem incipiens est, puta illius Margeites et que talia. In quibus
+secundum congruum iambiale venit metrum; propter quod
+et iambiale vocatur nunc quia in metro iambizabant invicem ;
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="11">
+<p>et fuerunt antiquorum hii quidem eroycorum, hii autem iamborum
+poete. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="12">
+<p>Sicut autem secundum studiosa maxime poeta
+
+
+<pb n="7"/>
+
+
+
+Homerus fuit (solus enim non quia bene, sed quia et imitationes
+actitivas fecit), sic et que komodie scemata primus ostendit
+non vituperium sed risile actitizans ; nam Margeites proportionale
+habet, sicut Ilias et Odisseia ad tragodias, ita et iste
+ad komodias. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="13">
+<p>Secus apparentie autem tragodie et komodie
+qui ad utramque poesim impetuantes secundum suam naturam,
+hii quidem pro iambis komodofici facti sunt, hii autem pro
+versibus tragodie doctores, propter maiora et honorabiliora
+esse scemata hec illis. Superintendendi quidem igitur si habet
+iam tragodia speciebus sufficienter aut non, sique ipsumque
+secundum se iudicatur esse et ad theatra, alia ratio. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="14">
+<p>Facta
+igitur a principio autoschediastica (idest informi) et ipsa et
+komodia, et hec quidem ab inchoantibus dithyrambum, hec
+autem ab hiis que faulica (idest vitiosa), que adhuc et nunc
+in multis civitatum permanent lege statuta, paulative augmentata
+sunt, producentibus quantum fuit manifestum ipsius.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="15">
+<p>Et multis transmutationibus transmutata tragodia requievit,
+super ultimam ipsius naturam. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="16">
+<p>Et ypocritarum multitudinem ex
+uno in duo primus Eschylus produxit, et que chori minoravit,
+et sermonem protagonistam disposuit ; tres autem et skenografiam
+Sophocles. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="17">
+<p>Adhuc autem magnitudo ex parvis fabulis
+et locutione risili propter ex satyriaco transmutari tarde reverita
+est. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="18">
+<p>Metrumque ex tetrametro iambiale factum est; primo
+quidem enim tetrametro utebantur propter satyricam et magis
+saltativam esse poesim, locutione autem facta, ipsa natura
+suum metrum invenit; maxime enim locutionale metrorum
+est quod iambiale; signum autem huius' </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="19">
+<p>plurima enim iambialia
+dicimus in loquela ea que ad invicem, exametra autem
+raro, et exeuntes a locutionali armonia. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="20">
+<p>Adhuc autem episodiorum
+multitudines. Et alia singulas delata esse dicuntur ; sint
+
+<pb n="8"/>
+
+nobis dicta. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:4" n="21">
+<p>Multum enim utique forsitan opus erit pertransire
+per singula. — </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="5">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="1">
+<p>Komodia autem est, sicut diximus, imitatio
+peiorum quidem, non tamen secundum omnem malitiam,
+sed turpis est quod risile particula ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="2">
+<p>nam risile est. peccatum
+aliquod et turpitudo non dolorosa et non corruptiva, puta mox
+risilis facies turpis aliqua et inversa sine dolore. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="3">
+<p>Que quidem
+igitur tragodie transitiones, et per que facte sunt, non latuerunt ;
+komodia autem, quia non studebatur a principio, latuit. Et
+enim chorum komodorum tarde aliquando archon tradidit,
+sed ethellonte erant. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="4">
+<p>lam autem scemata quedam habente
+ipsa, qui dicuntur ipsius poete memorantur. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="5">
+<p>Quis autem larvas
+tradidit aut prologos aut multitudines ypocritarum et quecumque
+talia, ignoratum est. Fabulas autem facere Epicharmus et
+Formis. Quantum ad id quod a principio ex Sicilia venit, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="6">
+<p>eorum
+autem qui Athenis, Krates primus incepit dimissa iambica
+specie universaliter facere sermones et fabulas. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="7">
+<p>Epopoiia
+quidem igitur tragodie usque ad solum metrum simplex habere
+et enuntiationem esse, hac differunt ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="8">
+<p>adhuc autem longitudine,
+hec quidem quam maxime temptat sub una periodo solis esse
+aut modicum variat, epopoiia autem optima tempore, et hoc
+differt' </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="9">
+<p>equidem primo similiter in tragodiis. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:5" n="11">
+<p>Propter quod
+quicumque de tragodia novit studiosa et prava, novit et de
+versibus ; que quidem enim habet epopoiia, existunt tragodie,
+que autem ipsi, non omnia in epopoiia. </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="6">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="1">
+<p>De ea igitur que
+in exametris imitativa et de komodia, posterius dicemus.
+De tragodia autem dicamus sumentes ipsius ex dictis factum
+terminum substantie. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="2">
+<p>Est igitur tragodia imitatio actionis studiose
+et perfecte, magnitudinem habentis, delectante sermone seorsum
+unaquaque specierum in partibus, actitantium et non
+per enuntiationem, per misericordiam et timorem concludens talium
+mathematum purificationem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="3">
+<p>Dico autem delectantem quidem
+sermonem habentem rythmum et armoniam et melodiam,
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="4">
+<p>seorsum autem speciebus per metra solum quedam concludi
+
+<pb n="9"/>
+
+et iterum altera per melodiam. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="5">
+<p>Quoniam autem agentes
+faciunt imitationem, primo quidem ex necessitate utique erit
+aliqua pars tragodie visus ornatus. Deinde melodie factio et
+locutio; in hiis enim faciunt imitationem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="6">
+<p>Dico autem locutionem
+quidem ipsam metrorum compositionem, melodie factionem
+autem quod potentiam manifestam habet omnem. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="7">
+<p>Quoniam
+autem actio est imitatio, agitur autem ab aliquibus agentibus,
+quos necesse quales quosdam esse et secundum morem
+et secundum ratiocinationem (per hec enim et actiones esse
+dicimus quales quasdam) nate sunt cause due actionum esse,
+ratiocinatio et mos, et secundum has et sortiuntur et deficiunt
+omnes. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="8">
+<p>Est autem actionis quidem fabula imitatio; dico
+autem fabulam hanc confictionem rerum, mores autem secundum
+quos quales quosdam dicimus esse agentes; ratiocinationem
+autem in quibuscumque dicentes demonstrant aliquid aut
+etiam negant sententia. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="9">
+<p>Necesse igitur omnis tragodie partes
+esse sex, secundum quod qualis quedam est tragodia ; hee
+autem sunt fabula et mores et locutio et ratiocinatio et visus
+et melodie factio. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="10">
+<p>Quibus quidem enim imitantur due partes
+sunt, quomodo autem imitantur una, que autem imitantur
+tres, et preter has nichil. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="11">
+<p>Hiis quidem igitur non pauci ipsorum
+ut est dicere usi sunt speciebus; et enim visus habet omne
+et morem et fabulam et locutionem et melodiam et ratiocinationem
+eodem modo. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="12">
+<p>Maximum autem horum est rerum consistentia
+; tragodia enim imitatio est non hominum sed actionis
+et vite et felicitatis ; et infelicitas in actione est, et finis actio
+quedam est, non qualitas. Sunt autem secundum mores quidem
+quales quidam, secundum actiones autem felices aut contrarium.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="13">
+<p>Igitur quatinus mores imitentur agunt, sed mores simul comprehendunt
+propter actiones ; quare res et fabula finis tragodie, finis
+autem maximum omnium. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="14">
+<p>Adhuc sine actione quidem non
+utique fiet tragodia, sine moribus autem fiet utique. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="15">
+<p>Nam iuvenum
+plurimorum sine moribus tragodie sunt, et totaliter poete
+multi tales, quale et scriptorum Zeuxis ad Polygnostum passus
+
+<pb n="10"/>
+
+est ; Polygnostus quidem enim bonus morum scriptor, scriptura
+autem Zeuxidis nullum habet morem. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="16">
+<p>Adhuc si quis consequenter
+ponat series morales et locutiones et ratiocinationes factas,
+poetizabit quod erat tragodie opus, sed multo magis que deterioribus
+hiis usa tragodia. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="17">
+<p>Fabule partes sunt et peripetie et
+anagnorisees (idest recognitiones). — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="18">
+<p>Adhuc signum quod et
+conantes poetizare prius possunt locutione et moribus acrivizare
+quam res scire, velut et qui primi poete fere omnes. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="19">
+<p>Principium
+quidem igitur et velut anima tragodie fabula, secundum
+autem mores. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="20">
+<p>Consimile enim est et in pictura ; si enim aliquis
+inunxerit pulcherrimis farmacis habundanter, non utique similiter
+letificabit et albo depingens ymaginem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="21">
+<p>Estque imitatio
+actionis et propter hanc maxime agentium. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="22">
+<p>Tertium autem
+ratiocinatio, scilicet posse dicere inentia et que congruunt,
+quod quidem in sermonibus politice et rethorice opus est;
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="23">
+<p>antiqui quidem enim politice faciebant dicentes, qui autem
+nunc rethorice. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="24">
+<p>Est autem mos quidem tale quod manifestat
+electionem, qualis quedam in quibus non est palam si eligit
+aut fugit; propter quod quidem non habent morem sermonum,
+in quibus quidem neque totaliter est quod quis eligit
+aut fugit dicens. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="25">
+<p>Ratiocinatio autem in quibus demonstrant
+aliquid quomodo est aut quomodo non est aut universaliter
+quid enuntiant. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="26">
+<p>Quartum autem sermonum quidem locutio ;
+dico autem, sicut prius dictum est, locutionem esse eam que
+per nominationem interpretationem, quod et in metrizatis
+et in sermonibus habet eandem potentiam. —  </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="27">
+<p>Reliquorum
+autem quinque que melodie factio maximum delectaminum.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:6" n="28">
+<p>Visus autem anime abductivum quidem, inartificiosissimum
+autem et minime conveniens poetice ; ut enim tragodie potentia
+et sine agone et ypocritis est, adhuc autem circa elaborationem
+visuum magis propria ars vasificorum est quam que poetarum.
+
+<pb n="11"/>
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="7">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="1">
+<p>Determinatis autem hiis, dicamus post hec qualem quandam
+oportet consistentiam esse rerum, quoniam hoc et primum
+et maximum est tragodie. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="2">
+<p>Supponitur autem nobis tragodiam
+perfecte et totalis actionis esse imitationem habentis aliquam
+
+magnitudinem ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="3">
+<p>est enim totum et nullam habens magnitudinem.
+Totum autem est habens principium medium et finem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="4">
+<p>Principium
+autem est quod ipsum quidem non ex necessitate post
+aliud est, post illud autem alterum natum est esse aut fieri.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="5">
+<p>Finis autem contrarium quod et ipsum post aliud natum
+
+est esse aut ex necessitate aut ut in pluribus, post hoc autem
+aliud nullum; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="6">
+<p>medium autem quod et ipsum post aliud et
+post illud alterum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="7">
+<p>Oportet igitur constituentes bene fabulas
+neque undecumque contingit incipere, neque ubicumque
+contingit terminare, sed uti dictis speciebus. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="8">
+<p>Adhuc
+autem quoniam quod pulchrum, et animal et omnem rem
+que constat ex aliquibus, non solum hec ordinata oportet
+habere, sed et magnitudinem existere non quamcumque ; nam
+quod pulerum in magnitudine et ordine est; propter quod
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="9">
+<p>neque omnino parvum utique aliquid fiet pulcrum animal
+
+(adiacet enim speculatio prope insensibile tempus facta), neque
+omnino magnum ; non enim simul speculatio fit, sed cedit speculantibus
+unum et totum ex speculatione, velut si decem milium
+stadiorum sit animal. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="10">
+<p>Quare oportet, sicut in corporibus et
+in animalibus habere quidem magnitudinem, hanc autem
+facile conspicabilem esse, sic et in fabulis habere quidem longitudinem,
+hanc autem facile memorabilem esse. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="11">
+<p>Longitudinis
+terminus quidem ad agones et ad sensum, non artis est;
+si enim oportebat centum tragodias agonizari, ad klepsydras
+utique agonizarent, sicut aliquando et alias aiunt. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:7" n="12">
+<p>Qui
+autem secundum ipsam naturam rei terminus, semper quidem
+qui maior usquequo commanifestus sit melior est secundum
+magnitudinem, ut autem simpliciter determinantes dicere
+est, in quanta magnitudine secundum verisimile aut necessa-
+
+<pb n="12"/>
+
+rium consequenter factis accidit 1n eufortunium ex iniortunio
+aut ex eufortunio in infortunium transmutari, sufficiens terminus
+est magnitudinis. — </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="8">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:8" n="1">
+<p>Fabula autem est una non, sicut quidam
+putant, si circa unum sit; multa enim et infinita genere accidunt,
+ex quibus aliquibus nullum est unum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:8" n="2">
+<p>Sic autem et actiones
+unius multe sunt, ex quibus una nulla fit actio. Propter quod
+omnes videntur peccare quicumque poetarum  Eracleidem,
+Theseidem et talia poemata poetizaverunt; putant enim,
+quoniam unus erat Eraclees, unam et fabulam esse convenire.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:8" n="3">
+<p>Homerus autem, sicut et secundum alia differt, et hoc videtur
+bene nosse aut propter artem aut propter naturam ; Odysseiam
+enim faciens non poetizavit omnia quecumque ipsi acciderunt,
+puta vulneratum quidem fuisse in Parnaso, finxisse autem
+insanum esse in agermo, quorum nullum, altero facto, necessarium
+aut verisimile alterum fieri, sed circa unam actionem
+qualem dicimus Odysseiam constitit ; similiter autem et Iliadem.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:8" n="4">
+<p>Oportet igitur, sicut et in aliis imitativis una imitatio unius
+est, sic et fabulam, quoniam actionis imitatio est, uniusque
+esse et huius totius et partes consistere rerum sic, ut transposita
+aliqua parte aut delata differre et moveri totum ; quod enim
+adiunctum aut non adiunctum nichil facit notabile, nulla pars
+totius est. — </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="9">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="1">
+<p>Manifestum autem ex dictis et quod non
+gesta dicere poete opus est, sed qualia utique fierent et possibilia
+secundum verisimile aut necessarium. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="2">
+<p>Hystoricus enim
+et poeta non per metrizata dicere aut sine metro differunt
+(esset enim utique que Herodoti in metra poni, et nichil minus
+utique hystoria cum metro aut sine metris), sed hoc differt,
+scilicet hunc quidem gesta dicere, hunc autem qualia utique
+fierent. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="3">
+<p>Propter quod et magis philosophicum et studiosius
+poesis quam hystoria est ; poesis quidem enim magis que universaliter,
+hystoria autem particularia dicit. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="4">
+<p>Est autem universaliter
+quidem, quali qualia quedam accidit dicere aut agere
+
+<pb n="13"/>
+
+secundum verisimile aut necessarium, quod coniecturat poesis
+nomina imponens, particulare autem quid Alkibiades egit
+aut quid passus est. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="5">
+<p>In komodia quidem igitur iam hoc
+palam factum est ; constituentes enim fabulam per verisimilia,
+sic contingentia nomina supponunt, et non sicut iambofici
+circa particulare faciunt. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="6">
+<p>In tragodia autem facta nomina
+attendunt; causa autem quia probabile est quod possibile.
+Non gesta quidem igitur nondum credimus esse possibilia,
+gesta autem manifestum quod possibilia; non enim utique
+ro gesta essent si erant inpossibilia. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="7">
+<p>Quin immo et in tragodiis
+quibusdam quidem unum aut duo sunt notorum nominum,
+alia autem poetizata, in quibusdam autem nullum, puta in
+Agathonis Anthe ; similiter enim in hoc et res et nomina poetizata
+sunt, et nichil minus letificant ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="8">
+<p>quare non omnino esse
+querendum traditas fabulas, circa quas tragodie sunt, attendere.
+Et enim ridiculum hoc querere, quoniam et nota paucis nota
+sunt, sed tamen letificant omnes. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="9">
+<p>Palam igitur ex hiis,
+quod poetam magis oportet esse fabularum factorem quam
+metrorum, tamquam poeta secundum imitationem est, imitatur
+autem actiones. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="10">
+<p>Quamvis ergo accidat gesta poetizare, nichil
+minus poeta est; gestorum enim quedam nichil prohibet esse
+talia qualia utique verisimile facta esse et possibilia fieri, secundum
+quod ille ipsorum poeta est. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="11">
+<p>Simplicibus autem fabulis
+et actionibus que episodiodees sunt pessime. Dico autem episodiodeam
+(idest superadventitiam) fabulam in qua superadvenientia
+post invicem neque verisimile neque necesse esse. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="11b">
+<p>Tales
+autem poetizantur a pravis quidem poetis propter ipsos, a
+bonis autem propter ypocritas; agonismata enim facientes
+et preter potentiam protendentes fabulam, sepe pervertere
+3o coguntur quod consequenter. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="11c">
+<p>Quoniam autem non solum
+perfecte actionis est imitatio, sed et terribilis et miserabilis,
+hec autem fiunt et maxime et magis quando facta fuerunt
+
+<pb n="14"/>
+
+preter opinionem secus invicem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="12">
+<p>Nam quod mirabile sic habebit
+magis quam si a casu et fortuna, hec mirabilissima videntur,
+quecumque tamquam idonee videntur facta esse, puta ut statua
+Mityos in Argo, occidit causam mortis Mityo, incidens consideranti;
+videntur enim que talia non vane facta esse. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:9" n="13">
+<p>Quare
+necesse tales esse pulcriores fabulas.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="10">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:10" n="1">
+<p>Sunt autem fabularum hee quidem simplices, hee autem
+complexe ; et enim actiones, quarum imitationes sunt fabule, existunt
+mox entes tales. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:10" n="2">
+<p>Dico autem simplicem quidem actionem qua
+existente, ut determinatum continua et una sine peripetia et
+anagnorismo transitio fit, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:10" n="3">
+<p>complexa autem locutio cum anagnorismo
+aut peripeteia aut ambobus transitio est. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:10" n="4">
+<p>Hec autem
+oportet fieri ex ipsa consistentia fabule, quare ex pregestis
+accidit aut ex necessitate aut secundum verisimile fieri hec ;
+differt enim multum fieri hec propter hec aut post hec. —
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="11">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="1">
+<p>Est autem peripeteia quidem que ad contrarium eorum
+que aguntur transmutatio, sicut dictum est, et hoc autem
+sicut dicebamus secundum verisimile aut necessarium ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="2">
+<p>sicut in
+Oidipode veniens tamquam letificaturus Oidipodem et inmutaturus
+ab eo qui ad matrem timore, palificans quis erat, contrarium
+fecit ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="3">
+<p>et in Lynkei hic quidem ductus tamquam interficiendus,
+Danaus autem sequens tamquam interfecturus, hunc
+quidem accidit ex actis mori, hunc autem salvari. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="4">
+<p>Anagnorisis
+autem, sicut et nomen significat, ex ignorantia in notitiam
+transmutatio aut in amicitiam aut inimicitiam eorum que ad
+eufortunium aut infortunium determinata ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="5">
+<p>pulcherrima autem
+anagnorisis, quando simul peripetie fiunt, sicut habet que in
+Oidipode. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="6">
+<p>Sunt quidem igitur et alia anagnorisees, et enim
+ad inanimata et ad quecumque adhuc et sicut dictum est accidit,
+et si egit quis et si non egit est anagnorizare ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="7">
+<p>sed que maxime
+fabule et que maxime actionis que dicta est; talis enim anagnorisis
+et peripetela aut miserationem habebit aut terrorem,
+
+
+
+<pb n="15"/>
+
+
+qualium actionum tragodia supponitur 1mitatio. — Adhuc autem
+et infortunari et eufortunari in talibus accidet. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="8">
+<p>Quoniam anagnorisis
+aliquorum est anagnorisis, hee quidem alterius ad
+alterum. solum, cum sit manifestus alter quis est, aliquando
+autem ambos oportet anagnorizare, puta Ifigenia Oresti recognita
+est ex missione epistole, illi autem ad Ifigeniam alia opus
+erat recognitione. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="9">
+<p>Due quidem igitur fabule partes hee
+sunt, peripetia et anagnorisis, tertia autem passio. Harum
+autem peripetia quidem et anagnorisis dicte sunt, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:11" n="10">
+<p>passio autem
+est actio corruptiva et dolorosa, puta que in manifesto mortes
+et cruciatus et vulnerationes et quecumque talia. — </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="12">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="1">
+<p>Partes
+autem tragodie quibus quidem ut speciebus oportet uti, prius
+diximus, secundum quantum autem et in que dividitur separata
+hec sunt, prologus, episodion, exitus, khoricon ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="2">
+<p>et huius
+hoc quidem parodus, hoc autem stasimon. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="3">
+<p>Communia quidem
+omnium hec, propria autem que a skene et kommoi. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="4">
+<p>Est autem
+prologus quidem pars tota tragodie que ante khori parodum,
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="5">
+<p>episodion autem pars tota tragodie que intermedia totarum
+khoricarum melodiarum, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="6">
+<p>exodus autem (idest exitus) pars
+tota tragodie post quam non est khori melodia. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="7">
+<p>Khorici autem
+parodus quidem prima locutio totius khori, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="8">
+<p>stasimon autem
+melodia khori que sine anapesto et trocheo; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="9">
+<p>kommos autem
+lamentatio nova khori et a scene (idest scemate fabulari). </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:12" n="10">
+<p>Partes
+autem tragodie quibus quidem oportet uti prius diximus, secundum
+quantum et in quas dividitur separatas hee sunt.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="13">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="1">
+<p>Que autem oportet coniecturare et que oportet vereri
+constituentes fabulas et unde erit tragodie opus, consequenter
+utique nunc dictis erit dicendum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="2">
+<p>Quoniam igitur oportet compositionem
+optime tragodie esse non simplicem sed complexam
+et hanc terribilium et miserabilium esse imitativam (boc enim
+proprium talis imitationis est) primo quidem palam quod neque
+epieilkees viros oportet apparere transmutantes ex eufortunio
+in infortunium (non enim terribile neque miserabile hoc, sed
+
+<pb n="16"/>
+
+odibile est) </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="3">
+<p>neque pestilentes ex infortunio in eufortunium
+(intragodotatissimum enim hoc est omnium; nullum enim
+quorum opus est, neque enim filantropum neque miserabile
+neque terribile est), </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="4">
+<p>neque ipsum valde malignum ex eufortunio
+in infortunium transcidere. Quod quidem enim filantropum
+habebit utique talis consistentia, sed neque misericordiam
+neque terrorem ; hec quidem enim est circa indignum infortunantem,
+hic autem circa similem, misericordia quidem circa
+indignum, terror autem circa similem, quare neque miserabile
+neque terribile est quod accidit; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="5">
+<p>qui intermedius ergo horum
+reliquus. Est autem talis qui neque virtute differens et iustitia,
+neque propter malitiam et pestilentiam transmutans in infortunium,
+sed propter peccatum aliquod, eorum qui in magna
+gloria sunt et eufortunio, ut puta Dipoys et Thyestes et qui
+ex talibus generibus insignes viri. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="6">
+<p>Necesse ergo bene habentem
+fabulam simplicem magis esse quam duplicem, sicut quidam
+aiunt, et transmutari non in eufortunium ex infortunio, sed
+contrarium ex eufortunio in infortunium, non propter pestilentiam
+sed propter peccatum magnum aut qualis dictum est
+aut melioris magis aut peioris. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="7">
+<p>Signum autem et quod fit;
+primo quidem enim poete contingentes fabulas enumerabant,
+nunc autem circa paucas convenientes optime tragodie componuntur,
+puta circa Alkmeonem et Oidipoyn et Orestem et
+Meleagrum et Thyestem et Tilefum et quibuscumque aliis accidit
+aut pati dira aut fecisse. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="8">
+<p>Que quidem igitur secundum
+artem pulcherrima tragodia ex tali consistentia est. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="9">
+<p>Propter
+quod et Euripedem incusantes idem peccant quia hoc agit
+in tragodis et multe ipsius in infortunium terminantur. Hoc
+enim est, sicut dictum est, rectum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="10">
+<p>Signum autem maximum,
+in skenis enim et agonibus maxime tragodiales que tales apparent
+si dirigantur ; et Euripedes, et si alia non bene dispensat, sed
+tragodicotatissimus poetarum videtur. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="11">
+<p>Secunda autem, que
+prima dicitur a quibusdam, est consistentia que duplicem
+consistentiam habens, sicut Odysseia, et terminans ex contraria
+
+
+
+<pb n="17"/>
+
+
+
+melioribus et peioribus. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="12">
+<p>Putatur autem prima propter theatrorum
+debilitatem ; assecuntur enim poete secundum votum poetizantes
+inspectoribus. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:13" n="13">
+<p>Est autem non hec a tragodia delectatio,
+sed magis komodie propria ; ibi enim si inimicissimi sint
+in fabula, velut Orestes et Egistus, amici facti in fine recedunt,
+et moritur nullus a nullo. </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="14">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="1">
+<p>Est quidem igitur quod terribile
+et miserabile ex visu fieri, est autem et ex ipsa consistentia
+rerum, quod quidem est prius et poete melioris. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="2">
+<p>Oportet enim
+et sine videre sic consistere fabulam, ut audiens res gestas
+et terreatur et misereatur ex accidentibus ; que quidem utique
+patietur aliquis audiens Oidipi fabulam. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="3">
+<p>Per visum autem hoc
+preparare inartificialius et successu indigens est. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="4">
+<p>Qui autem
+non terribile per visum sed monstruosum solum preparant, nichil
+tragodia communicant ; non enim omnem oportet querere delectationem
+a tragodia, sed convenientem. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="5">
+<p>Quoniam autem eam
+que a miseratione et terrore per imitationem oportet delectationem
+preparare poetam, manifestum quod hoc in rebus faciendum.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="6">
+<p>Qualia igitur dira aut qualia miserabilia videntur evenientium,
+sumamus. — Necesse autem aut amicorum esse ad invicem
+tales actiones aut inimicorum aut neutrorum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="7">
+<p>Si quidem igitur
+inimicus inimicum, nichil miserabile neque faciens neque facturus,
+preter quam secundum ipsam passionem ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="8">
+<p>neque si neutro
+modo habentes; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="9">
+<p>quando autem in amicitiis ingeruntur passiones,
+puta aut frater fratrem aut filius patrem aut mater filium
+aut filius matrem occidit aut occidet aut aliquid aliud tale agit,
+hec querendum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="10">
+<p>Assumptas quidem igitur fabulas solvere
+non est, dico autem puta Klytemnistram morientem ab Oreste
+et Erifylem ab Alkmeone. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="11">
+<p>Ipsam autem invenire oportet et
+traditis uti bene. Bene autem quid dicimus, dicamus planius.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="12">
+<p>Est quidem enim sic fieri actionem, sicut antiqui poetizabant
+scientes et cognoscentes, sicut et Euripedes poetizavit interficere
+Medeam. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="13">
+<p>Est autem agere quidem ignorantes, ignorantes
+
+<pb n="18"/>
+
+autem agere quod dirum, deinde posterius recognoscere amicitiam,
+sicut qui Sophocleis Oidipes ; extra quidem igitur hoc opus,
+aut quia dicentis qui in Tramatia Odyssei. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="14">
+<p>Est autem tertium
+preter hec futurum facere aliquid indecentium propter ignorantiam
+recognoscere ante agere. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="15">
+<p>Et preter hec non est aliter '
+aut enim agere necesse aut non, et scientes aut non scientes.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="16">
+<p>Horum autem cognoscentem quidem futurum agere et non
+agere pessimum ; tunc enim odibile habet, et non tragicum ;
+inpassionale enim. Propter quod quidem nullus facit similiter
+nisi raro, puta in Antigone Kreontem Aimon. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="17">
+<p>Agere autem
+secundum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="18">
+<p>Melius autem ignorantem quidem agere, postquam
+egit recognoscere. Tunc enim odibile non adest; et recognitio
+stupefactivum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="19">
+<p>Optimum autem quod ultimum ; dico autem
+quale in Kresfonte Merope debebat filium interficere, interfecit
+autem non, sed recognovit, et in Ifigeneia soror fratrem, et in
+Elle filius matrem tradere debens recognovit. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="20">
+<p>Propter hoc
+enim, quod quidem olim dictum est, non circa multa genera
+tragodie sunt. Querentes enim non ab arte sed a fortuna, invenerunt
+quod tale preparare in fabulis. Coguntur igitur ad has
+convenientes occurrere, quibuscumque tales acciderunt passiones.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:14" n="21">
+<p>De rerum quidem igitur consistentia et quales quasdam oportet
+esse fabulas, dictum est sufficienter.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="15">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="1">
+<p>Circa mores autem quatuor sunt que oportet coniecturare
+' </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="2">
+<p>unum quidem et primum, quatinus boni sint ; habebit
+autem morem quidem si, sicut dictum est, faciat manifestum
+sermo aut actio electionem que sit, bonum autem si bona.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="3">
+<p>Est autem in unoquoque genere; et enim mulier est bona et
+servus, et quidem forte horum hoc quidem peius, hoc autem
+totaliter pravum est. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="4">
+<p>Secundum autem congruentia; est
+enim virilis quidem mos, sed non congruens mulieri aut virilem
+aut diram esse. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="5">
+<p>Tertium autem quod simile ; hoc enim alterum
+
+
+
+<pb n="19"/>
+
+
+a bonum morem et congruum facere, sicut dictum est. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="6">
+<p>Quartum
+autem quod regulare. Et si enim irregularis aliquis sit
+qui imitationem exhibet et talem morem supponens, tamen
+regulariter irregularem autem esse. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="7">
+<p>Est autem exemplum
+malignitatis quidem moris non necessarium, puta Menelaus
+qui in Horeste, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="8">
+<p>indecentis autem et non congruentis lamentatio
+Odysei in Skyla et que Melaniptis series; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="9">
+<p>irregularis autem
+que in Aulide Ifigenia; nichil enim visa est ministrans posteriori.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="10">
+<p>Oportet autem et in moribus sicut et in rerum consistentia
+semper querere aut quod necessarium aut quod verisimile,
+ut talem talia dicere aut agere sit necessarium aut verisimile,
+et hoc post hoc fieri aut necessarium aut verisimile. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="10b">
+<p>Manifestum
+igitur quod et solutiones fabularum oportet ex ipsa
+fabula accidere et non sicut in Medea ab ingenio et in Iliade
+que circa simplicem ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="10c">
+<p>sed ingenio utendum deinde extra opus,
+aut quecumque ante hoc fuerunt que non possibile hominem
+nosse, aut quecumque posterius que indigent preappellatione
+et nuntiatione ; omnia enim attribuimus diis videre. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="10d">
+<p>Irrationabile
+autem nichil esse in rebus, si autem non, extra tragodiam,
+puta quod in Oidipode Sophocleis. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="11">
+<p>Quoniam autem imitatio
+est tragodia meliorum, nos oportet imitari bonos ymaginum
+pictores; et enim illi assignantes propriam formam similes
+facientes meliores pingunt ; sic et poetam imitantem et iracundos
+et desides et alia talia habentes in moribus tales entes epieikees
+facere ; exemplar duriciei velut Achillem Agathon et Homerus.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:15" n="12">
+<p>Hec itaque observare eas que preter eas que ex necessitate
+assequentes sensus poetice ; et enim secundum ipsas est peccare
+multotiens ; dictum est autem de ipsis in traditis sermonibus
+sufficienter.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="16">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="1">
+<p>Anagnorisis autem quid quidem sit, dictum est prius;
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="1b">
+<p>species autem anagnoriseos, prima quidem inartificiosissima
+et qua plurima utuntur propter defectum, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="2">
+<p>que per signa. Horum
+
+<pb n="20"/>
+
+autem hec quidem connaturalia, puta «lancea quam ferunt
+terrigene » aut «stellas » quales in Thyeste Cancros, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="3">
+<p>hec autem
+adventitia, et horum hec quidem in corpore, puta cicatrices,
+hec autem extra, puta que circa collum et que in Tyrei per
+
+skafam. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="4">
+<p>Est autem et hiis uti aut melius aut peius, puta '
+
+Odyseus per cicatricem alius recognitus est a trofo, et alius
+a sybotis; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="5">
+<p>sunt enim que quidem fidei gratia inartificialiores,
+et que tales omnes, hee autem ex peripeteia, sicut qui in Niptris,
+meliores. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="6">
+<p>Secunde autem que poetizate a poeta, propter
+quod inartificiales, velut Horestes in Ifigeneia recognovit quia
+Horestes ; illa quidem enim per epistolam, ille autem ipse dicit
+que vult poeta sed non fabula, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="7">
+<p>quia prope dictum peccatum
+est ; licebat enim utique quedam et inferre. Et in eo qui Sophoclei
+Tyrei que «spate texentium vox» </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="8">
+<p>aut per memoriam fore
+aliquid scientem, sicut qui in Cypriis ipsius Dykeogenis, videns
+enim scripturam flevit ; et que in Alkini apologon, audiens enim
+cytharistam et memoratus lacrimatus est, unde recogniti sunt.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="9">
+<p>Quarta autem que ex sillogismo, puta in Khloiforis, quod
+similis aliquis venit, similis autem nullus sed aut Horestes'
+iste ergo venit. Et que Polyeidis sophiste de Ifigenia ; verisimile
+enim Horestem sillogizasse quod si soror immolata est et ipsi
+accidere immolari. Et in Theodecti Tvdei, quod veniens tamquam
+inventurus filium ipse periit. Et que in Finides ; videntes enim
+locum sillogizaverunt fatum, quod in hoc fatatum erat mori
+ipsis, et enim exposite fuerunt hic. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="10">
+<p>Est autem quedam et
+composita ex paralogismo theatri, puta in Odyssee falsi nuntio ;
+hoc quidem enim, scilicet arcum, ait cognoscere quod non viderat,
+hoc autem ut per illum recognoscentem, per hoc fecisse
+paralogismum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="11">
+<p>Omnium autem optima recognitio que ex
+
+
+
+<pb n="21"/>
+
+ipsis rebus stupefactione facta per verisimilia, puta quod in
+Sophoclei Oidipode et Ifigeneia ; verisimile enim velle imponi
+litteras. Tales enim sole sine poetizatis signis et collaribus.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:16" n="12">
+<p>Secunde autem que ex sillogismo. </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="17">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="1">
+<p>Oportet enim fabulas
+consistere et locutione cooperari quam maxime pre oculis positum
+(sic enim utique efficacissime videns sicut apud ipsa gesta
+presens inveniet decens et minime utique latebunt que subcontraria
+; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="2">
+<p>signum autem huius quod increpat Karkino ; nam Ámphiaraus
+ex sacro utique erat, quod non videntem inspectorem
+ latebat, in skene autem decidit aspernantibus hoc inspectoribus),
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="3">
+<p>quecumque autem possibile et scematibus cooperantem. Probabilissimi
+enim ab eadem natura quales in passionibus sunt et hyemizat
+hyematus et exasperat iratus verissime. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="4">
+<p>Propter quod eius
+qui apte nature poetica est quam manici ; horum enim hii quidem
+ euplasti (idest facile plasmabiles), hii autem exquisitores sunt.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="5">
+<p>Hosque sermones et poetizatos oportet et ipsum facientem
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="6">
+<p>exponere universaliter, puta Ifigeneie ; immolanda quadam
+puella et disparente occulte ab immolantibus, demorante autem
+in aliam regionem, in qua lex erat extraneis immolare dee,
+ hanc habuit sanctificationem ; tempore autem posterius fratri
+accidit venire sanctificationis (istud quia responsum dederat
+deus propter quam causam extra universale venire illuc et
+ad quid autem extra fabulam), veniens autem et captus immolari
+futurus recognovit; sive ut Euripedes sive ut Polyeidus
+fecit, secundum verisimile dicens quod non ergo solum sororem
+sed et ipsum oportebat immolari ; et hinc salus. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="7">
+<p>Post hec
+autem iam supponentem nomina episodizare, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="8">
+<p>qualiter autem
+erunt congrua episodia, puta in Horeste mania per quam assumptus
+est et salus per purificationem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="9">
+<p>In curribus quidem
+3oigitur episodia brevia, epopoiia autem hiis producitur. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="10">
+<p>Nam
+Odysseie longus sermo est; peregrinante quodam annis multis
+et observato a Possidone et solo ente, in habentibus autem
+
+
+<pb n="22"/>
+
+domi sic ut res a ministris consumerentur et filius insidias
+pateretur, ipse autem pervenit hyematus, et recognoscens
+quosdam ipse insiliens, ipse quidem salvatus est, inimicos
+autem peremit. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:17" n="11">
+<p>Proprium quidem igitur hoc, alia autem episodia.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="18">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="1">
+<p>Est autem omnis tragodie hoc quidem colligatio hoc
+autem solutio, que quidem extrinsecus quedam eorum que
+intrinsecus sepe colligatio, quod autem reliquum solutio. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="2">
+<p>Dico
+autem colligationem quidem esse eam que a principio usque
+ad partem que extrema est ex qua transit in eufortunium, solutionem
+autem esse eam que a principio transitionis usque ad
+finem ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="3">
+<p>sicut in Lykei Theodecti; colligatio anteacta et pueri
+sumptio et iterum que ipsorum utique ab accusatione mortis
+usque ad finem. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="4">
+<p>Tragodie autem species sunt quatuor,
+tot enim et partes dicte sunt, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="5">
+<p>hec quidem complexa, cuius
+totum est peripeteia et anagnorisis, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="6">
+<p>hec autem passionalis,
+velut que Aiaces et Ixyones, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="7">
+<p>hec vero moralis, velut que Fthiotides
+et Pileus; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="8">
+<p>quarta autem , velut que Forkides
+et Prometheus et quecumque in Aido. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="9">
+<p>Maxime quidem
+igitur omnes oportet temptare habere, si autem non, maximas
+et plurimas, aliterque et ut nunc calumpniantur poetas ; factis
+enim secundum unamquamque partem bonis poetis, unumquemque
+in proprio bono volunt unum superexcedere. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="10">
+<p>Iustum
+autem et tragodiam aliam et eandem dicere nichil minus fabula,
+hoc autem, quorum eadem complicatio et solutio. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="11">
+<p>Multi autem
+complectentes bene solvunt prave ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="12">
+<p>oportet autem ambo semper
+coadiuvare. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="13">
+<p>Oportet autem, ut dictum est sepe, memorari
+et non facere epopoiicam consistentiam tragodiam. Epopoiicam
+autem dico quod multarum fabularum, velut si quis eam que
+Iliadis totam facit fabulam. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="14">
+<p>Ibi quidem enim propter longitudinem
+sumunt partes decentem magnitudinem, in drama-
+
+
+
+<pb n="23"/>
+
+
+
+tibus autem multum preter existimationem evenit. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="15">
+<p>Signum
+autem; quicumque quidem Sinili totam poetizaverunt et non
+secundum partem, sicut Euripedes Niobem, et non sicut Eschylus;
+aut excidunt aut prave agonizant; quoniam et Agathon
+decidit in hoc solo. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="16">
+<p>In peripetiis autem et in simplicibus
+rebus coniecturant que volunt mirabiliter. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="17">
+<p>Tragicum enim hoc
+et philanthropon ; est autem hoc, quando sapiens quidem cum
+nequitia seductus fuerit, sicut Sisyfus, et Andreius quidem, iniustus
+autem victus est. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="18">
+<p>Est autem hoc verisimile sicut Agathon
+dicit; verisimile enim fieri multa et preter verisimilitudinem.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="19">
+<p>Et chorum autem unum oportet suscipere ypocritas et
+partem esse totius et coagonizari, non sicut Euripidi, sed sicut
+Sophocleo. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:18" n="20">
+<p>Reliquis autem data magis fabule quam alterius
+tragodie sunt ; propter quod embolima ducunt ante incipientem
+Agathonem huius. Et quidem quid differt aut embolima canere
+aut sl seriem ex alio in aliud coaptet aut episodium totum ?
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="19">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="1">
+<p>De aliis quidem igitur iam dictum est.
+
+Reliquum autem de locutione aut ratiocinatione dicere.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="2">
+<p>Que quidem igitur circa dianoiam (idest ratiocinationem) in
+hiis que de rethorica supponantur; hoc enim proprium magis
+illius methodi. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="3">
+<p>Sunt autem secundum dianoiam hec, quecumque
+a ratione oportet preparari </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="4">
+<p>Partes autem horum demonstrareque
+et solvere et passiones preparare, puta miserationem aut
+terrorem aut iram et quecumque talia, et adhuc magnitudinem et
+parvitatem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="5">
+<p>Palam autem quod et in rebus ab eisdem speciebus
+oportet uti, quando aut miserabilia aut dira aut magna aut
+verisimilia oportet exhibere; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="6">
+<p>preter quam tantum differt,
+quod hec quidem oportet apparere sine doctrina, hec autem
+in sermone a dicente preparari et preter rationem fieri. Quid
+enim utique sit dicentis opus, apparebit idea et non propter
+sermonem. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="7">
+<p>Eorum autem que circa locutionem una quidem
+
+<pb n="24"/>
+
+est species theorie scemata locutionis, que scire est ypocritice
+et habentis talem architectonicam, puta quid mandatum et
+quid oratio et narratio et comminatio et interrogatio et responsio
+et si quid aliud tale. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="8">
+<p>Preter enim horum cognitionem aut ignorantiam
+nulla in poeticam increpatio fertur, que sit digna studio.
+Quid enim utique quis existimet peccasse que Protagoras increpat,
+quod orare putans precipit dicens «insaniam vide dea» ? Nam
+iubere, inquit, facere aliquid aut non preceptio est. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:19" n="9">
+<p>Propter
+quod pretermittatur tamquam alterius et non poetice ens theorema.
+— </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="20">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="1">
+<p>Locutionis autem omnis hee sunt partes' elementum,
+sillaba, coniunctio, nomen, verbum, articulus, casus,
+oratio. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="2">
+<p>Elementum quidem igitur vox indivisibilis, non
+
+omnis autem sed ex qua nata est fieri intelligibilis vox (et enim
+bestiarum sunt indivisibiles voces, quarum nullam dico elementum),
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="3">
+<p>huius autem partes vocalis et semivocalis et muta. Est
+autem vocalis quidem sine adiectione habens vocem audibilem ;
+semivocalis autem cum adiectione habens vocem audibilem,
+velut 's' et 'b'; muta autem que cum adiectione secundum
+se quidem nullam habet vocem, cum habentibus autem aliquam
+vocem facta audibilis, velut 'g' et 'd'. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="4">
+<p>Hec autem differunt
+figurisque oris et locis, et asperitate et lenitate, et longitudine
+et brevitate, adhuc autem acuitate et gravitate et medio;
+de quibus per singula in metricis congruit speculari. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="5">
+<p>Sillaba
+autem est vox non significativa composita ex non vocali et
+vocem habente ; et enim ipsius 'gr' sine ipso 'a' sillaba et cum
+'a', puta 'gra'. Sed horum considerare differentias metrice est.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="6">
+<p>Coniunctio autem est vox non significativa que neque prohibet
+neque facit vocem unam significativam ex pluribus vocibus,
+natam componi et in extremis et in medio, quam non congruit
+in principio sermonis poni secundum se ipsam, velut 'quidem',
+'vel', 'autem' ; vox non significativa, aut ex pluribus quidem
+vocibus una significativam facere nata est unam significativam
+
+
+<pb n="25"/>
+
+
+vocem. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="7">
+<p>Articulus autem est vox non significativa aut orationis
+principium aut finem aut determinationem  palificat,
+puta 'f.m.i' et 'p.e.r.i' et alia. Vox non significativa aut
+neque prohibet neque facit vocem unam significativam ex
+pluribus vocibus, natam poni et in extremis et in medio. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="8">
+<p>Nomen
+autem est vox conficta significativa sine tempore, cuius
+pars nulla est secundum se significativa ; in duplicibus enim
+non utimur tamquam et ipsa secundum se significet, puta in
+'Theodoro' 'doron' (idest donum) non significat. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="9">
+<p>Verbum
+autem vox conficta significativa cum tempore cuius nulla pars
+significat secundum se, sicut et in nominibus; 'homo' quidem
+enim aut 'album' non significat quando, *ambulat' autem aut
+'ambulavit' consignificat, hoc quidem presens tempus, hoc
+autem preteritum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="10">
+<p>Casus autem est nominis aut verbi, hic
+quidem secundum 'huius' aut *huic' significans et quecumque
+talia, hic autem secundum quod uni aut multis, puta ' homines?
+aut 'homo', hic autem secundum ypocritica, puta secundum
+interrogationem, iussionem. Nam 'ambulavit' aut *ambulabat'
+casus verbi secundum has species sunt. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="11">
+<p>Oratio autem vox
+significativa composita cuius quedam quidem secundum se significant
+aliquid ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="12">
+<p>non enim omnis oratio ex verbis et nominibus
+componitur, puta hominis diffinitio, sed contingit sine verbis
+esse orationem, partem tamen semper aliquid significantem
+habebit, puta, in hac 'ambulat Kleon', 'Kleon'. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="13">
+<p>Una autem
+est oratio dupliciter, aut enim que unum significat aut que
+ex pluribus coniunctionibus, puta Ilias quidem coniunctionibus
+una, hominis autem diffinitio per unum significare.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="21">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="1">
+<p>Nominis autem species hoc quidem simplex (simplex
+autem dicco quod non ex significantibus componitur, puta
+"terra"), hoc autem duplex; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="2">
+<p>huius autem hoc quidem ex significante
+et non significante, hoc autem ex significantibus compo-
+
+<pb n="26"/>
+
+nitur. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="3">
+<p>Erit autem utique triplum et quadruplum nomen et
+multuplum, puta multa των μεγαλιωτων 'ερμοκακοξανθος.' —
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="4">
+<p>Omne autem nomen est aut proprium aut lingua aut metaphora
+aut ornatus aut poetizatum aut superextensum aut sublatum
+aut permutatum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="5">
+<p>Dico autem proprium quidem quo utuntur
+singuli, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="6">
+<p>linguam autem quo alteri. — Quare manifestum quod
+et linguam et proprium esse possibile idem, non eisdem autem ;
+nam 'sigynon' Cypriis quidem proprium, nobis autem lingua.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="7">
+<p>Metaphora autem est nominis alieni illatio aut a genere ad
+speciem aut proportionale. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="8">
+<p>Dico autem a genere quidem ad
+speciem, puta «navis autem mea hec stetit». Nam 'in portum
+ferri' est stare aliquid. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="9">
+<p>A specie autem ad genus «iam decem
+milia Odyseus premia instituit»; quod quidem enim 'myrion'
+(idest decem milia) multum est, quo nunc pro 'multo' usus
+est. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="10">
+<p>A specie autem ad speciem, puta «ere animam exsecuit
+secans duro ere». Hic enim exsecare quidem 'secare', secare
+autem 'exsecare' dixit ; ambo enim auferre aliquid sunt.— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="11">
+<p>'Proportionale'
+autem dico quando similiter habet secundum ad
+primum et quartum ad tertium ; dicet enim pro secundo quartum
+aut pro quarto secundum, et aliquando apponunt pro quo
+dicere ad quod est. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="12">
+<p>Dico autem puta similiter inquit 'fyala"
+ad Bachum et 'scutum' ad Martem ; dicet igitur fyalam 'scutum
+Bachi' et scutum 'fyalam Martis'. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="13">
+<p>Aut quod senectus
+ad vitam et vespera ad diem ; dicet igitur vesperam 'senectutem
+diei" aut, sicut Empedocles, et senectutem 'esperam
+vite' aut *occasum vite'. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="14">
+<p>Quibusdam autem non est nomen
+iacens proportionalium, sed nichil minus similiter dicetur;
+puta fructum quidem dimittere ' seminare', hoc autem flammam
+a sole innominatum ; sed similiter habet hoc ad solem et seminare
+ad fructum, propter quod dictum est « seminans deo conditam
+flammam ». — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="15">
+<p>Est autem modo hoc metafore uti et
+
+
+
+<pb n="27"/>
+
+aliter, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="16">
+<p>appellantem quod alienum negare propriorum aliquid,
+puta si scutum dicat 'fyalam' non Martis sed vini. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="17">
+<p>Poetizatum
+autem est quod, totaliter non vocatum ab aliquibus,
+ipse ponit poeta ; videntur enim quedam esse talia, puta cornua
+'ernykas' et sacerdotem 'aretera'. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="18">
+<p>Superextensum autem
+est aut sublatum hoc quidem si vocali longiore usum sit
+quam propria aut sillaba iniecta, hoc autem si ablatum
+aliquid sit ab ipso, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="19">
+<p>superextensum quidem puta 'poleos' (idest
+canus, per 'e' breve) ' polios' (per 'ita' longum), et ' Pileos' 'Piliiadeo',
+ablatum autem puta ' kri' et ' do' et « una fit utrorumque
+
+» </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="20">
+<p>Permutatum autem est quando eius quod
+nominatur hoc quidem deficit hoc autem facit, puta « secundum
+dextrius uber » pro 'ad dextram'. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="21">
+<p>Ipsorum autem nominum
+hec quidem masculina, hec autem feminina, hec autem intermedia
+; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="22">
+<p>masculina quecumque terminantur in 'n' et 'r' et quecumque
+ex boc componuntur (hec autem sunt duo, 'ψ' (psi) et
+'x'); </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="23">
+<p>feminina autem quecumque ex vocalibus in semper longas,
+puta in 'i longum' et 'o magnum', et superextensorum in 'a' ;
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="24">
+<p>quare equales accidunt multitudines in quecumque masculina
+
+et feminina. Nam 'ψ' (psi) et 'x' eadem sunt. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="25">
+<p>In mutam autem
+nullum nomen terminatur, neque in vocalem brevem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:21" n="26">
+<p>In 'iota'
+autem tres partes, 'meli' (idest mel), 'komi' (idest cerusa),
+'peperi' (idest piper) ; in 'y' autem quinque. Intermedia autem
+in hec et 'n' et 's'.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="22">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="1">
+<p>Locutionis autem virtus planam et non humilem esse.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="2">
+<p>Planissima quidem igitur est que ex propriis nominibus, sed
+humilis. Exemplum autem que Cleofontis poesis et que Sthenelli.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="3">
+<p>Venerabilis autem et permutans quod idioticale que extraneis
+utitur. 'Extraneale' autem dico linguam et metaforam
+et superextensionem et omne quod preter proprium. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="4">
+<p>Sed si
+quis utique omnia talia faciat, aut enigma erit aut barbarismus ;
+si quidem igitur ex metaforis, enigma ; si autem ex linguis, barba-
+
+<pb n="28"/>
+
+rismus. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="5">
+<p>Enigmatis enim species hec est, dicentem existentia
+inpossibilia copulare. — Secundum quidem igitur nominum
+compositionem non est possibile hoc facere, secundum metaforam
+autem contingit, puta « virilem rubicundum ut es ignitum
+super virum adherentem » et que talia ex linguis ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="6">
+<p>barbarismus
+autem. Oportet ergo discretionem factam
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="7">
+<p>esse aliqualiter hiis ; hoc quidem enim non idioticale faciet
+neque humile, puta lingua et metafora et ornatus et alie dicte
+species, quod autem proprium planiciem. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="8">
+<p>Non minimam
+autem partem confert ad planum locutionis et non idioticale
+superextensiones et apocope et exallage nominum; per aliter
+quidem enim habere quam ut proprium, preter consuetum factum,
+quod non idioticale faciet, per communicare autem consueto
+quod planum erit. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="9">
+<p>Quare non recte vituperant qui increpant
+talem modum loquele et diakomodizantes poetam, velut Euclides
+antiquus, tamquam facile facere, si quid dabit extendens ad
+quantumcumque vult, iambopoetizans in ipsa locutione: « petebat
+gratiam videns Marathonem ambulantem », et « non utique
+
+illius elleborum ». </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="10">
+<p>Apparere quidem igitur aliqualiter
+utentem isto modo risile. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="11">
+<p>Metrum autem commune
+est omnium partium, et enim metaforis et linguis et aliis speciebus
+utens indecenter et idonee ad risilia idem utique operabitur ;
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="12">
+<p>quod autem congruum quantum differt in versibus consideretur
+impositis nominibus in metrum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="13">
+<p>Et in lingua autem et in
+metaforis et in aliis speciebus transponens utique quis propria
+nomina cognoscet quod vera dicimus; puta idem iambiale
+poetizante Eschylo et Euripede, unum autem solum nomen
+transponente, pro proprio consueto linguam, hoc quidem videtur
+pulerum hoc autem vile. Eschylus quidem enim in Filoktete
+poetizavit «infirmitas lupus que mei carnem esthiei pedis»;
+
+
+
+<pb n="29"/>
+
+
+hic autem pro 'esthiein' (idest comedere) 'thoinate' (idest epulatur)
+transposuit. Et «nunc autem me ens parvus et nullo
+dignus et deformis», si quis dicit propria transponens, « nunc
+autem me ens parvusque et debilis et deformis ». Et « currum
+ineptum componens modicamque mensam», et quod «Iones
+vocant» aut «Iones clamant». </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="14">
+<p>Adhuc autem Arifrades tragodicos
+komodizabat, quod que nullus utique diceret in loquela
+hiis utuntur, puta «domatibus ab» sed non 'ab domatibus'
+et quod « sethen » (idest ex te) et quod « ego autem nin » (idest
+ipsum) et «Achille de» sed non 'de Achille', et quecumque
+alia talia. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="15">
+<p>Propter non esse enim in propriis faciunt non idioticale
+in locutione omnia talia; ille autem hoc ignorabat. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="16">
+<p>Est
+autem magnum quidem unoquoque dictorum decenter uti,
+et duplis nominibus et linguis, multo autem maius metaforicum
+esse. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="17">
+<p>Solum enim hoc neque ab alio est accipere, estque signum
+eufye; nam bene metaforizare est simile considerare. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="18">
+<p>Nominum
+autem dupla quidem maxime congruunt dithyrambis,
+lingue autem eroicis, metafore autem iambialibus. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="19">
+<p>Et in eroicis
+quidem omnia opportuna que dicta, in iambialibus autem
+propter quam maxime locutionem imitari hec congruunt nominum,
+quibuscumque et in quibuscumque sermonibus aliquid
+utetur ; sunt autem talia quod proprium et metafora et ornatus.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:22" n="20">
+<p>De tragodia quidem igitur et de ea que in agere imitatione,
+sint nobis sufficientia que dicta sunt.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="23">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:23" n="1">
+<p>De narrativa autem et in metro imitativa, quod oportet
+fabulas sicut in tragodiis consistere actitivas et circa unam
+actionem totam et perfectam, habentem principium et media
+et finem, que sicut animal unum totum facit propriam delectationem,
+palam ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:23" n="2">
+<p>et non similes hystorias consuetas esse, in
+quibus necesse non unius actionis fieri manifestationem, sed
+unius temporis, quecumque in hoc accidunt circa unum aut
+
+<pb n="30"/>
+
+plures, quorum unumquodque ut contingit habet ad invicem.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:23" n="3">
+<p>Sicut enim secundum eadem tempora et in Salamina factum
+fuit navale bellum, et in Sicilia Carthaginensium bellum nichil
+ad eundem contendentia finem, sic et in hiis que deinceps temporibus
+aliquando fit alterum cum altero, ex quibus unus nullus
+fit finis. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:23" n="4">
+<p>Fere autem multi poetarum hoc actitant. Propter
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:23" n="5">
+<p>quod, sicut diximus iam, et sic admirandus utique apparebit
+Homerus preter alios, eo quod neque bellum quamvis habens
+principium et finem conatus est poetizare totum ; valde enim
+utique magnum et non facile conspicabile debebat fore
+magnitudine moderantem complexum varietate. Nunc
+autem unam partem absumens usus est superadventitiis ipsi
+multis, puta katalogo et aliis superinductitiis bis bis intercipit
+poesim. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:23" n="6">
+<p>Alii autem circa unum faciunt et circa unum tempus et
+unam actionem multarum partium, velut qui Cyprica poetizavit
+et Parvam Nileidem. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:23" n="7">
+<p>Namque ex Iliade quidem et Odysseia
+unam tragodiam efficit utriusque aut duas solas, ex Cypriis
+autem multas et ex Parva Iliade plus quam octo,
+puta Oplon Krisis, Filoctetes, Neoptolemus, Eurypylus, Ptocheia,
+Lakena, Iliu Persis, et Apoplus, et Sinon et Proiades.
+— </p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="24">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="1">
+<p>Adhuc autem species easdem oportet habere epopoiiam
+tragodie (aut enim simplicem aut complexam aut moralem
+aut passionalem) </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="2">
+<p>et partes extra melopoiiam (idest melodie
+factionem) et visum easdem. Et enim peripetiis indiget et
+anagnorisibus et passionibus, adhuc dianoias (idest ratiocinationes)
+et locutionem habere bene. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="3">
+<p>Quibus omnibus Homerus
+usus est et primus et sufficienter. Et enim laborum utrumque
+constituit, Ilias quidem simplex et passionale, Odysseia autem
+complexum. Anagnorisis enim per totum et moralis. Cum hiis
+
+
+<pb n="31"/>
+
+
+
+enim locutione et dianola omnia superiecit. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="4">
+<p>Differt autem
+secundum consistentie longitudinem epopoia et metrum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="5">
+<p>Longitudinis
+quidem igitur terminus sufficiens qui dictus est; posse
+enim conspici principium et finem. Erit autem utique hoc,
+si antiquis quidem minores consistentie aut priorem multitudinem
+tragodiarum in unam auditionem positarum pretermittat.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="6">
+<p>Habet autem ad superextendi magnitudinem aliquam epopoia
+proprium, propterea quod in tragodia quidem non contingit
+simul actas multas partes imitari, sed quod in skene et ypocritis
+pars solam ; in epopoia autem propterea quod narratio
+est, est multas partes simul poetizare terminatas, a quibus,
+convenientibus entibus, excrescit poematis moles. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="7">
+<p>Quare hoc
+habet bonum ad magnificentiam et ad transmutari audientem
+et episodizare dissimilibus episodiis ; simile enim cito replens
+excidere facit tragodias. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="8">
+<p>Metrum autem quod eroicum ab
+experientia congruit. Si enim aliquis in aliquo alio metro narrativam
+imitationem faciat aut in multis, indecens utique apparebit
+; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="9">
+<p>quod enim eroicum stabilissimum et maxime molis metrorum
+est (propter quod et linguas et metaforas suscipit maxime ;
+superfluus enim et narrativus motus aliorum), </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="10">
+<p>quod autem
+iambiale et tetrametrum motiva hoc quidem saltativum hoc
+autem activum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="11">
+<p>Adhuc autem inconvenientius, si misceat
+quis ipsa, sicut Chairemon. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="12">
+<p>Propter quod nullus magnam
+consistentiam in alio poetizavit quam eroico, sed, sicut diximus,
+ipsa natura docet quod congruum ipsi eligere. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="13">
+<p>Homerus autem
+alias in multis dignus laudari, et etiam quia solus poetarum
+non ignorat quod oportet poetizare ipsum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="14">
+<p>Ipsum enim utique
+poetam paucissima prologizare. Non enim est secundum hec
+imitator. Alii quidem igitur ipsi quidem per totum agonizant,
+imitantur autem pauca et raro ; hic autem pauca prohemizans
+mox inducit virum aut mulierem aut alium aliquem morem
+et neque unum morem, sed habentem mores. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="15">
+<p>Oportet quidem
+
+<pb n="32"/>
+
+igitur in tragodiis facere quod mirabile, magis autem contingit
+in epopoia quod proportionale, propter quod accidit maxime
+quod mirabile, propter non aspicere ad agentem ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="16">
+<p>deinde que
+circa Hectoris persecutionem in scene entia risilia utique videbuntur,
+hii quidem stantes et non persequentes, hic autem
+sursum nuens, in versibus autem latet. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="17">
+<p>Ouod autem mirabile
+delectabile; signum autem' omnes apponentes annuntiant
+ut gratiosi. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="18">
+<p>Docuit autem maxime Homerus et alios falsa dicere
+
+ut . — Est autem hoc paralogismus. Putant enim homines,
+
+quando hoc ente aut fiente hoc fit, si quod posterius est, et
+quod prius esse aut fieri; hoc autem est falsum. Propter quod
+utique, et si quod primum falsum, sed neque hoc ente necesse
+esse aut fieri aut apponi. Propter hoc enim scire verum quibus
+paralogizatur nostra anima et quod primo ens. Exemplum
+autem huic ex Niptro. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="19">
+<p>Preelegi hoc inpossibilia signa magis
+quam possibilia inprobabilia; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="20">
+<p>sermonesque non consistere
+ex partibus irrationabilibus, sed maxime quidem nullum habere
+irrationabile. Si autem non, extra fabulamen, sicut Oidipus
+non scire qualiter Iolaus mortuus est, sed non in dramate (idest
+actione), sicut in llectra qui divinamina enuntiantes aut in
+Mysois qui sine voce ex terra in Mysiam veniens. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="21">
+<p>Quare dicere
+quod interimetur utique fabula risile; ex principio enim non
+oportet consistere tales. S1 autem ponatur et videatur rationabihus,
+contingere et inconveniens ; quoniam et que in Odysseia
+irrationabilia que circa expositionem quomodo non utique
+essent tolerabilia palam utique fiet, si ipsa pravus poeta fecerit
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="22">
+<p>Nunc autem alis bonis poeta occultat delectans quod inconveniens.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:24" n="23">
+<p>Locutioni autem oportet pervigilare in ociosis
+partibus et neque moralibus neque dianoiticis ; occultat enim
+iterum que valde fulgida locutio moresque et dianoias.
+
+
+
+<pb n="33"/>
+
+
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="25">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="1">
+<p>De problematibus autem et solutionibus, ex quantisque
+et qualibus utique speciebus sunt, sic considerantibus fiet
+utique manifestum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="2">
+<p>Quoniam enim est imitator poeta sicut
+pictor aut aliquis alius ymaginum factor, necesse imitari trium
+entium numero unum aliquid ; aut enim qualia sint aut qualia
+aiunt, et videtur qualia esse oportet. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="3">
+<p>Hec autem enuntiantur
+locutione aut et linguis et metaforis; et multe passiones locutionis
+sunt ; damus enim hec poetis. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="4">
+<p>Ad hec autem non eadem
+rectificatio est politice et poetice ; neque alterius artis et poetice.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="5">
+<p>Ipsius autem poetice duplex peccatum, hoc quidem enim
+secundum se ipsam, hoc autem secundum accidens. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="6">
+<p>Si quidem
+enim preeligebat imitari inpossibilitatem ipsius peccatum.
+— Si autem preeligebat non recte, sed equum ambo dextra
+preicientem, aut quod secundum unamquamque artem peccatum,
+puta quod secundum medicativam aut aliam artem qualemcumque
+poetizata sunt, qualemcumque non secundum se ipsam.
+— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="7">
+<p>Quare oportet increpationes in problematibus ex hiis considerantem
+solvere. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="8">
+<p>Primo quidem igitur que ad ipsam artem
+inpossibilia poetizata sunt, peccata sunt, sed recte habet que
+optinet finem ipsius ; finis enim dictus est, si sic magis stupefaciens
+sit ipsum aut aliam facit partem. Exemplum Hectoris
+persecutio, equidem finis aut minus contingebat
+existere </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="9">
+<p>et secundum eam que de hiis artem peccare non recte ;
+oportet enim, si contingit, totaliter nequaquam peccare. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="10">
+<p>Adhuc
+utrum est peccatum, eorum que secundum artem aut secundum
+aliud accidens ? Minus enim si non sciat quod cerva femina
+cornua non babet, quam si non imitative scripsit. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="11">
+<p>Ad hec autem,
+si increpatur quod non vera, sed forte utique (velut et Sofocles
+inquit ipse quidem quales oportet facere, Euripedes autem
+quales sunt) sic solvendum. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="12">
+<p>Si autem neutro modo, quod sic
+
+<pb n="34"/>
+
+aiunt ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="13">
+<p>velut que de diis, forte enim neque melius neque dicere
+neque vera, sed contigit sicut Xenofanem; sed non aiunt.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="14">
+<p>Hec forte non melius quidem, sed sic habebat, velut que de
+armis, «lanceam autem ipsis rectam ex servatorio»; sic enim
+tunc putabant sicut nunc Illyrioi. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="15">
+<p>De eo autem quod bene
+
+aut non bene aut dictum est ab aliquo aut actum est, non solum
+
+considerandum ad ipsum quod actum est aut dictum aspicientem,
+si studiosum aut pravum, sed et ad agentem aut dicentem
+ad quem aut quando aut cui aut cuius gratia, puta si maioris
+boni, ut fiat, aut maioris mali, ut removeatur. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="16">
+<p>Que autem
+ad locutionem aspicientem oportet dissolvere, puta lingua
+« oureas quidem primo » ; forte enim non mulos dicit sed custodes.
+Et Dolonem «ut specie quidem si erat malus» non
+corpus incommensuratum sed facies turpis ; nam eueides (idest
+bone speciei) Cretenses 'euprosopon' (idest bone faciei) vocant.
+Et quod «ferventius autem miscebat » non quod non mixtum,
+ut vini avidis, sed quod citius. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="17">
+<p>Hoc autem secundum metaforam
+dictum est, puta «alii quidem dii et viri galeati dormiebant
+tota nocte»; simul autem inquit «aut quando campus Troikus
+vidit, fistularum  tubarumque consonantiam»; nam 'omne'
+pro 'multum' secundum metaforam dictum est, nam omne multum
+aliquid ; et hoc « sola autem expers » secundum metaforam ;
+quod enim notissimum solum. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="18">
+<p>Secundum accentum autem,
+sicut Ippias Thasius solvit istud « damus autem ipsi », et « hoc
+quidem non putrescit imbre ». </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="19">
+<p>Hec autem divisione, velut Empedocles
+« cito autem mortalia nascebantur que ante didici inmortalia
+animaliaque ante quam segregarentur». — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="20">
+<p>Hec autem
+amfibolia «transivit autem pleonyx» (idest plus noctis) ; nam
+"pleio' amfibologicum est. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="21">
+<p>Hec autem secundum consuetudinem
+locutionis; eorum qui miscuerunt vinum aiunt esse,
+unde poetizata est «caliga nuper preparati stagni » ; et 'erarios'
+
+
+
+<pb n="35"/>
+
+eos qui ferrum laborant, unde dictum est Ganymedes «Iovi
+vinum fundit» non bibenti vinum. Erit autem utique hoc
+secundum metaforam. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="22">
+<p>Oportet autem et quando nomen
+aliquid videtur significare, considerare quot modis utique
+significet hoc in dicto, puta «longam habebat eream lanceam »
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="23">
+<p>per sic prohiberi quot modis contingit ; sic aut sic maxime utique
+quid suspicabitur. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="24">
+<p>Secundum eam que secundum econtrarietatem,
+ut Glaucon dicit, quid quedam irrationabiliter presuspicantur
+et ipsi contrasententiati sillogizantur, et ac si dixissent
+quia videtur, increpant, si subcontrarium sit ipsorum estimationi.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="25">
+<p>Hoc autem passa sunt que circa Karium. Putant enim
+ipsum Lakonen esse; inconveniens igitur non occurrere Thelemachum
+ipsi in Lacedemonem venientem. Hoc autem forte
+habet sicut Kefalenes aiunt; penes ipsum enim
+
+dicunt Odyssea, et esse Ikadium sed non Ikarium. Propter
+peccatum autem problema verisimile est. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="26">
+<p>Totaliter autem
+inpossibile quidem ad poesim aut ad melius aut ad gloriam
+oportet reducere. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="27">
+<p>Ad poesim enim eligibilius probabile inpossibille
+quam inprobabile. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="28">
+<p>Et possibile tales esse, quale Xeuxis
+scripsit, sed melius ; exemplum enim oportet existere. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="29">
+<p>Ad que
+aiunt irrationabilia ; sicque et quod aliquando non irrationabile
+est ; verisimile enim et preter verisimile fieri. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="30">
+<p>Que autem subcontraria
+ut dicta considerare, sicut qui in hiis que in idem et ad
+idem et eodem modo, quare et ipsum aut ad que ipse dicit aut
+quodcumque prudentiale supponitur. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="31">
+<p>Recta autem increpatio
+et irrationabilitas et pravitas, quando non necessitate existente
+nichil utitur irrationabili, sicut Euripedes Egieti malitia,
+sicut in Horeste Menelai. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:25" n="32">
+<p>Increpationes quidem igitur ex
+quinque speciebus ferunt, aut enim ut inpossibilia aut ut irra-
+
+<pb n="36"/>
+
+tionabilia aut ut nociva aut ut subcontraria aut ut preter rectitudinem
+eam que secundum artem. Solutiones autem ex dictis
+numeris considerande, sunt autem duodecim.
+
+</p>
+</div>
+</div>
+
+<div type="textpart" subtype="chapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1" n="26">
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:20" n="1">
+<p>Utrum autem melior epopoiika imitatio aut tragica
+dubitabit utique quis. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="2">
+<p>Si enim que minus honerosa melior,
+talis autem ad meliores aspectores est , palam quod
+que omnia imitatur honerosa ; </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="3">
+<p>ut enim non sentientem si non
+ipse apponat, multum motum moventem, velut qui pravi fystulatores
+volutati, si discum oporteat imitari, et trahentes verticalem,
+si Scyllan fystulent. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="4">
+<p>Tragodia quidem igitur talis est ut et
+qui prius posteriores ipsorum putabant ypocritas, ut valde
+enim superexcedentem symiam Myniscus Kallispidem vocabat,
+talis autem opinio et de Pyndaro erat. Ut autem isti habent
+ad ipsos, tota ars ad epopoiiam habet. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="5">
+<p>Hanc quidem igitur
+ad inspectores epieikees aiunt esse, nichil indigent figuris, tragicam
+ad pravos; que igitur honerosa, deterior palam quod
+utique erit. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="6">
+<p>Primo quidem non poetice accusatio sed ypocritice,
+quoniam est circumoperari signis etiam rapsodizantem,
+sicut est Sosistratus, et etiam cantantem quod quidem faciebat
+Mnesitheus Pontius. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="7">
+<p>Deinde neque motus omnis reprobandus,
+si quidem neque saltatio, sed qui pravorum, sicut Kallipidem
+increpabant et nunc alios, tamquam non liberales mulieres
+imitantibus. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="8">
+<p>Adhuc tragodia sine motu facit quod ipsius,
+sicut epopoiia ; per relegere enim manifesta qualis quedam est ;
+si igitur est quantum ad alia melior, hocque non necessarium
+ipsi existere. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="9">
+<p>Deinde propterea quod omnia habet quecumque
+quidem epopoiia ; et enim metro licet uti, </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="10">
+<p>et adhuc non parvam
+partem musicam et visus per quam delectationes consistunt
+evidentissime. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="11">
+<p>Deinde et quod evidens habet et in recognitione
+
+
+<pb n="37"/>
+
+
+
+et in operibus. </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="12">
+<p>Adhuc per in minori longitudine finem imitationis
+esse ; quod enim athrooterum (idest magis simul totum)
+delectatio multo mixto tempore ; dico autem puta si quis Edipum
+ponat eum qui Sofoclei in versibus quibuscumque aut propriis.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="13">
+<p>Adhuc minus una imitatio que epopoiorum ; signum autem
+ex qualicumque enim imitatione plures tragodie fiunt ; quare
+si quidem unam fabulam faciant, aut breviter ostensam, gratiosum
+apparet aut, assequentem metri longitudini, insipidum.
+</p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="14">
+<p>Dico autem puta si ex pluribus actionibus sit composita, sicut
+Ylias habet multas tales partes, et Odysseia et secundum se
+habet magnitudinem, et talia quedam poemata consistunt
+ut contingit optime et quam maxime unius actionis imitatio.
+-— </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="15">
+<p>Si igitur omnibus hiis differt et adhuc artis opere (oportet
+enim non quamcumque delectationem facere ipsas, sed dictam)
+manifestum quod melior utique erit magis finem sortiens quam
+epopoiia. — </p></div>
+
+<div type="textpart" subtype="subchapter" xml:base="tlg0086.tlg034.moerbeke1277-lat1:26" n="16">
+<p>De tragodia quidem igitur et epopoiia ipsisque
+et speciebus et partibus, et in quot et in quo differunt et eius
+quod bene aut non, que cause, et de increpationibus et solutionibus,
+dicta sint tanta.
+
+PRIMUS ARISTOTILIS DE ARTE POETICA LIBER EXPLICIT
+
+TRA<add>NSLATUS</add> 1278o 1o DIE MARTII.
+</p>
+</div>
+</div>
+</div></body></text></TEI>

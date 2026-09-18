@@ -61,7 +61,7 @@
     </fileDesc>
 
     <encodingDesc>
-      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
 
     <profileDesc>
       <langUsage>
@@ -80,7 +80,7 @@
 
     <div type="textpart" subtype="cast-list"><fw type="header">PERSONS REPRESENTED.</fw><list><item><roleName>CHORUS OF AGED PERSIANS</roleName>.</item><item><roleName>ATOSSA</roleName>, THE QUEEN-MOTHER.</item><item><roleName>A MESSENGER</roleName>.</item><item><roleName>THE GHOST OF DARIUS</roleName>.</item><item><roleName>XERXES</roleName>.</item></list></div>
 
-</front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg002.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2:1-155">
+</front><body xml:base="urn:cts:greekLit:tlg0085.tlg002.buckley1849-eng2"><div type="edition" n="urn:cts:greekLit:tlg0085.tlg002.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg002.perseus-grc2:1-155">
 <speaker>CHORUS</speaker>
 <p><milestone unit="card" n="1" resp="Smyth"/>These are the faithful band<ref n="67.1" target="#app-tlg002-fn-67.1">1</ref> left by the Persians who have gone into the land of Hellas, and guardians of these opulent abodes abounding in gold, whom our prince Xerxes himself, a monarch descended from Darius, selected according to seniority, to have the superintendence of the realm. And now for some time my ill-boding soul within me has been in a state of exceeding agitation concerning the return of our monarch, and of the army in its rich array, for the whole native power of Asia hath gone, and [my mind] calls for its youthful hero<ref n="67.2" target="#app-tlg002-fn-67.2">2</ref>.
 

@@ -61,7 +61,7 @@
     </fileDesc>
 
     <encodingDesc>
-      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl></encodingDesc>
+      <editorialDecl><p>Buckley's prose, page breaks, speaker turns, stage directions, Greek and Latin quotations, and footnotes are preserved. Speaker turns point explicitly to the Smyth/Perseus Greek edition. Each Smyth card was aligned by direct comparison of its Greek wording with Buckley's literal English; exact turn starts were used where available. Passages absent from Buckley are represented by explicit gaps rather than false English alignments.</p></editorialDecl><refsDecl n="CTS"><cRefPattern n="turn" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:sp[@n='$1'])"><p>This pointer pattern extracts a speaker turn.</p></cRefPattern></refsDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure unit="card" delim=":" match=".//milestone[@unit='card']" use="@n" n="chunk"/></citeStructure></refsDecl></encodingDesc>
 
     <profileDesc>
       <langUsage>
@@ -94,7 +94,7 @@
         </item><item>
           <roleName>CHORUS OF CAPTIVE TROJAN WOMEN</roleName>
         </item></list></div>
-      </front><body><div type="edition" n="urn:cts:greekLit:tlg0085.tlg006.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1-21">
+      </front><body xml:base="urn:cts:greekLit:tlg0085.tlg006.buckley1849-eng2"><div type="edition" n="urn:cts:greekLit:tlg0085.tlg006.buckley1849-eng2" xml:lang="eng"><sp n="1" corresp="urn:cts:greekLit:tlg0085.tlg006.perseus-grc2:1-21">
         <speaker>ORESTES</speaker>
         <p><milestone unit="card" n="1" resp="Smyth"/>MERCURY of the shades! presiding over the power delegated from the sire <ref n="146.1" target="#app-tlg006-fn-146.1">1</ref>, be thou a saviour and ally to me beseeching it; for I am come into this land, and I return from exile <ref n="146.2" target="#app-tlg006-fn-146.2">2</ref>. And over this mound of his sepulchre too I call upon my father to listen, to give ear <ref n="146.3" target="#app-tlg006-fn-146.3">3</ref>. * * * * * * * * * * * * * a ringlet cherished in honour of
           <pb n="147"/>

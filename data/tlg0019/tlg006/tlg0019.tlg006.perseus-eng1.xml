@@ -27,7 +27,7 @@
 <bibl><ref target="file:///Users/gcrane/Desktop/OldMacintoshHD/sgml/texts/Classics/Aristophanes/copyright/aristoph.birds_eng.xml">aristoph.birds_eng.xml</ref><note>Legacy source SHA-256: 777177ebe5e566807771a7349a110a5856a0378c331a6de9094bd910ccb7dc9a</note><note>Translator recorded as Anonymous and Eugene O'Neill, Jr. as editor, following the already migrated Birds (perseus-eng2) and the project owner's attribution guidance. The legacy header called O'Neill the translator. 1938 is the compilation date; translation wording is unchanged. No independent collation against the Athenian Society printing was made.</note></bibl></sourceDesc>
 </fileDesc>
 
-<encodingDesc><refsDecl n="CTS"><cRefPattern n="card" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:milestone[@unit='card'][@n='$1'])"><p>Reference card starting identifier; not an assertion of verse-by-verse correspondence.</p></cRefPattern></refsDecl><editorialDecl><p>Character content, notes, stage directions and front matter are preserved from the source, apart from expansion of XML character entities and the single Beta Code speaker-label conversion recorded in the inventory. Legacy card divisions are retained; explicit card milestones align the translation to the canonical Greek reference. Boundary adjustments are recorded in the migration inventory. Source line milestones remain reference anchors, not newly inferred translation verse numbers.</p></editorialDecl></encodingDesc><profileDesc>
+<encodingDesc><refsDecl n="CTS"><cRefPattern n="card" matchPattern="(\w+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div//tei:milestone[@unit='card'][@n='$1'])"><p>Reference card starting identifier; not an assertion of verse-by-verse correspondence.</p></cRefPattern></refsDecl><editorialDecl><p>Character content, notes, stage directions and front matter are preserved from the source, apart from expansion of XML character entities and the single Beta Code speaker-label conversion recorded in the inventory. Legacy card divisions are retained; explicit card milestones align the translation to the canonical Greek reference. Boundary adjustments are recorded in the migration inventory. Source line milestones remain reference anchors, not newly inferred translation verse numbers.</p></editorialDecl><refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//milestone[@unit='card']" unit="card" use="@n" delim=":" n="chunk"/></citeStructure></refsDecl></encodingDesc><profileDesc>
 <langUsage>
 <language ident="eng">English</language>
 <language ident="grc">Greek</language>
@@ -86,7 +86,7 @@ bring up to p3
 </change></revisionDesc>
 </teiHeader>
 
-<text xml:lang="eng"><body><div type="translation" n="urn:cts:greekLit:tlg0019.tlg006.perseus-eng1" xml:lang="eng">
+<text xml:lang="eng"><body xml:base="urn:cts:greekLit:tlg0019.tlg006.perseus-eng1"><div type="translation" n="urn:cts:greekLit:tlg0019.tlg006.perseus-eng1" xml:lang="eng">
 <milestone unit="Prologue"/>
 <div type="textpart" n="1" subtype="source-card" corresp="urn:cts:greekLit:tlg0019.tlg006.perseus-grc2:1-48">
 <milestone unit="card" n="1" ed="perseus" resp="#migration" corresp="urn:cts:greekLit:tlg0019.tlg006.perseus-grc2:1-48" xml:id="card-1"/><stage>SCENE:  A wild and desolate region; only thickets, rocks, and a single tree are seen. Euelpides and Pisthetaerus enter, each with a bird in his hand.</stage>

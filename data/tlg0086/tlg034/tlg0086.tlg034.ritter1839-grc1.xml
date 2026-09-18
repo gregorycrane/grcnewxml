@@ -1,0 +1,1565 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title type="work">Aristotle's Poetics: Ritter's Greek edition</title>
+        <author>Aristotle</author>
+        <editor>Franz Ritter</editor>
+        <respStmt>
+          <resp>OCR collation, TEI restructuring, commentary extraction, and reference alignment</resp>
+          <name>Perseus Digital Library Project</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <publisher>Perseus Digital Library Project</publisher>
+        <pubPlace>Medford, MA</pubPlace>
+        <date when="2026-09-06">2026-09-06</date>
+        <idno type="CTS-URN">urn:cts:greekLit:tlg0086.tlg034.ritter1839-grc1</idno>
+        <availability>
+          <licence target="https://creativecommons.org/licenses/by-sa/4.0/">The source is in the public domain. The revised TEI is available under CC BY-SA 4.0.</licence>
+        </availability>
+      </publicationStmt>
+      <sourceDesc>
+        <biblStruct>
+          <monogr>
+            <author>Aristotle</author>
+            <title xml:lang="lat">Poetica; ad codices antiquos recognitam Latine conversam commentario illustratam</title>
+            <editor>Franciscus Ritter</editor>
+            <imprint>
+              <pubPlace>Coloniae</pubPlace>
+              <publisher>I. E. Renard</publisher>
+              <date when="1839">1839</date>
+            </imprint>
+            <idno type="HathiTrust">hvd.32044085095867</idno>
+          </monogr>
+        </biblStruct>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <refsDecl n="CTS">
+        <cRefPattern n="subchapter" matchPattern="(\d+)\.(\d+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div/tei:div[@subtype='chapter' and @n='$1']/tei:div[@subtype='subchapter' and @n='$2'])"/>
+      </refsDecl>
+      <editorialDecl>
+        <correction status="medium">The legacy XML was checked against OCR from the represented scan. Only clear OCR and word-division errors were corrected; Ritter's substantive readings were retained.</correction>
+      </editorialDecl>
+    <refsDecl xml:id="CTS"><citeStructure match="/TEI/text/body" use="@xml:base"><citeStructure match=".//div[@subtype='chapter']" use="@n" unit="chapter" delim=":" n="chunk"><citeStructure match="./div[@subtype='subchapter']" use="@n" unit="subchapter" delim="."/></citeStructure></citeStructure></refsDecl></encodingDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="grc">Ancient Greek</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-09-06">Corrected against the OCR witness, restructured to conventional Poetics subsections, and linked to the Perseus reference edition.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="grc">
+    <body xml:base="urn:cts:greekLit:tlg0086.tlg034.ritter1839-grc1">
+      <div type="edition" n="urn:cts:greekLit:tlg0086.tlg034.ritter1839-grc1" xml:lang="grc">
+        <div type="textpart" subtype="chapter" n="1">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.1" cert="high">
+            <p><pb n="1" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=35"/>Περὶ ποιητικῆς αὐτῆς τε καὶ τῶν εἰδῶν αὐτῆς, ἣν τινα δύναμιν ἕκαστον ἔχει, καὶ πῶς δεῖ συνίστασθαι τοὺς μύθους, εἰ μέλλει καλῶς ἕξειν ἡ ποίησις, ἔτι δὲ ἐκ πόσων καὶ ποίων ἐστὶ μορίων, ὁμοίως δὲ καὶ περὶ τῶν ἄλλων ὅσα τῆς αὐτῆς ἐστὶ μεθόδου, λέγωμεν, ἀρξάμενοι κατὰ φύσιν πρῶτον ἀπὸ τῶν πρώτων. ἡ </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.2" cert="high">
+            <p>ἐποποιία δὴ καὶ ἡ τῆς τραγῳδίας ποίησις, ἔτι δὲ κωμῳδία καὶ ἡ διθυραμβοποιητική, καὶ τῆς αὐλητικῆς ἡ πλείστη καὶ κιθαριστικῆς, πᾶσαι τυγχάνουσιν οὖσαι μιμήσεις τὸ σύνολον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.3" cert="high">
+            <p>διαφέρουσι δὲ ἀλλήλων τρισίν· ἢ γὰρ τῷ γένει ἑτέροις μιμεῖσθαι, ἢ τῷ ἕτερα, ἢ τῷ ἑτέρως καὶ μὴ τὸν αὐτὸν τρόπον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.4" cert="high">
+            <p>ὥσπερ γὰρ καὶ χρώμασι καὶ σχήμασι πολλὰ μιμοῦνταί τινες ἀπεικάζοντες, οἱ μὲν διὰ τέχνης οἱ δὲ διὰ συνηθείας [, ἕτεροι δὲ διὰ τῆς φωνῆς], οὕτω κἀν ταῖς εἰρη<pb n="2" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=36"/>μέναις τέχναις, ἅπασαι μὲν ποιοῦνται τὴν μίμησιν ἐν ῥυθμῷ καὶ λόγῳ καὶ ἁρμονίᾳ, τούτοις δ' ἢ χωρὶς ἢ μεμιγμένοις, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.5" cert="high">
+            <p>οἷον ἁρμονίᾳ μὲν καὶ ῥυθμῷ χρώμεναι μόνον ἥ τε αὐλητικὴ καὶ ἡ κιθαριστική, κἂν εἴ τινες ἕτεραι τυγχάνωσιν οὖσαι τοιαῦται τὴν δύναμιν, οἷον ἡ τῶν συρίγγων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.6" cert="high">
+            <p>αὐτῷ δὲ τῷ ῥυθμῷ μιμοῦνται χωρὶς ἁρμονίας· οἱ τῶν ὀρχηστῶν· καὶ γὰρ οὗτοι διὰ τῶν σχηματιζομένων ῥυθμῶν μιμοῦνται καὶ ἤθη καὶ πάθη καὶ πράξεις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.7" cert="high">
+            <p>ἡ δὲ ἐποποιία μόνον τοῖς λόγοις ψιλοῖς ἢ τοῖς μέτροις, καὶ τούτοις εἴτε μιγνῦσα μετ' ἀλλήλων, εἴθ' ἑνί τινι γένει χρωμένη τῶν μέτρων τυγχάνουσα μέχρι τοῦ νῦν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.8" cert="high">
+            <p>οὐδὲν γὰρ ἂν ἔχοιμεν ὀνομάσαι κοινὸν τοὺς Σώφρονος καὶ Ξενάρχου μίμους καὶ τοὺς Σωκρατικοὺς λόγους, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.9" cert="high">
+            <p>οὐδὲ εἴ τις διὰ τριμέτρων ἢ ἐλεγείων ἢ τῶν ἄλλων τινῶν τῶν τοιούτων ποιοῖτο τὴν μίμησιν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.10" cert="high">
+            <p>πλὴν οἱ ἄνθρωποί γε συνάπτοντες τῷ μέτρῳ τὸ ποιεῖν ἐλεγειοποιοὺς τοὺς δὲ ἐποποιοὺς ὀνομάζουσιν, οὐχ ὡς τοὺς κατὰ μίμησιν ποιητὰς ἀλλὰ κοινῇ κατὰ τὸ μέτρον προσαγορεύοντες. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.11" cert="high">
+            <p>καὶ γὰρ ἂν ἰατρικὸν ἢ μουσικόν τι διὰ τῶν μέτρων ἐκφέρωσιν, οὕτω<note>
+5. τοιαῦται Aldus: omittunt AcBcNa et Medicei omnes et GLPQ.
+vid. Commentarius.
+</note><pb n="3" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=37"/> καλεῖν εἰώθασιν. οὐδὲν δὲ κοινόν ἐστιν Ὁμήρῳ καὶ Ἐμπεδοκλεῖ πλὴν τὸ μέτρον· διὸ τὸν μὲν ποιητὴν δίκαιον καλεῖν, τὸν δὲ φυσιολόγον μᾶλλον ἢ ποιητήν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.12" cert="high">
+            <p>ὁμοίως δὲ κἂν εἴ τις ἅπαντα τὰ μέτρα μιγνύων ποιοῖτο τὴν μίμησιν, καθάπερ Χαιρήμων ἐποίησε Κένταυρον μικτὴν ῥαψῳδίαν ἐξ ἁπάντων τῶν μέτρων, καὶ ποιητὴν προσαγορευτέον. περὶ μὲν οὖν τούτων διωρίσθω τοῦτον τὸν τρόπον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.13" cert="high">
+            <p>εἰσὶ δέ τινες αἳ πᾶσι χρῶνται τοῖς εἰρημένοις, λέγω δὲ οἷον ῥυθμῷ καὶ μέλει καὶ μέτρῳ, ὥσπερ ἥ τε τῶν διθυραμβικῶν ποίησις καὶ ἡ τῶν νόμων καὶ ἥ τε τραγῳδία καὶ ἡ κωμῳδία· διαφέρουσι δέ, ὅτι αἱ μὲν ἅμα πᾶσιν αἱ δὲ κατὰ μέρος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:1.14" cert="high">
+            <p>ταύτας μὲν οὖν λέγω τὰς διαφορὰς τῶν τεχνῶν, ἐν οἷς ποιοῦνται τὴν μίμησιν.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="2">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:2.1" cert="high">
+            <p>Ἐπεὶ δὲ μιμοῦνται οἱ μιμούμενοι πράττοντας, ἀνάγκη δὲ τούτους ἢ σπουδαίους ἢ φαύλους εἶναι (τὰ γὰρ ἤθη σχεδὸν ἀεὶ τούτοις ἀκολουθεῖ μόνοις· κακίᾳ γὰρ καὶ ἀρετῇ τὰ ἤθη διαφέρουσι πάντες), ἤτοι βελτίονας ἢ καθ᾽ ἡμᾶς ἢ χείρονας<note>
+6. καὶ] οὐκ ἤδη καὶ Aldus cum editoribus plerisque omnibus.
+12. οἷς Victorius: codices αἷς.
+</note><pb n="4" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=38"/> ἢ καὶ τοιούτους, – ὥσπερ οἱ γραφεῖς· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:2.2" cert="high">
+            <p>Πολύγνωτος μὲν γὰρ κρείττους, Παύσων δὲ χείρους, Διονύσιος δὲ ὁμοίους εἴκαζεν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:2.3" cert="high">
+            <p>δῆλον δὲ ὅτι καὶ τῶν λεχθεισῶν ἑκάστη μιμήσεων ἕξει ταύτας τὰς διαφοράς, καὶ ἔσται ἑτέρα τῷ ἕτερα μιμεῖσθαι τοῦτον τὸν τρόπον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:2.4" cert="high">
+            <p>καὶ γὰρ ἐν ὀρχήσει καὶ αὐλήσει καὶ κιθαρίσει ἔστι γενέσθαι ταύτας τὰς ἀνομοιότητας, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:2.5" cert="high">
+            <p>καὶ περὶ τοὺς λόγους δὲ καὶ τὴν ψιλομετρίαν, οἷον Ὅμηρος μὲν βελτίους, Κλεοφῶν δὲ ὁμοίους, Ἡγήμων δὲ ὁ Θάσιος ὁ τὰς παρῳδίας ποιήσας πρῶτος καὶ Νικοχάρης ὁ τὴν Δηλιάδα χείρους. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:2.6" cert="high">
+            <p>ὁμοίως δὲ καὶ περὶ τοὺς διθυράμβους καὶ περὶ τοὺς νόμους [, ὡς Πέρσας καὶ Κύκλωπας Τιμόθεος καὶ Φιλόξενος,] μιμήσαιτο ἄν τις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:2.7" cert="high">
+            <p>ἐν αὐτῇ δὲ τῇ διαφορᾷ καὶ ἡ τραγῳδία πρὸς τὴν κωμῳδίαν διέστηκεν· ἡ μὲν γὰρ χείρους ἡ δὲ βελτίους μιμεῖσθαι βούλεται τῶν νῦν.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="3">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:3.1" cert="high">
+            <p>Ἔτι δὲ τούτων τρίτη διαφορὰ τὸ ὡς ἕκαστα τούτων μιμήσαιτο ἄν τις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:3.2" cert="high">
+            <p>καὶ γὰρ ἐν τοῖς αὐτοῖς καὶ τὰ αὐτὰ μιμεῖ<note>
+1. τοιούτους] τοιούτους ἀνάγκη μιμεῖσθαι Aldus. 6 . καὶ περὶ
+Aldus: καὶ τὸ περὶ AcBcNa et M omnes et GLPQ. 8 . ó alte-
+rum om AcBcNa et M omnes et GLQ. 11 . ὡς περγάς Ac.
+ὥσπερ γᾶς BeNa, ὡς πέργας Aldus. conf. Commentar.
+
+
+
+
+</note><pb n="5" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=39"/> σθαι ἔστιν ὁτὲ μὲν ἀπαγγέλλοντα ἢ ἑτερόν τι γιγνόμενον [, ὥσπερ Ὅμηρος ποιεῖ,] ἢ ὡς τὸν αὐτὸν καὶ μὴ μεταβάλλοντα, ἢ πάντας ὡς πράττοντας καὶ ἐνεργοῦντας τοὺς μιμουμένους. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:3.3" cert="high">
+            <p>ἐν τρισὶ δὴ ταύταις διαφοραῖς ἡ μίμησίς ἐστιν, ὡς εἴπομεν κατ᾿ ἀρχάς, ἐν οἷς τε καὶ ἃ καὶ ὥς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:3.4" cert="high">
+            <p>ὥστε τῇ μὲν ὁ αὐτὸς ἂν εἴη μιμητὴς Ὁμήρῳ Σοφοκλῆς, μιμοῦνται γὰρ ἄμφω σπουδαίους, τῇ δὲ Ἀριστοφάνει· πράττοντας γὰρ μιμοῦνται καὶ δρῶντας ἄμφω. [ὅθεν καὶ δράματα καλεῖσθαι τινες αὐτά φασιν, ὅτι μιμοῦνται δρῶντας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:3.5" cert="high">
+            <p>διὸ καὶ ἀντιποιοῦνται τῆς τε τραγῳδίας καὶ τῆς κωμῳδίας οἱ Δωριεῖς, τῆς μὲν κωμῳδίας οἱ Μεγαρεῖς, οἵ τε ἐνταῦθα ὡς ἐπὶ τῆς παρ' αὐτοῖς δημοκρατίας γενομένης, καὶ οἱ ἐκ Σικελίας (ἐκεῖθεν γὰρ ἦν Ἐπίχαρμος ὁ ποιητής, πολλῷ πρότερος ὢν Χωνίδου καὶ Μάγνητος), καὶ τῆς τραγῳδίας ἔνιοι τῶν ἐν Πελοποννήσῳ, ποιούμενοι τὰ ὀνόματα σημεῖον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:3.6" cert="medium">
+            <p>οὗτοι μὲν γὰρ κώμας τὰς περιοικίδας καλεῖν φασίν, Ἀθηναῖοι δὲ δήμους, ὡς κωμῳδοὺς οὐκ ἀπὸ τοῦ κωμάζειν λεχθέντας, ἀλλὰ τῇ κατὰ κώμας πλάνῃ<note>
+5. καὶ ἃ Aldus: om AcBcNa et M omnes et LPQ. de G tacetur.
+
+</note><pb n="6" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=40"/> ἀτιμαζομένους ἐκ τοῦ ἄστεως· καὶ τὸ ποιεῖν αὐτοὶ μὲν δρᾶν, Αθηναίους δὲ πράττειν προσαγορεύειν.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:3.7" cert="high">
+            <p>περὶ μὲν οὖν τῶν διαφορῶν, καὶ πόσαι καὶ τίνες τῆς μιμήσεως, εἰρήσθω ταῦτα.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="4">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.1" cert="high">
+            <p>Ἐοίκασι δὲ γεννῆσαι μὲν ὅλως τὴν ποιητικὴν αἰτίαι δύο τινές, καὶ αὗται φυσικαί. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.2" cert="high">
+            <p>τό τε γὰρ μιμεῖσθαι σύμφυτον τοῖς ἀνθρώποις ἐκ παίδων ἐστὶ (καὶ τούτῳ διαφέρουσι τῶν ἄλλων ζῴων ὅτι μιμητικώτατόν ἐστι καὶ τὰς μαθήσεις ποιεῖται διὰ μιμήσεως τὰς πρώτας) καὶ τὸ χαίρειν τοῖς μιμήμασι πάντας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.3" cert="high">
+            <p>σημεῖον δὲ τούτου τὸ συμβαῖνον ἐπὶ τῶν ἔργων· ἃ γὰρ αὐτὰ λυπηρῶς ὁρῶμεν, τούτων τὰς εἰκόνας τὰς μάλιστα ἠκριβωμένας χαίρομεν θεωροῦντες, οἷον θηρίων τε μορφὰς τῶν ἀτιμοτάτων καὶ νεκρῶν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.4" cert="high">
+            <p>αἴτιον δὲ καὶ τούτου, ὅτι μανθάνειν οὐ μόνον τοῖς φιλοσόφοις ἥδιστον ἀλλὰ καὶ τοῖς ἄλλοις ὁμοίως· ἀλλ' ἐπὶ βραχὺ κοινωνοῦσιν αὐτοῦ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.5" cert="high">
+            <p>διὰ γὰρ τοῦτο χαίρουσι τὰς εἰκόνας ὁρῶντες, ὅτι συμβαίνει θεωροῦντας μανθάνειν καὶ συλλογίζεσθαι τί ἕκαστον, οἷον ὅτι οὗτος ἐκεῖνος, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.6" cert="high">
+            <p>ἐπεὶ<pb n="7" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=41"/> ἐὰν μὴ τύχῃ προεωρακώς, οὐχὶ μίμημα ποιήσει τὴν ἡδονὴν ἀλλὰ διὰ τὴν ἀπεργασίαν ἢ τὴν χροιὼν ἢ διὰ τοιαύτην τινὰ ἄλλην αἰτίαν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.7" cert="high">
+            <p>κατὰ φύσιν δὲ ὄντος ἡμῖν τοῦ μιμεῖσθαι καὶ τῆς ἁρμονίας καὶ τοῦ ῥυθμοῦ (τὰ γὰρ μέτρα ὅτι μόρια τῶν ῥυθμῶν ἐστί, φανερόν), ἐξ ἀρχῆς πεφυκότες καὶ αὐτὰ μάλιστα κατὰ μικρὸν προάγοντες ἐγέννησαν τὴν ποίησιν ἐκ τῶν αὐτοσχεδιασμάτων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.8" cert="high">
+            <p>Διεσπάσθη δὲ κατὰ τὰ οἰκεῖα ἤθη ἡ ποίησις· οἱ μὲν γὰρ σεμνότεροι τὰς καλὰς ἐμιμοῦντο πράξεις καὶ τὰς τῶν τοιούτων, οἱ δὲ εὐτελέστεροι τὰς τῶν φαύλων, πρῶτον ψόγους ποιοῦντες, ὥσπερ ἕτεροι ὕμνους καὶ ἐγκώμια. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.9" cert="high">
+            <p>τῶν μὲν οὖν πρὸ Ὁμήρου οὐδενὸς ἔχομεν εἰπεῖν τοιοῦτον ποίημα, εἰκὸς δὲ εἶναι πολλούς· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.10" cert="high">
+            <p>ἀπὸ δὲ Ὁμήρου ἀρξαμένοις ἔστιν, οἷον ἐκείνου ὁ Μαργίτης, καὶ τὰ τοιαῦτα ἐν οἷς καὶ τὸ ἁρμόττον ἰαμβεῖον ἦλθε μέτρον. διὸ καὶ ἰαμβεῖον καλεῖται νῦν, ὅτι ἐν τῷ μέτρῳ τούτῳ ἰάμβιζον ἀλλήλους. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.11" cert="high">
+            <p>καὶ ἐγένοντο τῶν παλαιῶν οἱ μὲν ἡρωϊκῶν οἱ δὲ ἰάμβων ποιηταί. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.12" cert="high">
+            <p>ὥσπερ δὲ καὶ<note>
+1. fortasse fuit οὐχὶ μίμημα ᾗ μίμημα. conf. Comment. 5 .
+οἱ πεφυκότες πρὸς αὐτὰ Aldus. vid. Comment. 14. καὶ τὸ
+ἁρμόττον Aldus: codices κατὰ τὸ ἁρμ. vid. Comment.
+</note><pb n="8" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=42"/> τὰ σπουδαῖα μάλιστα ποιητὴς Ὅμηρος ἦν (μόνος γὰρ οὐχ ὅτι εὖ, ἀλλ᾽ ὅτι καὶ μιμήσεις δραματικὰς ἐποίησεν), οὕτω καὶ τὰ τῆς κωμῳδίας σχήματα πρῶτος ὑπέδειξεν, οὐ ψόγον ἀλλὰ τὸ γελοῖον δραματοποιήσας· ὁ γὰρ Μαργίτης ἀνάλο γον ἔχει, ὥσπερ Ἰλιὰς καὶ Ὀδύσσεια πρὸς τὰς τραγῳδίας, οὕτω καὶ οὗτος πρὸς τὰς κωμῳδίας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.13" cert="high">
+            <p>παραφανείσης δὲ τῆς τραγῳδίας καὶ κωμῳδίας οἱ ἐφ᾽ ἑκατέραν τὴν ποίησιν ὁρμῶντες κατὰ τὴν οἰκείαν φύσιν, οἱ μὲν ἀντὶ τῶν ἰάμβων κωμῳδοποιοὶ ἐγένοντο, οἱ δὲ ἀντὶ τῶν ἐπῶν τραγῳδοδιδάσκαλοι, διὰ τὸ μείζω καὶ ἐντιμότερα τὰ σχήματα εἶναι ταῦτα ἐκείνων. Τὸ μὲν οὖν ἐπισκοπεῖν εἰ ἄρ' ἔχει ἤδη ἡ τραγῳδία τοῖς εἴδεσιν ἱκανῶς ἢ οὔ, αὐτό τε καθ᾽ αὑτὸ κρινόμενον καὶ πρὸς τὰ θέατρα, ἄλλος λόγος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.14" cert="high">
+            <p>γενομένη δ᾽ οὖν ἀπ᾿ ἀρχῆς αὐτο<pb n="9" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=43"/>σ<note>
+4. 6 Aldus: AcBcNa 7o. de ceteris codicibus tacetur.
+11. εἰ
+ἄρ᾽ ἔχει] παρέχει AcBcNa et M omnes et GLPQ, εἰ ἄρα ἔχει
+Aldus et ceteri editores. corrupta scriptura ex ELAPEXEI per-
+peram coniuncto et ΕΙ pro Π habito nata est. 12. κρινόμε-
+νον Aldus: codices κρίνεται ἢ ναὶ aut κρίνεται ἦναι aut κρίνε-
+ται εἶναι. vid. Comment. 13. γενομένης οὖν et αὐτοσχε-
+διαστικῆς AcBeNa cum plerisque, γενομένη οὖν et αὐτοσχεδια
+στικὴ Μ 16 et Q et nonnulli ex Victorii codicibus. γενομένη
+δ' a Bekkero accepi: nam id et sententiae aptum est structurae-
+que verborum, et quomodo inde yɛvouévns oreretur liquet.
+</note>χεδιαστικὴ καὶ αὐτὴ καὶ ἡ κωμῳδία, καὶ ἡ μὲν ἀπὸ τῶν ἐξαρχόντων τὸν διθύραμβον, ἡ δὲ ἀπὸ τῶν τὰ φαλλικά, ἃ ἔτι καὶ νῦν ἐν πολλαῖς τῶν πόλεων διαμένει νομιζόμενα, κατὰ μικρὸν ηὐξήθη προαγόντων ὅσον ἐγίγνετο φανερὸν αὐτῆς, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.15" cert="high">
+            <p>καὶ πολλὰς μεταβολὰς μεταβαλοῦσα ἡ τραγῳδία ἐπαύσατο, ἐπεὶ ἔσχε τὴν αὑτῆς φύσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.16" cert="high">
+            <p>καὶ τό τε τῶν ὑποκριτῶν πλῆθος ἐξ ἑνὸς εἰς δύο πρῶτος Αἰσχύλος ἤγαγε, καὶ τὰ τοῦ χοροῦ ἠλάττωσε, καὶ τὸν λόγον πρωταγωνιστὴν παρεσκεύασεν· τρεῖς δὲ καὶ σκηνογραφίαν Σοφοκλῆς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.17" cert="high">
+            <p>ἔτι δὲ τὸ μέγεθος ἐκ μικρῶν μύθων καὶ λέξεως γελοίας, διὰ τὸ ἐκ σατυρικοῦ μεταβαλεῖν, ὀψὲ ἀπεσεμνύνθη, τό τε μέτρον ἐκ τετραμέτρου ἰαμβεῖον ἐγένετο (</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.18" cert="high">
+            <p>τὸ μὲν γὰρ πρῶτον τετραμέτρῳ ἐχρῶντο διὰ τὸ σατυρικὴν καὶ ὀρχηστικωτέραν εἶναι τὴν ποίησιν, λέξεως δὲ γενομένης αὐτὴ ἡ φύσις τὸ οἰκεῖον μέτρον εὗρεν· μάλιστα γὰρ λεκτικὸν τῶν μέτρων τὸ ἰαμβεῖόν ἐστιν. σημεῖον δὲ τούτου· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.19" cert="high">
+            <p>πλεῖστα γὰρ ἰαμβεῖα λέγομεν ἐν τῇ διαλέκτῳ τῇ πρὸς ἀλλή<pb n="10" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=44"/>λ<note>
+2. φαλλικά Aldus: φαϋλλικά AcBeNa et GP, φαυλικά LQ.
+
+</note>ους, ἑξάμετρα δὲ ὀλιγάκις καὶ ἐκβαίνοντες τῆς λεκτικῆς ἁρο μονίας)· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.20" cert="high">
+            <p>ἔτι δὲ ἐπεισοδίων πλήθη καὶ τὰ ἄλλα ὡς ἕκαστα κοσμηθῆναι λέγεται. περὶ μὲν οὖν τούτων τοσαῦτα ἔστω ἡμῖν εἰρημένα· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:4.21" cert="high">
+            <p>πολὺ γὰρ ἂν ἴσως ἔργον εἴη διεξιέναι καθ' ἕκαστον.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="5">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.1" cert="high">
+            <p>Ἡ δὲ κωμῳδία ἐστίν, ὥσπερ εἴπομεν, μίμησις φαυλοτέρων μέν, οὐ μέντοι κατὰ πᾶσαν κακίαν, ἀλλὰ τοῦ αἰσχροῦ ἐστὶ τὸ γελοῖον μόριον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.2" cert="high">
+            <p>τὸ γὰρ γελοῖόν ἐστιν ἁμάρτημά τι καὶ αἶσχος ἀνώδυνον καὶ οὐ φθαρτικόν, οἷον εὐθὺς τὸ γελοῖον πρόσωπον αἰσχρόν τι καὶ διεστραμμένον ἄνευ ὀδύνης. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.3" cert="high">
+            <p>αἱ μὲν οὖν τῆς τραγωδίας μεταβάσεις, καὶ δι' ὧν ἐγένοντο, οὐ λελήθασιν, ἡ δὲ κωμῳδία διὰ τὸ μὴ σπουδάζεσθαι ἐξ ἀρχῆς ἔλαθεν· καὶ γὰρ χορὸν κωμῳδῶν ὀψέ ποτε ὁ ἄρχων ἔδωκεν, ἀλλ᾽ ἐθελονταὶ ἦσαν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.4" cert="high">
+            <p>ἤδη δὲ σχήματά τινα αὐτῆς ἐχούσης οἱ λεγόμενοι αὐτῆς ποιηταὶ μνημονεύονται. τίς δὲ πρόσωπα ἀπέδωκεν ἢ λόγους ἢ πλήθη ὑποκριτῶν καὶ ὅσα τοι<pb n="11" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=45"/>α<note>
+2. ἄλλα ὡς Aldus: ἄλλως AcBc et M XIV 16 et GLPQ, ἀλλ᾽
+ὡς Μ 21, ἄλλα Na et M 14. 3. περὶ – τοσαῦτα Aldus: om
+AcBcNa cum plerisque. vid. Comment. 16. λόγους Herman-
+nus: codices προλόγους. v. Comment.
+</note>ῦτα, ἠγνόηται· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.5" cert="high">
+            <p>τὸ δὲ μύθους ποιεῖν Ἐπίχαρμος καὶ Φόρμις. τὸ μὲν ἐξ ἀρχῆς ἐκ Σικελίας ἦλθεν, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.6" cert="high">
+            <p>τῶν δὲ Ἀθήνησιν Κράτης πρῶτος ἦρξεν ἀφέμενος τῆς ἰαμβικῆς ἰδέας καθόλου ποιεῖν λόγους καὶ μύθους. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.7" cert="high">
+            <p>ἡ μὲν οὖν ἐποποιία τῇ τραγῳδίᾳ [μέχρι μόνου μέτρου μεγάλου] μίμησις εἶναι σπουδαίων ἠκολούθησεν· τῷ δὲ τὸ μέτρον ἁπλοῦν ἔχειν καὶ ἀπαγγελίαν εἶναι, ταύτῃ διαφέρουσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.8" cert="high">
+            <p>ἔτι δὲ τῷ μήκει· ἡ μὲν γὰρ ὅτι μάλιστα πειρᾶται ὑπὸ μίαν περίοδον ἡλίου εἶναι ἢ μικρὸν ἐξαλλάττειν, ἡ δὲ ἐποποιία αόριστος τῷ χρόνῳ, καὶ τούτῳ διαφέρει. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.9" cert="high">
+            <p>καίτοι τὸ πρῶτον ὁμοίως ἐν ταῖς τραγῳδίαις τοῦτο ἐποίουν καὶ ἐν τοῖς ἔπεσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.10" cert="high">
+            <p>μέρη δ᾽ ἐστὶ τὰ μὲν ταὐτά, τὰ δὲ ἴδια τῆς τραγῳδίας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:5.11" cert="high">
+            <p>διόπερ ὅστις περὶ τραγῳδίας οἶδε σπουδαίας καὶ φαύλης, οἶδε καὶ περὶ ἐπῶν· ἃ μὲν γὰρ ἐποποιία ἔχει, ὑπάρχει τῇ τραγῳδία, ἃ δὲ αὐτή, οὐ πάντα ἐν τῇ ἐποποιίᾳ.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="6">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.1" cert="high">
+            <p>Περὶ μὲν οὖν τῆς ἐν ἑξαμέτροις μιμητικῆς καὶ περὶ κωμῳδίας ὕστερον ἐροῦμεν, περὶ δὲ τραγῳδίας λέγωμεν, ἀπολαβόντες αὐτῆς ἐκ τῶν εἰρημένων τὸν γινόμενον ὅρον τῆς ουσίας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.2" cert="high">
+            <p>ἔστιν οὖν τραγῳδία μίμησις πράξεως σπουδαίας καὶ τελείας, μέγεθος ἐχούσης, ἡδυσμένῳ λόγῳ, χωρὶς ἑκάστου τῶν εἰδῶν ἐν τοῖς μορίοις, δρώντων καὶ οὐ δι' ἀπαγγελίας, δι᾽ ἐλέου καὶ φόβου περαίνουσα τὴν τῶν τοιούτων παθημάτων κάθαρσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.3" cert="high">
+            <p>λέγω δὲ ἡδυσμένον μὲν λόγον τὸν ἔχοντα ῥυθμὸν καὶ ἁρμονίαν καὶ μέλος, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.4" cert="high">
+            <p>τὸ δὲ χωρὶς τοῖς εἴδεσι τὸ διὰ μέτρων ἔνια μόνον περαίνεσθαι καὶ πάλιν ἕτερα διὰ μέλους. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.5" cert="high">
+            <p>ἐπεὶ δὲ πράττοντες ποιοῦνται τὴν μίμησιν, πρῶτον μὲν ἐξ ἀνάγκης ἂν εἴη τι μόριον τραγῳδίας ὁ τῆς ὄψεως κόσμος, εἶτα μελοποιία καὶ λέξις· ἐν τούτοις γὰρ ποιοῦνται τὴν μίμησιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.6" cert="high">
+            <p>λέγω δὲ λέξιν μὲν αὐτὴν τὴν τῶν μέτρων σύνθεσιν, μελοποιίαν δὲ ὃ τὴν δύναμιν φανερὰν ἔχει πᾶσαν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.7" cert="high">
+            <p>ἐπεὶ δὲ πράξεως ἐστι μίμησις, πράττεται δὲ ὑπό τινων πραττόντων, οὓς ἀνάγκη ποιούς τινας εἶναι κατά τε τὸ ἦθος καὶ τὴν διάνοιαν (διὰ γὰρ τού<note>
+7. μαθημάτων AcBeNa et M omnes et GLPQ et Aldus.
+</note><pb n="13" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=47"/> των καὶ τὰς πράξεις εἶναί φαμεν ποιάς τινας), πέφυκεν αἴτια δύο τῶν πράξεων εἶναι, διάνοια καὶ ἦθος, καὶ κατὰ ταύτας καὶ τυγχάνουσι καὶ ἀποτυγχάνουσι πάντες. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.8" cert="medium">
+            <p>ἔστι δὲ τῆς μὲν πράξεως ὁ μῦθος ἡ μίμησις· λέγω γὰρ μῦθον τοῦτον τὴν σύνθεσιν τῶν παργμάτων, τὰ δὲ ἤθη, καθ᾽ ἃ ποιούς τινας εἶναί φαμεν τοὺς πράττοντας, διάνοιαν δέ, ἐν ὅσοις λέγοντες ἀποδεικνύασί τι ἢ καὶ ἀποφαίνονται γνώμην. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.9" cert="medium">
+            <p>ἀνάγκης οὖν πάσης τραγῳδίας μέρη εἶναι ἕξ, καθ᾽ ἃ ποιά τις ἐστὶν ἡ τραγῳδία· ταῦτα δ᾽ ἐστὶ μῦθος καὶ ἤθη καὶ λέξις καὶ διάνοια καὶ ὄψις καὶ μελοποιία, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.10" cert="high">
+            <p>οἷς μὲν γὰρ μιμοῦνται, δύο μέρη ἐστίν, ὡς δὲ μιμοῦνται, ἕν, ἃ δὲ μιμοῦνται, τρία, καὶ παρὰ ταῦτα οὐδέν. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.11" cert="high">
+            <p>τούτοις μὲν οὖν οὐκ ὀλίγοι αὐτῶν ὡς εἰπεῖν κέχρηνται τοῖς εἴδεσιν· καὶ γὰρ ὄψεις ἔχει πᾶν καὶ ἦθος καὶ μύθον καὶ λέξιν καὶ μέλος͵ καὶ διάνοιαν ὡσαύτως.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.12" cert="high">
+            <p>μέγιστον δὲ τούτων ἐστὶν ἡ τῶν πραγμάτων σύστασις· ἡ γὰρ τραγῳδία μίμησίς ἐστιν οὐκ ἀνθρώπων ἀλλὰ πράξεως<note>
+5. &amp; GP: AcBcNa cum plerisque. 8. &amp; Aldus: AcBcNa cum
+plerisque.
+</note><pb n="14" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=48"/> [καὶ βίου καὶ εὐδαιμονίας· καὶ ἡ κακοδαιμονία ἐν πράξει ἐστί, καὶ τὸ τέλος πρᾶξις τις ἐστίν, οὐ ποιότης]. εἰσὶ δὲ κατὰ μὲν τὰ ἤθη ποιοί τινες, κατὰ δὲ τὰς πράξεις εὐδαίμονες ἢ τοὐναντίον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.13" cert="high">
+            <p>οὔκουν ὅπως τὰ ἤθη μιμήσωνται πράττουσιν, ἀλλὰ τὰ ἤθη συμπεριλαμβάνουσι διὰ τὰς πράξεις. ὥστε τὰ πράγματα καὶ ὁ μῦθος τέλος τῆς τραγῳδίας· τὸ δὲ τέλος μέγιστον ἁπάντων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.14" cert="high">
+            <p>ἔτι ἄνευ μὲν πράξεως οὐκ ἂν γένοιτο τραγῳδία, ἄνευ δὲ ἠθῶν γένοιτ᾽ ἄν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.15" cert="high">
+            <p>αἱ γὰρ τῶν νέων τῶν πλείστων ἀήθεις τραγῳδίαι εἰσί, καὶ ὅλως ποιηταὶ πολλοὶ τοιοῦτοι, οἷον καὶ τῶν γραφέων Ζεῦξις πρὸς Πολύγνωτον πέπονθεν· ὁ μὲν γὰρ Πολύγνωτος ἀγαθὸς ἠθογράφος, ἡ δὲ Ζεύξιδος γραφὴ οὐδὲν ἔχει ἦθος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.16" cert="high">
+            <p>ἔτι ἐάν τις ἐφεξῆς θῇ ῥήσεις ἠθικὰς καὶ λέξεις καὶ διανοίας εὖ πεποιημένας, οὐ ποιήσει ὃ ἦν τῆς τραγῳδίας ἔργον, ἀλλὰ πολὺ μᾶλλον ἡ κα<pb n="15" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=49"/>τ<note>
+1. καὶ κακοδαιμονίας post εὐδαιμονίας Allus: om AcBeNa et M
+omnes et GLP Q. καὶ ἡ κακοδαιμονία] Aldus cum pleris-
+que editoribus καὶ γὰρ ἡ εὐδαιμονία. vid. Comment. 10.
+πολύγνωστον AcBc et corr Na; mox πολύγνωστος AcBcNa. 11.
+ἀγαθὸς GLQ et libri Victoriani: ἀγαθῶν AcBeNa (et M omnes)
+et Aldus. 13. οὐ ποιήσει] οὐ ποιήσεις Aldus, ποιήσει AcBeNa
+et G LP Q. vid. Comment.
+</note>αδεεστέροις τούτοις κεχρημένη τραγῳδία, ἔχουσα δὲ μῦθον καὶ σύστασιν πραγμάτων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.17" cert="high">
+            <p>πρὸς δὲ τούτοις τὰ μέγιστα οἷς ψυχαγωγεῖ ἡ τραγῳδία, τοῦ μύθου μέρη ἐστίν, αἵ τε περιπέτειαι καὶ ἀναγνωρίσεις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.18" cert="high">
+            <p>ἔτι σημεῖον ὅτι καὶ οἱ ἐγχειροῦντες ποιεῖν πρότερον δύνανται τῇ λέξει καὶ τοῖς ἤθεσιν ἀκριβοῦν ἢ τὰ πράγματα συνίστασθαι, οἷον καὶ οἱ πρῶτοι ποιηταὶ σχεδὸν ἅπαντες. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.19" cert="high">
+            <p>ἀρχὴ μὲν οὖν καὶ οἷον ψυχὴ ὁ μῦθος τῆς τραγῳδίας, δεύτερον δὲ τὰ ἤθη. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.20" cert="high">
+            <p>παραπλήσιον γάρ ἐστι καὶ ἐπὶ τῆς γραφικῆς· εἰ γάρ τις ἐναλείψειε τοῖς καλλίστοις φαρμάκοις χύδην, οὐκ ἂν ὁμοίως εὐφράνειεν καὶ λευκογραφήσας εἰκόνα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.21" cert="medium">
+            <p>ἔστι τε μίμησις πράξεως, καὶ διὰ ταύτην μάλιστα τῶν πραττόντων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.22" cert="high">
+            <p>τρίτον δὲ ἡ διάνοια. τοῦτο δ' ἐστὶ τὸ λέγειν δύνασθαι τὰ ἐνόντα καὶ τὰ ἁρμόττοντα, ὅπερ ἐπὶ τῶν λόγων τῆς πολιτικῆς καὶ ῥητορικῆς ἔργον ἐστίν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.23" cert="high">
+            <p>οἱ μὲν γὰρ ἀρχαῖοι πολιτικῶς ἐποίουν λέγοντας, οἱ δὲ νῦν ῥητορικῶς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="24" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.24" cert="medium">
+            <p>ἔστι δὲ ἦθος μὲν τὸ τοιοῦτον ὃ δηλοῖ τὴν προαίρεσιν τη ὁποία τις· διόπερ οὐκ ἔχουσιν ἦθος τῶν λόγων ἐν οἷς μηδ'<note>
+17. post τις AcBcNa et M XIV 16 21 ἐν οἷς οὐκ ἔστι δῆλον ἢ
+προαιρεῖται ἢ ψεύγει. sic Aldus quoque, sed idem addit δ λέγων.
+</note><pb n="16" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=50"/> ὅλως ἔστιν ὅ τι προαιρεῖται ἢ φεύγει ὁ λέγων· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="25" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.25" cert="high">
+            <p>διανοια δέ, ἐν οἷς ἀποδεικνύουσί τι ὡς ἔστιν ἢ ὡς οὐκ ἔστιν, ἢ καθόλου τι ἀποφαίνονται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="26" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.26" cert="high">
+            <p>τέταρτον δὲ τῶν μὲν λόγων ἡ λέξις· λέγω δέ, ὥσπερ πρότερον εἴρηται, λέξιν εἶναι τὴν διὰ τῆς ὀνομασίας ἑρμηνείαν, ὃ καὶ ἐπὶ τῶν ἐμμέτρων καὶ ἐπὶ τῶν λόγων ἔχει τὴν αὐτὴν δύναμιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="27" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.27" cert="high">
+            <p>τῶν δὲ λοιπῶν πέντε ἡ μελοποιία μέγιστον τῶν ἡδυσμάτων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="28" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:6.28" cert="high">
+            <p>ἡ δὲ ὄψις ψυχαγωγικὸν μέν, ἀτεχνότατον δὲ καὶ ἥκιστα οἰκεῖον τῆς ποιητικῆς· ἡ γὰρ τῆς τραγῳδίας δύναμις καὶ ἄνευ ἀγῶνος καὶ ὑποκριτῶν ἐστίν. ἔτι δὲ κυριωτέρα περὶ τὴν ἀπεργασίαν τῶν ὄψεων ἡ τοῦτο σκευοποιοῦ τέχνη τῆς τῶν ποιητῶν ἐστίν.]</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="7">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.1" cert="high">
+            <p>Διωρισμένων δὲ τούτων, λέγωμεν μετὰ ταῦτα ποίαν τινὰ δεῖ τὴν σύστασιν εἶναι τῶν πραγμάτων, ἐπειδὴ τοῦτο καὶ πρῶτον καὶ μέγιστον τῆς τραγῳδίας ἐστίν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.2" cert="high">
+            <p>κεῖται δ᾽ ἡμῖν τὴν τραγῳδίαν τελείας καὶ ὅλης πράξεως εἶναι μίμησιν, ἐχούσης τι μέγεθος· ἔστι γὰρ ὅλον καὶ μηδὲν ἔχον μέγεθος.<pb n="17" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=51"/> </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.3" cert="high">
+            <p>ὅλον δ᾽ ἐστὶ τὸ ἔχον ἀρχὴν καὶ μέσον καὶ τελευτήν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.4" cert="high">
+            <p>ἀρχὴ δ' ἐστίν ὃ αὐτὸ μὲν μὴ ἐξ ἀνάγκης μετ᾿ ἄλλο ἐστί, μετ᾽ ἐκεῖνο δ᾽ ἕτερον πέφυκεν εἶναι ἢ γίνεσθαι· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.5" cert="high">
+            <p>τελευτὴ δὲ τοὐναντίον ὃ αὐτὸ μετ᾿ ἄλλο πέφυκεν εἶναι, ἢ ἐξ ἀνάγκης ἢ ὡς ἐπὶ τὸ πολύ, μετὰ δὲ τοῦτο ἄλλο οὐδέν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.6" cert="high">
+            <p>μέσον δὲ ὃ καὶ αὐτὸ μετ' ἄλλο καὶ μετ' ἐκεῖνο ἕτερον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.7" cert="high">
+            <p>δεῖ ἄρα τοὺς συνεστῶτας εὖ μύθους μήθ᾽ ὁπόθεν ἔτυχεν ἄρχεσθαι μήθ᾽ ὅπου ἔτυχε τελευτῶν, ἀλλὰ κεχρῆσθαι ταῖς εἰρημέναις ἰδέαις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.8" cert="high">
+            <p>ἔτι δ᾽ ἐπεὶ τὸ καλὸν καὶ ζῷον καὶ ἅπαν πρᾶγμα ὃ συνέστηκεν ἔκ τινων, οὐ μόνον ταῦτα τεταγμένα δεῖ ἔχειν, ἀλλὰ καὶ μέγεθος ὑπάρχειν μὴ τὸ τυχόν· - τὸ γὰρ καλὸν ἐν μεγέθει καὶ τάξει ἐστί, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.9" cert="high">
+            <p>διὸ οὔτε πάμμικρον ἄν τι γένοιτο καλὸν ζῷον (συγχεῖται γὰρ ἡ θεωρία ἐγγὺς τοῦ ἀναισθήτου χρόνου γινομένη) οὔτε παμμέγεθες· οὐ γὰρ ἅμα ἡ θεωρία γίνεται, ἀλλ' οἴχεται τοῖς θεωὑροῦσι τὸ ἓν καὶ τὸ ὅλον ἐκ τῆς θεωρίας, οἷον εἰ μυρίων σταδίων εἴη ζῷον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.10" cert="high">
+            <p>ὥστε δεῖ καθάπερ ἐπὶ τῶν σωμάτων καὶ ἐπὶ<note>
+12  et 13. πᾶν μικρὸν et πᾶν μέγεθος AcBcNa cum plerisque et
+sic Aldus, πάνυ μικρὸν et πάνυ μέγα Μ 16.
+</note><pb n="18" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=52"/> τῶν ζῴων ἔχειν μὲν μέγεθος, τοῦτο δὲ εὐσύνοπτον εἶναι, οὕτω καὶ ἐπὶ τῶν μύθων ἔχειν μὲν μῆκος, τοῦτο δ᾽ εὐμνημόνευτον εἶναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.11" cert="high">
+            <p>τοῦ δὲ μήκους ὅρος πρὸς μὲν τοὺς ἀγῶνας καὶ τὴν αἴσθησιν οὐ τῆς τέχνης ἐστίν· εἰ γὰρ ἔδει ἑκατὸν τραγῳδίας ἀγωνίζεσθαι, πρὸς κλεψύδραν ἂν ἠγωνίζοντο [, ὥσπερ η ποτὲ καὶ ἄλλοτε φασίν]. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:7.12" cert="high">
+            <p>ὁ δὲ κατ᾽ αὐτὴν τὴν φύσιν τοῦ πράγματος ὅρος, ἀεὶ μὲν ὁ μείζων μέχρι τοῦ σύνδηλος εἶναι καλλίων ἐστὶ κατὰ τὸ μέγεθος, ὡς δὲ ἁπλῶς διορίσαντας εἰπεῖν, ἐν ὅσῳ μεγέθει κατὰ τὸ εἰκὸς ἢ τὸ ἀναγκαῖον ἐφεξῆς γιγνομένων συμβαίνει εἰς εὐτυχίαν ἐκ δυστυχίας ἢ ἐξ εὐτυχίας εἰς δυστυχίαν μεταβάλλειν, ἱκανὸς ὕρος ἐστὶ τοῦ μεγέθους.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="8">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:8.1" cert="high">
+            <p>Μῦθος δ᾽ ἐστὶν εἷς, οὐχ ὥσπερ τινὲς οἴονται, ἐὰν περὶ ἕνα ᾖ· πολλὰ γὰρ καὶ ἄπειρα· τῷ γένει συμβαίνει, ἐξ ὧν ἐνίων οὐδέν ἐστιν ἕν. οὕτω δὲ καὶ πράξεις ἑνὸς πολλαί εἰσιν, ἐξ ὧν μία οὐδεμία γίνεται πρᾶξις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:8.2" cert="high">
+            <p>διὸ πάντες ἐοίκασιν ἁμαρ<pb n="19" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=53"/>τ<note>
+3. πρὸς μὲν Aldus: μὲν πρὸς AcBcNa et M omnes et GLQ.
+</note>άνειν, ὅσοι τῶν ποιητῶν Ἡρακληΐδα καὶ Θησηΐδα καὶ τὰ τοιαῦτα ποιήματα πεποιήκασιν· οἴονται γὰρ ἐπεὶ εἷς ἦν ὁ Ἡρακλῆς, ἕνα καὶ τὸν μῦθον εἶναι προσήκειν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:8.3" cert="high">
+            <p>ὁ δ᾽ Ὅμηρος, ὥσπερ καὶ τὰ ἄλλα διαφέρει, καὶ τοῦτ᾽ ἔοικε καλῶς ἰδεῖν, ἤτοι διὰ τέχνην ἢ διὰ φύσιν· Ὀδύσσειαν γὰρ ποιῶν οὐκ ἐποίησεν ἅπαντα ὅσα αὐτῷ συνέβη, οἷον πληγῆναι μὲν ἐν τῷ Παρνασσῷ, μανῆναι δὲ προσποιήσασθαι ἐν τῷ ἀγερμῷ, ὧν οὐδὲν θατέρου γενομένου ἀναγκαῖον ἦν ἢ εἰκὸς θάτερον γενέσθαι, ἀλλὰ περὶ μίαν πρᾶξιν, οἵαν λέγομεν, τὴν Ὀδύσσειαν συνέστησεν, ὁμοίως δὲ καὶ τὴν Ἰλιάδα, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:8.4" cert="high">
+            <p>χρὴ οὖν, καθάπερ 4 καὶ ἐν ταῖς ἄλλαις μιμητικαῖς ἡ μία μίμησις ἑνός ἐστιν, οὕτω καὶ τὸν μῦθον, ἐπεὶ πράξεως μίμησίς ἐστι, μιᾶς τε εἶναι καὶ ταύτης ὅλης, καὶ τὰ μέρη συνεστάναι τῶν πραγμάτων οὕτως ὥστε μετατιθεμένου τινὸς μέρους ἢ ἀφαιρουμένου διαφέρεσθαι καὶ κινεῖσθαι τὸ ὅλον· ὃ γὰρ προσὸν ἢ μὴ προσὸν μηδὲν ποιεῖ ἐπίδηλον, οὐδὲ μόριον τοῦ ὅλου ἐστίν.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="9">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.1" cert="high">
+            <p>Φανερὸν δὲ ἐκ τῶν εἰρημένων καὶ ὅτι οὐ τὸ τὰ γενόμενα λέγειν, τοῦτο ποιητοῦ ἔργον ἐστίν, ἀλλ᾽ οἷα ἂν γένοιτο, καὶ τὰ δυνατὰ κατὰ τὸ εἰκὸς ἢ τὸ ἀναγκαῖον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.2" cert="high">
+            <p>ὁ γὰρ ἱστορικὸς καὶ ὁ ποιητὴς οὐ τῷ ἢ ἔμμετρα λέγειν ἢ ἄμετρα διαφέρουσιν· εἴη γὰρ ἂν τὰ Ηροδότου εἰς μέτρα τεθῆναι, καὶ οὐδὲν ἧττον ἂν εἴη ἱστορία τις μετὰ μέτρου ἢ ἄνευ μέτρων· ἀλλὰ τούτῳ διαφέρει, τῷ τὸν μὲν τὰ γενόμενα λέγειν, τὸν δὲ οἷα ἂν γένοιτο. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.3" cert="high">
+            <p>διὸ καὶ φιλοσοφώτερον καὶ σπουδαιότερον ποίησις ἱστορίας ἐστίν· ἡ μὲν γὰρ ποίησις μᾶλλον τὰ καθόλου, ἡ δ᾽ ἱστορία τὰ καθ' ἕκαστον λέγει. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.4" cert="medium">
+            <p>ἔστι δὲ καθόλου μέν, τῷ ποίῳ τὰ ποῖ᾽ ἄττα συμβαίνει λέγειν ἢ πράττειν κατὰ τὸ εἰκὸς ἢ τὸ ἀναγκαῖον [, οὗ στοχάζεται ἡ ποίησις ὀνόματα ἐπιτιθεμένη], τὰ δὲ καθ' ἕκαστον, τί Ἀλκιβιάδης ἔπραξεν ἢ τί ἔπαθεν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.5" cert="high">
+            <p>ἐπὶ μὲν οὖν τῆς κωμῳδίας ἤδη τοῦτο δῆλον γέγονεν· συστήσαντες γὰρ τὸν μῦθον διὰ τῶν εἰκότων οὕτω τὰ τυχόντα ὀνόματα ὑπο<pb n="21" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=55"/>τ<note>
+12. τὰ Aldus: Bc et M XIV et GP τὸ, Ac Q τὸν, Na M 14 τὴν
+15. ὑποτιθέασιν est in AcBcNa et GLPQ et idem (quamvis ta-
+ceat Winstanleius) in Mediceis esse non dubium videtur: Aldus
+ἐπιτιθέασιν invexit respiciens illud ἐπιτιθεμένη paulo ante ab
+interpolatore positum. ὑποθέντα τὰ ὀνόματα legimus c. 17, 4.
+</note>ιθέασιν, καὶ οὐχ ὥσπερ οἱ ἰαμβοποιοὶ περὶ τῶν καθ᾿ ἕκαστον ποιοῦσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.6" cert="high">
+            <p>ἐπὶ δὲ τῆς τραγῳδίας τῶν γενομένων ὀνομάτων ἀντέχονται. αἴτιον δ' ὅτι πιθανόν ἐστι τὸ δυνατόν· τὰ μὲν οὖν μὴ γενόμενα οὔπω πιστεύομεν εἶναι δυνατά, τὰ δὲ γενόμενα φανερὸν ὅτι δυνατά· οὐ γὰρ ἂν ἐγένετο, εἰ ἦν ἀδύνατα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.7" cert="high">
+            <p>οὐ μὴν ἀλλὰ καὶ ἐν ταῖς τραγῳδίαις ἐνίαις μὲν ἓν ἢ δύο τῶν γνωρίμων ἐστὶν ὀνομάτων, τὰ δὲ ἄλλα πεποιημένα, ἐν ἐνίαις δὲ οὐθέν, οἷον ἐν τῷ Ἀγάθωνος ῎Ανθει· ὁμοίως γὰρ ἐν τούτῳ τά τε πράγματα καὶ τὰ ὀνόματα πεποίηται, καὶ οὐδὲν ἧττον εὐφραίνει. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.8" cert="high">
+            <p>ὥστ᾽ οὐ πάντως εἶναι ζητητέον τῶν παραδεδομένων μύθων, περὶ οὓς αἱ τραγῳδίαι εἰσίν, ἀντέχεσθαι. καὶ γὰρ γελοῖον τοῦτο ζητεῖν, ἐπεὶ καὶ τὰ γνώριμα ὀλίγοις γνώριμά ἐστιν, ἀλλ᾽ ὅμως εὐφραίνει πάντας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.9" cert="high">
+            <p>δῆλον οὖν ἐκ τούτων ὅτι τὸν ποιητὴν μᾶλλον τῶν μύθων εἶναι δεῖ ποιητὴν ἢ τῶν μέτρων, ὅσῳ ποιητὴς κατὰ τὴν μίμησίν ἐστι, μιμεῖται δὲ τὰς πράξεις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.10" cert="high">
+            <p>κἂν ἄρα συμβῇ γενόμενα ποιεῖν, οὐθὲν ἧττον ποιητής ἐστιν· τῶν γὰρ γενο<pb n="22" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=56"/>μένων ἔνια οὐδὲν κωλύει τοιαῦτα εἶναι οἷα ἂν εἰκὸς γενέσθαι καὶ δυνατὰ γενέσθαι, καθ' ὃ ἐκεῖνος αὐτῶν ποιητής ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.11" cert="high">
+            <p>τῶν δὲ ἁπλῶν μύθων καὶ πράξεων αἱ ἐπεισοδιώδεις εἰσὶ χείρισται. λέγω δ᾽ ἐπεισοδιώδη μῦθον, ἐν ᾧ τὰ ἐπεισύδια μετ᾿ ἄλληλα οὔτ᾽ εἰκὸς οὔτ᾽ ἀνάγκη εἶναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11b" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.11b" cert="high">
+            <p>τοιαῦται δὲ ποιοῦνται ὑπὸ μὲν τῶν φαύλων ποιητῶν δι᾽ αὐτούς, ὑπὸ δὲ τῶν ἀγαθῶν διὰ τοὺς ὑποκριτάς· ἀγωνίσματα γὰρ ποιοῦντες, καὶ παρὰ τὴν δύναμιν παρατείναντες μῦθον, πολλάκις διαστρέφειν ἀναγκάζονται τὸ ἐφεξῆς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11c" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.11c" cert="high">
+            <p>ἐπεὶ δὲ οὐ μόνον τελείας ἐστὶ πράξεως ἡ μίμησις ἀλλὰ καὶ φοβερῶν καὶ ἐλεεινῶν, ταῦτα δὲ γίνεται [καὶ μάλιστα καὶ μᾶλλον, ὅταν γένηται παρὰ τὴν δόξαν,] δι᾽ ἄλληλα * * *. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.12" cert="high">
+            <p>τὸ γὰρ θαυμαστὸν οὕτως ἕξει μᾶλλον ἢ εἰ ἀπὸ τοῦ αὐτομάτου καὶ τῆς τύχης, ἐπεὶ καὶ τῶν ἀπὸ τύχης ταῦτα θαυμασιώτατα δοκεῖ ὅσα ὥσπερ ἐπίτηδες φαίνεται γεγονέναι, οἷον ὡς ὁ ἀνδριὰς ὁ τοῦ Μίτυος ἐν ῎Αργει ἀπέκτεινε τὸν αἴτιον τοῦ θανάτου τῷ Μί<pb n="23" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=57"/>τ<note>
+12. haec videtur fuisse Aristotelis sententia: ἐπεὶ δὲ οὐ μόνον
+τελείας ἐστὶ πράξεως ἡ μίμησις ἀλλὰ καὶ φοβερῶν καὶ ἐλεεινῶν,
+ταῦτα δὲ γίνεται δι' ἄλληλα, καὶ τὸ θαυμαστὸν δεῖ γίνεσθαι ἐξ
+αὐτῆς τῆς συστάσεως τοῦ μύθου. conf. Comment.
+</note>υϊ, θεωροῦντι ἐμπεσών· ἔοικε γὰρ τὰ τοιαῦτα οὐκ εἰκῇ γενέσθαι, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:9.13" cert="high">
+            <p>ὥστε ἀνάγκη τοὺς τοιούτους εἶναι καλλίους μύθους.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="10">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:10.1" cert="high">
+            <p>Εἰσὶ δὲ τῶν μύθων οἱ μὲν ἁπλοῖ οἱ δὲ πεπλεγμένοι· καὶ γὰρ αἱ πράξεις, ὧν μιμήσεις οἱ μῦθοί εἰσιν, ὑπάρχουσιν εὐθὺς οὖσαι τοιαῦται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:10.2" cert="high">
+            <p>λέγω δὲ ἁπλῆν μὲν πρᾶξιν, ἧς γινομένης, ὥσπερ ὥρισται, συνεχοῦς καὶ μιᾶς ἄνευ περιπετείας ἢ ἀναγνωρισμοῦ ἡ μετάβασις γίνεται, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:10.3" cert="high">
+            <p>πεπλεγμένην δέ, ἐξ ἧς μετ’ ἀναγνωρισμοῦ ἢ περιπετείας ἢ ἀμφοῖν ἡ μετάβασίς ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:10.4" cert="high">
+            <p>ταῦτα δὲ δεῖ γίνεσθαι ἐξ αὐτῆς τῆς συστάσεως τοῦ μύθου, ὥστε ἐκ τῶν προγεγενημένων συμβαίνειν ἢ ἐξ ἀνάγκης ἢ κατὰ τὸ εἰκὸς γίνεσθαι ταῦτα· διαφέρει γὰρ πολὺ τὸ γινεσθαι τάδε διὰ τάδε ἢ μετὰ τάδε.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="11">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.1" cert="high">
+            <p>Ἔστι δὲ περιπέτεια μὲν ἡ εἰς τὸ ἐναντίον τῶν πρωττομένων μεταβολή, καθάπερ εἴρηται· καὶ τοῦτο δέ, ὥσπερ λέγομεν, κατὰ τὸ εἰκὸς ἢ ἀναγκαῖον, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.2" cert="medium">
+            <p>ὥσπερ ἐν τῷ Οἰδίποδε ἐλθὼν ὡς εὐφρανῶν τὸν Οἰδίπουν καὶ ἀπαλλάξων τοῦ πρὸς τὴν μητέρα φόβου, δηλώσας ὃς ἦν, τοὐναντίον ἐποίησεν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.3" cert="high">
+            <p>καὶ<note>
+7. πεπλεγμένη δὲ λέξις μετὰ AcBeNa. conf. Comment.
+</note><pb n="24" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=58"/> ἐν τῷ Λυγκεῖ ὁ μὲν ἀγόμενος ὡς ἀποθανούμενος, ὁ δὲ Δαναὸς ἀκολουθῶν ὡς ἀποκτενῶν· τὸν μὲν συνέβη ἐκ τῶν πεπραγμένων αποθανεῖν, τὸν δὲ σωθῆναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.4" cert="high">
+            <p>ἀναγνώρισις δ᾽ ἐστίν, ὥσπερ καὶ τοὔνομα σημαίνει, ἐξ ἀγνοίας εἰς γνῶσιν μεταβολὴ ἢ εἰς φιλίαν ἢ ἔχθραν τῶν πρὸς εὐτυχίαν ἢ δυστυχίαν ὡρισμένων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.5" cert="high">
+            <p>καλλίστη δὲ ἀναγνώρισις, ὅταν ἅμα περιπέτειαι γίνωνται, οἷον ἔχει ἡ ἐν τῷ Οἰδίποδι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.6" cert="medium">
+            <p>εἰσὶ μὲν οὖν καὶ ἄλλαι ἀναγνωρίσεις· καὶ γὰρ πρὸς ἄψυχα καὶ τὰ τυχόντα ἔστιν ὅτε, ὥσπερ εἴρηται, συμβαίνει, καὶ εἰ πέπραγέ τις ἢ μὴ πέπραγεν, ἔστιν ἀναγνωρίσαι· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.7" cert="high">
+            <p>ἀλλ᾿ ἡ μάλιστα τοῦ μύθου καὶ ἡ μάλιστα τῆς πράξεως ἡ εἰρημένη ἐστίν. ἡ γὰρ τοιαύτη ἀναγνώρισις καὶ περιπέτεια ἢ ἔλεον ἕξει ἢ φόβον, οἷων πράξεων ἡ τραγῳδία μίμησις ὑπόκειται. ἔτι δὲ καὶ τὸ ἀτυχεῖν καὶ τὸ εὐτυχεῖν ἐπὶ τῶν τοιούτων συμβήσεται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.8" cert="high">
+            <p>ἐπεὶ δ᾽ ἡ ἀναγνώρισις τινῶν ἐστὶν ἀναγνώρισις, αἱ μὲν θατέρου πρὸς τὸν ἕτερον μόνον, ὅταν ᾖ δῆλος ἕτερος τίς ἐστιν, ὁτὲ<note>
+2. ἀκολουθῶν om AcBc et M XIV et GP. 9. ὅτε Aldus: de-
+est AcBcNa et M omnibus et GPQ. 13. οἷον AcBcNa et M
+14  16 21 et Aldus.
+</note><pb n="25" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=59"/> δ᾽ ἀμφοτέρους δεῖ ἀναγνωρίσαι, οἷον ἡ μὲν Ιφιγένεια τῷ Ὀρέστῃ ἀνεγνωρίσθη ἐκ τῆς πέμψεως τῆς ἐπιστολῆς, ἐκείνῳ δὲ πρὸς τὴν Ἰφιγένειαν ἄλλης ἔδει ἀναγνωρίσεως. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.9" cert="high">
+            <p>Δύο μὲν οὖν τοῦ μύθου μέρη περὶ ταῦτ' ἐστί, περιπέτεια καὶ ἀναγνώρισις, τρίτον δὲ πάθος. τούτων δὲ περιπέτεια μὲν καὶ ἀναγνώρισις εἴρηται, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:11.10" cert="high">
+            <p>πάθος δ᾽ ἐστὶ πρᾶξις φθαρτικὴ ἢ ὀδυνηρά, οἷον οἵ τε ἐν τῷ φανερῷ θάνατοι καὶ αἱ περιωδυνίαι καὶ τρώσεις καὶ ὅσα τοιαῦτα.]</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="12">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.1" cert="high">
+            <p>Μέρη δὲ τραγῳδίας, οἷς μὲν ὡς εἴδεσι δεῖ χρῆσθαι, πρότερον εἴπομεν· κατὰ δὲ τὸ ποσὸν καὶ εἰς ἃ διαιρεῖται κεχωρισμένα, τάδε ἐστί, πρόλογος ἐπεισόδιον ἔξοδος χορικόν, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.2" cert="high">
+            <p>καὶ τούτου τὸ μὲν πάροδος τὸ δὲ στάσιμον, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.3" cert="high">
+            <p>κοινὰ μὲν ἁπάν των ταῦτα, ἴδια δὲ τὰ ἀπὸ τῆς σκηνῆς καὶ κόμμοι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.4" cert="medium">
+            <p>ἔστι δὲ πρόλογος μὲν μέρος ὅλον τραγῳδίας τὸ πρὸ χοροῦ παρόδου, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.5" cert="high">
+            <p>ἐπεισόδιον δὲ μέρος ὅλον τραγῳδίας τὸ μεταξὺ ὅλων χορικῶν μελῶν, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.6" cert="high">
+            <p>ἔξοδος δὲ μέρος ὅλον τραγῳδίας μεθ' ὃ οὐκ ἔστι χοροῦ μέλος, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.7" cert="high">
+            <p>χορικοῦ δὲ πάροδος μὲν ἡ πρώτη λέξις ὅλου χο<pb n="26" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=60"/>ροῦ, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.8" cert="high">
+            <p>στάσιμον δὲ μέλος χοροῦ τὸ ἄνευ ἀναπαίστου καὶ τροχαίου, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.9" cert="high">
+            <p>κόμμος δὲ θρῆνος κοινὸς χοροῦ καὶ ἀπὸ σκηνῆς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:12.10" cert="high">
+            <p>μέρη δὲ τραγῳδίας, οἷς μὲν δεῖ χρῆσθαι, πρότερον εἴπομεν, κατὰ δὲ τὸ ποσὸν καὶ εἰς ἃ διαιρεῖται κεχωρισμένα, ταῦτ᾽ ἐστίν.]</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="13">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.1" cert="high">
+            <p>ὧν δὲ δεῖ στοχάζεσθαι καὶ ἃ δεῖ εὐλαβεῖσθαι συνιστάντας τοὺς μύθους, καὶ πόθεν ἔσται τὸ τῆς τραγῳδίας ἔργον, ἐφεξῆς ἂν εἴη λεκτέον τοῖς νῦν εἰρημένοις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.2" cert="high">
+            <p>ἐπειδὴ οὖν δεῖ τὴν σύνθεσιν εἶναι τῆς καλλίστης τραγῳδίας μὴ ἁπλῆν ἀλλὰ πεπλεγμένην, καὶ ταύτην φοβερῶν καὶ ἐλεεινῶν εἶναι μιμητικήν (τοῦτο γὰρ ἴδιον τῆς τοιαύτης μιμήσεως ἐστιν), πρῶτον μὲν δῆλον ὅτι οὔτε τοὺς ἐπιεικεῖς ἄνδρας δεῖ μεταβάλλοντας φαίνεσθαι ἐξ εὐτυχίας εἰς δυστυχίαν (οὐ γὰρ φοβερὸν οὐδὲ ἐλεεινὸν τοῦτο, ἀλλὰ μιαρόν ἐστιν) </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.3" cert="high">
+            <p>οὔτε τοὺς μοχθηροὺς ἐξ ἀτυχίας εἰς εὐτυχίαν (ἀτραγῳδότατον γὰρ τοῦτ' ἐστὶ πάντων· οὐδὲν γὰρ ἔχει ὧν δεῖ· οὔτε γὰρ φιλάνθρωπον οὔτε ἐλεεινὸν οὔτε φοβερόν ἐστιν), </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.4" cert="high">
+            <p>οὐδ᾽ αὖ τὸν σφόδρα πονηρὸν<note>
+5. Aldus: AcBcNa et M omnes et GLQ ws. 16. αὖ τὸν
+Allus: αὐτὸ AcBcNa et M 14 21, αὖ τὸ Μ XIV 16 et G.
+</note><pb n="27" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=61"/> ἐξ εὐτυχίας εἰς δυστυχίαν μεταπίπτειν. τὸ μὲν γὰρ φιλάνθρωπον ἔχοι ἂν ἡ τοιαύτη σύστασις, ἀλλ᾽ οὔτε ἔλεον οὔτε · φόβον· ὁ μὲν γὰρ περὶ τὸν ἀνάξιόν ἐστι δυστυχοῦντα, ὁ δὲ περὶ τὸν ὅμοιον [, ἔλεος μὲν περὶ τὸν ἀνάξιον, φόβος δὲ περὶ τὸν ὅμοιον], ὥστε οὔτε ἐλεεινὸν οὔτε φοβερὸν ἔσται τὸ συμβαῖνον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.5" cert="high">
+            <p>ὁ μεταξὺ ἄρα τούτων λοιπός. ἔστι δὲ τοιοῦτος ὁ μήτε ἀρετῇ διαφέρων καὶ δικαιοσύνῃ, μήτε διὰ κακίαν καὶ μοχθηρίαν μεταβάλλων εἰς τὴν δυστυχίαν ἀλλὰ δι᾽ ἁμαρτίαν τινά, τῶν ἐν μεγάλῃ δόξῃ ὄντων καὶ εὐτυχίᾳ, οἷον Οἰδίπους καὶ Θυέστης καὶ οἱ ἐκ τῶν τοιούτων γενῶν ἐπιφανεῖς ἄνδρες. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.6" cert="high">
+            <p>ἀνάγκη ἄρα τὸν καλῶς ἔχοντα μῦθον ἁπλοῦν εἶναι μᾶλλον ἢ διπλοῦν, ὥσπερ τινές φασιν, καὶ μεταβάλλειν οὐκ εἰς εὐτυχίαν ἐκ δυστυχίας ἀλλὰ τοὐναντίον ἐξ εὐτυχίας εἰς δυστυχίαν, μὴ διὰ μοχθηρίαν ἀλλὰ δι᾽ ἁμαρτίαν μεγάλην, ἢ οἵου εἴρηται, ἢ βελτίονος μᾶλλον ἢ χείρονος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.7" cert="high">
+            <p>σημεῖον δὲ καὶ τὸ γιγνόμενον· πρὸ τοῦ μὲν γὰρ οἱ ποιηταὶ τοὺς τυ<pb n="28" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=62"/>χόντας μύθους ἀπηρίθμουν, νῦν δὲ περὶ ὀλίγας οἰκίας αἱ κάλλισται τραγῳδίαι συντίθενται, οἷον περὶ Ἀλκμαίωνα καὶ Οἰδίπουν καὶ Ὀρέστην καὶ Μελέαγρον καὶ Θυέστην καὶ Τήλεφον, καὶ ὅσοις ἄλλοις συμβέβηκεν ἢ παθεῖν δεινὰ ἢ ποιῆσαι. <note>16. πρὸ τοῦ] προτοῦ Aldus, πρῶτον AcBcNa et M omnes et GLPQ.
+est simile peccatum ut antecedens αὐτὸ pro αὖ τὸν.</note></p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.8" cert="high">
+            <p>ἡ μὲν οὖν κατὰ τὴν τέχνην καλλίστη τραγῳδία ἐκ ταύτης τῆς συστάσεώς ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.9" cert="high">
+            <p>διὸ καὶ οἱ Εὐριπίδῃ ἐγκαλοῦντες τὸ αὐτὸ ἁμαρτάνουσιν, ὅτι τοῦτο δρῷ ἐν ταῖς τραγῳδίαις καὶ πολλαὶ αὐτοῦ εἰς δυστυχίαν τελευτῶσιν. τοῦτο γάρ ἐστίν, ὥσπερ εἴρηται, ὀρθόν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.10" cert="high">
+            <p>σημεῖον δὲ μέγιστον· ἐπὶ γὰρ τῶν σκηνῶν καὶ τῶν ἀγώνων τραγικώταται αἱ τοιαῦται φαίνονται, ἂν κατορθωθῶσιν, καὶ ὁ Εὐριπίδης, εἰ καὶ τὰ ἄλλα μὴ εὖ οἰκονομεῖ, ἀλλὰ τραγικώτατός γε τῶν ποιητῶν φαίνεται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.11" cert="high">
+            <p>δευτέρα δ᾽ ἡ πρώτη λεγομένη ὑπό τινων ἐστὶ σύστασις, ἡ διπλῆν τε τὴν σύστασιν ἔχουσα [, καθάπερ ἡ Ὀδύσσεια,] καὶ τελευτῶσα ἐξ ἐναντίας τοῖς βελτίοσι καὶ χείροσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.12" cert="high">
+            <p>δοκεῖ δὲ εἶναι πρώτη διὰ τὴν τῶν θεάτρων ἀσθένειαν· ἀκολουθοῦσι γὰρ οἱ ποιηταὶ κατ᾿ εὐχὴν ποιοῦντες τοῖς θεαταῖς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:13.13" cert="medium">
+            <p>ἔστι δὲ<note>
+16. θεάτρων] verum videtur θεατῶν.
+</note><pb n="29" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=63"/> οὐχ αὕτη ἀπὸ τραγῳδίας ἡδονή, ἀλλὰ μᾶλλον τῆς κωμῳδίας οἰκεία· ἐκεῖ γάρ, ἂν οἱ ἔχθιστοι ὦσιν ἐν τῷ μύθῳ, οἷον Ὀρέστης καὶ Αἰγισθος, φίλοι γενόμενοι ἐπὶ τελευτῆς ἐξέρχονται, καὶ ἀποθνήσκει οὐδεὶς ὑπ᾽ οὐδενός.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="14">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.1" cert="medium">
+            <p>Ἔστι μὲν οὖν τὸ φοβερὸν καὶ ἐλεεινὸν ἐκ τῆς ὄψεως για νεσθαι, ἔστι δὲ καὶ ἐξ αὐτῆς τῆς συστάσεως τῶν πραγμά των, ὅπερ ἐστὶ πρότερον καὶ ποιητοῦ ἀμείνονος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.2" cert="high">
+            <p>δεῖ γὰρ καὶ ἄνευ τοῦ ὁρᾶν οὕτω συνεστάναι τὸν μῦθον ὥστε τὸν ἀκούοντα τὰ πράγματα γινόμενα καὶ φρίττειν καὶ ἐλεεῖν ἐκ τῶν συμβαινόντων· ἅπερ ἂν πάθοι τις ἀκούων τὸν τοῦ Οἰδίποδος μῦθον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.3" cert="high">
+            <p>τὸ δὲ διὰ τῆς ὄψεως τοῦτο παρασκευάζειν ατεχνότερον καὶ χορηγίας δεόμενόν ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.4" cert="high">
+            <p>οἱ δὲ μὴ τὸ φοβερὸν διὰ τῆς ὄψεως ἀλλὰ τὸ τερατῶδες μόνον παρασκευάζοντες οὐδὲν τραγῳδίᾳ κοινωνοῦσιν· οὐ γὰρ πᾶσαν δεῖ ζητεῖν ἡδονὴν ἀπὸ τραγῳδίας, ἀλλὰ τὴν οἰκείαν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.5" cert="high">
+            <p>ἐπεὶ δὲ τὴν ἀπὸ ἐλέου καὶ φόβου διὰ μιμήσεως δεῖ ἡδονὴν παρασκευάζειν τὸν ποιητήν, φανερὸν ὡς τοῦτο ἐν τοῖς πράγμασιν ἐμπ<pb n="30" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=64"/> ποιητέον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.6" cert="high">
+            <p>ποῖα οὖν δεινὰ ἢ ποῖα οἰκτρὰ φαίνεται τῶν συμπιπτόντων, λάβωμεν. ἀνάγκη δὲ ἢ φίλων εἶναι πρὸς ἀλλήλους τὰς τοιαύτας πράξεις ἢ ἐχθρῶν ἢ μηδετέρων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.7" cert="high">
+            <p>ἂν μὲν οὖν ἐχθρὸς ἐχθρὸν ἀποκτείνῃ, οὐδὲν ἐλεεινὸν οὔτε ποιῶν οὔτε μέλλων δείκνυσι, πλὴν κατ᾿ αὐτὸ τὸ πάθος· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.8" cert="high">
+            <p>οὐδ᾽ ἂν μηδετέρως ἔχοντες. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.9" cert="high">
+            <p>ὅταν δ᾽ ἐν ταῖς φιλίαις ἐγγένηται τὰ πάθη, οἷον εἰ ἀδελφὸς ἀδελφὸν ἢ υἱὸς πατέρα ἢ μήτηρ υἱὸν ἢ υἱὸς μητέρα ἀποκτείνει ἢ μέλλει ἤ τι ἄλλο τοιοῦτον δρῷ, ταῦτα ζητητέον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.10" cert="high">
+            <p>τοὺς μὲν οὖν παρειλημμένους μύθους λύειν οὐκ ἔστιν, λέγω δὲ οἷον τὴν Κλυταιμνήστραν ἀποθανοῦσαν ὑπὸ τοῦ Ὀρέστου καὶ τήν Ἐριφύλην ὑπὸ τοῦ Ἀλκμαίωνος· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.11" cert="high">
+            <p>αὐτὸν δὲ εὑρίσκειν δεῖ, καὶ τοῖς παραδεδομένοις χρῆσθαι καλῶς. τὸ δὲ καλῶς τί λέγομεν, εἴπωμεν σαφέστερον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.12" cert="high">
+            <p>ἔστι μὲν γὰρ οὕτω γίνεσθαι τὴν πρᾶξιν ὥσπερ οἱ παλαιοὶ ἐποίουν, εἰδότας καὶ γινώσκοντας, καθάπερ καὶ Εὐριπίδης ἐποίησεν ἀπο<pb n="31" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=65"/>κ<note>
+4. ἀποκτείνῃ om AcBeNa et M omnes et GLPQ et Aldus. hoc
+verbum ab antiquo quodam editore per coniecturam, sed eam
+satis certam, ex subsequente (v. 8) ἀποκτείνει restitutum videtur.
+5. δείκνυσι om Na et M omnes et GLPQ. 7. el] AcBcNa
+et L Q et Aldus; de Mediceis tacetur.
+</note>τείνουσαν τοὺς παῖδας τὴν Μήδειαν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.13" cert="medium">
+            <p>ἔστι δὲ πρᾶξαι μέν, ἀγνοοῦντας δὲ πρᾶξαι τὸ δεινόν, εἶθ᾽ ὕστερον ἀναγνωρίσαι τὴν φιλίαν, ὥσπερ ὁ Σοφοκλέους Οἰδίπους. τοῦτο μὲν οὖν ἔξω τοῦ δράματος, ἐν δ᾽ αὐτῇ τῇ τραγῳδίᾳ, οἷος ὁ Ἀλκμαίων ὁ Ἀστυδάμαντος ἢ ὁ Τηλέγονος ὁ ἐν τῷ τραυματίᾳ Οδυσσεῖ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.14" cert="high">
+            <p>ἔτι δὲ τρίτον παρὰ ταῦτα τὸν μέλλοντα ποιεῖν τι τῶν ἀνηκέστων δι᾽ ἄγνοιαν ἀναγνωρίσαι πρὶν ποιῆσαι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.15" cert="high">
+            <p>καὶ παρὰ ταῦτα οὐκ ἔστιν ἄλλως· ἢ γὰρ πρᾶξαι ἀνάγκη ἢ μή, καὶ εἰδότας ἢ μὴ εἰδότας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.16" cert="high">
+            <p>τούτων δὲ τὸ μὲν γινώσκοντα μελλῆσαι καὶ μὴ πρᾶξαι χείριστον· τό τε γὰρ μικρὸν ἔχει, καὶ οὐ τραγικόν· ἀπαθὲς γάρ. [διόπερ οὐδεὶς ποιεῖ ὁμοίως, εἰ μὴ ὀλιγάκις, οἷον ἐν Ἀντιγόνῃ τὸν Κρέοντα ὁ Αἵμων.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.17" cert="high">
+            <p>τὸ δὲ πρᾶξαι δεύτερον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.18" cert="high">
+            <p>βέλτιον δὲ τὸ ἀγνοοῦντα μὲν πρᾶξαι, πράξαντα δὲ ἀναγνωρίσαι· τό τε γὰρ μικρὸν οὐ πρόσεστι, καὶ ἡ ἀναγνώρισις ἐκπληκτικόν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.19" cert="high">
+            <p>κράτιστον δὲ τὸ τελευταῖον, λέγω δὲ οἷον ἐν τῷ Κρεσφόντῃ ἡ Μερόπη μέλλει τὸν υἱὸν ἀποκτείνειν, ἀποκτείνει δὲ οὐ ἀλλ᾽ ἀνεγνώρισεν, καὶ ἐν τῇ Ἰφιγενείᾳ ἡ<pb n="32" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=66"/> ἀδελφὴ τὸν ἀδελφόν, καὶ ἐν τῇ Ελλῃ ὁ υἱὸς τὴν μητέρα ἐκ διδόναι μέλλων ἀνεγνώρισεν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.20" cert="high">
+            <p>διὰ γὰρ τοῦτο, ὅπερ πάλαι τοεἴρηται, οὐ περὶ πολλὰ γένη αἱ τραγῳδίαι εἰσίν. ζητοῦντες γὰρ οὐκ ἀπὸ τέχνης ἀλλ᾽ ἀπὸ τύχης εὗρον τὸ τοιοῦτον παρασκευάζειν ἐν τοῖς μύθοις· ἀναγκάζονται οὖν ἐπὶ ταύτας τὰς οἰκίας ἀπαντᾶν, ὅσαις τὰ τοιαῦτα συμβέβηκε πάθη. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:14.21" cert="high">
+            <p>περὶ μὲν οὖν τῆς τῶν πραγμάτων συστάσεως, καὶ ποίους τινὰς εἶναι δεῖ τοὺς μύθους, εἴρηται ἱκανῶς.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="15">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.1" cert="high">
+            <p>Περὶ δὲ τὰ ἤθη τέτταρά ἐστιν ὧν δεῖ στοχάζεσθαι, ἓν μὲν καὶ πρῶτον, ὅπως χρηστὰ ᾖ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.2" cert="high">
+            <p>ἕξει δὲ ἦθος μέν, ἐὰν ο ὥσπερ ἐλέχθη ποιῇ φανερὰν ὁ λόγος ἢ ἡ πρᾶξις προαίρεσίν τινα, χρηστὸν δ᾽ ἐὰν χρηστήν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.3" cert="medium">
+            <p>ἔστι δὲ ἐν ἑκάστῳ γένει· καὶ γὰρ γυνή ἐστι χρηστὴ καὶ δοῦλος· καίτοι γε ἴσως τούτων τὸ μὲν χεῖρον, τὸ δὲ ὅλως φαῦλόν ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.4" cert="high">
+            <p>δεύτερον δὲ τὰ ἁρμόττοντα· ἔστι γὰρ ἀνδρεῖον μὲν τὸ ἦθος, ἀλλ᾿ οὐχ ὡρμόττον γυναικὶ τὸ ἀνδρείαν ἢ δεινὴν εἶναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.5" cert="high">
+            <p>τρίτον δὲ τὸ<note>
+11. φανερὰν Aldus: AcBcNa et M omnes et P φανερόν. 12.
+post τινα G φαῦλον μὲν ἐὰν φαύλη ᾖ, Aldus et ceteri editores
+φαῦλον μὲν ἐὰν φαύλην, AcBeNa nonnisi ἦ, L et M 16 21 ἢ. conf.
+Comment.
+</note><pb n="33" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=67"/> ὅμοιον· τοῦτο γὰρ ἕτερον τοῦ χρηστὸν τὸ ἦθος καὶ ἁρμόττον ποιῆσαι, ὥσπερ εἴρηται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.6" cert="high">
+            <p>τέταρτον δὲ τὸ ὁμαλόν· κἂν γὰρ ἀνώμαλός τις ᾖ ὁ τὴν μίμησιν παρέχων καὶ τοιοῦτον ἦθος ὑποτιθείς, ὅμως ὁμαλῶς ἀνώμαλον δεῖ εἶναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.7" cert="medium">
+            <p>ἔστι δὲ παράδειγμα πονηρίας μὲν ἤθους μὴ ἀναγκαῖον οἷον ὁ Μενέλαος ὁ ἐν τῷ Ορέστῃ, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.8" cert="high">
+            <p>τοῦ δὲ ἀπρεποῦς καὶ μὴ ἁρμόττοντος ὅ τε θρῆνος Ὀδυσσέως ἐν τῇ Σκύλλῃ καὶ ἡ τῆς Μελανίππης ῥῆσις, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.9" cert="high">
+            <p>τοῦ δὲ ἀνωμάλου ἡ ἐν Αυλίδι Ιφιγένεια· οὐδὲν γὰρ ἔοικεν ἡ ἱκετεύουσα τῇ ὑστέρᾳ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.10" cert="high">
+            <p>χρὴ δὲ καὶ ἐν τοῖς ἤθεσιν, ὥσπερ καὶ ἐν τῇ τῶν πραγμάτων συστάσει, ἀεὶ ζητεῖν ἢ τὸ ἀναγκαῖον ἢ τὸ εἰκός, ὥστε τὸν τοιοῦτον τὰ τοιαῦτα λέγειν ἢ πράττειν ἢ ἀναγκαῖον ἢ εἰκός, καὶ τοῦτο μετὰ τοῦτο γίνεσθαι ἢ ἀναγκαῖον ἢ εἰκός. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10b" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.10b" cert="high">
+            <p>φανερὸν οὖν ὅτι καὶ τὰς λύσεις η τῶν μύθων ἐξ αὐτοῦ δεῖ τοῦ μύθου συμβαίνειν, καὶ μὴ ὥσπερ ἐν τῇ Μηδείᾳ ἀπὸ μηχανῆς καὶ ἐν τῇ Ιλιάδι τὰ περὶ τὸν ἀπόπλουν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10c" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.10c" cert="high">
+            <p>ἀλλὰ μηχανῇ χρηστέον ἐπὶ τὰ ἔξω τοῦ δρά<pb n="34" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=68"/>μ<note>
+16. ἀπόπλουν] ἀνάπλουν Parisiensis 2038, ἀπλοῦν Q, ἁπλοῦν AcBeNa
+et M XIV 21 et L et Aldus, πλοῦν Μ 16.
+</note>ατος ἢ ὅσα πρὸ τοῦ γέγονεν, ἃ οὐχ οἷόν τε ἄνθρωπον εἰδέ ναι, ἢ ὅσα ὕστερον, ἃ δεῖται προαγορεύσεως καὶ ἀγγελίας· ἅπαντα γὰρ ἀποδίδομεν τοῖς θεοῖς ὁρᾶν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10d" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.10d" cert="high">
+            <p>ἄλογον δὲ μηδὲν εἶναι ἐν τοῖς πράγμασιν, εἰ δὲ μή, ἔξω τῆς τραγῳδίας, οἷον τὰ ἐν τῷ Οἰδίποδι τῷ Σοφοκλέους. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.11" cert="high">
+            <p>ἐπεὶ δὲ μίμησίς ἐστιν ἡ τραγῳδία βελτιόνων, ἡμᾶς δεῖ μιμεῖσθαι τοὺς ἀγαθοὺς εἰκονογράφους· καὶ γὰρ ἐκεῖνοι ἀποδιδόντες τὴν ἰδίαν μορφήν, ὁμοίους ποιοῦντες, καλλίους γράφουσιν· οὕτω καὶ τὸν ποιητὴν μιμούμενον καὶ ὀργίλους καὶ ῥᾳθύμους καὶ τἆλλα τὰ τοιαῦτα ἔχοντας ἐπὶ τῶν ἠθῶν [τοιούτους ὄντας] ἐπιεικεῖς ποιεῖν [παράδειγμα σκληρότητος], οἷον τὸν Ἀχιλλέα Ἀγάθων καὶ Ὅμηρος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:15.12" cert="high">
+            <p>ταῦτα δὴ δεῖ διατηρεῖν, καὶ πρὸς τούτοις τὰς παρὰ τὰς ἐξ ἀνάγκης ἀκολουθούσας αἰσθήσεις τῇ ποιητικῇ· καὶ γὰρ κατ᾿ αὐτὰς ἔστιν ἁμαρτάνειν πολλάκις. εἴρηται δὲ περὶ αὐτῶν ἐν τοῖς ἐκδεδομένοις λόγοις ἱκανῶς.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="16">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.1" cert="high">
+            <p>Αναγνώρισις δὲ τί μέν ἐστιν, εἴρηται πρότερον εἴδη δὲ ἀναγνωρίσεως, πρώτη μὲν ἡ ἀτεχνοτάτη, καὶ ᾗ πλεῖστοι χρῶνται δι᾽ ἀπορίαν, ἡ διὰ τῶν σημείων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.2" cert="high">
+            <p>τούτων δὲ τὰ μὲν σύμφυτα, οἷον “λόγχην ἣν φοροῦσι Γηγενεῖς” </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.3" cert="high">
+            <p>ἢ ἀστέρας οἷους ἐν τῷ Θυέστῃ Καρκίνος, τὰ δὲ ἐπίκτητα, καὶ τούτων τὰ μὲν ἐν τῷ σώματι, οἷον οὐλαί, τὰ δὲ ἐκτός, τὰ περιδέραια, καὶ οἷον ἐν τῇ Τυροῖ διὰ τῆς σκάφης. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.4" cert="medium">
+            <p>ἔστι δὲ καὶ τούτοις χρῆσθαι ἢ βέλτιον ἢ χεῖρον, οἷον Ὀδυσσεὺς διὰ τῆς οὐλῆς ἄλλως ἀνεγνωρίσθη ὑπὸ τῆς τροφοῦ καὶ ἄλλως ὑπὸ τῶν συβοτῶν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.5" cert="high">
+            <p>εἰσὶ γὰρ αἱ μὲν πίστεως ἕνεκα ἀτεχνότεραι, καὶ αἱ τοιαῦται πᾶσαι, αἱ δὲ ἐκ περιπετείας, ὥσπερ ἡ ἐν τοῖς Νίπτροις, βελτίους. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.6" cert="high">
+            <p>δεύτεραι δὲ αἱ πεποιημέναι ὑπὸ τοῦ ποιητοῦ, διὸ ἄτεχνοι· οἷον Ὀρέστης ἐν τῇ Ιφιγενείᾳ ἀνεγνώρισεν ὅτι Ὀρέστης· ἐκείνη μὲν γὰρ διὰ τῆς ἐπιστολῆς, ἐκεῖνος δὲ αὐτὸς λέγει ἃ βούλεται ὁ ποιητής, ἀλλ' οὐχ ὁ μῦθος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.7" cert="medium">
+            <p>διότι<note>
+6. περιδέραια] Aldus περὶ δέραια, AcBeNa et GLQ περιδέρρεπ.
+13. ἀνεγνώρισεν ὅτι Ὀρέστης] sequor codices AcBeNa et M omnes et
+GLPQ: Alus ἀνεγνώρισε τὴν ἀδελφήν, ἀναγνωρισθεὶς ὑπ'
+ἐκείνης· cf. C o m m. 14. ἐκεῖνος δὲ αὐτὸς] sequor quos modo
+memoravi: Aldus ἐκεῖνος δὲ ταῦτα οὖν αὐτὸς, unus ex libris
+Victorii ἐκεῖνος δὲ διὰ σημείων. ταῦτα οὖν αὐτὸς. 15. διότι Μ
+14  XIV 16: δι᾿ ὅτι AcBeNa et M 21, διό τι PQ, δι' ὃ Aldus.
+</note><pb n="36" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=70"/> ἐγγὺς τῆς εἰρημένης ἁμαρτίας ἐστίν· ἐξῆν γὰρ ἂν ἔνια καὶ ἐνεγκεῖν. καὶ ἐν τῷ Σοφοκλέους Τηρεῖ “ἡ τῆς κερκίδος φωνή.” τρίτη δὲ </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.8" cert="high">
+            <p>ἡ διὰ μνήμης, τῷ αἰσθέσθαι τι ἰδόντα, ὥσπερ ἡ ἐν Κυπρίοις τοῖς Δικαιογένους, ἰδὼν γὰρ τὴν γραφὴν ἔκλαυσεν, καὶ ἡ ἐν Ἀλκίνου ἀπολόγῳ, ἀκούων γὰρ τοῦ κιθαριστοῦ καὶ μνησθεὶς ἐδάκρυσεν· ὅθεν ἀνεγνωρίσθησαν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.9" cert="high">
+            <p>τετάρτη δὲ ἡ ἐκ συλλογισμοῦ, οἷον ἐν Χοηφόροις, ὅτι ὅμοιός τις ἐλήλυθεν, ὅμοιος δὲ οὐθεὶς ἀλλ᾽ ἢ Ὀρέστης· οὗτος ἄρα ἐλήλυθεν. καὶ ἡ Πολυείδου τοῦ σοφιστοῦ περὶ τῆς Ἰφιγενείας· εἰκὸς γὰρ τὸν Ὀρέστην συλλογίσασθαι ὅτι ἥ τ᾽ ἀδελφὴ ἐτύθη καὶ αὐτῷ συμβαίνει θύεσθαι. καὶ ἡ ἐν τῷ τοῦ Θεοδέκτου Τυδεῖ, ὅτι ἐλθὼν ὡς εὑρήσων υἱὸν αὐτὸς ἀπόλλυται. καὶ ἡ ἐν τοῖς Φι<pb n="37" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=71"/>ν<note>
+3. τρίτη δὲ ἡ] ἤτοι τῆ AcBcNa et M 14 16 21 et L Q, τρίτη ἡ Ρ, τρίτη
+ν ἡ (sic) Aldus. 4. τοῖς Aldus: AcBcNa et GLQ τῆς. ex
+Mediceis nihil enotatum est. 5. ἀπολόγῳ Aldus: ἀπὸ λόγων
+AcBcNa et M omnes et LQ, ἀπολόγων G. 7. χλοηφόροις
+AcBcNa (et M omnes) et GP et Aldus. 9. πολυειδους AcBc et
+(πολυείδους) Μ 16 21 et L Q, πολυείδου GP, πολυειδ Na, sed
+c. 17. §. 3. omnes πολύειδος. 11. Aldus: om AcBcNa et M
+14  16 21 et GLQ. 12. τοῖς φινίδαις M XIV 16 21, ταῖς ψι-
+νίδαις AcBc, ταῖς φοινίδες Na, ταῖς φινίσιν Aldus.
+</note>είδαις· ἰδοῦσαι γὰρ τὸν τόπον συνελογίσαντο τὴν εἱμαρμένην, ὅτι ἐν τούτῳ εἵμαρτο ἀποθανεῖν αὐταῖς· καὶ γὰρ ἐξετέθησαν ἐνταῦθα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.10" cert="medium">
+            <p>ἔστι δέ τις καὶ συνθετὴ ἐκ παραλογισμοῦ τοῦ θεάτρου, οἷον ἐν τῷ Ὀδυσσεῖ τῷ ψευδαγγέλῳ· τὸ μὲν γὰρ τόξον ἔφη γνώσεσθαι ὃ οὐχ ἑωράκει, τὸ δέ, ὡς δι᾽ ἐκείνου ἀναγνωριοῦντος, διὰ τούτου ἐποίησε παραλογισμόν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.11" cert="high">
+            <p>πασῶν δὲ βελτίστη ἀναγνώρισις ἡ ἐξ αὐτῶν τῶν πραγμάτων, τῆς ἐκπλήξεως γιγνομένης δι᾿ εἰκότων, οἷον ἡ ἐν τῷ Σοφοκλέους Οἰδίποδι καὶ τῇ Ἰφιγενείᾳ· εἰκὸς γὰρ βούλεσθαι ἐπιθεῖναι γράμματα. αἱ γὰρ τοιαῦται μόναι ἄνευ τῶν πεποιημένων σημείων καὶ περιδεραίων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:16.12" cert="high">
+            <p>δεύτεραι δὲ αἱ ἐκ συλλογισμοῦ.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="17">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.1" cert="high">
+            <p>Δεῖ δὲ τοὺς μύθους συνιστάναι καὶ τῇ λέξει συναπεργάζεσθαι ὅτι μάλιστα πρὸ ὀμμάτων τιθέμενον (οὕτω γὰρ ἂν ἐναργέστατα ὁρῶν, ὥσπερ παρ' αὐτοῖς γιγνόμενος τοῖς πραττομένοις, εὑρίσκοι τὸ πρέπον, καὶ ἥκιστ᾽ ἂν λανθάνοιτο τὰ<note>
+5. τὸ] ὁ Aldus et ceteri editores. vid. Comment. 6.
+ἐποίησε] ἐποίησεν Aldus, ποιῆσαι AcBcNa et M omnes et GLPQ.
+8. ἐκπλήξεως Aldus: AcBcNa et M omnes et GLPQ πλήξεως.
+15. ὁρῶν Aldus: ὁ ὁρῶν AcBcNa et M 14 16 21 et GLP Q.
+</note><pb n="38" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=72"/> ὑπεναντία. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.2" cert="high">
+            <p>σημεῖον δὲ τούτου ὃ ἐπετιμᾶτο Καρκίνῳ· ὁ γὰρ Ἀμφιάραος ἐξ ἱεροῦ ἀνῄει, ὃ μὴ ὁρῶντα τὸν θεατὴν ἐλάνθανεν, ἐπὶ δὲ τῆς σκηνῆς ἐξέπεσε, δυσχερανάντων τοῦτο τῶν θεατῶν), </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.3" cert="high">
+            <p>ὅσα δὲ δυνατόν, καὶ τοῖς σχήμασι συναπεργαζόμενον. πιθανώτατοι γὰρ ἀπὸ τῆς αὐτῆς φύσεως οἱ ἐν τοῖς πάθεσίν εἰσι, καὶ χειμαίνει ὁ χειμαζόμενος καὶ χαλεπαίνει ὁ ὀργιζόμενος ἀληθινώτατα, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.4" cert="high">
+            <p>διὸ εὐφυοῦς ἡ ποιητική ἐστιν ἢ μανικοῦ· τούτων γὰρ οἱ μὲν εὔπλαστοι οἱ δὲ ἐξεταστικοί εἰσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.5" cert="medium">
+            <p>τούτους τε λόγους καὶ τοὺς πεποιημένους δεῖ καὶ αὐτὸν ποιοῦντα ἐκτίθεσθαι καθόλου, εἶθ' οὕτως ἐπεισοδιοῦν καὶ παρατείνειν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.6" cert="high">
+            <p>λέγω δὲ οὕτως ἂν θεωρεῖσθαι τὸ καθόλου, οἷον τῆς Ιφιγενείας. τυθείσης τινὸς κόρης καὶ ἀφανισθείσης ἀδήλως τοῖς θύσασιν, ἱδρυνθείσης δὲ εἰς ἄλλην χώραν, ἐν ᾗ νόμος ἦν τοὺς ξένους θύειν τῇ θεῷ, ταύτην ἔσχε τὴν ἱερωσύνην. χρόνῳ δ᾽ ὕστερον τῷ ἀδελφῷ συνέβη [ἐλθεῖν] τῆς<note>
+1. ἐπετιμᾶτο Victorius: codices et Aldus ἐπιτιμῇ τῷ. 2. ἀνῄει]
+ἀνείη Aldus, ἂν εἴη AcBcNa et L Q. 9. Aldus τούς τε λόγους
+τοὺς. vid. Comment. 11. παρατείνειν Victorius: περιτείνειν
+AcBc et plerique, περιτείρειν Na, παρενείρειν Aldus.
+</note><pb n="39" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=73"/> ἱερείας [. τὸ δέ, ὅτι ἀνεῖλεν ὁ θεός, διὰ τίν' αἰτίαν, ἔξω τοῦ καθόλου] ἐλθεῖν ἐκεῖ [, καὶ ἐφ᾽ ὅ τι δέ, ἔξω τοῦ μύθου.], ἐλθὼν δὲ καὶ ληφθεὶς θύεσθαι μέλλων ἀνεγνώρισεν, εὔθ᾽ ὡς Εὐριπίδης εὔθ᾽ ὡς Πολύειδος ἐποίησεν, κατὰ τὸ εἰκὸς εἰπὼν ὅτι οὐκ ἄρα μόνον τὴν ἀδελφὴν ἀλλὰ καὶ αὐτὸν ἔδει τυθῆναι· καὶ ἐντεῦθεν ἡ σωτηρία. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.7" cert="high">
+            <p>μετὰ ταῦτα δὲ ἤδη ὑποθένταξ τὰ ὀνόματα ἐπεισοδιοῦν, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.8" cert="high">
+            <p>ὅπως δὲ ἔσται οἰκεῖα τὰ ἐπεισόδια σκοπεῖν, οἷον ἐν τῷ Ὀρέστῃ ἡ μανία δι᾿ ἧς ἐλήφθη, καὶ ἡ σωτηρία διὰ τῆς καθάρσεως. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.9" cert="high">
+            <p>ἐν μὲν οὖν τοῖς δράμασι τὰ ἐπεισόδια σύντομα, ἡ δ᾽ ἐποποιία τούτοις μηκύνεται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.10" cert="high">
+            <p>τῆς γὰρ Ὀδυσσείας μακρὸς ὁ λόγος ἐστίν, ἀποδημοῦντός τινος ἔτη πολλὰ καὶ παραφυλαττομένου ὑπὸ τοῦ Ποσειδῶνος καὶ μόνου ὄντος, ἔτι δὲ τῶν οἴκοι οὕτως ἐχόντων ὥστε τὰ χρήματα ὑπὸ μνηστήρων ἀναλίσκεσθαι καὶ τὸν υἱὸν ἐπιβουλεύεσθαι· αὐτὸς δὲ ἀφικνεῖται χειμασθείς, καὶ ἀναγνωρίσας<note>
+1. τὸ δὲ Μ21: τόδε AcBe cum plerisque, τότε Na cum nonnullis,
+διατί Aldus. 9. δράμασι Aldus: ἅρμασι AcBeNa et M 14
+
+XIV et L, ἄσμασι M 16 et Q 13. ἔτι Victorius: ἐπὶ Na et
+G, ἐπεὶ AcBc cum plerisque.
+</note><pb n="40" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=74"/> τινὰς αὐτοῖς ἐπιθέμενος αὐτὸς μὲν ἐσώθη, τοὺς δ᾽ ἐχθροὺς διέφθειρεν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:17.11" cert="high">
+            <p>τὸ μὲν οὖν ἴδιον τοῦτο, τὰ δ᾽ ἄλλα ἐπεισόδια.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="18">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.1" cert="high">
+            <p>Ἔστι δὲ πάσης τραγῳδίας τὸ μέν δέσις τὸ δὲ λύσις, τὰ μὲν ἔξωθεν καὶ ἔνια τῶν ἔσωθεν πολλάκις ἡ δέσις, τὸ δὲ λοιπὸν ἡ λύσις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.2" cert="high">
+            <p>λέγω δὲ δέσιν μὲν εἶναι τὴν ἀπ' ἀρχῆς μέχρι τούτου τοῦ μέρους ὃ ἔσχατόν ἐστιν, ἐξ οὗ μεταβαίνει εἰς εὐτυχίαν, λύσιν δὲ τὴν ἀπὸ τῆς ἀρχῆς τῆς μεταβάσεως μέχρι τέλους, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.3" cert="high">
+            <p>ὥσπερ ἐν τῷ Λυγκεῖ τῷ Θεοδέκτου δέσις μὲν τά τε προπεπραγμένα καὶ ἡ τοῦ παιδίου λῆψις, λύσις δ᾽ ἡ ἀπὸ τῆς αἰτιάσεως τοῦ θανάτου μέχρι τοῦ τέλους.] [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.4" cert="high">
+            <p>Τραγῳδίας δὲ εἴδη εἰσὶ τέσσαρα· τοσαῦτα γὰρ καὶ τὰ μέρη ἐλέχθη. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.5" cert="high">
+            <p>ἡ μὲν πεπλεγμένη, ἧς τὸ ὅλον ἐστὶ περιπέτεια καὶ ἀναγνώρισις· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.6" cert="high">
+            <p>ἡ δὲ παθητική, οἷον οἵ τε Αἴαντες καὶ οἱ Ἰξίονες· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.7" cert="high">
+            <p>ἡ δὲ ἠθική, οἷον αἱ Φθιώτιδες καὶ ὁ Πηλεύς· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.8" cert="high">
+            <p>τὸ δὲ τέταρτον, οἷον αἵ τε Φορκίδες καὶ Προμηθεὺς καὶ ὅσα ἐν<note>
+1. autois Aldus et in margine L: AcBcNa et M omnes et GLQ
+αὐτός. 6. μεταβαίνειν AcBcNa et Aldus.
+8. λυγκεῖ Aldus :
+λυκει AcBcNa et (λυκεῖ) L. 9. λύσις δ᾽ ἡ λύσις δὲ ἡ Aldus,
+καὶ πάλιν ἡ αὐτῶν δὴ AcBcNa et M omnes et GLPQ. 15.
+οἷον M XIV 21 et Aldus, ὁης οἷον Ac et M 16 et Q (hic ὄης
+οἷον), ὁ οἷον Bc, G P οἷον, Na et M 14 οἰκεῖον.
+</note><pb n="41" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=75"/> Αιδου. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.9" cert="high">
+            <p>μάλιστα μὲν οὖν ἅπαντα δεῖ πειρᾶσθαι ἔχειν, εἰ δὲ μή, τὰ μέγιστα καὶ πλεῖστα, ἄλλως τε καὶ ὡς νῦν συκοφαντοῦσι τοὺς ποιητάς· γεγονότων γὰρ καθ᾽ ἕκαστον μέρος ἀγαθῶν ποιητῶν, ἕκαστον τοῦ ἰδίου ἀγαθοῦ ἀξιοῦσι τὸν ἕνα ὑπερβάλλειν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.10" cert="high">
+            <p>δίκαιον δὲ καὶ τραγῳδίαν ἄλλην καὶ τὴν αὐτὴν λέγειν οὐδὲν ἴσως τῷ μύθῳ· τοῦτο δέ, ὧν ἡ αὐτὴ πλοκὴ καὶ λύσις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.11" cert="high">
+            <p>πολλοὶ δὲ πλέξαντες εὖ λύουσι κακῶς· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.12" cert="high">
+            <p>δεῖ δὲ ἄμφω ἀεὶ κροτεῖσθαι.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.13" cert="high">
+            <p>Χρὴ δέ, ὅπερ εἴρηται πολλάκις, μεμνῆσθαι καὶ μὴ ποιεῖν ἐποποιικὸν σύστημα τραγῳδίαν. ἐποποιικὸν δὲ λέγω τὸ πολύμυθον, οἷον εἴ τις τὸν τῆς Ἰλιάδος ὅλον ποιοῖ μῦθον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.14" cert="high">
+            <p>ἐκεῖ μὲν γὰρ διὰ τὸ μῆκος λαμβάνει τὰ μέρη τὸ πρέπον μέγεθος, ἐν δὲ τοῖς δράμασι πολὺ παρὰ τὴν ὑπόληψιν ἀποβαίνει. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.15" cert="high">
+            <p>σημεῖον δέ, ὅσοι πέρσιν Ἰλίου ὅλην ἐποίησαν καὶ μὴ κατὰ μέρος [, ὥσπερ Εὐριπίδης Νιόβην, καὶ μὴ ὥσπερ Αἰσχύλος], ἢ ἐκπίπτουσιν ἢ κακῶς ἀγωνίζονται, ἐπεὶ καὶ<note>
+1. ᾅδου Μ 16, αἰδοῦ Ac M XIV 21, αἰδῶ Na et M 14 et GL,
+ais Bc, αἰδοῖ Aldus. 15. Νιόβην] Αldus νιόβην ἢ μήδειαν·
+vid. Comment.
+</note><pb n="42" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=76"/> Ἀγάθων ἐξέπεσεν ἐν τούτῳ μόνῳ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.16" cert="high">
+            <p>ἐν δὲ ταῖς περιπετείαις καὶ ἐν τοῖς ἁπλοῖς πράγμασι στοχάζονται ὧν βούλονται θαυμαστῶς· τραγικὸν γὰρ τοῦτο καὶ φιλάνθρωπον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.17" cert="medium">
+            <p>ἔστι δὲ τοῦτο, ὅταν ὁ σοφὸς μὲν μετὰ πονηρίας δὲ ἐξαπατηθῇ, ὥσπερ Σίσυφος, καὶ ὁ ἀνδρεῖος μὲν ἄδικος δὲ ἡττηθῇ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.18" cert="medium">
+            <p>ἔστι δὲ τοῦτο εἰκός, ὥσπερ Ἀγάθων λέγει· εἰκὸς γὰρ γινεσθαι πολλὰ καὶ παρὰ τὸ εἰκός. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.19" cert="high">
+            <p>καὶ τὸν χορὸν δὲ ἕνα δεῖ ὑπολαβεῖν τῶν ὑποκριτῶν, καὶ μόριον εἶναι τοῦ ὅλου, καὶ συναγωνίζεσθαι μὴ ὡς παρ' Εὐριπίδῃ ἀλλ᾽ ὡς παρὰ Σοφοκλεῖ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:18.20" cert="high">
+            <p>τοῖς δὲ λοιποῖς τὰ ᾠδόμενα οὐ μᾶλλον τοῦ μύθου ἢ ἄλλης τραγῳδίας ἐστίν· διὸ ἐμβόλιμα ᾄδουσιν, πρώτου ἄρξαντος Ἀγάθωνος τοῦ τοιούτου. καίτοι τί διαφέρει ἢ ἐμβόλιμα ᾄδειν ἢ ῥῆσιν ἐξ ἄλλου εἰς ἄλλο ἁρμόττειν ἢ ἐπεισόδιον ὅλον;</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="19">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.1" cert="high">
+            <p>Περὶ μὲν οὖν τῶν ἄλλων ἤδη εἴρηται, λοιπὸν δὲ περὶ λέξεως ἢ διανοίας εἰπεῖν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.2" cert="high">
+            <p>τὰ μὲν οὖν περὶ τὴν διάνοιαν ἐν τοῖς περὶ ῥητορικῆς κείσθω· τοῦτο γὰρ ἴδιον μᾶλλον ἐκείνης τῆς μεθόδου. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.3" cert="high">
+            <p>ἔστι δὲ κατὰ τὴν διάνοιαν ταῦτα, ὅσα ὑπὸ τοῦ λόγου δεῖ παρασκευασθῆναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.4" cert="high">
+            <p>μέρη δὲ τούτων τό τε ἀποδεικνύναι καὶ τὸ λύειν καὶ τὸ πάθη παρασκευάζειν, οἷον ἔλεον ἢ φόβον ἢ ὀργὴν καὶ ὅσα τοιαῦτα, καὶ ἔτι μέγεθος καὶ μικρότητα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.5" cert="high">
+            <p>δῆλον δὲ ὅτι καὶ ἐν τοῖς πράγμασιν ἀπὸ τῶν αὐτῶν ἰδεῶν δεῖ χρῆσθαι, ὅταν ἢ ἐλεεινὰ ἢ δεινὰ ἢ μεγάλα ἢ εἰκότα ιοδέῃ παρασκευάζειν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.6" cert="high">
+            <p>πλὴν τοσοῦτον διαφέρει, ὅτι τὰ μὲν δεῖ φαίνεσθαι ἄνευ διδασκαλίας, τὰ δὲ ἐν τῷ λόγῳ ὑπὸ τοῦ λέγοντος παρασκευάζεσθαι καὶ παρὰ τὸν λόγον γίγνεσθαι. τί γὰρ ἂν εἴη τοῦ λέγοντος ἔργον, εἰ φανοῖτο ἡδέα καὶ μὴ διὰ τὸν λόγον; </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.7" cert="high">
+            <p>τῶν δὲ περὶ τὴν λέξιν ἓν μέν ἐστιν εἶδος θεωρίας τὰ σχήματα τῆς λέξεως, ἃ ἐστιν εἰδέναι τῆς ὑποκριτικῆς καὶ<note>
+7. μικρότητα] σμικρότητα Aldus, μικρότητας AcBeNa et M onnes
+et GPQ, σμικρότητας L. 10. δέῃ] δέη Aldus, δ᾽ ἦ Ac, γ᾽ ἦ
+Bc, ἦ Na, δεῖ Μ 21, δὴ Q. ceteri codices similiter aberrant.
+</note><pb n="44" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=78"/> τοῦ τὴν τοιαύτην ἔχοντος ἀρχιτεκτονικήν, οἷον τί ἐντολὴ καὶ τί εὐχὴ καὶ διήγησις καὶ ἀπειλὴ καὶ ἐρώτησις καὶ ἀπόκρισις, καὶ εἴ τι ἄλλο τοιοῦτον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.8" cert="high">
+            <p>παρὰ γὰρ τὴν τούτων γνῶσιν ἢ ἄγνοιαν οὐδὲν εἰς τὴν ποιητικὴν ἐπιτίμημα φέρεται, ὅ τι καὶ ἄξιον σπουδῆς. τί γὰρ ἄν τις ὑπολάβοι ἡμαρτῆσθαι ἃ Πρωταγόρας ἐπιτιμᾷ, ὅτι εὔχεσθαι οἰόμενος ἐπιτάττει εἰπὼν “μῆνιν ἄειδε θεά;” τὸ γὰρ κελεῦσαι, φησί, ποιεῖν τι ἢ μὴ ἐπίταξίς ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:19.9" cert="high">
+            <p>διὸ παρείσθω ὡς ἄλλης καὶ οὐ τῆς ποιητικῆς ὂν θεώρημα.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="20">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.1" cert="high">
+            <p>Τῆς δὲ λέξεως ἁπάσης τάδ᾽ ἐστὶ τὰ μέρη, στοιχεῖον,20 συλλαβή, σύνδεσμος, ὄνομα, ῥῆμα, ἄρθρον, πτῶσις, λόγος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.2" cert="high">
+            <p>στοιχεῖον μὲν οὖν ἐστὶ φωνὴ ἀδιαίρετος, οὐ πᾶσα δέ, ἀλλ᾽ ἐξ ἧς πέφυκε συνετὴ γίνεσθαι φωνή· καὶ γὰρ τῶν θηρίων εἰσὶν ἀδιαίρετοι φωναί, ὧν οὐδεμίαν λέγω στοιχεῖον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.3" cert="medium">
+            <p>ταύ της δὲ μέρη τό τε φωνῆεν καὶ τὸ ἡμίφωνον καὶ ἄφωνον. ἔστι δὲ φωνῆεν μὲν ἄνευ προσβολῆς ἔχον φωνὴν ἀκουστήν,<pb n="45" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=79"/> οἷον τὸ Α καὶ τὸ Ω, ἡμίφωνον δὲ τὸ μετὰ προσβολῆς ἔχον φωνὴν ἀκουστήν, οἷον τὸ Σ καὶ τὸ Ρ, ἄφωνον δὲ τὸ μετὰ προσβολῆς καθ᾽ αὑτὸ μὲν οὐδεμίαν ἔχον φωνήν, μετὰ δὲ τῶν ἐχόντων τινὰ φωνὴν γινόμενον ἀκουστόν, οἷον τὸ Γ καὶ τὸ Δ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.4" cert="high">
+            <p>ταῦτα δὲ διαφέρει σχήμασί τε τοῦ στόματος καὶ τόποις καὶ δασύτητι καὶ ψιλότητι καὶ μήκει καὶ βραχύτητι, ἔτι δὲ ὀξύτητι καὶ βαρύτητι καὶ τῷ μέσῳ· περὶ ὧν καθ᾽ ἕκα- - στον ἐν τοῖς μετρικοῖς προσήκει θεωρεῖν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.5" cert="high">
+            <p>συλλαβὴ δ᾽ ἐστὶ φωνὴ ἄσημος, συνθετὴ ἐξ ἀφώνου καὶ φωνὴν ἔχοντος· καὶ ιογὰρ τὸ ΓΡ ἄνευ τοῦ Α συλλαβή, καὶ μετὰ τοῦ Α, οἷον τὸ ΓΡΑ. ἀλλὰ καὶ τούτων θεωρῆσαι τὰς διαφορὰς τῆς μετρικῆς ἐστίν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.6" cert="high">
+            <p>σύνδεσμος δ᾽ ἐστὶ φωνὴ ἄσημος, ἣ οὔτε κωλύει οὔτε ποιεῖ φωνὴν μίαν σημαντικήν, ἐκ πλειόνων φωνῶν πεφυκυῖαν συντίθεσθαι, καὶ ἐπὶ τῶν ἄκρων καὶ ἐπὶ τοῦ μέσου, ἢν μὴ ἁρμόττῃ ἐν ἀρχῇ λόγου τιθέναι καθ᾽ αὑτόν, οἷον μέν, ἤτοι, δή. ἢ φωνὴ ἄσημος ἐκ πλειόνων μὲν φωνῶν μιᾶς,<note>
+1. οἷον τὸ α καὶ τὸ ω G et οἷον τὸ α καὶ ω unus ex Victorii
+libris : om AcBcNa cum ceteris codicibus et editores usque ad
+Victorium. 16. ἐκ Aldus : ἡ ἐκ AcBc et M XIV 21, ἢ ἐκ Na et
+M 14 16 et L.
+</note><pb n="46" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=80"/> σημαντικῶν δέ, ποιεῖν πεφυκυῖα μίαν σημαντικὴν φωνήν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.7" cert="high">
+            <p>ἄρθρον δ᾽ ἐστὶ φωνὴ ἄσημος, ἣ λόγου ἀρχὴν ἢ τέλος ἢ διορισμὸν δηλοῖ, οἷον τὸ φημί καὶ τὸ περὶ καὶ τὰ ἄλλα. ἢ φωνὴ ἄσημος, ἣ οὔτε κωλύει οὔτε ποιεῖ φωνὴν μίαν σημαντικὴν ἐκ πλειόνων φωνῶν, πεφυκυῖα τίθεσθαι καὶ ἐπὶ τῶν ἄκρων καὶ ἐπὶ τοῦ μέσου. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.8" cert="high">
+            <p>ὄνομα δ᾽ ἐστὶ φωνὴ συνθετή, σημαντικὴ ἄνευ χρόνου, ἧς μέρος οὐδέν ἐστι καθ᾽ αὑτὸ σημαντικόν· ἐν γὰρ τοῖς διπλοῖς οὐ χρώμεθα, ὡς καὶ αὐτὸ καθ' αὑτὸ σημαῖνον, οἷον ἐν τῷ Θεοδώρῳ τὸ δῶρον οὐ σημαίνει. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.9" cert="high">
+            <p>ῥῆμα δὲ φωνὴ συνθετή, σημαντικὴ μετὰ χρόνου, ἧς οὐδὲν μέρος σημαίνει καθ᾽ αὑτό, ὥσπερ καὶ ἐπὶ τῶν ὀνομάτων· τὸ μὲν γὰρ ἄνθρωπος ἢ λευκὸν οὐ σημαίνει τὸ πότε, τὸ δὲ βαδίζει ἢ βεβάδικε προσσημαίνει τὸ μὲν τὸν παρόντα χρόνον τὸ δὲ τὸν παρεληλυθότα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.10" cert="high">
+            <p>πτῶσις δ᾽ ἐστὶν ὀνόματος ἢ<note>
+1. σημαντικῶν δέ Μ 21: σημαντικὸν δέ AcBc cum plerisque,
+σημαντικὴν δέ Na et Aldus. 3. φημί] φημὶ Aldus: φ. μ. ι. Na
+cum plerisque, q. μ. τ. Ac, φημί – ἄλλα om Bc et G in lacuna.
+περὶ Aldus: AcNa cum plerisque π. ε. ρ. ι. 13. προσημαίνει
+AcBcNa et M omnes et L et Aldus.
+</note><pb n="47" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=81"/> ῥήματος ἡ μὲν τὸ κατὰ τὸ τούτου ἢ τούτῳ σημαίνουσα καὶ ὅσα τοιαῦτα, ἡ δὲ τὸ κατὰ τὸ ἑνὶ ἢ πολλοῖς, οἷον ἄνθρωποι ἢ ἄνθρωπος, ἡ δὲ κατὰ τὰ ὑποκριτικά, οἷον κατ' ἐρώτησιν ἢ ἐπίταξιν· τὸ γὰρ ἐβάδισεν ἢ βάδιζε πτῶσις ῥήματος κατὰ ταῦτα τὰ εἴδη ἐστίν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.11" cert="high">
+            <p>λόγος δὲ φωνὴ συνθετὴ σημαντική, ἧς ἔνια μέρη καθ᾽ αὑτὰ σημαίνει τι· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.12" cert="high">
+            <p>οὐ γὰρ ἅπας λόγος ἐκ ῥημάτων καὶ ὀνομάτων σύγκειται, οἷον ὁ τοῦ ἀνθρώπου ὁρισμός, ἀλλ' ἐνδέχεται ἄνευ ῥημάτων εἶναι λόγον. μέρος μέντοι ἀεί τι σημαῖνον ἕξει, οἷον ἐν τῷ βαδίζει Κλέων ὁ Κλέων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:20.13" cert="high">
+            <p>εἷς δ᾽ ἐστὶ λόγος διχῶς· ἢ γὰρ ὁ ἓν σημαίνων, ἢ ὁ ἐκ πλειόνων συνδέσμῳ, οἷον ἡ Ἰλιὰς μὲν συνδέσμῳ εἷς, ὁ δὲ τοῦ ἀνθρώπου τῷ ἓν σημαίνειν.]</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="21">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.1" cert="high">
+            <p>Ὀνόματος δὲ εἴδη τὸ μὲν ἁπλοῦν (ἁπλοῦν δὲ λέγω ὃ μὴ ἐκ σημαινόντων σύγκειται, οἷον γῆ) τὸ δὲ διπλοῦν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.2" cert="high">
+            <p>τούτου δὲ τὸ μὲν ἐκ σημαίνοντος καὶ ἀσήμου, τὸ δὲ ἐκ σημαινόντων<note>
+1. codices τὸ κατὰ τούτου, vid. Comment. 2. τὸ post δὲ
+om AcBcNa et M omnes et G L, suggerit Aldus. 4. ἢ ἐπί-
+ταξιν Aldus: ἐπίταξιν AcBcNa et G L. de ceteris tacetur. βά
+διζε] ἐβάδιζε AcBeNa. 9. βαδίζειν AcBcNa et M omnes et 1 Q
+et Aldus. 11. codices συνδέσμων. conf. Comment.
+</note><pb n="48" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=82"/> σύγκειται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.3" cert="high">
+            <p>εἴη δ᾽ ἂν καὶ τριπλοῦν καὶ τετραπλοῦν καὶ πολλαπλοῦν ὄνομα, οἷον τὰ πολλὰ τῶν μεγαλιωτῶν, Ἑρμοκαϊκόξανθος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.4" cert="high">
+            <p>ἅπαν δὲ ὄνομά ἐστιν ἢ κύριον ἢ γλῶττα ἢ μεταφορὰ [ἢ κόσμος] ἢ πεποιημένον ἢ ἐπεκτεταμένον ἢ ὑφῃρημένον ἢ ἐξηλλαγμένον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.5" cert="high">
+            <p>λέγω δὲ κύριον μὲν ᾧ χρῶνται ἑκαστοι, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.6" cert="high">
+            <p>γλῶτταν δὲ ᾧ ἕτεροι, ὥστε φανερὸν ὅτι καὶ γλῶτταν καὶ κύριον εἶναι δυνατὸν τὸ αὐτό, μὴ τοῖς αὐτοῖς δέ· τὸ Αγὰρ σίγυνον Κυπρίοις μὲν κύριον, ἡμῖν δὲ γλῶττα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.7" cert="high">
+            <p>μεταφορὰ δ᾽ ἐστὶν ὀνόματος ἀλλοτρίου ἐπιφορὰ ἢ ἀπὸ τοῦ γένους ἐπὶ εἶδος, ἢ ἀπὸ τοῦ εἴδους ἐπὶ γένος, ἢ ἀπὸ τοῦ εἴδους ἐπὶ εἶδος, ἢ κατὰ τὸ ἀνάλογον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.8" cert="high">
+            <p>λέγω δὲ ἀπὸ γένους μὲν ἐπὶ εἶδος, οἷον “νηῦς δέ μοι ἥδ᾽ ἕστηκε ·” τὸ γὰρ ὁρμεῖν ἐστὶν ἑστάναι τι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.9" cert="high">
+            <p>ἀπ᾽ εἴδους δὲ ἐπὶ γένος· ἦ δὴ μυρί' Ὀδυσσεὺς ἐσθλὰ ἔοργεν·” τὸ γὰρ μυρίον πολύ ἐστιν, ᾧ νῦν ἀντὶ τοῦ πολλοῦ κέχρηται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.10" cert="high">
+            <p>ἀπ᾽ εἴδους δὲ ἐπὶ εἶδος, οἷον “χαλκῷ ἀπὸ 1 ψυχὴν ἀρύσας” καὶ “τεμὼν ἀτειρέϊ χαλκῷ ·” ἐνταῦθα γὰρ<note>
+2. fortasse fuit οἷον τὰ πολλαπλομεγάλωπος, Ἑρμοκαϊκόξανθος.
+cf. Comment. 16. ἀερύσασκε τεμὼν ἀτειρεῖ Bc et M XIV,
+ἀερύσασκε τεμῶν ἀτηρεῖ Ac, ἀερείσας μετ' ἐμῶν ἀτειρεῖ Na et
+</note><pb n="49" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=83"/> τὸ μὲν ἀρύσαι ταμεῖν, τὸ δὲ ταμεῖν ἀρύσαι εἴρηκεν· ἄμφω γὰρ ὠφελεῖν τι ἐστίν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.11" cert="high">
+            <p>τὸ δὲ ἀνάλογον λέγω, ὅταν ὁμοίως ἔχῃ τὸ δεύτερον πρὸς τὸ πρῶτον καὶ τὸ τέταρτον πρὸς τὸ τρίτον· ἐρεῖ γὰρ ἀντὶ τοῦ δευτέρου τὸ τέταρτον ἢ ἀντὶ τοῦ τετάρτου τὸ δεύτερον. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.12" cert="high">
+            <p>καὶ ἐνίοτε προστιθέασιν ἀνθ᾽ οὗ λέγει πρὸς ὅ ἐστιν.] λέγω δὲ οἷον ὁμοίως ἔχει φιάλη πρὸς Διόνυσον καὶ ἀσπὶς πρὸς ῎Αρην· ἐρεῖ τοίνυν τὴν φιάλην ἀσπίδα Διονύσου καὶ τὴν ἀσπίδα φιάλην ῎Αρεως. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.13" cert="high">
+            <p>ἢ ὃ γῆρας πρὸς βίον, καὶ ἑσπέρα πρὸς ἡμέραν· ἐρεῖ τοίνυν τὴν ιοἑσπέραν γῆρας ἡμέρας καὶ τὸ γῆρας ἑσπέραν βίου ἢ ὥσπερ Ἐμπεδοκλῆς δυσμὰς βίου. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.14" cert="high">
+            <p>ἐνίοις δ᾽ οὐκ ἔστιν ὄνομα κείμενον τὸ ἀνάλογον, ἀλλ᾽ οὐδὲν ἧττον ὁμοίως λεχθήσεται· οἷον τὸ τὸν καρπὸν μὲν ἀφιέναι σπείρειν, τὸ δὲ τὴν φλόγα ἀπὸ τοῦ ἡλίου ἀνώνυμον· ἀλλ᾽ ὁμοίως ἔχει τοῦτο πρὸς τὸν ἥλιον καὶ<note>
+Μ 14, ἀερύσας μετ᾽ ἐμῶν ἀτήρει Μ 16 et Q. ceteri similiter
+aberrant. si codicis Bc et Medicei XIV vestigia recte solvun-
+tur, fit ἀρύσας καὶ τεμὼν ἀτειρέϊ, ut aliis aliquatenus praeeun-
+tibus scripsit Bekkerus. prope quoque M 21 ad id quod verum
+est accedit exhibendo ἀερύσας· καὶ τεμὼν ἀτειρεΐ. Aldus αἱρύ-
+σας τάμνεν ἀτήρει. 8 et 9. ἢ – ἡμέραν] Aldus ἔτι ὁμοίως
+ἔχει ἑσπέρα πρὸς ἡμέραν καὶ γῆρας πρὸς βίον. cf. Comment.
+10. καὶ τὸ γῆρας - 11. δυσμὰς βίου Aldus: codices ἢ ὥσπερ
+Ἐμπεδοκλῆς καὶ τὸ γῆρας ἑσπέραν βίου ἢ δυσμὰς βίου.
+</note><pb n="50" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=84"/> τὸ σπείρειν πρὸς τὸν καρπόν, διὸ εἴρηται “σπείρων θεοκτίσταν φλόγα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.15" cert="high">
+            <p>ἔστι δὲ τῷ τρόπῳ τούτῳ τῆς μεταφορᾶς χρῆσθαι καὶ ἄλλως, προσαγορεύσαντα τὸ ἀλλότριον ἀποφῆσαι τῶν οἰκείων τι, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.16" cert="high">
+            <p>οἷον εἰ τὴν ἀσπίδα εἴποι φιάλην μὴ ῎Αρεως ἀλλ᾽ ἄοινον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.17" cert="high">
+            <p>πεποιημένον δ᾽ ἐστὶν ὃ ὅλως μὴ καλούμενον ὑπό τινων αὐτὸς τίθεται ὁ ποιητής· δοκεῖ γὰρ ἔνια εἶναι τοιαῦτα, οἷον τὰ κέρατα ἔρνυγας καὶ τὸν ἱερέα ἀρητῆρα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.18" cert="high">
+            <p>ἐπεκτεταμένον δ᾽ ἐστὶν ἢ ἀφῃρημένον τὸ μέν, ἐὰν φωνήεντι μακροτέρῳ κεχρημένον ἦ τοῦ οἰκείου ἢ συλλαβῇ ἐμβεβλημένῃ, τὸ δ᾽ ἐὰν ἀφῃρημένον τι ᾖ αὐτοῦ, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.19" cert="high">
+            <p>ἐπεκτεταμένον μὲν οἷον τὸ πόλεως πόλιο ληος καὶ τὸ Πηλείδου Πηληϊάδεω, ἀφηρημένον δὲ οἷον τὸ κρῖ καὶ τὸ δῶ καὶ “μία γίνεται ἀμφοτέρων ὄψ.” </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.20" cert="medium">
+            <p>ἐξηλλαγμές νον δ᾽ ἐστίν, ὅταν τοῦ ὀνομαζομένου τὸ μὲν καταλείπῃ τὸ δὲ ποιῇ, οἷον τὸ “δεξιτερὸν κατὰ μᾶζόν” ἀντὶ τοῦ δεξιόν. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.21" cert="high">
+            <p>Αὐτῶν δὲ τῶν ὀνομάτων τὰ μὲν ἄρρενα τὰ δὲ θήλεα<note>
+5. ἄοινον Victorius: codices οἴνου. 10. τι ᾖ] Aldus ᾖ τι ἤ,
+Q τι, AcBeNa cum plerisque ὄντι ᾖ. 11. Πηλείδου] πηλείδου
+Aldus et Parisiensis 2038, πηλέος AcBc et Momnes et GPQ, πη-
+λέως Na. 12. ὄψ Victorius: ο ης Ac, ο ης Na, ὁ Bc, ons Me-
+dicei, οης Aldus. ceteri codices similiter aberrant.
+</note><pb n="51" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=85"/> τὰ δὲ μεταξύ, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.22" cert="high">
+            <p>ἄρρενα μὲν ὅσα τελευτῷ εἰς τὸ Ν καὶ Ρ καὶ Σ καὶ ὅσα ἐκ τούτου (ταῦτα δ᾽ ἐστὶ δύο, Ψ καὶ Ξ), θήλεα δὲ ὅσα ἐκ τῶν φωνηέντων εἴς τε τὰ ἀεὶ μακρά, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.23" cert="high">
+            <p>οἷον εἰς Η καὶ Ω, καὶ τῶν ἐπεκτεινομένων εἰς Α· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="24" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.24" cert="high">
+            <p>ὥστε ἴσα συμβαίνει πλήθει εἰς ὅσα τὰ ἄρρενα καὶ τὰ θήλεα· τὸ γὰρ Ψ καὶ τὸ Ξ ταὐτά ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="25" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.25" cert="high">
+            <p>εἰς δὲ ἄφωνον οὐδὲν ὄνομα τελευτᾷ, οὐδὲ εἰς φωνῆεν βραχύ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="26" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:21.26" cert="high">
+            <p>εἰς δὲ τὸ Ι τρία μόνον, μέλι κόμμι πέ περι. εἰς δὲ τὸ ῾ πέντε, τὸ πῶϋ, τὸ νᾶπυ, τὸ γόνυ, τὸ δόρυ, τὸ ἄστυ. τὰ δὲ μεταξὺ εἰς ταῦτα καὶ Ν καὶ Σ.]</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="22">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.1" cert="high">
+            <p>Λέξεως δὲ ἀρετὴ σαφῆ καὶ μὴ ταπεινὴν εἶναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.2" cert="high">
+            <p>σαφεστάτη μὲν οὖν ἐστὶν ἡ ἐκ τῶν κυρίων ὀνομάτων, ἀλλὰ τα πεινή· παράδειγμα δὲ ἡ Κλεοφῶντος ποίησις καὶ ἡ Σθενέλου. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.3" cert="high">
+            <p>σεμνὴ δὲ καὶ ἐξαλλάττουσα τὸ ἰδιωτικὸν ἡ τοῖς ξενικοῖς κεχρημένη. ξενικὸν δὲ λέγω γλῶτταν καὶ μεταφορὰν καὶ ἐπέκτασιν καὶ πᾶν τὸ παρὰ τὸ κύριον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.4" cert="high">
+            <p>ἀλλ᾿ ἄν τις<note>
+1. καὶ Σ accepi a Madio. 2. τούτου] τούτου ἀφώνων Bc, τού-
+του σύγκειται Na et M omnes et GLP, Ac τούτου, si Bekkeri
+silentio fides, τούτου σύγκειται, si Burgesii amicus recte vidit,
+Aldus τοῦ τῶν ἀφώνων σύγκειται. 1. μόνα Aldus. cf. Com-
+ment. κόμι AcBcNa et L et Aldus. 8. τὸ πῶϋ – 9. ἄστυ
+Aldus: om AcBcNa et M omnes et GLPQ.
+</note><pb n="52" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=86"/> ἅπαντα τοιαῦτα ποιήσῃ, ἢ αἴνιγμα ἔσται ἢ βαρβαρισμός. ἂν μὲν οὖν ἐκ μεταφορῶν, αἴνιγμα, ἐὰν δὲ ἐκ γλωττῶν, βαρβαρισμός. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.5" cert="high">
+            <p>αἰνίγματος γὰρ ἰδέα αὕτη ἐστί, τὸ λέγοντα ὑπάρε χοντα αδύνατα συνάψαι. κατὰ μὲν οὖν τὴν τῶν ὀνομάτων σύνθεσιν οὐχ οἷόν τε τοῦτο ποιῆσαι, κατὰ δὲ τὴν μεταφορὰν5 ἐνδέχεται, οἷον “ἄνδρ᾽ εἶδον πυρὶ χαλκὸν ἐπ᾽ ἀνέρι κολλήσαντα,” καὶ τὰ τοιαῦτα. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.6" cert="medium">
+            <p>ἐκ τῶν γλωττῶν βαρβαρισμός.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.7" cert="high">
+            <p>δεῖ ἄρα κεκρᾶσθαί πως τούτοις· τὸ μὲν γὰρ μὴ ἰδιωτικὸν ποιήσει μηδὲ ταπεινὸν ἡ γλῶττα καὶ ἡ μεταφορὰ [καὶ ὁ κόσμος] καὶ τἆλλα τὰ εἰρημένα εἴδη, τὸ δὲ κύριον τὴν σαφήνειαν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.8" cert="high">
+            <p>οὐκ ἐλάχιστον δὲ μέρος συμβάλλονται εἰς τὸ σαφὲς τῆς λέξεως καὶ μὴ ἰδιωτικὸν αἱ ἐπεκτάσεις καὶ ἀποκοπαὶ καὶ ἐξαλλαγαὶ τῶν ὀνομάτων· διὰ μὲν γὰρ τὸ ἄλλως ἔχειν ἢ ὡς τὸ κύριον τὸ παρὰ τὸ εἰωθὸς γιγνόμενον τὸ μὴ ἰδιωτικὸν ποιήσει, διὰ δὲ τὸ κοινωνεῖν τοῦ εἰωθότος τὸ σαφὲς<note>
+6. πυρίχαλκον AcBcNa et Medicei et L et Aldus.
+8. δεῖ ἄρα
+κεκρᾶσθαι codex Lampridii a Madio laudatus: δεῖ ἄρα κεκρί
+σθαι AcBc et GP et M XIV 21, δεῖ ἀνακεκρίσθαι Na et M 14
+16  et L Q, δι' ὃ ἀνακέκραται Aldus. 9. ἡ prius Aldus: οἷον ἡ
+AcBcNa et Medicei et GLPQ. 14. τὸ παρὰ τὸ] legebatur πα-
+ρὰ τὸ. cf. Comment.
+</note><pb n="53" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=87"/> ἔσται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.9" cert="high">
+            <p>ὥστε οὐκ ὀρθῶς ψέγουσιν οἱ ἐπιτιμῶντες τῷ τοιούτῳ τρόπῳ τῆς διαλέκτου καὶ διακωμῳδοῦντες τὸν ποιητήν, οἷον Ευκλείδης ὁ ἀρχαῖος, ὡς ῥᾴδιον ποιεῖν, εἴ τις δώσει ἐκτείνειν ἐφ᾽ ὁπόσον βούλεται, ἰαμβοποιήσας ἐν αὐτῇ τῇ λέξει· “ἤτοι ῎Αρην εἶδον Μαραθῶνάδε βαδίζοντα,” καὶ “οὐκ ἄν γ᾽ ἐράμενος τὸν ἐκείνου ἐλλέβορον.” </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.10" cert="high">
+            <p>τὸ μὲν οὖν φαίνεσθαι πως χρώμενον τούτῳ τῷ τρόπῳ γελοῖον [, τὸ δὲ μέτρον κοινὸν ἁπάντων ἐστὶ τῶν μερῶν]· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.11" cert="high">
+            <p>καὶ γὰρ μεταφοραῖς καὶ γλώτταις καὶ τοῖς ἄλλοις εἴδεσι χρώμενος ἀπρεπῶς καὶ ἐπίτηδες ἐπὶ τὰ ιογελοῖα τὸ αὐτὸ ἂν ἀπεργάσαιτο. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.12" cert="high">
+            <p>τὸ δὲ ἁρμόττον ὅσον διαφέρει, ἐπὶ τῶν ἐπῶν θεωρείσθω, ἐντιθεμένων τῶν ὀνομάτων εἰς τὸ μέτρον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.13" cert="high">
+            <p>καὶ ἐπὶ τῆς γλώττης δὲ καὶ ἐπὶ τῶν μεταφορῶν καὶ ἐπὶ τῶν ἄλλων ἰδεῶν μετατιθεὶς ἄν τις τὰ κύρια ὀνόματα κατίδοι ὅτι ἀληθῆ λέγομεν· οἷον τὸ αὐτὸ ποιήσανι5τος λαμβεῖον Αἰσχύλου καὶ Εὐριπίδου, ἓν δὲ μόνον ὄνομα<note>
+4. ἤτοι ῎Αρην] ἤτ' χάριν Bc, ἤτει χάριν Ac et M XIV 21, εἴτι χάριν
+Na et ceteri similiter, ἠτίχαριν Aldus. vid. Comment. 5. '
+ἐράμενος BeNa et M 14 XIV, γεράμενος Ac et M 16 21 et GL PQ,
+γεινάμενος Aldus. cf. Comment.
+</note><pb n="54" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=88"/> μεταθέντος, ἀντὶ κυρίου εἰωθότος γλῶτταν, τὸ μὲν φαίνεται καλὸν τὸ δ᾽ εὐτελές. Αἰσχύλος μὲν γὰρ ἐν τῷ Φιλοκτήτῃ ἐποίησε “φαγέδαινα ἥ μου σάρκας ἐσθίει ποδός, ὁ δὲ ἀντὶ τοῦ ἐσθίει τὸ θοινᾶται μετέθηκεν. καὶ νῦν δέ μ᾽ ἐὼν ὀλίγος τε καὶ οὐτιδανὺς καὶ ἄκικυς, εἴ τις λέγοι τὰ κύρια μετατιθείς νῦν δέ μ᾽ ἐὼν μικρός τε καὶ ἀσθενικὸς καὶ ἀειδής. καὶ δίφρον ἀεικέλιον καταθεὶς ὀλίγην τε τράπεζαν. δίφρον μοχθηρὸν καταθεὶς μικρᾶν τε τράπεζαν, καὶ τὸ “ἠϊόνες βοόωσιν” ἠϊόνες κράζουσιν. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.14" cert="high">
+            <p>Ἔτι δὲ Ἀρειφράδης τοὺς τραγῳδοὺς ἐκωμῴδει, ὅτι ἃ οὐδεὶς ἂν εἴποι ἐν τῇ διαλέκτῳ, τούτοις χρῶνται, οἷον τὸ δω<pb n="55" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=89"/>μ<note>
+1. μεταθέντος Aldus: μετατιθέντος AoBeNa cum plerisque, με-
+τατιθέντες G, ἀνατιθέντος Μ 14. 3. φαγέδαινα Aldus: qa-
+γάδενα AcBeNa et GL. ex ceteris nihil enotatum est. 5. ἄκι-
+κυς Victorius: ἀειδής AcBC, ἀηδής Na, et alterutrum relicui. 7.
+μ' ἐὼν Aldus: μεὼν AcBcNa, μ᾿ αἰών Ac in margine et G. τε
+Aldus; δε Ac, δὲ L, om BeNa et G. 9. δίφρον τε ἀεικέλιον
+AcBcNa et G P, δίφρον ἀεικέλλιον Aldus. 11. ἠϊόνες βοόωσιν
+ἠϊόνες unus ex Victorii libris: ἴωνες βοῶσιν ἢ ἴωνες AcBeNa cum
+plerisque et sic Aldus, nisi quod βοόωσιν.
+</note>άτων ἄπο ἀλλὰ μὴ ἀπὸ δωμάτων, καὶ τὸ σέθεν, καὶ τὸ ἐγὼ δέ νιν, καὶ τὸ Ἀχιλλέως πέρι ἀλλὰ μὴ περὶ Ἀχιλλέως, καὶ ὅσα ἄλλα τοιαῦτα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.15" cert="high">
+            <p>διὰ γὰρ τὸ μὴ εἶναι ἐν τοῖς κυρίοις ποιεῖ τὸ μὴ ἰδιωτικὸν ἐν τῇ λέξει ἅπαντα τὰ τοιαῦτα· ἐκεῖνος δὲ τοῦτο ἠγνόει.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.16" cert="medium">
+            <p>Ἔστι δὲ μέγα μὲν τὸ ἑκάστῳ τῶν εἰρημένων πρεπόντως 9 χρῆσθαι, καὶ διπλοῖς ὀνόμασι καὶ γλώτταις, πολὺ δὲ μέγιστον τὸ μεταφορικὸν εἶναι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.17" cert="high">
+            <p>μόνον γὰρ τοῦτο οὔτε παρ' ἄλλου ἔστι λαβεῖν εὐφυΐας τε σημεῖόν ἐστιν· τὸ γὰρ εὖ μεταφέρειν τὸ τὸ ὅμοιον θεωρεῖν ἐστίν, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.18" cert="high">
+            <p>τῶν δ᾽ ὀνομάτων τὰ μὲν διπλᾶ μάλιστα ἁρμόττει τοῖς διθυράμβοις, αἱ δὲ γλῶτται τοῖς ἡρωϊκοῖς, αἱ δὲ μεταφοραὶ τοῖς ἰαμβείοις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.19" cert="high">
+            <p>καὶ ἐν μὲν τοῖς ἡρωϊκοῖς ἅπαντα χρήσιμα τὰ εἰρημένα· ἐν δὲ τοῖς ἰαμβείοις, διὰ τὸ ὅτι μάλιστα λέξιν μιμεῖσθαι, ταῦτα ἁρμόττει τῶν ὀνομάτων ὅσοις κἂν ἐν λόγοις τις χρήσαιτο· ἔστι δὲ τὰ τοιαῦτα τὸ κύριον καὶ μεταφορὰ [καὶ κόσμος]. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:22.20" cert="high">
+            <p>περὶ<note>
+15. καὶ ἐν ὅσοις λόγοις AcBcNa et Medicei omnes, ὅσοις καὶ ἐν
+ὅσοις λόγοις GLPQ, ὅσοις καὶ ἐν λόγοις Aldus; κἂν pro καὶ
+acceptum a Bekkero.
+</note><pb n="56" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=90"/> μὲν οὖν τραγῳδίας καὶ τῆς ἐν τῷ πράττειν μιμήσεως ἔστω ἡμῖν ἱκανὰ τὰ εἰρημένα.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="23">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:23.1" cert="high">
+            <p>Περὶ δὲ τῆς διηγηματικῆς καὶ ἐν μέτρῳ μιμητικῆς, ὅτι δεῖ τοὺς μύθους καθάπερ ἐν ταῖς τραγῳδίαις συνιστάναι δραματικούς, καὶ περὶ μίαν πρᾶξιν ὅλην καὶ τελείαν, ἔχουσαν ἀρχὴν καὶ μέσον καὶ τέλος, ἵν᾿ ὥσπερ ζῷον ἓν ὅλον ποιῇ τὴν οἰκείαν ἡδονήν, δῆλον, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:23.2" cert="high">
+            <p>καὶ μὴ ὁμοίας ἱστορίας τὰς συνήθεις εἶναι, ἐν αἷς ἀνάγκη οὐχὶ μιᾶς πράξεως ποιεῖσθαι δήλωσιν ἀλλ᾽ ἑνὸς χρόνου, ὅσα ἐν τούτῳ συνέβη περὶ ἕνα ἢ πλείους, ὧν ἕκαστον ὡς ἔτυχεν ἔχει πρὸς ἄλληλα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:23.3" cert="high">
+            <p>ὥσπερ γὰρ κατὰ τοὺς αὐτοὺς χρόνους ἥ τ᾽ ἐν Σαλαμῖνι ἐγένετο ναυμαχία καὶ ἡ ἐν Σικελίᾳ Καρχηδονίων μάχη, οὐδὲν πρὸς τὸ αὐτὸ συντείνουσαι τέλος, οὕτω καὶ ἐν τοῖς ἐφεξῆς χρόνοις ἐνίοτε γίνεται θάτερον μετὰ θατέρου, ἐξ ὧν ἓν οὐδὲν γίνεται τέλος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:23.4" cert="high">
+            <p>σχεδὸν δὲ οἱ πολλοὶ τῶν ποιητῶν τοῦτο δρῶσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:23.5" cert="high">
+            <p>διό, ὥσπερ<note>
+6. μέσον Aldus: μέσα AcBc et M XIV 21 et GP, μέσην Na et
+M 14 16 et L.
+</note><pb n="57" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=91"/> εἴπομεν ἤδη, καὶ ταύτῃ θεσπέσιος ἂν φανείη Ὅμηρος παρὰ τοὺς ἄλλους, τῷ μηδὲ τὸν πόλεμον, καίπερ ἔχοντα ἀρχὴν καὶ τέλος, ἐπιχειρῆσαι ποιεῖν ὅλον, λίαν γὰρ ἂν μέγας καὶ οὐκ εὐσύνοπτος ἔμελλεν ἔσεσθαι, ἢ τῷ μεγέθει μετριάζοντα καταπεπλεγμένον τῇ ποικιλίᾳ. νῦν δ᾽ ἓν μέρος ἀπολαβών ἐπεισοδίοις κέχρηται [αὐτῶν] πολλοῖς, οἷον νεῶν καταλόγῳ καὶ ἄλλοις ἐπεισοδίοις, οἷς διαλαμβάνει τὴν ποίησιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:23.6" cert="high">
+            <p>οἱ δ᾽ ἄλλοι περὶ ἕνα ποιοῦσι καὶ περὶ ἕνα χρόνον, καὶ μίαν πρᾶξιν πο λυμερῆ, οἷον ὁ τὰ Κύπρια ποιήσας καὶ τὴν μικρὰν Ιλιάδα. [</p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:23.7" cert="high">
+            <p>τοιγαροῦν ἐκ μὲν Ἰλιάδος καὶ Ὀδυσσείας μία τραγῳδία ποιεῖται ἑκατέρας ἢ δύο μόναι, ἐκ δὲ Κυπρίων πολλαὶ καὶ τῆς μικρᾶς Ιλιάδος πλέον ὀκτώ, οἷον ὅπλων κρίσις, Φιλοκτήτης, Νεοπτόλεμος, Εὐρύπυλος, πτωχεία, Λάκαιναι, Ἰλίου πέρσις καὶ ἀπόπλους καὶ Σίνων καὶ Τρῳάδες.]</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="24">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.1" cert="high">
+            <p>Ἔτι δὲ τὰ εἴδη ταὐτὰ δεῖ ἔχειν τὴν ἐποποιίαν τῇ τρα<pb n="58" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=92"/>γ<note>
+7. οἷς Victorius Paccium convertentem quibus secutus: Ac pr
+BcNa cum plerisque et Aldus δὶς, recentior Ac delet: M 21
+omittit. 9. κυπρικὰ AcBc et M XIV 16 21 et Q, κυπριακὰ
+Na (et M 14) et Aldus. 11. καὶ] vulgo cum Aldo legunt καὶ
+ἐκ. vid. Comment.
+</note>ῳδία [· ἢ γὰρ ἁπλῆν ἢ πεπλεγμένην ἢ ἠθικὴν ἢ παθητι. κήν.], </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.2" cert="high">
+            <p>καὶ τὰ μέρη ἔξω μελοποιίας καὶ ὄψεως ταὐτά· καὶ γὰρ περιπετειῶν δεῖ καὶ ἀναγνωρίσεων καὶ παθημάτων· ἔτι τὰς διανοίας καὶ τὴν λέξιν ἔχειν καλῶς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.3" cert="high">
+            <p>οἷς ἅπασιν Ὅμηρος κέχρηται καὶ πρῶτος καὶ ἱκανῶς. καὶ γὰρ καὶ τῶν ποιημά-5 των ἑκάτερον συνέστηκεν ἡ μὲν Ἰλιὰς ἁπλοῦν καὶ παθητικόν, ἡ δὲ Οδύσσεια πεπλεγμένον· ἀναγνώρισις γὰρ διόλου καὶ ἠθική. πρὸς δὲ τούτοις λέξει καὶ διανοίᾳ πάντας ὑπερβέβληκεν, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.4" cert="high">
+            <p>διαφέρει δὲ κατά τε τῆς συστάσεως τὸ μῆκος ἡ ἐποποιία καὶ τὸ μέτρον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.5" cert="high">
+            <p>τοῦ μὲν οὖν μήκους ὅρος ἱκανὸς διο εἰρημένος· ᾿δύνασθαι γὰρ δεῖ συνορᾶσθαι τὴν ἀρχὴν καὶ τὸ τέλος. [εἴη δ᾽ ἂν τοῦτο, εἰ τῶν μὲν ἀρχαίων ἐλάττους αἱ συστάσεις εἶεν, πρὸς δὲ τὸ πλῆθος τῶν τραγῳδιῶν τῶν εἰς μίαν ἀκρόασιν τιθεμένων παρήκοιεν.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.6" cert="high">
+            <p>ἔχει δὲ πρὸς τὸ ἐπεκτείνεσθαι τὸ μέγεθος πολύ τι ἡ ἐποποιία ἴδιον διὰ τὸ ἐν<note>
+2. δεῖ εἶναι post παθητικήν addit Aldus: om AcBcNa et M omnes
+et GLPQ. 8. πάντας Aldus: πάντα AcBeNa et L Q.
+13.
+πρὸς δὲ GP et M XIV: πρόσθε Ac, πρόσθεν Na et M 14 16 et
+LQ, πρός τε Bc et Allus. τῶν post πλῆθος Aldus: codicibus
+deest.
+</note><pb n="59" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=93"/> μὲν τῇ τραγῳδίᾳ μὴ ἐνδέχεσθαι ἅμα πραττόμενα πολλα μέρη μιμεῖσθαι, ἀλλὰ τὸ ἐπὶ τῆς σκηνῆς καὶ τῶν ὑποκριτῶν μέρος μόνον· ἐν δὲ τῇ ἐποποιίᾳ, διὰ τὸ διήγησιν εἶναι, ἔστι πολλὰ μέρη ἅμα ποιεῖν περαινόμενα, ὑφ᾽ ὧν οἰκείων ὄντων αὔξεται ὁ τοῦ ποιήματος ὄγκος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.7" cert="high">
+            <p>ὥστε τοῦτ᾽ ἔχει τὸ ἀγαθὸν εἰς με γαλοπρέπειαν καὶ τὸ μεταβάλλειν [τὸν ἀκούοντα] καὶ ἐπεισοδιοῦν ἀνομοίοις ἐπεισοδίοις· τὸ γὰρ ὅμοιον ταχὺ πληροῦν ἐκπίπτειν ποιεῖ τὰς τραγῳδίας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.8" cert="high">
+            <p>τὸ δὲ μέτρον τὸ ἡρωϊκὸν ἀπὸ τῆς πείρας ἥρμοκεν. εἰ γάρ τις ἐν ἄλλῳ τινὶ μέτρῳ διηγηματικὴν μίμησιν ποιοῖτο ἢ ἐν πολλοῖς, ἀπρεπὲς ἂν φαίνοιτο • </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.9" cert="high">
+            <p>τὸ γὰρ ἡρωϊκὸν στασιμώτατον καὶ ὀγκωδέστατον τῶν μέτρων ἐστίν [, διὸ καὶ γλώττας καὶ μεταφορὰς δέχεται μάλιστα· περιττὴ γὰρ καὶ ἡ διηγηματικὴ μίμησις τῶν ἄλ λων.], </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.10" cert="high">
+            <p>τὸ δὲ ἰαμβικὸν καὶ τετράμετρον κινητικά, τὸ μὲν ὀρω χηστικόν, τὸ δὲ πρακτικόν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.11" cert="high">
+            <p>ἔτι δὲ ἀτοπώτερον εἰ μιγνύοι τις αὐτά, ὥσπερ Χαιρήμων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.12" cert="high">
+            <p>διὸ οὐδεὶς μακρὰν σύστασιν ἐν ἄλλω πεποίηκεν ἢ τῷ ἡρῴῳ, ἀλλ᾿ ὥσπερ εἴπομεν, αὐτὴ ἡ<pb n="60" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=94"/> φύσις διδάσκει τὸ ἁρμόττον αὐτῇ διαιρεῖσθαι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.13" cert="high">
+            <p>Ὅμηρος δὲ ἄλλα τε πολλὰ ἄξιος ἐπαινεῖσθαι, καὶ δὴ καὶ ὅτι μόνος τῶν ποιητῶν οὐκ ἀγνοεῖ ὃ δεῖ ποιεῖν αὐτόν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.14" cert="high">
+            <p>αὐτὸν γὰρ δεῖ τὸν ποιητὴν ἐλάχιστα λέγειν· οὐ γάρ ἐστι κατὰ ταῦτα μιμητής. οἱ μὲν οὖν ἄλλοι αὐτοὶ μὲν δι' ὅλου ἀγωνίζονται, μιμοῦνται δὲ ὀλίγα καὶ ὀλιγάκις· ὁ δὲ ὀλίγα φροιμιασάμενος εὐθὺς εἰσάγει ἄνδρα ἢ γυναῖκα ἢ ἄλλο τι ἦθος, καὶ οὐδὲν ἄηθες [, ἀλλ᾽ ἔχοντα ἤθη]. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.15" cert="high">
+            <p>δεῖ μὲν οὖν ἐν ταῖς τραγῳδίαις ποιεῖν τὸ θαυμαστόν, μᾶλλον δ᾽ ἐνδέχεται ἐν τῇ ἐποποιίᾳ τὸ ἄλογον (δι' ὃ συμβαίνει μάλιστα τὸ θαυμαστόν) διὰ τὸ μὴ ὁρᾶν εἰς τὸν πράττοντα, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.16" cert="high">
+            <p>ἐπεὶ τὰ περὶ τὴν Εκτορος δίωξιν ἐπὶ σκηνῆς ὄντα γελοῖα ἂν φανείη, οἱ μὲν ἑστῶτες καὶ οὐ διώκοντες, ὁ δὲ ἀνανεύων· ἐν δὲ τοῖς ἔπεσι λανθάνει. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.17" cert="high">
+            <p>τὸ δὲ θαυμαστὸν ἡδύ• σημεῖον δέ, πάντες γὰρ προστιθέντες ἀπαγγέλλουσιν ὡς χαριζόμενοι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.18" cert="medium">
+            <p>δεδίδαχε δὲ μάλιστα Ὅμηρος καὶ<note>
+7. οὐδὲν ἄηθες Aldus : οὐδένα ἤθη Ac et M 21 et L, οὐδένα ἤθει
+Na et Q, οὐδέν' ἀήθει Μ 14 16, οὐδὲν ήθη BC, οὐδέν᾽ ἀήθη Μ
+XIV. 9. ἄλογον Victorius: codices ἀνάλογον.
+</note><pb n="61" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=95"/> τοὺς ἄλλους ψευδῆ λέγειν ὡς δεῖ. ἔστι δὲ τοῦτο παραλογισμός. οἴονται γὰρ ἄνθρωποι, ὅταν τουδὶ ὄντος τοδὶ ᾖ ἢ για νομένου γίνηται, εἰ τὸ ὕστερόν ἐστι, καὶ τὸ πρότερον εἶναι ἢ γίνεσθαι· τοῦτο δ᾽ ἐστὶ ψεῦδος. [διὸ δή, ἂν τὸ πρῶτον ψεῦδος, ἄλλου δὲ τούτου ὄντος, ἀνάγκη ἢ εἶναι ἢ γενέσθαι προσθεῖναι; διὰ γὰρ τὸ τοῦτο εἰδέναι ἀληθὲς ὄν, παραλογίζεται ἡμῶν ἡ ψυχὴ καὶ τὸ πρῶτον ὡς ὄν. παράδειγμα δὲ τοῦτο ἐκ τῶν Νίπτρων.] </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.19" cert="high">
+            <p>προαιρεῖσθαί τε δεῖ άδύνατα εἰκότα μᾶλλον ἢ δυνατὰ ἀπίθανα, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.20" cert="high">
+            <p>τούς τε λόγους μὴ συνίστασθαι ἐκ μερῶν ἀλόγων [, ἀλλὰ μάλιστα μὲν μηδὲν ἔχειν ἄλογον, εἰ δὲ μή, ἔξω τοῦ μυθεύματος, ὥσπερ Οἰδίπους τὸ μὴ εἰδέ ναι πῶς ὁ Λάϊος ἀπέθανεν, ἀλλὰ μὴ ἐν τῷ δράματι, ὥσπερ ἐν Ἠλέκτρᾳ οἱ τὰ Πύθια ἀπαγγέλλοντες, ἢ ἐν Μυσοῖς ὁ ἄφωνος ἐκ Τεγέας εἰς τὴν Μυσίαν ἥκων]· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.21" cert="high">
+            <p>ὥστε τὸ λέγειν ὅτι ἀνῄρητο ἂν ὁ μῦθος γελοῖον· ἐξ ἀρχῆς γὰρ οὐ δεῖ συνίστα<pb n="62" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=96"/>σ<note>
+
+
+5. codices ἀνάγκη εἶναι ἢ γενέσθαι ἢ προσθεῖναι. 8. vulgo
+legunt τούτου codicibus repugnantibus. cf. Comment.
+ἥκων· ὥστε (Bc et) Aldus: ἥκων ὅστε AC, εἰκόνος τε Na et M 14,
+ἥκωνος τε Μ 16 21.
+</note>θαι τοιούτους· ἂν δὲ θῇ, καὶ φαίνηται εὐλογώτερον, ἀπο δέχεσθαι καὶ ἄτοπον, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.22" cert="high">
+            <p>ἐπεὶ καὶ τὰ ἐν Ὀδυσσείᾳ ἄλογα τὰ περὶ τὴν ἔκθεσιν, ὡς οὐκ ἂν ἦν ἀνεκτά, δῆλον ἂν γένοιτο, εἰ αὐτὰ φαῦλος ποιητὴς ποιήσειεν· νῦν δὲ τοῖς ἄλλοις ἀγαθοῖς ὁ ποιητὴς ἀφανίζει ἡδύνων τὸ ἄτοπον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:24.23" cert="high">
+            <p>τῇ δὲ λέξει δεῖ δια-5 πονεῖν ἐν τοῖς ἀργοῖς μέρεσι καὶ μήτε ἠθικοῖς μήτε διανοητικοῖς· ἀποκρύπτει γὰρ πάλιν ἡ λίαν λαμπρὰ λέξις τά τε ἤθη καὶ τὰς διανοίας.</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="25">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.1" cert="high">
+            <p>Περὶ δὲ προβλημάτων καὶ λύσεων, ἐκ πόσων τε καὶ ποίων ἂν εἰδῶν εἴη, ὧδ᾽ ἂν θεωροῦσι γένοιτ᾽ ἂν φανερόν, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.2" cert="high">
+            <p>ἐπεὶ γάρ ἐστι μιμητὴς ὁ ποιητής, ὥσπερ ἂν εἰ ζωγράφος ἤ τις ἄλλος εἰκονοποιός, ἀνάγκη μιμεῖσθαι τριῶν ὄντων τὸν ἀριθμὸν ἕν τι αεί· ἢ γὰρ οἷα ἦν ἢ ἔστιν, ἢ οἷα φασὶ καὶ δοκεῖ, ἢ οἷα εἶναι δεῖ. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.3" cert="high">
+            <p>ταῦτα δ᾽ ἐξαγγέλλεται λέξει ἢ καὶ γλώτταις καὶ μεταφοραῖς. καὶ πολλὰ πάθη τῆς λέξεως ἐστιν·<note>
+1. εὐλογώτερον] εὐλογότερον Allus, εὐλογωτέρως AeBcNa et P,
+εὐλογοτέρως Μ 16 et G L. 4. ποιήσειεν] ποιήσειε D. Hein-
+sius: codices ποιήσει. 10. εἴη (Na et) Aldus: AcBc et M XIV
+16  21 et GLP Q ἐστιν. 12. τὸν ἀριθμὸν Aldus: τῶ ἀριθμῶ
+Bc, τῷ ἀριθμῷ M XIV et G, τῶν ἀριθμῶν AcNa et L Q.
+</note><pb n="63" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=97"/> </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.4" cert="high">
+            <p>δίδομεν γὰρ ταῦτα τοῖς ποιηταῖς. πρὸς δὲ τούτοις οὐχ ἧς αὐτὴ ὀρθότης ἐστὶ τῆς πολιτικῆς καὶ τῆς ποιητικῆς, οὐδὲ ἄλ λης τέχνης καὶ ποιητικῆς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.5" cert="high">
+            <p>αὐτῆς δὲ τῆς ποιητικῆς διττὴ ἡ ἁμαρτία· ἡ μὲν γὰρ καθ' αὐτήν, ἡ δὲ κατὰ συμβεβηκός. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.6" cert="high">
+            <p>εἰ μὲν γὰρ προείλετο μιμήσασθαι ἀδυναμίαν, αὐτῆς ἡ ἁμαρτία· εἰ δὲ [τὸ προελέσθαι μὴ ὀρθῶς, ἀλλὰ] τὸν ἵππον ἄμφω τὰ δεξιὰ προβεβληκότα ἢ τὸ καθ᾿ ἑκάστην τέχνην ἁμάρτημα, οἷον τὸ κατ᾿ ἰατρικὴν ἢ ἄλλην τέχνην, ἣ ἀδύνατα πεποίηται, ὁποιανοῦν, οὐ καθ᾿ ἑαυτήν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.7" cert="high">
+            <p>ὥστε δεῖ τὰ ἐπιτιμήματα ἐν τοῖς προβλήμασιν ἐκ τούτων ἐπισκοποῦντα λύειν. πρῶτον μέν, ἂν τὰ πρὸς αὐτὴν τὴν τέχνην ἀδύνατα πεποίηται, ἡμάρτηται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.8" cert="high">
+            <p>ἀλλ᾽ ὀρθῶς ἔχει, εἰ τυγχάνει τοῦ τέλους τοῦ αὐτῆς· τὸ γὰρ τέλος εἴρηται, εἰ οὕτως ἐκπληκτικώτερον ἢ αὐτὸ ἢ ἄλλο ποιεῖ μέρος. παράδειγμα ἡ τοῦ Ἕκτορος δίωξις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.9" cert="high">
+            <p>εἰ μέντοι τὸ τέλος ἢ μᾶλλον ἢ ἧττον ἐνεδέχετο ὑπάρχειν καὶ κατὰ τὴν περὶ<note>
+3. ἡ post διττὴ Aldus: om AcBeNa et Medicei et GLQ. 4
+et 6. εἰ Parisiensis 2038: ἢ AcBcNa, ἡ Aldus. 8. ἣ (Na): ἢ
+AcBc et GLQ et Aldus, &amp; editores nonnulli, in quibus Win-
+stanleius nihil referens de Mediceis.
+</note><pb n="64" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=98"/> τούτων τέχνην, ἡμάρτηται οὐκ ὀρθῶς· δεῖ γάρ, εἰ ἐνδέχε ται, ὅλως μηδαμῇ ἡμαρτῆσθαι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.10" cert="high">
+            <p>ἔτι ποτέρων ἐστὶ τὸ ἁμάρτημα, τῶν κατὰ τὴν τέχνην ἢ κατ᾿ ἄλλο συμβεβηκός; ἔλαττον γάρ , εἰ μὴ ᾔδει ὅτι ἔλαφος θήλεια κέρατα οὐκ ἔχει, ἢ εἰ κακομιμήτως ἔγραψεν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.11" cert="high">
+            <p>πρὸς δὲ τούτοις ἐὰν ἐπιτιμᾶται ὅτι οὐκ ἀληθῆ, ἀλλ᾽ οἷα δεῖ, οἷον καὶ Σοφοκλῆς ἔφη αὐτὸς μὲν οἵους δεῖ ποιεῖν, Εὐριπίδης δὲ οἷοι εἰσί, ταύτῃ λυτέον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.12" cert="high">
+            <p>εἰ δὲ μηδετέρως, ὅτι οὕτω φασίν, οἷον τὰ περὶ θεῶν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.13" cert="high">
+            <p>ἴσως γὰρ οὔτε βέλτιον οὕτω λέγειν οὔτ᾽ ἀληθῆ, ἀλλ᾽ ἔτυχεν ὡς παρὰ Ξενοφάνει· ἀλλ᾽ οὔ φασι </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.14" cert="medium">
+            <p>τάδε. ἴσως οὐ βέλτιον μέν, ἀλλ' οὕτως εἶχεν, οἷον τὰ περὶ τῶν ὅπλων, “ἔγχεα δέ σφιν ὄρθ᾽ ἐπὶ σαυρωτῆρος·” οὕτω γὰρ τότ᾽ ἐνόμιζον, ὥσπερ καὶ νῦν Ιλλυριοί. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.15" cert="high">
+            <p>περὶ δὲ τοῦ καλῶς ἢ μὴ καλῶς ἢ εἴρηταί τινι ἢ πέπρακται, οὐ μόνον σκεπτέον εἰς αὐτὸ τὸ πεπραγμένον ἢ<note>
+1. ἡμάρτηται Aldus: ἡμαρτῆσθαι BeNa et Medicei et GLPQ,
+μαρτῆσθαι Ac. 6. οἷα Aldus: ἴσως AcBcNa et M omnes et
+GLPQ. 7. Εὐριπίδην Heinsius. conf. Comment. 9. ὡς
+παρὰ] legebatur ὥσπερ. 10. ξενοφάνει Na et M 14: ξενοφάνη
+Ac et M 16 '21, ξενοφάνῃ LQ, ξενοφάνης (Bc et) Aldus. conf.
+Comment. post tows Aldus inseruit dè codicibus repugnan-
+tibus.
+</note><pb n="65" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=99"/> εἰρημένον βλέποντα, εἰ σπουδαῖον ἢ φαῦλον, ἀλλὰ καὶ εἰς τὸν πράττοντα ἢ λέγοντα πρὸς ὃν ἢ ὅτε ἢ ὅτῳ ἢ οὗ ἕνεκεν, οἷον ἢ μείζονος ἀγαθοῦ, ἵνα γένηται, ἢ μείζονος κακοῦ, ἵνα ἀπογένηται· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.16" cert="high">
+            <p>τὰ δὲ πρὸς τὴν λέξιν ὁρῶντα δεῖ διαλύειν, οἷον γλώττῃ “οὐρῆας μὲν πρῶτον·” ἴσως γὰρ οὐ τοὺς ἡμιόνους λέγει ἀλλὰ τοὺς φύλακας. καὶ τὸν Δόλωνα ὓς δή τοι εἶδος μὲν ἔην κακός,” οὐ τὸ σῶμα ἀσύμμετρον, ἀλλὰ τὸ πρόσωπον αἰσχρόν. τὸ γὰρ εὐειδὲς οἱ Κρῆτες εὐπρόσωπον καλοῦσιν. καὶ τὸ “ζωρότερον δὲ κέραιε” οὐ τὸ ἄκρατον ὡς οἰνόφλυξιν, ιοἀλλὰ τὸ θᾶττον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="17" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.17" cert="high">
+            <p>τὸ δὲ κατὰ μεταφορὰν εἴρηται, οἷον “ἄλλοι μέν ῥα θεοί τε καὶ ἀνέρες εὗδον παννύχιοι·” ἅμα δέ φησιν “ἤτοι ὅτ᾽ ἐς πεδίον τὸ Τρωϊκὸν ἀθρήσειεν, αὐλῶν συρίγγων θ' ὁμαδόν.” τὸ γὰρ πάντες ἀντὶ τοῦ πολλοὶ κατὰ μεταφορὰν εἴρηται· τὸ γὰρ πᾶν πολύ τι. καὶ τὸ οἴη δ᾽ ἄμμορος” κατὰ μεταφοράν· τὸ γὰρ γνωριμώτατον μόνον. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="18" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.18" cert="high">
+            <p>κατὰ<note>
+6. ὡς ῥῆτοι Ac, ὡς ῥά τοι Bc, ὡς Na, et similiter ceteri
+aberrant vulgatam exhibuit Victorius. 9. κέραι ἔου τὸ Ac,
+κεραε οὐ τὸ Bc et (κέρας) GL, κέρεες οὐ τὸ Νa, κέραιρε, οὐ τὸ
+Aldus.
+</note><pb n="66" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=100"/> δὲ προσῳδίαν, ὥσπερ Ιππίας ἔλυεν ὁ Θάσιος τὸ “δίδομεν δέ οἱ” καὶ “τὸ μὲν οὐ καταπύθεται ὄμβρῳ.” </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="19" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.19" cert="high">
+            <p>τὰ δὲ διαιρέσει, οἷον Ἐμπεδοκλῆς “αἶψα δὲ θνήτ᾽ ἐφύοντο, τὰ πρὶν μάθον ἀθάνατα ζῷά τε πρὶν κέκριτο.” </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="20" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.20" cert="high">
+            <p>τὰ δὲ ἀμφιβολίᾳ, “παρῴχηκεν δὲ πλέων νύξ·” τὸ γὰρ πλέων ἀμφίβολόν ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="21" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.21" cert="high">
+            <p>τὰ5 δὲ κατὰ τὸ ἔθος τῆς λέξεως, ὅθεν τὸν κεκραμένον οἶνόν φύσιν εἶναι, ὅθὲν πεποίηται “κνημὶς νεοτεύκτου κασσιτέροιο,” καὶ χαλκέας τοὺς τὸν σίδηρον ἐργαζομένους, ὅθεν εἴρηται ὁ Γανυμήδης Διὶ οἰνοχοεύειν, οὐ πινόντων οἶνον. εἴη δ᾽ ἂν τοῦτό γε κατὰ μεταφοράν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="22" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.22" cert="high">
+            <p>δεῖ δὲ καὶ ὅταν ὄνομά τι ὑπεναντίωμά τι δοκῇ σημαίνειν, ἐπισκοπεῖν ποσαχῶς ἂν σημήνειε τοῦτο ἐν τῷ εἰρημένῳ, οἷον “τῇ δ' ἔσχετο χάλκεον ἔγχος,” τὸ ταύτῃ κωλυθῆναι. ποσαχῶς ἐνδέχεται </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="23" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.23" cert="high">
+            <p>ὧδί πως μάλιστ᾽ ἄν τις ὑπολάβοι, κατὰ τὴν καταντικρὺ </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="24" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.24" cert="high">
+            <p>ἢ ὡς Γλαύκων λέγει<note>
+2. οὐ] οὗ AcBc G et Aldus. 6. ὅθεν τὸν κεκραμένον] codices
+τῶν κεκραμένων, Aldus οἷον τὸν κεκραμένον. vid. Comment.
+11. σημαίνειε Bc et G, σημαίνειεν Na, σημαίνοιε Ac et Q, ση-
+μαίνει Μ 14. 13. τὸ δὲ ante ποσαχῶς addit Aldus. conf.
+Comment. ὧδί πως Aldus: ὠδικῶς BeNa et (ὠδικῶς) GLPQ,
+ωδιηως Ac, ex Victorianis unus ὠδικῶς, ceteri δίχως.
+</note><pb n="67" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=101"/> ὅτι ἔνιοι αλόγως προϋπολαμβάνουσι, καὶ αὐτοὶ καταψηφισάμενοι συλλογίζονται, καὶ ὡς εἰρηκότες “ὅτι δοκεῖ” ἐπιτιμῶσιν, ἂν ὑπεναντίον ᾖ τῇ αὐτῶν οἰήσει. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="25" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.25" cert="high">
+            <p>τοῦτο δὲ πέπονθε τὰ περὶ Ἰκάριον. οἴονται γὰρ αὐτὸν Λάκωνα εἶναι· ἄτοπον οὖν τὸ μὴ ἐντυχεῖν τὸν Τηλέμαχον αὐτῷ εἰς Λακεδαίμονα ἐλθόντα. τὸ δ᾽ ἴσως ἔχει ὥσπερ οἱ Κεφαλῆνές φασιν· παρ' αὑτῶν γὰρ γῆμαι λέγουσι τὸν Ὀδυσσέα, καὶ εἶναι Ἰκάδιον ἀλλ᾽ οὐκ Ἰκάριον. διαμάρτημα δὲ τὸ πρόβλημα εἰκός ἐστιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="26" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.26" cert="high">
+            <p>ὅλως δὲ τὸ ἀδύνατον μὲν πρὸς τὴν ποίησιν ἢ πρὸς τὸ βέλτιον ἢ πρὸς νοτὴν δόξαν δεῖ ἀνάγειν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="27" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.27" cert="high">
+            <p>πρός τε γὰρ τὴν ποίησιν αἱρετώτεον πιθανὸν ἀδύνατον ἢ ἀπίθανον καὶ δυνατόν· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="28" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.28" cert="high">
+            <p>τοιούτους δ᾽ εἶναι οἵους Ζεῦξις ἔγραφεν. ἀλλὰ καὶ πρὸς τὸ βέλτιον· τὸ γὰρ παράδειγμα δεῖ ὑπερέχειν </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="29" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.29" cert="high">
+            <p>πρὸς ἅ φασι τἄλογα. οὕτω τε καὶ ὅτι ποτὲ οὐκ ἄλογόν ἐστιν· εἰκὸς γὰρ καὶ παρὰ τὸ εἰκὸς γίνεσθαι. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="30" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.30" cert="high">
+            <p>τὰ δ᾽ ὑπεναντία ὡς εἰρημένα οὕτω σκοπεῖν;<note>
+
+1. τὶ ἔνια AcBcNa et GLPQ: ὅτι ἔνιοι Victorius. 9. post
+uèv Aldus addit repugnantibus AcBcNa et Mediceis et GLPQ.
+12. δ Aldus: om AcBcNu et GLP. οἷους Aldus: codices οἷον.
+καὶ πρὸς τὸ Aldus: codices omittunt.
+</note><pb n="68" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=102"/> ὥσπερ οἱ ἐν τοῖς λόγοις ἔλεγχοι, εἰ τὸ αὐτὸ καὶ πρὸς τὸ αὐτο καὶ ὡσαύτως, ὥστε καὶ αὐτὸν ἢ πρὸς ἃ αὐτὸς λέγει ἢ ὃ ἂν φρόνιμος ὑποθῆται. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="31" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.31" cert="high">
+            <p>ὀρθὴ δ᾽ ἐπιτίμησις καὶ ἀλογία καὶ μοχθηρία, ὅταν μὴ ἀνάγκης οὔσης μηδὲν χρήσηται τῷ ἀλόγῳ, ὥσπερ Εὐριπίδης τῷ Αἰγεῖ, ἢ τῇ πονηρίᾳ, ὥσπερ ἐν Ὀρέ-5 στῃ τοῦ Μενελάου. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="32" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:25.32" cert="high">
+            <p>τὰ μὲν οὖν ἐπιτιμήματα ἐκ πέντε εἰδῶν φέρουσιν· ἢ γὰρ ὡς ἀδύνατα ἢ ὡς ἄλογα ἢ ὡς βλαβερὰ ἢ ὡς ὑπεναντία ἢ ὡς παρὰ τὴν ὀρθότητα τὴν κατὰ τέχνην· αἱ δὲ λύσεις ἐκ τῶν εἰρημένων ἀριθμῶν σκεπτέαι, εἰσὶ δὲ δώδεκα.]</p>
+          </div>
+        </div>
+        <div type="textpart" subtype="chapter" n="26">
+          <div type="textpart" subtype="subchapter" n="1" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.1" cert="high">
+            <p>Πότερον δὲ βελτίων ἡ ἐποποιικὴ μίμησις ἢ ἡ τραγική, διαπορήσειεν ἄν τις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="2" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.2" cert="high">
+            <p>εἰ γὰρ ἡ ἧττον φορτικὴ βελτίων, τοι αύτη δ᾽ ἡ πρὸς βελτίους θεατάς ἐστι, δῆλον ὅτι ἡ ἅπαντα μιμουμένη φορτική. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="3" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.3" cert="high">
+            <p>ὡς γὰρ οὐκ αἰσθανομένων, ἂν μὴ αὐτὸς προσθῇ, πολλὴν κίνησιν κινοῦνται, οἷον οἱ φαῦλοι αὐληταὶ<note>
+3. φρόνιμος Aldus: φρόνιμος BeNa et Medicei et GLPQ, φρό-
+νημον Ac.
+5. αἰγειήτη Ac et M 16 21 et (αιγειήτῃ) LQ, αἰ
+γιείτου Na, αἰγινήτη Bc et M XIV et GP, αιγείητου Aldus, Ai-
+γεῖ τῇ Robortellus.
+13. δ' ἡ Madius: δὲ ἡ G teste Buhlio,
+S AcBcNa cum plerisque et sic Aldus. ἐστι Aldus: ἐστι δει-
+λίαν AcBcNa et Medicei et L Q.
+</note><pb n="69" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=103"/> κυλιόμενοι, ἂν δίσκον δέῃ μιμεῖσθαι, καὶ ἕλκοντες τὸν κορυφαῖον, ἂν Σκύλλαν αὐλῶσιν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="4" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.4" cert="high">
+            <p>ἡ μὲν οὖν τραγῳδία τοιαύτη ἐστίν, ὡς καὶ οἱ πρότερον τοὺς ὑστέρους αὐτῶν ᾤοντο ὑποκριτάς· ὡς λίαν γὰρ ὑπερβάλλοντα, πίθηκον ὁ Μυνίσκος τὸν Καλλιππίδην ἐκάλει. τοιαύτη δὲ δόξα καὶ περὶ Πινδάρου ἦν. ὡς δ᾽ οὗτοι ἔχουσι πρὸς αὐτούς, ἡ ὅλη τέχνη πρὸς τὴν ἐποποιίαν ἔχει, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="5" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.5" cert="high">
+            <p>τὴν μὲν οὖν πρὸς θεατὰς ἐπιεικεῖς φασὶν εἶναι (οὐδὲν δέονται τῶν σχημάτων), τὴν δὲ τραγικὴν πρὸς φαύλους. ἡ οὖν φορτικὴ χείρων δῆλον ὅτι ἂν εἴη. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="6" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.6" cert="high">
+            <p>πρῶτον μὲν οὐ τῆς ποιητικῆς ἡ κατηγορία ἀλλὰ τῆς ὑποκριτικῆς, ἐπεὶ ἔστι περιεργάζεσθαι τοῖς σημείοις καὶ ῥαψῳδοῦντα, ὅπερ ἐποίει Σωσίστρατος, καὶ διᾴδοντα, ὅπερ ἐποίει Μνασίθεος Ὀπούντιος. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="7" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.7" cert="high">
+            <p>εἶτα οὐδὲ κίνησις ἅπασα ἀποδοκιμαστέα, εἴπερ μηδ᾽ ὄρχησις, ἀλλ᾿ ἡ φαύλων, ὅπερ καὶ Καλλιππίδῃ ἐπετιμᾶτο καὶ νῦν ἄλλοις, ὡς οὐκ ἐλευθέρας γυναῖκας<note>
+4. μυνίσκος Aldus: μυννίσκος AcBc, μινίσκος Na et M 14, μινω
+νίσκος L. 8. δι᾿ ὃ Aldus ante οὐδὲν. conf. Comment. 12.
+ἐποίει Aldus: ἐστι AcBcNa et M omnes et GLQ. δι
+δοντα Victorius, nisi quod more suo scribit διάδοντα: διαδόντε
+codices plerique et Aldus, διαδιδόντα Μ 14.
+</note><pb n="70" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=104"/> μιμουμένων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="8" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.8" cert="high">
+            <p>ἔτι ἡ τραγῳδία καὶ ἄνευ κινήσεως ποιεῖ τὸ αὑτῆς, ὥσπερ ἡ ἐποποιία· διὰ γὰρ τοῦ ἀναγινώσκειν φανερὰ ὁποία τις ἐστίν. εἰ οὖν ἐστὶ τἆλλα κρείττων, τοῦτό γε οὐκ ἀναγκαῖον αὐτῇ ὑπάρχειν. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="9" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.9" cert="high">
+            <p>ἔπειτα διότι πάντ᾽ ἔχει ὅσαπερ ἡ ἐποποιία· </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="10" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.10" cert="high">
+            <p>καὶ γὰρ τῷ μέτρῳ ἔξεστι χρῆσθαι, καὶ ἔτι οὐ μικρὸν μέρος τὴν μουσικὴν καὶ τὴν ὄψιν ἔχει, δι' ἧς αἱ ἡδοναὶ συνίστανται ἐναργέστατα. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="11" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.11" cert="high">
+            <p>εἶτα καὶ τὸ ἐναργὲς ἔχει καὶ ἐν τῇ ἀναγνωρίσει καὶ ἐπὶ τῶν ἔργων. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="12" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.12" cert="high">
+            <p>ἔτι τῷ ἐν ἐλάττονι μήκει τὸ τέλος τῆς μιμήσεως εἶναι· τὸ γὰρ ἀθροώτερον ἥδιον ἢ πολλῷ κεκραμένον τῷ χρόνῳ, λέγω δὲ οἷον εἴ τις τὸν Οἰδίπουν θείη τὸν Σοφοκλέους ἐν ἔπεσιν ὅσοις ἡ Ἰλιάς. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="13" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.13" cert="high">
+            <p>ἔτι ἧττον μία μίμησις ἡ τῶν ἐποποιῶν. σημεῖον δέ· ἐκ γὰρ ὁποιασοῦν μιμήσεως πλείους τραγῳδίαι γίνονται. ὥστε, ἐὰν μὲν ἕνα μῦθον ποιῶσιν, ἢ βραχέως δεικνύμενον μύουρον φαίνεσθαι, ἢ ἀκολουθοῦντα τῷ τοῦ μέτρου μήκει ὑδαρῆ.<note>
+6. τὴν ὄψιν ἔχει Aldus: AcBcNa et GLPQ et libri Victoriani
+τὰς ὄψεις omisso ἔχει. ex codicibus Mediceis nihil enotatur.
+10. ἥδιον ἢ Madius: ἡδονὴ AcBcNa et L Q, ἡδονῇ M omnes et
+GP. 12. μία Aldus: ἡ μία AcBcNa et M omnes et GLQ.
+post μία vulgo additur ὁποιαοῦν. vid. Comment.
+14. ἢ
+βραχέως] Aldus ἀνάγκη ἢ βραχέα, vid. Comment.
+</note><pb n="71" facs="https://hdl.handle.net/2027/hvd.32044085095867?urlappend=%3Bseq=105"/> ἐὰν δὲ πλείους, λέγω δὲ οἷον ἐὰν ἐκ πλειόνων πράξεων ᾖ συγκειμένη, οὐ μία, </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="14" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.14" cert="high">
+            <p>ὥσπερ ἡ Ἰλιὰς ἔχει πολλὰ τοιαῦτα μέρη καὶ ἡ Ὀδύσσεια, ἃ καὶ καθ᾿ ἑαυτὰ ἔχει μέγεθος· καίτοι ταῦτα τὰ ποιήματα συνέστηκεν ὡς ἐνδέχεται ἄριστα, καὶ ὅτι μάλιστα μιᾶς πράξεως μίμησις. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="15" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.15" cert="high">
+            <p>εἰ οὖν τούτοις τε διαφέρει πᾶσι καὶ ἔτι τῷ τῆς τέχνης ἔργῳ (δεῖ γὰρ οὐ τὴν τυχοῦσαν ἡδονὴν ποιεῖν αὐτὰς ἀλλὰ τὴν εἰρημένην), φανερὸν ὅτι κρείττων ἂν εἴη μᾶλλον τοῦ τέλους τυγχάνουσα τῆς ἐποποιίας. </p>
+          </div>
+          <div type="textpart" subtype="subchapter" n="16" corresp="urn:cts:greekLit:tlg0086.tlg034.perseus-grc2:26.16" cert="high">
+            <p>περὶ μὲν οὖν τραγῳδίας καὶ ἐποποιίας, καὶ αὐτῶν καὶ τῶν εἰδῶν καὶ τῶν μερῶν, καὶ πόσα καὶ τί διαφέρει, καὶ τοῦ εὖ ἢ μὴ τίνες αἰτίαι, καὶ περὶ ἐπιτιμήσεων καὶ λύσεων, εἰρήσθω τοσαῦτα.]</p>
+          </div>
+        </div>
+      </div>
+    </body>
+  </text>
+</TEI>
