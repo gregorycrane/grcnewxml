@@ -1,0 +1,3992 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:tei="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Electra — Węclewski (1875), Polish OCR draft</title>
+        <author>Sophocles</author>
+        <editor role="translator">Zygmunt Węclewski</editor>
+        <respStmt>
+          <resp>OCR extraction, structural encoding, and reference-card alignment</resp>
+          <name>Editorial processing with Codex</name>
+        </respStmt>
+      </titleStmt>
+      <publicationStmt>
+        <p>Perseus Multitext, 2026. Public-domain OCR draft.</p>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Sophocles. Electra. In Tragedye Sofoklesa, translated by Zygmunt Węclewski. Poznań: Biblioteka Kórnicka, 1875.</bibl>
+        <ref target="https://hdl.handle.net/2027/hvd.hn2wbv">HathiTrust digitization, Harvard copy HN 2WBV</ref>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <p>The HathiTrust computer-extracted text is retained as an OCR draft. Page headers and running page numbers are omitted. Obvious OCR splits in speaker labels and three impossible printed line anchors are normalized; translation wording is otherwise unchanged.</p>
+      <p>Perseus reference-card milestones are transferred through corresponding dramatic turns in the reviewed Donner Electra alignment, with relative placement inside the same matched turn. Edition-local verse numbers are not used for alignment.</p>
+      <refsDecl n="CTS">
+        <citeStructure match="/tei:TEI/tei:text/tei:body/tei:div[@type='translation']//tei:milestone[@unit='card']" use="@n" unit="card">
+          <citeData property="urn" use="concat('urn:cts:greekLit:tlg0011.tlg005.weclewski1875-pol1:', @n)"/>
+        </citeStructure>
+        <cRefPattern n="card" matchPattern="(.+)" replacementPattern="#xpath(/tei:TEI/tei:text/tei:body/tei:div[@type='translation']//tei:milestone[@unit='card' and @n='$1'])">
+          <p>Murray reference-card navigation unit.</p>
+        </cRefPattern>
+      </refsDecl>
+      <refsDecl xml:id="CTS">
+        <citeStructure match="/TEI/text/body" use="@xml:base">
+          <citeStructure match=".//milestone[@unit='card']" unit="card" use="@n" delim=":" n="chunk"/>
+        </citeStructure>
+      </refsDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change when="2026-11-22">Created Polish Electra OCR draft and aligned it to the perseus-grc2 reference cards.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="pol">
+    <body xml:base="urn:cts:greekLit:tlg0011.tlg005.weclewski1875-pol1">
+      <div type="translation" n="urn:cts:greekLit:tlg0011.tlg005.weclewski1875-pol1" xml:lang="pol">
+        <pb n="469" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=507"/>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1-22">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>VII.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1-22">
+          <speaker>ELEKTRA</speaker>
+          <pb n="470" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=508"/>
+          <lg>
+            <l>OSOBY DRAMATU.</l>
+            <l>KLITEMNESTRA, wdowa po Agamemnonie.</l>
+            <l>EGISTOS, król w Argos i Mycenach.</l>
+            <l>ELEKTRA, córka Agamemnona i Klitemnestry.</l>
+            <l>CHRYSOTEMIS, siostra Elektry.</l>
+            <l>ORESTES, jéj brat.</l>
+            <l>PYLADES. przyjaciel Orestesa niema osoba).</l>
+            <l>PEDAGOG, wychowawca Orestesa.</l>
+            <l>CHÓR mycenejskich dziewic.</l>
+            <l>Rzecz dzieje się przed pałacem królewskim w Mycenach. Orestes, Peda-</l>
+            <l>gog i Pylades występują.</l>
+            <pb n="471" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=509"/>
+          </lg>
+          <stage>(Wstęp, w. 1-85)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1-22">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <milestone unit="card" n="1" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1-22"/>
+            <l>Hetmana, co przed laty pod Troją przewodził,</l>
+            <l>Agamemnona synu, wolno ci na własne</l>
+            <l>Oglądać teraz oczy to, czegoś wciąż pragnął.</l>
+            <l>Bo oto Argos stare, do któregoś tęsknił, *</l>
+            <l>Dolina Inachowéj córy gzem kręconéj. *</l>
+            <l>Ot to jest, Orestesie, boga wilkobójcy</l>
+            <l>Licejski rynek, * a tam po lewej świątynia</l>
+            <l>Wspaniała Hery; * w miejscu tém zaś, gdzie jesteśmy,</l>
+            <l>Opływaiące w skarby, wiedz, widzisz Myceny</l>
+            <l>I Pelopidów oto dom w mordy obfity,</l>
+            <l>Skąd niegdyś po zabiciu rodzica twojego</l>
+            <l>Z rąk siostry twéj rodzonéj odebrawszy ciebie</l>
+            <l>Wyniósłem, ocaliłem i oto do wieku</l>
+            <l>Takiego wychowałem na mściciela ojca.</l>
+            <l>Więc, Orestesie, i ty najdroższy z przyjaciół,</l>
+            <l>Pyladzie, radźcie żwawo, co czynić należy.</l>
+            <l>Już bowiem blask promienny słońca budzi ptaki</l>
+            <l>Do rannych gwarów głośnych i nocy gwiazdzistéj</l>
+            <l>Mrok czarny ustępuje. Nim przeto mąż jaki</l>
+            <l>Przestąpi progi domu tego, złóżcie radę.</l>
+            <l>Jesteśmy w takiém miejscu, gdzie już nie na czasie</l>
+            <l>Wahanie się lecz chwila stanowcza do czynów.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1-85">
+          <speaker>Orestes</speaker>
+          <lg>
+            <milestone unit="card" n="23" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:23-50"/>
+            <l>O z moich sług najlepszy! jakże mi dosadne</l>
+            <l>Dowody dajesz twojej względem nas wierności!</l>
+            <l>Bo jak szlachetny rumak, choć w leciech podeszły,</l>
+            <pb n="472" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=510"/>
+            <l>W przygodach niebezpiecznych nie traci odwagi,</l>
+            <l>Jeno nastrosza uszy dumnie, tak ty równie</l>
+            <l>I nas popędzasz i sam pierwszy naprzód zdążasz.</l>
+            <l>Dla tego ci wyjawię to, com postanowił;</l>
+            <l>Ty zasię dawszy posłuch baczny słowom moim,</l>
+            <l>Nuż niestósowny zamysł mój, dasz lepszą radę.</l>
+            <l>Bo mnie, gdym do wyroczni udał się pytyjskiéj,</l>
+            <l>By się wywiedzieć, jakim sposobem się pomścić</l>
+            <l>Rodzica śmierci na tych, co jego zabili,</l>
+            <l>Rozkazał oto Fojbos, jak zaraz usłyszysz,</l>
+            <l>Samemu bez tarczników zastępu zbrojnego</l>
+            <l>Wykonać słuszną pomstę podstępnym zamachem. *</l>
+            <l>Gdy przeto bóg wyrocznię taką mi obwieścił,</l>
+            <l>Ty, gdy ci chwila zręczna nadarzy się, wszedłszy</l>
+            <l>Do domu tego, wywiedz się, co się tam dzieje.</l>
+            <l>Świadomy zdasz nam sprawę dokładną o wszystkiém.</l>
+            <l>Toć wiek do niepoznania zmienił cię a w biegu</l>
+            <l>Lat wielu osiwiały włos jest ci ochroną.</l>
+            <l>Tak zaś tam rozpowiadaj: że jesteś przychodniem</l>
+            <l>Z focejskiéj ziemi i że cię przysłał Fanotéj,</l>
+            <l>Bo mąż ten przyjacielem najlepszym w ich domu.</l>
+            <l>A dalej stwierdź przysięgą, dodawszy wiadomość,</l>
+            <l>Że straszną śmiercią zginął Orestes wypadłszy</l>
+            <l>Z unoszonego szparko wozu na igrzyskach</l>
+            <l>Pytyjskich. Taka niechaj będzie powieść twoja.</l>
+          </lg>
+          <lg>
+            <milestone unit="card" n="51" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:51-76"/>
+            <l>My zaś, jak bóg rozkazał, grób ojca zalewką</l>
+            <l>Ofiarną wpierw i puklem włosów uwieńczywszy</l>
+            <l>Uciętym powrócimy znowu na to miejsce,</l>
+            <l>Dźwigając popielnicę śpiżolitą w rękach,</l>
+            <l>Tę, którą, jak wiesz o tém, ukryłem w zaroślu,</l>
+            <l>Ażeby omamiwszy słowem wieść zwiastować</l>
+            <l>Im słodką, że już moje ciało poszło w niwecz</l>
+            <l>Strawione ognia żarem i w proch obrócone.</l>
+            <l>Bo cóż mi to za przykrość, że wedle słów zmarłszy</l>
+            <l>Czynem zachowam życie i dostąpię chwały.</l>
+            <l>Toć słowo, zdaniem mém, nie szkodzi gdy zysk daje.</l>
+            <l>Wiem też, że płonny pogłos rozszedł się częstokroć</l>
+            <l>O śmierci mędrców nawet a skoro do domu</l>
+            <l>-</l>
+            <pb n="473" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=511"/>
+            <l>Wrócili po tém, większą cześć mieli u ludzi. *</l>
+            <l>Tak ja téż tuszę sobie, że po téj złéj wieści</l>
+            <l>Żyw jeszcze by zła gwiazda zabłysnę mym wrogom.</l>
+            <l>Wżdy ty, ojczysta ziemio, i wy, bóstwa kraju,</l>
+            <l>Przyjmijcie mnie życzliwie i zdarzcie tę drogę,</l>
+            <l>I ty też, domie ojców moich! Toć przychodzę</l>
+            <l>Oczyścić cię przez pomstę od bogów wezwany.</l>
+            <l>Więc niech okryty hańbą nie odejdę z kraju,</l>
+            <l>Niech dawny blask i możność przywrócę domowi!</l>
+            <l>Ot powiedziałem wszystko. Ty, starcze, idź teraz</l>
+            <l>I nad zleconą tobie sprawą pilnie czuwaj!</l>
+            <l>A my odejdziem; bo czas nagli, co najdzielniéj</l>
+            <milestone unit="card" n="77" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:77-85"/>
+            <l>Wszystkiemi zawiaduje sprawami ludzkiemi.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:77-85">
+          <speaker>ELEKTRA</speaker>
+          <stage>(w pałacu)</stage>
+          <lg>
+            <l>Och! biada mi! biada!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:77-85">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Ha! zdaje mi się, dziecię, że o uszy moje</l>
+            <l>Jęk z po za bramy któréjś z służebnic się obił.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:77-85">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>A może to Elektra nieszczęsna! Gdy wola,</l>
+            <l>Zostańmy tu i biadań posłuchajmy jeszcze!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:77-102">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Przenigdy! Loksyasza usłuchać należy,</l>
+            <l>Nim zrobim co innego, i zacząć od tego:</l>
+            <l>Ofiarę na grób ojcu wylać, bo to tylko</l>
+            <milestone unit="card" n="86" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:86-102"/>
+            <l>Zapewnia nam zwycięstwo i skuteczność czynu.</l>
+          </lg>
+          <stage>(Odchodzą Orestes i Pylades; Elektra wychodzi z palacu)</stage>
+          <stage>(Epejsodion I, od w. 86-467.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:86-120">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O swięta światłości i wietrzne wy tonie</l>
+            <l>Rozlane nad ziemią, częstoście słyszały.</l>
+            <l>31*</l>
+            <pb n="474" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=512"/>
+            <l>Me skargi jękliwe i razy, co dłonie</l>
+            <l>Méj piersi bez liku do krwi zadawały,</l>
+            <l>Gdy nocne ciemności zapadły!</l>
+            <l>Po nocach zaś całych znów świadkiem łożnica</l>
+            <l>Obmierzła w tym domu nieszczęsnym, jakiemi</l>
+            <l>To łzami biednego płakałam rodzica</l>
+            <l>Którego nie przyjął w gościnę na ziemi</l>
+            <l>Barbarów bóg wojny zajadły;</l>
+            <l>Nie, matka ma i ten, co łoże z nią dzieli,</l>
+            <l>Egistos zabójczéj siekiery go ciosem</l>
+            <l>Zwalili, by w lesie dab drwale;</l>
+            <l>I nikt nie zapłacze, rodzicu nad losem</l>
+            <l>Twym, sama ja jedna rozwodzę wciąż żale</l>
+            <milestone unit="card" n="103" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:103-120"/>
+            <l>Nad tobą, że ległeś na śmierci pościeli</l>
+            <l>Sromotnie i nędznie zgładzony.</l>
+          </lg>
+          <lg>
+            <l>Tak, będzie mój lament i żal nieskończony,</l>
+            <l>Dopóki oglądam blask gwiazd promienistych</l>
+            <l>I światło to dzienne. Iak słowik pisklęta</l>
+            <l>Straciwszy wciąż jęczy, tak głośne lamenta</l>
+            <l>Zawiodę wszem w obec u progów ojczystych:</l>
+            <l>„O Hadu i Persefonei ponury</l>
+            <l>Przybytku, o Hermie pod ziemią i Aro</l>
+            <l>Czcigodna i wzniosłe Erynie, bóstw córy,</l>
+            <l>Widzące tych, którzy bezprawiem ze świata</l>
+            <l>Zgładzeni są cudzołożników ofiarą,</l>
+            <l>Przybądźcie, pomóżcie i mordu pomścijcie</l>
+            <l>Rodzica mojego i tu mi przyślijcie</l>
+            <l>Na pomoc mojego też brata,</l>
+            <l>Bo sama żałością obciążonéj szali</l>
+            <l>Nie zdołam do góry podźwignąć już daléj! *</l>
+            <l>Chór od strony miasta wchodzi do orchestry i tam się ustawia)</l>
+          </lg>
+          <stage>(Strofa. 1.)</stage>
+          <stage>(Komos zastępujący zwykłą Parodos. w. 118-239)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:103-136">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="121" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:121-136"/>
+            <l>O córko, z matki ohydnéj zrodzona,</l>
+          </lg>
+          <lg>
+            <l>Elektro, czemuż nieprzerwane jęki</l>
+            <pb n="475" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=513"/>
+            <l>120,</l>
+            <l>Wylewasz płacząc wciąż Agamemnona,</l>
+            <l>Co dawno temu legł z zbrodniczéj ręki</l>
+            <l>Matki obłudnéj, gdy podstęp i zdrada</l>
+            <l>Go usidliły bezbożnie? kto w czynie</l>
+            <l>Owym miał udział ha! ten niechaj zginie,</l>
+            <l>Jeźli mnie słowo to wyrzec wypada!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:121-136">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O córki ojców zacnych! przybyłyście</l>
+            <l>Pocieszyć słowem mnie w niedoli łzawéj.</l>
+            <l>Wiem to, przenikam, widzę oczywiście.</l>
+            <l>Wżdy nieprzestanie nigdy ma źrzenica</l>
+            <l>Płakać mojego biednego rodzica.</l>
+          </lg>
+          <lg>
+            <l>Zatém wy, które spłacacie objawy</l>
+            <l>Względów miłością chętnie w każdéj dobie,</l>
+            <l>Pozwólcie, błagam, ach! żyć mi w żałobie!</l>
+          </lg>
+          <stage>(Antistrofa 1.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:121-152">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="137" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:137-152"/>
+            <l>Toć ty rodzica z Hadesa otchłani</l>
+            <l>Wszystkich chłonącej nigdy nie przywrócisz</l>
+            <l>Do życia ani narzekaniem ani</l>
+            <l>Modlitwą; a gdy tak ciągle się smucisz,</l>
+            <l>Sama ze znośnéj niedoli w niedolę</l>
+          </lg>
+          <lg>
+            <l>Bezdenną wtrącasz się, gdzie wybawienia</l>
+            <l>Nie ma od biedy już ani wytchnienia.</l>
+            <l>Przecz więc na takie narażać się bole?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:137-152">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O! nierozumny ten, co zapomina</l>
+            <l>Nędznie zabitych rodziców swych w grobie!</l>
+            <l>Dla mnie ma pociąg jęcząca ptaszyna,</l>
+            <l>Która Itysa w swéj pieśni żałosnéj,</l>
+            <l>Itysa płacze wciąż, zwiastunka wiosny.</l>
+            <l>Och! och! cześć bożą oddaję Niobie</l>
+            <l>Też nieszczęśliwéj. Toć w skalistym ona</l>
+            <l>Grobie łzy roni wciąż nieutulona. *</l>
+            <pb n="476" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=514"/>
+          </lg>
+          <stage>(Strofa 2.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:137-172">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="154" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:153-172"/>
+            <l>Wszak nie na ciebie jedyną na świecie</l>
+            <l>Przypadło ciężkie nieszczęście, me dziecię!</l>
+            <l>Więc przecz narzekasz więcej niż ci w grodzie,</l>
+          </lg>
+          <lg>
+            <l>Co pokrewnymi i tobie są w rodzie</l>
+            <l>Niż Ifianasa i Chrysotemida *</l>
+            <l>I niż Orestes, który, choć młodości</l>
+            <l>Ustronnéj płacze, przecie szczęśliwości</l>
+            <l>Jest uczestnikiem, bo go znamienita</l>
+            <l>Mycen kraina u siebie powita</l>
+            <l>Kiedyś, gdy kroki zacnego życzliwy</l>
+            <l>Zeus tu skieruje na rodzinne niwy!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:153-172">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Jego czekając bez przestanku biedna</l>
+            <l>Bez dziatek, męża, ciągle sama jedna</l>
+            <l>Tułam się łzami rzewnemi zalana</l>
+            <l>I na łup smutku wiecznego wydana.</l>
+            <l>On wżdy niepomny na czyny i wieści</l>
+            <l>Moje! Czyż do mnie orędzie wyprawia</l>
+            <l>Takie, co w sobie zawodu nie mieści?</l>
+            <l>Tęskni wciąż, tęskniąc wżdy sam się nie zjawia!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:153-192">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="174" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:173-192"/>
+            <l>Otuchy, dziecię, otuchy! Zasiada</l>
+            <l>Jeszcze na tronie Zeus wielki, co włada</l>
+          </lg>
+          <lg>
+            <l>Wszystkiém i wszystko widzi. Zdaj żal srogi</l>
+            <l>Duszy na niego i niechaj ci wrogi</l>
+            <l>Wzbyt krwi nie burzą ni wyjdą z pamięci!</l>
+            <l>Bóg czasu bowiem z łatwośćią wykona</l>
+            <l>Wszystko i ani syn Agamemnona,</l>
+            <l>Co na żywiącym trzody brzegu bawi</l>
+            <l>Krysy, niepomny ciebie nie ostawi,</l>
+            <l>Ani też bóg nie opuści, co w łonie</l>
+            <l>Ziemi prowadzi rząd przy Acheronie. *</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:173-192">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Lecz rozpacz siły stargała żywota,</l>
+          </lg>
+          <stage>(Antistrofa 2.)</stage>
+          <pb n="477" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=515"/>
+          <stage>(Strofa 3.)</stage>
+          <lg>
+            <l>Już nie wytrzymam dłużéj; bo sierota</l>
+            <l>Schnę i małżonka życzliwego, coby</l>
+            <l>Wziął mnie w opiekę, nie mam; nie, jakoby</l>
+            <l>Niegodna jaka obca służebnica</l>
+            <l>Ot takie liche szaty na się wkładam,</l>
+            <l>Jestem klucznicą w komnatach rodzica</l>
+          </lg>
+          <lg>
+            <l>I do wspólnego stołu nie zasiadam!*</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:173-212">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="193" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:193-212"/>
+            <l>Boleści rozległ się krzyk za powrotem,</l>
+            <l>Kiedy na łożu ojców przy biesiadzie</l>
+            <l>Zadany barty śpiżanym brzeszczotem *</l>
+            <l>Cios chwatki jego na pował kładzie.</l>
+            <l>Podstęp wymyślił to, chuć wykonała</l>
+            <l>I na jaw spółka okropna wydała *</l>
+            <l>Okropny widok, bądź że to bóg sprawcą</l>
+            <l>Był tego albo człowiek wykonawcą.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:193-212">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O najstraszniejszy ze wszystkich dni w toku</l>
+            <l>Życia mojego! o nocy pomroku</l>
+            <l>I uczty groźnéj okropna zakało,</l>
+            <l>Gdzie rodzicowi memu śmierć zadało</l>
+            <l>Sromotną dwoje rak, co mnie wydarły</l>
+            <l>Życie też zdradnie i w grób mnie zaparły.</l>
+            <l>Niech im Olimpu bóg potężny za to</l>
+            <l>Pomsty bolesnéj zapłaci zapłatą!</l>
+            <l>Niech nie upłynie żaden już pogodnie</l>
+            <l>Dzień tym, co takie wykonali zbrodnie.</l>
+          </lg>
+          <stage>(Antistrofa 3.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:193-231">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="213" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:213-231"/>
+            <l>Strzeż się i nie mów ani słowa daléj!</l>
+            <l>Czyż nie pojmujesz tego, że gorąca</l>
+            <l>Krew cię, gdy tak się jak teraz rozpali,</l>
+            <l>W nieszczęście coraz sromotniejsze wtrąca?</l>
+            <l>Na ciebie mnóstwo klęsk nad miarę godzi,</l>
+            <l>Bo dusza twoja niespokojna płodzi</l>
+            <pb n="478" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=516"/>
+          </lg>
+          <stage>(Epodos)</stage>
+          <lg>
+            <l>Wciąż boje sobie. Nie należy przecie</l>
+            <l>Z możnowładcami tak zadzierać, dziecię!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:213-231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Zła, zła mnie dola zmusiła, przyznaję;</l>
+            <l>I że gwałtowny umysł mój, nie taję.</l>
+            <l>Ale w niedoli strasznéj pogrążona</l>
+            <l>Wywodzić żalów nie przestanę z łona,</l>
+            <l>Póki tchu stanie mi; bo, moje drogie,</l>
+            <l>Jakież usłyszę kiedy słowa blogie,</l>
+          </lg>
+          <lg>
+            <l>Jakąż w czas radę? Więc niech, niech pociecha</l>
+            <l>Wasza umilknie! żalu nie zaniecha</l>
+            <l>Serce me; nigdy nie oschnie źrzenica,</l>
+            <l>Gdyż bezlik cierpień łzy moje podsyca!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:213-250">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="233" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:232-250"/>
+            <l>Toć życzliwością tchną me słowa przecie.</l>
+            <l>Bo, by troskliwa matka, mówię: dziecię,</l>
+            <l>Do dawnéj nowéj nie kucz sobie biedy!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:232-250">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Czyż może ustać narzekanie kiedy?</l>
+            <l>Czy zapominać umarłych się godzi?</l>
+            <l>W którymż człowieku taka myśl się zrodzi?</l>
+            <l>U takich ludzi nie pragnę być w cenie!</l>
+            <l>I gdyby na mnie spadło słodkie mienie,</l>
+            <l>Obym bez troski go nie zażywała,</l>
+            <l>Gdybym rodzica hańbiąc się wstrzymała</l>
+            <l>W rozgłośnych moich narzekań zapędzie.</l>
+            <l>Bo jeźli biedak zgasły leżeć będzie</l>
+            <l>Jak proch w nicości pogrążony w grobie,</l>
+            <l>A onych kara za zbrodnię nie czeka,</l>
+            <l>O! wtenczas, wstydzie, na zawsze po tobie</l>
+            <l>I z szczętem zamrze zbożność w sercu człeka!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:232-281">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="251" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:251-281"/>
+            <l>Przybyłam, córko, mając na względzie i twoję</l>
+            <pb n="479" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=517"/>
+            <l>I swoję własną korzyść; jeźli zaś źle radzę,</l>
+            <l>Niech głos twój ma przewagę; my pójdziem za tobą.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:251-309">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Niewiasty! wstyd ogarnia mnie, nuż waszém zdaniem</l>
+            <l>W strapieniach wielorakich zbyt jestem nieznośna.</l>
+            <l>Wżdy przemoc mnie do tego, co robię, zniewala.</l>
+            <l>Wybaczcie więc! Bo którażby niewiasta zacna</l>
+            <l>Niedolę ojcowskiego domu widząc, tego</l>
+            <l>Co ja nie uczyniła? a widzę na domiar</l>
+            <l>Nieszczęścia, że niedola ta się wzmaga za dnia</l>
+            <l>I w nocy coraz więcéj raczéj zamiast niknąć.</l>
+            <l>Ot! naprzód matka, która zrodziła mnie, pała</l>
+            <l>Największą nienawiścią ku mnie, potem w domu,</l>
+            <l>W mym własnym domu żyję wespół z mordercami</l>
+            <l>Rodzica, im podlegam i od nich zawisło,</l>
+            <l>255 Czy dostać mam co, czy też bez tego się obyć.</l>
+            <l>A daléj, jakież sądzisz dni przepędzam, kiedy</l>
+            <l>Na tronie, na ojcowskim siedzącego widzę</l>
+            <l>Egista, kiedy widzę jego przybranego</l>
+            <l>W te same szaty, które ów nosił, i kiedy</l>
+            <l>Zalewki przy ołtarzu domowym ofiarne</l>
+            <l>Tam czyni, kedy zabił owego? Nakoniec</l>
+            <l>Najohydniejsze z wszystkich zuchwalstwo gdy widzę:</l>
+            <l>Na łożu ojca jego mordercę w objęciach</l>
+            <l>Nieszczęsnéj matki, żali wolno mi rodzicą</l>
+            <l>Tę nazwać jeszcze, która z owym łoże dzieli</l>
+            <l>I tyle jest bezwstydną, że z owym zbrodniarzem</l>
+            <l>Spółkuje, nie drząc wcale przed Erynij gniewem;</l>
+            <l>I nadto jakby śmiejąc się z uczynków swoich,</l>
+            <l>Gdy tego dnia doczeka się, w którym zabiła</l>
+            <l>Rodzica mego niegdyś podstępnie, wyprawia</l>
+            <l>Taneczne chóry i na cześć bogom wybawcom</l>
+            <l>Jagnięta by ofiarę comiesięczną bije!</l>
+            <milestone unit="card" n="282" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:282-309"/>
+            <l>Ja nieszczęśliwa widząc to w komnacie płaczę</l>
+          </lg>
+          <lg>
+            <l>I we łzach się rozpływam i szlochy rozwodzę</l>
+            <l>Nad stypą ojca, jak ją złorzeczliwie zowią, *</l>
+            <l>Tak sama jedna; bo mi płakać nawet tyle</l>
+            <pb n="480" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=518"/>
+            <l>Nie wolno, ile pragnie serce rozżalone.</l>
+            <l>Bo ona w mowie tylko szlachetna kobieta</l>
+            <l>Z przekąsem prawi takie mi złośliwe słowa:</l>
+            <l>„Znienawidzona u bóstw szkarado czy tobie</l>
+            <l>Jedynėj tylko umarł ojciec? Niktże inny</l>
+            <l>Z śmiertelnych oprócz ciebie go nie opłakuje?</l>
+            <l>Zgiń marnie i niech ciebie przenigdy z narzekań</l>
+            <l>Tych twoich nie wybawią bogowie podziemia!"</l>
+            <l>285 Tak bluźni obelżywie. Gdy zasię usłyszy</l>
+            <l>Z ust czyichś, że Orestes wraca, wtedy wściekła</l>
+            <l>Wręcz przyskakuje do mnie i wrzeszczy: „czy nie ty</l>
+            <l>Sprawiłaś to? nie twojeż to dzieło? wszak ty mi</l>
+            <l>Wykradłaś Orestesa z rąk moich i skrycie</l>
+            <l>Gdzieś wyprawiłaś jego. Ha! wiedz o tém, kara,</l>
+            <l>Na jaką zasługujesz, czeka za to ciebie."</l>
+            <l>Tak gniewem się ujada, a z boku poduszcza</l>
+            <l>Ją więcéj jeszcze sławny onéj oblubieniec,</l>
+            <l>Ów tchórz od stóp do głów i straszny zatraceniec,</l>
+            <l>Co bitwy stacza tylko w sojuszu z babami. *</l>
+            <l>Ja zasię wyglądając ciągle Orestesa,</l>
+            <l>By z tego położenia mnie wybawił, biedna</l>
+            <l>Z żałości dogorywam; bo ciągłém zwlekaniem</l>
+            <l>Nadzieje me na teraz i na dal zniweczył.</l>
+            <l>W ucisku takim trudno być umiarkowanym</l>
+            <l>I zbożnym przyjaciółki! Nie, kto krzywd doznaje,</l>
+          </lg>
+          <lg>
+            <l>Koniecznie zniewolony złem za złe zapłacić.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:282-340">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="310" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340"/>
+            <l>Powiedz-że mi, czy w domu Egistos przebywa,</l>
+            <l>Gdy z nami tu rozmawiasz, czy też wyszedł z domu?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tak, wyszedł. Gdyby był gdzie w pobliżu, za bramą</l>
+            <l>Nie chodziłabym. Wyszedł właśnie gdzieś na pole.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Więc ja też mogę z większą bezpiecznością z tobą</l>
+            <l>Zapuścić się w rozmowę, kiedy tak się rzecz ma.</l>
+            <pb n="481" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=519"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Wiedz, nie ma go; mów zatém, co ci się podoba.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Więc pytam cię, co myślisz o bracie, czy wraca,</l>
+            <l>Czy zwleka też z powrotem? to chciałabym wiedzieć.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Przyrzeka, lecz nie spełnia wcale obietnicy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Rad zwleka, kto do wielkiej sprawy przystępuje.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>A przecie nie przez zwłokę jego ocaliłam.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Odwagę miéj! on zacny i wesprze przyjaciół.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tak, ufam, bo inaczej nie żyłabym długo.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Już ani słowa więcej nie mów, bo wychodzi</l>
+            <l>Ot z domu Chrysotemis, siostra twa rodzona</l>
+            <l>Po ojcu i po matce, a niesie ofiarę</l>
+            <l>Grobową w ręku, jaką umarłym się składa.</l>
+            <l>Chrysotemis nadchodzi)</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-340">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Nad czém-że, siostro droga, wyszedłszy za bramę</l>
+            <l>Przedsionka tak rozwodzisz się znowu rozgłośnie?</l>
+            <l>Czyż czas cię długi jeszcze nie nauczył, darmo</l>
+            <l>Gniewowi bezsilnemu tak się nie oddawać?</l>
+            <l>Toć sama też boleję nad naszą niedolą</l>
+            <l>I gdybym miała więcej sił, pokazałabym,</l>
+            <l>Co o nich myślę. Teraz zaś w tém udręczeniu</l>
+            <pb n="482" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=520"/>
+            <l>Spuściwszy żagle plynąć najlepsza mém zdaniem,</l>
+            <l>A nie, coś niby działać a przecie nie szkodzić.</l>
+            <l>Więc życzyłabym, abyś to samo zrobiła!</l>
+            <l>Z tém wszystkiém może nie to słuszne, co ja mówię,</l>
+            <l>Lecz to, do czego ty się skłaniasz; jeźli jednak</l>
+          </lg>
+          <lg>
+            <l>Mam żyć swobodnie, muszę być władcom posłuszną.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:310-368">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="341" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:341-368"/>
+            <l>To hańba, że o ojcu, który ciebie spłodził,</l>
+            <l>Tak zapominasz, dbasz zaś jedynie o matkę.</l>
+            <l>Bo wszystkie udzielone mnie nauki od niéj</l>
+            <l>Przyjęłaś i nie mówisz wcale sama z siebie.</l>
+            <l>Przynajmniéj jedno z dwojga wybierz zatém: albo</l>
+            <l>Za nierozsądną lub za rozsądną, co pamięć</l>
+            <l>Najdroższych osób za nic nie ma, chciéj uchodzić.</l>
+            <l>Bo właśnie powiedziałaś, że gdybyś nabrała</l>
+            <l>Sił, dowiodłabyś, jaką masz ku nim nienawiść.</l>
+            <l>A mnie, co ojca pomścić się postanowiłam,</l>
+            <l>Nie wspierasz przecie lecz od pomsty powstrzymujesz.</l>
+            <l>Czy tak nie zwiększasz jeszcze niedoli tchórzostwem?</l>
+            <l>Bo poucz mnie lub dowiedz się z ust moich, jaką</l>
+            <l>Narzekań zaniechawszy mogę odnieść korzyść.</l>
+            <l>Nie żyję-ż? Nędznie wprawdzie, wżdy na tém przestaję;</l>
+            <l>A martwię tych i cześć tém oddaję zgasłemu,</l>
+            <l>Jeżeli tam pod ziemią radość jaką znają.</l>
+            <l>Ty zasię nienawidząc, słowem nienawidzisz</l>
+            <l>A w czynie z mordercami rodzica się sprzęgasz.</l>
+            <l>Chociażby na mnie zlewał kto wszystkie zaszczyty,</l>
+            <l>Którymi ty obecnie puszysz, nigdy za to</l>
+            <l>Im nie poddałabym się! Niechajże dla ciebie</l>
+            <l>Stół suto zastawiają, opływaj we wszystko,</l>
+            <l>A mnie niech pokrzepiają ustawiczne skargi</l>
+            <l>Jedynie! Twego szczęścia nie pragnę dostąpić;</l>
+            <l>I tybyś nie pragnęła, gdybyś miała rozum.</l>
+            <l>Wżdy teraz, gdy ci wolno z wszystkich najlepszego</l>
+          </lg>
+          <lg>
+            <l>Rodzica zwać się córką, zwij się dzieckiem matki!</l>
+            <l>Toć tak wykażesz wszystkim niegodziwość swoję,</l>
+            <l>Zdradziwszy umarłego ojca i przyjaciół.</l>
+            <pb n="483" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=521"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:341-384">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="369" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:369-384"/>
+            <l>Na boga! niezapalaj się gniewem! Z słów waszych</l>
+            <l>Zysk mieć możecie obie, gdybyście korzystać</l>
+            <l>Umiały: ty z rad onéj a ona znów z twoich.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:369-384">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Ja już, niewiasty drogie, nawykłam poniekąd</l>
+            <l>Do takich słów jéj; to też nie byłabym o tém</l>
+            <l>Wspomniała, gdyby straszny nie groził, jak słyszę,</l>
+            <l>Jéj cios, co koniec jękom jéj długim uczyni.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:369-384">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Opowiedz mi tę straszną rzecz, bo jeźli gorsza</l>
+            <l>Od méj niedoli, dłużéj oporu nie stawie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:369-384">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Co sama wiem, to wszystko opowiem więc tobie.</l>
+            <l>Ot zamyślają, jeśli nie przestaniesz szlochów,</l>
+            <l>Tam cię wyprawić, gdzie już promieni słonecznych</l>
+            <l>Nie ujrzysz, jeno żyjąc w sklepionéj pieczarze</l>
+          </lg>
+          <lg>
+            <l>Daleko od téj ziemi zły los swój opiejesz.</l>
+            <l>Zastanów-że się nad tém i później w niedoli</l>
+            <l>Nie winuj mnie! Czas jeszcze, rozsądkiem się rządzić.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:369-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="385" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414"/>
+            <l>380, Na prawdę tak postąpić ze mną uradzili?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Na prawdę! skoro wróci Egistos do domu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Jeżeli po to, niechże czémprędzéj przybędzie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Niebogo! jakież w słowach wyrzekłaś życzenie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>By przyszedł, jeśli zrobić coś takiego myśli.</l>
+            <pb n="484" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=522"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Na jakiż los narazić się chcesz? gdzież twój rozum?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Chcę od was uciec w strony gdzie najodleglejsze.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Więc życie, które wiedziesz, ważysz za nic sobie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Piękne-ż to życie moje, podziwienia godne!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Byłoby takie, gdybyś rozumu nabrała.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie ucz mnie okazywać się złą przyjaciołom.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Nie tego uczę, jeno ulegać mocniejszym.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Ty bij tak kornie czołem, mój to sposób nie jest.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Wżdy piękna, nie przez własną upaść nierozwagę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Upadniem, jeźli trzeba upaść mszcząc rodzica.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Wiem jednak dobrze, że mi to rodzic przebacza.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Pochwalą takie słowa chyba tchórze tylko.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Więc nie chcesz słuchać? zdania mojego nie dzielisz?</l>
+            <pb n="485" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=523"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Przenigdy niech do tyla rozumu nie stracę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Więc udam się w tę drogę, w którą mnie wysłano.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Dokądże idziesz? komu niesiesz tę ofiare?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Wysłała matka mnie, by uczcić nią grób ojca.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Co mówisz? największego ze śmiertelnych wroga?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Któremu śmierć zadała sama, to rzec chciałaś.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Któż ją z przyjaciół skłonił? za czyjąż to radą?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>405 Widzenie nocne, zda mi się, ją zatrwożyło.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Przynajmniéj teraz, bóstwa rodowe, pomóżcie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-414">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Czy z trwogi matki czerpiesz ty jaką otuchę?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:385-430">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="415" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:415-430"/>
+            <l>Opowiedz mi widzenie, a wtedy się dowiesz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:415-430">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Wiem mało, że słów kilka zaledwie ci powiem.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:415-463">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="431" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:431-463"/>
+            <l>Powiedz-że te jednakże. Często kilka słówek</l>
+            <l>Zwaliło z nóg już albo dźwignęło śmiertelnych.</l>
+            <pb n="486" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=524"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:431-463">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Wieść krąży, że widziała siebie zaślubioną</l>
+            <l>Powtórnie z ojcem twoim i moim, wskrzeszonym</l>
+            <l>Do życia z grobu; tenże wziąwszy berło, które</l>
+            <l>Piastował niegdyś, teraz zaś dzierzy Egistos,</l>
+            <l>W ognisko nasze wsadził i oto niebawem</l>
+            <l>Do góry gałęź z berła wystrzeliła bujna,</l>
+            <l>Co zacieniła całą ziemię mycenejską.</l>
+            <l>Opowieść tę słyszałam z ust męża co świadkiem</l>
+            <l>Był, kiedy Heljosowi sen swój spowiadała. *</l>
+            <l>Krom tego nie wiem więcej, chyba że mnie oto</l>
+            <l>Widzeniem przerażona z ofiarą wysłała.</l>
+          </lg>
+          <lg>
+            <l>Na bogów przeto teraz błagam cię rodowych,</l>
+            <l>Mnie słuchaj! niech nie gubi ciebie nierozwaga!</l>
+            <l>Gdy mnie odtrącisz, szukać mnie będziesz w niedoli!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:431-463">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Najdroższa siostro, tém, co masz w ręku, nie chciéjże</l>
+            <l>Mogiły ojca dotknąć. Byłoby bezprawiem</l>
+            <l>I bezbożnością ojca grób stroić darami</l>
+            <l>I rosić zalewkami imieniem niewiasty</l>
+            <l>Obmierzłéj; nie, z wiatrami puściwszy lub w piasku</l>
+            <l>Głęboko zakopawszy ukryj, żeby z tego</l>
+            <l>Nic nigdy nie dostało się do grobu ojca.</l>
+            <l>Niech jakby klejnot jaki w ziemi łonie leży</l>
+            <l>Dla onéj zachowany, gdy zejdzie ze świata.</l>
+            <l>Zaiste! gdyby z niewiast wszystkich najzuchwalszą</l>
+            <l>Nie była, nie wieńczyłaby nigdy ofiarą</l>
+            <l>Obmierzłą tą grób tego, którego zabiła.</l>
+            <l>Bo rozważ, żali zdaniem twém umarły w grobie</l>
+            <l>Radośnie takie dary przyjmie od téj, co go</l>
+            <l>Zabiwszy i sromotnie zbezcześciwszy jakby</l>
+            <l>Nieprzyjaciela członki obcięła i zbrodnię</l>
+            <l>Zmywając z krwi wytarła miecz na głowie jego!*</l>
+            <l>Czy sądzisz, że te dary ją obmyją z mordu?</l>
+            <l>Przenigdy! więc zaniechaj tego; ty natomiast</l>
+            <l>Warkoczy długich końce zetnij z głowy swojéj</l>
+            <l>I mnie niebogiéj z mojéj - lichy dar, lecz wszystko,</l>
+            <pb n="487" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=525"/>
+            <l>Co mam,</l>
+            <l>i jemu daj ten włos niezdobny i mą</l>
+            <l>Przepaskę ot! przepychem nie przyozdobioną;</l>
+            <l>I blagaj go przypadłszy przy mogile, aby</l>
+            <l>Nam z ziemi przeciw wrogom pospieszył na pomoc</l>
+            <l>Życzliwie i proś, aby żyw jako zwycięzca</l>
+            <l>Na karki wrogom dumnie nastąpił Orestes.</l>
+            <l>W tym razie bowiem na dal uczcimy grób jego</l>
+            <l>Hojniejszą ręką, nie tak, jak dziś go darzymy.</l>
+            <l>Przypuszczam - ci, przypuszczam, że jemu chodziło</l>
+          </lg>
+          <lg>
+            <l>Też oto, aby zesłać ten straszny sen na nią!</l>
+            <l>Z tém wszystkiém pomóż, siostro, i sobie tym czynem</l>
+            <l>I mnie i najlepszemu z wszystkich śmiertelników,</l>
+            <l>Naszemu w Hadu państwie zgrążonemu ojcu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:431-471">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="464" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:464-471"/>
+            <l>Wyrzekła bogom miłe słowa ta dziewica;</l>
+            <l>Ty miła, jeźli rozum masz, zrobisz, co radzi.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:464-471">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Uczynię, bo o słuszność nie ma się co spierać,</l>
+            <l>Lecz zabrać się do czynu skwapliwie należy.</l>
+          </lg>
+          <lg>
+            <l>Jeżeli jednak na czyn ten mam się odważyć,</l>
+            <l>Wy, przyjaciółki, milczeć na bogów winnyście;</l>
+            <l>Bo gdyby o tém matka słyszała, goryczą</l>
+            <l>Zaprawiłaby życie mi za tę przewagę. (odchodzi)</l>
+          </lg>
+          <stage>(Strofa.)</stage>
+          <stage>(Stasimon I. w. 468-500)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:464-515">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="472" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:472-486"/>
+            <l>Jeżeli wieszczy duch mnie nie uwodzi</l>
+          </lg>
+          <lg>
+            <l>I z roztropnością oględną w rzecz wnika,</l>
+            <l>Przybycie swoje zapowiada Dika:</l>
+            <l>Wrękach stanowczy sąd niosąc nadchodzi.</l>
+            <l>Tak, niezadługo tu zjawi się, dziecię!</l>
+            <l>Otucha we mnie wstąpiła, gdy o śnie</l>
+            <l>Słyszałam oto, co wróży radośnie.</l>
+            <l>Bo niezapomni hańby w zmarłych świecie</l>
+            <pb n="488" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=526"/>
+            <l>Rodzic twój, on król Helenów przed laty,</l>
+            <l>Ani ta stara dwusieczna siekiera</l>
+            <l>Ze śpiżu kuta, narzędzie zatraty,</l>
+            <l>Pod któréj ciosem sromotnie umiera.</l>
+          </lg>
+          <stage>(Antistrofa.)</stage>
+          <lg>
+            <milestone unit="card" n="488" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:487-502"/>
+            <l>Dopadnie także z strasznych, utajonych</l>
+            <l>Zasadzek silnym krokiem wielonoga</l>
+          </lg>
+          <lg>
+            <l>I wieloręka Erynida sroga.</l>
+            <l>Bo ogarnęła związków krwią zbroczonych</l>
+            <l>Żądza wszeteczna onych bezwstydników</l>
+            <l>Bezbożnych. Stąd duch wstąpił we mnie taki.</l>
+            <l>Gdyż wróżą, wróżą nam jawnie te znaki</l>
+            <l>Ciężką każń sprawców mordu i spólników.</l>
+            <l>Zaiste! chyba groźne w snach widzenia</l>
+            <l>I bóstw wyrocznie nie mają wróżb mocy</l>
+            <l>Dla śmiertelników, jeźli powodzenia</l>
+            <l>Dobrego widmo téj nie wróży nocy!</l>
+          </lg>
+          <stage>(Epodos)</stage>
+          <lg>
+            <milestone unit="card" n="504" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:503-515"/>
+            <l>Och! Pelopsa zawodzie</l>
+            <l>Wyścigowy przed laty,</l>
+            <l>Jakież straszne w tym grodzie</l>
+            <l>Sprowadziłeś ty straty!</l>
+            <l>Bo od kiedy ma na dnie</l>
+            <l>Morza Myrtil grób w fali,</l>
+            <l>Gdy bezprawie go zdradnie</l>
+            <l>Na łeb strąci i zwali</l>
+            <l>Z złocistego siedzenia:</l>
+            <l>Odtąd niema w tym domu</l>
+            <l>Już żadnego wytchnienia</l>
+            <l>Od klęsk i od niesromu!*</l>
+          </lg>
+          <stage>(Klitemnestra wychodzi z pałacu.)</stage>
+          <stage>(Epejsodion w. 504-1061)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:503-557">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <milestone unit="card" n="516" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:516-551"/>
+            <l>Samopas, jak się zdaje, ty znowu się włóczysz;</l>
+            <l>Bo nie ma Egistosa, który ci zakazał</l>
+            <l>Przed dom wychodzić i tam krewniaków szkalować.</l>
+            <l>A teraz gdy ów wyszedł, nie masz względu na mnie</l>
+            <pb n="489" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=527"/>
+            <l>Żadnego; choć częstokroć już mnie oczerniałaś</l>
+            <l>Przed ludźmi, żem bezczelna i niesprawiedliwie</l>
+            <l>Tu rządzę lżąc i ciebie i twe zachowanie.</l>
+            <l>A wżdy zelżywie z tobą ja się nie obchodzę;</l>
+            <l>Ja tylko fukam na cię, jak ty na mnie fukasz.</l>
+            <l>Twój rodzic</l>
+            <l>nigdy nie masz innego powodu -</l>
+            <l>Legł z mojéj winy, wołasz. Tak, z mojéj, wiem dobrze,</l>
+            <l>I nigdy czynu tego zapierać nie myślę.</l>
+            <l>Bo Dika go zabrała, nie ja sama jedna;</l>
+            <l>Jéj winna byłaś pomóc, gdybyś rozum miała:</l>
+            <l>Gdyż ten twój rodzic, co go ciągle opłakujesz,</l>
+            <l>Rodzoną siostrę twoje sam jeden się ważył</l>
+            <l>Z Helenów na ofiarę bogom zabić, chociaż</l>
+            <l>Nie tyle, kiedy płodził ją, czuł bólu, ile</l>
+            <l>Ja bólów przecierpiałam, kiedym ją rodziła.</l>
+            <l>Lecz daléj, poucz-że mnie, komu gwoli onę</l>
+            <l>Poświęcił? żali powiesz, dla Argeów wojska?</l>
+            <l>Nie mieli jednak prawa zabijać mi dziecko.</l>
+            <l>A jeźli ją dla brata, dla Menelaosa</l>
+            <l>Dał na rzeż, żali za to nie miał ponieść kary?</l>
+            <l>Czy Menelaos nie miał dwojga dzieci, którym</l>
+            <l>Smierć słuszniéj zadanoby niż méj córce, jako</l>
+            <l>Zrodzonym z tych rodziców, dla których na morze</l>
+            <l>Wówczas się wyprawiano? Albo czy też Hades</l>
+            <l>Oskomę większą miał na ucztę sporządzoną</l>
+            <l>Z mojego dziecka niźli z ciał dzieci owego?</l>
+            <l>Czy ku mym dzieciom miłość zgasła w sercu tego</l>
+            <l>Rodzica nieszczęsnego a kochał braterskie?</l>
+          </lg>
+          <lg>
+            <l>Nie czyn-że to rodzica złego i bez serca?</l>
+            <milestone unit="card" n="552" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:552-557"/>
+            <l>Tak sądzę, choć nie mówię wcale po twéj myśli.</l>
+            <l>Lecz córka zmarła gdyby odzyskała mowę,</l>
+            <l>Stwierdziłaby me zdanie. Dla tego też nie żal</l>
+            <l>Mi wcale, żem spełniła czyn ten; a jeżeli</l>
+            <l>Twém zdaniem jam zbłądziła, naprzód sprawiedliwy</l>
+          </lg>
+          <lg>
+            <l>Sąd staraj się mieć o tém a potém gań bliźnich.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:552-609">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="558" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:558-609"/>
+            <l>Nie powiesz przecie dzisiaj, żem ja pierwsza ciebie</l>
+            <l>32*</l>
+            <pb n="490" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=528"/>
+            <l>Draźniła wyrzutami a potém z ust twoich</l>
+            <l>Dopiero usłyszała takie słowa. Wszakże,</l>
+            <l>Jeżeli mi pozwolisz, otwarcie ci powiem</l>
+            <l>Me zdanie o rodzicu zgasłym i o siostrze.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:558-609">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>I owszem mów! pozwalam. Gdybyś zawsze do mnie</l>
+            <l>Tak odzywała się, nie byłabyś mi przykrą.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:558-609">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Więc powiem tobie. Ojca, przyznajesz, zabiłaś.</l>
+            <l>Na jakież słowo dusza, mów, mogłaby więcej</l>
+            <l>Się wzdrygnąć, w to nie wchodząc nawet, czy zabiłaś</l>
+            <l>Go słusznie czy bezprawnie? Ale ja ci powiem:</l>
+            <l>Nieprawnie go zabiłaś, skłonił cię namową</l>
+            <l>Mąż niegodziwy, z którym łoże teraz dzielisz.</l>
+            <l>Spytajż-e Artemidy łowczyny, czyj karząc</l>
+            <l>Grzech wszystkich wiatrów powiew wstrzymała w Auli-</l>
+            <l>dzie;</l>
+            <l>Lub sama powiem, gdyż nie godzi się jej pytać.</l>
+            <l>Mój ojciec oto bawiąc kiedyś, jak słyszałam, -</l>
+            <l>W bogini gaju, spłoszył krokami jelenia</l>
+            <l>Cętkami i pięknymi rogami zdobnego;</l>
+            <l>A kiedy ubił zwierza, plusnął słówkiem jakiémś</l>
+            <l>Chełpliwém. Rozgniewana o to Artemida</l>
+            <l>Acheów wstrzymywała, ażby ojciec straty</l>
+            <l>Zwierzęcia nie nagrodził córki swojéj życiem.</l>
+            <l>Ot! tak ofiarą padła; bo inaczéj wojsko</l>
+            <l>Ku Troi ni do domu nie mogło wypłynąć. *</l>
+            <l>Tym końcem po oporze długim i zmuszony</l>
+            <l>Nie chętnie dał ją na rzeź, nie dla Menelaja.</l>
+            <l>A gdyby - przypuściwszy, że twe zdanie słuszne,</l>
+            <l>Był zrobił to w zamiarze usłużenia bratu,</l>
+            <l>Czyż winien był dla tego zginąć z twojej ręki?</l>
+            <l>Jakiémże prawem? Rozważ, czy śmiertelnym prawo</l>
+            <l>Stanowiąc takie, sana nie wydajesz siebie</l>
+            <l>Na żałość i katusze? Bo jeżeli płacić</l>
+            <l>Za mord będziemy mordem a wyrok na ciebie</l>
+            <pb n="491" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=529"/>
+            <l>Zapadnie sprawiedliwy, ty najpierwsza zginiesz.</l>
+            <l>Wżdy patrz, czy nie zasłaniasz się błachym pozorem.</l>
+            <l>Bo jeźli wola, poucz, dla czego obecnie</l>
+            <l>-</l>
+            <l>z człekiem,</l>
+            <l>Najhaniebniejszych czynów jeszcze się dopuszczasz,</l>
+            <l>Ty, która dzielisz łoże z mordercą, tak</l>
+            <l>Co wespół z tobą zabił mojego rodzica -</l>
+            <l>I z którym dzieci płodzisz, gdy dawniejsze z łoża</l>
+            <l>Prawego urodzone odtrącasz od siebie!</l>
+            <l>To miałażbym pochwalić? albo czy też powiesz,</l>
+            <l>Że w taki sposób mścisz się śmierci córki swojéj?</l>
+            <l>To wstyd, rzec coś takiego. Boć rzecz to niegodna,</l>
+            <l>Z powodu córki pobrać się z nieprzyjacielem.</l>
+            <l>Nie wolno mi jednakże nawet przestrzéc ciebie</l>
+            <l>Bo wszystkiem gardłem wrzeszczysz zaraz, że złorzeczym</l>
+            <l>Rodzicy. Prawda, więcej panią mojém zdaniem</l>
+            <l>Nademną jesteś niźli matką mnie, co pędzę</l>
+            <l>Dni w biedzie i tak licznych bez przerwy przykrości</l>
+          </lg>
+          <lg>
+            <l>Od ciebie i od twego doznaję spólnika</l>
+            <l>On zasię, biedny Orest, ledwo calo twoich</l>
+            <l>Uszedłszy rąk za krajem wlecze nędzny żywot;</l>
+            <l>On, co go wychowuję, jak często mnie o to</l>
+            <l>Obwiniasz, na mściciela tobie; a bądź pewna:</l>
+            <l>Na siłach, nie na chęci do tego mi zbywa.</l>
+            <l>Dla tego, jeźli wola, okrzycz mnie po świecie</l>
+            <l>Za złą, za wyszczekaną i za wskroś bezwstydną;</l>
+            <l>Bo choćbym biegłą była w tych złych sztuk rzemiośle,</l>
+            <l>Rodowi twemu pewnie wstydu nie przyniosę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:558-633">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="610" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-633"/>
+            <l>Jak widzę, dysze gniewem, ale czy ma słuszność</l>
+            <l>Za sobą, o tém, widzę, wcale nie pomyśli.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-633">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>I cóż tu myśleć jeszcze? cóż myśleć o córce,</l>
+            <l>Co tak zelżywém słowem mnie, matkę, znieważa,</l>
+            <l>I to w tak młodym wieku? Žali wątpisz jeszcze,</l>
+            <l>Że ważyć się gotowa na wszystko bezwstydnie!</l>
+            <pb n="492" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=530"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-633">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Bądź przekonana, że mnie wstyd tego, com rzekła;</l>
+            <l>Jakkolwiek wątpisz o tém. Wiem, że nie tak sobie</l>
+            <l>Poczynam, jak na wiek mój wypada właściwie;</l>
+            <l>Lecz twoja niechęć ku mnie i twoje występki</l>
+            <l>Zmuszają mnie do takich postępków wbrew woli.</l>
+            <l>Bo na przykładach niecnych niecność się wykształca.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-633">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Bezwstydny płodzie! Prawda, słów i czynów moich</l>
+            <l>Względnością ja to sprawiam, że lżysz tak bez miary.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-633">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Ty siebie lżysz, a nie ja; bo ty czyny spełniasz,</l>
+            <l>A czyny potém łatwo znajdą nazwę sobie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-633">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Przysięgam się na możną Artemidę, kary</l>
+            <l>Za hardość tę nie ujdziesz, skoro Egist wróci.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-633">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>A widzisz? już w gniew wpadasz, choć mówić do woli</l>
+            <l>Mi pozwoliłaś. Słuchać już nawet nie umiesz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:610-659">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <milestone unit="card" n="634" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:634-659"/>
+            <l>Więc kłócąc krzykiem ciszę nie dasz nawet spełnić</l>
+            <l>Ofiary mi, gdy wszystko rzec ci pozwoliłam?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:634-679">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>I owszem, dam, pozwalam; spełń ofiarę, ust mych</l>
+            <l>Nie obwiniając już, bo słowa już nie powiem.</l>
+          </lg>
+          <stage>(odchodzi na bok.)</stage>
+          <lg>
+            <l>Klitemnestra do jednéj z służebnic`.</l>
+            <l>Ty więc, coś mi najbliższa, złożoną z owoców</l>
+            <l>Ofiarę podnieś! prośbę zaniosę do tego</l>
+            <l>Władarza, aby z trwogi wybawił mię strasznėj.</l>
+          </lg>
+          <stage>(przystępuje do ołtarza Apolona.)</stage>
+          <lg>
+            <l>Wysłuchaj teraz, Febie, opiekunie grodu,</l>
+            <pb n="493" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=531"/>
+            <l>Modlitwę moje skrytą. Nie wygłaszam onéj</l>
+            <l>W obec przyjaciół, bo się nie godzi wszystkiego</l>
+            <l>Wydawać na jaw, gdy ta w pobliżu tu stoi.</l>
+            <l>By z krzykiem stujęzycznym i zjadliwie wieści</l>
+            <l>Nie rozsiewała wszędzie po grodzie kłamliwéj.</l>
+            <l>Więc słuchaj tak mnie! toć i tak wszystko opowiem.</l>
+            <l>Podwójnych snów widzenia oto, które miałam</l>
+            <l>Minionéj nocy, te mi ziść, królu licejski,</l>
+            <l>Jeżeli mi pomyślność wróżą, ale jeźli</l>
+            <l>Są nieprzyjazne, spełnij je na moich wrogach!</l>
+            <l>I jeźliby się ważył kto na to, nie dozwól</l>
+            <l>Podstępnie z szczęśliwości obecnéj mnie wyzuć;</l>
+          </lg>
+          <lg>
+            <l>Nie, niech tak ciągle wiodę życie bez zmartwienia</l>
+            <l>I rządząc z berłem w ręku państwem Atrydowém.</l>
+            <l>Z miłymi połączona, z którymi dziś żyję,</l>
+            <l>Czas spędzam błogi, oraz wespół z temi dziećmi,</l>
+            <l>Co nienawiści ku mnie nie mają i życia</l>
+            <l>Nie zatruwają mego gorzkiém utrapieniem.</l>
+            <l>Ot! te wysłuchaj prośby łaskawie, licejski</l>
+            <l>Fojbosie, i daj wszystko nam, o co prosimy.</l>
+            <l>Czego zaś jeszcze życzę, tegoś, choć milczeniem</l>
+            <l>Pokryję to, świadomy, jak sądzę, boś bogiem.</l>
+            <milestone unit="card" n="660" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679"/>
+            <l>Toć wszystko winni widzieć ci, co z Zeusa rodem. *</l>
+          </lg>
+          <stage>(Pedagog i Orestes występują)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Niewiasty kraju tego, chciałbym się dowiedzieć</l>
+            <l>Dokładnie, czy to pałac króla Egistosa.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>To jego pałac; dobrze odgadłeś, przybyszu!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>A może nie pomylę się, że to małżonka</l>
+            <l>Owego? bo wygląda iscie na królowę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Tak, w saméj rzeczy; one to widzisz przed sobą.</l>
+            <pb n="494" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=532"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Pozdrawiam cię, królowo! wieść od przyjaciela</l>
+            <l>Przyjenıną niosę tobie i wraz Egistowi.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Twe słowa miłe wcale mi; wżdy wiedzieć pragnę</l>
+          </lg>
+          <lg>
+            <l>Nasamprzód z ust twych, kto cię z śmiertelnych wyprawił,</l>
+            <l>Tedagog.</l>
+            <l>Fanotéj z Focys ważny wypadek zwiastuje.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Mów jaki, cudzoziemcze? bo od przyjaciela</l>
+            <l>Przybywszy, wiem, że wieść nam przynosisz przyjazną.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Orestes umarł. W krótkich słowach wieść zamknąłem.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och biada mi niebogiéj! Dzisiaj żyć przestaję.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Co mówisz? co, przybyszu? niezważaj-że na tę!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Powtarzam, jak już rzekłem, że Orestes umarł.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Zginęłam nieszczęśliwa! Już wszystko stracone!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-679">
+          <speaker>Klitemnestra</speaker>
+          <stage>(do Elektry)</stage>
+          <lg>
+            <l>Idź do roboty swojej! (do Pedagoga A ty, cudzoziemcze,</l>
+            <l>Opowiedz prawdę szczerą, jaką śmiercią zginął.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:660-763">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <milestone unit="card" n="680" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:680-730"/>
+            <l>Wysłano mnie dla tego; więc wszystko ci powiem.</l>
+            <l>Przybywszy na igrzyska świetne, co Helady</l>
+            <l>Ozdobą są, on oto, by palmę otrzymać</l>
+            <l>Delficką, gdy heroldów usłyszał donośne</l>
+            <pb n="495" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=533"/>
+            <l>Wezwanie do wyścigu pierwszego z kolei,</l>
+            <l>W szedł w szranki okazały, wszystkim idąc w podziw;</l>
+            <l>A gdy tak jak urodą odznaczył się w biegu</l>
+            <l>Do mety, cześć odniosłszy szczytną ze zwycięstwa</l>
+            <l>Wystąpił z szranek. Nie wiem-ci, jak z mnóstwa przewag</l>
+            <l>I czynów męża tego mam wybrawszy tobie</l>
+            <l>Opisać kilka. Wiedz wżdy, że w wszystkich zapasach,</l>
+            <l>Do których przez heroldów wzywali sędziowie,</l>
+            <l>On odniósł przeznaczoną zwycięzcom nagrodę</l>
+            <l>I że go uwielbiono obwoławszy, że to</l>
+            <l>Argejczyk, że na imię mu Orestes i że</l>
+            <l>To syn Agamemnona tego, ktory siły</l>
+            <l>Orężne niegdyś całéj Helady był zebrał.</l>
+            <l>Tak szło z początku. Ale gdy zesłać nieszczęście</l>
+            <l>Chce który z bogów, możny ujść nawet nie zdoła.</l>
+            <l>Bo w dniu następnym, kiedy wraz ze wschodem słońca</l>
+            <l>Wyścigi na rydwanach wartkich wszcząć się miały,</l>
+            <l>On w liczbie wielu woźnic puścił się w zawody.</l>
+            <l>Był tam Achajczyk jeden, jeden z Sparty, z Libyi</l>
+            <l>Dwóch biegłych w kierowaniu wozów czterokonnych,</l>
+            <l>On przy tych jako piąty z końmi tesalskimi</l>
+            <l>Wystąpił; szósty z końmi bułanymi przybył</l>
+            <l>Z Etolii; mąż z Magnezyi był siódmy a ósmy,</l>
+            <l>Co miał rumaki siwe, był rodem z Enei;</l>
+            <l>Dziewiąty z założonych od bóstwa był Aten,</l>
+            <l>Ostatni przybył w wozie dziesiątym Beotczyk. *</l>
+            <l>705 Stanąwszy w miejscu, kędy sędziowie wybrani</l>
+            <l>Puściwszy losy wszystkim wozy rozstawili,</l>
+            <l>Na głos miedzianej trąby ruszyli z kopyta;</l>
+            <l>A popędzając krzykiem rumaki wstrząsali</l>
+            <l>Zarazem lejce w rękach i po całym placu</l>
+            <l>Rozlegał się rydwanów turkocących chrobot</l>
+            <l>I pyłu się tumany wznosiły do góry.</l>
+            <l>Wżdy oni pędząc wszyscy w zamieszaniu tłoczném</l>
+            <l>Nie żałowali bodźców wcale, byle osie</l>
+            <l>Wyprzedzić wpierw a potém konie parskające.</l>
+          </lg>
+          <lg>
+            <l>To też oblane były pianą grzbiety mężów</l>
+            <l>I dzwona kół i buchał w koło oddech koński.</l>
+            <pb n="496" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=534"/>
+            <l>Ów ilekroć do słupa na skręcie się zbliżał,</l>
+            <l>Dotykał niemal piastą go, puściwszy wodze</l>
+            <l>Koniowi powodneniu * z prawéj a rumaka,</l>
+            <l>Co biegł po lewej stronie, silnie powstrzymując.</l>
+            <l>W początku w jednym rzędzie toczyły się wszystkie</l>
+            <l>Rydwany, ale potem twardouste męża</l>
+            <l>Z Enei konie zbieglszy się poszły na przełaj</l>
+            <l>I okrążywszy plac już raz szósty czy siódmy</l>
+            <l>Wpadają czoło w czoło na zaprząg barkejski.</l>
+            <l>Natenczas w skutek szwanku pierwszego już jeden</l>
+            <l>Runąwszy na drugiego druzgoce, że całe</l>
+            <milestone unit="card" n="731" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:731-763"/>
+            <l>Krysejskie pole wozów złomkami zasłano.</l>
+            <l>Wżdy dostrzegł to woźnica dzielny z Aten; zaczém</l>
+            <l>Skierował na bok konie i powstrzymał w biegu,</l>
+            <l>Wir wozów zaplątanych naprzód się toczący</l>
+            <l>W pośrodku placu mimo siebie przepuściwszy.</l>
+            <l>Orestes w tyle jechał i umyślnie źrebców</l>
+            <l>Hamował zaped, ufny w wypadek zawodów.</l>
+            <l>Lecz gdy zobaczył, że ów sam dotrzymał placu,</l>
+            <l>Wrzasnąwszy przerażliwie nad uszami szybkim</l>
+            <l>Rumakom w pogoń poszedł; aż zrównawszy jarzma</l>
+            <l>Pędzili obaj potém, to jeden, to drugi</l>
+            <l>Nawzajem wyścigając się o głowę koni.</l>
+            <l>I wszystkich on objazdów aż do ostatniego</l>
+            <l>Bez szwanku, stojąc mocno na rydwanie prosto</l>
+            <l>Toczącym się dokonał, gdy wtém biedny cugli</l>
+            <l>Popuszcza rumakowi z lewéj na zakręcie</l>
+            <l>i wozem o kraj słupa niebacznie zawadza. *</l>
+            <l>Oś pęka w piaście, z wozu wypada Orestes,</l>
+            <l>W rzemienne pasy wikła się, a gdy na ziemię</l>
+            <l>Spadł, konie potém pierzchły na środek zawodu.</l>
+          </lg>
+          <lg>
+            <l>Lud wszystek gdy zobaczył zwalonego z wozu</l>
+            <l>Młodzieńca, w głos zajęknął żałośnie, że czynów</l>
+            <l>Tak szczytnych dokonawszy jest w takiéj złéj doli.</l>
+            <l>Bo to na ziemi wleczon był, to znów ku niebu</l>
+            <l>Wyrzucał nogi, aż bieg rumaków z trudnością</l>
+            <l>Wstrzymawszy wydobyli go współzawodnicy</l>
+            <l>Krwią zalanego, że nikt z przyjaciół na widok</l>
+            <pb n="497" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=535"/>
+            <l>Postaci nieszczęśliwéj nie byłby go poznał.</l>
+            <l>Niebawem go na stosie spalono i w małéj</l>
+            <l>Śpiżowej urnie podły wspaniałego ciała</l>
+            <l>Proch niosą tu wybrani mężowie Focydy,</l>
+            <l>Ażeby mu się dostał grób w ojczystéj ziemi.</l>
+            <l>Tak oto to się stało, a jeżeli powieść</l>
+            <l>Ból sprawia już, to widok dla świadków naocznych</l>
+            <l>Jak my najboleśniejszym był z wszystkich widoków.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:731-787">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="764" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:764-787"/>
+            <l>Och biada! och! więc panów naszych starożytny</l>
+            <l>Ród cały, jak widoczna, ze szczętem zgładzony!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:764-787">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>O Zeusie! cóż powiedzieć? czy nazwać to szczęściem,</l>
+            <l>Czy też nieszczęściem, chociaż zyskowném? Toć smutna</l>
+            <l>To rzecz ocalać siebie przez własne swe klęski.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:764-787">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Przecz smutkiem cię napełnia, niewiasto, wieść moja?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:764-787">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Jest to coś osobnego, być rodzicą; chociaż</l>
+            <l>Zniewagi dozna od tych, których w swojem łonie</l>
+            <l>Nosiła, nienawiści ku nim nie poweźmie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:764-787">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Daremnie więc, jak zdaje się, my tu przyszliśmy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:764-803">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Nie, nie daremnie. Powiesz-li, że nadaremnie,</l>
+            <l>Gdyś przyniósł mi przybywszy dowodną wiadomość</l>
+            <l>O śmierci tego, który z żywota mojego</l>
+            <l>Zrodzony, pierś i pieczę moję odtrąciwszy</l>
+            <l>Żył w obcym kraju jakby wygnaniec i już mnie</l>
+            <l>Nie widział, odkąd z ziemi naszej się wydalił;</l>
+            <l>A wyrzucając wciąż mi mord ojca na oczy</l>
+            <l>Odgrażał mi się straszną pomstą, tak że nigdy</l>
+            <l>Ni w nocnéj porze ani za dnia nie ogarniał</l>
+            <pb n="498" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=536"/>
+            <l>Mnie słodki sen, lecz w każdej chwili przed oczami</l>
+            <l>Mojemi stała mara śmierci. Teraz zasię -</l>
+            <l>Bo w dniu dzisiejszym zbyłam się bojaźni przed tą</l>
+            <l>785 I owym, a ta była w domu jędzą dla mnie</l>
+            <milestone unit="card" n="788" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803"/>
+            <l>Daleko sroższą, żłopiąc wciąż krew czystą serca</l>
+            <l>Mojego, - teraz zatém w spokoju bezpiecznym</l>
+          </lg>
+          <lg>
+            <l>Groźb téj się nie lękając szczęścia zażyjemy. *</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! biedna ja! bo teraz opłakać mi trzeba</l>
+            <l>Twą dole, Orestesie, kiedy taki los twój</l>
+            <l>A matka ciebie lży! czy słusznie tak się stało?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Nie tobie. Lecz owemu tak stało się słusznie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nemezys umarłego niedawno, słuchaj-że! *</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Słuchała, czego trzeba, i spełniła dobrze.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Naśmiewaj się! toć szczęścia teraz ty zażywasz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>A wy, Orestes i ty, go nie odbierzecie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nam wzięto je; więc tobie go nie odbierzemy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Byłabym wielce wdzięczną ci, przybyszu, gdybyś</l>
+            <l>Swą wieścią krzyki mocnéj w języku uśmierzył.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Więc można pójść już, jeślić dobrze wszystko poszło.</l>
+            <pb n="499" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=537"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-803">
+          <speaker>Klitemnestra</speaker>
+          <lg>
+            <l>Bynajmniéj! Toć postępek taki byłby z ujmą</l>
+            <l>Dla mnie i przyjaciela, co ciebie wyprawił!</l>
+            <l>Nie, wnijdź do domu! Tę tu zostaw, niech przed domem</l>
+            <l>Na swoję i przyjaciół dolę w głos się skarzy!</l>
+          </lg>
+          <stage>(Wchodzi do pałacu z pedagogiem)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:788-822">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="804" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:804-822"/>
+            <l>Czy wam się zdaje, że ta nieszczęsna w istocie</l>
+            <l>Zmartwiona i bolejąc sercem łzę wylała</l>
+          </lg>
+          <lg>
+            <l>I żale rozwodziła nad synem, co zginął</l>
+            <l>Tak nędznie? Nie, szyderczo śmiejąc się odeszła.</l>
+            <l>Och! biada mi niebogiéj! O mój Orestesie</l>
+            <l>Najdroższy, śmierć zadałeś mi ty umierając.</l>
+            <l>Bo z duszy mi wydarłeś na zawsze nadzieję</l>
+            <l>Jedyną, co dotychczas mnie nie opuszczała,</l>
+            <l>Że żyw powrócisz kiedyś i pomścisz się śmierci</l>
+            <l>Rodzica i krzywd moich. A teraz gdzież pójdę?</l>
+            <l>Jam sama opuszczona, sierota po tobie</l>
+            <l>I ojcu. Teraz służyć muszę znowu ludziom,</l>
+            <l>Co najnienawistniejsi u mnie są: mordercom</l>
+          </lg>
+          <lg>
+            <l>Rodzica mego. Czyż mnie to słusznie spotkało?</l>
+            <l>Wżdy nadal już zaiste! z nimi nie zamieszkam</l>
+            <l>Pod jednym dachem; nie, przed bramą tą się rzucę</l>
+            <l>Z rozpaczy i zmarnieję więdnąc bez przyjaciół.</l>
+            <l>Niech w końcu mnie zabije kto z tych, co tam w domu</l>
+            <l>Mieszkają, jeźli to go oburzy. Toć dla mnie</l>
+            <l>Rozkoszą będzie śmierć a życie utrapieniem!</l>
+          </lg>
+          <lg>
+            <l>Żyć dłużéj, tego wcale już nie życzę sobie.</l>
+          </lg>
+          <stage>(Komos, od w. 826-869)</stage>
+          <stage>(Strofa 1.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:804-835">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="823" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:823-835"/>
+            <l>Gdzież gromy są Zeusowe</l>
+            <l>Gdzież światły Helios, gdzie;</l>
+            <l>Gdy widząc zbrodnie owe</l>
+            <l>Cierpliwie tają je?</l>
+            <pb n="500" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=538"/>
+          </lg>
+          <stage>(Antistrofa 1.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:823-835">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! biada! och!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:823-835">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Cóż znaczą</l>
+            <l>Te łzy, dziewico?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:823-835">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Ο!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:823-835">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Nie unoś się rozpaczą!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:823-835">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Zabijesz!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:823-848">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="836" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848"/>
+            <l>Jakże to?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Gdy w tym, co w głąb' podziemną</l>
+            <l>Zszedł jawnie, ufasz ty,</l>
+          </lg>
+          <lg>
+            <l>Zbyt znęcasz się nademną</l>
+            <l>Roniącą żalu łzy!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Wiem, padł król Amfiarej *</l>
+            <l>Skutkiem niewieścich rad</l>
+            <l>Danych za złote dary;</l>
+            <l>A zszedłszy w zmarłych świat.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! biada och!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Tam włada</l>
+            <l>Jak żywy jeszcze.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O!*</l>
+            <pb n="501" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=539"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Tak, niestety! bo zdrada -</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-848">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Poniosła kaźń</l>
+            <l>*</l>
+          </lg>
+          <stage>(Strofa 2)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:836-859">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="849" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:849-859"/>
+            <l>Tak, to.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:849-859">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Wiem, wiem. Mściciel się zjawił</l>
+            <l>Smutnemu. Brak jego mnie;</l>
+            <l>Bo ten, coby wybawił</l>
+            <l>Zabrany nie wróci się.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:849-859">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Dosiągł nieszczęsną cię los</l>
+            <l>Nieszczęsny znów.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:849-859">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Wiem o tém</l>
+            <l>Aż nadto dobrze, bo cios</l>
+            <l>Po ciosie cierpień grotem</l>
+            <l>Życia zatruwa dni.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:849-859">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>To, nad czém utyskujesz</l>
+            <l>Nam znane.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:849-859">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Więc na cóż mi</l>
+            <l>Nadzieję tam rokujesz,</l>
+          </lg>
+          <lg>
+            <l>Gdzie</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:849-870">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="860" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-870"/>
+            <l>Gdzie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-870">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Już znikły nadzieje,</l>
+            <l>Że dzielny brat mi na pomoc przyśpieje!</l>
+            <pb n="502" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=540"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-870">
+          <speaker>Chór</speaker>
+          <stage>(Antistrofa 2.)</stage>
+          <lg>
+            <l>Wszystkich ludzi czeka zgon.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-870">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Czy to też, żeby w pogoni</l>
+            <l>Chyżéj biegunów jak on</l>
+            <l>Biedny wplątać się w koni</l>
+            <l>Lejce rzemienne?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-870">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Och! cios</l>
+            <l>To straszny!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-870">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tak, na ziemi</l>
+            <l>Obcéj go spotkał ten los,</l>
+            <l>Że rękami mojemi</l>
+            <l>Och!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-870">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie pogrzebion wcale</l>
+            <l>I że go moje nie uczciły żale!</l>
+          </lg>
+          <stage>(Chrysotemis przybiega.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:860-891">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <milestone unit="card" n="871" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891"/>
+            <l>.</l>
+            <l>Najdroższa! radość mnie tu przypędza do ciebie.</l>
+            <l>W skok więc na wdzięczny układ nie bacząc przybiegłam,</l>
+            <l>A niosę ci wesele, oraz wybawienie</l>
+            <l>Z ucisku, któryś miała i opłakiwała.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Gdzież znalazłabyś pomoc na moje cierpienia,</l>
+            <l>Dla których niepodobna już upatrzyć leków?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Orestes przyszedł do nas, dowiedz się z ust moich</l>
+            <l>O tém, on sam doprawdy, tak jak mnie tu widzisz.</l>
+            <pb n="503" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=541"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Co? czy ty oszalałaś, nieboga, i z własnéj</l>
+            <l>Niedoli naigrawasz się swojéj i z mojéj?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Przysięgam na ognisko ojców, że bez szydu</l>
+            <l>Powiadam to. Tak, blisko nas Orest przebywa.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! biedna ja! od kogoż z śmiertelników taką</l>
+            <l>Wieść usłyszawszy ślepą w niej ufność pokładasz?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Mam z siebie, nie od kogo drugiego; dostrzegłszy</l>
+            <l>Wyraźne ślady, ufność pokładam w tém słowie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nieboga! jakąż pewność masz? na jakiż widok</l>
+            <l>Zapałem tak nieznośnym ty się rozgorzałaś?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Na bogów! słuchaj-że mnie, abyś pouczona</l>
+            <l>Na przyszłość albo mądrą lub głupią mnie zwała.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-891">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Więc mów, jeżeli mowa przyjemność ci sprawia.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:871-919">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <milestone unit="card" n="892" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:892-919"/>
+            <l>Toż powiem wszystko to, com widziała naocznie.</l>
+            <l>Gdym przyszła do starego grobowca rodzica,</l>
+            <l>Ujrzałam zdroje mleka świeżo spływające</l>
+            <l>Z mogiły wierzchu, tudzież uwieńczony w koło</l>
+            <l>Kwiatami, jakiekolwiek tam kwitną, grób ojca.</l>
+            <l>Na widok ten zdumiałam się i w koło śledzę,</l>
+            <l>Czy czasem się nie przywlókl blisko nas człek jaki.</l>
+          </lg>
+          <lg>
+            <l>Wżdy widząc, że głęboka cisza wszędzie w okół,</l>
+            <l>Zbliżyłam się do grobu i oto na kraju</l>
+            <l>Kurhanu świeżo ścięty kosm włosów dostrzegłam.</l>
+            <l>Niebawem, gdym ujrzała to biedna, stanęła</l>
+            <pb n="504" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=542"/>
+            <l>Przed duszy méj oczami postać ukochana</l>
+            <l>I zda mi się, że widzę przed sobą ślad męża</l>
+            <l>Ze wszystkich najdroższego, włosy Orestesa.</l>
+            <l>Podniosłszy je oburącz nie rzekłam ni słówka;</l>
+            <l>Radości jednak łzami zaszły oczy zaraz.</l>
+            <l>I teraz jeszcze jestem tego przekonania</l>
+            <l>Jak wtedy, że od niego tylko strój ten przyszedł.</l>
+            <l>Bo komuż to się godzi zrobić okrom ciebie</l>
+            <l>I mnie? A ja, wiem przecie, tego nie zaniosłam</l>
+            <l>I ty też nie; boć tobie bezkarnie do bogów</l>
+            <l>Nie wolno nawet z domu tego się udawać.</l>
+            <l>Nie matki także dar to; toć jej nie do smaku</l>
+            <l>Czyn taki i wykonać go skrycie nie mogła.</l>
+            <l>A zatém cześć tę oddał zmarłemu Orestes.</l>
+            <l>Więc nie trać, droga siostro, serca! Wszak tych samych</l>
+            <l>Nie ciągle bóstwo jedno i to samo wspiera.</l>
+            <l>Do dziś dnia było srogiem dla nas; wżdy dzisiejszy</l>
+            <l>Dzień może będzie szczęścia mnogiego początkiem.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:892-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="920" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946"/>
+            <l>Och! jakież obłąkanie! Zdawna żal mi ciebie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Co znaczy to? czy ciebie nie cieszą te słowa?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie wiesz, gdzie jesteś ani gdzie myśl cię unosi.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Jak wiedzieć nie mam tego, com widziała jawnie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie żyje, biedna! z niego pomocy już zbawczéj</l>
+          </lg>
+          <lg>
+            <l>Nie będziesz miała! nań się nie oglądaj wcale!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Och! biada mi! Któż z ludzi tobie to powiedział?</l>
+            <pb n="505" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=543"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Ktoś taki, który patrzał z bliska na śmierć jego.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>I gdzież on jest? Zdumienie straszne mnie ogarnia.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tam w domu, miły matce a nie przykry wcale.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>930, Och biada mi niebogiéj! Skąd jednak na grobie</l>
+            <l>Rodzica owe dary obfite się wzięły?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Mém zdaniem niewątpliwie ktoś za Orestesa</l>
+            <l>Zmarłego upominki te złożył na grobie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Och! nieszczęśliwy! A ja przybiegłam tu niosąc</l>
+            <l>Radośnie takie wieści, nie świadoma, w jakiém</l>
+            <l>Jesteśmy udręczeniu! Teraz zaś przybywszy</l>
+            <l>Znachodzę i dawniejszą i świeżą niedolę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tak, dola nasza taka, lecz gdy mnie posłuchasz,</l>
+            <l>Niedoli dziś gnębiącéj brzemię zrzucisz z siebie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Ażaliż zdołam wskrzesić umarłego z grobu?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Toć o tém nie mówiłam. Tak głupią nie jestem.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Więc cóż rozkażesz, czemubym mogła podołać?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Masz śmiało tego podjąć się, co ci polece.</l>
+            <l>33*</l>
+            <pb n="506" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=544"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Jeżeli zysk wtém jaki, oporu nie stawię.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Pamiętam, że bez trudu wiele nie dokażesz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-946">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Pamiętaj. Na co stać mię, tém służyć ci będę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:920-989">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="947" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:947-989"/>
+            <l>Więc słuchaj, co wykonać ja postanowiłam.</l>
+            <l>Wiesz sama, że pomocy od przyjaciół już się</l>
+            <l>Spodziewać nie możemy, bo Hades porwawszy</l>
+            <l>Ich zabrał i zostawił nas tu sierotami.</l>
+            <l>Ja, póki dochodziły mnie wieści o bracie,</l>
+            <l>Że jest w pełności zdrowia, żywiłam nadzieję,</l>
+            <l>Że przyjdzie, by się pomścić kiedyś śmierci ojca;</l>
+            <l>A teraz, gdy go nie ma, w ciebie patrzę ufnie,</l>
+            <l>Że tego, co swą ręką zabił ojca, ze mną,</l>
+            <l>Ze siostrą, nie zawahasz się zgładzić -- Egista,</l>
+            <l>Gdyż nic mi już przed tobą nie trzeba zataić.</l>
+            <l>I na cóż jeszcze czekasz? jakąż jeszcze żyjesz</l>
+            <l>Nadzieją niewzruszoną? Toć ci wolno tylko</l>
+            <l>Narzekać, żeś wyzuta z przodków bogatego</l>
+            <l>Dziedzictwa; wolno tylko utyskiwać na to,</l>
+            <l>Że nieświadoma wcale dotąd małżeńskiego</l>
+            <l>Pożycia się starzejesz w panieństwie tak długiém.</l>
+            <l>I nie myśl, żebyś kiedyś dostąpiła szczęścia</l>
+            <l>Owego; bo do tyla nierozważnym nie jest</l>
+            <l>Egistos, żeby tobie lub mnie się rozrodzić</l>
+            <l>Pozwolił, tém gotując pewną zgubę sobie.</l>
+          </lg>
+          <lg>
+            <l>Jeżeli zaś usłuchasz skwapliwie méj rady,</l>
+            <l>Po pierwsze zbożność twoja dank weźmie u ojca</l>
+            <l>Zmarłego tam w podziemiu i wespół u brata;</l>
+            <l>A potém tém, czém z rodu jesteś, niezależną</l>
+            <l>Na przyszłość będziesz także i zacnego męża</l>
+            <l>Doczekasz się. Toć chętnie każdy zwraca oczy</l>
+            <l>Na to, co jest szlachetne. Nie widzisz że także,</l>
+            <pb n="507" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=545"/>
+            <l>Jak wsławisz imię nasze, skoro mnie posłuchasz?</l>
+            <l>Bo któż z obywateli lub obcych zoczywszy</l>
+            <l>Nas nie powita taką zaszczytną pochwałą:</l>
+            <l>„Spojrzyjcie przyjaciele, oto dwie rodzone</l>
+            <l>Siostrzyce, co dom ojców swych wyswobodziły</l>
+            <l>I gardząc życiem za mord rodzica zgładziły</l>
+            <l>Zażywających niegdyś szczęścia nieprzyjaciół!</l>
+            <l>Należy kochać one i wielbić je wszystkim</l>
+            <l>I wszyscy na obchodach świątecznych lub ludu</l>
+            <l>Zebraniach cześć oddawać winni ich odwadze."</l>
+            <l>Tak oto o nas ludzie mówić będą, że nas</l>
+            <l>Za życia i po śmierci sławy dank nie minie.</l>
+            <l>Więc mnie usłuchaj, siostro, pomóż rodzicowi,</l>
+            <l>Dla brata ponoś trudy, wybaw mnie z niedoli</l>
+            <l>I wybaw siebie samą, pamiętając o tém,</l>
+            <l>Że zacnym z rodu hańbę przynosi żyć w hańbie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:947-1014">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="990" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:990-1014"/>
+            <l>Zastanowienia trzeba w takiém przedsięwzięciu</l>
+            <l>I temu, który mówi, i temu, co słucha.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:990-1014">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Zaiste! gdyby rozum jéj nie był zwichnięty,</l>
+            <l>Byłaby, nim, niewiasty, z tém się odezwała,</l>
+            <l>Z rozwagą rzecz zgłębiła; wżdy tego nie widać.</l>
+            <l>Bo na cóż oglądając się w taką zuchwałość</l>
+            <l>I sama się uzbrajasz i wzywasz pomocy</l>
+            <l>Rak moich? Otwórz oczy przecie! Toć kobietą,</l>
+            <l>Nie mężem jesteś słabsza dłoń twoja niż wrogów.</l>
+            <l>Im szczęście się uśmiecha mile w dniu dzisiejszym,</l>
+            <l>Nam go ubywa ciągle, w niwecz idzie wszystko.</l>
+            <l>Któż więc takiego męża zamyślając zabić,</l>
+            <l>Bez szwanku sam zagłady uchroni się strasznéj?</l>
+            <l>Strzeż się, żebyśmy w doli nędznéj pogrążone</l>
+            <l>Na siebie większych jeszcze nieszczęść nie ściągnęły,</l>
+            <l>Jeżeli dojdą mowy twe do uszu czyich.</l>
+            <l>Bo nie ma ulgi żadnéj w tém ani korzyści,</l>
+            <l>Po świecie słynąć dobrze a umrzeć haniebnie.</l>
+            <pb n="508" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=546"/>
+            <l>Nie śmierć tak bardzo jednak mnie przeraża, lecz to,</l>
+            <l>Że można szukać śmierci a onéj nie znaleść!</l>
+            <l>Więc błagam ciebie, zanim ze świata nas zgładzi</l>
+            <l>Ze szczętem nędzna śmierć i pustki będą w domu,</l>
+            <l>Z mściwego ochłoń gniewu! Cokolwiek tu rzekłaś,</l>
+            <l>Zachowam w tajemnicy wieczystéj dla siebie.</l>
+            <l>Ty sama zaś nakoniec raz przecie się naucz</l>
+            <l>Bezsilną będąc tym, co potężni, ulegać.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:990-1049">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="1015" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049"/>
+            <l>Posłuchaj rady! Nie masz dla ludzi nabytku</l>
+            <l>Lepszego nad przezorność i umysł stateczny.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nic niespodziewanego nie rzekłaś; wiedziałam</l>
+            <l>Ja dobrze, że odrzucisz przełożenia moje.</l>
+            <l>Więc własną ręką saméj wykonać mi trzeba</l>
+            <l>Przewagę tę, bo onéj nie porzucę nigdy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Och! och niestety! obyś była miała w ówczas</l>
+            <l>Postanowienie takie, gdy rodzic umierał,</l>
+          </lg>
+          <lg>
+            <l>Byłabyś dokazała wszystkiego z pewnością!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie serca, lecz rozwagi wówczas mi zabrakło!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Rozwagę taką staraj się mieć całe życie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Rozważnie radzisz, ale rąk przyłożyć nie chcesz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Toć słusznie przedsięwzięcie złe zły koniec bierze.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Mądrości ci zazdroszczę, gardzę twém tchórzostwem.</l>
+            <pb n="509" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=547"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Cierpliwie zniosę kiedyś też twoje pochwały.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Przenigdy nie doczekasz się pochwał z ust moich.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Pod względem tym rozstrzygnie jeszcze przyszłość długa.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Idź sobie! bo pomocy z ciebie mieć nie będę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>I owszem, ale ty z niéj korzystać nie umiesz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Idź już i matce twojej opowiedz to wszystko!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Aż taką nienawiścią nie pałam ku tobie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Wżdy rozważ to, do jakiej podłości mnie skłaniasz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Nie skłaniam do podłości, jeno do namysłu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Więc za tém, co ty uznasz za słuszne, iść winnam?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Gdy zdrową radę dasz, dam ci się powodować.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>To straszna, mówić trafnie a uchybiać w czynie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Trafiłaś w rzecz, toć złe to do ciebie przylgnęło.</l>
+            <pb n="510" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=548"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Co sądzisz? że przeciwko słuszności to mówię?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Toć słuszność nawet szkodę przynosi niekiedy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie chcę żyć nigdy podług takiego zakonu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>A jednak, jeźli spełnisz czyn swój, mnie pochwalisz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Wykonam go zaiste! ty mnie nie odstraszysz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Na prawdę myślisz o tém? nie cofniesz zamiaru?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1049">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie! niczem tak nie gardzę, jak krokiem lękliwym.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1015-1057">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <milestone unit="card" n="1050" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1050-1057"/>
+            <l>Snać wcale się nie zgadzasz na to, co ja mówię?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1050-1057">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Od dawna takie moje zasady, nie świeże.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1050-1057">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Więc idę; ty na sobie nie przeniesiesz, aby</l>
+            <l>Me słowa, a ja, aby twe postępki chwalić.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1050-1057">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Odejdź-że sobie! Nigdy nie pójdę twym torem,</l>
+            <l>Chociażbyś bóg wie nie jak nalegała. Wielki</l>
+            <l>To zasię jest nierozum, gonić wiatry w polu!*</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1050-1057">
+          <speaker>Chrysotemis</speaker>
+          <lg>
+            <l>Ha! jeźli ci się zdaje, żeś wszystkie rozumy</l>
+            <pb n="511" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=549"/>
+            <l>Posiadła, bądź rozumna po swojemu! lecz gdy</l>
+            <l>W nieszczęściu kiedy zabrniesz, pochwalisz me słowa.</l>
+          </lg>
+          <stage>(Strofa 1.)</stage>
+          <stage>(Stasimon II od w. 1061-1111)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1050-1096">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="1058" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1060-1068"/>
+            <l>Czemuż, choć patrzym z lubością</l>
+            <l>Na zmyślne ptaki w wyżynie,</l>
+          </lg>
+          <lg>
+            <l>Jak rodziców z troskliwością</l>
+            <l>Strzegą swych, że je pisklęta</l>
+            <l>Niańczyli: nikt nie pamięta</l>
+            <l>Z nas naśladować je w czynie?</l>
+            <l>Ale gromami Zeus włada</l>
+            <l>I Temis w niebie zasiada:</l>
+            <l>Wnet przeto spadnie zapłata.</l>
+            <l>Famo, co do zgasłych świata</l>
+            <l>Wdzierasz się z ziemi, boleści *</l>
+            <l>Okrzykiem wrzaśnij i wieści</l>
+            <l>Zanieś tam w grobie Atrydzie</l>
+            <l>O opłakanéj ohydzie:</l>
+          </lg>
+          <stage>(Antistrofa 1.)</stage>
+          <lg>
+            <l>Że dom ten z dawna upada</l>
+            <l>W skutek niemocy, że obie</l>
+            <l>Siostry poróżniła zwada,</l>
+            <milestone unit="card" n="1070" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1070-1080"/>
+            <l>Któréj miłość nie zagodzi</l>
+            <l>Już nigdy! Oto w powodzi</l>
+            <l>Klęsk miotana w każdéj dobie</l>
+            <l>Losu ojca sama jedna</l>
+            <l>Opuszczona płacze biedna</l>
+            <l>Elektra, by smutna owa</l>
+            <l>Filomela, i gotowa</l>
+          </lg>
+          <stage>(Strofa 2.)</stage>
+          <lg>
+            <l>Umrzeć nic nie ceniąc sobie</l>
+            <l>Życia, byle jędze obie *</l>
+            <l>Rzucić na pował. Gdzież dziecię</l>
+            <l>Zacniejsze rośnie na świecie?</l>
+            <l>Nikt z szlachetnych, gdy w złéj żyje</l>
+            <pb n="512" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=550"/>
+          </lg>
+          <stage>(Antistrofa 2.)</stage>
+          <lg>
+            <l>Doli, dobrego imienia</l>
+            <l>Chętnie hańbą nie okryje</l>
+            <l>Ani w toni zapomnienia</l>
+            <l>Ginąć nie chce. Tak ty, dziecię,</l>
+            <milestone unit="card" n="1082" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1081-1087"/>
+            <l>Wolisz także w smutnym świecie,</l>
+            <l>Co wszystkich chłonie, przebywać</l>
+            <l>I stoczywszy walkę zbrojną</l>
+            <l>Ze zbrodnią na raz podwójną</l>
+            <l>Wziąć nagrodę: bogobojną</l>
+            <l>I dobrą córką się nazywać!</l>
+            <l>Obyś mi żyła i tyle</l>
+            <l>Potęgą i zamożnością</l>
+            <l>Przechodziła wrogów, ile</l>
+            <milestone unit="card" n="1090" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1090-1096"/>
+            <l>Musisz być z uniżonością</l>
+            <l>Uległą dla nich obecnie.</l>
+            <l>Choć bowiem widzę, że niecnie</l>
+            <l>Los tobą przykry pomiata,</l>
+            <l>Ty w owym zakonie przecie,</l>
+            <l>Co najprzedniejszy na świecie,</l>
+            <l>Otrzymałaś palmę, dziecię,</l>
+            <l>Przez zbożność przeciw władcy świata!</l>
+          </lg>
+          <stage>(Orestes i Pylades z towarzyszami zbliżają się)</stage>
+          <stage>(Epeisodion III od w. 1112-1390)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1090-1125">
+          <speaker>Orestes</speaker>
+          <lg>
+            <milestone unit="card" n="1098" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125"/>
+            <l>Niewiasty! żali dobrze drogę nam wskazano</l>
+            <l>I czy dójdziemy tędy do naszego celu?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>co się wywiadujesz? cóż cię tu sprowadza ?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Od dawna szukam, kędy tu mieszka Egistos.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Nie zabłądziłeś; dobrze wskazano ci drogę.</l>
+            <pb n="513" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=551"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Więc któż z was tam do grodu doniesie, że wespół</l>
+            <l>Tu przybyliśmy dla nich wielce pożądani.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Ot! ta, gdy najbliższemu to zrobić należy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Więc idź i wszedłszy powiedz tam niewiasto, że tu</l>
+            <l>Egista szuka kilku i że są z Focydy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och biedna ja! toć jawnych tu nie przynosicie</l>
+            <l>Dowodów na poparcie wieści, co nas doszły?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nieznana mi wieść twoja. Mnie polecił Strofios</l>
+            <l>Sędziwy, abym doniósł wam o Orestesie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>I cóż to, cudzoziemcze? Jakiż strach mnie bierze!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Jak widzisz, przychodzimy niosąc oto liche</l>
+            <l>Te szczęty umarłego w szczupłéj popielnicy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! biedna ja! więc widzę już na oczy teraz,</l>
+            <l>Jak zdaje się, to brzemię mnie przygnębiające.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1125">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Jeżeli Orestesa los ty opłakujesz,</l>
+            <l>Wiedz, że się w tém naczyniu ciało jego mieści.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1097-1170">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="1126" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1126-1159"/>
+            <l>Daj, cudzoziemcze, oddaj do rąk mych, na bogów!</l>
+            <l>Tę urnę, jeśli ona proch jego zawiera,</l>
+            <pb n="514" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=552"/>
+          </lg>
+          <lg>
+            <l>Ażebym nad popiołem tym rozwodząc jęki</l>
+            <milestone unit="card" n="1160" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1160-1170"/>
+            <l>I siebie i wraz cały ród opłakiwała.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1160-1170">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Podajcie jéj, ktokolwiek ona jest; co o to</l>
+            <l>Nie prosi nienawiścią pałając, lecz jako</l>
+            <l>Pokrewna rodem albo jako przyjaciółka.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1160-1170">
+          <speaker>ELEKTRA</speaker>
+          <stage>(obejmując urnę)</stage>
+          <lg>
+            <l>Pomniku najdroższego mi z ludzi, ty, szczątku</l>
+            <l>Jedyny Orestesa! Wyprawiając ciebie</l>
+            <l>Nie tak się spodziewałam och! ciebie powitać!</l>
+            <l>Bo w proch obróconego trzymam teraz w rękach</l>
+            <l>A z domu cię w pełności zdrowia wyprawiłam.</l>
+            <l>Och! obym była pierwej świat ten opuściła,</l>
+            <l>Nim do obcego kraju wysłałam cię ręką</l>
+          </lg>
+          <lg>
+            <l>Wykradłszy i od mordu ochroniwszy moją!</l>
+            <l>Tak byłbyś trupem padł w dniu owym i leżałbyś</l>
+            <l>Z rodzicem wespół w jednym i tym samym grobie.</l>
+            <l>A teraz po za domem rodzinnym i w obcéj</l>
+            <l>Krainie by wygnaniec mizernie zginąłeś,</l>
+            <l>Z daleka od rodzonéj siostry, że nieboga</l>
+            <l>Nie mogłam uczcić ciebie kąpielą ni zebrać,</l>
+            <l>Jak słusza, z płomiennego żaru biedny ciężar!</l>
+            <l>Nie, pogrzebany obcą ręką w popielnicy</l>
+            <l>Tak małéj lekkiém wracasz brzemieniem niebogi.</l>
+            <l>Och biada mi nieszczęsnéj! więc była daremna</l>
+            <l>Opieka sprawowana przed laty nad tobą</l>
+            <l>Bez przerwy! A był słodki mi trud ten, boć nigdy</l>
+            <l>Rodzica nie kochała więcej niż ja ciebie,</l>
+            <l>Ni domownicy nasi; nie, ja co cię niańczyłam</l>
+            <l>I do mnie to, do siostry, wciąż się odzywałeś.</l>
+            <l>A teraz w jednym dniu to poszło w niwecz wszystko</l>
+            <l>Wraz z twoją śmiercią. Wszystko porywając z sobą</l>
+            <l>By wicher, zszedłeś z świata! Rodzica już nie ma,</l>
+            <l>Ja zgasłam przez cię, ty sam znikłeś bez powrotu;</l>
+            <l>Wrogowie śmieją się a szaleje z radości</l>
+            <l>Potworna matka, któréj jako mściciel miałeś</l>
+            <pb n="515" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=553"/>
+            <l>Się zjawić kiedyś, jak mi to często przez posłów</l>
+            <l>Kryjomie zwiastowałeś! Wżdy wszystko to teraz</l>
+            <l>Zawistny mnie i tobie los wniwecz obrócił,</l>
+            <l>Co tak mi ciebie przysłał, nie w drogiéj nad wszystko</l>
+            <l>Postaci, jeno jako popiół i cień marny.</l>
+            <l>Och! biada mi! Widoku och bolesny! biada!</l>
+          </lg>
+          <lg>
+            <l>Och! och! najokropniejszą drogą tu wróciwszy</l>
+            <l>Najukochańszy do mnie och! śmierć mi zadałeś!</l>
+            <l>Tak, tak, zadałeś śmierć mi najdroższy mój bracie!</l>
+            <l>Więc przyjmij mnie do domu twego, mnie cień marny</l>
+            <l>Do świata mar, ażebym wespół z tobą w grobie</l>
+            <l>Mieszkała na dal! Toć gdy tu żyłeś na ziemi,</l>
+            <l>Jam z tobą los dzieliła jednaki a teraz</l>
+            <l>Umrzeć i z tobą w grobie połączyć się pragnę;</l>
+            <l>Bo zmarłych tylko smutek, jak widzę, nie trapi.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1160-1199">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <milestone unit="card" n="1171" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199"/>
+            <l>Był śmiertelnikiem rodzic twój pomnij, Elektro,</l>
+            <l>I śmiertelnikiem Orest; więc zbyt nie rozpaczaj!</l>
+          </lg>
+          <stage>(Toć wszystkim nam ta sama dola przeznaczona.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Och! och! cóż powiem? Jakżeż z trudności téj wybrnę?</l>
+            <l>Bo dłużéj już ust moich hamować nie zdołam.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Cóż cię tak boli? czemu wyrzekłeś te słowa?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Czyś ty Elektra? Twojaż to postać szlachetna?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tak, ona to zaiste! a wcale nieszczęsna.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Och! biada mi! och! jakże okropna twa dola!</l>
+            <pb n="516" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=554"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Dla czegoż, cudzoziemcze, tak biadasz nadernną?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Postaci tak bezecnie, beżbożnie styrana!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Toć do mnie, nie do innéj skarga twoja zmierza!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Och! w jakiéjż niezamężna dni pędziłaś biedzie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Przecz we mnie się wpatrując tak biadasz, przybyszu?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Och! jakże nieświadomy byłem nieszczęść twoich!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>A któreż słowo moje dało ci je poznać?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Objawia mi to postać twoja bolejąca.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Wżdy cierpień moich cząstkę małą tylko widzisz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Czy boleśniejsze jeszcze podobna oglądać?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tak, bo pod jednym dachem żyję z zabójcami.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Czyimi? O jakiémże nieszczęściu wspominasz?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Z rodzica mordercami. Im służę z przynuki.</l>
+            <pb n="517" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=555"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Któż z ludzi zmusza ciebie dźwigać jarzmo takie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Zwie matką się; wżdy matce w niczém nie podobna.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1199">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>I czém zmusiła? gwałtém czy też niedostatkiem?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1171-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="1200" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231"/>
+            <l>Gwałtem i niedostatkiem i srogością wszelką.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nie byłoż komu wspierać i zasłaniać ciebie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie. Był-ci, lecz tyś przyniósł popioły ot! jego.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nieszczęsna! Widok twój żal zdawna wzbudza we mnie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Jedyny z ludzi, wiedz, ty kajasz się nademną.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Sam jeden też boleję nad twoją niedolą.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Skądżeby to? czy rodem nam jesteś pokrewny?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Opowiedziałbym, jeźli osoby te wierne.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>I owszem, wierne. Możesz w obec nich się zwierzyć.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <stage>(chwytając popielnicę)</stage>
+          <lg>
+            <l>Więc odstaw to naczynie, a wszystko ci powiem.</l>
+            <pb n="518" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=556"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! tego mi na bogów! nie czyń, przyjacielu!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>1220, Słów moich usłuchajże! a nie zbłądzisz pewnie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Zaklinam cię, niebierz że tego, co najdroższe.</l>
+            <l>Nie puszczę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! jak biedna jestem, Orestesie,</l>
+            <l>Gdy pozbawionej ciebie nawet grób twój wydrą!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Mów słowa dobréj wróżby! Narzekasz niesłusznie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Jak to! nad bratem zgasłym niesłusznie narzekam?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nie tobie z takiém słowem odzywać się trzeba.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Czy ja niegodna jestem brata umarłego?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Bynajmniéj! ale to tu nie obchodzi ciebie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Jak to! gdy Orestesa prochy w ręku dźwigam.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nie Orestesa właśnie; powieść to udana.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Więc gdzież jest nieszczęśnika owego grobowiec?</l>
+            <pb n="519" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=557"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nie masz go nigdzie; bo kto żyje, grobu nie ma.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Młodzieńcze, co powiadasz?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Prawdę jak najszczerszą.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Więc żyje Orest?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Jeślić ja jeszcze oddycham.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Co? alboż ty nim jesteś?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Na pierścień ten ojca</l>
+            <l>Tu spojrzyj, a przekonasz się, czy prawdę mówię.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <stage>(spojrzawszy na pierścień)</stage>
+          <lg>
+            <l>Och dniu najmilszy!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Tak jest, potwierdzam, najmilszy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Zabrzmiałeś głosie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Innych już pytać nie będziesz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>W objęciu ciebież mam?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>I na zawsze zatrzymasz.</l>
+            <pb n="520" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=558"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1231">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Najdroższe mi niewiasty, spółrodaczki moje.</l>
+            <l>Spojrzyjcie ot! Orestes, on chytrym sposobem</l>
+          </lg>
+          <lg>
+            <l>Wpierw zmarły i sposobem chytrym znów wskrzeszony.</l>
+          </lg>
+          <stage>(Strofa.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1200-1252">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Widzimy go, dziewico, i łzy nam radości</l>
+            <milestone unit="card" n="1232" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1252"/>
+            <l>Wyciska oto z oczu to szczęsne zrządzenie.</l>
+          </lg>
+          <stage>(Śpίσω ἀπὸ κηνῆς, W. 1245 -1291)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1252">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O plemię, plemię najmilsze w rodzinie!</l>
+            <l>Przybyłeś przecię, odszukałeś oto</l>
+            <l>I za przybyciem tych oglądasz ninie,</l>
+            <l>Których pragnąłeś dręczony tęsknotą!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1252">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Tak, jestem; wżdy cierpliwie milcząc czekaj jeszcze.</l>
+            <l>To czemu?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1252">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Lepiéj milcz, by tam kto nie usłyszał.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1252">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Na Artemidę dziewiczą wieczyście,</l>
+            <l>Tam tego niemam się co lękać iście:</l>
+            <l>Ciężaru grodu, babiego narodu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1252">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Wżdy bądź ostrożna, bo i baby tchną odwagą</l>
+            <l>Wojenną; toć wiesz o tém sama z doświadczenia.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1252">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Och! ach! och biada! nie przez zasłonę</l>
+            <pb n="521" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=559"/>
+            <l>Wskazałeś, jakie złe nieukojone</l>
+            <l>I niezapomne nigdy na nas spadło!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1232-1272">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Wiem o niém, dziecko! ale o czynie tym wtedy</l>
+            <milestone unit="card" n="1253" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1272"/>
+            <l>Należy wspomnieć, kiedy czas będzie po temu.</l>
+          </lg>
+          <stage>(Antistrofa.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1272">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Toć każda, każda chwila jest dogodna</l>
+            <l>Dla mnie i o tém słusznie mówić mogę</l>
+            <l>Obecnie. Z biedą nakoniec swobodna</l>
+            <l>Rozpuszczę język porzuciwszy trwogę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1272">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>To prawda; przeto chciéj to sobie zabezpieczyć.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1272">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>I czémże?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1272">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Gdzie brak czasu, tam zwięzłość na miejscu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1272">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Któżby, gdy ty się zjawiłeś, był w stanie</l>
+            <l>Stłumić głos w piersiach. Toć niespodziewanie,</l>
+            <l>Nagle przy sobie mam ciebie w tej dobie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1272">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Masz mnie przy sobie, gdy mi przyjść bóstwa kazały.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1253-1287">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="1273" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1287"/>
+            <l>To słowo więcej przynosi pociechy</l>
+            <l>I serce większą radością napawa</l>
+            <l>Niż dawne: że bóg cię wiedzie do strzechy</l>
+            <l>Naszéj. W tém widzę, że boska to sprawa.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1287">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Weselu twemu tamy kłaść nie chcę, choć strach mię,</l>
+            <l>Że może się zbytecznie radości poddajesz.</l>
+            <l>34*</l>
+            <pb n="522" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=560"/>
+          </lg>
+          <stage>(Epodos.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1287">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Ty, któryś raczył pożądaną drogą</l>
+            <l>Po długim czasie przyjść i mnie się zjawić,</l>
+            <l>Widząc mnie w takim ucisku niebogą</l>
+            <l>Nie chciéjże -</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1287">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Czego nie chcieć?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1287">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Mnie pozbawić</l>
+            <l>Radości, którą sprawia twe oblicze.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1287">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Gniew do każdego miałbym, coby tego</l>
+            <l>Ci wzbronić myślał.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1287">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Przyzwalasz?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1273-1321">
+          <speaker>Orestes</speaker>
+          <lg>
+            <milestone unit="card" n="1288" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1288-1321"/>
+            <l>Dla czego</l>
+            <l>Nie miałbym?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1288-1321">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O przyjacióki dziewicze,</l>
+            <l>Głos, któregom się już nie spodziewała</l>
+            <l>Usłyszeć, słyszę. Stratę oniemiała</l>
+            <l>Znosiłam i nie rozwodziłam jęku</l>
+            <l>Przeraźliwego. Teraz mam cię w ręku,</l>
+            <l>Ukazałeś się, najdroższy, i patrzę</l>
+          </lg>
+          <lg>
+            <l>W twarz twoję, co się w pamięci nie zatrze</l>
+            <l>Mojéj, choć spaśćby klęsk miała nawała.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1288-1338">
+          <speaker>Orestes</speaker>
+          <lg>
+            <milestone unit="card" n="1322" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1322-1338"/>
+            <l>Zbytecznych słów zaniechaj i nic nie wspominaj</l>
+            <l>O tém, jak nie godziwą jest rodzica, ani</l>
+            <l>Jak mienie przodków w domu Egistos pochłania,</l>
+            <l>Roztrwania z rozrzutnością i marnie rozprasza.</l>
+            <pb n="523" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=561"/>
+            <l>Zabrałaby dogodną porę czynów mowa.</l>
+            <l>To tylko, co mi w chwili obecnéj się przyda,</l>
+            <l>Opowiedz, kędy skrycie lub otwarcie wrogów</l>
+            <l>Szydercze śmiechy tutaj przybywszy uśmierzę.</l>
+            <l>Wżdy tak zrób: aby matka po twojém obliczu</l>
+            <l>Promienném nie przenikła zamiarów, gdy wnijdziem</l>
+            <l>Do domu, rozwódź żale jakby nad nieszczęściem</l>
+            <l>Kłamliwie rozgłoszoném; gdy się czyn powiedzie,</l>
+            <l>Swobodnie będzie wolno ci śmiać się i cieszyć.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1322-1338">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Najdroższy bracie! wszystko, czego ty pożądasz,</l>
+            <l>I dla mnie pożądaném będzie; toć ty sprawcą</l>
+          </lg>
+          <lg>
+            <l>Radości jesteś téj, nie mojém ona dziełem.</l>
+            <l>Nie chciałabym też, choćby za zysk wielki nawet,</l>
+            <l>Czémkolwiek zmartwić ciebie, bo nie służyłabym</l>
+            <l>Tém godnie bogu, co nas ma teraz w swéj pieczy.</l>
+            <l>Wżdy o tém, co się w domu dzieje, wiesz. Słyszałeś,</l>
+            <l>Że nie ma teraz w domu Egistosa, lecz że</l>
+            <l>Przebywa tam rodzica, a nie bój się tego,</l>
+            <l>By kiedy me oblicze promienne radością</l>
+            <l>Spostrzegła. Bo nurtuje w głębi serca dawna</l>
+            <l>Nienawiść, a od kiedy zobaczyłam ciebie,</l>
+            <l>Radości łzami oczy wciąż się zalewają.</l>
+            <l>Jakżeby też łez zdroje mogły wyschnąć, kiedyś</l>
+            <l>Ty przybywając zgasłym był niby a przecie</l>
+            <l>Żyjącym cię ujrzałam? Niesłychanéj rzeczy</l>
+            <l>Ty dokazałeś. To téż gdyby z grobu ojciec</l>
+          </lg>
+          <lg>
+            <l>Powstawszy się pokazał mi, za cudbym tego</l>
+            <l>Nie poczytała, jeno oczom swym wierzyła.</l>
+            <l>Przybywszy więc szczęśliwie do nas taką drogą,</l>
+            <l>Sam prowadź podług woli. Pozbawiona ciebie</l>
+            <l>Byłabym jedno z dwojga osięgła, bo albo</l>
+            <l>Chwalebne ocalenie albo śmierć chwalebną.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1322-1338">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Zamilknij, proszę słyszę, że ktoś z głębi grodu</l>
+            <l>Do wrót się zbliża.</l>
+            <pb n="524" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=562"/>
+            <l>Elektra (z udanym smutkiem'.</l>
+            <l>Wnijdźcież w progi, cudzoziemcy;</l>
+            <l>To przynosicie przecie, czego nie odtrąci</l>
+            <l>Nikt w domu, choć z radością też do rąk nie weźmie.</l>
+          </lg>
+          <stage>(Pedagog wychodzi z pałacu)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1322-1338">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Szaleńcy nierozważni, zmysłów pozbawieni,</l>
+            <l>Czy za nic sobie życia nie cenicie wcale</l>
+            <l>Lub czy was przyrodzony rozum już opuścił,</l>
+            <l>Że będąc nie w pobliżu jeno w samym środku</l>
+            <l>Największych niebezpieczeństw tego nie widzicie?</l>
+            <l>Toć gdybym u podwoji tych nie był oddawna</l>
+            <l>Na straży stał, do grodu byłyby wpierw wasze</l>
+            <l>Zamysły się dostały niż wasze osoby.</l>
+          </lg>
+          <lg>
+            <l>Od tego więc ustrzegłem was bacznością swoją.</l>
+            <l>A teraz zaprzestawszy długich mów i krzyków</l>
+            <l>Radosnych tych bez końca wnijdźcie w progi domu,</l>
+            <l>Bo w takich przedsięwzięciach mitrega nieszczęście</l>
+            <l>Sprowadza - a czas wielki skończyć już tę sprawę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1322-1353">
+          <speaker>Orestes</speaker>
+          <lg>
+            <milestone unit="card" n="1339" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353"/>
+            <l>Więc jakiż tam stan rzeczy znajdę, kiedy wnijdę?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Najlepszy; przedewszystkiém nikt ciebie nie pozna.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Doniósłeś niewątpliwie, żem rozstał się z światem.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Wiedz, że tam za mieszkańca Hadesu uchodzisz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Czy radość wieść ta sprawia im? lub co tam mówią?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Gdy będzie już po wszystkiém, powiem. Jak na teraz</l>
+            <l>Tam rzeczy dobrze stoją, nawet i niedobre.</l>
+            <pb n="525" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=563"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Kto jest ten mąż, mój bracie? powiedz mi na bogów!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Czy nie poznajesz go.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie przypominam sobie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nie wiesz-li, komuś niegdyś do rąk mnie oddała?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>O kimże mówisz? komu?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>W czyich rękach ty mnie</l>
+            <l>Przezornie wyprawiłaś do focejskiéj ziemi?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Co? ten to, który niegdyś przy zabójstwie ojca</l>
+          </lg>
+          <lg>
+            <l>Pokazał mi się wiernym jedyny ze wszystkich?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1353">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>To on; już daléj zatém mnie o to nie badaj!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1339-1371">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="1354" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1354-1371"/>
+            <l>1360 O najpiękniejszy dniu! o zbawco ty jedyny</l>
+            <l>Rodzicielskiego domu, jak przybyłeś? Ty więc</l>
+            <l>Tym jesteś, który brata i mnie wybawiłeś</l>
+            <l>Z mnogiego udręczenia? O ręce najdroższe,</l>
+            <l>O słodka nóg przysługo! Przecz będąc tak dawno</l>
+            <l>Już ze mną się taiłeś nie dając się poznać?</l>
+          </lg>
+          <lg>
+            <l>I ty mi śmierć powieścią ową zadawałeś</l>
+            <l>A miałeś z sobą przecie to, co mi najsłodsze!</l>
+            <l>Witaj, ojcze! bo ojca, zdaje się, że widzę,</l>
+            <l>Witaj że i wiedz: w jednym dniu nienawidzilam</l>
+            <l>Najsilniej z wszystkich ludzi ciebie i kochałam.</l>
+            <pb n="526" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=564"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1354-1371">
+          <speaker>Pedagog</speaker>
+          <lg>
+            <l>Dość tego zdaniem mojém. Bo w kolejnym nocy</l>
+            <l>I mnogich dni porządku dowiesz się, Elektro,</l>
+            <l>Dosadnie, co w przeciągu owym czasu zaszło.</l>
+            <l>Wam dwom zaś, co tu jeszcze czekacie, powiadam:</l>
+            <l>Do czynu pora teraz; Klitemnestra sama</l>
+            <l>I nie ma przy niéj mężów. Gdy zwlekać będziecie,</l>
+            <l>I z tymi, to rozważcie, i z liczbą znaczniejszą</l>
+            <l>Dzielniejszych niźli owi bój stoczyć wam przyjdzie. *</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1354-1383">
+          <speaker>Orestes</speaker>
+          <lg>
+            <milestone unit="card" n="1372" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1372-1383"/>
+            <l>Już długich słów nam teraz wcale nie potrzeba,</l>
+            <l>Pyladzie! teraz trzeba czémprędzéj do wnętrza</l>
+            <l>Wnijść domu, cześć oddawszy wpierw ołtarzom bogów</l>
+            <l>Rodzinnych, które oto strzegą domu progów.</l>
+          </lg>
+          <stage>(Klękają przed oltarzem Apolona poczém wchodzą do pałacu.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1372-1390">
+          <speaker>ELEKTRA</speaker>
+          <stage>(Klękając także przy ołtarzu)</stage>
+          <lg>
+            <l>O królu Apolonie, wysłuchaj łaskawie</l>
+            <l>Ich prośby i wraz moje. Toć często ci dary</l>
+            <l>Składałam szczodrą ręką, na jakie mnie stało.</l>
+            <l>Toż teraz, Apolonie licejski, jak na to</l>
+          </lg>
+          <lg>
+            <l>Mnie stać, zaklinam, błagam, proszę na kolanach:</l>
+            <l>Daj pomoc nam życzliwie w téj naszéj przewadze</l>
+            <l>I pokaż jawnie, jaką ludziom wymierzają</l>
+            <milestone unit="card" n="1384" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1384-1390"/>
+            <l>Zapłatę sprawiedliwą za zbrodnie bogowie.</l>
+          </lg>
+          <stage>(Wchodzi do grodu)</stage>
+          <stage>(Strofa)</stage>
+          <stage>(Stasimon III, od w. 1391-1402.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1384-1396">
+          <speaker>Chór</speaker>
+          <lg>
+            <l>Patrzcie, jak Ares naprzód się wali,</l>
+            <l>A żądza krwi go zaciekła pali.</l>
+            <l>Weszły do grodu jędze-mścicielki,</l>
+            <l>W skok ścigające występek wszelki</l>
+            <l>I nieuchronne, że się spełnienia</l>
+            <l>Wnet doczekają duszy méj rojenia.</l>
+            <pb n="527" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=565"/>
+          </lg>
+          <stage>(Antistrofa.)</stage>
+          <lg>
+            <milestone unit="card" n="1391" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1391-1396"/>
+            <l>Bo mściciel zgasłych już chytronogi</l>
+            <l>Przestąpił strzechy ojczystéj progi,</l>
+            <l>Wszedł do możnego z dawna siedliska,</l>
+            <l>A miecz krwi chciwy w ręku mu błyska.</l>
+          </lg>
+          <lg>
+            <l>Hermes wśród nocnéj kryjąc pomroki</l>
+            <l>Podstęp, do celu wiedzie go bez zwłoki. *</l>
+          </lg>
+          <stage>(Elektra wraca)</stage>
+          <stage>(Exodos, od w. 1403-1509)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1391-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <milestone unit="card" n="1397" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421"/>
+            <l>Najdroższe mi niewiasty, niebawem przewagi</l>
+            <l>Mężowie dokonają; więc milczkiem czekajcie!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Cóż oni teraz robią?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Ona stroi urnę,</l>
+            <l>Do grobu ją chcąc złożyć, a ci są w pobliżu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Przecz ty wypadłaś z grodu?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Dopilnować tego</l>
+            <l>Chcę, żeby Egist skrycie nie wrócił do domu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Klitemnestra</speaker>
+          <stage>(za scena w grodzie)</stage>
+          <lg>
+            <l>Och! och! och biada! grodzie z przyjaciół obrany,</l>
+            <l>Zabójców pełen.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Jęczy ktoś tam w głębi dworca;</l>
+            <l>Nie słyszałyścież głosu, przyjaciółki drogie?</l>
+            <pb n="528" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=566"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Słyszałam straszny jęk, że dreszcz mnie przeszył biedną.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Klitemnestra</speaker>
+          <stage>(j. w.)</stage>
+          <lg>
+            <l>Ja biedna! Egistosie, kędyż ty przebywasz?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Powtórnie jęczy ktoś znów.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Klitemnestra</speaker>
+          <stage>(j. w.)</stage>
+          <lg>
+            <l>Och! synu, mój synu!</l>
+            <l>Ulituj się rodzicy!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie miałaś litości</l>
+            <l>Ty sama nad nim ani nad tym, co go spłodził.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>O grodzie, o nieszczęsny rodzie, w dniu dzisiejszym</l>
+            <l>Obecnie ciebie straszna zagłada niweczy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Klitemnestra</speaker>
+          <stage>(j. w.)</stage>
+          <lg>
+            <l>Och! jam raniona!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Uderz raz drugi, nuż zdołasz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>Klitemnestra</speaker>
+          <stage>(j.w.)</stage>
+          <lg>
+            <l>Już znowu, och! och!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1421">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Oby Egista też zwalił!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1397-1441">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Spełnia się klątwa. Żyją ci, co w grobie leżą;</l>
+            <l>Sprzątnęli i przelali obficie krew zbójców</l>
+            <l>Ci, którzy z dawna zmarli.</l>
+          </lg>
+          <stage>(Orestes, Pylades i Pedagog wypadają z palacu)</stage>
+          <lg>
+            <l>Oto już wracają.</l>
+            <pb n="529" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=567"/>
+            <milestone unit="card" n="1422" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441"/>
+            <l>Ofiary Aresowej krwią ociekły ręce!</l>
+            <l>Już nie wiem czy mam ganić.</l>
+            <l>Stan rzeczy?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Jakiż, Orestesie,</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Jak najlepszy tam w domu, jeżeli</l>
+            <l>Czyn dobry nakazała wyrocznia Fojbosa</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Umarła więc nieszczęsna?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nie będziesz się lękać</l>
+            <l>Już na dal, by cię matki rozpusta shańbiła. *</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Uciszcie się, bo widzę Egista w pobliżu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Do domu wróćcie dzieci!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Gdzież męża widzicie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Radośnie od przedmieścia oto kroczy ku nam.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Czémprędzej więc ukryjcie się w domu za bramą!</l>
+            <l>Jednego dokonawszy spełnijcie też drugie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Otuchę miéj, spełnimy.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Więc dokąd chcesz, pospiesz!</l>
+            <pb n="530" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=568"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Już niema mnie. Orestes, Pylades i Pegagog odchodzą.)</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Co robić tu, moja w tém głowa.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1441">
+          <speaker>Przodownica chóru</speaker>
+          <lg>
+            <l>Niech kilka słów słodziutkich z ust twoich (pomoże</l>
+            <l>To pewnie) tego męża pogłaszcze po uszach,</l>
+            <l>By nic nie przeczuwając wpadł w pomsty zasadzkę!</l>
+          </lg>
+          <stage>(Egistos nadchodzi.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1422-1465">
+          <speaker>Egistos</speaker>
+          <lg>
+            <milestone unit="card" n="1442" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465"/>
+            <l>Któż wie z was, kędy bawią przybysze z Focydy,</l>
+            <l>Co wieść podobno do nas przynieśli, że życie</l>
+            <l>Orestes w wyścigowych zapasach utracił?</l>
+            <l>Ty, powiedz, ciebie pytam, tak ciebie, co tyle</l>
+            <l>Zuchwałą byłaś dawniej. Ciebie snać dotknęło</l>
+            <l>1445 Najbardziej to, więc wiedząc powiesz też najlepiéj!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Wiem, jakże niemiałabym? Chybaby mnie dola</l>
+            <l>Nie obchodziła moich, co tyle mi drodzy!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Więc gdzież są cudzoziemcy teraz? to mi powiedz!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tam w domu są w gościnie u uprzejméj pani.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>O śmierci niewątpliwie ją zawiadomili?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Nie słowem tylko, lecz na oko pokazali.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Więc wolno mi własnemi oglądać oczami?</l>
+            <pb n="531" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=569"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Tak, wolno; ale widok to wcale nie miły.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Wbrew zwyczajowi sprawiasz wielką radość mową.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Radujże się, jeżeli ty rad jesteś temu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Zamilknąć teraz każę i otworzyć bramę.</l>
+            <l>Niech ujrzy to lud wszystek i Mycen i Argu,</l>
+            <l>By każdy, co nadzieje płonne w owym mężu</l>
+            <l>Pokładał może dawniéj, teraz jego trupem</l>
+            <l>Ujrzawszy krag mój znosił, nie dopiero w skutek</l>
+            <l>Méj chłosty i z przynuki przyszedł do rozumu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1465">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Spełniłam już, co do mnie należy; bo z czasem</l>
+            <l>Zmądrzałam, że możniejszym ustępuję kornie.</l>
+          </lg>
+          <stage>(Otwiera podwoje. Orestes i jego towarzysze przynoszą zakryte ciało Klitemnestry.)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1442-1490a">
+          <speaker>Egistos</speaker>
+          <lg>
+            <milestone unit="card" n="1466" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a"/>
+            <l>O Zeusie! ot! ofiara tu gniewu bożego!*</l>
+            <l>Lecz jeźli grzeszne słowo moje, cofam ono.</l>
+            <l>Zasłonę zdejmcie z twarzy zupełnie, ażebym</l>
+            <l>Krewnemu ja też spłacił winną łez daninę.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Ty podnieś ją! nie moją, lecz twoją to rzeczą,</l>
+            <l>Oglądać i powitać mile one zwłoki.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Rozumna twoja rada i usłucham onéj.</l>
+            <l>Ty wezwij Klitemnestrę, gdziekolwiek jest w domu.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Toć ona tuż przy tobie; gdzieindziej nie szukaj!</l>
+            <pb n="532" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=570"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Egistos</speaker>
+          <stage>(podnosząc zasłonę)</stage>
+          <lg>
+            <l>Och! biada mi! cóż widzę?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>I kogoż nie poznajesz?</l>
+            <l>Eistos</l>
+            <l>Kogoż ty się lękasz?</l>
+            <l>W jakichże to mężów</l>
+            <l>Ja sidła wpadłem biedny, zewsząd otoczony?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Ażaliż teraz widzisz dopiero, że do tych.</l>
+            <l>Co żyją, ty przemawiasz jakby do umarłych?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Och! biada ach! rozumiem ciebie! nie kto inny</l>
+            <l>Przemawia bowiem do mnie, jeno sam Orestes.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Ty wieszczek tak wyborny, tak długoś był w błędzie?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Zginąłem och! nieszczęsny. Ale pozwól kilka</l>
+            <l>Słów mi powiedzieć!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1490a">
+          <speaker>ELEKTRA</speaker>
+          <lg>
+            <l>Bracie! na bogów! nie pozwól</l>
+            <l>Mu mówić więcej ni się rozwodzić z żalami.</l>
+            <l>Bo jakiż zysk człek bliski śmierci, obciążony</l>
+            <l>Zbrodniami będzie z tego miał, że śmierć się zwlecze?</l>
+            <l>Nie, jak najprędzéj zabij a zabiwszy zdala</l>
+            <l>Od oczu naszych porzuć grabarzom go, którym *</l>
+            <l>On słusznie przynależy; bo to jedno tylko</l>
+            <l>Uśmierzyłoby bole z dawna przecierpiane.</l>
+            <l>i</l>
+            <pb n="533" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=571"/>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1466-1507">
+          <speaker>Orestes</speaker>
+          <stage>(do Egista)</stage>
+          <lg>
+            <milestone unit="card" n="1491" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507"/>
+            <l>Czém prędzej wnijdź do domu! bo już nie o słowa</l>
+            <l>Czcze bój się toczy, chodzi tu o twoje życie.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Przecz mnie do grodu wiedziesz? Jeżli czyn to słuszny,</l>
+            <l>Przecz trzeba ci ciemności? Tu zaraz mię zabij!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Ty nie rozkazuj! Tam idź, gdzieś zabił rodzica</l>
+            <l>Mojego; na tém samém miejscu stracisz gardło.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Czyż to konieczność, aby dom ten widział wszystkie</l>
+            <l>Cierpienia Pelopidów obecne i przyszłe?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Przynajmniéj twoje; to ci jasno przepowiadam.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Nie sztuką przekazaną od ojca się chełpisz.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>*</l>
+            <l>Zbyt wiele odpowiadasz i pochód się zwleka.</l>
+            <l>Idź przeto!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Ty mnie prowadź!</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Tyś winien iść naprzód.</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Egistos</speaker>
+          <lg>
+            <l>Ażebym ci nie uciekł?</l>
+          </lg>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1507">
+          <speaker>Orestes</speaker>
+          <lg>
+            <l>Nie, żebyś nie umarł,</l>
+            <l>Jak życzysz. Tę ci przykrość jeszcze sprawić trzeba,</l>
+            <l>Powinna zaś niebawem kara sprawiedliwa</l>
+            <pb n="534" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=572"/>
+            <l>Tych spotkać, którzy działać śmią wbrew zakonowi:</l>
+            <l>Śmierć, mówię. Wtedy zbrodni nie byłoby tyle.</l>
+          </lg>
+          <stage>(Wchodzą wszyscy do grodu)</stage>
+        </sp>
+        <sp corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1491-1510">
+          <speaker>Chór</speaker>
+          <lg>
+            <milestone unit="card" n="1508" corresp="urn:cts:greekLit:tlg0011.tlg005.perseus-grc2:1508-1510"/>
+            <l>O rodzie Atreusowy, jak wiele znosiłeś</l>
+            <l>Klęsk strasznych, zanim wolność w końcu wywalczyłeś</l>
+            <l>Przez dzielny napad sobie na zawsze w tej dobie! *</l>
+          </lg>
+        </sp>
+      </div>
+    </body>
+    <back>
+      <div type="notes">
+        <head>Uwagi i objaśnienia</head>
+        <pb n="585" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=623"/>
+        <note type="source">Wiersz. 1518 Pani ciemności, tj. Persefone; Aidoneus t. s. Aïs, Aïdes, Hades, Pluton. 1556 – 1565. Córy podziemia, t. j. Erynie. Czytam następnie πολυξένοις zam. πολυξέστοις. Potwór, t. j. Cerberus. W końcu modli się chór do Tanatosa, syna Gei i Tartarosa, aby skłonił Cerberusa do tego, żeby zszedł z drogi Edypowi i nieprzeszkadzał mu w zstąpieniu do Hadesu. 1587. Do dotyczy szczegółów topograficznych w mowie sługi, p. Uwagę 3. Co zaś dotyczy skały toryckiej (Θορίκιος πέτρος), to o niéj nic bliższe- go nie wiemy. Schneidewin uważa też wyraz θορίκιος za zepsuty i sądzi, że Sofokles może napisał τρικόρυφος = τρικάρανος, τρισκελήτ. 1587. Demeter rozzieleniająca wszystko przeciwstawiona tu Demeterze Erynis, gniewnėj i nic nie rodzącej. Świątynia owej w bliskości Kolonu znaj- dować się musiała na jakiejś wyniosłości. Stad προσόψιος πάγος). 1654. Nie dam słowa dobrego tak tłumaczę greckie οὐκ ἂν παρείμην, za Schnei- dewina przykładem, który powiada: παρέσθαι τινός, eigentlich in par- tes suas trahere studere, gute Worte geben, dann exorare, παραιτεῖσθαι 1665. Przekład podług Schneidewina. 1674. Słowa: „Gdzież tulając się znajdziemy ziemię daleka albo morską toń" znaczą: gdzież na ziemi lub morzu? t. j. nigdzie. 1717. Słowa: ἄγε με, καὶ τότ᾽ ἐπενάριξον tak tłumaczę; właściwie: i tam zabij. 1721. Naśladowałem tu subtelność greckiego tekstu: ποὶ φύγω; καὶ πάρος ἀπέφυγε przez dokąd się udam? - już się udało. 1726. Czytam: τοτὲ μὲν ἄπορα, τοτὲ δ' ὕπερθεν. 1747. Horkos Zeusonry. Horkos = przysięga lub bóg przysięgi, sługa Zeusa Horkios, t. j. boga baczącego na przysięgę i przysięgających i karzą- cego krzywoprzysięstwo. 1750. Wedlug Pausan IX, 5, 1. przydomek „ogigijskie" wzięły Teby od kra- jowca (ἀπ'ἀνδρὸς αὐτόχθονος) Ogigesa. VII. DO ERLEKTY. 4. Przez Argos stare rozumiana kraina cała, ponieważ ziemiorodzcy Inachidzi kraj swój uważali za najstarszy Sofokles tu zresztą wypowiada przez usta pedagoga to, co Homer w Od 1, 40 mówi: że Orestes pomści się ὁππότ᾽ ἂν ἡβή η τε καὶ ἧς ἱμείρεται γαίης 5. Dolina Inachowéj góry. Cała Inachowa równina nazwana od poety gajem Iony, córki Inacha a kochanki Zeusa gzem kręconej, w Hiketydach Eschy- losa w. 260 klucznicą Zeusa zwanej. P. Od. XVII, 246. Ιασον ῎Αργος według Steph. Βyz. ἀπὸ Ἰάσου τοῦ κατ' ἐνίους πατρὸς Ἰοῦς. Poeta zaś przez laσον rozumie Iony, t. j. córki Inachowej. Wiersz. 7. boga wilkobójcy licejski rynek. Byl to plac najgłówniejszy miasta Argos u stóp góry Larysy. Na placu tym stała założona przez Danaosa świą- tynia Apolona licejskiego naprzeciw świątyni Zeusa nemejskiego. Bóg wilkobójca (λύκειος θεός, λυκοκτόνος) był opiekuńczém Argu bóstwem. 8. Świątynia argeiskiéj Hery wznosiła się w oddaleniu 10 do 15 stadyów od miasta Argos pomiędzy tém miastem a Mycenami, po lewej stronie drogi prowadzącéj od przesmyku korynckiego. 37. Ponieważ Klitemnestra i Egistos podstępem Agamemnona zabili, przeto też Orestes podstępem ma pomstę wykonać. Wyrocznię tę zaraz z po- czątku dramatu jasno Orestes opowiada, ponieważ poeta nadał jéj postać taką, jakiej położenie dramatu jego wymagalo. 59-64. Myśl słów Orestesa jest ta: Być uważanym za umarłego, nie będąc nim rzeczywiście, nie jest nic złego, owszem często zysk przynosi. Myśl ta jedynie odpowiada charakterowi Orestesa i tak tylko nabierają zna- czenie stosowne słowa „większą cześć mieli u ludzi," Przez mędrców, których śmierć rozgłoszono a którzy potém powróciwszy do domu wiel- kiéj czci zażywali rozumieją scholiaści to Odyseja to Pytagorasa, to na wet Solona. Pomiędzy Odysejem a Orestesem ta tylko zachodzi różnica, że na Itace sądzono, jakoby Odysej był umarł, kiedy tu Orestes sam się wydaje za umarłego. 108-117. Wzywa tu Elektra pomocy naprzód Hadesa i Persefony, w których państwie Agamemnon bawi, daléj Hermesa, który Agamemnona jako ψυχο- πομπός przeprowadził do podziemia; Ary t. j. bogini klątwy, którą Agamemnon zbrodniczym czynem na nim przez Klitemnestrę wykona- nym oburzony rzucił na małżonkę. Erynida oburzonego bowiem wy- bucha w klątwę i dla tego Ara jest towarzyszką Erynij. Bo sama żałością obciążonéj szali nie zdołam do góry podźwignąć już dalej. Obraz od ściągania na dół próżnéj szali, aby obciążona ciężarem szala do góry się podniosła. Elektra więc już nie zdoła obciążonėj żałością szali dźwi- gnąć, gdyż siły jéj za słabe 149. Co dotyczy ptaszyny płaczącéj Itysa p. Eschylosa Agamemnona Uwag. do w. 1084-9; a co do Nioby, p. Sofokles Antygone, Uw. do w. 780-86. L 154. Ifianasa i Chrysotemis, siostry Elektry. 175-179. Krysa, miasta w Focydzie, na wybrzeżu morskiėm żyzném położone, zburzone r. 346 p. Chr. Rząd przy Acheronie prowadzi Hades. 187. Czytam podług Schneidewina: κοινάς δ' ἀφίσταμαι τραπέζας. 190. Barta, p. Linde, t. c. topor, gatunek siekiery szerokiéj. 193. Spółka okropna, t. j Klitemnestra i Egistos. 239. Porówn. Edyp Król. w. 875.-890. 270-275. Tém, że co miesiąc obchodziła uroczyście dzień mordu Klitemne- stra, starala się ona widocznie głos sumienia i trwogę duszy uśmie- rzyć, jako też bogów przebłagać Może być, że dzień ten mordu Agame mnona zwał się καὶς Αγαμεμνόνειος, stypa Agamemnonową. Niewątpli wie w Argos oddawano Agamemnonowi cześć jako bohaterowi (heros), Wiersz. kiedy mu ją oddawano gdzieindzie, n. p. w Tarentie. Bogami wybaw cani sa Ζεὺς Σωτήριος, Apolo i Artemis (ἀποτρόπαιοί) 295 w sojuszu z babami. Greckieὁ σὲν γὂναιξὶ τὰς μάχας ποιούμενος tluma czono tak, bo daje się, jakoby Elektrze głównie i jedynie przyszło na myšl sabójstwo popelnione przez niego z Klitemnestrą na Agamemno- nie. Atoli greckie słowa mogą być i tak rozumiane, że Egistos tchó- rzliwy tylko pomiędzy babami bawi się baraszkowaniem i sporami a z nieprzyjaciołmi nie walczy. 420. Klitemnestra z widzenia sennego spowiada się Heliosowi, bogu światła dziennego i pogody jasnej, aby pomrok przykry ołaczający owo nocne widzenie rozprószył i nieszczęście odwrócił; choć może i ta okolicznośé na to, że Kl. do Heliosa się udała, niepomału wpłynęła, że Helios wielkiej cz ści doznawał w Argos. P. przekład Eschylosa Choeforów w. 1008. 442. Po mordzie podstępnie wykonanym zabobonni odcinali członki zabitych, aby uniemożliwić im pomstę (zwało się to μασχαλίζειν, a odcięte człon- ki μασχαλίσματα, τόμια); p Odys. XXII, 475. Nadto broń zbroczoną oczyszczano z krwi ociérając ją o głowę zabitego tym końcem, aby wina krwi przelanéj spadała na ofiarę zabitą Herod. I, 155. Odys. XIX, 92. Porówn. Eschyl. Choefory w. 454. 468-503. Kiedy Dika (bóstwo sprawiedliwości) darzy słuszném zwycięstwém, do wykonania pomsty czynu potrzeba pomocy Erynidy Oddałem w 486 ἀψεγὲς (co niewątpliwie jest skażone) πελᾶν przez „jawnie ciężką każń wróżą" według Schneidewina. Co dotyczy Myrtylosa p. Wstęp do Orestei na strIwTom. I. 567. Elektra w całém opowiadaniu stara się winę ojca zmniejszyć, stąd bawił niby w gaju bogini i spłoszył krokami jelenia; stad nie wypowiada, że jelenia w gaju zabił i stąd obrazę bóstwu uczynioną przez chelpliwe słowa nazywa „plusnął słówkiem jakiémś chetpliwém..“ 654. Oczywiście skrytém życzeniem Klitemnestry jest, aby Elektrę i Orestesa zgładzono ze świata 704 Spółzawodnicy Orestesa należą do tych ludów Grecyi, które były człon- kami amfiktyonii pytyjskiėj: Achajczyk (z Phthii), Magnezyjczyk z Te- salii, mąż z Enii, Beotczyk krom Orestesa, który jednak za Argejczyka obwołany został, choć przybył z Focydy. Dalėj wymienia poeta patryo- tyczny Ateńczyka, który ostatecznie zwycięstwo odniósł, choć mniej do- godne zajmował miejsce, jako 9ty społzawodnik, niż Spartańczyk, który drugie z rzędu miejsce zajmował i w końcu gdzieś w tłumie przepadł. Nadto wymienia dwóch Cyrenajczyków, bo sława zwycięzcy i tego któ- ryby był nieledwie zwyciężył, gdyby nie wypadek nieszczęśliwy, przez to urosła, że nawet owi słynący z wyścigów Libijczycy nie mogli im wyrównać. Z tego samego powodu wymienia też poeta Etolczyka, gdyż i oni słynęli z dzielnėj jazdy i z dzielnych biegunów. 744. Кой роwoany w. 719 Z czterech koni zaprzężonych w jednym rzędzie środkowe idące pod jarzmem zwały się oἱ ζύγιοι, będące po obu Wiersz. bokach i za pomocą lejców powodowane οἱ σειραῖοι, a z nich jeden ὁ δεξιός, drugi ὁ ἀριστερός. Przez konia powodnego rozumiany jest ὁ ἀριστερός, rumak z lewej strony, ὁ προσκείμενος sc. τῷ καμπτῆρι. 788. Mowa Klitemnestry jest w swém rodzaju niezrównaną. Z początku niby słowa jéj potwierdzają to, co rzekła przedtém: δεινὸν τὸ τίκτειν ἐστὶν, jest to coś osobnego być rodzicą, ale następnie coraz więcej wyzuwa się z uczucia macierzyńskiego i w końcu w całej nagocie objawia się prawdziwe jėj usposobienie, gdyż powiada: νῦν δ' ἔκηλά που τῶν τῆσο ἀπειλῶν οδνεχ᾿ ἡμερεύσομεν (w. 78--8). 793. Elektra wzywa Nemezy umarłych, mszczącej wszelkiego zuchwalstwa, ażeby o ukaraniu pamiętała tych, co się naigrawali z niedawno zmarlego (ὡς ἔχει καλῶς ἔχει). 838. Elektra przez tego, co wszedł jawnie w głąb podziemną, rozumiała Ore- stesa. Chór zaś ściąga jej słowa do Agamemnona i porównywa go z Amfiaraosem, aby wlać odwagę i otuchę w serce Elektry. Dla tego Agamemnona przedstawia w Hadesie jeszcze jako władcę, który po- tęgi swéj użyje do wykonania pomsty. Co dotyczy Amfiaraosa p. Eschy- losa „Siedmiu przeciw Tebom," w. 526 i nstpp. w przekładzie. Tu dodam, że Amfiaraos, równie dzielny wojownik jak nieomylny wieszczek, (Edyp w Kolonos, w. 1299-1300) nie chciał wziąć udziału w wypra- wie przeciw Tebom, dopiero żona Eryfyla go nakłoniła, której pomoc sobie kupił Polinejkes, obdarzywszy ją złotym strojem. Kiedy Arge- jowie poszli w rozsypkę z pod murów tebańskich, Zeusa piorun otwo- rzył pod nim ziemię i tam zapadł się sam wraz z czworokonnym za- przęgiem. Amfiaraos tedy w podziemiu włada z nieuszczuploną potęgą i jest tam nawet wieszczkiem. 843. Elektry okrzyk o! wyraża ubolewanie nad nierówna dola Agamemnona a Amfiaraosa. Chór jednak ten okrzyk inaczej rozumie. Sądzi bowiem że to okrzyk oburzenia na Eryfylę. 845. Chór wspomniawszy o zdradzie Elektrze dopiero oczy otwiera, o kim mowa. To też Elektra sama chciwa pomsty, powiada: poniosła każń. Rzecz zaś tak się ma: Amfiaraos wybierając się na wyprawę tebańską zobowiązał synów Alkmajona i Amfilocha, lub też pierwszego tylko do zabicia matki, zanimby udział wzięli w wojnie Epigonów. Uczy- nił żądaniu ojca zadość Alkmajon i dla tego często on porównywany bywa z Orestesem. 1057. καὶ τὸ θηράσθαι κενά oddałem przez: gonić wiatry w polu, poursuivre une chimère, t. j. w ogóle przedslębrać coś takiego, o co się napróżno kusisz. 1072. Famo! it. d. Podług wiary starożytnych wiadomość o tém, co się dzieje na ziemskim świecie, przedziera się do podziemia. Uważano to za wpływ demona, gdy wieść jaka prędko się roznosiła i tę siłę de- moniczną zwano to Fama, to Ossa, to Angelia. Tu Fama ma donieść Agamemnowi o smutnym rozterku pomiędzy siostrami. 1087. Fędze obie, t. j. Klitemnestrę i Egistosa. 1125. O Strofiosie. p. T. I. Wstęp do Orestei, str. 19 i Choefory, w 692 nstpp. Wiersz. 1186. Wiersz ten niewątpliwie jest wtrącony przez niepowołanego gramatyka, 1. przepisywacza. 1378. Przez dzielniejszych niżli owi, należy rozumieć orszak zbrojny Egistosa; a przez mężów we w. 1376 i przez niźli owi rozumieć należy Egistosa. 1391-1402. Chór powiada, że z osobami, które weszły do grodu, weszły także bóstwa. Na czele wchodzi Ares, sprawca wszelkiego mordu; wraz z nim jędze-mścicielki, Erynie; one wprowadzają Orestesa, który mordu ma pomścić; a drogę wskazuje mu wszystkie podstępne prze- wagi wspierający Hermes i zawiedzie do celu. Po wierszu 1429 tekst oryginału ma przerwę. Schneidewin sądzi, że Elek- tra w tém miejscu z tém się odezwała, że nakoniec Zeus jéj ży- czeniu zadosyć uczynił i sprawiedliwa karę wymierzył i że Orest potwierdził słowa siostry. 1464. Egistos mniemając, że widzi przed sobą ciało Orestesa, twierdzi, że gniew boży go zgładził z świata za to, że jako zbieg rościł pretensye do tronu Pelopidów i odgrażał się temu, co na nim zasiadał. Atoli jak gdyby się był przelakł szydu takiego, dodaje, aby nie być bezbo- żnym „Lecz jeżeli grzeszne słowo moje, cofam ono.“ 1487. Przez grabarzy rozumie Elektra psów i drapieżne ptastwo. 1499. Myśl jest: jeżeli się chełpisz darem proroctwa, to sztuki téj nie nau- czyłeś się od ojca, bo on nic nie przeczuwając wpadł w sidła zasta- wione przez nas. 1509. Dzielny napad w tej dobie wykonał Orestes, zgładziwszy morderców ojca.</note>
+        <pb n="586" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=624"/>
+        <pb n="587" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=625"/>
+        <pb n="588" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=626"/>
+        <pb n="589" facs="https://hdl.handle.net/2027/hvd.hn2wbv?urlappend=%3Bseq=627"/>
+      </div>
+    </back>
+  </text>
+</TEI>
